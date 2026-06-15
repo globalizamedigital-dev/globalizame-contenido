@@ -3,13 +3,13 @@
 ## Estado de rotaciones
 
 ```
-Última combinación de color: — (sin publicaciones aún)
-Próxima combinación: Negro #232323 + Verde #86CA28 (posición 1/6)
+Última combinación de color: Negro #232323 + Verde #86CA28 (posición 1/6) — Julio 2026
+Próxima combinación: Morado #700962 + Verde #86CA28 (posición 2/6)
 
-Último tipo de hook: —
-Próximo: estadística
+Último tipo de hook: Estadística (Post 1, julio 2026)
+Próximo: Caso real
 
-Último sprint producido: —
+Último sprint producido: Sprint 5 Cierre — 29 julio 2026
 Último post publicado: —
 ```
 
@@ -41,6 +41,25 @@ Próximo: estadística
 | Fecha | Sprint | Día | Etapa | Formato | Color | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
 | — | — | — | — | — | — | — | — |
+
+---
+
+## Historial de estrategias mensuales
+
+### Julio 2026
+- **Mes procesado:** Julio 2026
+- **Tema central:** La temporada alta no debería matarte — cuando más trabajo entra, más atascado estás en lo operativo
+- **Eje narrativo:** Temporada alta como espejo del problema. El que tiene sistemas aprovecha el pico. El que no, lo sobrevive.
+- **Datos clave usados:**
+  1. Las PYMEs españolas dedican **10 días/mes** a tareas administrativas — Qonto, Radiografía económica 2026 (abril 2026)
+  2. Empleados de PYMEs pierden **15 horas/semana** en gestión administrativa — IO Investigación / MuyPymes (feb 2026)
+  3. Responder en <5 minutos = **21 veces más** probabilidad de cerrar vs >30 min — InsideSales / KW España
+- **Paleta usada:** Negro #232323 + Verde #86CA28 (posición 1/6)
+- **Lead magnets:** RADIOGRAFÍA · SISTEMA · LEADS · COSTE
+- **Nº posts:** 13 (ritmo Lun/Mié/Vie del 1 al 29 julio)
+- **Estado:** Estrategia generada ✓ — 15 junio 2026
+- **Archivo investigación:** investigacion/base_2026-07.md
+- **Archivo estrategia:** estrategia/estrategia_mes.html
 
 ---
 
