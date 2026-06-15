@@ -113,6 +113,38 @@ La IA es el motor invisible. El protagonista es siempre el resultado o el proble
 
 ---
 
+## Tipos de CTA y rotación
+
+El CTA va SIEMPRE en el copy del post, NUNCA en las imágenes.
+
+Hay 3 tipos de cierre. Se rotan a lo largo de la semana y del mes para no quemar el "comenta X" — saturar con la misma petición cada post mata el truco.
+
+### 1. CTA RECURSO (lead magnet)
+**Qué es:** ofreces un kit, plantilla o diagnóstico que extiende la promesa del carrusel.  
+**Cuándo:** el día del sprint que lanza el lead magnet. Máximo ~1 por semana.  
+**Mecánica:** "Comenta [PALABRA] y te mando el [recurso]."  
+**Ejemplo:** "Comenta RADIOGRAFÍA y te mando el kit para ver en euros lo que pierdes cada semana."
+
+### 2. CTA CONVERSACIÓN
+**Qué es:** abres un hilo en privado sin regalar nada. Baja la fricción, alimenta comentarios, Mario responde en persona.  
+**Cuándo:** ~1 por semana. Posts donde quieres diálogo, no descarga.  
+**Mecánica:** "Comenta [PALABRA] y te cuento / y te lo explico."  
+**Ejemplo:** "Comenta CAOS y te cuento por qué meter más gente no lo arregla."
+
+### 3. CTA SIN PETICIÓN (autoridad)
+**Qué es:** autoridad pura. Cierras con un remate, una pregunta o un "guárdalo". No pides comentar. Es el que más alcance orgánico consigue.  
+**Cuándo:** ~1 por semana. Posts de marca, no de captación directa.  
+**Mecánica:** remate potente, pregunta abierta, o "Guárdalo para cuando lo necesites."  
+**Ejemplo:** "La gente buena rinde cuando entra a un sitio ordenado. No antes. ¿Tú qué ordenarías primero?"
+
+### Regla de rotación
+- Cada semana mezcla los tres tipos — no repitas el mismo cierre tres días seguidos
+- Solo las piezas con lead magnet llevan CTA Recurso
+- El slide de CIERRE del carrusel NUNCA lleva CTA — es solo branding y autoridad
+- El tipo de CTA de cada post lo fija la estrategia mensual (estrategia_mes.html)
+
+---
+
 ## Calendario de rotación mensual
 
 **Semana 1** → Pilar 1 (EL ESPEJO) — TOFU puro  
