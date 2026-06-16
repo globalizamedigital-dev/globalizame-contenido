@@ -6,10 +6,10 @@
 Última combinación de color: Morado #700962 + Verde #86CA28 (posición 2/6) — Agosto 2026
 Próxima combinación: Amarillo #F4E542 + Verde #86CA28 + Negro (posición 3/6)
 
-Último tipo de hook: Error común (Post 13, cierre agosto 2026)
-Próximo: Estadística
+Último tipo de hook: Estadística (Post 1, Sprint 1 agosto 2026)
+Próximo: Caso real
 
-Último sprint producido: Sprint 5 Cierre — 31 agosto 2026
+Último sprint producido: Sprint 1 — Post 1 (3 agosto 2026)
 Último post publicado: —
 ```
 
@@ -40,7 +40,7 @@ Próximo: Estadística
 
 | Fecha | Sprint | Día | Etapa | Formato | Color | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | — | — |
+| 3 ago 2026 | Sprint 1 · EL ESPEJO | Lunes | TOFU | Carrusel (7 slides) | Negro #232323 + Verde #86CA28 (sistema infografía) | Estadística | Producido — pendiente publicar |
 
 ---
 
