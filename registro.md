@@ -3,13 +3,13 @@
 ## Estado de rotaciones
 
 ```
-Última combinación de color: Negro #232323 + Verde #86CA28 (posición 1/6) — Julio 2026
-Próxima combinación: Morado #700962 + Verde #86CA28 (posición 2/6)
+Última combinación de color: Morado #700962 + Verde #86CA28 (posición 2/6) — Agosto 2026
+Próxima combinación: Amarillo #F4E542 + Verde #86CA28 + Negro (posición 3/6)
 
-Último tipo de hook: Error común (Post 13, cierre julio 2026)
+Último tipo de hook: Error común (Post 13, cierre agosto 2026)
 Próximo: Estadística
 
-Último sprint producido: Sprint 5 Cierre — 29 julio 2026
+Último sprint producido: Sprint 5 Cierre — 31 agosto 2026
 Último post publicado: —
 ```
 
@@ -59,6 +59,21 @@ Próximo: Estadística
 - **Nº posts:** 13 (ritmo Mié/Vie/Lun del 1 al 29 julio)
 - **Estado:** Estrategia generada ✓ — 15 junio 2026
 - **Archivo investigación:** investigacion/base_2026-07.md
+- **Archivo estrategia:** estrategia/estrategia_mes.html
+
+### Agosto 2026
+- **Mes procesado:** Agosto 2026
+- **Tema central:** El dinero que ya ganaste pero todavía no has cobrado — el ciclo de cobro roto en PYMEs españolas
+- **Eje narrativo:** Agosto como mes de la vuelta. El dueño que vuelve de vacaciones y mira la cuenta: el trabajo está hecho pero el dinero no está. El ciclo de cobro roto no es morosidad del mercado — es que el proceso de cobro de la mayoría de PYMEs no existe. La solución no es perseguir clientes: es tener el proceso puesto.
+- **Datos clave usados:**
+  1. **Solo el 30,4% de las facturas** se cobra en el plazo acordado — 1 de cada 3 (CEPYME · Observatorio Morosidad H2 2025)
+  2. **78,9 días** — Periodo Medio de Pago en pequeñas empresas en España (CEPYME 2025, límite legal: 60 días)
+  3. **5.350 €/año por PYME** — coste financiero medio de la morosidad (CEPYME · Observatorio Morosidad, Q2 2025)
+- **Paleta usada:** Morado #700962 + Verde #86CA28 (posición 2/6)
+- **Lead magnets:** COBRO · CICLO · PRESUPUESTO · EUROS
+- **Nº posts:** 13 (ritmo Lun/Mié/Vie del 3 al 31 agosto)
+- **Estado:** Estrategia generada ✓ — 16 junio 2026
+- **Archivo investigación:** investigacion/base_2026-08.md
 - **Archivo estrategia:** estrategia/estrategia_mes.html
 
 ---
