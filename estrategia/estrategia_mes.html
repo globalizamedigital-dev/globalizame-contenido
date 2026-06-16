@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estrategia Instagram · Julio 2026 · Globalizame</title>
+  <style>
+    :root {
+      --bg:       #232323;
+      --green:    #86CA28;
+      --purple:   #700962;
+      --yellow:   #F4E542;
+      --magenta:  #CA2886;
+      --blue:     #2868CA;
+      --orange:   #FFA500;
+      --white:    #FAFAF7;
+      --gray:     #3a3a3a;
+      --gray-lt:  #555;
+      --radius:   10px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    a { color: var(--green); }
+
+    /* ───────── HEADER ───────── */
+    .site-header {
+      background: #1a1a1a;
+      border-bottom: 3px solid var(--green);
+      padding: 28px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .site-header .logo-text {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+    }
+    .site-header .logo-text span { color: var(--green); }
+    .site-header .tagline {
+      font-size: 12px;
+      color: #999;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .header-meta {
+      text-align: right;
+    }
+    .header-meta .mes-label {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--green);
+    }
+    .header-meta .generado {
+      font-size: 11px;
+      color: #777;
+    }
+
+    /* ───────── LAYOUT ───────── */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+
+    section { margin-bottom: 56px; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--gray);
+    }
+
+    h3 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    /* ───────── TEMA CENTRAL ───────── */
+    .tema-card {
+      background: var(--green);
+      color: #111;
+      border-radius: var(--radius);
+      padding: 32px 36px;
+      margin-bottom: 32px;
+    }
+    .tema-card .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.6;
+      margin-bottom: 10px;
+    }
+    .tema-card .titulo {
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .tema-card .subtitulo {
+      font-size: 14px;
+      opacity: 0.75;
+      max-width: 680px;
+    }
+
+    /* ───────── RESUMEN NUMÉRICO ───────── */
+    .resumen-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .stat-box {
+      background: var(--gray);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+    }
+    .stat-box .num {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--green);
+      display: block;
+    }
+    .stat-box .desc {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 4px;
+    }
+
+    /* ───────── DATOS CLAVE ───────── */
+    .datos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .dato-card {
+      background: var(--gray);
+      border-left: 4px solid var(--green);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+    }
+    .dato-card .cifra {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--green);
+    }
+    .dato-card .concepto {
+      font-size: 13px;
+      color: var(--white);
+      margin: 4px 0 6px;
+    }
+    .dato-card .fuente {
+      font-size: 11px;
+      color: #888;
+    }
+
+    /* ───────── ARCO VISUAL DE 5 PASOS ───────── */
+    .arco {
+      display: flex;
+      gap: 0;
+      align-items: stretch;
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .arco-step {
+      flex: 1;
+      padding: 20px 16px;
+      text-align: center;
+      position: relative;
+    }
+    .arco-step::after {
+      content: '▶';
+      position: absolute;
+      right: -9px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: #232323;
+      z-index: 2;
+    }
+    .arco-step:last-child::after { display: none; }
+
+    .arco-step.s1 { background: #2a3a1a; }
+    .arco-step.s2 { background: #2a3520; }
+    .arco-step.s3 { background: #2d3a22; }
+    .arco-step.s4 { background: #334420; }
+    .arco-step.s5 { background: #3a5020; }
+
+    .arco-step .etapa-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--green);
+      opacity: 0.8;
+      margin-bottom: 6px;
+    }
+    .arco-step .semana-num {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--green);
+    }
+    .arco-step .pilar-nombre {
+      font-size: 11px;
+      font-weight: 700;
+      margin: 4px 0;
+      color: var(--white);
+    }
+    .arco-step .pilar-desc {
+      font-size: 10px;
+      color: #aaa;
+    }
+    .arco-step .fechas-arco {
+      font-size: 10px;
+      color: #777;
+      margin-top: 8px;
+    }
+
+    /* ───────── SPRINT CARDS ───────── */
+    .sprint {
+      border: 1px solid var(--gray);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .sprint-header {
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .sprint-header.tofu    { background: #1e2e10; border-bottom: 2px solid #4a6a18; }
+    .sprint-header.tomofu  { background: #1e2818; border-bottom: 2px solid #3a5a14; }
+    .sprint-header.mofu    { background: #1a2814; border-bottom: 2px solid #2e4a10; }
+    .sprint-header.mobofu  { background: #182210; border-bottom: 2px solid #86CA28; }
+    .sprint-header.bofu    { background: #0e1a08; border-bottom: 2px solid var(--green); }
+
+    .sprint-header .sprint-id {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--green);
+    }
+    .sprint-header .sprint-titulo {
+      font-size: 18px;
+      font-weight: 900;
+    }
+    .sprint-header .sprint-etapa-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: var(--green);
+      color: #111;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .sprint-header .sprint-objetivo {
+      font-size: 12px;
+      color: #aaa;
+      width: 100%;
+      margin-top: 2px;
+    }
+
+    /* Posts dentro del sprint */
+    .posts-list {
+      padding: 0;
+    }
+    .post-item {
+      display: grid;
+      grid-template-columns: 100px 1fr auto;
+      align-items: start;
+      gap: 16px;
+      padding: 18px 24px;
+      border-bottom: 1px solid #2d2d2d;
+      transition: background 0.15s;
+    }
+    .post-item:last-child { border-bottom: none; }
+    .post-item:hover { background: #2a2a2a; }
+
+    .post-fecha {
+      text-align: center;
+    }
+    .post-fecha .dia-num {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--green);
+      display: block;
+    }
+    .post-fecha .dia-nombre {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #888;
+    }
+    .post-fecha .mes-nombre {
+      font-size: 10px;
+      color: #666;
+    }
+
+    .post-content {}
+    .post-titulo-post {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .badge.formato-carrusel   { background: #2e4a6e; color: #90c8f0; }
+    .badge.formato-lm         { background: #4a2e1a; color: #f0a870; }
+    .badge.cta-recurso        { background: #2a4a1a; color: #86CA28; }
+    .badge.cta-conversacion   { background: #2a2a4a; color: #90a8f0; }
+    .badge.cta-sin-peticion   { background: #3a1a3a; color: #d090f0; }
+
+    .post-cta-info {
+      font-size: 12px;
+      color: #aaa;
+    }
+    .post-cta-info .cta-palabra {
+      color: var(--green);
+      font-weight: 700;
+    }
+    .post-cta-info .dato-usado {
+      font-style: italic;
+      color: #777;
+      margin-top: 3px;
+    }
+
+    .post-check {
+      display: flex;
+      align-items: flex-start;
+      padding-top: 4px;
+    }
+    .post-check input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--green);
+      cursor: pointer;
+    }
+
+    /* Lead magnet highlight */
+    .post-item.es-lm {
+      background: #1e1a10;
+    }
+    .post-item.es-lm:hover { background: #252010; }
+
+    /* ───────── LEAD MAGNETS ───────── */
+    .lm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .lm-card {
+      background: #1e1a10;
+      border: 1px solid #4a3a10;
+      border-top: 3px solid var(--orange, #FFA500);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+    .lm-card .lm-num {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #f0a870;
+      margin-bottom: 6px;
+    }
+    .lm-card .lm-palabra {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .lm-card .lm-titulo {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .lm-card .lm-promesa {
+      font-size: 12px;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+    .lm-card .lm-fecha {
+      font-size: 11px;
+      color: #f0a870;
+    }
+
+    /* ───────── CHECKLIST INTERACTIVO ───────── */
+    .checklist-global {
+      background: var(--gray);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .checklist-global h3 {
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+    .progress-bar-wrap {
+      background: #111;
+      border-radius: 20px;
+      height: 8px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--green);
+      border-radius: 20px;
+      transition: width 0.3s ease;
+      width: 0%;
+    }
+    .progress-label {
+      font-size: 12px;
+      color: #aaa;
+      margin-bottom: 16px;
+      text-align: right;
+    }
+
+    /* ───────── FOOTER ───────── */
+    .site-footer {
+      background: #1a1a1a;
+      border-top: 1px solid var(--gray);
+      padding: 24px 40px;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+    }
+    .site-footer .footer-logo {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+    .site-footer .footer-logo span { color: var(--green); }
+
+    /* ───────── RESPONSIVE ───────── */
+    @media (max-width: 700px) {
+      .site-header { padding: 20px; }
+      .arco { flex-direction: column; }
+      .arco-step::after { display: none; }
+      .post-item { grid-template-columns: 70px 1fr 24px; gap: 10px; }
+      .post-fecha .dia-num { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════ HEADER ══════════════════════════════ -->
+<header class="site-header">
+  <div>
+    <div class="logo-text">Globaliza<span>me</span></div>
+    <div class="tagline">Tu negocio liberado. Tu tiempo recuperado.</div>
+  </div>
+  <div class="header-meta">
+    <div class="mes-label">Julio 2026</div>
+    <div class="generado">Estrategia generada: 15 junio 2026</div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════ CONTENIDO ══════════════════════════════ -->
+<div class="container">
+
+  <!-- ── TEMA CENTRAL ── -->
+  <section>
+    <h2>Tema Central del Mes</h2>
+    <div class="tema-card">
+      <div class="label">Eje narrativo · Julio 2026</div>
+      <div class="titulo">Si tú paras, el negocio para — y eso no es un problema de personas</div>
+      <div class="subtitulo">
+        Julio es el mes donde se ve claro: 7 de cada 10 dueños de negocio en España no logran desconectar en verano porque el negocio depende de ellos al 100%.
+        No es un problema de equipo. No se soluciona contratando a alguien más. Es un problema de sistema.
+        El dueño que entra en agosto con eso resuelto descansa de verdad. El que no, trabaja desde la piscina.
+      </div>
+    </div>
+
+    <div class="resumen-grid">
+      <div class="stat-box">
+        <span class="num">13</span>
+        <span class="desc">Posts publicados</span>
+      </div>
+      <div class="stat-box">
+        <span class="num">4</span>
+        <span class="desc">Lead magnets</span>
+      </div>
+      <div class="stat-box">
+        <span class="num">5</span>
+        <span class="desc">Sprints semanales</span>
+      </div>
+      <div class="stat-box">
+        <span class="num">31</span>
+        <span class="desc">Días de julio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DATOS CLAVE ── -->
+  <section>
+    <h2>Datos de Investigación · Aprobados</h2>
+    <div class="datos-grid">
+      <div class="dato-card">
+        <div class="cifra">7 de cada 10</div>
+        <div class="concepto">CEOs y directivos españoles no logran desconectar en verano — trabajan 1-2 horas diarias incluso en vacaciones</div>
+        <div class="fuente">Catenon · citado en Directivos&Empresas, 2025</div>
+      </div>
+      <div class="dato-card">
+        <div class="cifra">15 h/semana</div>
+        <div class="concepto">pierde de media un empleado español en tareas administrativas repetitivas que podrían estar sistematizadas</div>
+        <div class="fuente">IO Investigación · MuyPymes, 3 febrero 2026</div>
+      </div>
+      <div class="dato-card">
+        <div class="cifra">10 días/mes</div>
+        <div class="concepto">dedican las PYMEs españolas a burocracia y gestión — medio mes de trabajo atrapado en operativo sin valor</div>
+        <div class="fuente">Qonto / IO Investigación · Radiografía económica PYME España 2026, abril 2026</div>
+      </div>
+      <div class="dato-card">
+        <div class="cifra">55%</div>
+        <div class="concepto">de las empresas dice que la carga administrativa le roba tiempo para pensar en el negocio — para crecer, para decidir</div>
+        <div class="fuente">Qonto / IO Investigación · Radiografía económica PYME España 2026, abril 2026</div>
+      </div>
+      <div class="dato-card">
+        <div class="cifra">17 horas</div>
+        <div class="concepto">tarda de media una PYME española en responder a un lead nuevo — el que responde en 5 minutos tiene 21 veces más probabilidad de cerrar</div>
+        <div class="fuente">InsideSales · citado en KW España</div>
+      </div>
+      <div class="dato-card">
+        <div class="cifra">21× más</div>
+        <div class="concepto">probabilidad de cerrar una venta respondiendo al lead en menos de 5 minutos frente a hacerlo después de media hora</div>
+        <div class="fuente">InsideSales · citado en KW España</div>
+      </div>
+      <div class="dato-card">
+        <div class="cifra">21.548 €/año</div>
+        <div class="concepto">coste mínimo de contratar un empleado a jornada completa en España — lo que cuesta resolver con personas lo que debería resolverse con un proceso</div>
+        <div class="fuente">Ministerio de Trabajo / SMI 2025 · AssessorOnline, 2025</div>
+      </div>
+      <div class="dato-card">
+        <div class="cifra">23%</div>
+        <div class="concepto">de las PYMEs con alta digitalización dedica aun así más de 10 días al mes a gestión — digitalizar sin ordenar no libera tiempo</div>
+        <div class="fuente">Qonto / IO Investigación · Radiografía económica PYME España 2026, abril 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ARCO VISUAL ── -->
+  <section>
+    <h2>Arco del Mes · 5 Sprints</h2>
+    <div class="arco">
+      <div class="arco-step s1">
+        <div class="etapa-label">Semana 1 · TOFU</div>
+        <div class="semana-num">S1</div>
+        <div class="pilar-nombre">EL ESPEJO</div>
+        <div class="pilar-desc">Problema visible.<br>Así te reconoces.</div>
+        <div class="fechas-arco">1 · 3 · 6 jul</div>
+      </div>
+      <div class="arco-step s2">
+        <div class="etapa-label">Semana 2 · TOFU→MOFU</div>
+        <div class="semana-num">S2</div>
+        <div class="pilar-nombre">LA OTRA FORMA</div>
+        <div class="pilar-desc">Existe otra manera<br>de llevar el negocio.</div>
+        <div class="fechas-arco">8 · 10 · 13 jul</div>
+      </div>
+      <div class="arco-step s3">
+        <div class="etapa-label">Semana 3 · MOFU</div>
+        <div class="semana-num">S3</div>
+        <div class="pilar-nombre">PRUEBA REAL</div>
+        <div class="pilar-desc">Así funciona.<br>Con datos.</div>
+        <div class="fechas-arco">15 · 17 · 20 jul</div>
+      </div>
+      <div class="arco-step s4">
+        <div class="etapa-label">Semana 4 · MOFU→BOFU</div>
+        <div class="semana-num">S4</div>
+        <div class="pilar-nombre">LA DECISIÓN</div>
+        <div class="pilar-desc">Coste real<br>de no actuar.</div>
+        <div class="fechas-arco">22 · 24 · 27 jul</div>
+      </div>
+      <div class="arco-step s5">
+        <div class="etapa-label">Cierre · BOFU</div>
+        <div class="semana-num">S5</div>
+        <div class="pilar-nombre">LA SESIÓN</div>
+        <div class="pilar-desc">30 min.<br>Sin compromiso.</div>
+        <div class="fechas-arco">29 jul</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ SPRINTS ══════ -->
+
+  <!-- SPRINT 1 -->
+  <section>
+    <h2>Sprint 1 · 1 – 6 Julio</h2>
+    <div class="sprint">
+      <div class="sprint-header tofu">
+        <div>
+          <div class="sprint-id">Sprint 1 · Semana 1</div>
+          <div class="sprint-titulo">EL ESPEJO</div>
+          <div class="sprint-objetivo">El dueño se reconoce en el problema. Julio es el mes donde el negocio que depende de ti se hace más visible. 7 de cada 10 no puede desconectar. Y tiene nombre.</div>
+        </div>
+        <span class="sprint-etapa-badge">TOFU</span>
+      </div>
+      <div class="posts-list">
+
+        <!-- Post 1 -->
+        <div class="post-item">
+          <div class="post-fecha">
+            <span class="dia-num">1</span>
+            <span class="dia-nombre">Miércoles</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">7 de cada 10 dueños de negocio en España no logran desconectar en verano. No porque no quieran. Porque si se van, el negocio para. Eso no es un problema de voluntad. Es un problema de sistema.</div>
+            <div class="post-meta">
+              <span class="badge formato-carrusel">Carrusel</span>
+              <span class="badge cta-sin-peticion">Sin petición</span>
+            </div>
+            <div class="post-cta-info">
+              Cierre con remate de autoridad. Sin pedir comentario. "Guárdalo para cuando empiece julio y lo veas claro."<br>
+              <span class="dato-usado">Dato: 7 de cada 10 CEOs no desconectan en verano (Catenon / Directivos&Empresas, 2025). Hook tipo: Estadística.</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+        <!-- Post 2 · LEAD MAGNET #1 -->
+        <div class="post-item es-lm">
+          <div class="post-fecha">
+            <span class="dia-num">3</span>
+            <span class="dia-nombre">Viernes</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">🟠 LM #1 — Cuántas horas de tu negocio dependen solo de ti cada semana. La radiografía que nadie hace pero todos deberían tener.</div>
+            <div class="post-meta">
+              <span class="badge formato-lm">Lead Magnet</span>
+              <span class="badge cta-recurso">CTA Recurso</span>
+            </div>
+            <div class="post-cta-info">
+              Palabra CTA: <span class="cta-palabra">RADIOGRAFÍA</span> → Kit de diagnóstico: listado de procesos de tu negocio, cuáles funcionan solo si estás tú y cuántas horas semanales representan. El número que mide tu exposición real.<br>
+              <span class="dato-usado">Dato: 15h/semana pierden empleados en administrativo (IO Investigación / MuyPymes, feb 2026). Hook tipo: Estadística.</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="post-item">
+          <div class="post-fecha">
+            <span class="dia-num">6</span>
+            <span class="dia-nombre">Lunes</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">Contratar a alguien para que haga lo que solo tú sabes hacer no soluciona que el negocio depende de ti. Solo añade a alguien más al problema. Y cuesta más de 21.000 euros al año encontrarlo.</div>
+            <div class="post-meta">
+              <span class="badge formato-carrusel">Carrusel</span>
+              <span class="badge cta-conversacion">CTA Conversación</span>
+            </div>
+            <div class="post-cta-info">
+              Palabra CTA: <span class="cta-palabra">DEPENDER</span> → "Comenta DEPENDER y te cuento qué pasa cuando contratas para tapar un problema que es de sistema, no de personas."<br>
+              <span class="dato-usado">Dato: Coste mínimo contratación 21.548€/año (Ministerio Trabajo / SMI 2025). Hook tipo: Provocación.</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SPRINT 2 -->
+    <div class="sprint">
+      <div class="sprint-header tomofu">
+        <div>
+          <div class="sprint-id">Sprint 2 · Semana 2</div>
+          <div class="sprint-titulo">LA OTRA FORMA</div>
+          <div class="sprint-objetivo">Mostramos que hay negocios donde el dueño sí puede irse. La diferencia no es el sector ni el tamaño. Es que tienen las cosas ordenadas y el negocio funciona cuando ellos no están.</div>
+        </div>
+        <span class="sprint-etapa-badge">TOFU → MOFU</span>
+      </div>
+      <div class="posts-list">
+
+        <!-- Post 4 -->
+        <div class="post-item">
+          <div class="post-fecha">
+            <span class="dia-num">8</span>
+            <span class="dia-nombre">Miércoles</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">Hay negocios donde el dueño se fue dos semanas en agosto y cuando volvió, los clientes estaban atendidos, los leads respondidos y las citas confirmadas. No hay magia detrás. Hay un negocio ordenado.</div>
+            <div class="post-meta">
+              <span class="badge formato-carrusel">Carrusel</span>
+              <span class="badge cta-sin-peticion">Sin petición</span>
+            </div>
+            <div class="post-cta-info">
+              Cierre con remate de autoridad. "La pregunta no es si se puede. Es qué falta en tu negocio para que se pueda."<br>
+              <span class="dato-usado">Caso real (experiencia propia Mario). Hook tipo: Caso real.</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+        <!-- Post 5 · LEAD MAGNET #2 -->
+        <div class="post-item es-lm">
+          <div class="post-fecha">
+            <span class="dia-num">10</span>
+            <span class="dia-nombre">Viernes</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">🟠 LM #2 — El mapa de los procesos de tu negocio que solo funcionan si estás tú. Para saber exactamente dónde empieza el sistema que te libera.</div>
+            <div class="post-meta">
+              <span class="badge formato-lm">Lead Magnet</span>
+              <span class="badge cta-recurso">CTA Recurso</span>
+            </div>
+            <div class="post-cta-info">
+              Palabra CTA: <span class="cta-palabra">MAPA</span> → Plantilla para mapear los procesos de tu negocio: cuáles dependen de ti, cuáles de una persona específica y cuáles ya funcionan solos. El punto de partida para ordenar.<br>
+              <span class="dato-usado">Dato: 55% dice que la carga le roba tiempo estratégico (Qonto, Radiografía PYME 2026). Hook tipo: Estadística.</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+        <!-- Post 6 -->
+        <div class="post-item">
+          <div class="post-fecha">
+            <span class="dia-num">13</span>
+            <span class="dia-nombre">Lunes</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">Tu equipo tiene 6 personas. Pero si te vas de vacaciones, el que necesita tomar una decisión te manda un WhatsApp. Eso no es delegar. Es posponer el problema hasta que vuelves.</div>
+            <div class="post-meta">
+              <span class="badge formato-carrusel">Carrusel</span>
+              <span class="badge cta-conversacion">CTA Conversación</span>
+            </div>
+            <div class="post-cta-info">
+              Palabra CTA: <span class="cta-palabra">EQUIPO</span> → "Comenta EQUIPO y te cuento por qué pasa eso y qué tienen los negocios donde no pasa."<br>
+              <span class="dato-usado">Experiencia propia. Hook tipo: Provocación.</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SPRINT 3 -->
+    <div class="sprint">
+      <div class="sprint-header mofu">
+        <div>
+          <div class="sprint-id">Sprint 3 · Semana 3</div>
+          <div class="sprint-titulo">PRUEBA REAL</div>
+          <div class="sprint-objetivo">Datos concretos que miden el alcance del problema. 15 horas a la semana. 10 días al mes. La paradoja de la digitalización sin orden. Números que hablan solos.</div>
+        </div>
+        <span class="sprint-etapa-badge">MOFU</span>
+      </div>
+      <div class="posts-list">
+
+        <!-- Post 7 -->
+        <div class="post-item">
+          <div class="post-fecha">
+            <span class="dia-num">15</span>
+            <span class="dia-nombre">Miércoles</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">15 horas a la semana. Eso pierde de media un empleado español en tareas que deberían estar sistematizadas. En una PYME de 5 personas son 75 horas semanales de trabajo que no genera nada.</div>
+            <div class="post-meta">
+              <span class="badge formato-carrusel">Carrusel</span>
+              <span class="badge cta-sin-peticion">Sin petición</span>
+            </div>
+            <div class="post-cta-info">
+              Cierre con big number visual. "75 horas a la semana. Casi dos semanas de trabajo al mes. Que desaparecen."<br>
+              <span class="dato-usado">Dato: 15h/semana (IO Investigación / MuyPymes, 3 feb 2026). Hook tipo: Estadística.</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+        <!-- Post 8 · LEAD MAGNET #3 -->
+        <div class="post-item es-lm">
+          <div class="post-fecha">
+            <span class="dia-num">17</span>
+            <span class="dia-nombre">Viernes</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">🟠 LM #3 — Las 5 tareas que más tiempo roban en tu negocio cada semana y cómo dejan de depender de que estés tú para hacerlas.</div>
+            <div class="post-meta">
+              <span class="badge formato-lm">Lead Magnet</span>
+              <span class="badge cta-recurso">CTA Recurso</span>
+            </div>
+            <div class="post-cta-info">
+              Palabra CTA: <span class="cta-palabra">TAREAS</span> → Guía de 5 procesos críticos de una PYME — respuesta a clientes, presupuestos, citas, recordatorios, seguimiento — cómo están ahora y cómo pueden funcionar sin el dueño mirando.<br>
+              <span class="dato-usado">Dato: 10 días/mes en burocracia (Qonto / IO Investigación, Radiografía PYME 2026, abr 2026). Hook tipo: Estadística.</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+        <!-- Post 9 -->
+        <div class="post-item">
+          <div class="post-fecha">
+            <span class="dia-num">20</span>
+            <span class="dia-nombre">Lunes</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">Las PYMEs españolas dedican hasta 10 días al mes a gestión y burocracia. Medio mes de trabajo. Y el 55% de los dueños dice que ese tiempo le impide pensar en el negocio. No en el operativo. En el negocio.</div>
+            <div class="post-meta">
+              <span class="badge formato-carrusel">Carrusel</span>
+              <span class="badge cta-conversacion">CTA Conversación</span>
+            </div>
+            <div class="post-cta-info">
+              Palabra CTA: <span class="cta-palabra">JULIO</span> → "Comenta JULIO y te cuento cómo están aprovechando ese tiempo los negocios que ya no tienen este problema."<br>
+              <span class="dato-usado">Dato: 10 días/mes + 55% (Qonto / IO Investigación, Radiografía PYME 2026, abr 2026). Hook tipo: Estadística.</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SPRINT 4 -->
+    <div class="sprint">
+      <div class="sprint-header mobofu">
+        <div>
+          <div class="sprint-id">Sprint 4 · Semana 4</div>
+          <div class="sprint-titulo">LA DECISIÓN</div>
+          <div class="sprint-objetivo">Hacemos visible el coste real de seguir igual. 17 horas en responder un lead. 21 veces menos probabilidad de cerrar. Lo que vale una hora del dueño atascado en operativo. No para asustar — para que el número hable.</div>
+        </div>
+        <span class="sprint-etapa-badge">MOFU → BOFU</span>
+      </div>
+      <div class="posts-list">
+
+        <!-- Post 10 -->
+        <div class="post-item">
+          <div class="post-fecha">
+            <span class="dia-num">22</span>
+            <span class="dia-nombre">Miércoles</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">La media en España es de 17 horas para responder a un lead nuevo. El que lo cierra responde en 5 minutos. No porque sea mejor negocio. Porque tenía el proceso puesto y el tuyo no.</div>
+            <div class="post-meta">
+              <span class="badge formato-carrusel">Carrusel</span>
+              <span class="badge cta-sin-peticion">Sin petición</span>
+            </div>
+            <div class="post-cta-info">
+              Cierre con remate: "Guárdalo para la próxima vez que pierdas un cliente sin saber por qué."<br>
+              <span class="dato-usado">Dato: 17h respuesta media leads España + 21× conversión <5 min (InsideSales / KW España). Hook tipo: Estadística.</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+        <!-- Post 11 · LEAD MAGNET #4 -->
+        <div class="post-item es-lm">
+          <div class="post-fecha">
+            <span class="dia-num">24</span>
+            <span class="dia-nombre">Viernes</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">🟠 LM #4 — Calcula en euros y horas cuánto te cuesta que tu negocio dependa de ti cada semana. El número que casi ningún dueño ha hecho nunca.</div>
+            <div class="post-meta">
+              <span class="badge formato-lm">Lead Magnet</span>
+              <span class="badge cta-recurso">CTA Recurso</span>
+            </div>
+            <div class="post-cta-info">
+              Palabra CTA: <span class="cta-palabra">COSTE</span> → Calculadora: horas del dueño en operativo × coste real de su hora × 52 semanas = lo que paga cada año por no tener el negocio ordenado. Más el coste de los leads que llegan cuando no está.<br>
+              <span class="dato-usado">Dato: 21× conversión respondiendo en <5 min (InsideSales / KW España). Hook tipo: Pregunta directa.</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+        <!-- Post 12 -->
+        <div class="post-item">
+          <div class="post-fecha">
+            <span class="dia-num">27</span>
+            <span class="dia-nombre">Lunes</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">Cada vez que dices "es que si no lo hago yo, no se hace bien" estás describiendo un negocio frágil. No una persona capaz. Un negocio frágil no tiene valor cuando quieras venderlo, pararlo o simplemente tomarte agosto libre de verdad.</div>
+            <div class="post-meta">
+              <span class="badge formato-carrusel">Carrusel</span>
+              <span class="badge cta-conversacion">CTA Conversación</span>
+            </div>
+            <div class="post-cta-info">
+              Palabra CTA: <span class="cta-palabra">MARIO</span> → "Comenta MARIO y te cuento cómo trabajo y si tiene sentido para tu negocio."<br>
+              <span class="dato-usado">Voz propia Mario. Hook tipo: Error común.</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SPRINT 5 · CIERRE -->
+    <div class="sprint">
+      <div class="sprint-header bofu">
+        <div>
+          <div class="sprint-id">Sprint 5 · Cierre</div>
+          <div class="sprint-titulo">LA SESIÓN</div>
+          <div class="sprint-objetivo">CTA directo. 30 minutos para ver qué parte del negocio depende del dueño, cuánto cuesta esa dependencia en horas y euros, y qué cambiaría si dejara de hacerlo. Sin promesas vacías.</div>
+        </div>
+        <span class="sprint-etapa-badge">BOFU</span>
+      </div>
+      <div class="posts-list">
+
+        <!-- Post 13 -->
+        <div class="post-item">
+          <div class="post-fecha">
+            <span class="dia-num">29</span>
+            <span class="dia-nombre">Miércoles</span>
+            <span class="mes-nombre">julio</span>
+          </div>
+          <div class="post-content">
+            <div class="post-titulo-post">30 minutos para ver qué parte de tu negocio depende de ti, cuánto te cuesta esa dependencia en horas y euros, y qué cambiaría si dejara de hacerlo. Sin compromiso. Si no encaja, te lo digo yo primero.</div>
+            <div class="post-meta">
+              <span class="badge formato-carrusel">Carrusel</span>
+              <span class="badge cta-recurso">CTA Sesión</span>
+            </div>
+            <div class="post-cta-info">
+              Palabra CTA: <span class="cta-palabra">SESIÓN</span> → Enlace a Calendly. Slide con foto de Mario. Cierre personal.<br>
+              <span class="dato-usado">Hook tipo: Error común → "El error es pensar que ya lo llevas bien. El negocio que para cuando tú paras no lo lleva bien. Lo aguanta."</span>
+            </div>
+          </div>
+          <div class="post-check">
+            <input type="checkbox" data-total="13" onchange="actualizarChecklist()" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ LEAD MAGNETS ══════ -->
+  <section>
+    <h2>Los 4 Lead Magnets · Julio 2026</h2>
+    <div class="lm-grid">
+
+      <div class="lm-card">
+        <div class="lm-num">Lead Magnet #1</div>
+        <div class="lm-palabra">RADIOGRAFÍA</div>
+        <div class="lm-titulo">Kit para medir cuántas horas de tu negocio dependen solo de ti cada semana</div>
+        <div class="lm-promesa">Listado de los procesos clave de tu negocio. Cuáles funcionan solo si estás tú, cuáles dependen de una persona y cuáles ya no te necesitan. El número que mide tu exposición real.</div>
+        <div class="lm-fecha">Publicación: Viernes 3 julio · Post #2</div>
+      </div>
+
+      <div class="lm-card">
+        <div class="lm-num">Lead Magnet #2</div>
+        <div class="lm-palabra">MAPA</div>
+        <div class="lm-titulo">El mapa de procesos de tu negocio: qué funciona contigo y qué podría funcionar sin ti</div>
+        <div class="lm-promesa">Plantilla para identificar y clasificar los procesos de tu negocio. Cuáles te tienen atado, cuáles podrían funcionar solos y por dónde empezar a ordenar para dejar de ser el cuello de botella.</div>
+        <div class="lm-fecha">Publicación: Viernes 10 julio · Post #5</div>
+      </div>
+
+      <div class="lm-card">
+        <div class="lm-num">Lead Magnet #3</div>
+        <div class="lm-palabra">TAREAS</div>
+        <div class="lm-titulo">Las 5 tareas que más tiempo roban en tu negocio y cómo dejan de depender de que estés tú</div>
+        <div class="lm-promesa">Guía de 5 procesos críticos: respuesta a clientes, presupuestos, citas, recordatorios, seguimiento. Cómo funcionan ahora en la mayoría de PYMEs y cómo pueden funcionar sin que el dueño esté mirando.</div>
+        <div class="lm-fecha">Publicación: Viernes 17 julio · Post #8</div>
+      </div>
+
+      <div class="lm-card">
+        <div class="lm-num">Lead Magnet #4</div>
+        <div class="lm-palabra">COSTE</div>
+        <div class="lm-titulo">Calculadora del coste real de que tu negocio dependa de ti cada semana</div>
+        <div class="lm-promesa">Horas del dueño en operativo × coste real de su hora × 52 semanas + leads perdidos por no responder a tiempo = el número exacto que casi ningún dueño ha calculado nunca pero que cambia cómo toman la siguiente decisión.</div>
+        <div class="lm-fecha">Publicación: Viernes 24 julio · Post #11</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════ CHECKLIST INTERACTIVO ══════ -->
+  <section>
+    <h2>Checklist de Producción</h2>
+    <div class="checklist-global">
+      <h3>Progreso del mes</h3>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progressBar"></div>
+      </div>
+      <div class="progress-label" id="progressLabel">0 de 13 posts publicados</div>
+      <p style="font-size:13px;color:#aaa;">
+        Marca cada post conforme se publica. El checklist individual está en cada sprint card (columna derecha de cada fila).
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════ REGLAS DEL MES ══════ -->
+  <section>
+    <h2>Reglas Activas · Julio 2026</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;">
+      <div style="background:var(--gray);border-radius:var(--radius);padding:20px;">
+        <h3 style="font-size:13px;color:var(--green);margin-bottom:10px;">FILTRO DE CONTENIDO</h3>
+        <ul style="list-style:none;font-size:13px;color:#ccc;line-height:2;">
+          <li>✓ Nunca menciona IA, automatización, bot, workflow</li>
+          <li>✓ Protagonista siempre = problema o resultado</li>
+          <li>✓ Resultados siempre en horas o euros</li>
+          <li>✓ Un dueño de bar lo entiende en 3 segundos</li>
+          <li>✓ Solo datos con fuente verificable</li>
+        </ul>
+      </div>
+      <div style="background:var(--gray);border-radius:var(--radius);padding:20px;">
+        <h3 style="font-size:13px;color:var(--green);margin-bottom:10px;">ROTACIÓN DE CTAs</h3>
+        <ul style="list-style:none;font-size:13px;color:#ccc;line-height:2;">
+          <li>🟢 Sem 1: Sin petición → Recurso → Conversación</li>
+          <li>🟢 Sem 2: Sin petición → Recurso → Conversación</li>
+          <li>🟢 Sem 3: Sin petición → Recurso → Conversación</li>
+          <li>🟢 Sem 4: Sin petición → Recurso → Conversación</li>
+          <li>🟢 Cierre: Sesión (Calendly)</li>
+        </ul>
+      </div>
+      <div style="background:var(--gray);border-radius:var(--radius);padding:20px;">
+        <h3 style="font-size:13px;color:var(--green);margin-bottom:10px;">PALETA · JULIO 2026</h3>
+        <ul style="list-style:none;font-size:13px;color:#ccc;line-height:2;">
+          <li>Posición en rotación: <strong style="color:var(--green);">1/6</strong></li>
+          <li>Fondo: <strong style="color:#aaa;">#232323 (Negro)</strong></li>
+          <li>Acento: <strong style="color:var(--green);">#86CA28 (Verde)</strong></li>
+          <li>Texto: <strong>#FAFAF7 (Blanco)</strong></li>
+          <li>Próximo mes iniciará en posición 2/6 (Morado)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /container -->
+
+<!-- ══════════════════════════════ FOOTER ══════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-logo">Globaliza<span>me</span></div>
+  <div>Tu negocio liberado. Tu tiempo recuperado.</div>
+  <div style="margin-top:8px;">Estrategia Instagram · Julio 2026 · Mario Ruiz</div>
+</footer>
+
+<script>
+  function actualizarChecklist() {
+    const checks = document.querySelectorAll('input[type="checkbox"]');
+    const total = checks.length;
+    const marcados = Array.from(checks).filter(c => c.checked).length;
+    const pct = total > 0 ? Math.round((marcados / total) * 100) : 0;
+
+    document.getElementById('progressBar').style.width = pct + '%';
+    document.getElementById('progressLabel').textContent =
+      marcados + ' de ' + total + ' posts publicados (' + pct + '%)';
+  }
+
+  // Estado inicial
+  actualizarChecklist();
+</script>
+
+</body>
+</html>
