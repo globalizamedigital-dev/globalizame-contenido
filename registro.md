@@ -44,6 +44,19 @@ Próximo: estadística
 
 ---
 
+## Meses procesados
+
+### Julio 2026 — Estrategia generada
+- **Tema central:** El negocio que no para cuando tú paras.
+- **Datos clave usados:**
+  1. 15-16 h/semana en tareas administrativas, casi 2 días laborables (MuyPymes, 2026).
+  2. Respuesta media a un lead web = 17 h; el 78% compra a quien responde primero (KW España / massimple).
+  3. 406.000 pymes cerraron 2024 en pérdidas, ≈34.000 € de media (CEPYME, 2026).
+- **Entregables:** `investigacion/base_2026-07.md` · `estrategia/estrategia_mes.html`
+- **Estado:** Estrategia generada (pendiente de producción de carruseles con /productor).
+
+---
+
 ## Notas de rendimiento
 
 *(Añadir aquí qué posts funcionaron mejor, qué CTAs generaron más respuesta, qué temas resonaron más)*
