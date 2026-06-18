@@ -3,13 +3,13 @@
 ## Estado de rotaciones
 
 ```
-Última combinación de color: — (sin publicaciones aún)
-Próxima combinación: Negro #232323 + Verde #86CA28 (posición 1/6)
+Última combinación de color: Negro #232323 + Verde #86CA28 (posición 1/6)
+Próxima combinación: Morado #700962 + Verde #86CA28 (posición 2/6)
 
-Último tipo de hook: —
-Próximo: estadística
+Último tipo de hook: estadística
+Próximo: caso real
 
-Último sprint producido: —
+Último sprint producido: Julio 2026 · Semana 1 — El Espejo (Mié 2 jul)
 Último post publicado: —
 ```
 
@@ -40,7 +40,7 @@ Próximo: estadística
 
 | Fecha | Sprint | Día | Etapa | Formato | Color | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | — | — |
+| 2 jul 2026 | Julio · S1 El Espejo | Mié | TOFU | Carrusel 7 slides | Negro+Verde | Estadística | Pendiente |
 
 ---
 
