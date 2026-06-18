@@ -3,14 +3,14 @@
 ## Estado de rotaciones
 
 ```
-Última combinación de color: Negro #232323 + Verde #86CA28 (posición 1/6)
-Próxima combinación: Morado #700962 + Verde #86CA28 (posición 2/6)
+Última combinación de color: Morado #700962 + Verde #86CA28 (posición 2/6)
+Próxima combinación: Amarillo #F4E542 + Verde #86CA28 + Negro (posición 3/6)
 
-Último tipo de hook: estadística
-Próximo: caso real
+Último tipo de hook: caso real
+Próximo: provocación
 
 Último mes con estrategia: Agosto 2026 — En agosto, tu negocio no debería cogerse vacaciones contigo
-Último sprint producido: Julio 2026 · Semana 1 — El Espejo (Mié 2 jul)
+Último sprint producido: Agosto 2026 · Semana 1 — El Espejo (Lun 3 ago)
 Último post publicado: —
 ```
 
@@ -41,6 +41,7 @@ Próximo: caso real
 
 | Fecha | Sprint | Día | Etapa | Formato | Color | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
+| 3 ago 2026 | Agosto · S1 El Espejo | Lun | TOFU | Carrusel 6 slides | Morado+Verde | Caso real | Pendiente |
 | 2 jul 2026 | Julio · S1 El Espejo | Mié | TOFU | Carrusel 7 slides | Negro+Verde | Estadística | Pendiente |
 
 ---
