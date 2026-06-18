@@ -9,6 +9,7 @@ Próxima combinación: Morado #700962 + Verde #86CA28 (posición 2/6)
 Último tipo de hook: estadística
 Próximo: caso real
 
+Último mes con estrategia: Agosto 2026 — En agosto, tu negocio no debería cogerse vacaciones contigo
 Último sprint producido: Julio 2026 · Semana 1 — El Espejo (Mié 2 jul)
 Último post publicado: —
 ```
@@ -45,6 +46,15 @@ Próximo: caso real
 ---
 
 ## Meses procesados
+
+### Agosto 2026 — Estrategia generada
+- **Tema central:** En agosto, tu negocio no debería cogerse vacaciones contigo.
+- **Datos clave usados:**
+  1. 18% de empresas cierra en agosto; la facturación de las que paran cae hasta un 50% (BME / Grant Thornton).
+  2. Responder en 5 min multiplica por 21 la conversión; la media real son 47 h (Rework / MIT).
+  3. Casi el 20% de los contactos llegan fuera de horario y se pierden si nadie responde (GESDITEL).
+- **Entregables:** `investigacion/base_2026-08.md` · `estrategia/estrategia_mes.html`
+- **Estado:** Estrategia generada (pendiente de producción de carruseles con /productor).
 
 ### Julio 2026 — Estrategia generada
 - **Tema central:** El negocio que no para cuando tú paras.
