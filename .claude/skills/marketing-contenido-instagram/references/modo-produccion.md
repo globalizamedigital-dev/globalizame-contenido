@@ -1,7 +1,7 @@
 # MODO PRODUCCIÓN
 
 > Director de Arte + Estratega de Contenido Visual de Globalizame. Convierte el tema de la semana
-> en un carrusel con consistencia visual absoluta (estilo Bloomberg / Monocle / The Economist).
+> en un carrusel con consistencia visual absoluta: ilustración cartoon vintage + tipografía potente.
 > Loop tipo cadena: los 7 pasos en una sola pasada, sin parar entre ellos.
 
 ```
@@ -28,12 +28,15 @@ Lee `estrategia/estrategia_mes.html` y según la fecha de hoy identifica: sprint
 
 ## PASO 3 · DECISIONES AUTOMÁTICAS (lee `registro.md`)
 - **HOOK** — siguiente en la rotación: estadística → caso real → provocación → pregunta directa → error común → (repite).
-- **COLOR** — siguiente combinación en la rotación de 6 del `registro.md`.
-- **DIAGRAMA** según el slide: Proceso secuencial → Flujo/Pipeline · Filtrado/conversión → Embudo · Dos realidades → Comparativa · Sistema con partes → Arquitectura · Cifras/checklist → Big Numbers.
+- **ESCENA DEL PERSONAJE** — decídela tú según el tema del slide. Principio: el personaje cartoon traduce la emoción del titular a una metáfora visual física. No ilustres el concepto literal; busca la imagen que haga sentir el problema o el alivio de un vistazo.
+  - La escena debe leerse en menos de 1 segundo y reforzar el titular.
+  - Exagera la emoción (es cartoon, no foto): frustración, agobio, alivio, confianza, sorpresa.
+  - No repitas la misma metáfora de semanas anteriores (mira `registro.md`). Si el último carrusel usó relojes, busca otra cosa.
+  - Prioriza metáforas inesperadas sobre las obvias. El reloj y la montaña de papeles son el camino fácil; úsalos solo si de verdad son lo mejor.
 
 ## PASO 4 · ESTRUCTURA DEL CARRUSEL (6-8 slides)
-- SLIDE 1 — PORTADA: hook potente + "Desliza →". Sin infografía. Puro gancho.
-- INTERMEDIOS — uno por idea: cada slide UNA infografía real, diagrama 60-70% del frame, nodos con micro-etiqueta 1-3 palabras, titular inferior 3-6 palabras.
+- SLIDE 1 — PORTADA: hook potente + "Desliza →". Puro gancho tipográfico con ilustración cartoon vintage en la mitad inferior. Sin infografía de datos.
+- INTERMEDIOS — uno por idea: titular grande arriba (serif negro + palabra clave en color), ilustración cartoon abajo reforzando el concepto, subtexto corto bajo el titular.
 - ÚLTIMO — CIERRE: mensaje de autoridad Globalizame. Sin CTA. Solo branding.
 
 ## PASO 5 · PROMPTS PARA CHATGPT
@@ -42,18 +45,35 @@ Un prompt por slide. En INGLÉS, autónomo y completo. Todo el texto dentro de l
 ```
 === VISUAL SYSTEM — copy this block identically in every slide ===
 Format: vertical 4:5, 1080x1350px
-Style: premium editorial infographic (Bloomberg / Monocle / Economist). Clean, lots of breathing room, data visualization as hero. Professional, sober, never cluttered.
-Background: dark charcoal #232323 — FIXED, identical in every slide of this series
-Palette: neutrals (black, grey, white) + single accent green #86CA28. No other colors.
-Typography: bold condensed sans-serif for headlines (Bebas Neue or similar). Clean sans-serif for labels (Inter or similar). Same family across all slides.
-Fixed grid: top label / central diagram hero (60-70% of frame) / bottom headline 3-6 words / discrete footer "Globalizame"
-Micro-label bottom-left on intermediate slides only: "Explicación en los comentarios ↓"
-Footer: wordmark "Globalizame" — light version on dark background, discreet, never covering content
-All text inside the image in Spanish
+Style: editorial cartoon poster. Bold mixed-weight typography as hero, vintage
+1940s-1950s cartoon illustration anchoring the lower half. Energetic, punchy,
+high scroll-stopping power. Premium but with personality — never corporate-bland.
+Background: warm cream textured paper #F0EBE0 — FIXED, identical in every slide.
+Palette: black for primary headlines + #00C896 green and #7B4FFF purple as
+alternating accent colors for the key italic/emphasis word in each headline.
+Orange #F5A623 only for small decorative 4-pointed star accents. No other colors.
+Typography: ultra-bold condensed serif for the main headline (1950s editorial
+poster weight). Italic serif in the accent color for the emotional/key word.
+Clean handwritten-style font for subtext and the swipe indicator. Same families
+across all slides.
+Fixed layout every slide:
+  - Top-left: "0X / 08" counter in a small rounded box + "GLOBALIZAME" small caps
+  - Top-right: swipe indicator, handwritten style
+  - Hand-drawn horizontal black rule separating headline from subtext
+  - Footer: "Globalizame" wordmark, discreet, bottom area
+Illustration: ORIGINAL vintage cartoon character (1940s-1950s animation style,
+NOT any existing IP or known character), black ink with sepia/cream tones,
+occupying the bottom ~40% of frame, expressive face and exaggerated gesture,
+suit and tie, interacting with the concept of the slide. Small orange 4-pointed
+star accents near the character.
+All text inside the image in Spanish.
 =================================================================
 ```
 
-Después describe la infografía concreta: tipo de diagrama, nodos, micro-etiquetas, flechas, titular inferior. Portada: "Desliza →" abajo derecha. Cierre: logo prominente, mensaje centrado, sin micro-label.
+Después del bloque, describe lo concreto de cada slide:
+- Portada: titular completo, palabra clave en color, subtexto, escena del personaje, "Desliza →" abajo a la derecha.
+- Intermedios: titular, palabra clave en color, subtexto, escena del personaje.
+- Cierre: logo Globalizame prominente, mensaje centrado, personaje en tono de autoridad, sin swipe.
 
 Formato de entrega: bloques separados por `─────` con encabezado `SLIDE N — TÍTULO EN ESPAÑOL` y debajo el prompt completo en inglés.
 
@@ -65,9 +85,9 @@ Primera persona como Mario. Estilo Isra Bravo: frases cortas, punto y aparte, di
 - Pasar el copy por `humanizer` antes de guardar.
 
 ## PASO 7 · GUARDAR Y ACTUALIZAR REGISTRO
-Guarda en `posts/post_listo_[YYYY-MM-DD].md`: todos los prompts + copy completo + registro de sesión (sprint, etapa, hook usado, color).
+Guarda en `posts/post_listo_[YYYY-MM-DD].md`: todos los prompts + copy completo + registro de sesión (sprint, etapa, hook usado).
 
-Actualiza `registro.md`: fecha, sprint, día, etapa, hook usado, título · avanza la rotación de hook al siguiente · avanza la rotación de color.
+Actualiza `registro.md`: fecha, sprint, día, etapa, hook usado, título · avanza la rotación de hook al siguiente.
 
 ## CIERRE · GIT (un solo commit)
 ```bash
@@ -82,3 +102,4 @@ git push origin main
 - Varía el hook y los titulares — nunca iguales semana tras semana.
 - Bloque VISUAL SYSTEM idéntico en todos los prompts. Slide de cierre nunca lleva CTA.
 - Solo el post de esta semana. Todo autónomo. Suscripción siempre: WebSearch + Write.
+```
