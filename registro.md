@@ -6,11 +6,11 @@
 Última combinación de color: Morado #700962 + Verde #86CA28 (posición 2/6)
 Próxima combinación: Amarillo #F4E542 + Verde #86CA28 + Negro (posición 3/6)
 
-Último tipo de hook: caso real
-Próximo: provocación
+Último tipo de hook: provocación
+Próximo: pregunta directa
 
 Último mes con estrategia: Junio 2026 (cierre, 19-29 jun) — El verano dirá si tienes un negocio o una correa
-Último sprint producido: Agosto 2026 · Semana 1 — El Espejo (Lun 3 ago)
+Último sprint producido: Junio 2026 · Sprint A — El espejo del verano (Vie 19 jun)
 Último post publicado: —
 ```
 
@@ -41,6 +41,7 @@ Próximo: provocación
 
 | Fecha | Sprint | Día | Etapa | Formato | Color | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
+| 19 jun 2026 | Junio · Sprint A El espejo del verano | Vie | TOFU | Carrusel 7 slides | Crema+Púrpura | Provocación | Pendiente |
 | 3 ago 2026 | Agosto · S1 El Espejo | Lun | TOFU | Carrusel 6 slides | Morado+Verde | Caso real | Pendiente |
 | 2 jul 2026 | Julio · S1 El Espejo | Mié | TOFU | Carrusel 7 slides | Negro+Verde | Estadística | Pendiente |
 
