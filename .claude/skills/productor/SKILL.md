@@ -123,10 +123,13 @@ poster weight). Italic serif in the accent color for the emotional/key word.
 Clean handwritten-style font for subtext and the swipe indicator. Same families
 across all slides.
 Fixed layout every slide:
-  - Top-left: "0X / 08" counter in a small rounded box + "GLOBALIZAME" small caps
+  - Top-left: "0X / 08" counter in a small rounded box + wordmark "Globalizame" where
+    "Globaliza" is black and the final "me" is green #00C896 (ALWAYS this two-color split)
   - Top-right: swipe indicator, handwritten style
   - Hand-drawn horizontal black rule separating headline from subtext
-  - Footer: "Globalizame" wordmark, discreet, bottom area
+  - Footer: "Globalizame" wordmark, discreet, bottom area, SAME two-color rule:
+    "Globaliza" black + "me" green #00C896
+  - NO globe/icon/symbol anywhere — only the "Globalizame" wordmark, never the brand icon
 Illustration: ORIGINAL vintage cartoon character (1940s-1950s animation style,
 NOT any existing IP or known character), black ink with sepia/cream tones,
 occupying the bottom ~40% of frame, expressive face and exaggerated gesture,
