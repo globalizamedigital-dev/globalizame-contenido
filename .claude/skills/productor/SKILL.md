@@ -94,10 +94,10 @@ Guía, no jaula:
 ## PASO 4 · ESTRUCTURA DEL CARRUSEL (6-8 slides)
 
 **SLIDE 1 — PORTADA**
-Hook potente + "Desliza →". Puro gancho tipográfico con ilustración cartoon vintage en la mitad inferior. Sin infografía de datos.
+Puro gancho. El titular manda. La composición más potente posible (no hay molde). Sin explicar nada todavía.
 
-**INTERMEDIOS — uno por idea**
-Cada slide desarrolla UNA idea. Titular grande arriba (serif negro + palabra clave en color), ilustración cartoon abajo reforzando el concepto. Subtexto corto bajo el titular.
+**INTERMEDIOS — uno por idea, composición LIBRE**
+Cada slide desarrolla UNA idea con la composición que mejor la cuente (big number, gráfico, comparación, VS, escena…). El personaje no es obligatorio en todos. Variados entre sí. Ver PASO 5 · CAPA B.
 
 **ÚLTIMO — CIERRE**
 Mensaje de autoridad Globalizame. Sin CTA. Solo branding.
@@ -110,7 +110,9 @@ Cada prompt tiene DOS capas. La **capa A (ADN VISUAL)** es idéntica en todos lo
 que mantiene la marca. La **capa B (LAYOUT)** cambia según el tipo de slide: portada, intermedio o
 cierre NO se componen igual. No copies el layout de la portada en los intermedios.
 
-### CAPA A · ADN VISUAL — este bloque sí va idéntico en todos los slides
+### CAPA A · ADN VISUAL + CHROME — idéntico en todos los slides
+
+Esto es lo ÚNICO fijo. Da consistencia de marca. Va igual en cada prompt:
 
 ```
 === VISUAL DNA — identical in every slide ===
@@ -123,36 +125,61 @@ key word (ONE accent per carousel, kept across the series). Orange #F5A623 only 
 4-pointed star accents. No other colors.
 Typography: ultra-bold condensed serif for headlines (1950s editorial poster weight),
 italic serif in the accent color for the key/emotional word, clean handwritten-style font
-for subtext and the swipe indicator. Same families across all slides.
-Character: ORIGINAL vintage cartoon character (NOT any existing IP), consistent across the
-whole carousel — same man, suit and tie, expressive face, exaggerated gesture.
-Brand wordmark: "Globalizame" with "Globaliza" black + "me" green #00C896 (ALWAYS).
-NO globe/icon/symbol anywhere — only the wordmark.
+for subtext. Same families across all slides.
+When a recurring cartoon character appears, it is ONE original vintage character (NOT any
+existing IP), consistent across the whole carousel — same man, suit and tie, expressive face.
+STANDARD CHROME (identical, discreet, never competing with the content):
+  - Top-left, SMALL: counter "0X / NN" + wordmark "Globalizame" ("Globaliza" black, "me"
+    green #00C896). Small and discreet — the headline/visual is the hero, not the logo.
+  - Bottom-right: "Desliza →" handwritten, ONCE only (never also at the top).
+  - Footer: only the discreet "Globalizame" wordmark. Nothing else.
+  - NO globe/icon/symbol anywhere — only the wordmark.
+  - On the LAST slide: no "Desliza →".
 All text inside the image in Spanish.
 =============================================
 ```
 
-### CAPA B · LAYOUT por tipo de slide — cambia, NO es idéntico
+### CAPA B · COMPOSICIÓN — LIBRE. La IA diseña lo que mejor cuenta la idea
 
-> **PORTADA (slide 1) — el gancho.** Composición distinta a todo lo demás. El titular manda: huge
-> headline ocupando la mitad superior, palabra clave en el acento, subtexto corto bajo una regla
-> dibujada a mano. El personaje en una escena potente ocupando la mitad inferior. Chrome:
-> arriba-izq contador `01 / NN` + wordmark; arriba-der "Desliza →"; "Desliza →" también
-> abajo-der. Sin más texto: es puro gancho, no explica nada todavía.
+> **Prohibida la rigidez.** NO existe un layout fijo de intermedio. Cada slide se compone como mejor
+> cuente SU idea: un big number gigante, un gráfico dibujado a mano, una comparación a dos columnas,
+> un "VS", un antes/después con una flecha, una escena del personaje a pantalla… El personaje NO
+> tiene que estar en todos: a veces es el protagonista grande, a veces un detalle en una esquina, a
+> veces no aparece y el dato manda. Lo que se mantiene SIEMPRE es la CAPA A (estilo, paleta, chrome);
+> la composición es libre. Dos intermedios seguidos no deben parecerse.
 
-> **INTERMEDIOS — desarrollan una idea cada uno.** Aquí el layout RESPIRA distinto a la portada:
-> el titular puede ser algo menor, deja sitio a la escena que cuenta la idea. Titular arriba
-> (palabra clave en el acento) + subtexto + personaje en una escena NUEVA que ilustra ESE punto.
-> Chrome: arriba-izq contador `0X / NN` + wordmark; arriba-der "Desliza →". Varía la composición
-> entre intermedios (no todos calcados): a veces el personaje a la izquierda, a veces a la derecha,
-> a veces la escena domina. La portada y un intermedio no deben parecerse.
+Repertorio de composiciones (inspiración, no lista cerrada — combina y inventa):
+`big number` · `gráfico/curva dibujada a mano` · `dos columnas comparadas` · `VS cara a cara` ·
+`antes/después con flecha` · `escena del personaje a pantalla` · `secuencia de viñetas` ·
+`mapa/diagrama` · `cita grande`. Elige por slide la que haga sentir la idea de un vistazo.
 
-> **CIERRE (último slide) — la marca.** Sin "Desliza →" (no hay nada más que deslizar). Sin CTA.
-> Mensaje de autoridad de Globalizame, el personaje en tono sereno/confiado (no agobiado), wordmark
-> prominente. Composición propia, más calmada que el resto.
+Tres roles fijos (el QUÉ, no el CÓMO):
+- **PORTADA (slide 1):** puro gancho. El titular manda, sin explicar nada todavía. Composición la
+  más potente posible. Lleva "Desliza →" abajo-der.
+- **INTERMEDIOS:** desarrollan una idea cada uno, con la composición libre de arriba. Variadas entre sí.
+- **CIERRE (último):** la marca. Mensaje de autoridad, tono sereno, sin CTA, sin "Desliza →".
 
-Para cada slide: pega la CAPA A (idéntica) + la CAPA B que toque (portada / intermedio / cierre)
-con la escena, el titular y la palabra clave concretos de ese slide.
+Para cada slide: pega la CAPA A (idéntica) + describe la composición concreta que elegiste (su
+layout, su titular, su palabra clave en el acento, su visual). Como en estos ejemplos de referencia
+de un carrusel real:
+
+```
+SLIDE 1 — PORTADA: COVER. Counter "01 / 08". Headline en 3 líneas serif bold:
+"No los pierdes" / "por caros." / "Los pierdes por LENTOS." con "LENTOS" en verde italic,
+el énfasis mayor. Subrayado a mano. Subtexto: "Y ni te enteras." Personaje protagonista
+abajo 40%: dueño confuso mientras un cliente se va de cuadro. "Desliza →" abajo-der.
+
+SLIDE 2 — BIG NUMBER. "78%" enorme dominando 2/3 del frame, con el "%" en púrpura. Debajo:
+"compra al PRIMERO que responde." Personaje pequeño solo en esquina, como acento.
+
+SLIDE 5 — GRÁFICO. Una curva descendente dibujada a mano (60% del frame) cayendo por un
+precipicio tras el minuto 5. Titular: "No es una pendiente. Es un PRECIPICIO." Personaje
+diminuto cayendo junto a la curva, cómico.
+
+SLIDE 8 — CIERRE. Sin "Desliza". Mucho aire. Wordmark prominente arriba-centro. Una línea:
+"Tu negocio puede contestar antes que nadie." Personaje abajo, de pie, sereno — lo opuesto
+a la portada. Sin CTA.
+```
 
 ### Formato de entrega
 
