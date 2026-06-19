@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Kit Automatización con Orden — Globalizame</title>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,500;1,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --grn:#86CA28; --grn-d:#6AA81F; --blk:#1A1A1A; --ink:#232323;
+  --wht:#FAFAF7; --ppr:#F2F0EA;
+}
+*{ box-sizing: border-box; margin:0; padding:0; }
+html,body{ background:#e8e6df; color:var(--ink); font-family:'Inter',sans-serif; }
+
+.sheet{
+  width: 794px; height: 1123px; margin: 16px auto; background: white;
+  position: relative; overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  page-break-after: always; break-after: page;
+  display: flex; flex-direction: column;
+}
+.sheet:last-child{ page-break-after: auto; }
+
+.header{
+  height: 52px; background: var(--grn);
+  display:flex; align-items:center; justify-content:space-between; padding: 0 32px;
+  color: var(--blk); font-weight:900; font-size:12px;
+  letter-spacing:.2em; text-transform:uppercase;
+  flex-shrink: 0;
+}
+.footer{
+  height: 44px; flex-shrink: 0; margin-top: auto;
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 0 32px;
+  border-top: 1px solid rgba(35,35,35,.08);
+  font-size: 11px; font-weight: 500; color: rgba(35,35,35,.45);
+}
+.body{ flex: 1; overflow: hidden; }
+
+/* ════════════════════════════════════════
+   PORTADA
+════════════════════════════════════════ */
+.portada .body{
+  padding: 32px 48px 28px; background: var(--ppr);
+  display: flex; flex-direction: column; gap: 18px;
+  position: relative;
+}
+.portada .wm{
+  position:absolute; right:-80px; bottom:-100px;
+  font-family:'Josefin Sans'; font-weight:700; font-size:560px;
+  line-height:1; letter-spacing:-.06em;
+  color: rgba(134,202,40,.1); pointer-events:none; user-select:none;
+}
+.portada .tag{
+  display:inline-flex; align-self:flex-start; gap:8px; align-items:center;
+  padding: 6px 12px; border-radius:999px; background: var(--blk); color: var(--grn);
+  font-weight: 900; font-size: 10px; letter-spacing:.22em; text-transform: uppercase;
+  z-index: 2;
+}
+.portada h1{
+  font-family:'Josefin Sans'; font-weight:700;
+  font-size: 56px; line-height:.96; letter-spacing:-.025em;
+  z-index: 2;
+}
+.portada h1 em{ font-style:normal; color: var(--grn-d); }
+.portada .lede{
+  font-family:'Lora'; font-style: italic; font-weight: 600;
+  font-size: 18px; line-height: 1.45; color: var(--ink); opacity:.7;
+  max-width: 580px; z-index: 2;
+}
+.portada .quote{
+  font-family:'Lora'; font-style:italic; font-weight: 600;
+  font-size: 16px; line-height: 1.4; color: var(--blk);
+  background: var(--grn); padding: 14px 18px; border-radius: 12px;
+  max-width: 620px; z-index: 2;
+}
+
+.index{ margin-top: 4px; z-index: 2; }
+.index h2{
+  font-weight: 900; font-size: 10px; letter-spacing:.22em; text-transform:uppercase;
+  color: var(--grn-d); margin-bottom: 8px;
+}
+.idx-item{
+  display:grid; grid-template-columns: 36px 1fr auto; gap:14px; align-items:center;
+  padding: 9px 0; border-top: 1.5px solid rgba(35,35,35,.12);
+}
+.idx-item:last-of-type{ border-bottom: 1.5px solid rgba(35,35,35,.12); }
+.idx-item .n{
+  font-family:'Josefin Sans'; font-weight:700; font-size: 24px;
+  color: var(--grn-d);
+}
+.idx-item .t{
+  font-family:'Josefin Sans'; font-weight: 700; font-size: 18px; line-height: 1.1;
+}
+.idx-item .t small{
+  display:block; font-family:'Inter'; font-weight: 500; font-size: 11.5px;
+  line-height: 1.35; opacity: .65; margin-top: 2px;
+}
+.idx-item .chip{
+  font-weight: 800; font-size: 10px; padding: 3px 9px; border-radius:999px;
+  background: var(--blk); color: var(--grn); letter-spacing:.12em; text-transform: uppercase;
+}
+
+.how{
+  margin-top: auto; padding: 14px 18px; background: var(--blk); color: white;
+  border-radius: 12px; z-index: 2;
+}
+.how h3{
+  color: var(--grn); font-size: 10px; letter-spacing:.22em; text-transform: uppercase;
+  font-weight: 900; margin-bottom: 4px;
+}
+.how p{ font-size: 12px; line-height: 1.5; opacity: .9; }
+.how p strong{ color: var(--grn); opacity: 1; }
+
+/* ════════════════════════════════════════
+   CONTENT (común)
+════════════════════════════════════════ */
+.content .body{
+  padding: 26px 40px 14px;
+  display: flex; flex-direction: column; gap: 16px;
+  overflow: hidden;
+}
+.content h1{
+  font-family:'Josefin Sans'; font-weight:700;
+  font-size: 34px; line-height: 1; letter-spacing:-.02em;
+}
+.content h1 em{ font-style: normal; color: var(--grn-d); }
+.content .sub{
+  font-size: 12.5px; line-height: 1.5; opacity: .7; max-width: 640px;
+}
+
+.box-dark{
+  background: var(--blk); color: white; border-radius: 12px;
+  padding: 14px 18px;
+}
+.box-dark h3{
+  color: var(--grn); font-size: 10px; letter-spacing:.22em; text-transform:uppercase;
+  font-weight: 900; margin-bottom: 5px;
+}
+.box-dark p{ font-size: 12px; line-height: 1.5; opacity: .9; }
+.box-dark p strong{ color: var(--grn); opacity: 1; }
+.box-dark code{
+  font-family:'JetBrains Mono'; font-size: 11px;
+  background: rgba(134,202,40,.18); color: var(--grn);
+  padding: 1px 6px; border-radius: 4px;
+}
+
+/* ════════════════════════════════════════
+   01 · DIAGNÓSTICO (checklist)
+════════════════════════════════════════ */
+.signal{
+  border-top: 2px solid rgba(35,35,35,.12);
+  padding: 9px 0;
+}
+.signal:last-of-type{ border-bottom: 2px solid rgba(35,35,35,.12); }
+.signal h2{
+  font-family:'Josefin Sans'; font-weight: 700; font-size: 17px;
+  margin-bottom: 5px; display:flex; align-items:center; gap:10px;
+}
+.signal h2 .n{
+  width: 26px; height: 26px; border-radius: 50%;
+  background: var(--blk); color: var(--grn);
+  display:inline-flex; align-items:center; justify-content:center;
+  font-family:'Inter'; font-weight: 800; font-size: 12px;
+}
+.q{
+  display:flex; align-items:flex-start; gap: 9px;
+  font-size: 12px; line-height: 1.4; padding: 2px 0;
+}
+.q .box{
+  flex: 0 0 14px; height: 14px;
+  border: 2px solid var(--ink); border-radius: 3px;
+  margin-top: 1px;
+}
+
+/* ════════════════════════════════════════
+   02 · MAPA DE PROCESOS (tablero)
+════════════════════════════════════════ */
+table{ width: 100%; border-collapse: collapse; font-size: 11px; }
+th{
+  background: var(--blk); color: var(--grn);
+  font-weight: 800; text-transform: uppercase; letter-spacing:.1em;
+  font-size: 9.5px; padding: 7px 8px; text-align: left;
+}
+td{ border-bottom: 1px solid rgba(0,0,0,.1); padding: 6px 8px; vertical-align: top; }
+tr:nth-child(even) td{ background: rgba(0,0,0,.025); }
+.formula{ color: var(--grn-d); font-weight: 700; font-size: 10px; font-family:'JetBrains Mono'; }
+.filled{ background: rgba(134,202,40,.18) !important; font-weight: 700; color: var(--blk); }
+.tag-good{ background: rgba(134,202,40,.2); color: var(--grn-d); font-weight:800; font-size: 10px; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing:.05em; }
+.tag-bad{ background: rgba(220,80,80,.15); color: #c54040; font-weight:800; font-size: 10px; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing:.05em; }
+.tag-mid{ background: rgba(200,150,0,.18); color: #a07000; font-weight: 800; font-size: 10px; padding: 2px 8px; border-radius:4px; text-transform: uppercase; letter-spacing:.05em; }
+
+.section-title{
+  font-family:'Josefin Sans'; font-weight:700; font-size: 17px;
+  margin-top: 8px; margin-bottom: 4px;
+  display:flex; align-items:center; gap:10px;
+}
+.section-title .n{
+  width: 24px; height: 24px; border-radius: 50%;
+  background: var(--blk); color: var(--grn);
+  display:inline-flex; align-items:center; justify-content:center;
+  font-family:'Inter'; font-weight: 800; font-size: 11px;
+}
+
+/* ════════════════════════════════════════
+   03 · DOCUMENTADOR (plantilla rellenable)
+════════════════════════════════════════ */
+.field{
+  display: grid; grid-template-columns: 170px 1fr; gap: 10px;
+  padding: 5px 0; border-bottom: 1px dashed rgba(0,0,0,.1);
+  font-size: 12px;
+}
+.field .k{ font-weight: 700; color: var(--blk); }
+.field .v{ opacity: .55; font-style: italic; }
+.hint{
+  font-size: 11px; color: var(--grn-d); font-weight: 600;
+  margin: 2px 0 4px;
+}
+
+.example-box{
+  background: var(--ppr); border-left: 4px solid var(--grn);
+  padding: 12px 16px; border-radius: 0 8px 8px 0;
+  font-size: 11.5px; line-height: 1.5;
+}
+.example-box .ex-label{
+  font-family:'Inter'; font-weight: 900; font-size: 9.5px;
+  letter-spacing:.2em; text-transform: uppercase;
+  color: var(--grn-d); margin-bottom: 4px;
+}
+
+/* ════════════════════════════════════════
+   04 · MATRIZ DE DECISIÓN
+════════════════════════════════════════ */
+.matrix{
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+}
+.mtx-card{
+  background: var(--ppr); border-radius: 12px; padding: 14px 16px;
+  display: flex; flex-direction: column; gap: 6px;
+  border: 1.5px solid rgba(0,0,0,.06);
+}
+.mtx-card.featured{
+  background: var(--blk); color: white; border: 1.5px solid var(--grn);
+}
+.mtx-card .mtx-lbl{
+  font-weight: 900; font-size: 10px; letter-spacing:.2em;
+  text-transform: uppercase; color: var(--grn-d);
+}
+.mtx-card.featured .mtx-lbl{ color: var(--grn); }
+.mtx-card h3{
+  font-family:'Josefin Sans'; font-weight: 700; font-size: 18px;
+  line-height: 1; margin: 2px 0 4px;
+}
+.mtx-card.featured h3{ color: var(--grn); }
+.mtx-card .when{
+  font-family:'Lora'; font-style: italic; font-weight: 600;
+  font-size: 12px; line-height: 1.4; opacity: .75;
+}
+.mtx-card.featured .when{ opacity: .85; }
+.mtx-card ul{
+  list-style: none; display: flex; flex-direction: column; gap: 3px;
+  margin-top: 4px;
+}
+.mtx-card ul li{
+  font-size: 11px; line-height: 1.45;
+  padding-left: 14px; position: relative;
+}
+.mtx-card ul li::before{
+  content: '→'; position: absolute; left: 0; color: var(--grn-d); font-weight: 700;
+}
+.mtx-card.featured ul li::before{ color: var(--grn); }
+
+/* ════════════════════════════════════════
+   05 · CALCULADORA ROI
+════════════════════════════════════════ */
+.calc-row{
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+}
+.calc-card{
+  border-radius: 12px; padding: 14px 18px;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.calc-card.before{
+  background: rgba(35,35,35,.06); border: 1.5px solid rgba(35,35,35,.1);
+}
+.calc-card.after{
+  background: rgba(134,202,40,.12); border: 1.5px solid rgba(134,202,40,.3);
+}
+.calc-card .calc-lbl{
+  font-weight: 900; font-size: 10px; letter-spacing:.2em;
+  text-transform: uppercase;
+}
+.calc-card.before .calc-lbl{ color: rgba(35,35,35,.5); }
+.calc-card.after .calc-lbl{ color: var(--grn-d); }
+.calc-card .row-calc{
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 4px 0; border-bottom: 1px dashed rgba(0,0,0,.08);
+  font-size: 12px;
+}
+.calc-card .row-calc:last-child{ border-bottom: none; padding-top: 8px; font-weight: 800; }
+.calc-card .row-calc .label{ opacity: .7; }
+.calc-card.after .row-calc .value{ color: var(--grn-d); }
+
+/* ════════════════════════════════════════
+   06 · PLAN 30 DÍAS
+════════════════════════════════════════ */
+.week{
+  margin-top: 6px;
+  border-top: 2px solid rgba(0,0,0,.12);
+  padding-top: 8px;
+}
+.week:last-of-type{ border-bottom: 2px solid rgba(0,0,0,.12); padding-bottom: 8px; }
+.week-head{
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 4px;
+}
+.week-head h2{
+  font-family:'Josefin Sans'; font-size: 19px; margin: 0;
+  display: flex; align-items: center; gap: 10px;
+}
+.week-head h2 .label{
+  background: var(--blk); color: var(--grn);
+  font-family:'Inter'; font-weight: 800; font-size: 10px;
+  letter-spacing: .16em; text-transform: uppercase;
+  padding: 3px 9px; border-radius: 999px;
+}
+.week-head .goal{
+  font-size: 10.5px; font-weight: 700; color: var(--grn-d);
+  text-transform: uppercase; letter-spacing: .1em;
+}
+.task{
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 2px 0; font-size: 12px; line-height: 1.4;
+}
+.task .box{
+  flex: 0 0 14px; height: 14px;
+  border: 2px solid var(--ink); border-radius: 3px;
+  margin-top: 2px;
+}
+.task .time{
+  margin-left: auto; font-size: 10.5px;
+  color: var(--grn-d); font-weight: 700;
+}
+.win{
+  background: rgba(134,202,40,.15); border-left: 4px solid var(--grn);
+  padding: 6px 10px; font-size: 11.5px; margin-top: 4px;
+  border-radius: 0 8px 8px 0;
+}
+.win strong{ color: var(--grn-d); }
+
+.print-bar{
+  position: fixed; top: 16px; right: 16px;
+  background: var(--blk); color: var(--grn);
+  padding: 10px 16px; border-radius: 999px;
+  font-weight: 800; font-size: 12px;
+  letter-spacing:.1em; text-transform: uppercase;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25); z-index: 9999;
+}
+.print-bar kbd{
+  background: var(--grn); color: var(--blk);
+  padding: 2px 8px; border-radius: 4px; margin: 0 2px;
+  font-family:'Inter';
+}
+.print-bar button{
+  background: var(--grn); color: var(--blk); border: 0;
+  padding: 4px 10px; border-radius: 4px;
+  font-weight: 800; cursor: pointer;
+  margin-left: 8px; font-size: 12px;
+}
+
+@media print{
+  body{ background: white; }
+  .sheet{ margin: 0; box-shadow: none; }
+  .print-bar{ display: none; }
+  @page{ size: A4; margin: 0; }
+}
+</style>
+</head>
+<body>
+
+<div class="print-bar">
+  Guardar como PDF: <kbd>⌘P</kbd>/<kbd>Ctrl+P</kbd>
+  <button onclick="window.print()">Imprimir</button>
+</div>
+
+<!-- ══════════════ PORTADA ══════════════ -->
+<div class="sheet portada">
+  <div class="header"><span>Mario Ruiz · Globalizame</span><span>Kit gratuito</span></div>
+  <div class="body">
+    <div class="wm">3</div>
+    <div class="tag">Para dueños · No técnicos</div>
+    <h1>Automatización<br>con <em>orden.</em></h1>
+    <p class="lede">El kit que tu negocio necesita antes de gastar un euro en herramientas. Diagnostica, prioriza, documenta y ejecuta — sin morir en el intento.</p>
+    <div class="quote">"Automatizar el caos es la forma más cara de seguir teniendo caos. Solo que ahora con software de pago."</div>
+
+    <div class="index">
+      <h2>Lo que vas a encontrar</h2>
+      <div class="idx-item"><div class="n">01</div><div class="t">Diagnóstico · ¿En qué error estás cayendo?<small>15 preguntas para saber exactamente por dónde estás fallando — y por dónde no.</small></div><div class="chip">5 min</div></div>
+      <div class="idx-item"><div class="n">02</div><div class="t">Mapa de procesos · La herida que más sangra<small>Tabla para listar tus tareas repetitivas y priorizar cuál automatizar primero.</small></div><div class="chip">20 min</div></div>
+      <div class="idx-item"><div class="n">03</div><div class="t">Documentador · Antes de automatizar<small>Plantilla exacta para escribir cómo se hace bien un proceso. Sin esto, no hay automatización.</small></div><div class="chip">1 tarde</div></div>
+      <div class="idx-item"><div class="n">04</div><div class="t">Matriz · Qué tipo de herramienta usar<small>Para que no compres una suite de 200€/mes cuando necesitabas algo gratuito.</small></div><div class="chip">10 min</div></div>
+      <div class="idx-item"><div class="n">05</div><div class="t">Calculadora ROI · Antes / después<small>Para que sepas si esa automatización te va a salir rentable antes de pagar nada.</small></div><div class="chip">15 min</div></div>
+      <div class="idx-item"><div class="n">06</div><div class="t">Plan 30 días · Tu primera automatización bien hecha<small>Semana a semana. Tareas con tiempos. Cero excusas.</small></div><div class="chip">30 días</div></div>
+    </div>
+
+    <div class="how">
+      <h3>Cómo usar este kit</h3>
+      <p>Empieza por el <strong>01 · Diagnóstico</strong>. Identifica en qué error caes. Luego salta directo al <strong>06 · Plan 30 días</strong> y síguelo en orden. No hace falta hacerlo todo hoy. Hace falta empezar hoy.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Mario Ruiz · globalizame.com</span><span>Kit · v1</span></div>
+</div>
+
+<!-- ══════════════ 01 DIAGNÓSTICO ══════════════ -->
+<div class="sheet content">
+  <div class="header"><span>01 · Diagnóstico</span><span>¿En qué error estás cayendo?</span></div>
+  <div class="body">
+    <h1>¿Tu automatización<br>va a <em>funcionar</em>?</h1>
+    <p class="sub">15 preguntas distribuidas en los 3 errores. Marca las que aplican a tu caso. Si marcas 3+ en una misma sección, ESE es el error que estás cometiendo (o vas a cometer).</p>
+
+    <div class="signal">
+      <h2><span class="n">1</span> Error 01 · Estás automatizando un proceso roto</h2>
+      <div class="q"><div class="box"></div>Si te preguntan paso a paso cómo se hace, no lo sabrías documentar en una hoja.</div>
+      <div class="q"><div class="box"></div>Los clientes o el equipo ya se quejan del resultado actual.</div>
+      <div class="q"><div class="box"></div>Cada persona que lo ejecuta hoy lo hace de forma diferente.</div>
+      <div class="q"><div class="box"></div>El proceso depende de juicio personal, no de reglas claras.</div>
+      <div class="q"><div class="box"></div>Si lo automatizo "tal cual está hoy", probablemente empeore antes de mejorar.</div>
+    </div>
+
+    <div class="signal">
+      <h2><span class="n">2</span> Error 02 · Estás empezando por lo difícil</h2>
+      <div class="q"><div class="box"></div>El proceso que quieres automatizar es "el más importante" de tu empresa.</div>
+      <div class="q"><div class="box"></div>Involucra a 3 o más áreas diferentes (ventas + operaciones + facturación, etc.).</div>
+      <div class="q"><div class="box"></div>No es repetitivo: cada caso es distinto.</div>
+      <div class="q"><div class="box"></div>Cuando lo intentas explicar tarda más de 10 minutos.</div>
+      <div class="q"><div class="box"></div>Si fallara, sería un problema gordo para clientes.</div>
+    </div>
+
+    <div class="signal">
+      <h2><span class="n">3</span> Error 03 · Estás eligiendo herramienta antes que claridad</h2>
+      <div class="q"><div class="box"></div>Te has comprado o estás cerca de comprar una suite de más de 50€/mes.</div>
+      <div class="q"><div class="box"></div>La elegiste porque te la recomendaron, no porque la comparaste con 2 alternativas.</div>
+      <div class="q"><div class="box"></div>No tienes claro qué función concreta vas a automatizar primero.</div>
+      <div class="q"><div class="box"></div>No has hecho una prueba manual del proceso ya pulido aún.</div>
+      <div class="q"><div class="box"></div>Si te preguntaran qué % de la herramienta vas a usar, dirías "todo" sin pruebas.</div>
+    </div>
+
+    <div class="box-dark">
+      <h3>Cómo leer el resultado</h3>
+      <p><strong>3+ marcadas en una sección:</strong> ESE es el error que vas a cometer. Para ahí. Lee el entregable correspondiente del kit antes de seguir.</p>
+      <p><strong>Empate en dos secciones:</strong> normal. Empieza por la primera (la "más caro"). Si no la arreglas, las otras no importan.</p>
+      <p><strong>Menos de 3 en todas:</strong> probablemente estás listo. Salta al <strong>06 · Plan 30 días</strong>.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Mario Ruiz · globalizame.com</span><span>01 / 07</span></div>
+</div>
+
+<!-- ══════════════ 02 MAPA DE PROCESOS ══════════════ -->
+<div class="sheet content">
+  <div class="header"><span>02 · Mapa de procesos</span><span>La herida que más sangra</span></div>
+  <div class="body">
+    <h1>Qué tarea automatizar<br><em>primero</em>.</h1>
+    <p class="sub">Lista 5-7 tareas repetitivas. Estima horas, frecuencia y dolor. La fórmula te dice cuál es tu mejor candidata. Empieza SIEMPRE por la #1.</p>
+
+    <div class="section-title"><span class="n">A</span> Listado · rellena tú esta semana</div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 28%">Tarea</th>
+          <th style="width: 11%">H/sem</th>
+          <th style="width: 11%">¿Quién?</th>
+          <th style="width: 13%">Repetitiva</th>
+          <th style="width: 13%">Reglas claras</th>
+          <th style="width: 12%">Dolor</th>
+          <th style="width: 12%">Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Responder consultas iniciales WhatsApp</td><td>6 h</td><td>Yo</td><td><span class="tag-good">Alta</span></td><td><span class="tag-good">Sí</span></td><td><span class="tag-bad">10</span></td><td class="filled">9.5</td></tr>
+        <tr><td>Generar propuestas comerciales</td><td>4 h</td><td>Yo</td><td><span class="tag-mid">Media</span></td><td><span class="tag-good">Sí</span></td><td><span class="tag-bad">9</span></td><td class="filled">7.8</td></tr>
+        <tr><td>Reunión de cierre con cliente</td><td>5 h</td><td>Yo</td><td><span class="tag-bad">Baja</span></td><td><span class="tag-bad">No</span></td><td><span class="tag-mid">6</span></td><td>2.4</td></tr>
+        <tr><td>Recordatorios de pago a clientes</td><td>2 h</td><td>Admin</td><td><span class="tag-good">Alta</span></td><td><span class="tag-good">Sí</span></td><td><span class="tag-mid">5</span></td><td class="filled">7.0</td></tr>
+        <tr><td>Reporte semanal de métricas</td><td>3 h</td><td>Yo</td><td><span class="tag-good">Alta</span></td><td><span class="tag-good">Sí</span></td><td><span class="tag-bad">8</span></td><td class="filled">8.6</td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <div class="section-title"><span class="n">B</span> La fórmula que decide</div>
+    <div class="box-dark">
+      <h3>Cómo calcular el Score</h3>
+      <p>En Google Sheets/Excel, en la columna Score:</p>
+      <p><code>= (H/sem × Dolor) × Factor_repetitiva × Factor_reglas</code></p>
+      <p><strong>Factor repetitiva:</strong> Alta = 1, Media = 0.7, Baja = 0.3</p>
+      <p><strong>Factor reglas:</strong> Sí = 1, No = 0.4</p>
+      <p><strong>Dolor:</strong> 1 a 10 (cuánto te quema o cuánto dinero te hace perder)</p>
+      <p style="margin-top: 6px;">→ <strong>Tu primera automatización es la del Score más alto.</strong> En el ejemplo: responder consultas WhatsApp (9.5). Es alta repetitividad + reglas claras + duele mucho + 6h/sem. Caso perfecto.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Mario Ruiz · globalizame.com</span><span>02 / 07</span></div>
+</div>
+
+<!-- ══════════════ 03 DOCUMENTADOR ══════════════ -->
+<div class="sheet content">
+  <div class="header"><span>03 · Documentador</span><span>Antes de automatizar</span></div>
+  <div class="body">
+    <h1>Documenta tu<br>proceso <em>antes</em>.</h1>
+    <p class="sub">Rellena esta plantilla para la tarea que vas a automatizar. Si no puedes escribirla así, no estás listo todavía. Y sin esto, ninguna herramienta funciona bien.</p>
+
+    <div class="section-title"><span class="n">1</span> Definición</div>
+    <div class="field"><div class="k">Nombre del proceso</div><div class="v">[ej. Primera respuesta a consultas WhatsApp]</div></div>
+    <div class="field"><div class="k">Disparador</div><div class="v">[Qué inicia el proceso · ej. cliente envía mensaje]</div></div>
+    <div class="field"><div class="k">Resultado esperado</div><div class="v">[Estado final · ej. cliente recibe respuesta personalizada en menos de 5 min]</div></div>
+    <div class="field"><div class="k">Frecuencia</div><div class="v">[ej. 30-50 veces/día]</div></div>
+
+    <div class="section-title"><span class="n">2</span> Pasos del proceso (estado actual, hecho a mano)</div>
+    <div class="field"><div class="k">Paso 1</div><div class="v">[Lo que se hace primero, con detalle]</div></div>
+    <div class="field"><div class="k">Paso 2</div><div class="v">[Lo que se hace después]</div></div>
+    <div class="field"><div class="k">Paso 3</div><div class="v">[...]</div></div>
+    <div class="field"><div class="k">Paso 4</div><div class="v">[...]</div></div>
+    <div class="field"><div class="k">Paso 5</div><div class="v">[...]</div></div>
+
+    <div class="section-title"><span class="n">3</span> Reglas de decisión</div>
+    <div class="hint">Si X → entonces Y. Si no puedes definir esto, no es automatizable todavía.</div>
+    <div class="field"><div class="k">Regla 1</div><div class="v">[ej. Si pregunta sobre precios → enviar tarifa + agendar llamada]</div></div>
+    <div class="field"><div class="k">Regla 2</div><div class="v">[ej. Si urgencia → escalar a humano en menos de 30 min]</div></div>
+    <div class="field"><div class="k">Regla 3</div><div class="v">[ej. Si fuera de horario → mensaje + cita auto al día siguiente]</div></div>
+
+    <div class="example-box">
+      <div class="ex-label">Ejemplo real · clínica dental</div>
+      <strong>Nombre:</strong> Primera respuesta a WhatsApp · <strong>Disparador:</strong> entra mensaje · <strong>Pasos:</strong> 1. Detectar si urgencia, 2. Si pide cita, ofrecer 3 huecos del calendario, 3. Si pide info, enviar PDF, 4. Si urgencia o queja, escalar. <strong>Reglas:</strong> "duele mucho" → urgencia. "presupuesto" → enviar tarifa + ofrecer llamada con doctor.
+    </div>
+  </div>
+  <div class="footer"><span>Mario Ruiz · globalizame.com</span><span>03 / 07</span></div>
+</div>
+
+<!-- ══════════════ 04 MATRIZ DE DECISIÓN ══════════════ -->
+<div class="sheet content">
+  <div class="header"><span>04 · Matriz</span><span>Qué tipo de herramienta</span></div>
+  <div class="body">
+    <h1>Qué <em>tipo</em><br>de herramienta.</h1>
+    <p class="sub">Antes de mirar marcas concretas, decide el TIPO. Esto te ahorra meses y miles de euros. Cada caso pide una categoría distinta.</p>
+
+    <div class="matrix">
+      <div class="mtx-card">
+        <div class="mtx-lbl">Caso A</div>
+        <h3>Conectar 2-3 apps simples</h3>
+        <div class="when">Mover datos de un formulario a tu correo, calendario o hoja. Sin lógica compleja.</div>
+        <ul>
+          <li>Plataforma "sin código" tipo conector visual</li>
+          <li>Plan gratuito suele cubrir el caso</li>
+          <li>0-15€/mes</li>
+        </ul>
+      </div>
+
+      <div class="mtx-card featured">
+        <div class="mtx-lbl">Caso B · Más común</div>
+        <h3>Automatizar respuestas con IA</h3>
+        <div class="when">Responder preguntas, generar propuestas, clasificar leads, redactar emails con tono propio.</div>
+        <ul>
+          <li>Cuenta de IA + conector (mismo precio que un Netflix)</li>
+          <li>Plantillas pre-entrenadas con tus textos</li>
+          <li>20-40€/mes total</li>
+        </ul>
+      </div>
+
+      <div class="mtx-card">
+        <div class="mtx-lbl">Caso C</div>
+        <h3>Flujos complejos multi-paso</h3>
+        <div class="when">Procesos con muchas ramas, condicionales, integraciones críticas, datos sensibles.</div>
+        <ul>
+          <li>Plataforma más potente (auto-hospedable)</li>
+          <li>Requiere alguien técnico o ayuda externa</li>
+          <li>50-200€/mes o auto-hosting</li>
+        </ul>
+      </div>
+
+      <div class="mtx-card">
+        <div class="mtx-lbl">Caso D</div>
+        <h3>CRM con automatismos básicos</h3>
+        <div class="when">Gestionar leads, mandar emails automáticos, recordatorios de seguimiento.</div>
+        <ul>
+          <li>CRM "ligero" con automatización integrada</li>
+          <li>Curva de aprendizaje suave</li>
+          <li>30-80€/mes por usuario</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box-dark">
+      <h3>Las 2 reglas que evitan el desastre</h3>
+      <p><strong>1.</strong> Empieza por el plan más barato. Si te quedas corto, escalas. Si compras el grande, te encadenas y usas el 10%.</p>
+      <p><strong>2.</strong> Antes de pagar nada, haz el proceso 3 veces a mano siguiendo tu documentación. Si las 3 veces sale bien, ya tienes el proceso pulido. Si no, sigue arreglándolo a mano. Es gratis. Pagar antes es tirar dinero.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Mario Ruiz · globalizame.com</span><span>04 / 07</span></div>
+</div>
+
+<!-- ══════════════ 05 CALCULADORA ROI ══════════════ -->
+<div class="sheet content">
+  <div class="header"><span>05 · Calculadora</span><span>ROI antes / después</span></div>
+  <div class="body">
+    <h1>¿Sale rentable<br>o <em>no?</em></h1>
+    <p class="sub">Rellena los dos lados antes de comprar nada. Si la diferencia mensual no compensa al menos 3× el coste, no es prioritario aún. Hay mejores tareas que automatizar primero.</p>
+
+    <div class="calc-row">
+      <div class="calc-card before">
+        <div class="calc-lbl">Sin automatizar</div>
+        <div class="row-calc"><span class="label">Horas/semana en la tarea</span><span class="value">6 h</span></div>
+        <div class="row-calc"><span class="label">Horas/mes (×4)</span><span class="value">24 h</span></div>
+        <div class="row-calc"><span class="label">Coste hora del dueño</span><span class="value">50 €</span></div>
+        <div class="row-calc"><span class="label">Coste oculto/mes</span><span class="value">1.200 €</span></div>
+        <div class="row-calc"><span class="label">+ leads perdidos por tardar (mes)</span><span class="value">600 €</span></div>
+        <div class="row-calc"><span class="label">TOTAL · pérdida mensual</span><span class="value">1.800 €</span></div>
+      </div>
+
+      <div class="calc-card after">
+        <div class="calc-lbl">Con automatización</div>
+        <div class="row-calc"><span class="label">Horas/semana en la tarea</span><span class="value">1 h</span></div>
+        <div class="row-calc"><span class="label">Horas/mes (×4)</span><span class="value">4 h</span></div>
+        <div class="row-calc"><span class="label">Coste hora del dueño</span><span class="value">50 €</span></div>
+        <div class="row-calc"><span class="label">Coste oculto/mes</span><span class="value">200 €</span></div>
+        <div class="row-calc"><span class="label">+ coste herramienta/mes</span><span class="value">30 €</span></div>
+        <div class="row-calc"><span class="label">TOTAL · gasto mensual</span><span class="value">230 €</span></div>
+      </div>
+    </div>
+
+    <div class="box-dark">
+      <h3>Tu veredicto</h3>
+      <p><strong>Ahorro neto/mes:</strong> 1.800 € − 230 € = <code>1.570 €</code> &nbsp;·&nbsp; <strong>ROI mensual:</strong> 6.8× la inversión.</p>
+      <p style="margin-top: 6px;"><strong>La regla:</strong></p>
+      <p><strong>· ROI &gt; 3×</strong> mensual sostenido → automatiza ya, es de los primeros.</p>
+      <p><strong>· ROI entre 1× y 3×</strong> → automatiza después, primero hay mejores candidatos.</p>
+      <p><strong>· ROI &lt; 1×</strong> → no automatices. O encuentras otra tarea, o el proceso no es candidato.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Mario Ruiz · globalizame.com</span><span>05 / 07</span></div>
+</div>
+
+<!-- ══════════════ 06 PLAN 30 DÍAS ══════════════ -->
+<div class="sheet content">
+  <div class="header"><span>06 · Plan 30 días</span><span>Tu primera automatización bien hecha</span></div>
+  <div class="body">
+    <h1>30 días para hacerlo<br><em>bien</em>, no rápido.</h1>
+    <p class="sub">Dos horas por semana. Sin contratar. Al final del mes tienes UNA automatización funcionando — no diez a medio empezar.</p>
+
+    <div class="week">
+      <div class="week-head"><h2><span class="label">Sem 1</span> Identifica</h2><span class="goal">La herida que más sangra</span></div>
+      <div class="task"><div class="box"></div>Haz el Diagnóstico (entregable 01). Identifica tu error principal.<span class="time">15 min</span></div>
+      <div class="task"><div class="box"></div>Rellena el Mapa de Procesos (entregable 02). Lista 5-7 tareas.<span class="time">45 min</span></div>
+      <div class="task"><div class="box"></div>Calcula el Score. Elige la #1.<span class="time">15 min</span></div>
+      <div class="task"><div class="box"></div>Pasa la Calculadora ROI (entregable 05) a esa tarea.<span class="time">20 min</span></div>
+      <div class="win"><strong>Victoria semana 1:</strong> sabes exactamente qué automatizar primero, con números, no con intuición.</div>
+    </div>
+
+    <div class="week">
+      <div class="week-head"><h2><span class="label">Sem 2</span> Documenta</h2><span class="goal">Sin esto, nada funciona</span></div>
+      <div class="task"><div class="box"></div>Rellena el Documentador (entregable 03) con tu tarea.<span class="time">60 min</span></div>
+      <div class="task"><div class="box"></div>Ejecuta el proceso 3 veces a mano siguiendo tu documentación.<span class="time">45 min</span></div>
+      <div class="task"><div class="box"></div>Ajusta lo que no funcionó.<span class="time">30 min</span></div>
+      <div class="win"><strong>Victoria semana 2:</strong> ya tienes un proceso que funciona bien. Sin tecnología. Ese es el activo.</div>
+    </div>
+
+    <div class="week">
+      <div class="week-head"><h2><span class="label">Sem 3</span> Elige y monta</h2><span class="goal">Sin pagar de más</span></div>
+      <div class="task"><div class="box"></div>Usa la Matriz (entregable 04) para decidir TIPO de herramienta.<span class="time">15 min</span></div>
+      <div class="task"><div class="box"></div>Compara 2-3 opciones. Empieza por el plan más barato.<span class="time">45 min</span></div>
+      <div class="task"><div class="box"></div>Monta el flujo siguiendo tu documentación paso a paso.<span class="time">60 min</span></div>
+      <div class="win"><strong>Victoria semana 3:</strong> tienes la automatización montada. Coste real, no inflado.</div>
+    </div>
+
+    <div class="week">
+      <div class="week-head"><h2><span class="label">Sem 4</span> Prueba y mide</h2><span class="goal">Cifra real, no promesa</span></div>
+      <div class="task"><div class="box"></div>Activa la automatización. Que funcione 5 días reales.<span class="time">—</span></div>
+      <div class="task"><div class="box"></div>Lista los fallos. Ajusta. Vuelve a probar.<span class="time">45 min</span></div>
+      <div class="task"><div class="box"></div>Mide horas reales recuperadas y compara con la Calculadora.<span class="time">20 min</span></div>
+      <div class="task"><div class="box"></div>Decide: ¿escalo este flujo o paso a la tarea #2 del Mapa?<span class="time">10 min</span></div>
+      <div class="win"><strong>Victoria semana 4:</strong> primera automatización bien hecha. Mejor que 10 a medio terminar.</div>
+    </div>
+
+    <div class="box-dark">
+      <h3>Qué hacer el día 31</h3>
+      <p>Si has hecho esto con un mínimo de honestidad, ya tienes 6+ horas/semana recuperadas y una automatización que funciona sin ti. <strong>Repite el bucle con la tarea #2 del Mapa.</strong></p>
+      <p style="margin-top: 6px;">Si te atascas o quieres que lo hagamos por ti, escríbeme: <strong>globalizame.com</strong></p>
+    </div>
+  </div>
+  <div class="footer"><span>Mario Ruiz · globalizame.com</span><span>06 / 07</span></div>
+</div>
+
+<!-- ══════════════ 07 CIERRE ══════════════ -->
+<div class="sheet content">
+  <div class="header"><span>07 · Cierre</span><span>Las 3 reglas</span></div>
+  <div class="body" style="justify-content: center; gap: 18px; padding: 60px 48px;">
+    <h1>Las 3 reglas<br>que <em>cambian todo</em>.</h1>
+    <p class="sub">Si te llevas solo tres cosas del kit, que sean estas.</p>
+
+    <div class="box-dark" style="margin-top: 10px;">
+      <h3>Regla 01</h3>
+      <p style="font-size: 16px; font-family: 'Josefin Sans'; font-weight: 700; color: white; line-height: 1.3; margin-bottom: 6px;">Primero arregla. Después acelera.</p>
+      <p>La herramienta no salva un proceso malo. Lo amplifica. Si el proceso ya falla a mano, automatizado falla más rápido. Documenta antes de pagar.</p>
+    </div>
+
+    <div class="box-dark">
+      <h3>Regla 02</h3>
+      <p style="font-size: 16px; font-family: 'Josefin Sans'; font-weight: 700; color: white; line-height: 1.3; margin-bottom: 6px;">Empieza por la herida que más sangra.</p>
+      <p>Lo aburrido, lo repetitivo, lo que te quita 5+ horas a la semana. NO el flujo más impresionante. Las victorias pequeñas y constantes ganan a los proyectos grandes que no se terminan.</p>
+    </div>
+
+    <div class="box-dark">
+      <h3>Regla 03</h3>
+      <p style="font-size: 16px; font-family: 'Josefin Sans'; font-weight: 700; color: white; line-height: 1.3; margin-bottom: 6px;">La herramienta es la última decisión, no la primera.</p>
+      <p>Tipo de herramienta antes que marca concreta. Plan barato antes que el grande. Tres veces a mano antes que pagar. Casi siempre la solución correcta cuesta una décima parte de lo que crees.</p>
+    </div>
+
+    <p style="text-align: center; font-family: 'Lora'; font-style: italic; font-weight: 600; font-size: 18px; color: var(--ink); opacity: .65; margin-top: 14px;">"Automatizar el caos es la forma más cara de seguir teniendo caos. Solo que ahora con software de pago."</p>
+  </div>
+  <div class="footer"><span>Mario Ruiz · globalizame.com</span><span>07 / 07</span></div>
+</div>
+
+</body>
+</html>

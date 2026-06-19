@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>La guía de delegación — Globalizame</title>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700;900&family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html,body{
+  background:#F2F0EA;
+  font-family:'Inter',sans-serif;
+  color:#232323;
+  -webkit-print-color-adjust:exact;
+  print-color-adjust:exact;
+}
+
+:root{
+  --green:#86CA28;
+  --black:#232323;
+  --purple:#700962;
+  --paper:#F2F0EA;
+  --ink:#232323;
+  --white:#FAFAF7;
+  --yellow:#F4E542;
+  --magenta:#CA2886;
+}
+
+.sheet{
+  width:794px; height:1123px;
+  margin:20px auto;
+  background:var(--white);
+  position:relative; overflow:hidden;
+  box-shadow:0 12px 40px rgba(0,0,0,.1);
+}
+
+/* ── HEADER ── */
+.sh{
+  height:52px;
+  background:var(--green);
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 40px;
+  font-family:'Inter',sans-serif; font-weight:800; font-size:12px;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--black);
+  flex-shrink:0;
+}
+
+/* ── FOOTER ── */
+.sf{
+  position:absolute; left:0; right:0; bottom:0;
+  height:44px;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 44px;
+  border-top:1px solid rgba(35,35,35,.1);
+  font-family:'Inter',sans-serif; font-size:11px; color:#aaa;
+}
+.dark .sf{ border-top-color:rgba(255,255,255,.08); color:rgba(255,255,255,.28); }
+.sf strong{ color:var(--green); font-weight:700; }
+
+/* ── BODY GENÉRICO ── */
+.body{
+  height:calc(1123px - 52px - 44px);
+  position:relative;
+  overflow:hidden;
+}
+
+/* ════════════════════════════════
+   PORTADA
+════════════════════════════════ */
+.body.cover{
+  background:var(--black);
+  padding:56px 60px 0;
+  display:flex; flex-direction:column; justify-content:space-between;
+}
+.body.cover::before{
+  content:''; position:absolute; top:-120px; right:-120px;
+  width:560px; height:560px; border-radius:50%;
+  background:radial-gradient(circle,rgba(134,202,40,.09) 0%,transparent 65%);
+  pointer-events:none;
+}
+.cover-eyebrow{
+  font-family:'Inter',sans-serif; font-weight:800; font-size:11px;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--green);
+}
+.cover-title{
+  font-family:'Josefin Sans',sans-serif; font-weight:900;
+  font-size:74px; line-height:.92; letter-spacing:-2.5px;
+  color:var(--white); margin-top:24px;
+}
+.cover-title em{ font-style:normal; color:var(--green); }
+.cover-subtitle{
+  font-family:'Lora',serif; font-style:italic; font-weight:500;
+  font-size:21px; line-height:1.55; color:rgba(255,255,255,.58);
+  max-width:540px; margin-top:20px;
+}
+.cover-index{ margin-top:32px; flex:1; }
+.cix{
+  display:flex; align-items:baseline; gap:20px;
+  padding:12px 0; border-top:1px solid rgba(255,255,255,.07);
+  font-family:'Inter',sans-serif;
+}
+.cix:last-child{ border-bottom:1px solid rgba(255,255,255,.07); }
+.cix-n{
+  font-family:'Josefin Sans',sans-serif; font-weight:700; font-size:22px;
+  color:var(--green); min-width:34px; flex-shrink:0;
+}
+.cix-t{ font-size:15px; font-weight:600; color:rgba(255,255,255,.85); }
+.cix-sub{ font-size:12px; font-weight:400; color:rgba(255,255,255,.4); margin-top:2px; }
+.cover-footer-row{
+  padding:20px 0 52px;
+  font-family:'Inter',sans-serif; font-weight:600; font-size:12px;
+  color:rgba(255,255,255,.28);
+  display:flex; justify-content:space-between;
+}
+
+/* ════════════════════════════════
+   PÁGINA INTRO
+════════════════════════════════ */
+.body.intro{
+  background:var(--paper);
+  padding:44px 60px 0;
+  display:flex; flex-direction:column;
+}
+.kicker{
+  font-family:'Inter',sans-serif; font-weight:800; font-size:11px;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--green);
+  margin-bottom:14px; display:flex; align-items:center; gap:12px;
+}
+.kicker::after{ content:''; flex:1; height:1px; background:rgba(134,202,40,.3); }
+.dark .kicker::after{ background:rgba(134,202,40,.18); }
+.page-title{
+  font-family:'Josefin Sans',sans-serif; font-weight:700;
+  font-size:42px; line-height:1; letter-spacing:-1px;
+  color:var(--black); margin-bottom:24px;
+}
+.dark .page-title{ color:var(--white); }
+.lead{
+  font-family:'Lora',serif; font-style:italic; font-weight:500;
+  font-size:19px; line-height:1.6; color:rgba(35,35,35,.72);
+  margin-bottom:28px; max-width:640px;
+}
+.dark .lead{ color:rgba(255,255,255,.6); }
+p.txt{
+  font-size:15px; line-height:1.7; color:#444; margin-bottom:14px;
+}
+.dark p.txt{ color:rgba(255,255,255,.65); }
+p.txt strong{ color:var(--black); font-weight:700; }
+.dark p.txt strong{ color:var(--white); }
+
+.callout{
+  background:var(--black); color:var(--white);
+  border-radius:14px; padding:22px 28px;
+  margin:20px 0;
+}
+.callout-label{
+  font-family:'Inter',sans-serif; font-weight:900; font-size:10px;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--green);
+  margin-bottom:8px;
+}
+.callout p{
+  font-size:15px; line-height:1.65; color:rgba(255,255,255,.82);
+}
+.callout p strong{ color:var(--green); font-weight:700; }
+
+.quote-box{
+  border-left:4px solid var(--green);
+  padding:18px 24px;
+  background:rgba(134,202,40,.06);
+  border-radius:0 12px 12px 0;
+  margin:20px 0;
+}
+.quote-box p{
+  font-family:'Lora',serif; font-style:italic;
+  font-size:18px; line-height:1.55; color:#2a2a2a;
+}
+.dark .quote-box{ background:rgba(134,202,40,.07); }
+.dark .quote-box p{ color:rgba(255,255,255,.82); }
+
+/* ════════════════════════════════
+   PÁGINA DE ERROR (1 por página)
+════════════════════════════════ */
+.body.error-page{
+  padding:0;
+  display:flex; flex-direction:column;
+}
+.error-header{
+  padding:32px 60px 24px;
+  border-bottom:2px solid rgba(35,35,35,.08);
+  display:flex; align-items:flex-start; gap:24px;
+}
+.error-num{
+  font-family:'Josefin Sans',sans-serif; font-weight:900;
+  font-size:96px; line-height:.82; letter-spacing:-4px;
+  color:var(--green); flex-shrink:0;
+}
+.error-meta{ padding-top:8px; }
+.error-tag{
+  font-family:'Inter',sans-serif; font-weight:800; font-size:10px;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--green);
+  margin-bottom:6px;
+}
+.error-title{
+  font-family:'Josefin Sans',sans-serif; font-weight:700;
+  font-size:38px; line-height:1.02; letter-spacing:-1px; color:var(--black);
+}
+.error-content{
+  padding:28px 60px 0;
+  display:flex; flex-direction:column; gap:0; flex:1;
+}
+.error-symptom{
+  font-family:'Lora',serif; font-style:italic; font-weight:500;
+  font-size:17px; line-height:1.6; color:rgba(35,35,35,.7);
+  margin-bottom:20px; padding-bottom:20px;
+  border-bottom:1.5px solid rgba(35,35,35,.08);
+}
+.error-block{ margin-bottom:18px; }
+.error-block-label{
+  font-family:'Inter',sans-serif; font-weight:800; font-size:10px;
+  letter-spacing:.2em; text-transform:uppercase;
+  margin-bottom:8px;
+}
+.label-por-que{ color:#CA2886; }
+.label-fix{ color:var(--green); }
+.label-ejemplo{ color:#2868CA; }
+.error-block p{
+  font-size:14px; line-height:1.65; color:#444;
+}
+
+.ex-grid{
+  display:grid; grid-template-columns:1fr 1fr; gap:10px;
+  margin-top:4px;
+}
+.ex-col{ padding:14px 16px; border-radius:10px; }
+.ex-col.mal{ background:#FEEEF6; border-top:3px solid var(--magenta); }
+.ex-col.bien{ background:rgba(134,202,40,.08); border-top:3px solid var(--green); }
+.ex-col-label{
+  font-family:'Inter',sans-serif; font-weight:900; font-size:10px;
+  letter-spacing:.15em; text-transform:uppercase; margin-bottom:6px;
+}
+.mal .ex-col-label{ color:var(--magenta); }
+.bien .ex-col-label{ color:#5a8f1c; }
+.ex-col p{ font-size:13px; line-height:1.5; color:#444; font-style:italic; }
+
+.fix-strip{
+  background:var(--black); color:var(--white);
+  border-radius:12px; padding:18px 22px;
+  display:flex; flex-direction:column; gap:6px;
+  margin-top:auto; margin-bottom:44px;
+}
+.fix-strip-label{
+  font-family:'Inter',sans-serif; font-weight:900; font-size:10px;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--green);
+}
+.fix-strip p{
+  font-family:'Josefin Sans',sans-serif; font-weight:700;
+  font-size:22px; line-height:1.1; letter-spacing:-.5px; color:var(--white);
+}
+
+/* ════════════════════════════════
+   PÁGINA SWITCH MENTAL
+════════════════════════════════ */
+.body.switch{
+  background:var(--black);
+  padding:44px 60px 0;
+  display:flex; flex-direction:column;
+}
+.switch-compare{
+  display:grid; grid-template-columns:1fr 48px 1fr;
+  gap:0; align-items:stretch; margin:24px 0; flex:1;
+}
+.sw-col{
+  display:flex; flex-direction:column; gap:14px; padding:24px;
+  border-radius:14px;
+}
+.sw-col.antes{ background:rgba(255,255,255,.04); border:1.5px solid rgba(255,255,255,.08); }
+.sw-col.despues{ background:rgba(134,202,40,.08); border:1.5px solid rgba(134,202,40,.2); }
+.sw-col-label{
+  font-family:'Inter',sans-serif; font-weight:900; font-size:10px;
+  letter-spacing:.2em; text-transform:uppercase;
+}
+.antes .sw-col-label{ color:rgba(255,255,255,.35); }
+.despues .sw-col-label{ color:var(--green); }
+.sw-col-title{
+  font-family:'Josefin Sans',sans-serif; font-weight:700;
+  font-size:26px; line-height:1.05; letter-spacing:-.5px;
+}
+.antes .sw-col-title{ color:rgba(255,255,255,.6); }
+.despues .sw-col-title{ color:var(--white); }
+.sw-item{
+  font-size:13px; line-height:1.5; padding:10px 0;
+  border-top:1px solid rgba(255,255,255,.06);
+}
+.antes .sw-item{ color:rgba(255,255,255,.45); }
+.despues .sw-item{ color:rgba(255,255,255,.75); }
+.sw-item strong{
+  display:block; font-family:'Inter',sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.08em; text-transform:uppercase; margin-bottom:3px;
+}
+.antes .sw-item strong{ color:rgba(255,255,255,.3); }
+.despues .sw-item strong{ color:var(--green); }
+.sw-arrow{
+  display:flex; align-items:center; justify-content:center;
+  font-size:28px; color:var(--green); font-weight:900;
+}
+.switch-rule{
+  border-top:1px solid rgba(255,255,255,.07);
+  padding:18px 0 52px;
+  font-family:'Lora',serif; font-style:italic; font-size:17px;
+  line-height:1.55; color:rgba(255,255,255,.55); text-align:center;
+}
+.switch-rule em{ font-style:normal; color:var(--green); }
+
+/* ════════════════════════════════
+   PLANTILLA DE BRIEFING
+════════════════════════════════ */
+.body.template{
+  background:var(--paper);
+  padding:44px 60px 0;
+  display:flex; flex-direction:column;
+}
+.brief-block{
+  border:1.5px solid rgba(35,35,35,.12); border-radius:12px;
+  padding:18px 22px; margin-bottom:12px;
+  background:var(--white);
+}
+.brief-block-title{
+  font-family:'Josefin Sans',sans-serif; font-weight:700;
+  font-size:16px; letter-spacing:-.3px; color:var(--black);
+  margin-bottom:4px; display:flex; align-items:center; gap:10px;
+}
+.brief-block-title .bnum{
+  width:22px; height:22px; border-radius:50%;
+  background:var(--green); color:var(--black);
+  display:inline-flex; align-items:center; justify-content:center;
+  font-family:'Inter',sans-serif; font-weight:900; font-size:11px;
+  flex-shrink:0;
+}
+.brief-block-hint{
+  font-size:12px; color:#888; line-height:1.45; margin-bottom:10px;
+  padding-left:32px;
+}
+.brief-line{
+  height:28px; border-bottom:1.5px solid rgba(35,35,35,.1);
+  margin:0 0 4px 32px;
+}
+.brief-line.short{ width:50%; }
+.brief-line.medium{ width:75%; }
+.brief-checklist{ padding-left:32px; display:flex; flex-direction:column; gap:6px; margin-top:4px; }
+.bcheck{
+  display:flex; align-items:center; gap:10px;
+  font-size:13px; color:#555; line-height:1.4;
+}
+.bcheck .box{
+  width:14px; height:14px; border:1.5px solid rgba(35,35,35,.25);
+  border-radius:3px; flex-shrink:0;
+}
+
+.template-footer{
+  margin-top:auto; padding:24px 0 64px;
+  border-top:1px solid rgba(35,35,35,.1);
+  font-family:'Lora',serif; font-style:italic; font-size:14px;
+  line-height:1.5; color:rgba(35,35,35,.5);
+}
+.template-footer strong{ color:var(--green); font-style:normal; font-weight:700; }
+
+@media print{
+  body{ background:white; }
+  .sheet{ margin:0; box-shadow:none; }
+  @page{ size:A4; margin:0; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ PORTADA ═══════════════ -->
+<div class="sheet">
+  <div class="sh">
+    <span>Mario Ruiz · Globalizame</span>
+    <span>Guía de Delegación</span>
+  </div>
+  <div class="body cover">
+    <div>
+      <div class="cover-eyebrow">Delegación efectiva</div>
+      <div class="cover-title">
+        La guía para<br>
+        dejar de <em>hacerlo</em><br>
+        todo tú.
+      </div>
+      <div class="cover-subtitle">
+        Los 5 errores que comete el 90% de empresarios.<br>
+        Y el único cambio que lo arregla todo.
+      </div>
+    </div>
+    <div class="cover-index">
+      <div class="cix">
+        <div class="cix-n">01</div>
+        <div><div class="cix-t">Por qué delegas mal sin saberlo</div><div class="cix-sub">El problema de raíz</div></div>
+      </div>
+      <div class="cix">
+        <div class="cix-n">02</div>
+        <div><div class="cix-t">Los 5 errores en profundidad</div><div class="cix-sub">Diagnóstico + fix para cada uno</div></div>
+      </div>
+      <div class="cix">
+        <div class="cix-n">03</div>
+        <div><div class="cix-t">El switch mental que lo cambia todo</div><div class="cix-sub">De delegar el proceso a delegar el resultado</div></div>
+      </div>
+      <div class="cix">
+        <div class="cix-n">04</div>
+        <div><div class="cix-t">La plantilla de briefing</div><div class="cix-sub">Para usar hoy con tu equipo</div></div>
+      </div>
+    </div>
+    <div class="cover-footer-row">
+      <span>Mario Ruiz · globalizame.com</span>
+    </div>
+  </div>
+  <div class="sf"><span><strong>Mario Ruiz</strong> · globalizame.com</span><span>00 / 07</span></div>
+</div>
+
+<!-- ═══════════════ PÁGINA 1 — EL PROBLEMA REAL ═══════════════ -->
+<div class="sheet">
+  <div class="sh">
+    <span>El problema de raíz</span>
+    <span>La guía de delegación</span>
+  </div>
+  <div class="body intro">
+    <div class="kicker">Por qué delegas mal sin saberlo</div>
+    <div class="page-title">No es tu equipo.<br>Eres tú.</div>
+    <div class="lead">
+      Llevas años creyendo que delegas. En realidad, llevas años repartiendo tareas y vigilando que se hagan a tu manera. Eso no es delegar. Es clonarte mal.
+    </div>
+    <p class="txt">La diferencia entre un dueño atrapado en su empresa y uno que puede salir una semana sin que todo explote no está en el equipo que tienen. Está en cómo les encargan las cosas.</p>
+    <p class="txt">El que delega mal <strong>explica el cómo</strong>. La persona aprende a imitar sus pasos. Cuando el dueño no está, se paraliza. El que delega bien <strong>define el qué y el cuándo</strong>. La persona encuentra su camino. El negocio funciona sin él.</p>
+    <div class="quote-box">
+      <p>"El problema no es que tu equipo sea malo. El problema es que llevas años enseñándoles a depender de ti."</p>
+    </div>
+    <p class="txt">Este documento no va de motivación. Va de mecánica. Los 5 errores que siguen son los que aparecen, sin excepción, en cualquier empresa donde el dueño trabaja más horas de las que debería. Identifica los tuyos. Aplica el fix. Mide la diferencia.</p>
+    <div class="callout">
+      <div class="callout-label">Antes de continuar</div>
+      <p>Piensa en la última tarea que delegaste esta semana. <strong>¿Explicaste cómo hacerla o definiste qué necesitabas?</strong> Si la respuesta te incomoda, estás en el lugar correcto.</p>
+    </div>
+  </div>
+  <div class="sf"><span><strong>Mario Ruiz</strong> · globalizame.com</span><span>01 / 07</span></div>
+</div>
+
+<!-- ═══════════════ PÁGINA 2 — ERROR 1 ═══════════════ -->
+<div class="sheet">
+  <div class="sh">
+    <span>Error 01</span>
+    <span>La guía de delegación</span>
+  </div>
+  <div class="body error-page">
+    <div class="error-header">
+      <div class="error-num">01</div>
+      <div class="error-meta">
+        <div class="error-tag">Error más común</div>
+        <div class="error-title">Explicas el cómo.<br>No el qué.</div>
+      </div>
+    </div>
+    <div class="error-content">
+      <div class="error-symptom">
+        Una hora explicando. Paso a paso. "Primero esto, luego esto, ojo con este campo." La persona asiente. Lo hace exactamente como le dijiste. Y aun así, el resultado no es lo que necesitabas.
+      </div>
+      <div class="error-block">
+        <div class="error-block-label label-por-que">Por qué pasa</div>
+        <p>Cuando tienes experiencia en algo, tu cerebro piensa en procesos. Es natural. El problema es que tu proceso es tuyo. Si la persona cambia de herramienta, de orden o de método, se bloquea. No sabe si lo está haciendo bien porque nunca le dijiste qué significaba "bien".</p>
+      </div>
+      <div class="error-block">
+        <div class="error-block-label label-ejemplo">Cómo se ve en la práctica</div>
+        <div class="ex-grid">
+          <div class="ex-col mal">
+            <div class="ex-col-label">Mal</div>
+            <p>"Entra en el programa, abre el módulo de contactos, rellena los campos así, y cuando termines me mandas el archivo en Excel con estas columnas..."</p>
+          </div>
+          <div class="ex-col bien">
+            <div class="ex-col-label">Bien</div>
+            <p>"El lunes a las 9 necesito 10 contactos cualificados con empresa, cargo y fecha del último contacto. El formato que prefieras."</p>
+          </div>
+        </div>
+      </div>
+      <div class="fix-strip">
+        <div class="fix-strip-label">El fix</div>
+        <p>Antes de encargar algo, escribe en una frase qué resultado exacto necesitas, para cuándo, y cómo sabrás que está bien hecho. Si no puedes, el encargo no está suficientemente claro.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sf"><span><strong>Mario Ruiz</strong> · globalizame.com</span><span>02 / 07</span></div>
+</div>
+
+<!-- ═══════════════ PÁGINA 3 — ERROR 2 ═══════════════ -->
+<div class="sheet">
+  <div class="sh">
+    <span>Error 02</span>
+    <span>La guía de delegación</span>
+  </div>
+  <div class="body error-page">
+    <div class="error-header">
+      <div class="error-num">02</div>
+      <div class="error-meta">
+        <div class="error-tag">El microgestor bien intencionado</div>
+        <div class="error-title">Revisas cada<br>paso intermedio.</div>
+      </div>
+    </div>
+    <div class="error-content">
+      <div class="error-symptom">
+        Preguntas cómo va a las dos horas. Corriges a mitad. Mandas un audio con "ojo que quizás conviene hacerlo así". Crees que estás ayudando. En realidad, le estás diciendo: no confío en que llegues solo.
+      </div>
+      <div class="error-block">
+        <div class="error-block-label label-por-que">Por qué pasa</div>
+        <p>La mayoría de dueños tienen ansiedad por el resultado. Es lógico: es su negocio, su dinero, su reputación. Pero esa ansiedad, trasladada al equipo, genera dependencia. La persona deja de pensar por sí misma porque sabe que tú vas a aparecer con la solución.</p>
+      </div>
+      <div class="error-block">
+        <div class="error-block-label label-ejemplo">Cómo se ve en la práctica</div>
+        <div class="ex-grid">
+          <div class="ex-col mal">
+            <div class="ex-col-label">Mal</div>
+            <p>"¿Ya tienes algo? ¿Cómo lo estás enfocando? Mándame lo que llevas aunque sea borrador para echarle un ojo."</p>
+          </div>
+          <div class="ex-col bien">
+            <div class="ex-col-label">Bien</div>
+            <p>"El jueves a las 12 me mandas la versión final. Si necesitas algo antes de eso, me lo dices tú."</p>
+          </div>
+        </div>
+      </div>
+      <div class="fix-strip">
+        <div class="fix-strip-label">El fix</div>
+        <p>Define un único punto de control: la entrega final. Fecha, hora, formato, criterio de aceptación. Luego desaparece. Si surge un problema, que te lo digan ellos, no al revés.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sf"><span><strong>Mario Ruiz</strong> · globalizame.com</span><span>03 / 07</span></div>
+</div>
+
+<!-- ═══════════════ PÁGINA 4 — ERROR 3 ═══════════════ -->
+<div class="sheet">
+  <div class="sh">
+    <span>Error 03</span>
+    <span>La guía de delegación</span>
+  </div>
+  <div class="body error-page">
+    <div class="error-header">
+      <div class="error-num">03</div>
+      <div class="error-meta">
+        <div class="error-tag">El rescatador en jefe</div>
+        <div class="error-title">Rescatas la tarea<br>cuando va mal.</div>
+      </div>
+    </div>
+    <div class="error-content">
+      <div class="error-symptom">
+        Ves que no lo está haciendo como tú lo harías. Intervienes. Lo terminas tú "para que salga bien". La persona aprende que, si espera lo suficiente, tú lo haces. Cada rescate mata una delegación futura.
+      </div>
+      <div class="error-block">
+        <div class="error-block-label label-por-que">Por qué pasa</div>
+        <p>Tienes estándares altos. Eso está bien. El problema es que intervenir en el proceso (no en el resultado) le quita a la persona la oportunidad de aprender a llegar sola. Y te ata a ti a tareas que no deberías tocar.</p>
+      </div>
+      <div class="error-block">
+        <div class="error-block-label label-ejemplo">Cómo se ve en la práctica</div>
+        <div class="ex-grid">
+          <div class="ex-col mal">
+            <div class="ex-col-label">Mal</div>
+            <p>"Lo hago yo más rápido. Total, en diez minutos lo tengo. Ya lo retomo yo que está tardando demasiado."</p>
+          </div>
+          <div class="ex-col bien">
+            <div class="ex-col-label">Bien</div>
+            <p>"El camino es tuyo. Si el resultado llega en fecha y con el estándar acordado, el cómo no me importa."</p>
+          </div>
+        </div>
+      </div>
+      <div class="fix-strip">
+        <div class="fix-strip-label">El fix</div>
+        <p>Distingue entre intervenir en el proceso (siempre malo) e intervenir en el resultado (solo si no cumple el criterio acordado). El proceso es suyo. El resultado es el contrato.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sf"><span><strong>Mario Ruiz</strong> · globalizame.com</span><span>04 / 07</span></div>
+</div>
+
+<!-- ═══════════════ PÁGINA 5 — ERROR 4 ═══════════════ -->
+<div class="sheet">
+  <div class="sh">
+    <span>Error 04</span>
+    <span>La guía de delegación</span>
+  </div>
+  <div class="body error-page">
+    <div class="error-header">
+      <div class="error-num">04</div>
+      <div class="error-meta">
+        <div class="error-tag">El estándar que se erosiona</div>
+        <div class="error-title">Aceptas "casi"<br>cuando pediste "exacto".</div>
+      </div>
+    </div>
+    <div class="error-content">
+      <div class="error-symptom">
+        Te entregan el 80% de lo que pediste. Lo aceptas para no montar un drama. La próxima vez entregarán el 70%. El estándar que toleras hoy es el techo que tu equipo alcanzará mañana.
+      </div>
+      <div class="error-block">
+        <div class="error-block-label label-por-que">Por qué pasa</div>
+        <p>Devolver trabajo parece agresivo. No lo es. Lo agresivo es aceptar un estándar bajo y después quejarte de que tu equipo no da la talla. El equipo entrega lo que le enseñas que es aceptable. Si aceptas el 80%, el 80% es el nuevo 100%.</p>
+      </div>
+      <div class="error-block">
+        <div class="error-block-label label-ejemplo">Cómo se ve en la práctica</div>
+        <div class="ex-grid">
+          <div class="ex-col mal">
+            <div class="ex-col-label">Mal</div>
+            <p>"Bueno, con esto me apaño, no importa..." (y lo corriges tú en silencio esa misma noche)</p>
+          </div>
+          <div class="ex-col bien">
+            <div class="ex-col-label">Bien</div>
+            <p>"Esto no cumple X e Y de lo que acordamos. Te lo devuelvo. Necesito la versión correcta el jueves."</p>
+          </div>
+        </div>
+      </div>
+      <div class="fix-strip">
+        <div class="fix-strip-label">El fix</div>
+        <p>Devuelve el trabajo que no cumple el criterio acordado. Sin dramas, sin discursos. Solo: "esto no llega al estándar que definimos, te lo devuelvo con los puntos concretos a corregir".</p>
+      </div>
+    </div>
+  </div>
+  <div class="sf"><span><strong>Mario Ruiz</strong> · globalizame.com</span><span>05 / 07</span></div>
+</div>
+
+<!-- ═══════════════ PÁGINA 6 — ERROR 5 ═══════════════ -->
+<div class="sheet">
+  <div class="sh">
+    <span>Error 05</span>
+    <span>La guía de delegación</span>
+  </div>
+  <div class="body error-page">
+    <div class="error-header">
+      <div class="error-num">05</div>
+      <div class="error-meta">
+        <div class="error-tag">La delegación sin contrato</div>
+        <div class="error-title">No defines cuándo<br>ni cómo medir.</div>
+      </div>
+    </div>
+    <div class="error-content">
+      <div class="error-symptom">
+        Delegas sin fecha. Sin métrica. Sin criterio de éxito. Cada uno interpreta "bien hecho" a su manera. Y cuando sale mal, nadie sabe exactamente qué falló ni cómo evitarlo la próxima vez.
+      </div>
+      <div class="error-block">
+        <div class="error-block-label label-por-que">Por qué pasa</div>
+        <p>Definir criterios de éxito requiere pensar antes de encargar. Muchos dueños van tan rápido que encargan sobre la marcha, con instrucciones vagas. El resultado es que el equipo interpreta, improvisa y, casi siempre, se queda corto respecto a algo que nunca se dijo.</p>
+      </div>
+      <div class="error-block">
+        <div class="error-block-label label-ejemplo">Los tres elementos que no pueden faltar</div>
+        <div class="ex-grid">
+          <div class="ex-col bien" style="background:rgba(134,202,40,.06);border-top:3px solid var(--green);">
+            <div class="ex-col-label" style="color:#5a8f1c;">Cuándo</div>
+            <p>Fecha y hora exacta. No "para cuando puedas" ni "esta semana". Día y hora.</p>
+          </div>
+          <div class="ex-col bien" style="background:rgba(134,202,40,.06);border-top:3px solid var(--green);">
+            <div class="ex-col-label" style="color:#5a8f1c;">Cómo se mide</div>
+            <p>El número, el documento o el resultado concreto que demuestra que está hecho.</p>
+          </div>
+        </div>
+      </div>
+      <div class="fix-strip">
+        <div class="fix-strip-label">El fix</div>
+        <p>Antes de encargar algo, responde estas tres preguntas: ¿Cuándo exactamente? ¿Qué entregable concreto? ¿Qué es el mínimo aceptable? Si no tienes respuesta para las tres, no encargues todavía.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sf"><span><strong>Mario Ruiz</strong> · globalizame.com</span><span>06 / 07</span></div>
+</div>
+
+<!-- ═══════════════ PÁGINA 7 — EL SWITCH MENTAL ═══════════════ -->
+<div class="sheet">
+  <div class="sh">
+    <span>El switch mental</span>
+    <span>La guía de delegación</span>
+  </div>
+  <div class="body switch">
+    <div class="kicker" style="color:var(--green);">El único cambio que lo arregla todo</div>
+    <div class="page-title" style="color:var(--white);">De delegar el proceso<br>a delegar el resultado.</div>
+    <div class="switch-compare">
+      <div class="sw-col antes">
+        <div class="sw-col-label">Antes</div>
+        <div class="sw-col-title">Delegas el proceso.</div>
+        <div class="sw-item">
+          <strong>Cómo encargas</strong>
+          "Hazlo así, paso a paso..."
+        </div>
+        <div class="sw-item">
+          <strong>Cómo supervisas</strong>
+          Preguntas cada dos horas cómo va.
+        </div>
+        <div class="sw-item">
+          <strong>Qué pasa si algo va mal</strong>
+          Intervienes. Lo terminas tú.
+        </div>
+        <div class="sw-item">
+          <strong>Resultado</strong>
+          Tu equipo aprende a depender de ti.
+        </div>
+      </div>
+      <div class="sw-arrow">→</div>
+      <div class="sw-col despues">
+        <div class="sw-col-label">Después</div>
+        <div class="sw-col-title">Delegas el resultado.</div>
+        <div class="sw-item">
+          <strong>Cómo encargas</strong>
+          "El jueves a las 12 necesito esto, con este estándar."
+        </div>
+        <div class="sw-item">
+          <strong>Cómo supervisas</strong>
+          No supervisas. Solo revisas en la entrega.
+        </div>
+        <div class="sw-item">
+          <strong>Qué pasa si algo va mal</strong>
+          Devuelves con claridad. Sin intervenir.
+        </div>
+        <div class="sw-item">
+          <strong>Resultado</strong>
+          Tu equipo aprende a llegar solo.
+        </div>
+      </div>
+    </div>
+    <div class="switch-rule">
+      "Si tienes que explicar el cómo, no has delegado.<br>Has subcontratado tu forma de hacer las cosas. <em>Eso no funciona.</em>"
+    </div>
+  </div>
+  <div class="sf dark"><span><strong style="color:var(--green);">Mario Ruiz</strong> · globalizame.com</span><span style="color:rgba(255,255,255,.28);">07 / 07</span></div>
+</div>
+
+<!-- ═══════════════ PÁGINA 8 — PLANTILLA BRIEFING ═══════════════ -->
+<div class="sheet">
+  <div class="sh">
+    <span>Plantilla de briefing</span>
+    <span>La guía de delegación</span>
+  </div>
+  <div class="body template">
+    <div class="kicker">Para usar hoy con tu equipo</div>
+    <div class="page-title">El briefing de<br>delegación en 5 pasos.</div>
+
+    <div class="brief-block">
+      <div class="brief-block-title"><span class="bnum">1</span> Qué necesito exactamente</div>
+      <div class="brief-block-hint">Descríbelo en una frase. Si no cabe en una frase, no está claro todavía.</div>
+      <div class="brief-line medium"></div>
+      <div class="brief-line"></div>
+    </div>
+
+    <div class="brief-block">
+      <div class="brief-block-title"><span class="bnum">2</span> Cuándo y en qué formato</div>
+      <div class="brief-block-hint">Fecha y hora exacta. Tipo de entregable (documento, mensaje, llamada, etc.)</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding-left:32px;">
+        <div><div style="font-size:11px;color:#aaa;margin-bottom:4px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Fecha límite</div><div class="brief-line"></div></div>
+        <div><div style="font-size:11px;color:#aaa;margin-bottom:4px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Formato</div><div class="brief-line"></div></div>
+      </div>
+    </div>
+
+    <div class="brief-block">
+      <div class="brief-block-title"><span class="bnum">3</span> Cómo sabremos que está bien</div>
+      <div class="brief-block-hint">El criterio mínimo de aceptación. Qué tiene que tener sí o sí.</div>
+      <div class="brief-checklist">
+        <div class="bcheck"><div class="box"></div><span>·</span></div>
+        <div class="bcheck"><div class="box"></div><span>·</span></div>
+        <div class="bcheck"><div class="box"></div><span>·</span></div>
+      </div>
+    </div>
+
+    <div class="brief-block">
+      <div class="brief-block-title"><span class="bnum">4</span> Qué no hay que hacer (si aplica)</div>
+      <div class="brief-block-hint">Restricciones, cosas que no queremos que pasen, bordes del encargo.</div>
+      <div class="brief-line" style="margin-left:32px;"></div>
+      <div class="brief-line medium" style="margin-left:32px;"></div>
+    </div>
+
+    <div class="brief-block">
+      <div class="brief-block-title"><span class="bnum">5</span> Si surge un problema</div>
+      <div class="brief-block-hint">Qué hacer si algo falla antes de la entrega. Cómo y cuándo avisarme.</div>
+      <div class="brief-line" style="margin-left:32px;"></div>
+    </div>
+
+    <div class="template-footer">
+      Usa esta plantilla antes de cada encargo. En 3 meses, <strong>tu equipo sabrá qué preguntar</strong> sin que se la des — porque habrán interiorizado qué significa una delegación bien hecha.
+    </div>
+  </div>
+  <div class="sf"><span><strong>Mario Ruiz</strong> · globalizame.com</span><span>Bonus</span></div>
+</div>
+
+</body>
+</html>

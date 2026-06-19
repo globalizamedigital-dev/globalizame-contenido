@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>RELOJ · El que contesta primero se queda el cliente — Globalizame</title>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{ --green:#86CA28; --green-deep:#6AA81F; --black:#1A1A1A; --paper:#F2F0EA; --ink:#232323; --white:#FAFAF7; --yellow:#F4E542; }
+  *{ box-sizing: border-box; }
+  html,body{ margin:0; padding:0; background:#e8e6df; color:var(--ink); font-family:'Inter',sans-serif; }
+  .sheet{ width:794px; height:1123px; margin:16px auto; background:white; position:relative; overflow:hidden; box-shadow: 0 10px 30px rgba(0,0,0,.12); page-break-after:always; break-after:page; }
+  .sheet:last-child{ page-break-after:auto; }
+  .header{ height:52px; background: var(--green); display:flex; align-items:center; justify-content:space-between; padding:0 32px; color:var(--black); font-weight:800; font-size:13px; letter-spacing:.18em; text-transform:uppercase; }
+  .footer{ position:absolute; left:0; right:0; bottom:0; padding:16px 32px; height:40px; border-top:1px solid rgba(26,26,26,.1); display:flex; justify-content:space-between; align-items:center; font-size:11.5px; opacity:.6; }
+
+  .portada .body{ padding:34px 56px; background:var(--paper); height: calc(1123px - 52px - 40px); overflow:hidden; }
+  .tag{ display:inline-block; padding:5px 12px; border-radius:999px; background:var(--black); color:var(--green); font-weight:800; font-size:11px; letter-spacing:.2em; text-transform:uppercase; margin-bottom:14px; }
+  .portada h1{ font-family:'Josefin Sans',sans-serif; font-weight:700; font-size:52px; line-height:.95; letter-spacing:-.025em; margin:0; }
+  .portada h1 em{ font-style:normal; color:var(--green-deep); }
+  .lede{ font-weight:500; font-size:16px; line-height:1.45; opacity:.85; margin:14px 0 0; max-width:620px; }
+  .quote{ font-family:'Lora',serif; font-style:italic; font-weight:600; font-size:17px; line-height:1.4; color:var(--black); background:var(--green); padding:14px 18px; margin:18px 0 0; border-radius:12px; max-width:620px; }
+  .index{ margin-top:20px; }
+  .index h2{ font-weight:800; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--green-deep); margin:0 0 10px; }
+  .item{ display:grid; grid-template-columns:48px 1fr auto; gap:16px; align-items:baseline; padding:10px 0; border-top:2px solid rgba(26,26,26,.1); }
+  .item:last-of-type{ border-bottom:2px solid rgba(26,26,26,.1); }
+  .item .n{ font-family:'Josefin Sans',sans-serif; font-weight:700; font-size:28px; color:var(--green-deep); }
+  .item .t{ font-family:'Josefin Sans',sans-serif; font-weight:700; font-size:21px; line-height:1.1; }
+  .item .t small{ display:block; font-family:'Inter',sans-serif; font-weight:500; font-size:12.5px; line-height:1.35; opacity:.65; margin-top:3px; }
+  .item .chip{ font-weight:700; font-size:10.5px; padding:3px 9px; border-radius:999px; background:var(--black); color:var(--green); letter-spacing:.12em; text-transform:uppercase; }
+  .how{ margin-top:18px; padding:14px 18px; background:var(--ink); color:var(--white); border-radius:12px; }
+  .how h3{ font-weight:800; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--green); margin:0 0 5px; }
+  .how p{ margin:0; font-size:13px; line-height:1.5; opacity:.85; }
+  .how strong{ color:var(--green); }
+
+  .content .body{ padding:28px 48px 56px; height: calc(1123px - 52px - 40px); overflow:hidden; }
+  .content h1{ font-family:'Josefin Sans',sans-serif; font-weight:700; font-size:38px; line-height:1; margin:0 0 6px; letter-spacing:-.02em; }
+  .content h1 em{ font-style:normal; color:var(--green-deep); }
+  .sub{ font-size:13px; opacity:.75; max-width:620px; line-height:1.45; margin-bottom:16px; }
+
+  .sec-title{ font-family:'Josefin Sans',sans-serif; font-weight:700; font-size:19px; margin:14px 0 8px; display:flex; align-items:center; gap:10px; }
+  .sec-title .n{ width:24px; height:24px; border-radius:50%; background:var(--black); color:var(--green); display:inline-flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; }
+
+  p.txt{ font-size:12.5px; line-height:1.55; margin:6px 0; }
+  p.txt strong{ color:var(--black); }
+
+  .callout{ background:var(--black); color:var(--white); border-radius:12px; padding:14px 18px; font-size:12.5px; line-height:1.5; margin:10px 0; }
+  .callout h3{ color:var(--green); font-size:11px; letter-spacing:.2em; text-transform:uppercase; margin:0 0 5px; font-weight:800; }
+  .callout strong{ color:var(--green); }
+
+  .calc{ display:grid; grid-template-columns: 1fr auto; gap:10px; align-items:center; background:var(--paper); border-radius:12px; padding:14px 18px; font-size:13px; margin:6px 0; }
+  .calc .k{ font-weight:600; }
+  .calc .v{ font-family:'Josefin Sans',sans-serif; font-weight:700; font-size:22px; color:var(--green-deep); }
+  .calc.total{ background:var(--black); color:var(--white); }
+  .calc.total .v{ color:var(--green); font-size:26px; }
+
+  .q{ display:flex; align-items:flex-start; gap:10px; font-size:13px; line-height:1.45; padding:4px 0; }
+  .q .box{ flex:0 0 16px; height:16px; border:2px solid var(--ink); border-radius:3px; margin-top:1px; }
+  .signal{ border-top:2px solid rgba(26,26,26,.12); padding:10px 0; }
+  .signal:last-of-type{ border-bottom:2px solid rgba(26,26,26,.12); }
+  .signal h2{ font-family:'Josefin Sans',sans-serif; font-weight:700; font-size:19px; margin:0 0 6px; display:flex; align-items:center; gap:10px; }
+  .signal h2 .n{ width:26px; height:26px; border-radius:50%; background:var(--black); color:var(--green); display:inline-flex; align-items:center; justify-content:center; font-size:13px; font-weight:800; }
+
+  .rule{ display:grid; grid-template-columns: 44px 1fr; gap:14px; padding:10px 0; border-top:2px solid rgba(0,0,0,.1); }
+  .rule:last-of-type{ border-bottom:2px solid rgba(0,0,0,.1); }
+  .rule .n{ font-family:'Josefin Sans',sans-serif; font-weight:700; font-size:30px; color:var(--green-deep); line-height:1; }
+  .rule h3{ font-family:'Josefin Sans',sans-serif; font-size:18px; margin:0 0 3px; line-height:1.1; }
+  .rule p{ margin:0; font-size:12.5px; line-height:1.5; }
+  .rule p strong{ color:var(--black); }
+
+  .week{ margin-top:8px; border-top:2px solid rgba(0,0,0,.12); padding-top:8px; }
+  .week:last-of-type{ border-bottom:2px solid rgba(0,0,0,.12); padding-bottom:8px; }
+  .week-head{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom:4px; }
+  .week-head h2{ font-family:'Josefin Sans',sans-serif; font-size:20px; margin:0; display:flex; align-items:center; gap:10px; }
+  .week-head h2 .label{ background:var(--black); color:var(--green); font-weight:800; font-size:10px; letter-spacing:.16em; text-transform:uppercase; padding:3px 9px; border-radius:999px; }
+  .week-head .goal{ font-size:10.5px; font-weight:700; color:var(--green-deep); text-transform:uppercase; letter-spacing:.1em; }
+  .task{ display:flex; align-items:flex-start; gap:10px; padding:3px 0; font-size:12.5px; line-height:1.4; }
+  .task .box{ flex:0 0 14px; height:14px; border:2px solid var(--ink); border-radius:3px; margin-top:2px; }
+  .win{ background:rgba(134,202,40,.15); border-left:4px solid var(--green); padding:6px 10px; font-size:12px; margin-top:4px; border-radius:0 8px 8px 0; }
+  .win strong{ color:var(--green-deep); }
+
+  .print-bar{ position:fixed; top:16px; right:16px; background:var(--black); color:var(--green); padding:10px 16px; border-radius:999px; font-weight:800; font-size:13px; letter-spacing:.1em; text-transform:uppercase; box-shadow: 0 8px 24px rgba(0,0,0,.25); z-index:9999; }
+  .print-bar kbd{ background:var(--green); color:var(--black); padding:2px 8px; border-radius:4px; margin:0 2px; }
+  .print-bar button{ background:var(--green); color:var(--black); border:0; padding:4px 10px; border-radius:4px; font-weight:800; cursor:pointer; margin-left:8px; font-size:12px; }
+  @media print{ body{background:white;} .sheet{margin:0; box-shadow:none;} .print-bar{display:none;} @page{ size:A4; margin:0; } }
+</style>
+</head>
+<body>
+
+<div class="print-bar">Guardar como PDF: <kbd>⌘P</kbd>/<kbd>Ctrl+P</kbd><button onclick="window.print()">Imprimir</button></div>
+
+<!-- PORTADA -->
+<div class="sheet portada">
+  <div class="header"><span>Mario Ruiz · AI Automation</span><span>El reloj del dueño</span></div>
+  <div class="body">
+    <h1>El <em>reloj</em> del dueño.<br>Deja de llegar tarde.</h1>
+    <p class="lede">Mientras lo piensas, un cliente tuyo ya ha firmado con otro. No porque el otro sea mejor. Porque contestó antes. Aquí tienes qué mirar, qué cambiar y qué dejar en paz.</p>
+    <div class="quote">"Si tardas más que tu competencia en decir hola, ya no importa lo bueno que seas. El cliente ya no está pensando en ti."</div>
+    <div class="index">
+      <h2>Lo que vas a encontrar</h2>
+      <div class="item"><div class="n">01</div><div class="t">Tu cuenta real del año<small>Cuánto dinero deja tu negocio encima de la mesa por no contestar a tiempo. Con tus números, no los míos.</small></div><div class="chip">5 min</div></div>
+      <div class="item"><div class="n">02</div><div class="t">Auditoría de tus cinco minutos<small>Las 12 preguntas que te dicen si tienes problema de velocidad o de otra cosa.</small></div><div class="chip">10 min</div></div>
+      <div class="item"><div class="n">03</div><div class="t">Las cuatro reglas del que contesta<small>Lo que hacen los negocios que se comen el mercado. Sin jerga, sin trucos raros.</small></div><div class="chip">lee</div></div>
+      <div class="item"><div class="n">04</div><div class="t">Plan de 14 días<small>Dos semanas, una hora al día. Al final, tu negocio no duerme aunque tú sí.</small></div><div class="chip">14 días</div></div>
+    </div>
+    <div class="how"><h3>Cómo usar esto</h3><p>Empieza por <strong>01</strong>. Haz la cuenta con tus cifras de verdad. Si lo que sale te molesta, pasa al <strong>02</strong>. Si lo que sale te molesta <strong>mucho</strong>, salta directo al <strong>04</strong> y ponle fecha de empezar.</p></div>
+  </div>
+  <div class="footer"><span><strong>Mario Ruiz</strong> · globalizame.com</span><span>00 / 04</span></div>
+</div>
+
+<!-- 01 · CUENTA -->
+<div class="sheet content">
+  <div class="header"><span>01 · Tu cuenta</span><span>Lo que cuesta llegar tarde</span></div>
+  <div class="body">
+    <h1>Hazte <em>tu cuenta</em>.<br>Sin trampa.</h1>
+    <p class="sub">No mía. Tuya. Coge un boli. Si te da pereza, ya sabes por qué no tienes el negocio que querías.</p>
+
+    <div class="sec-title"><span class="n">A</span> Cuatro números</div>
+    <div class="calc"><div class="k">Peticiones nuevas que entran al mes<br><span style="opacity:.6; font-size:11px;">formularios, llamadas perdidas, mensajes, lo que sea</span></div><div class="v">_______</div></div>
+    <div class="calc"><div class="k">De esas, ¿a cuántas respondes en menos de 1 hora?</div><div class="v">_______</div></div>
+    <div class="calc"><div class="k">Cuánto te deja un cliente medio<br><span style="opacity:.6; font-size:11px;">primera venta + lo que vuelve a comprar en un año</span></div><div class="v">_______</div></div>
+    <div class="calc"><div class="k">De cada 10 que contestas rápido, ¿cuántas cierran?</div><div class="v">_______</div></div>
+
+    <div class="sec-title"><span class="n">B</span> Lo que dejas encima de la mesa</div>
+    <p class="txt">De las que <strong>no contestas rápido</strong>, la mayoría ya se ha ido a otro. No porque seas malo. Porque el otro fue antes.</p>
+    <p class="txt">Multiplica: <strong>(peticiones no contestadas a tiempo) × (tasa de cierre tuya) × (ticket medio) × 12 meses</strong>. Ese número es lo que te cuesta al año llegar tarde.</p>
+
+    <div class="calc total"><div class="k">Mi número es:</div><div class="v">_______ € / año</div></div>
+
+    <div class="callout">
+      <h3>Si te sale poco</h3>
+      <p>Repasa. Seguramente estás contando solo los que sí llegaron a ti. Los que no te llamaron porque otro ya les cogió el teléfono <strong>no aparecen en tus números</strong>. Nunca. Pero existen.</p>
+    </div>
+    <div class="callout" style="background:var(--yellow); color:var(--black);">
+      <h3 style="color:var(--black);">Si te sale mucho</h3>
+      <p style="opacity:1;">Respira. La buena noticia es que eso se arregla. La mala es que cada día que no lo arreglas, esa cifra sigue corriendo. <strong style="color:var(--black); text-decoration:underline;">Sigue al 02.</strong></p>
+    </div>
+  </div>
+  <div class="footer"><span>Mario Ruiz · globalizame.com</span><span>01 / 04</span></div>
+</div>
+
+<!-- 02 · AUDITORÍA -->
+<div class="sheet content">
+  <div class="header"><span>02 · Auditoría</span><span>Tus cinco minutos</span></div>
+  <div class="body">
+    <h1>¿Tienes problema<br>de <em>velocidad</em>?</h1>
+    <p class="sub">Marca lo que te pasa. Honesto, tú contigo. Si marcas 7 o más, lo tuyo no es falta de clientes. Es que se te escapan.</p>
+
+    <div class="signal"><h2><span class="n">1</span> El teléfono</h2>
+      <div class="q"><div class="box"></div>Hay llamadas perdidas que ves por la tarde y no devuelves.</div>
+      <div class="q"><div class="box"></div>No sabes quién te llamó anteayer fuera de horario.</div>
+      <div class="q"><div class="box"></div>Si tú estás reunido, el móvil del negocio no lo coge nadie.</div>
+    </div>
+    <div class="signal"><h2><span class="n">2</span> Los formularios y mensajes</h2>
+      <div class="q"><div class="box"></div>Un mensaje que entra el viernes por la noche se contesta el lunes.</div>
+      <div class="q"><div class="box"></div>Algún cliente te ha escrito algo como "nadie me contestó".</div>
+      <div class="q"><div class="box"></div>No sabes cuántos formularios entraron la semana pasada.</div>
+    </div>
+    <div class="signal"><h2><span class="n">3</span> El equipo</h2>
+      <div class="q"><div class="box"></div>Si no estás tú, nadie sabe qué precio decir.</div>
+      <div class="q"><div class="box"></div>Hay preguntas de clientes que solo sabes contestar tú.</div>
+      <div class="q"><div class="box"></div>Cuando delegas responder, tienes que revisarlo todo.</div>
+    </div>
+    <div class="signal"><h2><span class="n">4</span> Tu cabeza</h2>
+      <div class="q"><div class="box"></div>Piensas en el trabajo durante la cena. Por si acaso.</div>
+      <div class="q"><div class="box"></div>Has contestado un WhatsApp de cliente desde la boda de un amigo.</div>
+      <div class="q"><div class="box"></div>Duermes con el móvil encendido y sonido.</div>
+    </div>
+
+    <div class="callout">
+      <h3>Cómo leer el resultado</h3>
+      <p><strong>0-3:</strong> no es tu problema principal. Mira otra cosa.<br>
+      <strong>4-6:</strong> se te escapa dinero, aunque no lo veas en la cuenta. Arréglalo cuando puedas.<br>
+      <strong>7-9:</strong> es tu mayor agujero. Prioridad uno.<br>
+      <strong>10-12:</strong> tu negocio depende de que tú no duermas. No es sostenible. Y tú lo sabes.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Mario Ruiz · globalizame.com</span><span>02 / 04</span></div>
+</div>
+
+<!-- 03 · REGLAS -->
+<div class="sheet content">
+  <div class="header"><span>03 · Las cuatro reglas</span><span>Del que llega primero</span></div>
+  <div class="body">
+    <h1>Las cuatro <em>reglas</em><br>del que se queda el cliente.</h1>
+    <p class="sub">Esto no es un truco ni una técnica. Es lo que hacen, sin excepción, los negocios que crecen sin depender de su dueño. Las cuatro. No tres. Las cuatro.</p>
+
+    <div class="rule">
+      <div class="n">01</div>
+      <div>
+        <h3>El cliente recibe señal de vida antes de que se arrepienta.</h3>
+        <p>En minutos. No en horas. Un "te he visto, te escribo hoy con propuesta" sirve. Lo que no sirve es el silencio. El silencio es el único error que no se perdona, porque es el único que el cliente <strong>puede comparar</strong> con lo que hizo tu competencia.</p>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="n">02</div>
+      <div>
+        <h3>La primera respuesta no la escribes tú.</h3>
+        <p>Ni tú ni tu equipo. No porque seáis vagos. Porque estáis haciendo cosas más importantes, como cerrar al cliente que sí cogisteis. Esa primera respuesta la da <strong>un sistema</strong> que sabe lo que decir. Tú apareces en la segunda.</p>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="n">03</div>
+      <div>
+        <h3>Sabes cuánto tardas de media. Con un número.</h3>
+        <p>Si no lo mides, no existe. El día que tengas un número (17 minutos, 4 horas, 2 días) vas a querer bajarlo. Y lo vas a bajar. Lo que no se mide, no se mejora. <strong>Lo que se mide, se obsesiona.</strong></p>
+      </div>
+    </div>
+    <div class="rule">
+      <div class="n">04</div>
+      <div>
+        <h3>Separas "urgente" de "importante".</h3>
+        <p>No todos los clientes son iguales. El que pregunta precio a las tres de la mañana y el que solo curiosea no valen lo mismo. El sistema debería <strong>distinguirlos antes que tú</strong>, y despertarte solo si toca. Si contestas todo con la misma intensidad, acabarás igual de cansado y con el mismo resultado.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Mario Ruiz · globalizame.com</span><span>03 / 04</span></div>
+</div>
+
+<!-- 04 · PLAN 14 DÍAS -->
+<div class="sheet content">
+  <div class="header"><span>04 · Plan</span><span>14 días · 1 hora al día</span></div>
+  <div class="body">
+    <h1>14 días para<br>no <em>volver a llegar tarde</em>.</h1>
+    <p class="sub">Una hora al día. Sin contratar a nadie. Al final del día 14, tu negocio contesta sin ti. Y tú te enteras de lo que pasa sin enterarte a las tres de la mañana.</p>
+
+    <div class="week">
+      <div class="week-head"><h2><span class="label">Días 1-3</span> Mide</h2><span class="goal">Ver la realidad</span></div>
+      <div class="task"><div class="box"></div>Apunta, durante 3 días, <strong>cada petición que entra</strong> y a qué hora la contestaste.</div>
+      <div class="task"><div class="box"></div>Calcula tu tiempo medio. Ese es tu número de partida.</div>
+      <div class="task"><div class="box"></div>Mira cuántas no contestaste nunca. Cuéntalas. No lo dejes en "alguna".</div>
+      <div class="win"><strong>Victoria:</strong> por primera vez sabes cuánto tardas de verdad. Ya no es opinión.</div>
+    </div>
+
+    <div class="week">
+      <div class="week-head"><h2><span class="label">Días 4-7</span> Decide</h2><span class="goal">Qué contestar y cómo</span></div>
+      <div class="task"><div class="box"></div>Escribe <strong>tres respuestas tipo</strong>: "ha entrado", "te llamo hoy", "te paso presupuesto mañana".</div>
+      <div class="task"><div class="box"></div>Define qué cliente merece respuesta urgente y cuál puede esperar a mañana.</div>
+      <div class="task"><div class="box"></div>Decide qué información mínima necesitas de un cliente para poder ayudarle.</div>
+      <div class="win"><strong>Victoria:</strong> ya no improvisas. Ya sabes qué decir antes de que te pregunten.</div>
+    </div>
+
+    <div class="week">
+      <div class="week-head"><h2><span class="label">Días 8-11</span> Monta</h2><span class="goal">El sistema</span></div>
+      <div class="task"><div class="box"></div>Conecta lo que ya tienes para que <strong>la primera respuesta se envíe sola</strong>.</div>
+      <div class="task"><div class="box"></div>Prueba que te llegue el aviso a ti, aunque estés fuera.</div>
+      <div class="task"><div class="box"></div>Asegúrate de que los urgentes te suenan y los demás esperan.</div>
+      <div class="task"><div class="box"></div>Si no sabes cómo, pide ayuda. Una tarde de alguien que sabe te ahorra un año.</div>
+      <div class="win"><strong>Victoria:</strong> tu negocio ya no duerme. Tú sí.</div>
+    </div>
+
+    <div class="week">
+      <div class="week-head"><h2><span class="label">Días 12-14</span> Afina</h2><span class="goal">Cerrar el círculo</span></div>
+      <div class="task"><div class="box"></div>Revisa los mensajes que salieron solos. ¿Sonaron a ti o a robot?</div>
+      <div class="task"><div class="box"></div>Ajusta el tono. Que parezcan escritos por una persona. Porque se nota.</div>
+      <div class="task"><div class="box"></div>Mide otra vez el tiempo medio de respuesta. Compara con el día 1.</div>
+      <div class="win"><strong>Victoria:</strong> el número bajó. Los clientes empiezan a comentar lo rápido que sois. El primer cliente dice "casi me lo llevo con otro, pero como respondiste tú primero...".</div>
+    </div>
+
+    <div class="callout">
+      <h3>Qué hacer el día 15</h3>
+      <p>Si te sigue costando hacer esto solo, no pasa nada. Es normal. Lo normal es no saber por dónde meterle mano. Para eso estoy yo. <strong>Escríbeme un DM</strong>. Miramos juntos tu caso en 15 minutos. Sin compromiso.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Mario Ruiz · globalizame.com</span><span>04 / 04</span></div>
+</div>
+
+</body>
+</html>
