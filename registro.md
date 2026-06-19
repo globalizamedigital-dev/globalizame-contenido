@@ -6,11 +6,12 @@
 Última combinación de color: Morado #700962 + Verde #86CA28 (posición 2/6)
 Próxima combinación: Amarillo #F4E542 + Verde #86CA28 + Negro (posición 3/6)
 
-Último tipo de hook: provocación
-Próximo: pregunta directa
+Último tipo de hook: pregunta directa
+Próximo: estadística
 
 Último mes con estrategia: Julio 2026 (mes completo, 1-31 jul) — Tu mejor mes te está costando dinero
-Último sprint producido: Junio 2026 · Sprint A — El espejo del verano (Vie 19 jun)
+Último sprint producido: Julio 2026 · Sprint A — El espejo (Mié 1 jul)
+Último acento usado: púrpura #7B4FFF (Mié 1 jul) — próximo: alternar a verde #00C896
 Último post publicado: —
 ```
 
@@ -41,6 +42,7 @@ Próximo: pregunta directa
 
 | Fecha | Sprint | Día | Etapa | Formato | Color | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
+| 1 jul 2026 | Julio · Sprint A El espejo | Mié | TOFU | Carrusel 7 slides | Crema+Púrpura | Pregunta directa | Pendiente |
 | 19 jun 2026 | Junio · Sprint A El espejo del verano | Vie | TOFU | Carrusel 7 slides | Crema+Púrpura | Provocación | Pendiente |
 | 3 ago 2026 | Agosto · S1 El Espejo | Lun | TOFU | Carrusel 6 slides | Morado+Verde | Caso real | Pendiente |
 | 2 jul 2026 | Julio · S1 El Espejo | Mié | TOFU | Carrusel 7 slides | Negro+Verde | Estadística | Pendiente |
