@@ -43,36 +43,64 @@ Audiencia: dueño de PYME española, 40-58 años, cualquier sector, no técnico,
 - `skill/references/flujo_produccion.md` (cadencia, sprints, los 3 cierres, regla del lead magnet)
 - `skill/references/lead_magnet_kit.md` (qué es un buen lead magnet, para diseñar los del mes)
 - `registro.md` (para no repetir temas del mes anterior)
+- `investigacion/base_*.md` de los 2-3 meses anteriores (para el test de frescura: no repetir datos ya usados)
 - `estrategia/estrategia_mes.html` (mes anterior, como plantilla exacta de formato). **Si no existe**, genera el formato a partir de `skill/references/brand_system.md` y las pautas de marca.
 
 ## TAREA 1 · INVESTIGACIÓN PROFUNDA
 
 > **Filosofía (lee esto primero).** Tu trabajo NO es rellenar una checklist de búsquedas. Es
-> traer la munición más fresca y potente que exista ESTE mes para nutrir el contenido. Los ejes
-> y las fuentes de abajo son tu brújula, no tu jaula: indican qué TIPO de dato sirve y dónde
-> suele haber oro — pero tu objetivo es el mejor dato, esté donde esté. Si hueles un ángulo nuevo
-> que nadie esperaba (una noticia, un informe recién salido, un giro de mercado), persíguelo: ese
-> es justo el oro que una lista cerrada nunca encontraría. Piensa como un periodista de negocio
-> con olfato, no como un script.
+> traer la munición más fresca y potente que exista ESTE mes para nutrir el contenido. Si hueles un
+> ángulo nuevo que nadie esperaba (una noticia, un informe recién salido, un giro de mercado),
+> persíguelo: ese es el oro que una lista cerrada nunca encontraría. Piensa como un periodista de
+> negocio con olfato, no como un script.
 
-Lanza **al menos 12 búsquedas web** (WebSearch — suscripción, no API) repartidas entre los 5 ejes.
-No te quedes en la primera búsqueda de cada eje: si un eje da poco, insiste con otro ángulo; si
-da mucho, profundiza. Varía las consultas mes a mes para no encontrar siempre lo mismo.
+### PASO 1A · PIENSA ANTES DE BUSCAR (obligatorio — no saltar)
 
-### Los 5 ejes de munición (brújula, no destino)
+> El error a evitar: derivar las búsquedas de la lista de ejes. Eso hace salir siempre el mismo
+> pozo de datos (Qonto, los 10 días, el 21% del INE…) mes tras mes. Las consultas NO nacen de los
+> ejes — nacen de pensar primero. **Antes de tocar WebSearch**, escribe en la base 4-6 líneas
+> respondiendo:
 
-1. **Dolor operativo** — horas/euros que el dueño pierde en tareas que no venden. El espejo del
-   problema. *(Pistas de fuente: MuyPymes, Qonto, Factorial, Sage, informes de productividad.)*
-2. **Mercado y adopción** — qué está pasando ahí fuera: adopción de tecnología/IA en PYMEs,
-   qué hace ya la competencia, el "todos menos yo". Es el FOMO del cliente. *(Pistas: INE,
-   barómetros de adopción, IA4PYMES, prensa económica.)*
-3. **Coste de no actuar** — cierres, pérdidas, riesgo de quedarse atrás, costes laborales. El
-   precio del status quo. *(Pistas: CEPYME, Banco de España, prensa de cierres/quiebras.)*
-4. **Casos reales por sector** — un negocio concreto que recuperó tiempo o dinero, con cifras.
-   **Rota el sector cada mes** (hostelería, clínicas, inmobiliaria, construcción, retail,
-   despachos…) para no repetir. Prueba real.
-5. **Timing / por qué AHORA** — lo que hace este mes distinto: estacionalidad (verano, campaña,
-   cierre de año), un cambio regulatorio, una fecha, una noticia reciente. El gancho temporal.
+1. **¿Qué hace a ESTE mes/momento distinto?** Fecha, estación, campaña, fin de trimestre, una ley
+   que entra, una fecha señalada del calendario de una PYME. (Ej.: "es junio, arranca el verano y
+   el dueño piensa en si podrá desconectar".)
+2. **¿Qué ha sido NOTICIA estas últimas semanas** sobre negocios/PYMEs/economía en España? Piensa
+   en titulares recientes, no en informes de archivo.
+3. **¿Qué ángulos YA usé los últimos 2-3 meses?** (lee `registro.md` y las `investigacion/base_*`
+   anteriores). Esos datos están quemados: **prohibido repetirlos como protagonistas.** Necesito
+   cifras y ángulos NUEVOS.
+4. **¿Qué se me ocurre que NO es obvio?** Un sector que no he tocado, un dato lateral, una
+   comparación inesperada.
+
+De esas 4 respuestas **derivas tus consultas** — frescas, específicas de este mes, distintas a las
+de meses anteriores. Si una consulta se parece a la del mes pasado, reescríbela.
+
+### PASO 1B · BUSCA
+
+Lanza **al menos 12 búsquedas web** (WebSearch — suscripción, no API), nacidas del Paso 1A. Incluye
+al menos 3-4 búsquedas de **actualidad reciente** ("qué preocupa a las pymes [mes/año]", noticias
+del mes) antes de ir a datos concretos. No te quedes en la primera de cada tema: si da poco, insiste
+con otro ángulo; si da mucho, profundiza.
+
+> Los **5 ejes de abajo NO son el generador de búsquedas** — son la **lente para clasificar** lo que
+> encuentres (en qué eje cae cada dato) y para detectar qué te falta. Úsalos al ordenar, no al
+> teclear.
+
+### Los 5 ejes de munición (lente para CLASIFICAR lo hallado, no para generar búsquedas)
+
+Cuando ya tienes datos sobre la mesa, cada uno cae en uno de estos ejes. Sirven para ordenar y para
+ver qué te falta — **no para teclear consultas** (eso lo hace el Paso 1A). Deliberadamente NO llevan
+"fuentes sugeridas": las fuentes fijas son lo que te devuelve siempre el mismo pozo.
+
+1. **Dolor operativo** — horas/euros que el dueño pierde en tareas que no venden. El espejo del problema.
+2. **Mercado y adopción** — qué pasa ahí fuera: adopción de tecnología, qué hace ya la competencia, el "todos menos yo". El FOMO del cliente.
+3. **Coste de no actuar** — cierres, pérdidas, riesgo de quedarse atrás, costes laborales. El precio del status quo.
+4. **Casos reales por sector** — un negocio concreto que recuperó tiempo o dinero, con cifras. **Rota el sector cada mes** (no repitas el del mes anterior). Prueba real.
+5. **Timing / por qué AHORA** — lo que hace este mes distinto: estacionalidad, un cambio regulatorio, una fecha, una noticia reciente. El gancho temporal.
+
+> **Test de frescura (obligatorio antes de cerrar la Tarea 1):** compara tus datos con los de
+> `investigacion/base_*` de los 2-3 meses anteriores. Si más de 2 datos son los mismos de antes,
+> NO has investigado: has repetido. Vuelve al Paso 1A y busca ángulos nuevos.
 
 > **Eje 2 — regla de oro sobre IA y tecnología.** SÍ recopilas datos de IA, automatización y
 > mercado tecnológico: son munición valiosa. Pero en el contenido NUNCA se nombran — se traducen
