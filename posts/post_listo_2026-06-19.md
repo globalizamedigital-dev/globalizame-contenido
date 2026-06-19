@@ -46,7 +46,7 @@ All text inside the image in Spanish.
 ```
 Counter: 01 / 07.
 Headline (huge, poster weight): «Si te vas 10 días y el negocio se cae, no tienes un negocio.» — the word «no tienes un negocio» NOT accented; instead accent the word «cae» in purple italic #7B4FFF. Keep headline black, big, dominant top half.
-Subtext (handwritten): «Tienes una correa con tu nombre.»
+Subtext (handwritten): «Tienes una correa con tu nombre puesto.»
 Swipe indicator top-right: «Desliza →».
 Scene: the vintage gentleman in suit and tie, suitcase in one hand, sunhat on, leaning hard toward the right edge of the frame trying to leave — but a thick iron chain locked around his ankle yanks him back toward a shop counter / cash register behind him. Face: exaggerated strain, sweat drops. A small beach sun and a folding chair drawn tiny in the far background, out of reach. Orange 4-pointed stars near the chain.
 
@@ -116,24 +116,24 @@ Scene: the gentleman walking away relaxed toward the beach, the broken chain lyi
 
 Si te vas diez días y el negocio se cae, no tienes un negocio.
 
-Tienes una correa. Con tu nombre.
+Tienes una correa. Con tu nombre puesto.
 
-Julio está a la vuelta. Y para muchos dueños es el examen del año: parar y ver qué pasa.
+Julio está aquí al lado. Y para un montón de dueños es el examen del año. Paras, y miras qué pasa.
 
-Si paras y todo sigue, vas bien.
-Si paras y se para todo contigo, ya sabes la nota.
+Si todo sigue, bien.
+Si se para todo contigo, ya sabes la nota.
 
-Este verano 4 de cada 10 autónomos no se cogerán un día. Y de los que se lo cogen, casi ninguno desconecta de verdad.
+Este verano 4 de cada 10 autónomos no se cogerán ni un día. Y de los que se lo cogen, la mayoría sigue con el móvil en la mano.
 
-Lo curioso es el motivo. No es que no quieran. Es que no les dejan. El 36% reconoce que no puede desconectar ni una semana por las facturas que tiene sin cobrar.
+Lo que escuece es el motivo. No es que no quieran parar. Es que no les dejan. El 36% reconoce que no puede irse ni una semana por las facturas que tiene sin cobrar.
 
 Eso no es descansar. Es trabajar en bañador.
 
-Y hay una parte incómoda: un negocio que te necesita encima 24 horas no vale lo que crees. Si no funciona sin ti, no es un activo. Es un puesto de trabajo con más estrés y peor horario.
+Y aquí viene lo incómodo. Un negocio que te necesita encima todo el día no vale lo que tú crees que vale. Si no tira sin ti, no es un activo. Es un empleo que encima te buscaste tú.
 
-La pregunta no es si te mereces vacaciones. Es si tu negocio aguanta diez días sin ti.
+Así que la pregunta no es si te mereces vacaciones. Es si tu negocio aguanta diez días sin ti.
 
-No hace falta que lo digas en voz alta.
+No hace falta que lo contestes en alto.
 
 Guárdalo para cuando estés haciendo la maleta.
 
