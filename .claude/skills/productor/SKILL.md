@@ -22,7 +22,7 @@ QUÉ TOCA → INVESTIGACIÓN LIGERA → DECISIONES → SLIDES + PROMPTS → COPY
 
 ### ✅ Criterio de HECHO
 - [ ] `posts/post_listo_[YYYY-MM-DD].md` con los 6-8 prompts + copy completo.
-- [ ] Bloque VISUAL SYSTEM idéntico en todos los slides.
+- [ ] Capa A (ADN visual) idéntica en todos los slides; layout distinto en portada / intermedios / cierre.
 - [ ] `registro.md` con el hook rotado.
 - [ ] Commit + push a `main` (uno solo).
 
@@ -106,43 +106,53 @@ Mensaje de autoridad Globalizame. Sin CTA. Solo branding.
 
 Un prompt por slide. En **INGLÉS**, autónomo y completo. **Todo el texto dentro de las imágenes va en ESPAÑOL.**
 
-Cada prompt incluye SIEMPRE este bloque idéntico:
+Cada prompt tiene DOS capas. La **capa A (ADN VISUAL)** es idéntica en todos los slides — es lo
+que mantiene la marca. La **capa B (LAYOUT)** cambia según el tipo de slide: portada, intermedio o
+cierre NO se componen igual. No copies el layout de la portada en los intermedios.
+
+### CAPA A · ADN VISUAL — este bloque sí va idéntico en todos los slides
 
 ```
-=== VISUAL SYSTEM — copy this block identically in every slide ===
+=== VISUAL DNA — identical in every slide ===
 Format: vertical 4:5, 1080x1350px
-Style: editorial cartoon poster. Bold mixed-weight typography as hero, vintage
-1940s-1950s cartoon illustration anchoring the lower half. Energetic, punchy,
-high scroll-stopping power. Premium but with personality — never corporate-bland.
+Style: editorial cartoon poster. Vintage 1940s-1950s cartoon illustration, black ink
+with sepia/cream tones. Energetic, punchy, premium with personality — never corporate-bland.
 Background: warm cream textured paper #F0EBE0 — FIXED, identical in every slide.
-Palette: black for primary headlines + #00C896 green and #7B4FFF purple as
-alternating accent colors for the key italic/emphasis word in each headline.
-Orange #F5A623 only for small decorative 4-pointed star accents. No other colors.
-Typography: ultra-bold condensed serif for the main headline (1950s editorial
-poster weight). Italic serif in the accent color for the emotional/key word.
-Clean handwritten-style font for subtext and the swipe indicator. Same families
-across all slides.
-Fixed layout every slide:
-  - Top-left: "0X / 08" counter in a small rounded box + wordmark "Globalizame" where
-    "Globaliza" is black and the final "me" is green #00C896 (ALWAYS this two-color split)
-  - Top-right: swipe indicator, handwritten style
-  - Hand-drawn horizontal black rule separating headline from subtext
-  - Footer: "Globalizame" wordmark, discreet, bottom area, SAME two-color rule:
-    "Globaliza" black + "me" green #00C896
-  - NO globe/icon/symbol anywhere — only the "Globalizame" wordmark, never the brand icon
-Illustration: ORIGINAL vintage cartoon character (1940s-1950s animation style,
-NOT any existing IP or known character), black ink with sepia/cream tones,
-occupying the bottom ~40% of frame, expressive face and exaggerated gesture,
-suit and tie, interacting with the concept of the slide. Small orange 4-pointed
-star accents near the character.
+Palette: black for primary text + #00C896 green and #7B4FFF purple as the accent for the
+key word (ONE accent per carousel, kept across the series). Orange #F5A623 only for small
+4-pointed star accents. No other colors.
+Typography: ultra-bold condensed serif for headlines (1950s editorial poster weight),
+italic serif in the accent color for the key/emotional word, clean handwritten-style font
+for subtext and the swipe indicator. Same families across all slides.
+Character: ORIGINAL vintage cartoon character (NOT any existing IP), consistent across the
+whole carousel — same man, suit and tie, expressive face, exaggerated gesture.
+Brand wordmark: "Globalizame" with "Globaliza" black + "me" green #00C896 (ALWAYS).
+NO globe/icon/symbol anywhere — only the wordmark.
 All text inside the image in Spanish.
-=================================================================
+=============================================
 ```
 
-Después del bloque, describe lo concreto de cada slide:
-- **Portada:** titular completo, palabra clave en color, subtexto, escena del personaje, "Desliza →" abajo a la derecha.
-- **Intermedios:** titular, palabra clave en color, subtexto, escena del personaje.
-- **Cierre:** logo Globalizame prominente, mensaje centrado, personaje en tono de autoridad, **sin** swipe.
+### CAPA B · LAYOUT por tipo de slide — cambia, NO es idéntico
+
+> **PORTADA (slide 1) — el gancho.** Composición distinta a todo lo demás. El titular manda: huge
+> headline ocupando la mitad superior, palabra clave en el acento, subtexto corto bajo una regla
+> dibujada a mano. El personaje en una escena potente ocupando la mitad inferior. Chrome:
+> arriba-izq contador `01 / NN` + wordmark; arriba-der "Desliza →"; "Desliza →" también
+> abajo-der. Sin más texto: es puro gancho, no explica nada todavía.
+
+> **INTERMEDIOS — desarrollan una idea cada uno.** Aquí el layout RESPIRA distinto a la portada:
+> el titular puede ser algo menor, deja sitio a la escena que cuenta la idea. Titular arriba
+> (palabra clave en el acento) + subtexto + personaje en una escena NUEVA que ilustra ESE punto.
+> Chrome: arriba-izq contador `0X / NN` + wordmark; arriba-der "Desliza →". Varía la composición
+> entre intermedios (no todos calcados): a veces el personaje a la izquierda, a veces a la derecha,
+> a veces la escena domina. La portada y un intermedio no deben parecerse.
+
+> **CIERRE (último slide) — la marca.** Sin "Desliza →" (no hay nada más que deslizar). Sin CTA.
+> Mensaje de autoridad de Globalizame, el personaje en tono sereno/confiado (no agobiado), wordmark
+> prominente. Composición propia, más calmada que el resto.
+
+Para cada slide: pega la CAPA A (idéntica) + la CAPA B que toque (portada / intermedio / cierre)
+con la escena, el titular y la palabra clave concretos de ese slide.
 
 ### Formato de entrega
 
@@ -198,7 +208,8 @@ git push origin main
 
 - No inventar datos, cifras, nombres ni herramientas.
 - Varía el hook y los titulares — nunca iguales semana tras semana.
-- Bloque VISUAL SYSTEM **idéntico** en todos los prompts.
+- Capa A (ADN visual) **idéntica** en todos los prompts; el layout cambia por tipo de slide.
+- La portada y los intermedios NO se componen igual. El cierre no lleva "Desliza →".
 - El slide de cierre **nunca** lleva CTA.
 - Solo el post de esta semana. Todo autónomo, sin confirmación.
 - Suscripción siempre: **WebSearch + Write**. NUNCA la API de pago.
