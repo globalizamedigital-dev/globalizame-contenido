@@ -9,7 +9,7 @@ Próxima combinación: Amarillo #F4E542 + Verde #86CA28 + Negro (posición 3/6)
 Último tipo de hook: caso real
 Próximo: provocación
 
-Último mes con estrategia: Agosto 2026 — En agosto, tu negocio no debería cogerse vacaciones contigo
+Último mes con estrategia: Junio 2026 (cierre, 19-29 jun) — El verano dirá si tienes un negocio o una correa
 Último sprint producido: Agosto 2026 · Semana 1 — El Espejo (Lun 3 ago)
 Último post publicado: —
 ```
@@ -47,6 +47,18 @@ Próximo: provocación
 ---
 
 ## Meses procesados
+
+### Junio 2026 (cierre, 19-29 jun) — Estrategia generada
+- **Tema central:** El verano dirá si tienes un negocio o una correa.
+- **Tramo:** solo lo que quedaba de junio — del vie 19 (primer post) al lun 29. 5 posts, ~1,5 sprints, 1 lead magnet.
+- **Datos clave usados:**
+  1. 36% de autónomos no puede desconectar ni una semana por impagos; la morosidad cuesta 2.900 M€/año (emprendedores.es / Remote, 2026). [dato estrella]
+  2. 4 de cada 10 autónomos no se cogerán vacaciones este verano; 16,5% por la gestión del negocio (ATA, 2026).
+  3. Caso taller mecánico (Campo de Gibraltar): +2 h/día recuperadas, +38% citas (xoraagencia.com, 2026).
+- **Lead magnet:** "Test: ¿aguanta tu negocio 10 días sin ti?" — keyword VERANO (se lanza vie 26).
+- **Sector destacado:** taller mecánico.
+- **Entregables:** `investigacion/base_2026-06.md` · `estrategia/estrategia_mes.html`
+- **Estado:** Estrategia generada (pendiente de producción de carruseles con /productor).
 
 ### Agosto 2026 — Estrategia generada
 - **Tema central:** En agosto, tu negocio no debería cogerse vacaciones contigo.
