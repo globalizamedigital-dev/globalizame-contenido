@@ -97,7 +97,7 @@ Guía, no jaula:
 Puro gancho. El titular manda. La composición más potente posible (no hay molde). Sin explicar nada todavía.
 
 **INTERMEDIOS — uno por idea, composición LIBRE**
-Cada slide desarrolla UNA idea con la composición que mejor la cuente (big number, gráfico, comparación, VS, escena…). El personaje no es obligatorio en todos. Variados entre sí. Ver PASO 5 · CAPA B.
+Cada slide desarrolla UNA idea con la composición que tú diseñes para contarla. El personaje no es obligatorio en todos. Variados entre sí. Ver PASO 5 · CAPA B.
 
 **ÚLTIMO — CIERRE**
 Mensaje de autoridad Globalizame. Sin CTA. Solo branding.
@@ -139,47 +139,28 @@ All text inside the image in Spanish.
 =============================================
 ```
 
-### CAPA B · COMPOSICIÓN — LIBRE. La IA diseña lo que mejor cuenta la idea
+### CAPA B · COMPOSICIÓN — eres el director de arte. Diseña.
 
-> **Prohibida la rigidez.** NO existe un layout fijo de intermedio. Cada slide se compone como mejor
-> cuente SU idea: un big number gigante, un gráfico dibujado a mano, una comparación a dos columnas,
-> un "VS", un antes/después con una flecha, una escena del personaje a pantalla… El personaje NO
-> tiene que estar en todos: a veces es el protagonista grande, a veces un detalle en una esquina, a
-> veces no aparece y el dato manda. Lo que se mantiene SIEMPRE es la CAPA A (estilo, paleta, chrome);
-> la composición es libre. Dos intermedios seguidos no deben parecerse.
+La CAPA A ya garantiza que todo se reconoce como Globalizame. Dentro de ese marco, **la composición
+de cada slide la decides tú como director de arte premium.** No hay layout de intermedio. No te doy
+una lista de opciones — una lista te encarrilaría. Tu trabajo es:
 
-Repertorio de composiciones (inspiración, no lista cerrada — combina y inventa):
-`big number` · `gráfico/curva dibujada a mano` · `dos columnas comparadas` · `VS cara a cara` ·
-`antes/después con flecha` · `escena del personaje a pantalla` · `secuencia de viñetas` ·
-`mapa/diagrama` · `cita grande`. Elige por slide la que haga sentir la idea de un vistazo.
+**Por cada slide, pregúntate:** ¿cuál es la UNA idea de este slide y qué emoción tiene que provocar?
+Luego compón lo que haga sentir esa idea de un vistazo, en menos de un segundo. La forma la dicta la
+idea, no un molde: si la idea es una cifra brutal, que la cifra llene el frame; si es un contraste,
+enfréntalo; si es una caída, dibújala. El personaje aparece solo cuando suma — a veces protagonista,
+a veces un detalle, a veces nada y manda el dato o el tipo. **Que ningún slide se parezca al anterior.**
 
-Tres roles fijos (el QUÉ, no el CÓMO):
-- **PORTADA (slide 1):** puro gancho. El titular manda, sin explicar nada todavía. Composición la
-  más potente posible. Lleva "Desliza →" abajo-der.
-- **INTERMEDIOS:** desarrollan una idea cada uno, con la composición libre de arriba. Variadas entre sí.
-- **CIERRE (último):** la marca. Mensaje de autoridad, tono sereno, sin CTA, sin "Desliza →".
+Lo único que te marco son los tres ROLES de la pieza (el QUÉ, nunca el CÓMO):
+- **PORTADA (slide 1):** puro gancho. El titular manda. La composición más potente que se te ocurra.
+  No explica nada todavía. Lleva "Desliza →" abajo-der.
+- **INTERMEDIOS:** una idea cada uno. Composición libre, variada, al servicio de esa idea.
+- **CIERRE (último):** la marca. Autoridad serena, sin CTA, sin "Desliza →".
 
-Para cada slide: pega la CAPA A (idéntica) + describe la composición concreta que elegiste (su
-layout, su titular, su palabra clave en el acento, su visual). Como en estos ejemplos de referencia
-de un carrusel real:
-
-```
-SLIDE 1 — PORTADA: COVER. Counter "01 / 08". Headline en 3 líneas serif bold:
-"No los pierdes" / "por caros." / "Los pierdes por LENTOS." con "LENTOS" en verde italic,
-el énfasis mayor. Subrayado a mano. Subtexto: "Y ni te enteras." Personaje protagonista
-abajo 40%: dueño confuso mientras un cliente se va de cuadro. "Desliza →" abajo-der.
-
-SLIDE 2 — BIG NUMBER. "78%" enorme dominando 2/3 del frame, con el "%" en púrpura. Debajo:
-"compra al PRIMERO que responde." Personaje pequeño solo en esquina, como acento.
-
-SLIDE 5 — GRÁFICO. Una curva descendente dibujada a mano (60% del frame) cayendo por un
-precipicio tras el minuto 5. Titular: "No es una pendiente. Es un PRECIPICIO." Personaje
-diminuto cayendo junto a la curva, cómico.
-
-SLIDE 8 — CIERRE. Sin "Desliza". Mucho aire. Wordmark prominente arriba-centro. Una línea:
-"Tu negocio puede contestar antes que nadie." Personaje abajo, de pie, sereno — lo opuesto
-a la portada. Sin CTA.
-```
+Para cada slide en el entregable: pega la CAPA A (idéntica) + describe **la composición que TÚ has
+diseñado** para esa idea — su layout, su titular, su palabra clave en el acento, su visual concreto.
+Sé específico para que ChatGPT lo genere sin ambigüedad, pero que la decisión sea tuya, no de una
+plantilla.
 
 ### Formato de entrega
 
