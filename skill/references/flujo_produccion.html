@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flujo de Producción · Globalizame</title>
+<style>
+  :root{
+    --cream:#F0EBE0;--cream-deep:#E4DDCD;--ink:#1A1815;--ink-soft:#4a463e;
+    --green:#00C896;--green-ink:#067a5e;--purple:#7B4FFF;--purple-ink:#5a32d6;--orange:#F5A623;
+    --line:rgba(26,24,21,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--cream);color:var(--ink);
+    font-family:'Inter',-apple-system,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;
+    padding:0 20px 120px;
+    background-image:radial-gradient(var(--cream-deep) 1px,transparent 1px);background-size:22px 22px;
+  }
+  .wrap{max-width:860px;margin:0 auto}
+  .masthead{padding:80px 0 44px;border-bottom:3px solid var(--ink);position:relative}
+  .masthead .star{position:absolute;color:var(--orange);font-size:26px;top:66px;right:7%}
+  .kicker{font-family:'Georgia',serif;font-style:italic;font-size:18px;color:var(--ink-soft);margin-bottom:12px}
+  h1{font-family:'Georgia',serif;font-weight:800;font-size:clamp(42px,8.5vw,80px);line-height:.95;letter-spacing:-.03em;text-wrap:balance}
+  h1 em{font-style:italic;color:var(--green-ink)}
+  .lede{font-family:'Georgia',serif;font-style:italic;font-size:clamp(17px,2.4vw,21px);color:var(--ink-soft);margin-top:22px;max-width:60ch;line-height:1.5}
+
+  section{padding:60px 0 12px;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:none}
+  h2{font-family:'Georgia',serif;font-weight:800;font-size:clamp(27px,4.8vw,44px);line-height:1.03;letter-spacing:-.025em;margin-bottom:8px;text-wrap:balance}
+  h2 em{font-style:italic;color:var(--purple-ink)}
+  .sec-intro{font-size:17px;color:var(--ink-soft);max-width:62ch;margin-bottom:30px}
+  p{max-width:68ch;margin-bottom:14px}
+  strong{font-weight:700}
+
+  /* cadencia fija */
+  .week{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}
+  @media(max-width:620px){.week{grid-template-columns:1fr}}
+  .day{background:var(--ink);color:var(--cream);border-radius:16px;padding:26px 24px;position:relative}
+  .day .d{font-family:'Georgia',serif;font-style:italic;font-size:15px;color:var(--green);margin-bottom:10px}
+  .day h3{font-family:'Georgia',serif;font-weight:700;font-size:22px;color:var(--cream);margin-bottom:6px}
+  .day p{font-size:14px;color:rgba(240,235,224,.82);margin:0}
+  .pin{margin-top:22px;background:#fff;border:1.5px solid var(--ink);border-radius:14px;padding:20px 22px;font-size:15px}
+  .pin strong{color:var(--green-ink)}
+
+  /* los 3 cierres */
+  .closes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:8px}
+  .close{border:1.5px solid var(--ink);border-radius:14px;padding:24px 22px;background:#fff}
+  .close .label{font-family:'Georgia',serif;font-weight:800;font-style:italic;font-size:20px;margin-bottom:4px}
+  .close.recurso .label{color:var(--green-ink)}
+  .close.conver .label{color:var(--purple-ink)}
+  .close.auth .label{color:var(--ink)}
+  .close .when{font-size:13px;color:var(--ink-soft);font-style:italic;margin-bottom:12px}
+  .close .how{font-size:14px;line-height:1.5}
+  .golden-note{margin-top:24px;background:var(--ink);color:var(--cream);border-radius:16px;padding:30px 32px;position:relative}
+  .golden-note .star{position:absolute;color:var(--orange);font-size:20px;top:18px;right:24px}
+  .golden-note p{font-family:'Georgia',serif;font-style:italic;font-size:clamp(18px,2.6vw,23px);line-height:1.45;color:var(--cream);max-width:none;margin:0}
+  .golden-note em{color:var(--green);font-style:normal;font-weight:700}
+
+  /* pipeline */
+  .pipe{counter-reset:step;margin-top:8px}
+  .step{display:grid;grid-template-columns:54px 1fr;gap:20px;padding:20px 0;border-top:1px solid var(--line);align-items:start}
+  .step:first-child{border-top:none}
+  .step .n{counter-increment:step;font-family:'Georgia',serif;font-weight:800;font-style:italic;font-size:34px;color:var(--green-ink);line-height:1}
+  .step .n::before{content:counter(step)}
+  .step h3{font-family:'Georgia',serif;font-weight:700;font-size:19px;margin-bottom:4px}
+  .step p{font-size:15px;color:var(--ink-soft);margin:0}
+
+  /* archivos */
+  .files{display:grid;gap:12px;margin-top:8px}
+  .file{background:#fff;border:1.5px solid var(--ink);border-radius:12px;padding:18px 22px}
+  .file code{font-family:'JetBrains Mono','Courier New',monospace;font-size:14px;font-weight:700;color:var(--purple-ink)}
+  .file p{font-size:14px;color:var(--ink-soft);margin:6px 0 0}
+
+  .footer{text-align:center;padding-top:40px;color:var(--ink-soft);font-size:13px}
+  .footer b{font-family:'Georgia',serif;color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <span class="star">✦</span>
+    <p class="kicker">Globalizame · manual operativo del contenido</p>
+    <h1>Libertad creativa, <em>suelo</em> alto.</h1>
+    <p class="lede">Cómo se fabrica cada pieza: qué se decide pieza a pieza y qué es siempre igual. El carrusel sale como prompts de imagen; el lead magnet, como HTML imprimible.</p>
+  </header>
+
+  <section>
+    <h2>Cada pieza, su <em>propio</em> diseño</h2>
+    <p class="sec-intro">No hay plantilla por pieza. Cada carrusel se diseña desde cero según lo que el contenido pide: composición, ritmo, gancho, número de slides. Lo único constante es la marca (ver Dirección Creativa).</p>
+    <div class="files">
+      <div class="file"><code>Formato 4:5 · 1080×1350</code><p>Siempre. Óptimo en móvil.</p></div>
+      <div class="file"><code>Número de slides = lo que pida el contenido</code><p>Ni uno de relleno, ni uno de menos. No hay número mágico.</p></div>
+      <div class="file"><code>Una escena por slide</code><p>Cada slide explica su idea con el personaje en acción. Nunca un slide de solo texto.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>La semana: <em>el sprint</em></h2>
+    <p class="sec-intro">Lo único fijo del calendario. Todo lo demás (cuántos sprints, cuántos lead magnets, cuántos posts) lo decide el contenido del mes.</p>
+    <div class="week">
+      <div class="day"><div class="d">Lunes</div><h3>Abre</h3><p>Primera pieza del sprint. Arranca la historia de la semana.</p></div>
+      <div class="day"><div class="d">Miércoles</div><h3>Profundiza</h3><p>Desarrolla. Datos, caso, el giro.</p></div>
+      <div class="day"><div class="d">Viernes</div><h3>Cierra / lanza</h3><p>Remata. Si el sprint lleva lead magnet, se lanza aquí.</p></div>
+    </div>
+    <div class="pin"><strong>Un lead magnet por sprint, no por carrusel.</strong> Se produce desde el lunes y se lanza el día asignado. Cada sprint es una semana con arco de embudo y sus tres cierres distintos.</div>
+  </section>
+
+  <section>
+    <h2>Los 3 cierres, y la <em>regla de oro</em></h2>
+    <p class="sec-intro">El "Comenta X" solo tiene sentido cuando hay un recurso real que entregar. Es el peaje a cambio del kit. Ponerlo en todos los cierres convierte cada post en un embudo y lo quema.</p>
+    <div class="closes">
+      <div class="close recurso">
+        <div class="label">Recurso</div>
+        <div class="when">Solo la pieza que lanza el lead magnet · máx. 1/semana</div>
+        <div class="how">"Comenta [KEYWORD]" → el auto-DM entrega el kit. La única pieza con palabra clave.</div>
+      </div>
+      <div class="close conver">
+        <div class="label">Conversación</div>
+        <div class="when">~1 por semana · posts donde buscas diálogo</div>
+        <div class="how">Pregunta abierta en comentarios. Mario responde a mano y pasa a privado. Más humano, convierte más con volumen bajo.</div>
+      </div>
+      <div class="close auth">
+        <div class="label">Autoridad</div>
+        <div class="when">~1 por semana · posts de marca</div>
+        <div class="how">Remate potente, pregunta abierta o "guárdalo". Sin keyword, sin embudo. El de más alcance orgánico.</div>
+      </div>
+    </div>
+    <div class="golden-note">
+      <span class="star">✦</span>
+      <p>Mezcla los tres cada semana. No repitas el mismo cierre tres días seguidos. El slide de cierre del carrusel <em>nunca</em> lleva CTA: es solo marca.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Qué queda en <em>cada pieza</em></h2>
+    <p class="sec-intro">El sistema guarda en <code style="font-family:'JetBrains Mono',monospace;font-size:14px">posts/</code>:</p>
+    <div class="files">
+      <div class="file"><code>post_listo_[YYYY-MM-DD].md</code><p>Prompts de los slides + copy del post + DM (si lleva keyword) + registro de sesión.</p></div>
+      <div class="file"><code>lead_magnet_[keyword]_[fecha].html</code><p>Solo cuando el sprint lanza lead magnet. Lo genera la skill /lead-magnet.</p></div>
+    </div>
+    <p style="margin-top:16px;font-size:15px;color:var(--ink-soft)">El registro de rotaciones y el historial viven en <code style="font-family:'JetBrains Mono',monospace;font-size:14px">registro.md</code> (raíz).</p>
+  </section>
+
+  <section>
+    <h2>El pipeline: de brief a <em>pack listo</em></h2>
+    <p class="sec-intro">Seis pasos. Los cinco primeros los hace Claude; el último lo das tú.</p>
+    <div class="pipe">
+      <div class="step"><div class="n"></div><div><h3>Brief</h3><p>Enfoque, gancho y estructura según el sprint y la etapa del embudo.</p></div></div>
+      <div class="step"><div class="n"></div><div><h3>Diseño del carrusel</h3><p>Número de slides según el contenido, escena propia, cero plantilla.</p></div></div>
+      <div class="step"><div class="n"></div><div><h3>Verificación</h3><p>Jerarquía limpia, ningún titular menciona IA ni tecnicismos, dato real con fuente. El copy pasa por humanizer.</p></div></div>
+      <div class="step"><div class="n"></div><div><h3>Copy</h3><p>Post y DM (si aplica) en texto plano, tono Isra Bravo, listos para pegar.</p></div></div>
+      <div class="step"><div class="n"></div><div><h3>Lead magnet</h3><p>Si el sprint lo lleva, la skill /lead-magnet genera el kit HTML.</p></div></div>
+      <div class="step"><div class="n"></div><div><h3>Entrega</h3><p>Pieza completa. Mario revisa, aprueba, publica.</p></div></div>
+    </div>
+  </section>
+
+  <p class="footer"><b>Globalizame</b> · Flujo de producción del contenido · referencia interna para /investigador, /productor y /lead-magnet</p>
+
+</div>
+</body>
+</html>

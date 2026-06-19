@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dirección Creativa · Globalizame</title>
+<style>
+  :root{
+    --cream:#F0EBE0;
+    --cream-deep:#E4DDCD;
+    --ink:#1A1815;
+    --ink-soft:#4a463e;
+    --green:#00C896;
+    --green-ink:#067a5e;      /* verde con contraste sobre crema para texto */
+    --purple:#7B4FFF;
+    --purple-ink:#5a32d6;
+    --orange:#F5A623;
+    --paper-line:rgba(26,24,21,.14);
+    --shadow:rgba(26,24,21,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter',-apple-system,system-ui,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    padding:0 20px 120px;
+    background-image:
+      radial-gradient(var(--cream-deep) 1px, transparent 1px);
+    background-size:22px 22px;
+  }
+  .wrap{max-width:860px;margin:0 auto}
+
+  /* ── Masthead ── */
+  .masthead{padding:80px 0 44px;border-bottom:3px solid var(--ink);position:relative}
+  .masthead .star{position:absolute;color:var(--orange);font-size:28px;line-height:1}
+  .masthead .star.s1{top:64px;right:6%}
+  .masthead .star.s2{top:130px;right:14%;font-size:18px}
+  .kicker{font-family:'Georgia',serif;font-style:italic;font-size:18px;color:var(--ink-soft);margin-bottom:12px}
+  h1{
+    font-family:'Georgia','Times New Roman',serif;
+    font-weight:800;
+    font-size:clamp(44px,9vw,84px);
+    line-height:.94;
+    letter-spacing:-.03em;
+    text-wrap:balance;
+  }
+  h1 em{font-style:italic;color:var(--green-ink)}
+  .lede{
+    font-family:'Georgia',serif;font-style:italic;
+    font-size:clamp(17px,2.4vw,21px);
+    color:var(--ink-soft);margin-top:22px;max-width:60ch;line-height:1.5;
+  }
+
+  /* ── Secciones ── */
+  section{padding:60px 0 12px;border-bottom:1px solid var(--paper-line)}
+  section:last-of-type{border-bottom:none}
+  h2{
+    font-family:'Georgia',serif;font-weight:800;
+    font-size:clamp(28px,5vw,46px);line-height:1.02;letter-spacing:-.025em;
+    margin-bottom:8px;text-wrap:balance;
+  }
+  h2 em{font-style:italic;color:var(--purple-ink)}
+  .sec-intro{font-size:17px;color:var(--ink-soft);max-width:62ch;margin-bottom:32px}
+
+  h3{font-family:'Georgia',serif;font-weight:700;font-size:21px;margin:0 0 6px;letter-spacing:-.01em}
+  p{max-width:68ch;margin-bottom:14px}
+  strong{font-weight:700;color:var(--ink)}
+
+  /* ── Las dos capas ── */
+  .layers{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
+  @media(max-width:680px){.layers{grid-template-columns:1fr}}
+  .layer{border-radius:16px;padding:30px 28px;border:1.5px solid var(--ink)}
+  .layer.constant{background:var(--ink);color:var(--cream)}
+  .layer.free{background:transparent}
+  .layer .tag{
+    font-family:'Georgia',serif;font-style:italic;font-size:14px;margin-bottom:18px;
+    display:inline-block;padding:3px 12px;border-radius:20px;
+  }
+  .layer.constant .tag{background:var(--green);color:var(--ink)}
+  .layer.free .tag{background:var(--purple);color:#fff}
+  .layer h3{margin-bottom:18px;font-size:24px}
+  .layer.constant h3{color:var(--cream)}
+  .layer ul{list-style:none}
+  .layer li{padding:8px 0 8px 26px;position:relative;font-size:15px;line-height:1.45;border-top:1px solid rgba(128,128,128,.18)}
+  .layer li:first-of-type{border-top:none}
+  .layer li::before{content:'';position:absolute;left:4px;top:16px;width:8px;height:8px;border-radius:50%}
+  .layer.constant li{color:rgba(240,235,224,.9)}
+  .layer.constant li::before{background:var(--green)}
+  .layer.free li::before{background:var(--purple)}
+
+  /* ── Lo sagrado: los no-negociables del chrome ── */
+  .sacred{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:8px}
+  .scard{background:#fff;border:1.5px solid var(--ink);border-radius:14px;padding:24px 22px;position:relative;overflow:hidden}
+  .scard .rank{font-family:'Georgia',serif;font-weight:800;font-style:italic;font-size:38px;color:var(--cream-deep);position:absolute;top:10px;right:16px;line-height:1}
+  .scard h3{font-size:18px;margin-bottom:8px;max-width:80%}
+  .scard p{font-size:14px;color:var(--ink-soft);margin:0}
+  .scard .kw{color:var(--green-ink);font-weight:700}
+
+  /* ── Psicología del color ── */
+  .colors{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:8px}
+  .swatch{border-radius:14px;padding:20px;min-height:148px;display:flex;flex-direction:column;justify-content:space-between;border:1.5px solid var(--ink)}
+  .swatch .name{font-family:'Georgia',serif;font-weight:800;font-size:19px}
+  .swatch .emo{font-size:13px;line-height:1.4;opacity:.92}
+  .sw-cream{background:var(--cream)}
+  .sw-ink{background:var(--ink);color:var(--cream)}
+  .sw-green{background:var(--green);color:var(--ink)}
+  .sw-purple{background:var(--purple);color:#fff}
+  .sw-orange{background:var(--orange);color:var(--ink)}
+  .note{margin-top:22px;background:#fff;border:1.5px solid var(--ink);border-radius:14px;padding:22px 24px}
+  .note strong{color:var(--green-ink)}
+
+  /* ── Tipografía ── */
+  .typerow{display:flex;align-items:baseline;gap:20px;padding:18px 0;border-top:1px solid var(--paper-line)}
+  .typerow:first-of-type{border-top:none}
+  .tr-role{width:130px;flex-shrink:0;font-family:'Georgia',serif;font-style:italic;font-size:14px;color:var(--ink-soft)}
+  .tr-sample{flex:1}
+  .s-display{font-family:'Georgia',serif;font-weight:800;font-size:30px;letter-spacing:-.02em}
+  .s-key{font-family:'Georgia',serif;font-weight:800;font-style:italic;font-size:30px;color:var(--green-ink)}
+  .s-sub{font-size:17px;color:var(--ink-soft)}
+
+  /* ── Regla de oro / cierre ── */
+  .golden{background:var(--ink);color:var(--cream);border-radius:20px;padding:46px 40px;margin-top:48px;text-align:center;position:relative}
+  .golden .star{position:absolute;color:var(--orange);font-size:24px}
+  .golden .star.a{top:20px;left:8%}
+  .golden .star.b{bottom:24px;right:10%;font-size:16px}
+  .golden p{font-family:'Georgia',serif;font-style:italic;font-size:clamp(20px,3.4vw,28px);line-height:1.4;max-width:none;margin:0 auto;color:var(--cream)}
+  .golden p em{color:var(--green);font-style:normal;font-weight:700}
+
+  .footer{text-align:center;padding-top:40px;color:var(--ink-soft);font-size:13px}
+  .footer b{font-family:'Georgia',serif;color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <span class="star s1">✦</span>
+    <span class="star s2">✦</span>
+    <p class="kicker">Globalizame · biblia visual del contenido</p>
+    <h1>Reconocible al instante. <em>Irrepetible</em> cada vez.</h1>
+    <p class="lede">El norte de cada carrusel: qué no se toca nunca y qué se reinventa siempre. Esa frontera es lo que hace que la marca se sienta cara sin volverse una plantilla.</p>
+  </header>
+
+  <!-- LAS DOS CAPAS -->
+  <section>
+    <h2>La regla que lo <em>gobierna todo</em></h2>
+    <p class="sec-intro">Publicamos varias piezas por semana, durante años. Si todas salen del mismo molde, la cuenta se vuelve previsible y barata. Si cada una inventa su propia marca, deja de existir la marca. No se elige: se separan dos capas y se respetan a rajatabla.</p>
+    <div class="layers">
+      <div class="layer constant">
+        <span class="tag">blindado · nunca cambia</span>
+        <h3>La capa de marca</h3>
+        <ul>
+          <li>Personaje cartoon vintage años 40-50</li>
+          <li>Fondo crema texturizado #F0EBE0</li>
+          <li>Titular serif negro + palabra clave en color</li>
+          <li>Logo "Globalizame" + contador NN/NN arriba-izquierda</li>
+          <li>"Desliza →" en portada e intermedios</li>
+          <li>Estrellitas naranjas de 4 puntas</li>
+          <li>Tono Isra Bravo en cada palabra</li>
+        </ul>
+      </div>
+      <div class="layer free">
+        <span class="tag">libre · cambia cada pieza</span>
+        <h3>La capa creativa</h3>
+        <ul>
+          <li>La escena del personaje (la metáfora)</li>
+          <li>Número de slides</li>
+          <li>Gancho, arco narrativo, ritmo</li>
+          <li>Qué emoción / color domina la pieza</li>
+          <li>Composición de cada slide</li>
+          <li>Estructura de la portada</li>
+          <li>El cierre y el tipo de CTA</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- LO SAGRADO -->
+  <section>
+    <h2>Lo sagrado: <em>jamás falta</em></h2>
+    <p class="sec-intro">Dentro de la capa blindada hay una jerarquía. Si tuvieras que salvar solo una cosa de cada pieza, este es el orden. Lo de arriba define la marca; sin ello, es otro carrusel cualquiera.</p>
+    <div class="sacred">
+      <div class="scard"><span class="rank">1</span><h3>El personaje cartoon</h3><p>El señor vintage de los años 40-50, tinta negra y sepia, gesto exagerado. Es el activo único: cualquiera copia una paleta, nadie tiene a tu personaje.</p></div>
+      <div class="scard"><span class="rank">2</span><h3>La palabra clave en color</h3><p>La palabra emocional del titular, en <span class="kw">verde</span> o púrpura italic dentro del texto negro. El ojo la reconoce antes de leer. Firma visual instantánea.</p></div>
+      <div class="scard"><span class="rank">3</span><h3>El chrome</h3><p>Logo Globalizame + contador NN/NN arriba-izquierda, "Desliza →" arriba-derecha. Orienta al lector y firma cada slide sin ruido.</p></div>
+      <div class="scard"><span class="rank">4</span><h3>El lienzo crema</h3><p>Papel crema texturizado #F0EBE0 en todos los slides. La base del look editorial vintage. Nunca un fondo distinto dentro de la misma serie.</p></div>
+    </div>
+  </section>
+
+  <!-- PSICOLOGÍA DEL COLOR -->
+  <section>
+    <h2>El color <em>narra</em>, no decora</h2>
+    <p class="sec-intro">El cerebro lee el color antes que la letra. La paleta es corta a propósito: cada tono tiene un trabajo. El verde y el púrpura alternan como acento de la palabra clave; el naranja solo vive en las estrellitas. No se añaden colores "para alegrar".</p>
+    <div class="colors">
+      <div class="swatch sw-cream"><span class="name">Crema</span><span class="emo">El lienzo. Calma editorial, papel honesto. #F0EBE0</span></div>
+      <div class="swatch sw-ink"><span class="name">Negro</span><span class="emo">El titular. Peso y verdad cruda, sin anestesia. #1A1815</span></div>
+      <div class="swatch sw-green"><span class="name">Verde</span><span class="emo">Acento de acción. La palabra que resuelve, el "aquí importa". #00C896</span></div>
+      <div class="swatch sw-purple"><span class="name">Púrpura</span><span class="emo">Acento de giro. Lo no-obvio, el reencuadre. Alterna con el verde. #7B4FFF</span></div>
+      <div class="swatch sw-orange"><span class="name">Naranja</span><span class="emo">Solo estrellitas. Chispa decorativa, nunca texto ni fondo. #F5A623</span></div>
+    </div>
+    <div class="note">
+      <p style="margin:0"><strong>Una palabra clave por titular, un color por pieza.</strong> El acento (verde o púrpura) se elige por la emoción del tema y se mantiene en toda la serie. Alternar color entre piezas da variedad al feed; alternarlo dentro de un mismo carrusel crea ruido y rompe el hilo.</p>
+    </div>
+  </section>
+
+  <!-- TIPOGRAFÍA -->
+  <section>
+    <h2>Cada fuente tiene <em>un trabajo</em></h2>
+    <p class="sec-intro">Pocas fuentes, bien usadas. La jerarquía se construye con tamaño y peso, no con color: el acento se reserva para la palabra clave, jamás para ordenar la lectura.</p>
+    <div class="typerow"><div class="tr-role">Titular display</div><div class="tr-sample"><span class="s-display">Has vuelto de vacaciones</span><br><span style="font-size:14px;color:var(--ink-soft)">Serif ultra-bold condensada, peso de póster editorial de los 50.</span></div></div>
+    <div class="typerow"><div class="tr-role">Palabra clave</div><div class="tr-sample"><span class="s-key">no del todo</span><br><span style="font-size:14px;color:var(--ink-soft)">Serif italic en el color de acento. La emoción del titular.</span></div></div>
+    <div class="typerow"><div class="tr-role">Subtexto · UI</div><div class="tr-sample"><span class="s-sub">La maleta deshecha. La caja, descuadrada.</span><br><span style="font-size:14px;color:var(--ink-soft)">Fuente limpia tipo manuscrita para subtexto y el "Desliza →".</span></div></div>
+  </section>
+
+  <!-- LA REGLA DE ORO DEL VISUAL -->
+  <section>
+    <h2>La regla de oro del <em>visual</em></h2>
+    <p class="sec-intro">Cada slide explica su idea con una escena que aporta. Si un slide es solo un titular y un párrafo, está mal: o lleva una imagen que cuenta algo, o no es un slide. Pero nunca por relleno: un icono de adorno o una caja vacía pesan más que el aire. Menos elementos, mejor resueltos.</p>
+    <p style="font-size:15px;color:var(--ink-soft)"><strong>El personaje no ilustra el concepto literal.</strong> Traduce la emoción del titular a una metáfora física que se lee en menos de un segundo: el agobio, el alivio, la sorpresa. Exagerada, porque es cartoon. Y distinta cada semana: si la última usó un reloj, esta busca otra cosa.</p>
+  </section>
+
+  <div class="golden">
+    <span class="star a">✦</span>
+    <span class="star b">✦</span>
+    <p>Dos carruseles seguidos no deben parecerse. Cambia la escena, el número de slides, el gancho. Lo único que se repite es <em>la marca</em>.</p>
+  </div>
+
+  <p class="footer"><b>Globalizame</b> · Dirección creativa del contenido · referencia interna para /productor y /lead-magnet</p>
+
+</div>
+</body>
+</html>
