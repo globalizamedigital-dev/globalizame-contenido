@@ -3,238 +3,384 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Estrategia Instagram · Junio 2026 (cierre) · Globalizame</title>
+<title>Estrategia de Contenido · Julio 2026 · Globalizame</title>
 <style>
   :root{
-    --bg:#232323;--bg-soft:#2b2b2b;--ink:#FAFAF7;--ink-soft:rgba(250,250,247,.62);
-    --green:#86CA28;--purple:#700962;--yellow:#F4E542;--orange:#FFA500;
-    --line:rgba(250,250,247,.12);
+    --bg:#232323; --bg-soft:#2c2c2c; --green:#86CA28; --white:#FAFAF7;
+    --muted:rgba(250,250,247,.62); --line:rgba(250,250,247,.12);
+    --purple:#700962; --orange:#FFA500;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{
-    background:var(--bg);color:var(--ink);
+    background:var(--bg);color:var(--white);
     font-family:'Inter',-apple-system,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;
     padding:0 20px 120px;
-    background-image:radial-gradient(rgba(250,250,247,.05) 1px,transparent 1px);background-size:24px 24px;
   }
-  .wrap{max-width:900px;margin:0 auto}
-  .masthead{padding:78px 0 40px;border-bottom:3px solid var(--green);position:relative}
-  .masthead .star{position:absolute;color:var(--orange);font-size:26px;top:64px;right:5%}
-  .kicker{font-family:'Josefin Sans','Georgia',serif;letter-spacing:.16em;text-transform:uppercase;font-size:14px;color:var(--green);margin-bottom:16px}
-  h1{font-family:'Josefin Sans','Georgia',serif;font-weight:700;font-size:clamp(40px,8vw,78px);line-height:.98;letter-spacing:-.02em;text-wrap:balance}
+  .wrap{max-width:920px;margin:0 auto}
+
+  /* masthead */
+  .masthead{padding:72px 0 40px;border-bottom:3px solid var(--green);position:relative}
+  .kicker{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin-bottom:16px;font-weight:700}
+  h1{font-family:'Josefin Sans','Inter',sans-serif;font-weight:700;font-size:clamp(40px,8vw,76px);line-height:.98;letter-spacing:-.01em;text-wrap:balance}
   h1 em{font-style:normal;color:var(--green)}
-  .lede{font-size:clamp(17px,2.4vw,21px);color:var(--ink-soft);margin-top:24px;max-width:62ch;line-height:1.55}
-  .meta{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px}
-  .chip{border:1px solid var(--line);border-radius:30px;padding:7px 16px;font-size:13px;color:var(--ink-soft)}
-  .chip b{color:var(--green);font-weight:600}
+  .lede{font-size:clamp(16px,2.3vw,20px);color:var(--muted);margin-top:22px;max-width:62ch}
+  .meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .chip{background:var(--bg-soft);border:1px solid var(--line);border-radius:30px;padding:8px 16px;font-size:13px;color:var(--white)}
+  .chip b{color:var(--green)}
 
-  section{padding:56px 0 12px;border-bottom:1px solid var(--line)}
+  /* sections */
+  section{padding:56px 0 8px;border-bottom:1px solid var(--line)}
   section:last-of-type{border-bottom:none}
-  h2{font-family:'Josefin Sans','Georgia',serif;font-weight:700;font-size:clamp(26px,4.6vw,42px);line-height:1.04;letter-spacing:-.015em;margin-bottom:10px;text-wrap:balance}
+  h2{font-family:'Josefin Sans','Inter',sans-serif;font-weight:700;font-size:clamp(26px,4.6vw,40px);line-height:1.05;margin-bottom:8px}
   h2 em{font-style:normal;color:var(--green)}
-  .sec-intro{font-size:17px;color:var(--ink-soft);max-width:64ch;margin-bottom:30px}
+  .sec-intro{font-size:16px;color:var(--muted);max-width:64ch;margin-bottom:28px}
 
-  /* dato estrella */
-  .star-data{background:var(--purple);border-radius:20px;padding:40px 38px;position:relative;overflow:hidden}
-  .star-data .big{font-family:'Josefin Sans',serif;font-weight:700;font-size:clamp(52px,11vw,96px);line-height:.9;color:var(--green)}
-  .star-data p{font-size:clamp(17px,2.4vw,22px);margin-top:14px;max-width:52ch}
-  .star-data .src{font-size:13px;color:rgba(250,250,247,.5);margin-top:18px}
+  /* central idea card */
+  .idea{background:var(--bg-soft);border:1px solid var(--line);border-left:4px solid var(--green);border-radius:16px;padding:34px 36px;margin-top:8px}
+  .idea .small{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:12px}
+  .idea p{font-family:'Josefin Sans','Inter',sans-serif;font-size:clamp(22px,3.4vw,32px);line-height:1.2;color:var(--white)}
+  .idea .sub{font-family:'Inter',sans-serif;font-size:16px;color:var(--muted);margin-top:16px;line-height:1.55}
 
   /* sprint cards */
-  .sprints{display:grid;gap:18px;margin-top:8px}
-  .sprint{background:var(--bg-soft);border:1px solid var(--line);border-left:4px solid var(--green);border-radius:16px;padding:26px 28px}
-  .sprint .stag{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
-  .sprint .stag .lbl{font-family:'Josefin Sans',serif;font-weight:700;font-size:20px;color:var(--green)}
-  .sprint .stag .stage{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);border:1px solid var(--line);border-radius:20px;padding:3px 10px}
-  .sprint .sgoal{color:var(--ink-soft);font-size:15px;margin-bottom:18px}
-  .posts{display:grid;gap:10px}
-  .post{display:grid;grid-template-columns:92px 1fr;gap:16px;align-items:start;padding:14px 0;border-top:1px dashed var(--line)}
-  .post:first-child{border-top:none}
-  .post .day{font-family:'Josefin Sans',serif}
-  .post .day .dd{font-weight:700;font-size:17px;color:var(--ink)}
-  .post .day .dn{font-size:12px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.08em}
-  .post .body h3{font-size:17px;font-weight:600;margin-bottom:6px;line-height:1.3}
-  .post .tags{display:flex;flex-wrap:wrap;gap:7px}
-  .tag{font-size:11px;border-radius:20px;padding:3px 10px;border:1px solid var(--line);color:var(--ink-soft)}
-  .tag.tofu{border-color:var(--green);color:var(--green)}
-  .tag.mofu{border-color:var(--yellow);color:var(--yellow)}
-  .tag.bofu{border-color:var(--orange);color:var(--orange)}
-  .tag.lm{border-color:var(--purple);background:var(--purple);color:var(--ink)}
-  .tag.cta{background:rgba(134,202,40,.12);border-color:transparent;color:var(--green)}
+  .sprint{background:var(--bg-soft);border:1px solid var(--line);border-radius:18px;padding:30px 30px 18px;margin-bottom:20px;overflow:hidden}
+  .sprint-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:10px;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:6px}
+  .sprint-head .tag{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--green)}
+  .sprint-head h3{font-family:'Josefin Sans','Inter',sans-serif;font-weight:700;font-size:clamp(20px,3.2vw,27px);color:var(--white);line-height:1.1;flex:1 1 280px}
+  .sprint-head .stage{font-size:12px;color:var(--muted);background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:5px 12px;white-space:nowrap}
+  .sprint .promise{font-size:15px;color:var(--muted);margin:14px 0 6px;max-width:70ch}
 
-  /* lead magnet */
-  .lm-card{background:var(--bg-soft);border:1px solid var(--green);border-radius:18px;padding:30px 32px}
-  .lm-card .kw{display:inline-block;font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--bg);background:var(--green);border-radius:8px;padding:4px 12px;font-size:14px;letter-spacing:.05em}
-  .lm-card h3{font-family:'Josefin Sans',serif;font-size:24px;font-weight:700;margin:16px 0 8px}
-  .lm-card ul{list-style:none;margin-top:14px;display:grid;gap:8px}
-  .lm-card li{padding-left:24px;position:relative;font-size:15px;color:var(--ink-soft)}
-  .lm-card li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}
+  /* posts */
+  .post{display:grid;grid-template-columns:96px 1fr;gap:18px;padding:18px 0;border-top:1px solid var(--line);align-items:start}
+  .post:first-of-type{border-top:none}
+  .post .date{font-size:13px}
+  .post .date .day{display:block;font-family:'Josefin Sans','Inter',sans-serif;font-weight:700;font-size:17px;color:var(--green)}
+  .post .date .dow{display:block;color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+  .post .body .ttl{font-size:17px;font-weight:600;color:var(--white);line-height:1.35;margin-bottom:8px}
+  .post .labels{display:flex;flex-wrap:wrap;gap:7px}
+  .lbl{font-size:11px;font-weight:700;letter-spacing:.05em;border-radius:6px;padding:3px 9px;text-transform:uppercase}
+  .lbl.tofu{background:rgba(134,202,40,.16);color:var(--green)}
+  .lbl.mofu{background:rgba(255,165,0,.15);color:var(--orange)}
+  .lbl.bofu{background:rgba(112,9,98,.32);color:#e09ad6}
+  .lbl.fmt{background:rgba(250,250,247,.08);color:var(--white)}
+  .lbl.cta-rec{background:var(--green);color:var(--bg)}
+  .lbl.cta-conv{background:rgba(250,250,247,.12);color:var(--white)}
+  .lbl.cta-auth{background:transparent;color:var(--muted);border:1px solid var(--line)}
+  .kw{font-size:12px;color:var(--green);margin-top:8px;font-weight:600}
 
-  /* checklist interactivo */
-  .check{display:grid;gap:10px;margin-top:8px}
-  .check label{display:flex;gap:14px;align-items:flex-start;background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:16px 18px;cursor:pointer;transition:.15s}
-  .check label:hover{border-color:var(--green)}
-  .check input{appearance:none;width:22px;height:22px;border:2px solid var(--ink-soft);border-radius:6px;flex:0 0 auto;margin-top:1px;cursor:pointer;transition:.15s;position:relative}
-  .check input:checked{background:var(--green);border-color:var(--green)}
-  .check input:checked::after{content:'✓';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--bg);font-weight:700;font-size:15px}
-  .check label span{font-size:15px}
-  .check input:checked + span{color:var(--ink-soft);text-decoration:line-through}
-  .progress{margin-top:18px;font-size:14px;color:var(--ink-soft)}
-  .progress b{color:var(--green)}
+  /* lead magnets */
+  .lm{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:8px}
+  .lmcard{background:var(--bg-soft);border:1px solid var(--line);border-radius:16px;padding:26px 26px 22px;position:relative}
+  .lmcard .kwtag{display:inline-block;background:var(--green);color:var(--bg);font-weight:700;font-size:12px;letter-spacing:.06em;border-radius:6px;padding:4px 10px;margin-bottom:14px}
+  .lmcard h3{font-family:'Josefin Sans','Inter',sans-serif;font-weight:700;font-size:21px;color:var(--white);line-height:1.15;margin-bottom:8px}
+  .lmcard .when{font-size:13px;color:var(--green);margin-bottom:12px}
+  .lmcard ul{list-style:none;margin-top:6px}
+  .lmcard li{font-size:14px;color:var(--muted);padding:6px 0 6px 20px;position:relative;border-top:1px solid var(--line)}
+  .lmcard li:first-child{border-top:none}
+  .lmcard li::before{content:'→';position:absolute;left:0;color:var(--green)}
 
-  /* rotaciones */
+  /* checklist */
+  .check{background:var(--bg-soft);border:1px solid var(--line);border-radius:16px;padding:14px 26px;margin-top:8px}
+  .ck{display:flex;align-items:flex-start;gap:14px;padding:15px 0;border-top:1px solid var(--line);cursor:pointer;user-select:none}
+  .ck:first-child{border-top:none}
+  .ck input{appearance:none;-webkit-appearance:none;width:22px;height:22px;border:2px solid var(--green);border-radius:6px;flex:0 0 auto;margin-top:1px;cursor:pointer;position:relative;transition:.15s}
+  .ck input:checked{background:var(--green)}
+  .ck input:checked::after{content:'✓';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--bg);font-weight:900;font-size:14px}
+  .ck label{cursor:pointer;font-size:15px;color:var(--white)}
+  .ck input:checked + label{color:var(--muted);text-decoration:line-through}
+  .ck .hint{display:block;font-size:13px;color:var(--muted);margin-top:3px;text-decoration:none}
+
+  /* data strip */
+  .data{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:8px}
+  .stat{background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:24px 22px}
+  .stat .big{font-family:'Josefin Sans','Inter',sans-serif;font-weight:700;font-size:38px;color:var(--green);line-height:1}
+  .stat .txt{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.4}
+  .stat .src{font-size:11px;color:rgba(250,250,247,.4);margin-top:10px}
+
+  /* rotation note */
   .rot{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:8px}
-  .rot .r{background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
-  .rot .r .t{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px}
-  .rot .r .v{font-size:16px;color:var(--ink)}
-  .rot .r .v b{color:var(--green)}
+  .rotcard{background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .rotcard h4{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:10px}
+  .rotcard p{font-size:14px;color:var(--muted);line-height:1.5}
+  .rotcard b{color:var(--white)}
 
-  .footer{text-align:center;padding-top:44px;color:var(--ink-soft);font-size:13px}
-  .footer b{font-family:'Josefin Sans',serif;color:var(--green)}
+  .footer{text-align:center;padding-top:44px;color:var(--muted);font-size:13px}
+  .footer b{color:var(--green)}
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <header class="masthead">
-    <span class="star">✦</span>
-    <p class="kicker">Globalizame · Estrategia de contenido Instagram</p>
-    <h1>Junio 2026<br><em>el cierre.</em></h1>
-    <p class="lede">Tramo final del mes, del viernes 19 al lunes 29. La puerta del verano. El mes que le pregunta al dueño una sola cosa: <strong>¿tienes un negocio o tienes una correa?</strong></p>
-    <div class="meta">
-      <span class="chip"><b>5</b> posts</span>
+    <p class="kicker">Globalizame · Estrategia de Instagram</p>
+    <h1>Julio 2026: tu mejor mes te está <em>costando dinero</em>.</h1>
+    <p class="lede">Es temporada alta. Entra más demanda que en todo el año. Y el negocio que se lleva a mano no escala con ella: cada llamada que suena mientras sirves, cada reserva de las 23:00, cada consulta del fin de semana que nadie contesta es venta perdida en el mes en que más fácil sería ingresar.</p>
+    <div class="meta-row">
+      <span class="chip"><b>14</b> posts</span>
+      <span class="chip"><b>4</b> sprints + cierre</span>
+      <span class="chip"><b>2</b> lead magnets</span>
       <span class="chip">Cadencia <b>Lun · Mié · Vie</b></span>
-      <span class="chip">~<b>1,5</b> sprints</span>
-      <span class="chip"><b>1</b> lead magnet</span>
-      <span class="chip">Sector del mes: <b>taller mecánico</b></span>
+      <span class="chip">Sector del mes: <b>hostelería</b></span>
     </div>
   </header>
 
   <section>
-    <h2>El <em>dato estrella</em> del tramo</h2>
-    <div class="star-data">
-      <div class="big">36%</div>
-      <p>de los autónomos reconoce que <strong>no puede desconectar ni una sola semana</strong> por culpa de las facturas sin cobrar. No es que no quieran parar. Es que el negocio no les deja.</p>
-      <p class="src">emprendedores.es / estudio Remote, 2026 · La morosidad cuesta 2.900 M€ al año a autónomos y pymes.</p>
+    <h2>La idea <em>central</em></h2>
+    <p class="sec-intro">Todo el mes cuelga de una sola frase. El arco la abre como espejo y la cierra como decisión.</p>
+    <div class="idea">
+      <div class="small">Tema central · Julio</div>
+      <p>"Tu mejor mes te está costando dinero. Y no lo ves porque pasa mientras estás ocupado ganándolo."</p>
+      <p class="sub">El protagonista nunca es la tecnología. Es el dueño en temporada alta, con más demanda de la que puede atender a mano, viendo cómo se le cae la venta buena. Y un detalle de calendario: el <b>1 de julio</b> la factura electrónica pasa a ser obligatoria para autónomos. El que lo lleva todo a mano lo va a notar.</p>
     </div>
   </section>
 
   <section>
-    <h2>El arco: del <em>espejo</em> a la decisión</h2>
-    <p class="sec-intro">Empezamos en el espejo del verano (conciencia), giramos hacia la causa real —no es falta de ganas, es falta de sistema—, lo demostramos con un caso, y aterrizamos en el coste de seguir igual. Tema central: <strong>el verano dirá si tienes un negocio o una correa.</strong></p>
+    <h2>El <em>arco</em> del mes</h2>
+    <p class="sec-intro">Cuatro sprints semanales que llevan del problema a la sesión. Una pieza por día (Lun/Mié/Vie). El primer sprint arranca en miércoles porque julio empieza en miércoles 1.</p>
 
-    <div class="sprints">
+    <!-- SPRINT A -->
+    <div class="sprint">
+      <div class="sprint-head">
+        <span class="tag">Sprint A · Semana 1</span>
+        <h3>El espejo: lo que no atiendes, se cae</h3>
+        <span class="stage">TOFU · Despertar</span>
+      </div>
+      <p class="promise">Mostrarle al dueño que en su mejor mes está dejando dinero del bueno en la mesa, sin verlo, porque el negocio depende de que él llegue a todo a mano.</p>
 
-      <div class="sprint">
-        <div class="stag"><span class="lbl">Sprint A · cierre</span><span class="stage">El espejo del verano</span></div>
-        <p class="sgoal">Una sola pieza para cerrar la semana en curso. Abre la conversación del mes.</p>
-        <div class="posts">
-          <div class="post">
-            <div class="day"><div class="dd">19</div><div class="dn">Vie</div></div>
-            <div class="body">
-              <h3>"Si te vas 10 días y el negocio se cae, no tienes un negocio."</h3>
-              <div class="tags"><span class="tag tofu">TOFU</span><span class="tag">Carrusel</span><span class="tag">Hook: provocación</span><span class="tag cta">CTA: autoridad</span></div>
-            </div>
-          </div>
+      <div class="post">
+        <div class="date"><span class="day">1 jul</span><span class="dow">Mié · Abre</span></div>
+        <div class="body">
+          <div class="ttl">Más de la mitad de quien intenta darte dinero no consigue hablar contigo</div>
+          <div class="labels"><span class="lbl tofu">TOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-conv">CTA Conversación</span></div>
         </div>
       </div>
-
-      <div class="sprint">
-        <div class="stag"><span class="lbl">Sprint B · semana completa</span><span class="stage">La otra forma → prueba real</span></div>
-        <p class="sgoal">El sprint con cuerpo: por qué pasa, que sí hay otra forma, y la prueba de que funciona. Cierra lanzando el lead magnet.</p>
-        <div class="posts">
-          <div class="post">
-            <div class="day"><div class="dd">22</div><div class="dn">Lun</div></div>
-            <div class="body">
-              <h3>"No es que trabajes poco. Es que todo pasa por ti."</h3>
-              <div class="tags"><span class="tag tofu">TOFU→MOFU</span><span class="tag">Carrusel</span><span class="tag">Hook: pregunta directa</span><span class="tag cta">CTA: conversación · CAOS</span></div>
-            </div>
-          </div>
-          <div class="post">
-            <div class="day"><div class="dd">24</div><div class="dn">Mié</div></div>
-            <div class="body">
-              <h3>"Un taller de 3 personas recuperó 2 horas al día. Sin contratar a nadie."</h3>
-              <div class="tags"><span class="tag mofu">MOFU</span><span class="tag">Carrusel</span><span class="tag">Hook: caso real</span><span class="tag cta">CTA: autoridad</span></div>
-            </div>
-          </div>
-          <div class="post">
-            <div class="day"><div class="dd">26</div><div class="dn">Vie</div></div>
-            <div class="body">
-              <h3>"4 de cada 10 dueños no se irán de vacaciones. Mira por qué (y si tú estás en la lista)."</h3>
-              <div class="tags"><span class="tag mofu">MOFU</span><span class="tag lm">LEAD MAGNET</span><span class="tag">Hook: estadística</span><span class="tag cta">CTA: recurso · VERANO</span></div>
-            </div>
-          </div>
+      <div class="post">
+        <div class="date"><span class="day">3 jul</span><span class="dow">Vie · Lanza</span></div>
+        <div class="body">
+          <div class="ttl">El teléfono suena mientras sirves la mesa 4. Esa llamada era una reserva. Y no vuelve.</div>
+          <div class="labels"><span class="lbl tofu">TOFU</span><span class="lbl fmt">Lead Magnet</span><span class="lbl cta-rec">CTA Recurso</span></div>
+          <div class="kw">Comenta <b>RADIOGRAFÍA</b> → kit del dinero que se escapa cada semana</div>
         </div>
       </div>
-
-      <div class="sprint">
-        <div class="stag"><span class="lbl">Sprint C · arranque</span><span class="stage">El coste · puente a la sesión</span></div>
-        <p class="sgoal">Primera pieza del último empujón del mes. Pone número a quedarse igual y abre la puerta a hablar.</p>
-        <div class="posts">
-          <div class="post">
-            <div class="day"><div class="dd">29</div><div class="dn">Lun</div></div>
-            <div class="body">
-              <h3>"Cada factura que cobras tarde te cuesta más que el verano que no te coges."</h3>
-              <div class="tags"><span class="tag bofu">MOFU→BOFU</span><span class="tag">Carrusel</span><span class="tag">Hook: error común</span><span class="tag cta">CTA: conversación → sesión 30 min</span></div>
-            </div>
-          </div>
+      <div class="post">
+        <div class="date"><span class="day">6 jul</span><span class="dow">Lun · Remata</span></div>
+        <div class="body">
+          <div class="ttl">Desde este mes, la factura ya no es papel. Si lo llevas a mano, vas tarde.</div>
+          <div class="labels"><span class="lbl tofu">TOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-auth">CTA Autoridad</span></div>
         </div>
       </div>
+    </div>
 
+    <!-- SPRINT B -->
+    <div class="sprint">
+      <div class="sprint-head">
+        <span class="tag">Sprint B · Semana 2</span>
+        <h3>La otra forma: el negocio no crece a base de tus horas</h3>
+        <span class="stage">TOFU → MOFU · Entender</span>
+      </div>
+      <p class="promise">Existe otra manera de llevar el negocio en temporada alta que no es ni echar más horas tú ni contratar a la carrera a gente que no encuentras.</p>
+
+      <div class="post">
+        <div class="date"><span class="day">8 jul</span><span class="dow">Mié · Abre</span></div>
+        <div class="body">
+          <div class="ttl">Contratar a la carrera en julio no arregla un negocio que depende de ti</div>
+          <div class="labels"><span class="lbl tofu">TOFU→MOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-conv">CTA Conversación</span></div>
+          <div class="kw">Comenta <b>CAOS</b> → te cuento por qué meter más gente no lo arregla</div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="date"><span class="day">10 jul</span><span class="dow">Vie · Cierra</span></div>
+        <div class="body">
+          <div class="ttl">Dueño que apaga fuegos vs dueño que monta el sistema una vez</div>
+          <div class="labels"><span class="lbl mofu">MOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-auth">CTA Autoridad</span></div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="date"><span class="day">13 jul</span><span class="dow">Lun · Abre</span></div>
+        <div class="body">
+          <div class="ttl">El negocio que atiende solo a las 23:00 mientras tú cenas con tu familia</div>
+          <div class="labels"><span class="lbl mofu">MOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-conv">CTA Conversación</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPRINT C -->
+    <div class="sprint">
+      <div class="sprint-head">
+        <span class="tag">Sprint C · Semana 3</span>
+        <h3>Prueba real: un restaurante que dejó de perder reservas</h3>
+        <span class="stage">MOFU · Entender</span>
+      </div>
+      <p class="promise">Demostrar con cifras, en un negocio como el suyo, que esto funciona: más reservas, menos teléfono, recuperado en días.</p>
+
+      <div class="post">
+        <div class="date"><span class="day">15 jul</span><span class="dow">Mié · Abre</span></div>
+        <div class="body">
+          <div class="ttl">Un restaurante sumó 11 reservas a la semana sin contratar a nadie</div>
+          <div class="labels"><span class="lbl mofu">MOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-auth">CTA Autoridad</span></div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="date"><span class="day">17 jul</span><span class="dow">Vie · Lanza</span></div>
+        <div class="body">
+          <div class="ttl">2.000 € más a la semana. Y el dueño recuperó dos horas cada día.</div>
+          <div class="labels"><span class="lbl mofu">MOFU</span><span class="lbl fmt">Lead Magnet</span><span class="lbl cta-rec">CTA Recurso</span></div>
+          <div class="kw">Comenta <b>TEMPORADA</b> → plan para no perder una sola venta este verano</div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="date"><span class="day">20 jul</span><span class="dow">Lun · Remata</span></div>
+        <div class="body">
+          <div class="ttl">No fue suerte. Fue dejar de depender de quién contesta el teléfono.</div>
+          <div class="labels"><span class="lbl mofu">MOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-conv">CTA Conversación</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPRINT D -->
+    <div class="sprint">
+      <div class="sprint-head">
+        <span class="tag">Sprint D · Semana 4</span>
+        <h3>El coste: lo que vale seguir como estás</h3>
+        <span class="stage">MOFU → BOFU · Confiar</span>
+      </div>
+      <p class="promise">Poner en euros lo que cuesta el status quo en temporada alta y abrir la puerta a la decisión, sin asustar pero sin suavizar.</p>
+
+      <div class="post">
+        <div class="date"><span class="day">22 jul</span><span class="dow">Mié · Abre</span></div>
+        <div class="body">
+          <div class="ttl">Perder 2 o 3 reservas por turno son 27.000 € al año que nadie apunta</div>
+          <div class="labels"><span class="lbl mofu">MOFU→BOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-auth">CTA Autoridad</span></div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="date"><span class="day">24 jul</span><span class="dow">Vie · Cierra</span></div>
+        <div class="body">
+          <div class="ttl">El verano se acaba. La temporada baja te va a pedir cuentas de lo que no cogiste.</div>
+          <div class="labels"><span class="lbl bofu">BOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-conv">CTA Conversación</span></div>
+          <div class="kw">Comenta <b>CUENTAS</b> → te cuento cómo se ve tu verano en números</div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="date"><span class="day">27 jul</span><span class="dow">Lun · Abre</span></div>
+        <div class="body">
+          <div class="ttl">Para quién es esto y para quién no. Te lo digo claro.</div>
+          <div class="labels"><span class="lbl bofu">BOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-auth">CTA Autoridad</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CIERRE -->
+    <div class="sprint">
+      <div class="sprint-head">
+        <span class="tag">Cierre · fin de mes</span>
+        <h3>La sesión: 30 minutos, sin compromiso</h3>
+        <span class="stage">BOFU · Decidir</span>
+      </div>
+      <p class="promise">Aterrizar todo el mes en la conversación de 30 minutos con Mario. Confianza personal, sin venta agresiva.</p>
+
+      <div class="post">
+        <div class="date"><span class="day">29 jul</span><span class="dow">Mié · Abre</span></div>
+        <div class="body">
+          <div class="ttl">No vendo humo. Si tu negocio no lo necesita, te lo digo en la llamada.</div>
+          <div class="labels"><span class="lbl bofu">BOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-conv">CTA Conversación</span></div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="date"><span class="day">31 jul</span><span class="dow">Vie · Cierra</span></div>
+        <div class="body">
+          <div class="ttl">Agosto llega en 24 horas. O tu negocio aguanta sin ti, o aguantas tú por él.</div>
+          <div class="labels"><span class="lbl bofu">BOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-rec">CTA Recurso</span></div>
+          <div class="kw">Comenta <b>SESIÓN</b> → te paso el enlace para reservar los 30 min</div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section>
-    <h2>Lead magnet del <em>tramo</em></h2>
-    <p class="sec-intro">Uno solo, se lanza el viernes 26 con el carrusel de estadística. Es el peaje a cambio del kit — la única pieza con palabra clave.</p>
-    <div class="lm-card">
-      <span class="kw">VERANO</span>
-      <h3>Test: ¿aguanta tu negocio 10 días sin ti?</h3>
-      <p style="color:var(--ink-soft);font-size:15px">Un autodiagnóstico de 2 minutos. El dueño marca, y le devuelve un veredicto honesto + las primeras palancas para soltar antes de agosto.</p>
-      <ul>
-        <li>Las 6 preguntas que revelan si eres el cuello de botella</li>
-        <li>El semáforo: verde / ámbar / rojo según tu puntuación</li>
-        <li>Las 3 tareas que más te atan (y cuál soltar primero)</li>
-        <li>Qué pasa de verdad si te vas 10 días sin preparar nada</li>
-        <li>El mini-plan de 1 semana para llegar a agosto más ligero</li>
-        <li>Cómo saber cuándo el problema ya no es de personas, sino de sistema</li>
-      </ul>
+    <h2>Los <em>lead magnets</em> del mes</h2>
+    <p class="sec-intro">Dos. Uno por sprint con recurso (máximo uno por semana). Cada uno se diseña como kit con /lead-magnet: 5–6 entregables que el dueño usa mañana.</p>
+    <div class="lm">
+      <div class="lmcard">
+        <span class="kwtag">RADIOGRAFÍA</span>
+        <div class="when">Sprint A · se lanza Vie 3 jul</div>
+        <h3>El dinero que se te escapa cada semana sin que lo veas</h3>
+        <ul>
+          <li>Auto-diagnóstico: ¿por dónde se te cae la venta? (10 preguntas)</li>
+          <li>Calculadora: llamadas + reservas + consultas caídas × ticket medio = € / semana</li>
+          <li>Mapa de los 3 momentos del día en que pierdes más</li>
+          <li>Tabla "lo que cuesta cada hora que no contestas"</li>
+          <li>Primeros 3 pasos para tapar la fuga antes de agosto</li>
+        </ul>
+      </div>
+      <div class="lmcard">
+        <span class="kwtag">TEMPORADA</span>
+        <div class="when">Sprint C · se lanza Vie 17 jul</div>
+        <h3>Plan: no pierdas una sola venta esta temporada alta</h3>
+        <ul>
+          <li>Checklist de los puntos por donde entra (y se escapa) la demanda</li>
+          <li>Scripts copiables: confirmar reserva, recuperar al que no contestó, pedir reseña</li>
+          <li>Plantilla para que ninguna consulta fuera de horario quede sin respuesta</li>
+          <li>Matriz: qué atender tú y qué dejar resuelto de antemano</li>
+          <li>Plan de 30 días para llegar a septiembre con el sistema montado</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>La <em>munición</em>: datos del mes</h2>
+    <p class="sec-intro">Cifras reales, con fuente, para anclar los carruseles. En el copy nunca se nombra tecnología: se traduce a euros y horas.</p>
+    <div class="data">
+      <div class="stat"><div class="big">62%</div><div class="txt">de las llamadas entrantes se pierden sin contestar. La mayoría no vuelve a llamar.</div><div class="src">Aira · 2026 · DATO ESTRELLA</div></div>
+      <div class="stat"><div class="big">27.000 €</div><div class="txt">al año pierde de media un restaurante que deja caer 2-3 reservas por turno.</div><div class="src">Infobae · sector restauración 2026</div></div>
+      <div class="stat"><div class="big">+11</div><div class="txt">reservas por semana (~2.000 €) sumó un restaurante; recuperó la inversión en 8 días.</div><div class="src">Aurorainbox · caso real 2026</div></div>
+      <div class="stat"><div class="big">6 de 10</div><div class="txt">hosteleros no cubren personal este verano y reducen horario y aforo.</div><div class="src">RestauraciónNews · 2026</div></div>
+      <div class="stat"><div class="big">1 jul</div><div class="txt">la factura electrónica pasa a ser obligatoria para autónomos. Multa de hasta 50.000 €.</div><div class="src">AEAT / Verifactu · 2026</div></div>
+      <div class="stat"><div class="big">+18%</div><div class="txt">de ocupación media en las primeras semanas en restaurantes que dejaron de gestionar a mano.</div><div class="src">Sector restauración Madrid · 2026</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Rotación <em>visual y de cierre</em></h2>
+    <p class="sec-intro">Para que el mes no se queme: se mezclan los tres tipos de cierre cada semana y rota la combinación de color por sprint (las 6 válidas de marca, en orden).</p>
+    <div class="rot">
+      <div class="rotcard"><h4>Color por sprint</h4><p><b>A:</b> Amarillo + Verde + Negro<br><b>B:</b> Verde + Magenta + Negro<br><b>C:</b> Magenta + Verde + Blanco<br><b>D:</b> Azul + Naranja + Blanco<br><b>Cierre:</b> Negro + Verde + Blanco</p></div>
+      <div class="rotcard"><h4>Cierres (regla de oro)</h4><p>Solo las piezas con recurso real llevan <b>CTA Recurso</b> (Vie 3 y Vie 17). El resto rota entre <b>Conversación</b> y <b>Autoridad</b>. Nunca tres días seguidos el mismo cierre.</p></div>
+      <div class="rotcard"><h4>Hooks</h4><p>Arranca en <b>pregunta directa</b> (siguiente en rotación tras junio) y rota: estadística → caso real → provocación → error común.</p></div>
     </div>
   </section>
 
   <section>
     <h2>Checklist de <em>producción</em></h2>
-    <p class="sec-intro">Marca cada pieza cuando esté lista (carrusel + copy + DM si lleva keyword). Se genera con <strong>/productor</strong>.</p>
+    <p class="sec-intro">El estado del mes de un vistazo. Marca cada pieza al producirla con /productor. Se guarda solo en tu navegador.</p>
     <div class="check">
-      <label><input type="checkbox"><span>Vie 19 — El espejo del verano · provocación · CTA autoridad</span></label>
-      <label><input type="checkbox"><span>Lun 22 — Todo pasa por ti · pregunta directa · CTA conversación (CAOS)</span></label>
-      <label><input type="checkbox"><span>Mié 24 — Caso taller, 2 h/día · caso real · CTA autoridad</span></label>
-      <label><input type="checkbox"><span>Vie 26 — 4 de cada 10 + lead magnet · estadística · CTA recurso (VERANO)</span></label>
-      <label><input type="checkbox"><span>Lun 29 — El coste del impago · error común · CTA conversación → sesión</span></label>
-      <label><input type="checkbox"><span>Lead magnet "VERANO" generado con /lead-magnet</span></label>
-    </div>
-    <p class="progress"><b id="done">0</b> de <b>6</b> listos.</p>
-  </section>
-
-  <section>
-    <h2>Estado de <em>rotaciones</em></h2>
-    <div class="rot">
-      <div class="r"><div class="t">Color de arranque</div><div class="v">Posición 3 → <b>Amarillo #F4E542 + Verde + Negro</b>, avanzando por el orden en cada pieza</div></div>
-      <div class="r"><div class="t">Rotación de hooks</div><div class="v">Provocación → Pregunta → Caso real → Estadística → <b>Error común</b></div></div>
-      <div class="r"><div class="t">Sector del mes</div><div class="v"><b>Taller mecánico</b> (no repetido en jul/ago)</div></div>
-      <div class="r"><div class="t">CTA del tramo</div><div class="v">Autoridad · Conversación · Autoridad · <b>Recurso</b> · Conversación</div></div>
+      <div class="ck"><input type="checkbox" id="c1"><label for="c1">Mié 1 — Más de la mitad de quien intenta darte dinero no habla contigo<span class="hint">TOFU · Conversación</span></label></div>
+      <div class="ck"><input type="checkbox" id="c2"><label for="c2">Vie 3 — El teléfono suena mientras sirves · LEAD MAGNET RADIOGRAFÍA<span class="hint">TOFU · Recurso</span></label></div>
+      <div class="ck"><input type="checkbox" id="c3"><label for="c3">Lun 6 — Desde este mes la factura ya no es papel<span class="hint">TOFU · Autoridad</span></label></div>
+      <div class="ck"><input type="checkbox" id="c4"><label for="c4">Mié 8 — Contratar a la carrera no arregla la dependencia<span class="hint">TOFU→MOFU · Conversación</span></label></div>
+      <div class="ck"><input type="checkbox" id="c5"><label for="c5">Vie 10 — Dueño que apaga fuegos vs dueño que monta el sistema<span class="hint">MOFU · Autoridad</span></label></div>
+      <div class="ck"><input type="checkbox" id="c6"><label for="c6">Lun 13 — El negocio que atiende solo a las 23:00<span class="hint">MOFU · Conversación</span></label></div>
+      <div class="ck"><input type="checkbox" id="c7"><label for="c7">Mié 15 — Un restaurante sumó 11 reservas a la semana<span class="hint">MOFU · Autoridad</span></label></div>
+      <div class="ck"><input type="checkbox" id="c8"><label for="c8">Vie 17 — 2.000 € más a la semana · LEAD MAGNET TEMPORADA<span class="hint">MOFU · Recurso</span></label></div>
+      <div class="ck"><input type="checkbox" id="c9"><label for="c9">Lun 20 — No fue suerte: dejó de depender del teléfono<span class="hint">MOFU · Conversación</span></label></div>
+      <div class="ck"><input type="checkbox" id="c10"><label for="c10">Mié 22 — 27.000 € al año que nadie apunta<span class="hint">MOFU→BOFU · Autoridad</span></label></div>
+      <div class="ck"><input type="checkbox" id="c11"><label for="c11">Vie 24 — La temporada baja te va a pedir cuentas<span class="hint">BOFU · Conversación</span></label></div>
+      <div class="ck"><input type="checkbox" id="c12"><label for="c12">Lun 27 — Para quién es esto y para quién no<span class="hint">BOFU · Autoridad</span></label></div>
+      <div class="ck"><input type="checkbox" id="c13"><label for="c13">Mié 29 — No vendo humo, te lo digo en la llamada<span class="hint">BOFU · Conversación</span></label></div>
+      <div class="ck"><input type="checkbox" id="c14"><label for="c14">Vie 31 — Agosto en 24h: o aguanta el negocio o aguantas tú · CTA SESIÓN<span class="hint">BOFU · Recurso</span></label></div>
     </div>
   </section>
 
-  <p class="footer"><b>Globalizame</b> · Tu negocio liberado. Tu tiempo recuperado. · Estrategia junio 2026 (cierre)</p>
+  <p class="footer"><b>Globalizame</b> · Estrategia de contenido · Julio 2026 · Tu mejor mes te está costando dinero</p>
 
 </div>
 <script>
-  const boxes=[...document.querySelectorAll('.check input')];
-  const done=document.getElementById('done');
-  const upd=()=>done.textContent=boxes.filter(b=>b.checked).length;
-  boxes.forEach(b=>b.addEventListener('change',upd));
+  document.querySelectorAll('.check input').forEach(box=>{
+    const k='glz-jul26-'+box.id;
+    if(localStorage.getItem(k)==='1') box.checked=true;
+    box.addEventListener('change',()=>localStorage.setItem(k,box.checked?'1':'0'));
+  });
 </script>
 </body>
 </html>

@@ -9,7 +9,7 @@ Próxima combinación: Amarillo #F4E542 + Verde #86CA28 + Negro (posición 3/6)
 Último tipo de hook: provocación
 Próximo: pregunta directa
 
-Último mes con estrategia: Junio 2026 (cierre, 19-29 jun) — El verano dirá si tienes un negocio o una correa
+Último mes con estrategia: Julio 2026 (mes completo, 1-31 jul) — Tu mejor mes te está costando dinero
 Último sprint producido: Junio 2026 · Sprint A — El espejo del verano (Vie 19 jun)
 Último post publicado: —
 ```
@@ -70,14 +70,19 @@ Próximo: pregunta directa
 - **Entregables:** `investigacion/base_2026-08.md` · `estrategia/estrategia_mes.html`
 - **Estado:** Estrategia generada (pendiente de producción de carruseles con /productor).
 
-### Julio 2026 — Estrategia generada
-- **Tema central:** El negocio que no para cuando tú paras.
+### Julio 2026 (mes completo, 1-31 jul) — Estrategia generada
+- **Tema central:** Tu mejor mes te está costando dinero (y no lo ves).
+- **Tramo:** julio entero. 14 posts (Lun/Mié/Vie), 4 sprints + cierre, 2 lead magnets.
 - **Datos clave usados:**
-  1. 15-16 h/semana en tareas administrativas, casi 2 días laborables (MuyPymes, 2026).
-  2. Respuesta media a un lead web = 17 h; el 78% compra a quien responde primero (KW España / massimple).
-  3. 406.000 pymes cerraron 2024 en pérdidas, ≈34.000 € de media (CEPYME, 2026).
+  1. 62% de las llamadas entrantes se pierden sin contestar; la mayoría no vuelve a llamar (Aira, 2026). [dato estrella]
+  2. Perder 2-3 reservas por turno = ~27.000 €/año; el no-show resta 5-20% de facturación (Infobae / sector restauración, 2026).
+  3. Caso restaurante: +11 reservas/semana (~2.000 €), recuperado en 8 días; +18% ocupación (Aurorainbox, 2026).
+- **Gancho de calendario:** factura electrónica obligatoria para autónomos desde el 1-jul (Verifactu), multa hasta 50.000 €.
+- **Lead magnets:** RADIOGRAFÍA (Vie 3) — el dinero que se escapa cada semana · TEMPORADA (Vie 17) — plan para no perder ventas en temporada alta.
+- **Sector destacado:** hostelería / restauración (apoyo: servicios con cita).
 - **Entregables:** `investigacion/base_2026-07.md` · `estrategia/estrategia_mes.html`
 - **Estado:** Estrategia generada (pendiente de producción de carruseles con /productor).
+- **Nota:** versión anterior (16h admin / 17h lead / 406.000 pymes) descartada — esos datos estaban quemados; regenerado desde cero el 20 jun 2026.
 
 ---
 
