@@ -125,16 +125,18 @@ key word (ONE accent per carousel, kept across the series). Orange #F5A623 only 
 4-pointed star accents. No other colors.
 Typography: ultra-bold condensed serif for headlines (1950s editorial poster weight),
 italic serif in the accent color for the key/emotional word, clean handwritten-style font
-for subtext. Same families across all slides.
+for subtext. Same families across all slides. Headlines are bold but ALWAYS keep breathing
+room — generous margins, never text crammed edge to edge or colliding with the illustration.
 When a recurring cartoon character appears, it is ONE original vintage character (NOT any
 existing IP), consistent across the whole carousel — same man, suit and tie, expressive face.
 STANDARD CHROME (identical, discreet, never competing with the content):
-  - Top-left, SMALL: counter "0X / NN" + wordmark "Globalizame" ("Globaliza" black, "me"
-    green #00C896). Small and discreet — the headline/visual is the hero, not the logo.
+  - The wordmark "Globalizame" ("Globaliza" black, "me" green #00C896) appears ONCE per slide,
+    top-left only, small and discreet, next to the counter "0X / NN". NEVER a second wordmark
+    at the bottom — only one logo in the whole frame.
   - Bottom-right: "Desliza →" handwritten, ONCE only (never also at the top).
-  - Footer: only the discreet "Globalizame" wordmark. Nothing else.
-  - NO globe/icon/symbol anywhere — only the wordmark.
-  - On the LAST slide: no "Desliza →".
+  - The bottom area carries ONLY "Desliza →" (bottom-right). No logo, no extra text at the bottom.
+  - NO globe/icon/symbol anywhere — only the single top-left wordmark.
+  - On the LAST slide: no "Desliza →" (the wordmark may be larger here, it is the brand slide).
 All text inside the image in Spanish.
 =============================================
 ```
@@ -152,8 +154,9 @@ enfréntalo; si es una caída, dibújala. El personaje aparece solo cuando suma 
 a veces un detalle, a veces nada y manda el dato o el tipo. **Que ningún slide se parezca al anterior.**
 
 Lo único que te marco son los tres ROLES de la pieza (el QUÉ, nunca el CÓMO):
-- **PORTADA (slide 1):** puro gancho. El titular manda. La composición más potente que se te ocurra.
-  No explica nada todavía. Lleva "Desliza →" abajo-der.
+- **PORTADA (slide 1):** puro gancho. El titular manda, pero **deja respirar**: nunca debe ocupar
+  más de la mitad superior ni invadir el visual de abajo. Potente con aire alrededor, no apretado de
+  borde a borde. La composición más potente que se te ocurra. No explica nada todavía. "Desliza →" abajo-der.
 - **INTERMEDIOS:** una idea cada uno. Composición libre, variada, al servicio de esa idea.
 - **CIERRE (último):** la marca. Autoridad serena, sin CTA, sin "Desliza →".
 
