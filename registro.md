@@ -6,12 +6,12 @@
 Última combinación de color: Amarillo #F4E542 + Verde #86CA28 + Negro (posición 3/6)
 Próxima combinación: Verde #86CA28 + Magenta #CA2886 + Negro (posición 4/6)
 
-Último tipo de hook: estadística
-Próximo: caso real
+Último tipo de hook: caso real (Lun 22 jun)
+Próximo: provocación
 
 Último mes con estrategia: Junio 2026 (cierre, 22-29 jun) — Medio año dentro, ¿cuántas horas fueron tuyas?
-Último sprint producido: Julio 2026 · Sprint A — El espejo (Vie 3 jul)
-Último acento usado: verde #00C896 (Vie 3 jul) — próximo: alternar a púrpura #7B4FFF
+Último sprint producido: Junio cierre · Sprint A — El espejo del semestre (Lun 22 jun)
+Último acento usado: púrpura #7B4FFF (Lun 22 jun) — próximo: alternar a verde #00C896
 Último post publicado: —
 ```
 
@@ -45,7 +45,7 @@ Próximo: caso real
 | 29 jun 2026 | Junio cierre · Sprint B Puente al verano | Lun | MOFU→BOFU | Carrusel | Verde+Magenta | — | Pendiente |
 | 26 jun 2026 | Junio cierre · Sprint A El espejo del semestre | Vie | MOFU | Carrusel · Lead Magnet HORAS | Verde+Magenta | — | Pendiente |
 | 24 jun 2026 | Junio cierre · Sprint A El espejo del semestre | Mié | TOFU→MOFU | Carrusel | Verde+Magenta | — | Pendiente |
-| 22 jun 2026 | Junio cierre · Sprint A El espejo del semestre | Lun | TOFU | Carrusel | Verde+Magenta | Caso real | Pendiente |
+| 22 jun 2026 | Junio cierre · Sprint A El espejo del semestre | Lun | TOFU | Carrusel 7 slides · acento púrpura | Verde+Magenta | Caso real | Pendiente |
 | 3 jul 2026 | Julio · Sprint A El espejo | Vie | TOFU | Carrusel 6 slides | Crema+Verde | Estadística | Pendiente |
 | 1 jul 2026 | Julio · Sprint A El espejo | Mié | TOFU | Carrusel 7 slides | Crema+Púrpura | Pregunta directa | Pendiente |
 | 19 jun 2026 | Junio · Sprint A El espejo del verano | Vie | TOFU | Carrusel 7 slides | Crema+Púrpura | Provocación | Pendiente |
