@@ -6,12 +6,12 @@
 Última combinación de color: Amarillo #F4E542 + Verde #86CA28 + Negro (posición 3/6)
 Próxima combinación: Verde #86CA28 + Magenta #CA2886 + Negro (posición 4/6)
 
-Último tipo de hook: caso real (Lun 22 jun)
-Próximo: provocación
+Último tipo de hook: provocación (Mié 24 jun)
+Próximo: pregunta directa
 
 Último mes con estrategia: Junio 2026 (cierre, 22-29 jun) — Medio año dentro, ¿cuántas horas fueron tuyas?
-Último sprint producido: Junio cierre · Sprint A — El espejo del semestre (Lun 22 jun)
-Último acento usado: púrpura #7B4FFF (Lun 22 jun) — próximo: alternar a verde #00C896
+Último sprint producido: Junio cierre · Sprint A — El espejo del semestre (Mié 24 jun)
+Último acento usado: verde #00C896 (Mié 24 jun) — próximo: alternar a púrpura #7B4FFF
 Último post publicado: —
 ```
 
@@ -42,6 +42,7 @@ Próximo: provocación
 
 | Fecha | Sprint | Día | Etapa | Formato | Color | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
+| 24 jun 2026 | Junio cierre · Sprint A El espejo del semestre | Mié | TOFU→MOFU | Carrusel 7 slides · acento verde | Verde+Magenta | Provocación | Pendiente |
 | 29 jun 2026 | Junio cierre · Sprint B Puente al verano | Lun | MOFU→BOFU | Carrusel | Verde+Magenta | — | Pendiente |
 | 26 jun 2026 | Junio cierre · Sprint A El espejo del semestre | Vie | MOFU | Carrusel · Lead Magnet HORAS | Verde+Magenta | — | Pendiente |
 | 24 jun 2026 | Junio cierre · Sprint A El espejo del semestre | Mié | TOFU→MOFU | Carrusel | Verde+Magenta | — | Pendiente |
