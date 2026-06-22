@@ -1,6 +1,6 @@
 ---
 name: productor
-description: Director de Arte de Globalizame (Mario Ruiz). Genera el carrusel de Instagram de la semana en una sola pasada: 6-8 slides con prompts de imagen para ChatGPT (estilo póster cartoon vintage años 40-50) + copy del post estilo Isra Bravo + registro. Activa cuando el usuario diga "genera el carrusel de la semana", "produce el post", "el carrusel de esta semana", "productor" o pida el post semanal de Instagram. Requiere que exista antes la estrategia del mes (skill investigador). Entregable: posts/post_listo_[YYYY-MM-DD].md. Regla absoluta: el contenido NUNCA menciona IA, automatización, bot ni tecnicismos — el protagonista es el problema o el resultado, en euros y horas.
+description: Director de Arte de Globalizame (Mario Ruiz). Produce el carrusel de la semana en una sola pasada a partir del brief del mes (skill investigador). Genera estilo editorial premium (Monocle/Bloomberg/Stripe, fondo carbón #232323 + acento verde/morado, ratio 3:4) para Instagram Y LinkedIn: estrategia + copy slide a slide + un prompt de imagen por slide (para pegar en ChatGPT) + copy de cada red + mensaje de respuesta al comentario + DM + hashtags. NO genera imágenes, solo prompts. Activa cuando el usuario diga "genera el carrusel de la semana", "produce el post", "el carrusel de esta semana", "productor" o pida el post semanal. Requiere la estrategia del mes (skill investigador). Entregable: carpeta posts/post_[YYYY-MM-DD]_[slug]/. Regla absoluta: el contenido NUNCA menciona IA, automatización, bot ni tecnicismos — el protagonista es el problema o el resultado, en euros y horas.
 ---
 
 # Productor · Director de Arte · Carrusel semanal · Globalizame
@@ -9,200 +9,146 @@ description: Director de Arte de Globalizame (Mario Ruiz). Genera el carrusel de
 
 ## ⚙️ MECÁNICA — LEE ESTO PRIMERO (no negociable)
 
-Los 7 pasos se ejecutan **SEGUIDOS, en una sola pasada, sin parar entre ellos.**
+Los pasos se ejecutan **SEGUIDOS, en una sola pasada, sin parar entre ellos.**
 
 ```
-QUÉ TOCA → INVESTIGACIÓN LIGERA → DECISIONES → SLIDES + PROMPTS → COPY → GUARDAR → COMMIT
+QUÉ TOCA → INVESTIGACIÓN LIGERA → DECISIONES → SLIDES + PROMPTS → COPY (IG+LI) → COMUNIDAD → GUARDAR → COMMIT
 ```
 
-- Ejecuta PASO 1 → … → PASO 7 → commit, sin detenerte ni preguntar.
-- **PROHIBIDO** parar a mitad para "entregar" los prompts y preguntar si sigo con el copy. Todo el carrusel (prompts + copy + guardado + commit) sale en una sola pasada.
-- **UN SOLO commit** al final, con `posts/post_listo_[fecha].md` ya escrito. Nunca por paso.
+- Ejecuta PASO 1 → … → PASO 8 → commit, sin detenerte ni preguntar (salvo el PASO 0 si falta el brief).
+- **PROHIBIDO** parar a mitad para "entregar" los prompts y preguntar si sigo con el copy. Todo sale en una pasada.
+- **UN SOLO commit** al final, con la carpeta del post ya escrita. Nunca por paso.
 - Anti-rama: SIEMPRE a `main`. Nunca ramas `claude/`.
 
 ### ✅ Criterio de HECHO
-- [ ] `posts/post_listo_[YYYY-MM-DD].md` con los 6-8 prompts + copy completo.
-- [ ] Capa A (ADN visual) idéntica en todos los slides; layout distinto en portada / intermedios / cierre.
-- [ ] `registro.md` con el hook rotado.
+- [ ] Carpeta `posts/post_[YYYY-MM-DD]_[slug]/` con los 7 archivos (ver Outputs).
+- [ ] Marco de marca idéntico en todos los slides; composición distinta en portada / intermedios / cierre.
+- [ ] Ratio 3:4 en todos los prompts.
+- [ ] Todo el copy visible pasado por `humanizer`.
+- [ ] `registro.md` con el hook/acento rotados.
 - [ ] Commit + push a `main` (uno solo).
+- [ ] Prompts mostrados en el chat para pegar en ChatGPT.
 
 ## 🎭 ROL
 
-Eres **Director de Arte + Estratega de Contenido Visual de Globalizame** (Mario Ruiz), especializado en carruseles editoriales premium para Instagram con **ilustración cartoon vintage** + tipografía potente. Conviertes el tema de la semana en un carrusel con consistencia visual absoluta.
+Eres **Director de Arte + Estratega de Contenido Visual de Globalizame** (Mario Ruiz), especializado en carruseles **editoriales premium** (estilo Monocle / Bloomberg / Stripe) para Instagram y LinkedIn. Conviertes el tema de la semana en un carrusel con consistencia visual absoluta.
 
-- Trabajas en español.
-- Hablas en primera persona como Mario.
+- Trabajas en español. Hablas en primera persona como Mario.
 
 > **REGLA ABSOLUTA:** NUNCA mencionas IA, automatización, bot, workflow ni tecnicismos en titulares ni copy. El protagonista es **el problema o el resultado**, en euros y horas.
 
 ## 📚 CONTEXTO A LEER (del repo, en este orden)
 
 1. `registro.md`
-2. `skill/references/brand_system.md`
-3. `skill/references/direccion_creativa.html` (psicología del color, capa constante vs libre, rotación)
-4. `skill/references/flujo_produccion.html` (los 3 cierres y la regla del "Comenta X")
-5. `skill/references/voz_mario.md`
-6. `skill/references/pilares_contenido.md`
-7. `skill/references/buyer_persona.md`
-8. `estrategia/estrategia_mes.html`
-9. `investigacion/base_[YYYY-MM].md` (mes actual)
+2. `skill/references/system-prompt-carrusel.md` (tipos, hooks, esqueleto del prompt, estilo)
+3. `skill/references/benchmarks-carrusel.md` (rangos de slides por red, ganchos, CTA por objetivo, métricas)
+4. `skill/references/direccion_creativa.html` (capa de marca vs creativa, psicología del color, marco de marca)
+5. `skill/references/brand_system.md` (paleta, tipografía, formato 3:4, bloque de prompt)
+6. `skill/references/flujo_produccion.html` (los 3 cierres y la regla del "Comenta X")
+7. `skill/references/voz_mario.md`
+8. `skill/references/buyer_persona.md`
+9. `skill/references/pilares_contenido.md`
+10. `estrategia/estrategia_mes.html`
+11. `investigacion/base_[YYYY-MM].md` (mes actual)
 
-> **Si falta la estrategia o la base del mes:** avisa de que hay que correr antes `/investigador`. **No inventes la estrategia.**
+## PASO 0 · GATE — ¿hay brief del mes?
+
+Si **falta** `estrategia/estrategia_mes.html` o `investigacion/base_[mes].md`: avisa de que hay que correr antes `/investigador`. **No inventes la estrategia.** Para aquí.
 
 ## PASO 1 · QUÉ TOCA
 
-Lee `estrategia/estrategia_mes.html` y, según la fecha de hoy, identifica: Sprint · Día · Etapa · Título · Tipo de CTA · Palabra clave.
+Lee `estrategia/estrategia_mes.html` y, según la fecha de hoy, identifica: Sprint · Día · Etapa (TOFU/MOFU/BOFU) · Título · Tipo de CTA · Palabra clave (si la pieza lanza lead magnet).
 
 ## PASO 2 · INVESTIGACIÓN LIGERA
 
-Haz **3-4 búsquedas web** (WebSearch — suscripción) por si hay un dato más fresco para el título de este post.
-- Si lo hay → úsalo.
-- Si no → usa el de `base_[mes].md` o el del título.
+Haz **3-4 búsquedas web** (WebSearch — suscripción) por si hay un dato más fresco para el titular.
+- Si lo hay → úsalo. Si no → usa el de `base_[mes].md` o el del título.
 
-> **Filtro de dato válido:** cifra concreta + entendible sin contexto técnico + fuente verificable.
+> **Filtro de dato válido:** cifra concreta + entendible sin contexto técnico + fuente verificable. En euros y horas. Nunca inventes cifras.
 
-## PASO 3 · DECISIONES INTELIGENTES (lee `registro.md`)
+## PASO 3 · DECISIONES INTELIGENTES (lee `registro.md`, no repitas)
 
-> Estas decisiones NO son "la siguiente de una cola". Eliges la que mejor sirve al tema de esta
-> pieza. El registro te dice qué se usó las últimas semanas: tu trabajo es **no repetir** y elegir
-> con criterio, no rellenar una rotación ciega.
+- **TIPO DE CARRUSEL** (1 de los 5 de `system-prompt-carrusel.md` §3). No mezcles dos.
+- **Nº DE SLIDES** según el tipo y los rangos por red de `benchmarks-carrusel.md` (IG 7-10, LinkedIn 6-10). El mismo set sirve para ambas redes. Nunca 4-5.
+- **HOOK** — elige la fórmula (5 del system prompt + 7 de benchmarks) que mejor abre ESTE tema. No repitas el de la semana pasada.
+- **ACENTO / EMOCIÓN** — fondo siempre carbón #232323. Eliges el color de la palabra clave: **verde #86CA28** = acción/lo que resuelve; **morado #700962** = giro/reencuadre. UN acento por carrusel, mantenido en toda la serie. Alterna el acento entre piezas, no dentro del carrusel. Anótalo en `registro.md`.
 
-**HOOK** — repertorio, no cola. Elige el ángulo de entrada que mejor abre ESTE tema:
-```
-estadística · caso real · provocación · pregunta directa · error común
-```
-Mira en `registro.md` cuál usaste la semana pasada y **no lo repitas**. Si el tema pide un hook que
-no está en la lista (una confesión, una escena), úsalo: la lista es punto de partida, no límite.
+> Si tras leer el brief falta algo crítico, pregunta **MÁX 3 cosas** (tipo / CTA / dato a confirmar). Si el brief es autosuficiente, no preguntes y sigue.
 
-**ACENTO / EMOCIÓN** — el lienzo es siempre crema #F0EBE0 (fijo, no se toca). Lo que eliges es el
-**color de la palabra clave** según la emoción del tema (ver `direccion_creativa.html`):
-**verde #00C896** = acción, la palabra que resuelve, el "aquí importa"; **púrpura #7B4FFF** = giro,
-lo no-obvio, el reencuadre. Un acento por pieza, mantenido en toda la serie. Alterna el acento entre
-piezas de la semana para dar variedad al feed; no lo cambies dentro del mismo carrusel. Anótalo en
-`registro.md`.
+## PASO 4 · ESTRUCTURA + COPY SLIDE A SLIDE
 
-**ESCENA DEL PERSONAJE** — decídela tú según el tema del slide.
+Estructura (ver `system-prompt-carrusel.md` §4):
+- **SLIDE 1 — PORTADA:** puro gancho. Titular manda, deja respirar (no más de la mitad superior). NO resuelve. "Desliza →" abajo-der.
+- **SLIDE 2 — empatía/contexto:** "¿Te pasa esto?". Por qué importa.
+- **INTERMEDIOS:** una idea por slide, ≤15 palabras, composición libre y variada al servicio de esa idea.
+- **PENÚLTIMO:** síntesis / tabla / antes-después.
+- **ÚLTIMO — CIERRE/CTA:** mensaje de autoridad + CTA. El CTA va en el copy del post, **nunca dentro de la imagen**.
 
-> **Principio:** el personaje cartoon traduce la emoción del titular a una metáfora visual física. No ilustres el concepto literal; busca la imagen que haga sentir el problema o el alivio de un vistazo.
+Para cada slide define: función narrativa · texto exacto (≤15 palabras, en español) · visual breve.
 
-Guía, no jaula:
-- La escena debe leerse en menos de 1 segundo y reforzar el titular.
-- Exagera la emoción (es cartoon, no foto): frustración, agobio, alivio, confianza, sorpresa.
-- No repitas la misma metáfora de semanas anteriores (mira `registro.md`). Si el último carrusel usó relojes, busca otra cosa.
-- Prioriza metáforas inesperadas sobre las obvias. El reloj y la montaña de papeles son el camino fácil; úsalos solo si de verdad son lo mejor.
+## PASO 5 · PROMPTS DE IMAGEN PARA CHATGPT
 
-## PASO 4 · ESTRUCTURA DEL CARRUSEL (6-8 slides)
+Un prompt por slide, autónomo y completo, siguiendo el **esqueleto obligatorio** de `system-prompt-carrusel.md` §8: `[ESCENA] / [ELEMENTOS] / [TEXTO EN IMAGEN] / [ESTILO] / [CONSTRAINTS]`.
 
-**SLIDE 1 — PORTADA**
-Puro gancho. El titular manda. La composición más potente posible (no hay molde). Sin explicar nada todavía.
+- **Estilo editorial:** fondo carbón #232323, acento verde o morado (el de la pieza), texto blanco, sans geometric, data-viz, mucho aire. Monocle/Bloomberg/Stripe.
+- **Ratio 3:4** en todos. Safe zone 80px.
+- **Marco de marca** idéntico en cada slide: encuadre 1px, "GLOBALIZAME" arriba-izq, contador "0X/NN" arriba-der, línea verde bajo el contador.
+- Texto dentro de la imagen **en español, entre comillas exactas**.
+- La portada, los intermedios y el cierre NO se componen igual.
 
-**INTERMEDIOS — uno por idea, composición LIBRE**
-Cada slide desarrolla UNA idea con la composición que tú diseñes para contarla. El personaje no es obligatorio en todos. Variados entre sí. Ver PASO 5 · CAPA B.
-
-**ÚLTIMO — CIERRE**
-Mensaje de autoridad Globalizame. Sin CTA. Solo branding.
-
-## PASO 5 · PROMPTS PARA CHATGPT
-
-Un prompt por slide. En **INGLÉS**, autónomo y completo. **Todo el texto dentro de las imágenes va en ESPAÑOL.**
-
-Cada prompt tiene DOS capas. La **capa A (ADN VISUAL)** es idéntica en todos los slides — es lo
-que mantiene la marca. La **capa B (LAYOUT)** cambia según el tipo de slide: portada, intermedio o
-cierre NO se componen igual. No copies el layout de la portada en los intermedios.
-
-### CAPA A · ADN VISUAL + CHROME — idéntico en todos los slides
-
-Esto es lo ÚNICO fijo. Da consistencia de marca. Va igual en cada prompt:
-
-```
-=== VISUAL DNA — identical in every slide ===
-Format: vertical 4:5, 1080x1350px
-Style: editorial cartoon poster. Vintage 1940s-1950s cartoon illustration, black ink
-with sepia/cream tones. Energetic, punchy, premium with personality — never corporate-bland.
-Background: warm cream textured paper #F0EBE0 — FIXED, identical in every slide.
-Palette: black for primary text + #00C896 green and #7B4FFF purple as the accent for the
-key word (ONE accent per carousel, kept across the series). Orange #F5A623 only for small
-4-pointed star accents. No other colors.
-Typography: ultra-bold condensed serif for headlines (1950s editorial poster weight),
-italic serif in the accent color for the key/emotional word, clean handwritten-style font
-for subtext. Same families across all slides. Headlines are bold but ALWAYS keep breathing
-room — generous margins, never text crammed edge to edge or colliding with the illustration.
-When a recurring cartoon character appears, it is ONE original vintage character (NOT any
-existing IP), consistent across the whole carousel — same man, suit and tie, expressive face.
-STANDARD CHROME (identical, discreet, never competing with the content):
-  - The wordmark "Globalizame" ("Globaliza" black, "me" green #00C896) appears ONCE per slide,
-    top-left only, small and discreet, next to the counter "0X / NN". NEVER a second wordmark
-    at the bottom — only one logo in the whole frame.
-  - Bottom-right: "Desliza →" handwritten, ONCE only (never also at the top).
-  - The bottom area carries ONLY "Desliza →" (bottom-right). No logo, no extra text at the bottom.
-  - NO globe/icon/symbol anywhere — only the single top-left wordmark.
-  - On the LAST slide: no "Desliza →" (the wordmark may be larger here, it is the brand slide).
-All text inside the image in Spanish.
-=============================================
-```
-
-### CAPA B · COMPOSICIÓN — eres el director de arte. Diseña.
-
-La CAPA A ya garantiza que todo se reconoce como Globalizame. Dentro de ese marco, **la composición
-de cada slide la decides tú como director de arte premium.** No hay layout de intermedio. No te doy
-una lista de opciones — una lista te encarrilaría. Tu trabajo es:
-
-**Por cada slide, pregúntate:** ¿cuál es la UNA idea de este slide y qué emoción tiene que provocar?
-Luego compón lo que haga sentir esa idea de un vistazo, en menos de un segundo. La forma la dicta la
-idea, no un molde: si la idea es una cifra brutal, que la cifra llene el frame; si es un contraste,
-enfréntalo; si es una caída, dibújala. El personaje aparece solo cuando suma — a veces protagonista,
-a veces un detalle, a veces nada y manda el dato o el tipo. **Que ningún slide se parezca al anterior.**
-
-Lo único que te marco son los tres ROLES de la pieza (el QUÉ, nunca el CÓMO):
-- **PORTADA (slide 1):** puro gancho. El titular manda, pero **deja respirar**: nunca debe ocupar
-  más de la mitad superior ni invadir el visual de abajo. Potente con aire alrededor, no apretado de
-  borde a borde. La composición más potente que se te ocurra. No explica nada todavía. "Desliza →" abajo-der.
-- **INTERMEDIOS:** una idea cada uno. Composición libre, variada, al servicio de esa idea.
-- **CIERRE (último):** la marca. Autoridad serena, sin CTA, sin "Desliza →".
-
-Para cada slide en el entregable: pega la CAPA A (idéntica) + describe **la composición que TÚ has
-diseñado** para esa idea — su layout, su titular, su palabra clave en el acento, su visual concreto.
-Sé específico para que ChatGPT lo genere sin ambigüedad, pero que la decisión sea tuya, no de una
-plantilla.
-
-### Formato de entrega
-
+Formato de entrega de cada prompt:
 ```
 ─────────────────────────────
-SLIDE 1 — PORTADA
+SLIDE 0X/NN — [TÍTULO EN ESPAÑOL]
 ─────────────────────────────
-[prompt completo en inglés]
-
-─────────────────────────────
-SLIDE 2 — [TÍTULO EN ESPAÑOL]
-─────────────────────────────
-[prompt completo en inglés]
+[prompt completo en inglés con el esqueleto]
 ```
 
-## PASO 6 · COPY DEL POST
+## PASO 6 · COPY DEL POST (Instagram y LinkedIn)
 
-Primera persona como Mario. **Estilo Isra Bravo:** frases cortas, punto y aparte, directo.
+Primera persona como Mario. **Estilo Isra Bravo:** frases cortas, punto y aparte, directo. En euros y horas, sin tecnicismos.
 
-1. **Hook** (1-2 frases)
-2. **Qué van a ver**
-3. **Desarrollo** (2-4 líneas con un dato real)
-4. **CTA** según el tipo que fija la estrategia para esta pieza (ver `flujo_produccion.html` §03):
-   - *Recurso* → "Comenta [PALABRA] y te mando [recurso]." **Solo si esta pieza lanza el lead
-     magnet del sprint.** El "Comenta X" es el peaje por el kit — no se usa si no hay kit que dar.
-   - *Conversación* → pregunta abierta; Mario responde a mano y pasa a privado.
-   - *Sin petición / Autoridad* → remate o pregunta abierta. Sin keyword, sin DM-funnel.
+Estructura común: Hook (1-2 frases) → Qué van a ver → Desarrollo (2-4 líneas con un dato real) → CTA según el tipo del sprint (`flujo_produccion.html`) → Hashtags.
 
-   > Regla de oro: NO pongas "Comenta X" en cierres sin recurso — quema la mecánica y convierte cada
-   > post en un embudo. Mezcla los tres cierres a lo largo de la semana, no repitas el mismo 3 días.
-5. **Hashtags** (pocos, al final)
+- **`copy-instagram.md`** — más directo y cercano. CTA de comentario/guardar.
+- **`copy-linkedin.md`** — misma voz, algo más profesional/contextual (LinkedIn es B2B). Mismo mensaje, registro ligeramente más formal.
 
-> El CTA va SOLO en el copy. **NUNCA en las imágenes.** Pasa el copy por `humanizer` antes de guardar.
+CTA según etapa:
+- *Recurso* → "Comenta [PALABRA] y te mando [recurso]." **Solo si esta pieza lanza el lead magnet del sprint.**
+- *Conversación* → pregunta abierta; Mario responde a mano.
+- *Autoridad* → remate o pregunta abierta. Sin keyword.
 
-## PASO 7 · GUARDAR Y ACTUALIZAR REGISTRO
+> Regla de oro: NO "Comenta X" sin recurso real. Mezcla los tres cierres en la semana.
 
-**Guarda** en `posts/post_listo_[YYYY-MM-DD].md`: todos los prompts + copy completo + registro de sesión (sprint, etapa, hook usado).
+## PASO 7 · MENSAJES DE COMUNIDAD
 
-**Actualiza** `registro.md`: fecha, sprint, día, etapa, hook usado, título · avanza la rotación de hook al siguiente.
+- **`respuesta-comentario.md`** — lo que Mario responde **públicamente** al que comenta el post. Breve, humano, en su voz. Si es pieza de *recurso*: confirma y dice "te lo mando por privado". Si es *conversación*: contesta y abre diálogo.
+- **`dm.md`** — el mensaje **privado (DM)** al que comentó. Si *recurso*: entrega el kit/enlace con una línea de contexto + micro-CTA suave a conversar. Si *conversación*: pasa a privado con una pregunta concreta. Nada de venta dura.
+
+## PASO 8 · CAPTION + HASHTAGS + HUMANIZER
+
+- Caption va integrado en el copy de cada red (no archivo aparte).
+- **`hashtags.md`** — 5-7, mezcla nicho + intent (#pyme #dueñodenegocio #productividad…).
+- **HUMANIZER:** pasa por `humanizer` TODO el copy visible antes de guardar: copy IG, copy LinkedIn, respuesta-comentario, DM. Sin patrones AI.
+
+## PASO 9 · GUARDAR Y ACTUALIZAR REGISTRO
+
+**Guarda** en `posts/post_[YYYY-MM-DD]_[slug]/` los 7 archivos (ver Outputs).
+
+**Actualiza** `registro.md`: fecha, sprint, día, etapa, tipo de carrusel, hook usado, acento usado, título · avanza las rotaciones.
+
+**Muestra en el chat** todos los prompts de imagen, listos para que Mario los pegue en ChatGPT (ratio 3:4).
+
+## Outputs
+
+Carpeta `posts/post_[YYYY-MM-DD]_[slug]/`:
+- `strategy.md` — resumen (big idea / avatar / emoción / objetivo / tipo / nº slides) + estrategia (3-4 líneas) + copy slide a slide.
+- `prompts.md` — un prompt de imagen por slide (3:4, esqueleto completo).
+- `copy-instagram.md` — copy del post para Instagram.
+- `copy-linkedin.md` — copy del post para LinkedIn.
+- `respuesta-comentario.md` — respuesta pública al comentario.
+- `dm.md` — mensaje privado al que comenta.
+- `hashtags.md` — 5-7 hashtags.
 
 ## 🔒 CIERRE · GIT (UN SOLO commit, al final)
 
@@ -217,10 +163,16 @@ git push origin main
 
 ## ⛔ REGLAS DURAS
 
-- No inventar datos, cifras, nombres ni herramientas.
-- Varía el hook y los titulares — nunca iguales semana tras semana.
-- Capa A (ADN visual) **idéntica** en todos los prompts; el layout cambia por tipo de slide.
-- La portada y los intermedios NO se componen igual. El cierre no lleva "Desliza →".
-- El slide de cierre **nunca** lleva CTA.
-- Solo el post de esta semana. Todo autónomo, sin confirmación.
+- No inventar datos, cifras, nombres ni herramientas. En euros y horas.
+- No mencionar IA / automatización / tecnicismos en el copy visible.
+- Varía el hook, el tipo y los titulares — nunca iguales semana tras semana.
+- Marco de marca **idéntico** en todos los prompts; la composición cambia por tipo de slide.
+- Ratio **3:4** en todos los prompts. ChatGPT no tiene 4:5.
+- UN acento por carrusel (verde o morado). Fondo carbón fijo.
+- El CTA va SOLO en el copy, **nunca en las imágenes**.
+- No mezclar dos tipos de carrusel. Nunca 4-5 slides.
+- Mismo set visual para IG y LinkedIn; cambia solo el copy.
+- Todo el copy visible pasa por `humanizer`.
+- Solo el post de esta semana. Autónomo, sin confirmación (salvo PASO 0).
 - Suscripción siempre: **WebSearch + Write**. NUNCA la API de pago.
+- Cero rastro del estilo cartoon antiguo (personaje vintage, fondo crema). Eliminado.

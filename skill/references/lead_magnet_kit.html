@@ -6,9 +6,9 @@
 <title>Lead Magnet · La biblia del kit · Globalizame</title>
 <style>
   :root{
-    --cream:#F0EBE0;--cream-deep:#E4DDCD;--ink:#1A1815;--ink-soft:#4a463e;
-    --green:#00C896;--green-ink:#067a5e;--purple:#7B4FFF;--purple-ink:#5a32d6;--orange:#F5A623;
-    --line:rgba(26,24,21,.14);
+    --cream:#FAFAF7;--cream-deep:#ECECE7;--ink:#232323;--ink-soft:#5a5a5a;
+    --green:#86CA28;--green-ink:#4f7a17;--purple:#700962;--purple-ink:#700962;--orange:#FFA500;
+    --line:rgba(35,35,35,.14);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -21,14 +21,14 @@
   .wrap{max-width:860px;margin:0 auto}
   .masthead{padding:80px 0 44px;border-bottom:3px solid var(--ink);position:relative}
   .masthead .star{position:absolute;color:var(--orange);font-size:26px;top:66px;right:7%}
-  .kicker{font-family:'Georgia',serif;font-style:italic;font-size:18px;color:var(--ink-soft);margin-bottom:12px}
-  h1{font-family:'Georgia',serif;font-weight:800;font-size:clamp(42px,8.5vw,80px);line-height:.95;letter-spacing:-.03em;text-wrap:balance}
+  .kicker{font-family:'Inter',sans-serif;font-style:italic;font-size:18px;color:var(--ink-soft);margin-bottom:12px}
+  h1{font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(42px,8.5vw,80px);line-height:.95;letter-spacing:-.03em;text-wrap:balance}
   h1 em{font-style:italic;color:var(--purple-ink)}
-  .lede{font-family:'Georgia',serif;font-style:italic;font-size:clamp(17px,2.4vw,21px);color:var(--ink-soft);margin-top:22px;max-width:60ch;line-height:1.5}
+  .lede{font-family:'Inter',sans-serif;font-style:italic;font-size:clamp(17px,2.4vw,21px);color:var(--ink-soft);margin-top:22px;max-width:60ch;line-height:1.5}
 
   section{padding:60px 0 12px;border-bottom:1px solid var(--line)}
   section:last-of-type{border-bottom:none}
-  h2{font-family:'Georgia',serif;font-weight:800;font-size:clamp(27px,4.8vw,44px);line-height:1.03;letter-spacing:-.025em;margin-bottom:8px;text-wrap:balance}
+  h2{font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(27px,4.8vw,44px);line-height:1.03;letter-spacing:-.025em;margin-bottom:8px;text-wrap:balance}
   h2 em{font-style:italic;color:var(--green-ink)}
   .sec-intro{font-size:17px;color:var(--ink-soft);max-width:62ch;margin-bottom:30px}
   p{max-width:68ch;margin-bottom:14px}
@@ -38,14 +38,14 @@
   .golden{background:var(--ink);color:var(--cream);border-radius:20px;padding:44px 40px;margin-top:8px;position:relative;text-align:center}
   .golden .star{position:absolute;color:var(--orange);font-size:22px}
   .golden .star.a{top:18px;left:7%}.golden .star.b{bottom:20px;right:9%;font-size:15px}
-  .golden .yes{font-family:'Georgia',serif;font-style:italic;font-size:clamp(19px,3vw,26px);line-height:1.4;color:var(--cream);max-width:none;margin:0 0 14px}
+  .golden .yes{font-family:'Inter',sans-serif;font-style:italic;font-size:clamp(19px,3vw,26px);line-height:1.4;color:var(--cream);max-width:none;margin:0 0 14px}
   .golden .yes em{color:var(--green);font-style:normal;font-weight:700}
   .golden .no{font-size:15px;color:rgba(240,235,224,.6);margin:0}
 
   /* tipos de entregable */
   .deliv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:8px}
   .dcard{background:#fff;border:1.5px solid var(--ink);border-radius:14px;padding:22px;position:relative}
-  .dcard h3{font-family:'Georgia',serif;font-weight:700;font-size:18px;margin-bottom:6px;padding-right:64px}
+  .dcard h3{font-family:'Inter',sans-serif;font-weight:700;font-size:18px;margin-bottom:6px;padding-right:64px}
   .dcard p{font-size:14px;color:var(--ink-soft);margin:0}
   .dcard .time{position:absolute;top:18px;right:18px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;color:var(--green-ink);background:rgba(0,200,150,.12);padding:3px 9px;border-radius:20px}
   .pick{margin-top:20px;font-size:15px;font-style:italic;color:var(--ink-soft)}
@@ -53,7 +53,7 @@
   /* reglas de contenido */
   .rules{display:grid;gap:12px;margin-top:8px}
   .rule{background:#fff;border:1.5px solid var(--ink);border-radius:12px;padding:20px 24px}
-  .rule h3{font-family:'Georgia',serif;font-weight:700;font-size:18px;margin-bottom:4px}
+  .rule h3{font-family:'Inter',sans-serif;font-weight:700;font-size:18px;margin-bottom:4px}
   .rule p{font-size:15px;color:var(--ink-soft);margin:0}
   .rule .bad{color:#b4341f;font-style:italic}
   .rule .good{color:var(--green-ink);font-weight:600}
@@ -62,9 +62,9 @@
   .struct{counter-reset:s;margin-top:8px}
   .sstep{display:grid;grid-template-columns:48px 1fr;gap:18px;padding:18px 0;border-top:1px solid var(--line);align-items:start}
   .sstep:first-child{border-top:none}
-  .sstep .n{counter-increment:s;font-family:'Georgia',serif;font-weight:800;font-style:italic;font-size:30px;color:var(--purple-ink);line-height:1}
+  .sstep .n{counter-increment:s;font-family:'Inter',sans-serif;font-weight:800;font-style:italic;font-size:30px;color:var(--purple-ink);line-height:1}
   .sstep .n::before{content:counter(s,decimal-leading-zero)}
-  .sstep h3{font-family:'Georgia',serif;font-weight:700;font-size:18px;margin-bottom:3px}
+  .sstep h3{font-family:'Inter',sans-serif;font-weight:700;font-size:18px;margin-bottom:3px}
   .sstep p{font-size:15px;color:var(--ink-soft);margin:0}
 
   /* chrome constante */
@@ -75,25 +75,24 @@
   .chrome li::before{content:'';position:absolute;left:2px;top:16px;width:8px;height:8px;border-radius:50%;background:var(--green)}
   .chrome li code{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700}
   .redesign{margin-top:18px;background:var(--ink);color:var(--cream);border-radius:14px;padding:24px 28px}
-  .redesign p{color:var(--cream);font-family:'Georgia',serif;font-style:italic;font-size:18px;margin:0;max-width:none}
+  .redesign p{color:var(--cream);font-family:'Inter',sans-serif;font-style:italic;font-size:18px;margin:0;max-width:none}
   .redesign em{color:var(--green);font-style:normal;font-weight:700}
 
   /* nivel a igualar */
   .examples{display:grid;gap:12px;margin-top:8px}
   .ex{background:#fff;border:1.5px solid var(--ink);border-radius:12px;padding:20px 24px}
-  .ex h3{font-family:'Georgia',serif;font-weight:700;font-size:17px;margin-bottom:4px}
+  .ex h3{font-family:'Inter',sans-serif;font-weight:700;font-size:17px;margin-bottom:4px}
   .ex h3 code{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--purple-ink);font-weight:700}
   .ex p{font-size:14px;color:var(--ink-soft);margin:0}
 
   .footer{text-align:center;padding-top:40px;color:var(--ink-soft);font-size:13px}
-  .footer b{font-family:'Georgia',serif;color:var(--ink)}
+  .footer b{font-family:'Inter',sans-serif;color:var(--ink)}
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <header class="masthead">
-    <span class="star">✦</span>
     <p class="kicker">Globalizame · la biblia del kit</p>
     <h1>No es un PDF. Es un <em>kit</em> que se usa mañana.</h1>
     <p class="lede">El lead magnet es la única pieza que no es prompt de imagen: es un documento HTML imprimible (A4, Ctrl+P → PDF). 5 o 6 entregables que el dueño abre y aplica a su negocio hoy.</p>
@@ -103,7 +102,6 @@
     <h2>La regla de <em>oro</em></h2>
     <p class="sec-intro">Un solo test decide si un kit está bien hecho. No es teoría ni motivación: es mecánica que produce un resultado concreto.</p>
     <div class="golden">
-      <span class="star a">✦</span><span class="star b">✦</span>
       <p class="yes">Si al descargarlo el dueño piensa <em>"si esto me lo regala, imagina pagando"</em>, está bien hecho.</p>
       <p class="no">Si piensa "vale, otro PDF de relleno" → a la basura.</p>
     </div>
@@ -154,7 +152,7 @@
         <li>Logo "Globalizame" arriba a la izquierda.</li>
         <li>Nº de página en mono arriba a la derecha: <code>01 / 07</code>.</li>
         <li>Footer con la firma de Mario: foto + "Mario Ruiz · Fundador de Globalizame" + globalizame.com.</li>
-        <li>Paleta de la marca (crema, negro, acento verde/púrpura). Verde solo acento.</li>
+        <li>Paleta de la marca (negro carbón #232323, blanco, acento verde #86CA28 / morado #700962). Verde solo acento.</li>
         <li>Formato A4 vertical, imprimible a PDF con Ctrl+P.</li>
       </ul>
     </div>

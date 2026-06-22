@@ -68,7 +68,7 @@ Genera el kit como **documento HTML A4 vertical, imprimible a PDF con Ctrl+P**. 
 5. Cierre — siguiente paso (la sesión de 30 min, sin venta agresiva).
 
 **Chrome de marca (lo único constante):** wordmark "Globalizame" arriba-izquierda con "Globaliza" en
-negro y "me" en verde #00C896 (siempre ese split; sin icono/globo), nº de página en mono
+negro y "me" en verde #86CA28 (siempre ese split; sin icono/globo), nº de página en mono
 arriba-derecha (`01 / 07`), footer con firma de Mario (foto + "Mario Ruiz · Fundador de
 Globalizame" + globalizame.com), paleta de `direccion_creativa.html`.
 

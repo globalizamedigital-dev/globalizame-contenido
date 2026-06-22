@@ -3,259 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Estrategia de Contenido · Junio 2026 (cierre 22-29) · Globalizame</title>
+<title>Estrategia · Cierre de junio 2026 · Globalizame</title>
 <style>
   :root{
-    --bg:#232323; --bg-soft:#2c2c2c; --green:#86CA28; --white:#FAFAF7;
-    --muted:rgba(250,250,247,.62); --line:rgba(250,250,247,.12);
-    --purple:#700962; --orange:#FFA500;
+    --ink:#232323;--ink-2:#2c2c2c;--paper:#FAFAF7;--mute:rgba(250,250,247,.62);
+    --green:#86CA28;--purple:#700962;--line:rgba(250,250,247,.14);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{
-    background:var(--bg);color:var(--white);
+    background:var(--ink);color:var(--paper);
     font-family:'Inter',-apple-system,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;
     padding:0 20px 120px;
+    background-image:radial-gradient(rgba(255,255,255,.025) 1px,transparent 1px);background-size:24px 24px;
   }
   .wrap{max-width:920px;margin:0 auto}
-
-  /* masthead */
-  .masthead{padding:72px 0 40px;border-bottom:3px solid var(--green);position:relative}
-  .kicker{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin-bottom:16px;font-weight:700}
-  h1{font-family:'Josefin Sans','Inter',sans-serif;font-weight:700;font-size:clamp(40px,8vw,76px);line-height:.98;letter-spacing:-.01em;text-wrap:balance}
+  .masthead{padding:74px 0 40px;border-bottom:3px solid var(--green);position:relative}
+  .brandline{font-size:13px;text-transform:uppercase;letter-spacing:.22em;color:var(--green);font-weight:700;margin-bottom:18px}
+  h1{font-weight:800;font-size:clamp(38px,7.5vw,72px);line-height:.98;letter-spacing:-.03em;text-wrap:balance}
   h1 em{font-style:normal;color:var(--green)}
-  .lede{font-size:clamp(16px,2.3vw,20px);color:var(--muted);margin-top:22px;max-width:62ch}
-  .meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-  .chip{background:var(--bg-soft);border:1px solid var(--line);border-radius:30px;padding:8px 16px;font-size:13px;color:var(--white)}
+  .lede{font-size:clamp(16px,2.3vw,20px);color:var(--mute);margin-top:22px;max-width:62ch;line-height:1.5}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .chip{border:1px solid var(--line);border-radius:30px;padding:7px 16px;font-size:13px;color:var(--paper)}
   .chip b{color:var(--green)}
 
-  /* sections */
-  section{padding:56px 0 8px;border-bottom:1px solid var(--line)}
+  section{padding:54px 0 8px;border-bottom:1px solid var(--line)}
   section:last-of-type{border-bottom:none}
-  h2{font-family:'Josefin Sans','Inter',sans-serif;font-weight:700;font-size:clamp(26px,4.6vw,40px);line-height:1.05;margin-bottom:8px}
-  h2 em{font-style:normal;color:var(--green)}
-  .sec-intro{font-size:16px;color:var(--muted);max-width:64ch;margin-bottom:28px}
-
-  /* central idea card */
-  .idea{background:var(--bg-soft);border:1px solid var(--line);border-left:4px solid var(--green);border-radius:16px;padding:34px 36px;margin-top:8px}
-  .idea .small{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:12px}
-  .idea p{font-family:'Josefin Sans','Inter',sans-serif;font-size:clamp(22px,3.4vw,32px);line-height:1.2;color:var(--white)}
-  .idea .sub{font-family:'Inter',sans-serif;font-size:16px;color:var(--muted);margin-top:16px;line-height:1.55}
+  .ktag{font-size:12px;text-transform:uppercase;letter-spacing:.18em;color:var(--purple);font-weight:700;margin-bottom:10px}
+  .ktag.g{color:var(--green)}
+  h2{font-weight:800;font-size:clamp(24px,4.4vw,40px);line-height:1.05;letter-spacing:-.02em;margin-bottom:8px;text-wrap:balance}
+  .sec-intro{font-size:16px;color:var(--mute);max-width:64ch;margin-bottom:26px}
 
   /* sprint cards */
-  .sprint{background:var(--bg-soft);border:1px solid var(--line);border-radius:18px;padding:30px 30px 18px;margin-bottom:20px;overflow:hidden}
-  .sprint-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:10px;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:6px}
-  .sprint-head .tag{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--green)}
-  .sprint-head h3{font-family:'Josefin Sans','Inter',sans-serif;font-weight:700;font-size:clamp(20px,3.2vw,27px);color:var(--white);line-height:1.1;flex:1 1 280px}
-  .sprint-head .stage{font-size:12px;color:var(--muted);background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:5px 12px;white-space:nowrap}
-  .sprint .promise{font-size:15px;color:var(--muted);margin:14px 0 6px;max-width:70ch}
+  .sprint{border:1px solid var(--line);border-radius:18px;padding:28px 26px;margin-top:18px;background:var(--ink-2)}
+  .sprint-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+  .sprint-head h3{font-size:21px;font-weight:800;letter-spacing:-.01em}
+  .sprint-head .arc{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--green);font-weight:700}
+  .sprint .theme{font-size:15px;color:var(--mute);margin-bottom:18px;max-width:70ch}
 
-  /* posts */
-  .post{display:grid;grid-template-columns:96px 1fr;gap:18px;padding:18px 0;border-top:1px solid var(--line);align-items:start}
-  .post:first-of-type{border-top:none}
-  .post .date{font-size:13px}
-  .post .date .day{display:block;font-family:'Josefin Sans','Inter',sans-serif;font-weight:700;font-size:17px;color:var(--green)}
-  .post .date .dow{display:block;color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
-  .post .body .ttl{font-size:17px;font-weight:600;color:var(--white);line-height:1.35;margin-bottom:8px}
-  .post .labels{display:flex;flex-wrap:wrap;gap:7px}
-  .lbl{font-size:11px;font-weight:700;letter-spacing:.05em;border-radius:6px;padding:3px 9px;text-transform:uppercase}
-  .lbl.tofu{background:rgba(134,202,40,.16);color:var(--green)}
-  .lbl.mofu{background:rgba(255,165,0,.15);color:var(--orange)}
-  .lbl.bofu{background:rgba(112,9,98,.32);color:#e09ad6}
-  .lbl.fmt{background:rgba(250,250,247,.08);color:var(--white)}
-  .lbl.cta-rec{background:var(--green);color:var(--bg)}
-  .lbl.cta-conv{background:rgba(250,250,247,.12);color:var(--white)}
-  .lbl.cta-auth{background:transparent;color:var(--muted);border:1px solid var(--line)}
-  .kw{font-size:12px;color:var(--green);margin-top:8px;font-weight:600}
+  .posts{display:grid;gap:12px}
+  .post{display:grid;grid-template-columns:96px 1fr;gap:18px;border-top:1px solid var(--line);padding-top:16px}
+  .post:first-child{border-top:none;padding-top:0}
+  @media(max-width:560px){.post{grid-template-columns:1fr;gap:6px}}
+  .post .date{font-weight:800;font-size:15px;color:var(--green)}
+  .post .date span{display:block;font-size:12px;font-weight:500;color:var(--mute);letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+  .post .title{font-weight:700;font-size:18px;line-height:1.3;margin-bottom:8px;text-wrap:balance}
+  .tags{display:flex;flex-wrap:wrap;gap:7px}
+  .t{font-size:11px;font-weight:700;letter-spacing:.04em;padding:4px 10px;border-radius:6px;text-transform:uppercase}
+  .t.tofu{background:rgba(134,202,40,.16);color:var(--green)}
+  .t.mofu{background:rgba(112,9,98,.30);color:#e08fd4}
+  .t.bofu{background:rgba(255,165,0,.16);color:#FFA500}
+  .t.fmt{background:rgba(250,250,247,.10);color:var(--paper)}
+  .t.cta{background:transparent;border:1px solid var(--line);color:var(--mute)}
+  .t.lm{background:var(--green);color:var(--ink)}
+  .kw{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--green);margin-top:8px}
 
-  /* lead magnets */
-  .lm{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:8px}
-  .lmcard{background:var(--bg-soft);border:1px solid var(--line);border-radius:16px;padding:26px 26px 22px;position:relative}
-  .lmcard .kwtag{display:inline-block;background:var(--green);color:var(--bg);font-weight:700;font-size:12px;letter-spacing:.06em;border-radius:6px;padding:4px 10px;margin-bottom:14px}
-  .lmcard h3{font-family:'Josefin Sans','Inter',sans-serif;font-weight:700;font-size:21px;color:var(--white);line-height:1.15;margin-bottom:8px}
-  .lmcard .when{font-size:13px;color:var(--green);margin-bottom:12px}
-  .lmcard ul{list-style:none;margin-top:6px}
-  .lmcard li{font-size:14px;color:var(--muted);padding:6px 0 6px 20px;position:relative;border-top:1px solid var(--line)}
-  .lmcard li:first-child{border-top:none}
-  .lmcard li::before{content:'→';position:absolute;left:0;color:var(--green)}
+  /* lead magnet block */
+  .lmcard{border:1.5px solid var(--green);border-radius:16px;padding:26px;margin-top:18px;background:rgba(134,202,40,.05)}
+  .lmcard h3{font-size:20px;font-weight:800;margin-bottom:4px}
+  .lmcard .kw{font-size:13px;margin:6px 0 12px}
+  .lmcard ul{list-style:none;display:grid;gap:8px}
+  .lmcard li{font-size:14px;color:var(--mute);padding-left:20px;position:relative}
+  .lmcard li::before{content:"→";position:absolute;left:0;color:var(--green);font-weight:700}
 
   /* checklist */
-  .check{background:var(--bg-soft);border:1px solid var(--line);border-radius:16px;padding:14px 26px;margin-top:8px}
-  .ck{display:flex;align-items:flex-start;gap:14px;padding:15px 0;border-top:1px solid var(--line);cursor:pointer;user-select:none}
-  .ck:first-child{border-top:none}
-  .ck input{appearance:none;-webkit-appearance:none;width:22px;height:22px;border:2px solid var(--green);border-radius:6px;flex:0 0 auto;margin-top:1px;cursor:pointer;position:relative;transition:.15s}
-  .ck input:checked{background:var(--green)}
-  .ck input:checked::after{content:'✓';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--bg);font-weight:900;font-size:14px}
-  .ck label{cursor:pointer;font-size:15px;color:var(--white)}
-  .ck input:checked + label{color:var(--muted);text-decoration:line-through}
-  .ck .hint{display:block;font-size:13px;color:var(--muted);margin-top:3px;text-decoration:none}
+  .check{display:grid;gap:10px;margin-top:8px}
+  .check label{display:flex;gap:14px;align-items:flex-start;cursor:pointer;border:1px solid var(--line);border-radius:12px;padding:16px 18px;transition:border-color .15s,background .15s}
+  .check label:hover{border-color:var(--green)}
+  .check input{appearance:none;width:22px;height:22px;border:2px solid var(--mute);border-radius:6px;flex:0 0 auto;margin-top:1px;cursor:pointer;transition:.15s}
+  .check input:checked{background:var(--green);border-color:var(--green)}
+  .check input:checked+span{color:var(--mute);text-decoration:line-through}
+  .check span{font-size:15px;line-height:1.45}
 
-  /* data strip */
-  .data{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:8px}
-  .stat{background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:24px 22px}
-  .stat .big{font-family:'Josefin Sans','Inter',sans-serif;font-weight:700;font-size:38px;color:var(--green);line-height:1}
-  .stat .txt{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.4}
-  .stat .src{font-size:11px;color:rgba(250,250,247,.4);margin-top:10px}
+  .note{background:var(--ink-2);border-left:3px solid var(--purple);border-radius:0 12px 12px 0;padding:22px 24px;margin-top:20px}
+  .note p{font-size:15px;color:var(--paper);margin:0}
+  .note em{color:var(--green);font-style:normal;font-weight:700}
 
-  /* rotation note */
-  .rot{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:8px}
-  .rotcard{background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:22px}
-  .rotcard h4{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:10px}
-  .rotcard p{font-size:14px;color:var(--muted);line-height:1.5}
-  .rotcard b{color:var(--white)}
-
-  .footer{text-align:center;padding-top:44px;color:var(--muted);font-size:13px}
-  .footer b{color:var(--green)}
+  .footer{text-align:center;padding-top:40px;color:var(--mute);font-size:12px}
+  .footer b{color:var(--paper)}
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <header class="masthead">
-    <p class="kicker">Globalizame · Estrategia de Instagram · cierre de junio</p>
-    <h1>Medio año dentro. <em>¿Cuántas horas fueron tuyas?</em></h1>
-    <p class="lede">Última semana de junio. El dueño hace números de medio año sin querer — y el balance honesto no es de euros, es de horas. La semana de la paga extra, la caja apretada del verano, y una pregunta que no se quita: seis meses dentro del negocio, ¿cuántas de esas horas fueron de verdad suyas y cuántas se las comió lo que no factura?</p>
-    <div class="meta-row">
-      <span class="chip"><b>4</b> posts</span>
-      <span class="chip"><b>1,5</b> sprints</span>
+    <p class="brandline">Globalizame · Estrategia de contenido</p>
+    <h1>Medio año dentro. <em>¿Cuántas horas<br>fueron tuyas?</em></h1>
+    <p class="lede">Cierre de junio 2026 (22–29 jun). El tramo final del semestre: el dueño hace balance de medio año y, a la vez, paga la nómina más cara del año. Dos espejos a la vez. Un solo destino: la sesión de 30 minutos.</p>
+    <div class="meta">
+      <span class="chip"><b>4</b> posts · Lun/Mié/Vie</span>
+      <span class="chip"><b>~1,5</b> sprints</span>
       <span class="chip"><b>1</b> lead magnet</span>
-      <span class="chip">Cadencia <b>Lun · Mié · Vie</b></span>
-      <span class="chip">Tramo <b>22 → 29 jun</b></span>
-      <span class="chip">Sector del mes: <b>clínica dental</b></span>
+      <span class="chip">Sector: <b>clínica dental</b></span>
+      <span class="chip">Fondo carbón <b>#232323</b></span>
     </div>
   </header>
 
   <section>
-    <h2>La idea <em>central</em></h2>
-    <p class="sec-intro">Tramo corto, una sola frase. El cierre de semestre como espejo de las horas; el caso dental como prueba de que se puede soltar y ganar dinero.</p>
-    <div class="idea">
-      <div class="small">Tema central · cierre de junio</div>
-      <p>"Llevas medio año dentro del negocio. La pregunta no es cuánto has facturado. Es cuántas de tus horas fueron tuyas de verdad."</p>
-      <p class="sub">El protagonista nunca es la tecnología. Es el dueño haciendo balance de medio año, viendo que el 37% de los que están en su sitio pasa de 40 horas a la semana — y que esas horas extra casi nunca son las que hacen crecer el negocio. Y un detalle de calendario: es la <b>semana de la paga extra</b>, con la caja del verano más apretada. Cuando la nómina pesa el doble, cada hora que regalas a lo que no es tuyo duele más.</p>
-    </div>
-  </section>
+    <p class="ktag g">El arco del tramo</p>
+    <h2>Del espejo a la sesión, en cuatro piezas</h2>
+    <p class="sec-intro">Empieza en conciencia (¿en qué se te fue el medio año?), pasa por la prueba real (la agenda de la dental, en euros), aterriza en el coste de no actuar y termina invitando a la conversación. La cadencia Lun/Mié/Vie es lo único fijo.</p>
 
-  <section>
-    <h2>El <em>arco</em> del tramo</h2>
-    <p class="sec-intro">Un sprint y medio: del espejo del semestre a la prueba con cifras, con un puente final hacia el verano. Una pieza por día (Lun/Mié/Vie). Días reales: Lun 22, Mié 24, Vie 26, Lun 29. El 30 es martes — no toca.</p>
-
-    <!-- SPRINT A -->
+    <!-- SPRINT 1 -->
     <div class="sprint">
       <div class="sprint-head">
-        <span class="tag">Sprint A · Semana del 22</span>
-        <h3>El espejo del semestre: tus horas, no tu factura</h3>
-        <span class="stage">TOFU → MOFU · Despertar y entender</span>
+        <h3>Sprint 1 · El espejo del semestre</h3>
+        <span class="arc">22–26 jun · TOFU → MOFU</span>
       </div>
-      <p class="promise">Que el dueño se mire en el balance de medio año por las horas, no por los euros: descubra que trabaja de más en lo que no es suyo, y vea que existe otra forma — y que a otro le funcionó.</p>
+      <p class="theme">La semana cierra medio año y paga la extra. Mostramos el espejo (las horas), enseñamos otra forma de mirar la caja de junio y rematamos con la prueba real del sector dental + el lead magnet.</p>
 
-      <div class="post">
-        <div class="date"><span class="day">22 jun</span><span class="dow">Lun · Abre</span></div>
-        <div class="body">
-          <div class="ttl">Medio año dentro del negocio. Haz la cuenta de las horas, no de la caja.</div>
-          <div class="labels"><span class="lbl tofu">TOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-conv">CTA Conversación</span></div>
-          <div class="kw">Comenta <b>BALANCE</b> → te cuento las 7 tareas que un dueño no debería estar haciendo a estas alturas</div>
+      <div class="posts">
+        <div class="post">
+          <div class="date">Lun 22<span>Abre</span></div>
+          <div>
+            <div class="title">Llevas seis meses dentro del negocio. ¿Cuántas de esas horas fueron tuyas de verdad?</div>
+            <div class="tags">
+              <span class="t tofu">TOFU · El espejo</span>
+              <span class="t fmt">Carrusel</span>
+              <span class="t cta">CTA Autoridad</span>
+            </div>
+            <p class="kw">// Dato ancla: 37% de los dueños de pyme trabaja +40 h/sem · cierre de semestre</p>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="date">Mié 24<span>Profundiza</span></div>
+          <div>
+            <div class="title">Este mes la nómina pesa el doble. Y aun así sigues haciendo gratis lo que no factura.</div>
+            <div class="tags">
+              <span class="t tofu">TOFU→MOFU</span>
+              <span class="t fmt">Carrusel</span>
+              <span class="t cta">CTA Conversación</span>
+            </div>
+            <p class="kw">// Dato ancla: restaurante 14 personas, nómina de junio 21.000 € → 38.000 € · coste empleado ≈150% del bruto</p>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="date">Vie 26<span>Cierra / lanza</span></div>
+          <div>
+            <div class="title">Una clínica dental deja vacíos 8 huecos por semana. Eso son 78.000 € al año que nadie reocupa.</div>
+            <div class="tags">
+              <span class="t mofu">MOFU · Prueba real</span>
+              <span class="t fmt">Carrusel</span>
+              <span class="t lm">Lead magnet</span>
+              <span class="t cta">CTA Recurso</span>
+            </div>
+            <p class="kw">// Dato ancla: no-shows dental 2.500–7.500 €/mes · ticket 95 €/visita · Keyword: HORAS</p>
+          </div>
         </div>
       </div>
-      <div class="post">
-        <div class="date"><span class="day">24 jun</span><span class="dow">Mié · Profundiza</span></div>
-        <div class="body">
-          <div class="ttl">No es que trabajes poco. Es que media jornada se te va en cosas que no son tuyas.</div>
-          <div class="labels"><span class="lbl mofu">TOFU→MOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-auth">CTA Autoridad</span></div>
-        </div>
-      </div>
-      <div class="post">
-        <div class="date"><span class="day">26 jun</span><span class="dow">Vie · Lanza</span></div>
-        <div class="body">
-          <div class="ttl">Una clínica de Sevilla ganó 4.200 € al mes sin coger un paciente nuevo. Solo dejó de perder los que ya tenía.</div>
-          <div class="labels"><span class="lbl mofu">MOFU</span><span class="lbl fmt">Lead Magnet</span><span class="lbl cta-rec">CTA Recurso</span></div>
-          <div class="kw">Comenta <b>HORAS</b> → kit para ver qué 20 horas de tu semana no son tuyas (y qué valen)</div>
-        </div>
-      </div>
-    </div>
 
-    <!-- SPRINT B (arranque) -->
-    <div class="sprint">
-      <div class="sprint-head">
-        <span class="tag">Sprint B · arranque · puente al verano</span>
-        <h3>El coste de llegar a julio igual que llegaste a enero</h3>
-        <span class="stage">MOFU → BOFU · Confiar</span>
-      </div>
-      <p class="promise">Cerrar el semestre poniendo en euros lo que cuesta seguir haciéndolo todo a mano justo cuando la caja aprieta, y abrir la puerta del verano: o el negocio empieza a sostenerse solo, o lo sostienes tú otros seis meses.</p>
-
-      <div class="post">
-        <div class="date"><span class="day">29 jun</span><span class="dow">Lun · Abre</span></div>
-        <div class="body">
-          <div class="ttl">Esta semana la nómina pesa el doble. Y cada hora tuya en lo que no vende, también.</div>
-          <div class="labels"><span class="lbl bofu">MOFU→BOFU</span><span class="lbl fmt">Carrusel</span><span class="lbl cta-conv">CTA Conversación</span></div>
-          <div class="kw">Comenta <b>CUENTAS</b> → te cuento cómo se ve tu segundo semestre si cambias una sola cosa</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>El <em>lead magnet</em> del tramo</h2>
-    <p class="sec-intro">Uno. Se lanza en el día con recurso del sprint (Vie 26). Se diseña como kit con /lead-magnet: 5–6 entregables que el dueño usa mañana.</p>
-    <div class="lm">
       <div class="lmcard">
-        <span class="kwtag">HORAS</span>
-        <div class="when">Sprint A · se lanza Vie 26 jun</div>
-        <h3>Las 20 horas que no son tuyas</h3>
+        <h3>Lead magnet del tramo · “La cuenta de tus horas”</h3>
+        <p class="kw">Keyword del CTA: HORAS · se lanza el viernes 26</p>
         <ul>
-          <li>Test: marca qué tareas de tu semana podrían no estar en tu mesa (15 casillas)</li>
-          <li>Tabla horas → euros: lo que cuesta cada hora tuya en lo que no factura</li>
-          <li>Las 7 tareas que un dueño nunca debería estar haciendo</li>
-          <li>Plantilla "esto lo hace otro a partir de mañana" para soltar la primera</li>
-          <li>Las 5 señales de que el cuello de botella del negocio eres tú</li>
-          <li>Primer paso para recuperar la franja de horas que más te pesa</li>
+          <li>Plantilla para anotar, día a día, en qué se te van las horas que no facturan</li>
+          <li>Tabla de “precio de tu hora”: qué vale una hora tuya según lo que factura el negocio</li>
+          <li>Mapa de las 6 tareas que más roban tiempo a un dueño (y cuál se va primero)</li>
+          <li>Calculadora simple: horas perdidas × semanas × tu precio = el agujero del semestre</li>
+          <li>Checklist de “lo que no debería tocar el dueño” en un negocio ordenado</li>
+          <li>Ejemplo resuelto con el caso de la agenda de la clínica dental</li>
         </ul>
       </div>
     </div>
-  </section>
 
-  <section>
-    <h2>La <em>munición</em>: datos del tramo</h2>
-    <p class="sec-intro">Cifras reales, con fuente, para anclar los carruseles. En el copy nunca se nombra tecnología: se traduce a euros y horas.</p>
-    <div class="data">
-      <div class="stat"><div class="big">37%</div><div class="txt">de los dueños de pyme trabaja más de 40 horas a la semana; un 7% pasa de 60.</div><div class="src">emprendedores.es · 2026 · DATO ESTRELLA</div></div>
-      <div class="stat"><div class="big">+4.200 €</div><div class="txt">al mes ganó una clínica de Sevilla bajando las ausencias del 18% al 7% en 6 semanas, sin un paciente nuevo.</div><div class="src">caso real clínica dental · 2026</div></div>
-      <div class="stat"><div class="big">hasta 30%</div><div class="txt">de los ingresos del año se le escapan a una clínica dental por las citas que se caen.</div><div class="src">Medesk / Septodont · 2026</div></div>
-      <div class="stat"><div class="big">+12 h</div><div class="txt">por persona a la semana se pierden en tareas administrativas y desorden. Tiempo que no vende.</div><div class="src">SASA Consultoría · 2026</div></div>
-      <div class="stat"><div class="big">1.950 €</div><div class="txt">le cuesta de verdad a la empresa un empleado de 1.500 € de sueldo. Cada hora vale más de lo que pone la nómina.</div><div class="src">Calculadora laboral · 2026</div></div>
-      <div class="stat"><div class="big">−10 días</div><div class="txt">de tesorería pierde de media una pyme en verano: la caja baja ~3% entre junio y agosto.</div><div class="src">Barómetro Prácticas de Pago · 2026</div></div>
+    <!-- SPRINT 2 (medio sprint / cierre) -->
+    <div class="sprint">
+      <div class="sprint-head">
+        <h3>Sprint 2 · La decisión</h3>
+        <span class="arc">29 jun · MOFU → BOFU</span>
+      </div>
+      <p class="theme">Medio sprint de cierre del semestre. Una sola pieza que pone número al coste de no hacer nada y abre la puerta a la sesión de 30 minutos para arrancar el segundo semestre distinto.</p>
+
+      <div class="posts">
+        <div class="post">
+          <div class="date">Lun 29<span>Cierra el semestre</span></div>
+          <div>
+            <div class="title">Cada llamada que no descuelgas vale 150 €. Y el 85% de quien no te encuentra no vuelve a llamar.</div>
+            <div class="tags">
+              <span class="t bofu">MOFU→BOFU · Coste + sesión</span>
+              <span class="t fmt">Carrusel</span>
+              <span class="t cta">CTA Autoridad → sesión</span>
+            </div>
+            <p class="kw">// Dato ancla: 150 €/llamada perdida · 85% no vuelve · 66% se va a la competencia · cierre de semestre → 30 min sin compromiso</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note">
+      <p>El <em>arco</em> empieza en conciencia (Lun 22) y termina en decisión (Lun 29). Un solo lead magnet, lanzado el viernes 26 — nunca uno por carrusel. Los cierres rotan: Autoridad → Conversación → Recurso → Autoridad/sesión. Nunca el mismo cierre dos piezas seguidas.</p>
     </div>
   </section>
 
   <section>
-    <h2>Rotación <em>visual y de cierre</em></h2>
-    <p class="sec-intro">Para que el tramo no se queme: se mezclan los tipos de cierre y se sigue la rotación de color y de hook que dejó el registro.</p>
-    <div class="rot">
-      <div class="rotcard"><h4>Color por sprint</h4><p><b>A:</b> Verde + Magenta + Negro (posición 4/6)<br><b>B:</b> Magenta + Verde + Blanco (posición 5/6)</p></div>
-      <div class="rotcard"><h4>Cierres (regla de oro)</h4><p>Solo la pieza con recurso real lleva <b>CTA Recurso</b> (Vie 26 · HORAS). El resto rota entre <b>Conversación</b> (Lun 22, Lun 29) y <b>Autoridad</b> (Mié 24). Nunca el mismo cierre tres días seguidos.</p></div>
-      <div class="rotcard"><h4>Hooks</h4><p>Arranca en <b>caso real</b> (siguiente en rotación tras la estadística de julio) y rota: provocación → pregunta directa → error común.</p></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Checklist de <em>producción</em></h2>
-    <p class="sec-intro">El estado del tramo de un vistazo. Marca cada pieza al producirla con /productor. Se guarda solo en tu navegador.</p>
+    <p class="ktag">Reglas de la serie</p>
+    <h2>Lo que es siempre igual</h2>
     <div class="check">
-      <div class="ck"><input type="checkbox" id="c1"><label for="c1">Lun 22 — Medio año dentro: haz la cuenta de las horas, no de la caja<span class="hint">TOFU · Conversación · BALANCE</span></label></div>
-      <div class="ck"><input type="checkbox" id="c2"><label for="c2">Mié 24 — Media jornada se te va en cosas que no son tuyas<span class="hint">TOFU→MOFU · Autoridad</span></label></div>
-      <div class="ck"><input type="checkbox" id="c3"><label for="c3">Vie 26 — Clínica de Sevilla: +4.200 €/mes sin pacientes nuevos · LEAD MAGNET HORAS<span class="hint">MOFU · Recurso</span></label></div>
-      <div class="ck"><input type="checkbox" id="c4"><label for="c4">Lun 29 — La nómina pesa el doble. Tus horas en lo que no vende, también<span class="hint">MOFU→BOFU · Conversación · CUENTAS</span></label></div>
+      <label><input type="checkbox"><span>Fondo carbón <b style="color:var(--green)">#232323</b> fijo en todas las piezas del tramo.</span></label>
+      <label><input type="checkbox"><span>Un acento por carrusel (verde <b style="color:var(--green)">#86CA28</b> o morado <b style="color:#e08fd4">#700962</b>), alternado entre piezas. Arranca en verde el Lun 22.</span></label>
+      <label><input type="checkbox"><span>Marco de marca idéntico en cada slide: “GLOBALIZAME” arriba-izquierda · contador 01/08 arriba-derecha · línea verde bajo el contador.</span></label>
+      <label><input type="checkbox"><span>Ningún titular menciona IA, automatización, bot ni tecnicismos. El protagonista es el problema o el resultado, en euros y horas.</span></label>
+      <label><input type="checkbox"><span>El CTA va solo en el copy, nunca dentro de la imagen. El slide de cierre es branding, sin CTA.</span></label>
+      <label><input type="checkbox"><span>Solo el viernes 26 lleva CTA Recurso (Keyword: HORAS). El resto rota entre Conversación y Autoridad.</span></label>
+      <label><input type="checkbox"><span>Todo el copy visible pasa por humanizer antes de entregar.</span></label>
     </div>
   </section>
 
-  <p class="footer"><b>Globalizame</b> · Estrategia de contenido · Cierre de junio 2026 · Medio año dentro, ¿cuántas horas fueron tuyas?</p>
+  <section>
+    <p class="ktag g">Munición del tramo</p>
+    <h2>Los datos que sostienen cada pieza</h2>
+    <p class="sec-intro">Todos verificados el 22 jun 2026. Frescos: ninguno repite los protagonistas de meses anteriores. Detalle y fuentes en <code style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--green)">investigacion/base_2026-06.md</code>.</p>
+    <div class="check">
+      <label><input type="checkbox"><span><b style="color:var(--green)">37%</b> de los dueños de pyme trabaja más de 40 h/semana (Beedigital).</span></label>
+      <label><input type="checkbox"><span>Un restaurante de 14 personas pasa de <b style="color:var(--green)">21.000 €</b> de nómina a más de <b style="color:var(--green)">38.000 €</b> en junio por las extras (Shyfter).</span></label>
+      <label><input type="checkbox"><span>Una clínica dental pierde entre <b style="color:var(--green)">2.500 € y 7.500 €/mes</b> — hasta <b style="color:var(--green)">78.000 €/año</b> — en huecos vacíos (Clinicbot / Javadex).</span></label>
+      <label><input type="checkbox"><span>Cada llamada no atendida cuesta de media <b style="color:var(--green)">150 €</b>; el <b style="color:var(--green)">85%</b> de quien no recibe respuesta no vuelve a llamar (Gestión de Llamadas).</span></label>
+      <label><input type="checkbox"><span>El coste real de un empleado para la empresa ronda el <b style="color:var(--green)">150%</b> de su bruto (Payfit 2026).</span></label>
+    </div>
+  </section>
+
+  <p class="footer"><b>Globalizame</b> · Estrategia cierre de junio 2026 (22–29 jun) · generada por /investigador · siguiente paso: /productor pieza a pieza</p>
 
 </div>
-<script>
-  document.querySelectorAll('.check input').forEach(box=>{
-    const k='glz-jun26b-'+box.id;
-    if(localStorage.getItem(k)==='1') box.checked=true;
-    box.addEventListener('change',()=>localStorage.setItem(k,box.checked?'1':'0'));
-  });
-</script>
 </body>
 </html>

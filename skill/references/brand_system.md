@@ -9,50 +9,30 @@
 
 ---
 
-## Logo
+## Marco de marca (firma fija, en TODOS los slides)
 
-**Wordmark:** "Globalizame" — tipografía bold, "me" en verde  
-**Símbolo:** globo terráqueo dentro de bocadillo de conversación, color verde  
-**Versiones disponibles:**
-- `logo-oscuro.svg` → para fondos claros
-- `logo-claro.svg` → para fondos oscuros (#232323, morado, azul, magenta)
+Va idéntico en cada slide. No se omite nunca:
 
-**Uso en contenido:**
-- Portada → siempre presente, tamaño medio, esquina superior o inferior
-- Cierre → siempre presente
-- Slides intermedios → footer discreto, tamaño pequeño
-- Nunca tapar contenido del diagrama
+- **Encuadre** fino 1px gris a ~40px del borde
+- **"GLOBALIZAME"** arriba-izquierda (mayúsculas, sans bold, tracking ancho)
+- **Contador** "01/08" arriba-derecha
+- **Línea de acento verde** #86CA28 bajo el contador
+- Sin icono, sin globo, sin segundo logo abajo. El titular es el héroe, no el chrome.
 
 ---
 
 ## Paleta de color
 
-### Colores base
+Paleta corta a propósito. Cada tono tiene un trabajo.
+
 | Nombre | Hex | Uso |
 |---|---|---|
-| Negro | #232323 | Fondo principal |
-| Verde | #86CA28 | Acento primario — identidad de marca |
-| Morado | #700962 | Fondo alternativo oscuro |
-| Amarillo | #F4E542 | Fondo alternativo claro |
-| Verde claro | #86CA28 | También como fondo |
-| Magenta | #CA2886 | Fondo alternativo + acento |
-| Azul | #2868CA | Fondo alternativo |
-| Naranja | #FFA500 | Acento puntual |
-| Blanco | #FAFAF7 | Texto sobre fondos oscuros |
+| Negro carbón | #232323 | Fondo principal — fijo en toda la serie |
+| Blanco | #FAFAF7 | Texto sobre el fondo |
+| Verde | #86CA28 | Acento de acción — palabra que resuelve |
+| Morado | #700962 | Acento de giro — lo no-obvio, el reencuadre |
 
-### Combinaciones VÁLIDAS — exactamente estas 6, ninguna más
-
-| Fondo | Acento | Texto |
-|---|---|---|
-| Negro #232323 | Verde #86CA28 | Blanco |
-| Morado #700962 | Verde #86CA28 | Blanco |
-| Amarillo #F4E542 | Verde #86CA28 | Negro |
-| Verde #86CA28 | Magenta #CA2886 | Negro |
-| Magenta #CA2886 | Verde #86CA28 | Blanco |
-| Azul #2868CA | Naranja #FFA500 | Blanco |
-
-**Combinación por defecto:** Negro + Verde + Blanco  
-**Rotación:** usar las 6 combinaciones en orden rotativo a lo largo del mes para variedad visual sin perder consistencia
+**Regla:** UN acento por pieza (verde o morado), elegido por la emoción del tema y mantenido en toda la serie. Se alterna el acento **entre** piezas para dar variedad al feed; nunca **dentro** del mismo carrusel. El fondo carbón no cambia entre slides ni entre piezas de la misma serie.
 
 ---
 
@@ -82,14 +62,16 @@
 
 ## Formato de slides
 
-**Dimensiones:** 1080 × 1350 px (ratio 4:5, vertical Instagram)  
-**Retícula fija:**
-- Etiqueta superior: tema o número de slide
-- Diagrama central: protagonista, ocupa 60-70% del espacio
-- Titular inferior: 3-6 palabras, tipografía grande
-- Footer discreto: logo + "Globalizame"
+**Ratio:** 3:4 (Retrato) — es el vertical que ofrece ChatGPT (Auto / 1:1 / **3:4** / 9:16 / 4:3 / 16:9). No existe 4:5 en ChatGPT.
+**Safe zone:** 80px de padding en los 4 bordes. Texto y datos clave nunca pegados al borde.
+**Coherencia:** misma paleta, tipografía y malla en todas las slides de una serie.
 
-**Micro-rótulo en slides intermedios:** "Explicación en los comentarios ↓"
+**Retícula:**
+- Marco de marca (firma fija, ver arriba): "GLOBALIZAME" + contador + línea verde
+- Cuerpo: headline gigante > subtítulo medio > dato pequeño, con data-viz cuando aporta
+- Una idea por slide
+
+**Micro-rótulo en slides intermedios (opcional):** "Desliza →" abajo-derecha.
 
 ---
 
@@ -115,7 +97,7 @@
 
 **Archivo:** `mario-ruiz.jpg`  
 **Uso:** slides de autoridad (etapa CONFIAR / BOFU), slide de cierre personal  
-**Estilo:** fondo oscuro, camiseta blanca — encaja perfectamente con combinación Negro + Verde  
+**Estilo:** fondo oscuro, camiseta blanca — encaja con el fondo carbón + acento verde  
 **Nunca usar en:** slides técnicos, infografías, portadas con datos
 
 ---
@@ -125,11 +107,13 @@
 Incluir siempre este bloque en cada prompt:
 
 ```
-Visual system: dark background #232323, accent green #86CA28, white text #FAFAF7.
-Premium editorial infographic style. Clean, minimal, lots of breathing room.
-Bold condensed sans-serif headlines. Clean sans-serif labels.
-Central diagram is the hero — takes 60-70% of the frame.
-Fixed grid: top label / central diagram / bottom headline 3-6 words / discrete footer "Globalizame".
-Format: 1080x1350px vertical (4:5 Instagram ratio).
-All text inside the image in Spanish.
+Visual system: solid dark charcoal background #232323, accent green #86CA28 OR purple #700962
+(ONE accent per carousel), white text #FAFAF7. Premium editorial style — Monocle / Bloomberg / Stripe.
+Clean, minimal, lots of breathing room. Geometric/humanist sans-serif (Inter, Geist, Satoshi).
+Clear hierarchy: giant headline > medium subtitle > small data. Data-viz when it helps
+(giant numbers, bars), minimal line icons, flat geometric shapes.
+BRAND FRAME (identical every slide): thin 1px grey border ~40px from edge · "GLOBALIZAME" top-left
+(uppercase, wide tracking) · counter "01/08" top-right · green accent line under the counter.
+Ratio 3:4 (portrait), 80px safe padding on all 4 sides.
+All text inside the image in Spanish, exact spelling.
 ```
