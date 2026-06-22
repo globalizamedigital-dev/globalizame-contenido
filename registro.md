@@ -4,15 +4,15 @@
 
 ```
 Fondo: negro carbón #232323 (FIJO, no rota)
-Último acento usado: — (próxima pieza arranca en verde #86CA28 el Lun 22)
+Último acento usado: verde #86CA28 (Lun 22) → próximo: morado #700962
 
-Último tipo de hook: —
-Próximo: 1. Estadística (Lun 22)
+Último tipo de hook: 1. Estadística (Lun 22) → próximo: 2. Caso real
+Próximo: 2. Caso real (Mié 24)
 
 Último mes con estrategia: junio 2026 (tramo final 22–29 jun)
-Último sprint producido: —
-Último tipo de carrusel: —
-Último post publicado: —
+Último sprint producido: Sprint 1 (Lun 22)
+Último tipo de carrusel: Error costoso / dato impactante
+Último post publicado: Lun 22 — Medio año dentro
 ```
 
 ---
@@ -40,7 +40,7 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 | Fecha | Sprint | Día | Etapa | Formato | Acento | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | — | — |
+| 2026-06-22 | 1 | Lun | TOFU | Carrusel (error costoso/dato) | Verde #86CA28 | Estadística | Pendiente |
 
 ---
 
