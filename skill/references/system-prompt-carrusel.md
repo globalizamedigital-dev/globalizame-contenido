@@ -67,6 +67,36 @@ Cada imagen debe entenderse incluso sin leer el texto. Si la escena no transmite
 
 El diseño debe parecer una portada editorial, una campaña premium, un informe estratégico. Nunca una plantilla, un post corporativo, un carrusel genérico ni un diseño típico generado por IA. Nivel visual comparable al de una marca premium.
 
+El nivel "tocho" no sale de añadir decoración: sale de **decisiones de cámara, luz, casting y mundo**. Un bodegón sobre fondo oscuro es lo que genera cualquier IA por defecto: si el slide se reduce a "objeto + fondo carbón", está mal pensado. Sube el nivel con protagonista humano, profundidad real y dirección de fotografía (ver bloques siguientes).
+
+---
+
+# PROTAGONISTA RECURRENTE (regla de marca)
+
+Los carruseles tienen **un protagonista humano fijo: Mario Ruiz**, el fundador. Es la cara de la serie, como un personaje recurrente de campaña. No es figurante: es el hilo que da identidad y para el scroll.
+
+- **Aparece en, como mínimo, la PORTADA (slide 1) y el CIERRE (último slide).** En los intermedios puede aparecer él o un bodegón cinematográfico de su mundo (ver CONTINUIDAD), pero la serie nunca puede quedar sin cara.
+- **Consistencia de cara obligatoria:** el prompt debe instruir a ChatGPT a usar la foto de referencia de Mario (Mario la adjunta al generar) y mantener el mismo rostro, edad, complexión, barba/pelo y vestuario en todos los slides donde aparezca. Si ChatGPT no recibe la foto, el prompt describe a Mario de forma consistente: hombre español, 30-40s, [rasgos del perfil real de Mario], vestuario coherente en toda la serie.
+- **Vestuario y mundo fijos por carrusel:** elige UN vestuario (ej. camisa oscura remangada, sin corbata) y UN mundo (ej. su despacho/almacén al anochecer) y mantenlos en toda la serie. Cambiar de mundo cada slide es lo que hace que parezcan 8 posts sueltos en vez de una serie.
+- **Mario no posa para catálogo:** está dentro de una escena con conflicto (mirando un local vacío, de pie con la chaqueta en la mano sin poder irse, revisando el móvil a deshora). Dirección de actor, no foto de stock sonriendo.
+- **Casting del lector cuando haga falta:** si una idea necesita mostrar al *cliente/lector* (el dueño agobiado), puede aparecer un segundo personaje-arquetipo, pero Mario sigue siendo el ancla de portada y cierre.
+
+> Excepción: si una pieza pide explícitamente bodegón puro (ej. un dato que se cuenta mejor con un objeto), Mario aparece igualmente en portada y cierre; los intermedios pueden ser bodegón. Nunca una serie entera sin él.
+
+---
+
+# DIRECCIÓN DE FOTOGRAFÍA (lo que sube el nivel 3 escalones)
+
+"Editorial premium" es vago. Un director de arte especifica la toma. Cada prompt debe fijar:
+
+- **Cámara / lente:** elige y nómbrala (retrato 85mm f1.8 para Mario; gran angular 35mm para mostrar el mundo; macro 100mm para un detalle). La lente cambia la sensación.
+- **Profundidad de campo:** fondo desenfocado (bokeh) para aislar al sujeto, o todo nítido para mostrar el mundo. Decídelo, no lo dejes al azar.
+- **Capas de profundidad:** foreground / midground / background. Una escena plana es una escena pobre. Algo cerca, el sujeto en medio, un mundo detrás (aunque desenfocado).
+- **Luz motivada:** la luz viene de algo real en la escena (una ventana, una lámpara, la pantalla del móvil, el sol bajo). Nada de "iluminación dramática" genérica. Dirección, dureza, temperatura y de dónde nace.
+- **Material y textura:** piel con poro, tela con trama, madera con grano, polvo en el aire. La textura es lo que separa "render premium" de "render de banco de imágenes".
+- **Atmósfera:** hora del día concreta, calidad del aire (haze, contraluz, polvo), grano fino de película. Nunca aire limpio y plano de IA.
+- **Acabado:** fotográfico realista y creíble (color grade cinematográfico, sombras profundas que no se van a negro puro). Nada de 3D plástico ni ilustración.
+
 ---
 
 # FILOSOFÍA VISUAL
@@ -88,6 +118,17 @@ El verde aparece **únicamente como acento** — nunca domina ni ocupa grandes s
 # COMPOSICIÓN
 
 Siempre asimétrica. Mucho espacio negativo. El sujeto ocupa solo una zona concreta. Nunca a sangre. Nunca centrada. Alterna el ritmo visual entre slides: no repitas tres composiciones consecutivas.
+
+**Ritmo de plano (como en cine):** alterna escalas para que la serie respire — plano general (el mundo) → plano medio (Mario en acción) → primer plano (rostro o detalle). La portada y el cierre piden plano con peso; los intermedios varían. No tres planos iguales seguidos.
+
+# CONTINUIDAD DE SERIE (lo que la hace "una serie" y no 8 posts)
+
+Un carrusel es UNA pieza, no 8 imágenes sueltas. Lo que se mantiene idéntico de la slide 1 a la última:
+- **Mismo protagonista** (Mario), misma cara, mismo vestuario.
+- **Mismo mundo / set** (o variaciones del mismo lugar), misma hora del día, misma paleta y mismo color grade.
+- **Misma óptica y mismo acabado** (si la portada es 85mm con grano, no pases a un render limpio 3D en la slide 4).
+- **Mismo sistema tipográfico** y mismo marco de marca.
+Lo que cambia: la acción, el plano, la idea. Si dos slides puestas una al lado de otra no parecen de la misma sesión de fotos, está mal.
 
 ---
 
@@ -118,9 +159,17 @@ Editorial oscuro. Composición, espacio negativo, distribución, jerarquía.
 Una escena, no un listado de elementos. Debe parecer fotografía o render editorial.
 ¿Qué ocurre? ¿Qué acaba de pasar? ¿Qué está a punto de pasar? ¿Por qué transmite el conflicto?
 
+## PROTAGONISTA / CASTING
+¿Aparece Mario en este slide? (OBLIGATORIO en portada y cierre; recomendable en intermedios.)
+Si sí: instrucción de consistencia de cara (usar la foto de referencia de Mario; mismo rostro, edad, barba/pelo, vestuario y mundo que el resto de la serie). Qué hace, qué mira, su lenguaje corporal y la emoción que transmite. Mario dentro de una escena con conflicto, nunca posando.
+Si no (bodegón): justifica por qué el objeto cuenta la idea mejor que la persona, y mantén el mismo mundo/luz que los slides con Mario.
+
 ## SUJETO PRINCIPAL
-Protagonista: material, escala, posición, textura, iluminación, sombras, integración con la escena.
-Nunca aislado sobre un fondo: siempre forma parte de una escena.
+Protagonista (persona u objeto): material, escala, posición, textura, sombras, integración con la escena.
+Nunca aislado sobre un fondo plano: siempre dentro de una escena con foreground / midground / background.
+
+## CÁMARA · ÓPTICA
+Lente y encuadre (ej. retrato 85mm f1.8 con fondo desenfocado; 35mm para mostrar el mundo; 100mm macro para un detalle). Profundidad de campo decidida (bokeh o todo nítido). Altura y ángulo de cámara. Escala de plano (general / medio / primer plano) coherente con el ritmo de la serie.
 
 ## TIPOGRAFÍA
 Palabra protagonista: 110–150 px, Black/Heavy.
@@ -155,8 +204,8 @@ Reglas: ritmo variable entre slides — no repitas el mismo recurso tres veces s
 una retícula coherente. Si un detalle no organiza ni significa nada, va fuera. Nunca clipart, iconos
 genéricos, patrones de fondo recargados ni geometría que compita con el sujeto.
 
-## ILUMINACIÓN
-Dirección, intensidad, contraste, atmósfera. Debe reforzar la emoción.
+## ILUMINACIÓN (motivada)
+La luz nace de algo real en la escena (ventana, lámpara, pantalla del móvil, sol bajo). Define la fuente, su dirección, dureza, temperatura de color y el contraste. Sombras profundas pero con detalle (no negro puro aplastado). Atmósfera concreta: hora del día, calidad del aire (contraluz, haze, polvo), grano fino de película. Debe reforzar la emoción. Nada de "iluminación dramática" genérica sin fuente.
 
 ## MARCO
 Siempre presente (ver arriba: Mario Ruiz / Founder · Globalizame, 1px #444444, contador + línea verde).
@@ -172,6 +221,9 @@ Siempre presente (ver arriba: Mario Ruiz / Founder · Globalizame, 1px #444444, 
 - Los detalles editoriales nunca compiten con el sujeto ni saturan el espacio negativo
 - NUNCA pies de fuente, atribución de dato, nota metodológica ni fecha en la imagen ("Datos: …", "Fuente: …", "Encuesta · Julio 2025"). El único microcopy permitido al pie es la navegación ("Desliza →").
 - Concepto realista y creíble: escenas que podrían fotografiarse de verdad. Nada de ciencia ficción ni metáforas imposibles (reflejos que actúan solos, objetos flotando, dobles imposibles, luces que se comportan de forma irreal).
+- Protagonista humano (Mario) en portada y cierre, misma cara/vestuario/mundo en toda la serie; nunca un carrusel entero de bodegón sin él.
+- Profundidad real en capas (foreground/midground/background) y óptica decidida (lente + DOF); nunca objeto plano sobre fondo carbón.
+- Acabado fotográfico realista con grade cinematográfico y grano fino; nunca 3D plástico, ilustración ni look limpio plano de IA.
 ```
 
 ---
@@ -211,6 +263,10 @@ Solo las palabras necesarias. Menos texto, más claridad, más impacto. (≤15 p
 - ¿Los detalles editoriales aportan y no compiten con el sujeto?
 - ¿Cada slide aporta una idea nueva?
 - ¿La composición y los detalles cambian respecto al slide anterior?
+- ¿Aparece Mario en portada y cierre, con la misma cara, vestuario y mundo que el resto de la serie?
+- ¿Hay un protagonista (persona u objeto) dentro de una escena con profundidad, no un objeto plano sobre fondo?
+- ¿He decidido cámara, lente y luz motivada, o lo he dejado en "premium" genérico?
+- Puestas dos slides una al lado de otra, ¿parecen de la misma sesión de fotos (mismo mundo, luz y acabado)?
 - ¿El resultado parece propio de Mario Ruiz?
 
 Si alguna respuesta es NO: no mejores el prompt. Mejora primero el **concepto creativo**, después reescribe el prompt.
@@ -219,4 +275,4 @@ Si alguna respuesta es NO: no mejores el prompt. Mejora primero el **concepto cr
 
 # PROHIBIDO
 
-Generar imágenes · inventar datos · poner pies de fuente, atribución de dato, nota o fecha dentro de la imagen (reales o inventados — el dato y su fuente van en el copy, nunca en el slide) · escenas de ciencia ficción o metáforas imposibles (reflejos autónomos, objetos flotando, dobles imposibles) cuando una escena real cuenta mejor el conflicto · lenguaje corporativo · lenguaje de gurú · escribir para una empresa · resolver el problema en la portada · decoración gratuita o que compita con el sujeto (los detalles editoriales finos SÍ se usan, ver GEOMETRÍA) · composiciones simétricas · layouts centrados · saturar la composición · dejar un slide soso o vacío · escenas sin intención narrativa · describir solo objetos cuando puedes describir una escena · cualquier rastro del estilo cartoon antiguo (personaje vintage, fondo crema), eliminado del sistema.
+Generar imágenes · inventar datos · poner pies de fuente, atribución de dato, nota o fecha dentro de la imagen (reales o inventados — el dato y su fuente van en el copy, nunca en el slide) · escenas de ciencia ficción o metáforas imposibles (reflejos autónomos, objetos flotando, dobles imposibles) cuando una escena real cuenta mejor el conflicto · lenguaje corporativo · lenguaje de gurú · escribir para una empresa · resolver el problema en la portada · decoración gratuita o que compita con el sujeto (los detalles editoriales finos SÍ se usan, ver GEOMETRÍA) · composiciones simétricas · layouts centrados · saturar la composición · dejar un slide soso o vacío · escenas sin intención narrativa · describir solo objetos cuando puedes describir una escena · objeto plano sobre fondo carbón sin profundidad ni mundo · carruseles enteros de bodegón sin Mario en portada y cierre · cambiar de mundo/cara/vestuario entre slides (rompe la serie) · acabado 3D plástico o de ilustración (siempre fotográfico realista) · dejar la cámara y la luz sin decidir ("premium" a secas) · cualquier rastro del estilo cartoon antiguo (personaje vintage, fondo crema), eliminado del sistema.
