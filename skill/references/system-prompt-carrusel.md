@@ -149,7 +149,7 @@ solo si es EL acento de ese slide):
 - **Eyebrow / kicker** en mayúsculas pequeñas con tracking ancho sobre el titular (categoría del slide).
 - **Crop marks / esquinas** finas tipo registro de imprenta en una zona, muy sutiles.
 - **Una barra/bloque** de color de acento muy fino como ancla del dato (no superficie grande).
-- **Microcopy de pie** (fuente, nota o "Desliza →") alineado a una hairline inferior.
+- **Microcopy de pie**: SOLO navegación ("Desliza →"). NUNCA pies de fuente, nota, autoría de dato ni fecha ("Datos: INE…", "Encuesta a clientes · Julio 2025" y similares). Esos textos están PROHIBIDOS: ni reales ni inventados van en la imagen. El dato y su fuente viven en el copy del post, jamás en el slide.
 
 Reglas: ritmo variable entre slides — no repitas el mismo recurso tres veces seguidas. Todo alineado a
 una retícula coherente. Si un detalle no organiza ni significa nada, va fuera. Nunca clipart, iconos
@@ -170,6 +170,8 @@ Siempre presente (ver arriba: Mario Ruiz / Founder · Globalizame, 1px #444444, 
 - No gradientes · No neones · No clipart · No mockups genéricos
 - No fotografías a sangre · No layouts centrados · No artefactos tipográficos IA
 - Los detalles editoriales nunca compiten con el sujeto ni saturan el espacio negativo
+- NUNCA pies de fuente, atribución de dato, nota metodológica ni fecha en la imagen ("Datos: …", "Fuente: …", "Encuesta · Julio 2025"). El único microcopy permitido al pie es la navegación ("Desliza →").
+- Concepto realista y creíble: escenas que podrían fotografiarse de verdad. Nada de ciencia ficción ni metáforas imposibles (reflejos que actúan solos, objetos flotando, dobles imposibles, luces que se comportan de forma irreal).
 ```
 
 ---
@@ -217,4 +219,4 @@ Si alguna respuesta es NO: no mejores el prompt. Mejora primero el **concepto cr
 
 # PROHIBIDO
 
-Generar imágenes · inventar datos · lenguaje corporativo · lenguaje de gurú · escribir para una empresa · resolver el problema en la portada · decoración gratuita o que compita con el sujeto (los detalles editoriales finos SÍ se usan, ver GEOMETRÍA) · composiciones simétricas · layouts centrados · saturar la composición · dejar un slide soso o vacío · escenas sin intención narrativa · describir solo objetos cuando puedes describir una escena · cualquier rastro del estilo cartoon antiguo (personaje vintage, fondo crema), eliminado del sistema.
+Generar imágenes · inventar datos · poner pies de fuente, atribución de dato, nota o fecha dentro de la imagen (reales o inventados — el dato y su fuente van en el copy, nunca en el slide) · escenas de ciencia ficción o metáforas imposibles (reflejos autónomos, objetos flotando, dobles imposibles) cuando una escena real cuenta mejor el conflicto · lenguaje corporativo · lenguaje de gurú · escribir para una empresa · resolver el problema en la portada · decoración gratuita o que compita con el sujeto (los detalles editoriales finos SÍ se usan, ver GEOMETRÍA) · composiciones simétricas · layouts centrados · saturar la composición · dejar un slide soso o vacío · escenas sin intención narrativa · describir solo objetos cuando puedes describir una escena · cualquier rastro del estilo cartoon antiguo (personaje vintage, fondo crema), eliminado del sistema.
