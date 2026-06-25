@@ -4,13 +4,13 @@
 
 ```
 Fondo: negro carbón #232323 (FIJO, no rota)
-Último acento usado: — (alterna entre verde #86CA28 y morado #700962)
+Último acento usado: — (próximo VIE 26 = verde; LUN 29 = morado)
 
 Último tipo de hook: —
-Próximo: —
+Próximo: estadística (Vie 26) → lista (Lun 29)
 
-Último mes con estrategia: —
-Último sprint producido: —
+Último mes con estrategia: Junio 2026 (cierre, 26-29 jun)
+Último sprint producido: — (estrategia generada, posts pendientes)
 Último tipo de carrusel: —
 Último post publicado: —
 ```
@@ -46,7 +46,9 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 ## Meses procesados
 
-*(Vacío. Corre `/investigador` para generar la estrategia del primer mes.)*
+| Mes | Tema central | Datos clave usados (máx. 3) | Estado |
+|---|---|---|---|
+| Junio 2026 (cierre, 26-29 jun) | El verano que destapa la verdad: si no puedes irte, no es tu negocio | 1 de cada 3 autónomos no se va de vacaciones (ATA) · 36% no desconecta ni una semana por impagos (Emprendedores.es) · 200 h y 3.000 €/año en burocracia (ATA, dic 2025) | Estrategia generada |
 
 ---
 
