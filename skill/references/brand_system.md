@@ -11,12 +11,11 @@
 
 ## Marco de marca (firma fija, en TODOS los slides)
 
-Va idéntico en cada slide. No se omite nunca:
+Va idéntico en cada slide. No se omite nunca. Es la marca personal de **Mario Ruiz** (Globalizame detrás):
 
-- **Encuadre** fino 1px gris a ~40px del borde
-- **"GLOBALIZAME"** arriba-izquierda (mayúsculas, sans bold, tracking ancho)
-- **Contador** "01/08" arriba-derecha
-- **Línea de acento verde** #86CA28 bajo el contador
+- **Marco** fino 1px color **#444444**, separado ~40px del borde
+- **Arriba-izquierda:** "Mario Ruiz" · debajo "Founder · Globalizame"
+- **Arriba-derecha:** contador "01/08" · debajo una **línea verde** #86CA28
 - Sin icono, sin globo, sin segundo logo abajo. El titular es el héroe, no el chrome.
 
 ---
@@ -53,10 +52,10 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 
 ## Estilo visual
 
-**Mood:** Editorial premium. Limpio. Mucho aire. Profesional sin ser corporativo.  
-**Protagonista:** el diagrama / la infografía — no el texto  
+**Mood:** Editorial oscuro premium, tipo portada de revista / campaña / informe estratégico. Mucho aire. Profesional sin ser corporativo.  
+**Protagonista:** el concepto / la escena que representa el conflicto — un sujeto principal integrado, no el texto ni una infografía  
 **Textura:** opcional — grano sutil sobre fondo para profundidad  
-**Elementos:** geométricos, líneas limpias, nada orgánico ni ilustrativo
+**Composición:** asimétrica, mucho espacio negativo, iluminación con intención
 
 ---
 
@@ -67,8 +66,8 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 **Coherencia:** misma paleta, tipografía y malla en todas las slides de una serie.
 
 **Retícula:**
-- Marco de marca (firma fija, ver arriba): "GLOBALIZAME" + contador + línea verde
-- Cuerpo: headline gigante > subtítulo medio > dato pequeño, con data-viz cuando aporta
+- Marco de marca (firma fija, ver arriba): "Mario Ruiz" / "Founder · Globalizame" + contador + línea verde
+- Cuerpo: palabra protagonista gigante > titular > subtítulo, integrados en la escena
 - Una idea por slide
 
 **Micro-rótulo en slides intermedios (opcional):** "Desliza →" abajo-derecha.
@@ -77,19 +76,21 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 
 ## Voz visual de marca
 
+Editorial oscuro tipo portada/campaña premium. Diseñas **conceptos y escenas**, no infografías. Cada imagen representa un conflicto y se entiende sin leer el texto.
+
 **Lo que SÍ:**
-- Fondos sólidos oscuros con acento verde
-- Diagramas con flechas, nodos, flujos
-- Tipografía bold en titulares
-- Mucho espacio en blanco (o en negro)
-- Datos reales como protagonistas
+- Fondo carbón #232323 con el verde solo como acento puntual
+- Escenas con un sujeto principal integrado (render/fotografía editorial), no objetos sueltos
+- Composición asimétrica, mucho espacio negativo
+- La tipografía construye la jerarquía (palabra protagonista gigante > titular > subtítulo)
+- Iluminación con intención que refuerza la emoción
 
 **Lo que NO:**
-- Degradados complejos
-- Más de 2 colores por slide (fondo + acento)
-- Fotografías de stock
-- Iconos decorativos sin función
-- Texto corrido — solo titulares y micro-etiquetas
+- Degradados, neones, clipart, mockups genéricos
+- El verde dominando o en grandes superficies
+- Fotografías a sangre · composiciones centradas o simétricas
+- Decoración sin función · escenas sin intención narrativa
+- Artefactos tipográficos de IA
 
 ---
 
@@ -98,7 +99,7 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 **Archivo:** `mario-ruiz.jpg`  
 **Uso:** slides de autoridad (etapa CONFIAR / BOFU), slide de cierre personal  
 **Estilo:** fondo oscuro, camiseta blanca — encaja con el fondo carbón + acento verde  
-**Nunca usar en:** slides técnicos, infografías, portadas con datos
+**Nunca usar en:** portadas, slides de concepto donde el sujeto es otro
 
 ---
 
@@ -107,13 +108,16 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 Incluir siempre este bloque en cada prompt:
 
 ```
-Visual system: solid dark charcoal background #232323, accent green #86CA28 OR purple #700962
-(ONE accent per carousel), white text #FAFAF7. Premium editorial style — Monocle / Bloomberg / Stripe.
-Clean, minimal, lots of breathing room. Geometric/humanist sans-serif (Inter, Geist, Satoshi).
-Clear hierarchy: giant headline > medium subtitle > small data. Data-viz when it helps
-(giant numbers, bars), minimal line icons, flat geometric shapes.
-BRAND FRAME (identical every slide): thin 1px grey border ~40px from edge · "GLOBALIZAME" top-left
-(uppercase, wide tracking) · counter "01/08" top-right · green accent line under the counter.
+Visual system: dark editorial — solid charcoal background #232323, white text, green #86CA28 as a
+SINGLE accent only (never dominant), purple #700962 only when it adds visual tension. Premium magazine
+cover / strategic report feel. Designed as a CONCEPT/SCENE, not an infographic: a single main subject
+integrated into an editorial scene (render or photographic), asymmetric composition, lots of negative
+space. Typography builds the hierarchy: hero word 110–150px black/heavy > headline 26–38px light >
+subtitle 18–26px regular. Geometric/humanist sans-serif (Inter, Geist, Satoshi). Lighting with intent.
+BRAND FRAME (identical every slide): thin 1px #444444 border ~40px from edge · "Mario Ruiz" + "Founder ·
+Globalizame" top-left · counter "01/08" top-right with a green accent line under it.
 Ratio 3:4 (portrait), 80px safe padding on all 4 sides.
-All text inside the image in Spanish, exact spelling.
+All text inside the image in Spanish, literal and quoted, exact spelling.
+NEGATIVE: no gradients, no neon, no clipart, no generic mockups, no full-bleed photos, no centered
+layouts, no decorative geometry, no AI typography artifacts.
 ```

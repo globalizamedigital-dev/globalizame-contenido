@@ -88,20 +88,26 @@ Para cada slide define: función narrativa · texto exacto (≤15 palabras, en e
 
 ## PASO 5 · PROMPTS DE IMAGEN PARA CHATGPT
 
-Un prompt por slide, autónomo y completo, siguiendo el **esqueleto obligatorio** de `system-prompt-carrusel.md` §8: `[ESCENA] / [ELEMENTOS] / [TEXTO EN IMAGEN] / [ESTILO] / [CONSTRAINTS]`.
+Un prompt por slide, autónomo y completo, siguiendo el **esqueleto obligatorio** de `system-prompt-carrusel.md` (sección PROMPTS). Empieza siempre por la **idea visual**, nunca por el objeto. Orden de cada prompt:
 
-- **Estilo editorial:** fondo carbón #232323, acento verde o morado (el de la pieza), texto blanco, sans geometric, data-viz, mucho aire. Monocle/Bloomberg/Stripe.
-- **Ratio 3:4** en todos. Safe zone 80px.
-- **Marco de marca** idéntico en cada slide: encuadre 1px, "GLOBALIZAME" arriba-izq, contador "0X/NN" arriba-der, línea verde bajo el contador.
-- Texto dentro de la imagen **en español, entre comillas exactas**.
-- La portada, los intermedios y el cierre NO se componen igual.
+`EMOCIÓN → CONCEPTO VISUAL → LAYOUT → ESCENA → SUJETO PRINCIPAL → TIPOGRAFÍA → TEXTO EN IMAGEN → ACENTO → GEOMETRÍA → ILUMINACIÓN → MARCO → CONSTRAINTS`
+
+- **Diseñas conceptos y escenas, no infografías.** Cada imagen representa el conflicto y se entiende sin leer el texto. Si parece una ilustración del tema, rehaz el concepto antes que el prompt.
+- **Estilo editorial oscuro:** fondo carbón #232323, verde #86CA28 solo como acento puntual (nunca dominante), morado #700962 solo si añade tensión. Composición asimétrica, mucho espacio negativo, iluminación con intención.
+- **Tipografía construye la jerarquía:** palabra protagonista 110–150px black > titular 26–38px light > subtítulo 18–26px regular.
+- **Ratio 3:4** en todos. Safe zone 80px. Nunca a sangre, nunca centrado.
+- **Marco de marca** idéntico en cada slide: marco 1px #444444 a ~40px, "Mario Ruiz" + "Founder · Globalizame" arriba-izq, contador "0X/NN" arriba-der, línea verde bajo el contador.
+- Texto dentro de la imagen **en español, literal, entre comillas exactas**.
+- La portada, los intermedios y el cierre NO se componen igual. No repitas tres composiciones consecutivas.
+
+Antes de dar cada prompt por bueno, pasa el **checklist** de `system-prompt-carrusel.md` (¿detiene el scroll? ¿transmite el conflicto, no el tema? ¿parece portada editorial? ¿cambia la composición? ¿parece propio de Mario Ruiz?).
 
 Formato de entrega de cada prompt:
 ```
 ─────────────────────────────
 SLIDE 0X/NN — [TÍTULO EN ESPAÑOL]
 ─────────────────────────────
-[prompt completo en inglés con el esqueleto]
+[prompt completo con el esqueleto EMOCIÓN→…→CONSTRAINTS]
 ```
 
 ## PASO 6 · COPY DEL POST (Instagram y LinkedIn)

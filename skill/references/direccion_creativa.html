@@ -115,8 +115,9 @@
   /* ── Marco de marca ── */
   .frame-demo{background:#fff;border:1.5px solid var(--ink);border-radius:14px;padding:0;margin-top:8px;overflow:hidden}
   .frame-canvas{aspect-ratio:3/4;max-width:300px;margin:30px auto;background:var(--ink);position:relative;border-radius:6px}
-  .frame-inner{position:absolute;inset:14px;border:1px solid rgba(250,250,247,.35);border-radius:3px}
-  .frame-wm{position:absolute;top:24px;left:24px;color:var(--paper);font-size:11px;font-weight:800;letter-spacing:.14em}
+  .frame-inner{position:absolute;inset:14px;border:1px solid #444444;border-radius:3px}
+  .frame-wm{position:absolute;top:22px;left:24px;color:var(--paper);font-size:11px;font-weight:800;line-height:1.4}
+  .frame-wm small{display:block;font-size:8px;font-weight:500;color:rgba(250,250,247,.6);letter-spacing:.04em}
   .frame-count{position:absolute;top:24px;right:24px;color:var(--paper);font-size:11px;font-weight:700}
   .frame-accent{position:absolute;top:42px;right:24px;width:34px;height:3px;background:var(--green);border-radius:2px}
   .frame-cap{padding:16px 22px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-soft);text-align:center}
@@ -149,10 +150,10 @@
         <h3>La capa de marca</h3>
         <ul>
           <li>Fondo sólido negro carbón <b>#232323</b></li>
-          <li>Titular sans-serif bold + palabra clave en color</li>
-          <li>Acento verde <b>#86CA28</b> / morado <b>#700962</b></li>
-          <li>Encuadre fino 1px gris a ~40px del borde</li>
-          <li>"GLOBALIZAME" arriba-izquierda · contador "01/08" arriba-derecha</li>
+          <li>Palabra protagonista gigante + acento verde puntual</li>
+          <li>Acento verde <b>#86CA28</b> (solo acento) / morado <b>#700962</b> (tensión)</li>
+          <li>Marco fino 1px <b>#444444</b> a ~40px del borde</li>
+          <li>"Mario Ruiz" + "Founder · Globalizame" arriba-izq · contador "01/08" arriba-der</li>
           <li>Línea de acento verde bajo el contador</li>
           <li>Tono Isra Bravo en cada palabra</li>
         </ul>
@@ -161,7 +162,7 @@
         <span class="tag">libre · cambia cada pieza</span>
         <h3>La capa creativa</h3>
         <ul>
-          <li>La escena / data-viz de cada slide</li>
+          <li>El concepto y la escena de cada slide</li>
           <li>Número de slides</li>
           <li>Gancho, arco narrativo, ritmo</li>
           <li>Qué emoción / color de acento domina la pieza</li>
@@ -178,10 +179,10 @@
     <h2>Lo sagrado: <em>jamás falta</em></h2>
     <p class="sec-intro">Dentro de la capa blindada hay una jerarquía. Si tuvieras que salvar solo una cosa de cada pieza, este es el orden. Lo de arriba define la marca; sin ello, es otro carrusel cualquiera.</p>
     <div class="sacred">
-      <div class="scard"><span class="rank">1</span><h3>El marco de marca</h3><p>Encuadre 1px, "GLOBALIZAME" arriba-izq, contador "01/08" arriba-der, línea de acento verde bajo el contador. La firma fija que se reconoce de un vistazo. No se omite nunca.</p></div>
-      <div class="scard"><span class="rank">2</span><h3>La palabra clave en color</h3><p>La palabra emocional del titular, en <span class="kw">verde</span> o morado dentro del texto blanco. El ojo la reconoce antes de leer. Firma visual instantánea.</p></div>
-      <div class="scard"><span class="rank">3</span><h3>El fondo carbón</h3><p>Negro #232323 sólido en todos los slides. La base del look editorial premium. Nunca un fondo distinto dentro de la misma serie.</p></div>
-      <div class="scard"><span class="rank">4</span><h3>La jerarquía tipográfica</h3><p>Headline gigante &gt; subtítulo medio &gt; dato pequeño. Sans-serif geometric, mucho aire. La claridad es la marca.</p></div>
+      <div class="scard"><span class="rank">1</span><h3>El concepto / la escena</h3><p>Cada slide representa un <span class="kw">conflicto</span>, no un tema. Una escena con sujeto integrado que se entiende sin leer el texto. Si parece una ilustración del tema, está mal.</p></div>
+      <div class="scard"><span class="rank">2</span><h3>El marco de marca</h3><p>Marco 1px #444444, "Mario Ruiz" + "Founder · Globalizame" arriba-izq, contador "01/08" arriba-der, línea verde bajo el contador. La firma fija de Mario. No se omite nunca.</p></div>
+      <div class="scard"><span class="rank">3</span><h3>El fondo carbón</h3><p>Negro #232323 sólido en todos los slides. La base del look editorial oscuro premium. Nunca un fondo distinto dentro de la misma serie.</p></div>
+      <div class="scard"><span class="rank">4</span><h3>La jerarquía tipográfica</h3><p>Palabra protagonista gigante &gt; titular &gt; subtítulo. La tipografía construye la jerarquía, no los efectos. Mucho espacio negativo.</p></div>
     </div>
   </section>
 
@@ -206,7 +207,7 @@
     <p class="sec-intro">Sans-serif geometric / humanist (Inter, Geist, Satoshi, Söhne). Pocas fuentes, bien usadas. La jerarquía se construye con tamaño y peso, no con color: el acento se reserva para la palabra clave, jamás para ordenar la lectura.</p>
     <div class="typerow"><div class="tr-role">Headline</div><div class="tr-sample"><span class="s-display">Has vuelto de vacaciones</span><br><span style="font-size:14px;color:var(--ink-soft)">Sans-serif bold gigante, peso de portada editorial.</span></div></div>
     <div class="typerow"><div class="tr-role">Palabra clave</div><div class="tr-sample"><span class="s-key">y todo seguía parado</span><br><span style="font-size:14px;color:var(--ink-soft)">Sans bold en el color de acento. La emoción del titular.</span></div></div>
-    <div class="typerow"><div class="tr-role">Subtítulo · dato</div><div class="tr-sample"><span class="s-sub">16 horas a la semana en tareas que no facturan.</span><br><span style="font-size:14px;color:var(--ink-soft)">Peso regular, gris, para subtexto y data viz.</span></div></div>
+    <div class="typerow"><div class="tr-role">Subtítulo · dato</div><div class="tr-sample"><span class="s-sub">16 horas a la semana en tareas que no facturan.</span><br><span style="font-size:14px;color:var(--ink-soft)">Peso regular, gris, para subtítulo y dato dentro de la escena.</span></div></div>
   </section>
 
   <!-- MARCO DE MARCA -->
@@ -216,11 +217,11 @@
     <div class="frame-demo">
       <div class="frame-canvas">
         <div class="frame-inner"></div>
-        <div class="frame-wm">GLOBALIZAME</div>
+        <div class="frame-wm">Mario Ruiz<small>Founder · Globalizame</small></div>
         <div class="frame-count">01 / 08</div>
         <div class="frame-accent"></div>
       </div>
-      <p class="frame-cap">Encuadre 1px gris a ~40px del borde · "GLOBALIZAME" arriba-izq · contador "01/08" arriba-der · línea verde bajo el contador. Safe zone 80px en los 4 bordes.</p>
+      <p class="frame-cap">Marco 1px #444444 a ~40px del borde · "Mario Ruiz" + "Founder · Globalizame" arriba-izq · contador "01/08" arriba-der · línea verde bajo el contador. Safe zone 80px en los 4 bordes.</p>
     </div>
   </section>
 

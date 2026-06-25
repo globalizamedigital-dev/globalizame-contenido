@@ -4,15 +4,15 @@
 
 ```
 Fondo: negro carbón #232323 (FIJO, no rota)
-Último acento usado: verde #86CA28 (Lun 22) → próximo: morado #700962
+Último acento usado: — (alterna entre verde #86CA28 y morado #700962)
 
-Último tipo de hook: 1. Estadística (Lun 22) → próximo: 2. Caso real
-Próximo: 2. Caso real (Mié 24)
+Último tipo de hook: —
+Próximo: —
 
-Último mes con estrategia: junio 2026 (tramo final 22–29 jun)
-Último sprint producido: Sprint 1 (Lun 22)
-Último tipo de carrusel: Error costoso / dato impactante
-Último post publicado: Lun 22 — Medio año dentro
+Último mes con estrategia: —
+Último sprint producido: —
+Último tipo de carrusel: —
+Último post publicado: —
 ```
 
 ---
@@ -40,15 +40,13 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 | Fecha | Sprint | Día | Etapa | Formato | Acento | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| 2026-06-22 | 1 | Lun | TOFU | Carrusel (error costoso/dato) | Verde #86CA28 | Estadística | Pendiente |
+| — | — | — | — | — | — | — | — |
 
 ---
 
 ## Meses procesados
 
-| Mes | Tema central | Datos clave usados (máx. 3) | Estado |
-|---|---|---|---|
-| Junio 2026 (22–29 jun) | Medio año dentro. ¿Cuántas horas fueron tuyas? | 1) Clínica dental pierde hasta 78.000 €/año en huecos vacíos (Clinicbot/Javadex) · 2) Restaurante 14 pers.: nómina junio 21.000 € → 38.000 € (Shyfter) · 3) Llamada no atendida = 150 €, 85% no vuelve (Gestión de Llamadas) | Estrategia generada |
+*(Vacío. Corre `/investigador` para generar la estrategia del primer mes.)*
 
 ---
 
