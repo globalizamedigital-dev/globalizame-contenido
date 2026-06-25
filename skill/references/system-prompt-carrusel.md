@@ -135,8 +135,25 @@ Siempre literal, siempre entre comillas, en español, ortografía correcta.
 Verde #86CA28 una sola vez: una palabra, una línea, un detalle, un borde o un elemento del sujeto.
 Nunca domina la composición.
 
-## GEOMETRÍA
-Solo elementos funcionales. Nunca decoración.
+## GEOMETRÍA · DETALLES EDITORIALES
+El espacio negativo es sagrado, pero un slide no puede quedar SOSO ni vacío. Añade detalles
+editoriales finos que den estructura y sensación de informe/portada premium (Bloomberg, Monocle,
+Stripe), nunca relleno decorativo. Cada detalle debe organizar la lectura o reforzar el concepto.
+
+Repertorio (elige 1-3 por slide, con criterio, sutiles y en gris #444 o blanco al 10-20%; el verde
+solo si es EL acento de ese slide):
+- **Hairlines / filetes** 1px que separan zonas, subrayan el dato o anclan el titular a un borde.
+- **Línea de medianil** vertu u horizontal que marca la columna editorial y crea la asimetría.
+- **Ticks / marcas de regla** (pequeñas marcas tipo escala o timeline) bajo un número o a un lado.
+- **Índice / numeración** discreta del punto ("01 —", "→ 02") integrada en la retícula, no en el marco.
+- **Eyebrow / kicker** en mayúsculas pequeñas con tracking ancho sobre el titular (categoría del slide).
+- **Crop marks / esquinas** finas tipo registro de imprenta en una zona, muy sutiles.
+- **Una barra/bloque** de color de acento muy fino como ancla del dato (no superficie grande).
+- **Microcopy de pie** (fuente, nota o "Desliza →") alineado a una hairline inferior.
+
+Reglas: ritmo variable entre slides — no repitas el mismo recurso tres veces seguidas. Todo alineado a
+una retícula coherente. Si un detalle no organiza ni significa nada, va fuera. Nunca clipart, iconos
+genéricos, patrones de fondo recargados ni geometría que compita con el sujeto.
 
 ## ILUMINACIÓN
 Dirección, intensidad, contraste, atmósfera. Debe reforzar la emoción.
@@ -149,8 +166,10 @@ Siempre presente (ver arriba: Mario Ruiz / Founder · Globalizame, 1px #444444, 
 - Padding 80 px en los 4 bordes (safe zone)
 - Editorial premium · Fondo #232323 · Marco 1 px #444444
 - Mucho espacio negativo · Composición asimétrica
+- Estructura editorial con detalles finos (hairlines, ticks, índice, kicker) — ni vacío ni soso
 - No gradientes · No neones · No clipart · No mockups genéricos
 - No fotografías a sangre · No layouts centrados · No artefactos tipográficos IA
+- Los detalles editoriales nunca compiten con el sujeto ni saturan el espacio negativo
 ```
 
 ---
@@ -186,8 +205,10 @@ Solo las palabras necesarias. Menos texto, más claridad, más impacto. (≤15 p
 - ¿La escena representa el **conflicto** y no solo el tema?
 - ¿Parece una portada editorial? ¿Podría imprimirse como póster premium?
 - ¿Hay suficiente espacio negativo?
+- ¿El slide tiene estructura editorial (alguna hairline, tick, índice o kicker) y NO queda soso ni vacío?
+- ¿Los detalles editoriales aportan y no compiten con el sujeto?
 - ¿Cada slide aporta una idea nueva?
-- ¿La composición cambia respecto al slide anterior?
+- ¿La composición y los detalles cambian respecto al slide anterior?
 - ¿El resultado parece propio de Mario Ruiz?
 
 Si alguna respuesta es NO: no mejores el prompt. Mejora primero el **concepto creativo**, después reescribe el prompt.
@@ -196,4 +217,4 @@ Si alguna respuesta es NO: no mejores el prompt. Mejora primero el **concepto cr
 
 # PROHIBIDO
 
-Generar imágenes · inventar datos · lenguaje corporativo · lenguaje de gurú · escribir para una empresa · resolver el problema en la portada · efectos decorativos · composiciones simétricas · layouts centrados · saturar la composición · escenas sin intención narrativa · describir solo objetos cuando puedes describir una escena · cualquier rastro del estilo cartoon antiguo (personaje vintage, fondo crema), eliminado del sistema.
+Generar imágenes · inventar datos · lenguaje corporativo · lenguaje de gurú · escribir para una empresa · resolver el problema en la portada · decoración gratuita o que compita con el sujeto (los detalles editoriales finos SÍ se usan, ver GEOMETRÍA) · composiciones simétricas · layouts centrados · saturar la composición · dejar un slide soso o vacío · escenas sin intención narrativa · describir solo objetos cuando puedes describir una escena · cualquier rastro del estilo cartoon antiguo (personaje vintage, fondo crema), eliminado del sistema.
