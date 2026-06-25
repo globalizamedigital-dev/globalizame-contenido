@@ -4,14 +4,15 @@
 
 ```
 Fondo: negro carbón #232323 (FIJO, no rota)
-Acento previsto Vie 26 = VERDE #86CA28 · próximo LUN 29 = morado #700962
+Último acento usado: VERDE #86CA28 (Vie 26) → próximo LUN 29 = morado #700962
 
-Próximo tipo de hook: estadística ("1 de cada 3") (Vie 26)
-Después: lista / promesa concreta (Lun 29)
+Último tipo de hook: estadística ("1 de cada 3") (Vie 26)
+Próximo: lista / promesa concreta (Lun 29)
 
 Último mes con estrategia: Junio 2026 (cierre, 26-29 jun)
-Último sprint producido: ninguno todavía — Vie 26 PENDIENTE de producir, Lun 29 pendiente
-Último post publicado: ninguno todavía
+Último sprint producido: cierre junio — Vie 26 producido, Lun 29 pendiente
+Último tipo de carrusel: editorial de autoridad con protagonista humano (Mario), 8 slides
+Último post publicado: post_2026-06-26_uno-de-cada-tres (producido, sin publicar)
 ```
 
 ---
@@ -39,7 +40,7 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 | Fecha | Sprint | Día | Etapa | Formato | Acento | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| *(sin posts producidos todavía)* | | | | | | | |
+| 2026-06-26 | Cierre junio | Vie | TOFU (espejo) | Carrusel 8 slides · protagonista Mario | Verde | Estadística ("1 de cada 3") | Pendiente |
 
 ---
 
