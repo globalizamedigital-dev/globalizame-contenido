@@ -78,7 +78,8 @@ Los carruseles tienen **un protagonista humano fijo: Mario Ruiz**, el fundador. 
 - **Aparece en, como mínimo, la PORTADA (slide 1) y el CIERRE (último slide).** En los intermedios puede aparecer él o un bodegón cinematográfico de su mundo (ver CONTINUIDAD), pero la serie nunca puede quedar sin cara.
 - **Consistencia de cara obligatoria:** el prompt debe instruir a ChatGPT a usar la foto de referencia de Mario (Mario la adjunta al generar) y mantener el mismo rostro, edad, complexión, barba/pelo y vestuario en todos los slides donde aparezca. Si ChatGPT no recibe la foto, el prompt describe a Mario de forma consistente: hombre español, 30-40s, [rasgos del perfil real de Mario], vestuario coherente en toda la serie.
 - **Vestuario y mundo fijos por carrusel:** elige UN vestuario (ej. camisa oscura remangada, sin corbata) y UN mundo (ej. su despacho/almacén al anochecer) y mantenlos en toda la serie. Cambiar de mundo cada slide es lo que hace que parezcan 8 posts sueltos en vez de una serie.
-- **Mario no posa para catálogo:** está dentro de una escena con conflicto (mirando un local vacío, de pie con la chaqueta en la mano sin poder irse, revisando el móvil a deshora). Dirección de actor, no foto de stock sonriendo.
+- **Mario no posa para catálogo:** está dentro de una escena con conflicto. Dirección de actor, no foto de stock sonriendo.
+- **RESTRICCIÓN DE PRODUCCIÓN (crítica):** Mario adjunta SOLO una foto de su CARA. ChatGPT clava el rostro pero inventa cuerpo, manos y postura (y ahí salen los fallos). Por tanto, en todo slide con Mario el encuadre es **primer plano o plano medio corto** (rostro protagonista, como mucho hombros). NUNCA plano entero ni 3/4 de cuerpo. El cuerpo, si aparece, va cubierto, en sombra o fuera de cuadro. **Manos fuera de cuadro** salvo que sea un detalle muy controlado y cercano. El conflicto se cuenta con la mirada, el gesto facial, la luz y el entorno desenfocado detrás — no con la pose corporal. (Ver la referencia del astronauta: cara y busto, nunca cuerpo entero en acción.)
 - **Casting del lector cuando haga falta:** si una idea necesita mostrar al *cliente/lector* (el dueño agobiado), puede aparecer un segundo personaje-arquetipo, pero Mario sigue siendo el ancla de portada y cierre.
 
 > Excepción: si una pieza pide explícitamente bodegón puro (ej. un dato que se cuenta mejor con un objeto), Mario aparece igualmente en portada y cierre; los intermedios pueden ser bodegón. Nunca una serie entera sin él.
@@ -119,7 +120,7 @@ El verde aparece **únicamente como acento** — nunca domina ni ocupa grandes s
 
 Siempre asimétrica. Mucho espacio negativo. El sujeto ocupa solo una zona concreta. Nunca a sangre. Nunca centrada. Alterna el ritmo visual entre slides: no repitas tres composiciones consecutivas.
 
-**Ritmo de plano (como en cine):** alterna escalas para que la serie respire — plano general (el mundo) → plano medio (Mario en acción) → primer plano (rostro o detalle). La portada y el cierre piden plano con peso; los intermedios varían. No tres planos iguales seguidos.
+**Ritmo de plano (como en cine):** alterna escalas para que la serie respire — plano general SIN Mario (el mundo, un bodegón) → primer plano / plano medio corto de Mario (rostro y a lo sumo hombros) → detalle macro de un objeto. Los planos generales y de cuerpo se reservan para el mundo y los bodegones; Mario siempre en plano corto de cara (ver restricción de producción). No tres planos iguales seguidos.
 
 # CONTINUIDAD DE SERIE (lo que la hace "una serie" y no 8 posts)
 
@@ -169,7 +170,7 @@ Protagonista (persona u objeto): material, escala, posición, textura, sombras, 
 Nunca aislado sobre un fondo plano: siempre dentro de una escena con foreground / midground / background.
 
 ## CÁMARA · ÓPTICA
-Lente y encuadre (ej. retrato 85mm f1.8 con fondo desenfocado; 35mm para mostrar el mundo; 100mm macro para un detalle). Profundidad de campo decidida (bokeh o todo nítido). Altura y ángulo de cámara. Escala de plano (general / medio / primer plano) coherente con el ritmo de la serie.
+Lente y encuadre. Si aparece Mario: retrato 85mm f1.8, **primer plano o plano medio corto** (cara y a lo sumo hombros), fondo desenfocado — NUNCA cuerpo entero ni 3/4 (solo se adjunta foto de su cara). Para el mundo sin Mario: 35mm con profundidad; para un detalle: 100mm macro. Profundidad de campo decidida (bokeh o todo nítido). Altura y ángulo de cámara. Escala de plano coherente con el ritmo de la serie.
 
 ## TIPOGRAFÍA
 Palabra protagonista: 110–150 px, Black/Heavy.
@@ -222,6 +223,7 @@ Siempre presente (ver arriba: Mario Ruiz / Founder · Globalizame, 1px #444444, 
 - NUNCA pies de fuente, atribución de dato, nota metodológica ni fecha en la imagen ("Datos: …", "Fuente: …", "Encuesta · Julio 2025"). El único microcopy permitido al pie es la navegación ("Desliza →").
 - Concepto realista y creíble: escenas que podrían fotografiarse de verdad. Nada de ciencia ficción ni metáforas imposibles (reflejos que actúan solos, objetos flotando, dobles imposibles, luces que se comportan de forma irreal).
 - Protagonista humano (Mario) en portada y cierre, misma cara/vestuario/mundo en toda la serie; nunca un carrusel entero de bodegón sin él.
+- Mario SIEMPRE en primer plano o plano medio corto (cara y como mucho hombros), manos fuera de cuadro; NUNCA cuerpo entero ni 3/4 (solo se adjunta foto de su cara). Los planos generales y de cuerpo son para el mundo/bodegones, no para Mario.
 - Profundidad real en capas (foreground/midground/background) y óptica decidida (lente + DOF); nunca objeto plano sobre fondo carbón.
 - Acabado fotográfico realista con grade cinematográfico y grano fino; nunca 3D plástico, ilustración ni look limpio plano de IA.
 ```
@@ -264,6 +266,7 @@ Solo las palabras necesarias. Menos texto, más claridad, más impacto. (≤15 p
 - ¿Cada slide aporta una idea nueva?
 - ¿La composición y los detalles cambian respecto al slide anterior?
 - ¿Aparece Mario en portada y cierre, con la misma cara, vestuario y mundo que el resto de la serie?
+- ¿Mario está en plano corto de cara (sin cuerpo entero, sin manos problemáticas), como exige tener solo foto de su cara?
 - ¿Hay un protagonista (persona u objeto) dentro de una escena con profundidad, no un objeto plano sobre fondo?
 - ¿He decidido cámara, lente y luz motivada, o lo he dejado en "premium" genérico?
 - Puestas dos slides una al lado de otra, ¿parecen de la misma sesión de fotos (mismo mundo, luz y acabado)?
