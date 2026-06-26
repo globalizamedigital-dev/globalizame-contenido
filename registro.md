@@ -4,15 +4,15 @@
 
 ```
 Fondo: negro carbón #232323 (FIJO, no rota)
-Último acento usado: morado #700962 (post 3 jul) — alterna verde/morado entre piezas
+Último acento usado: — (alterna entre verde #86CA28 y morado #700962)
 
-Último tipo de hook: Ahorro de tiempo / promesa directa (3 jul)
-Próximo: Pregunta directa o Caso real (siguiente rotación)
+Último tipo de hook: —
+Próximo: —
 
 Último mes con estrategia: julio 2026 — "Tu negocio no se va de vacaciones contigo"
-Último sprint producido: Sprint 1 · El espejo (29 jun · 1 jul · 3 jul)
-Último tipo de carrusel: checklist/educativo (3 jul)
-Último post publicado: — (producidos, pendientes de publicar)
+Último sprint producido: —
+Último tipo de carrusel: —
+Último post publicado: —
 ```
 
 ---
@@ -40,9 +40,7 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 | Fecha | Sprint | Día | Etapa | Formato | Acento | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| 29 jun | S1 El espejo | Lun | TOFU | Narrativo reencuadre (8) | Morado | Contradicción | ☐ |
-| 1 jul | S1 El espejo | Mié | TOFU | Dato/data-viz (8) | Verde | Número impactante | ☐ |
-| 3 jul | S1 El espejo | Vie | TOFU | Checklist/educativo (9) | Morado | Ahorro de tiempo | ☐ |
+| — | — | — | — | — | — | — | — |
 
 ---
 
