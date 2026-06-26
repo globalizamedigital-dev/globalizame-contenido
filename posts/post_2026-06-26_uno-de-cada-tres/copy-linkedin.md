@@ -1,26 +1,21 @@
-# Copy · LinkedIn
+1 de cada 3 dueños no se va de vacaciones este verano.
 
-1 de cada 3 dueños de negocio no se irá de vacaciones este verano.
+Es el dato de ATA de este año. Y si tienes un negocio, no te sorprende.
 
-No es falta de ganas. Es que no se lo pueden permitir.
+El motivo que dan la mitad no es la pereza ni las ganas. Es que el negocio no les deja.
 
-Si paran, el negocio para.
+Lo veo cada semana. El dueño no para porque, si para, se para todo: el teléfono, los presupuestos, la respuesta al cliente, los cobros. Todo converge en una sola persona.
 
-El 36% no consigue desconectar ni una semana entera. Siempre hay un cliente que escribe, un presupuesto que sale, un cobro que se atasca a mitad de agosto.
+Y ahí está el punto que casi nadie quiere mirar de frente:
 
-Veo el mismo patrón una y otra vez en dueños de pyme. Y el verano lo deja al descubierto.
+Si tú paras y el negocio se detiene, eso no es un negocio. Es un puesto de trabajo del que no puedes salir, con más responsabilidad y sin vacaciones pagadas.
 
-Hay una prueba sencilla para saber dónde estás.
+Un negocio de verdad sigue funcionando con el dueño desconectado quince días. No por trabajar más horas, sino porque las tareas del día a día dejan de depender de una sola persona para resolverse.
 
-Imagina que te vas 15 días sin mirar el móvil. ¿Qué se cae?
+Eso no se arregla apretando los dientes en agosto. Se arregla con sistema y con orden. Y empieza por identificar qué cosas pasan por ti que no deberían.
 
-Si se cae todo, el problema no es cuánto trabajas. Es que el negocio depende entero de ti.
+En el carrusel lo desgloso paso a paso ↓
 
-Eso no es un negocio. Es un puesto del que no puedes salir.
+Te pregunto: ¿este verano desconectas de verdad o ya sabes que vas a estar pendiente del móvil? Cuéntamelo en comentarios, respondo a todos.
 
-Un negocio que funciona sigue de pie aunque tú estés en la playa.
-
-Te leo: este verano, ¿desconectas de verdad o te llevas el trabajo contigo?
-
-—
-Mario Ruiz · Founder · Globalizame
+#pyme #dueñodenegocio #autonomos #emprendedores #productividad

@@ -52,10 +52,9 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 
 ## Estilo visual
 
-**Mood:** Editorial oscuro premium, tipo portada de revista / campaña / informe estratégico. Mucho aire. Profesional sin ser corporativo.  
-**Protagonista:** el concepto / la escena que representa el conflicto — un sujeto principal integrado, no el texto ni una infografía  
-**Textura:** opcional — grano sutil sobre fondo para profundidad  
-**Composición:** asimétrica, mucho espacio negativo, iluminación con intención
+**Mood:** Editorial premium tipo Monocle / Bloomberg / Stripe. Mucho aire. Profesional sin ser corporativo.  
+**Protagonista:** el dato y la jerarquía tipográfica — headline enorme > subtítulo medio > dato pequeño  
+**Recursos gráficos:** data visualization, grandes números, barras, iconos lineales, formas geométricas planas
 
 ---
 
@@ -67,7 +66,7 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 
 **Retícula:**
 - Marco de marca (firma fija, ver arriba): "Mario Ruiz" / "Founder · Globalizame" + contador + línea verde
-- Cuerpo: palabra protagonista gigante > titular > subtítulo, integrados en la escena
+- Cuerpo: headline enorme > subtítulo medio > dato pequeño, con data-viz/número grande cuando aporta
 - Una idea por slide
 
 **Micro-rótulo en slides intermedios (opcional):** "Desliza →" abajo-derecha.
@@ -76,30 +75,19 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 
 ## Voz visual de marca
 
-Editorial oscuro tipo portada/campaña premium. Diseñas **conceptos y escenas**, no infografías. Cada imagen representa un conflicto y se entiende sin leer el texto.
+Editorial premium tipo Monocle / Bloomberg / Stripe. Jerarquía tipográfica muy clara y data-viz limpia. Mucho aire.
 
 **Lo que SÍ:**
 - Fondo carbón #232323 con el verde solo como acento puntual
-- Escenas con un sujeto principal integrado (render/fotografía editorial), no objetos sueltos
-- Composición asimétrica, mucho espacio negativo
-- La tipografía construye la jerarquía (palabra protagonista gigante > titular > subtítulo)
-- Iluminación con intención que refuerza la emoción
+- Grandes números, barras, iconos lineales, formas geométricas planas
+- La tipografía construye la jerarquía (headline enorme > subtítulo medio > dato pequeño)
+- Mucho espacio negativo
 
 **Lo que NO:**
-- Degradados, neones, clipart, mockups genéricos
+- Infografías cliché, stock photos, degradados neón, clipart
 - El verde dominando o en grandes superficies
-- Fotografías a sangre · composiciones centradas o simétricas
-- Decoración sin función · escenas sin intención narrativa
-- Artefactos tipográficos de IA
-
----
-
-## Foto de Mario
-
-**Archivo:** `mario-ruiz.jpg`  
-**Uso:** slides de autoridad (etapa CONFIAR / BOFU), slide de cierre personal  
-**Estilo:** fondo oscuro, camiseta blanca — encaja con el fondo carbón + acento verde  
-**Nunca usar en:** portadas, slides de concepto donde el sujeto es otro
+- Iconos decorativos sin función · emojis dibujados
+- Texto pegado a los bordes · artefactos tipográficos de IA
 
 ---
 

@@ -1,24 +1,29 @@
-# Copy · Instagram
-
 1 de cada 3 dueños no se va de vacaciones este verano.
 
-No porque no quieran.
+Lo dicen los datos de ATA. Y seguramente tú ya lo sabías sin necesidad de encuesta.
 
-Porque no pueden.
+No es que no quieras parar.
 
-Si paran, el negocio para. Y eso da miedo.
+Es que si paras, todo se para.
 
-El 36% no aguanta ni una semana sin estar pendiente. Un correo, una llamada, un cobro que se atasca.
+El teléfono. Los presupuestos. La respuesta al cliente que pregunta a las nueve de la noche. Todo pasa por ti.
 
-Hazte una prueba que casi nadie se atreve a hacer.
+Y aquí va la parte incómoda:
 
-Vete 15 días. Mira qué se cae.
+Si tú paras y el negocio para, eso no es un negocio.
 
-Si se cae todo, no tienes un negocio. Tienes un puesto del que no puedes salir.
+Es un puesto del que no puedes salir. Con más responsabilidad y sin nómina fija.
 
-Y un negocio de verdad sigue de pie aunque tú estés en la playa.
+Un negocio de verdad sigue funcionando contigo en la playa. No porque trabajes más. Porque deja de depender de ti para las cosas del día a día.
 
-¿Tú este verano te vas de verdad o te llevas el trabajo en el bolsillo? Cuéntamelo abajo.
+Eso no se arregla con fuerza de voluntad. Se arregla con orden.
+
+Te lo cuento en el carrusel ↓
+
+¿Tú te vas este verano de verdad? ¿O ya estás contando los días que aguantas sin mirar el móvil?
+
+Cuéntamelo abajo. Leo y respondo a todos.
 
 —
-Mario Ruiz · Globalizame
+
+#pyme #dueñodenegocio #autonomos #emprendedores #productividad #negocios

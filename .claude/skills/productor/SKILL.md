@@ -88,20 +88,13 @@ Para cada slide define: función narrativa · texto exacto (≤15 palabras, en e
 
 ## PASO 5 · PROMPTS DE IMAGEN PARA CHATGPT
 
-Un prompt por slide, autónomo y completo, siguiendo el **esqueleto obligatorio** de `system-prompt-carrusel.md` (sección PROMPTS). Empieza siempre por la **idea visual**, nunca por el objeto. Orden de cada prompt:
+Un prompt por slide, autónomo y completo, siguiendo el **esqueleto obligatorio** de `system-prompt-carrusel.md` §7: `[ESCENA] / [ELEMENTOS] / [TEXTO EN IMAGEN] / [ESTILO] / [CONSTRAINTS]`.
 
-`EMOCIÓN → CONCEPTO VISUAL → LAYOUT → ESCENA → SUJETO PRINCIPAL → TIPOGRAFÍA → TEXTO EN IMAGEN → ACENTO → GEOMETRÍA → ILUMINACIÓN → MARCO → CONSTRAINTS`
-
-- **Diseñas conceptos y escenas, no infografías.** Cada imagen representa el conflicto y se entiende sin leer el texto. Si parece una ilustración del tema, rehaz el concepto antes que el prompt.
-- **Estilo editorial oscuro:** fondo carbón #232323, verde #86CA28 solo como acento puntual (nunca dominante), morado #700962 solo si añade tensión. Composición asimétrica, mucho espacio negativo, iluminación con intención.
-- **Tipografía construye la jerarquía:** palabra protagonista 110–150px black > titular 26–38px light > subtítulo 18–26px regular.
-- **Detalles editoriales (que no quede soso):** añade 1-3 elementos finos por slide — hairlines 1px, ticks/marcas de regla, índice del punto ("01 —"), kicker en mayúsculas con tracking, crop marks sutiles — en gris #444 o blanco al 10-20%. Dan estructura tipo informe premium sin saturar el espacio negativo ni competir con el sujeto. Varía el recurso entre slides. Ver `system-prompt-carrusel.md` (GEOMETRÍA · DETALLES EDITORIALES).
-- **Ratio 3:4** en todos. Safe zone 80px. Nunca a sangre, nunca centrado.
-- **Marco de marca** idéntico en cada slide: marco 1px #444444 a ~40px, "Mario Ruiz" + "Founder · Globalizame" arriba-izq, contador "0X/NN" arriba-der, línea verde bajo el contador.
+- **Estilo editorial premium** (Monocle/Bloomberg/Stripe): fondo carbón #232323, verde #86CA28 solo como acento puntual (nunca dominante), morado #700962 para detalles. Mucho aire, jerarquía clara: headline enorme > subtítulo medio > dato pequeño. Recursos: data-viz, grandes números, barras, iconos lineales, formas geométricas planas.
+- **Ratio 3:4** en todos. Safe zone 80px. Texto nunca pegado a los bordes.
+- **Marco identitario** idéntico en cada slide: marco 1px #444444 a ~40px, "Mario Ruiz" + "Founder · Globalizame" arriba-izq, contador "0X" arriba-der, línea verde #86CA28 bajo el contador. Nunca se omite ni se recoloca.
 - Texto dentro de la imagen **en español, literal, entre comillas exactas**.
-- La portada, los intermedios y el cierre NO se componen igual. No repitas tres composiciones consecutivas.
-
-Antes de dar cada prompt por bueno, pasa el **checklist** de `system-prompt-carrusel.md` (¿detiene el scroll? ¿transmite el conflicto, no el tema? ¿parece portada editorial? ¿cambia la composición? ¿parece propio de Mario Ruiz?).
+- La portada, los intermedios y el cierre NO se componen igual.
 
 Formato de entrega de cada prompt:
 ```

@@ -1,3 +1,7 @@
 # Hashtags
 
-#pyme #dueñodenegocio #autónomos #productividad #emprendedores #sistemasdenegocio #vacaciones
+**Instagram (6):**
+#pyme #dueñodenegocio #autonomos #emprendedores #productividad #negocios
+
+**LinkedIn (5):**
+#pyme #dueñodenegocio #autonomos #emprendedores #productividad
