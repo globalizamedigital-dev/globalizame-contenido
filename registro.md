@@ -4,14 +4,14 @@
 
 ```
 Fondo: negro carbón #232323 (FIJO, no rota)
-Último acento usado: — (alterna entre verde #86CA28 y morado #700962)
+Último acento usado: morado #700962 (1 jul) — siguiente carrusel: verde #86CA28
 
-Último tipo de hook: —
-Próximo: —
+Último tipo de hook: estadística (1 jul)
+Próximo: caso real
 
 Último mes con estrategia: julio 2026 — "Tu negocio no se va de vacaciones contigo"
-Último sprint producido: —
-Último tipo de carrusel: —
+Último sprint producido: Sprint 1 · El espejo (29 jun + 1 jul, carruseles; falta lead magnet AGOSTO del 3 jul)
+Último tipo de carrusel: conversación / dato protagonista (1 jul)
 Último post publicado: —
 ```
 
@@ -40,7 +40,8 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 | Fecha | Sprint | Día | Etapa | Formato | Acento | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | — | — |
+| 29 jun 2026 | 1 · El espejo | Lun | TOFU | Carrusel · Autoridad | Verde | Provocación ("correa") | No |
+| 1 jul 2026 | 1 · El espejo | Mié | TOFU | Carrusel · Conversación | Morado | Estadística (65% buzón) | No |
 
 ---
 
@@ -55,7 +56,7 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
   3. Respuesta a lead en <1 min convierte 8× más; con IA de 18 min a 90 seg (Aurora Inbox, 2026).
 - **Casos:** restaurante +2.400€/mes · despacho 25 h/sem ≈ 5.000€ · clínica dental -40% ausencias.
 - **Novedades IA citadas:** GPT-5.6 (agentes), Bidi 1 (voz), Claude for Small Business, Gemini Enterprise sin código.
-- **Estado:** Estrategia generada.
+- **Estado:** Estrategia generada. Sprint 1 — 2 carruseles producidos (29 jun Autoridad/verde, 1 jul Conversación/morado). Pendiente lead magnet AGOSTO (3 jul).
 
 ---
 
