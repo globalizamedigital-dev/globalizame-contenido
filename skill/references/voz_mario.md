@@ -95,7 +95,7 @@ Ejemplos: #pyme #dueñodenegocio #automatizacion #productividad #sistemasdenegoc
 
 1. **Habla de euros y horas** — nunca de porcentajes abstractos
 2. **Usa casos reales** — con sector concreto, sin inventar
-3. **No menciona la tecnología** — menciona lo que hace la tecnología por el negocio
+3. **Nombra la tecnología y la traduce** — sí dice "IA", "ChatGPT", "Claude", "lo que sacó OpenAI"; luego aterriza qué le da eso al negocio. Da autoridad sin sonar a gurú. Lo que evita es la jerga vacía (workflow, pipeline, stack, "transformación digital")
 4. **Admite los límites** — "esto no es para todo el mundo"
 5. **Respeta la inteligencia del lector** — no explica lo obvio, no baja el tono
 

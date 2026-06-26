@@ -94,10 +94,10 @@ La IA es el motor invisible. El protagonista es siempre el resultado o el proble
 ## Reglas de contenido
 
 **Filtro antes de publicar cualquier post:**
-1. ¿Menciona IA, automatización, bot, workflow, pipeline? → REESCRIBIR
-2. ¿Promete resultado en tiempo récord sin contexto? → REESCRIBIR
-3. ¿Habla del proceso en vez del problema o resultado? → REESCRIBIR
-4. ¿Un dueño de bar en Sevilla lo entiende en 3 segundos? → PUBLICAR
+1. ¿Usa jerga vacía (workflow, pipeline, stack, "transformación digital")? → REESCRIBIR
+2. ¿Nombra IA/una novedad tech pero NO dice qué le da al negocio? → REESCRIBIR (añade el "para ti significa…")
+3. ¿Promete resultado en tiempo récord sin contexto, o habla del proceso en vez del resultado? → REESCRIBIR
+4. ¿Un dueño de bar en Sevilla lo entiende en 3 segundos y le da curiosidad? → PUBLICAR
 
 **Regla de datos:**
 - Solo usar datos con fuente verificable

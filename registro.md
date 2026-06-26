@@ -4,15 +4,15 @@
 
 ```
 Fondo: negro carbón #232323 (FIJO, no rota)
-Último acento usado: VERDE #86CA28 (Vie 26) → próximo LUN 29 = morado #700962
+Último acento usado: — (alterna entre verde #86CA28 y morado #700962)
 
-Último tipo de hook: estadística ("1 de cada 3") (Vie 26)
-Próximo: lista / promesa concreta (Lun 29)
+Último tipo de hook: —
+Próximo: —
 
-Último mes con estrategia: Junio 2026 (cierre, 26-29 jun)
-Último sprint producido: cierre junio — Vie 26 producido, Lun 29 pendiente
-Último tipo de carrusel: editorial premium tipo espejo/reencuadre, dato protagonista (sin retrato), 8 slides
-Último post publicado: post_2026-06-26_uno-de-cada-tres (regenerado, sin publicar)
+Último mes con estrategia: julio 2026 — "Tu negocio no se va de vacaciones contigo"
+Último sprint producido: —
+Último tipo de carrusel: —
+Último post publicado: —
 ```
 
 ---
@@ -40,15 +40,22 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 | Fecha | Sprint | Día | Etapa | Formato | Acento | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| 2026-06-26 | Cierre junio | Vie | TOFU (espejo) | Carrusel 8 slides · editorial dato (sin retrato) | Verde | Estadística ("1 de cada 3") | Pendiente |
+| — | — | — | — | — | — | — | — |
 
 ---
 
 ## Meses procesados
 
-| Mes | Tema central | Datos clave usados (máx. 3) | Estado |
-|---|---|---|---|
-| Junio 2026 (cierre, 26-29 jun) | El verano que destapa la verdad: si no puedes irte, no es tu negocio | 1 de cada 3 autónomos no se va de vacaciones (ATA) · 36% no desconecta ni una semana por impagos (Emprendedores.es) · 200 h y 3.000 €/año en burocracia (ATA, dic 2025) | Estrategia generada |
+### Julio 2026 — "Tu negocio no se va de vacaciones contigo"
+- **Tema central:** el verano como espejo de la dependencia del dueño + la IA que ya *actúa* (no solo chatea).
+- **Estructura:** 5 sprints · 15 posts (29 jun → 31 jul) · 3 lead magnets (AGOSTO, TELÉFONO, VERANO).
+- **Datos clave usados:**
+  1. 65% de llamadas a pymes mueren en el buzón de voz (Ringover, 2026).
+  2. Llamada perdida = 150€; pyme pierde 2.500–15.000€/mes (Gestión de Llamadas, 2026).
+  3. Respuesta a lead en <1 min convierte 8× más; con IA de 18 min a 90 seg (Aurora Inbox, 2026).
+- **Casos:** restaurante +2.400€/mes · despacho 25 h/sem ≈ 5.000€ · clínica dental -40% ausencias.
+- **Novedades IA citadas:** GPT-5.6 (agentes), Bidi 1 (voz), Claude for Small Business, Gemini Enterprise sin código.
+- **Estado:** Estrategia generada.
 
 ---
 

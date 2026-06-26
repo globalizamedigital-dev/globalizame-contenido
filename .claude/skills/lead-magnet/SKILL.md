@@ -1,6 +1,6 @@
 ---
 name: lead-magnet
-description: Generador de lead magnets de Globalizame (Mario Ruiz). Crea el KIT de la semana como documento HTML imprimible (A4, Ctrl+P → PDF) con 5-6 entregables autónomos de alto valor (auto-diagnóstico, calculadora, plantilla, plan 30 días…). Es la única pieza del sistema de contenido que NO es prompt de IA: es HTML real con chrome de marca. Activa cuando el usuario diga "genera el lead magnet", "monta el kit", "el lead magnet de la semana", "lead magnet de [tema]" o "haz el recurso del sprint". Requiere que la estrategia del mes (skill investigador) ya tenga el lead magnet asignado con su keyword. Entregable: posts/lead_magnet_[keyword]_[fecha].html. Regla absoluta: el kit NUNCA nombra IA, automatización, bot ni tecnicismos — habla del problema y del resultado, en euros y horas.
+description: Generador de lead magnets de Globalizame (Mario Ruiz). Crea el KIT de la semana como documento HTML imprimible (A4, Ctrl+P → PDF) con 5-6 entregables autónomos de alto valor (auto-diagnóstico, calculadora, plantilla, plan 30 días…). Es la única pieza del sistema de contenido que NO es prompt de IA: es HTML real con chrome de marca. Activa cuando el usuario diga "genera el lead magnet", "monta el kit", "el lead magnet de la semana", "lead magnet de [tema]" o "haz el recurso del sprint". Requiere que la estrategia del mes (skill investigador) ya tenga el lead magnet asignado con su keyword. Entregable: posts/lead_magnet_[keyword]_[fecha].html. Regla de lenguaje (mixto): el kit puede nombrar IA y herramientas (traducidas a euros/horas); se prohíbe la jerga vacía (workflow, pipeline, stack).
 ---
 
 # Lead Magnet · Generador de kits · Globalizame
@@ -14,7 +14,7 @@ No pares a mitad. **UN SOLO commit** al final. Anti-rama: SIEMPRE a `main`, nunc
 
 ### ✅ Criterio de HECHO
 - [ ] `posts/lead_magnet_[keyword]_[fecha].html` con **5-6 entregables autónomos**, chrome de marca, A4 imprimible.
-- [ ] Ningún texto del kit menciona IA/automatización/bot/tecnicismos.
+- [ ] El kit no usa jerga vacía (workflow, pipeline, stack); si nombra IA/una herramienta, la traduce a euros/horas.
 - [ ] `registro.md` anota el lead magnet producido.
 - [ ] Commit + push a `main` (uno solo).
 
@@ -24,9 +24,10 @@ Eres el **Director de Producto + Director de Arte** de Globalizame (Mario Ruiz).
 magnet asignado del mes en un kit que el dueño de PYME usa **mañana mismo**. Tono Isra Bravo:
 directo, mecánica no motivación, que duela un poco. El dueño es el héroe.
 
-> **REGLA ABSOLUTA:** el kit NUNCA nombra IA, automatización, bot, workflow ni tecnicismos. Habla
-> del problema y del resultado, en euros y horas. Si un tema viejo lo nombraba, se traduce (ej.
-> "automatización" → "ordenar el negocio antes de gastar en herramientas").
+> **REGLA DE LENGUAJE (mixto):** el kit puede nombrar IA y herramientas concretas (ChatGPT, Claude…)
+> cuando aporten, siempre aterrizadas en euros y horas. Lo que NO usa es jerga vacía (workflow,
+> pipeline, stack, "transformación digital"). Habla del problema y del resultado; si menciona una
+> herramienta, di exactamente qué le da al negocio.
 
 ## 📚 CONTEXTO A LEER (en este orden)
 
@@ -99,6 +100,6 @@ git push origin main
 
 - 5-6 entregables mínimo, cada uno autónomo y accionable. Nada de relleno.
 - Datos concretos y verosímiles, sacados de la investigación del mes.
-- Ningún tecnicismo, ninguna IA nombrada.
+- IA y herramientas se pueden nombrar (traducidas a euros/horas); nada de jerga vacía (workflow, pipeline, stack).
 - Se rediseña desde cero, no se clona el CSS anterior.
 - Todo autónomo, sin confirmación. Suscripción siempre: Write. NUNCA la API de pago.

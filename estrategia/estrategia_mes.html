@@ -3,147 +3,217 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Estrategia · Cierre Junio 2026 · Globalizame</title>
+<title>Estrategia de Contenido · Julio 2026 · Globalizame</title>
 <style>
   :root{
-    --bg:#232323; --panel:#2b2b2b; --line:#444; --txt:#FAFAF7;
-    --verde:#86CA28; --morado:#700962; --muted:#9a9a9a;
+    --ink:#232323;--ink-2:#2c2c2c;--paper:#FAFAF7;--mut:rgba(250,250,247,.62);
+    --green:#86CA28;--purple:#700962;--line:rgba(250,250,247,.14);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,sans-serif;line-height:1.5;padding:48px 20px}
-  .wrap{max-width:880px;margin:0 auto}
-  header{border:1px solid var(--line);padding:32px;margin-bottom:32px;position:relative}
-  .kicker{font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}
-  h1{font-family:'Bebas Neue','Josefin Sans',sans-serif;font-size:clamp(34px,6vw,58px);line-height:1.02;margin:10px 0;letter-spacing:.5px}
-  h1 .acc{color:var(--verde)}
-  .sub{color:var(--muted);max-width:60ch}
-  .greenline{height:3px;width:64px;background:var(--verde);margin-top:18px}
-  .meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:24px;font-size:13px}
-  .meta b{color:var(--txt)}
-  .meta span{color:var(--muted)}
-  section{margin:40px 0}
-  h2{font-family:'Bebas Neue','Josefin Sans',sans-serif;font-size:26px;letter-spacing:1px;margin-bottom:18px;color:var(--txt)}
-  h2 .n{color:var(--verde);margin-right:10px}
-  .cards{display:grid;gap:18px}
-  .card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--verde);padding:22px}
-  .card.morado{border-left-color:var(--morado)}
-  .card .top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
-  .date{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px}
-  .tag{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:3px 9px;border-radius:2px}
-  .tag.v{color:var(--verde);border-color:var(--verde)}
-  .tag.m{color:#c879b8;border-color:var(--morado)}
-  .ttl{font-size:20px;font-weight:600;margin:12px 0 8px}
-  .ttl .acc{color:var(--verde)} .card.morado .ttl .acc{color:#c879b8}
-  .row{display:flex;gap:24px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:10px}
-  .row b{color:var(--txt)}
-  .dato{font-size:13px;color:var(--muted);margin-top:10px;border-top:1px dashed var(--line);padding-top:10px}
-  .lm{background:#1c1c1c;border:1px dashed var(--morado);padding:20px;margin-top:18px}
-  .lm h3{color:#c879b8;font-size:15px;margin-bottom:8px}
-  .lm ul{margin:8px 0 0 18px;color:var(--muted);font-size:13px}
-  ul.check{list-style:none}
-  ul.check li{padding:8px 0 8px 32px;position:relative;cursor:pointer;border-bottom:1px solid #333}
-  ul.check li::before{content:"";position:absolute;left:0;top:9px;width:18px;height:18px;border:1px solid var(--line);border-radius:3px}
-  ul.check li.done{color:var(--muted);text-decoration:line-through}
-  ul.check li.done::before{background:var(--verde);border-color:var(--verde);content:"✓";color:#000;text-align:center;line-height:18px;font-size:13px;font-weight:700}
-  footer{margin-top:48px;border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:12px}
-  a{color:var(--verde)}
+  html{scroll-behavior:smooth}
+  body{background:var(--ink);color:var(--paper);font-family:'Inter',-apple-system,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;padding:0 20px 120px}
+  .wrap{max-width:920px;margin:0 auto}
+  .mast{padding:78px 0 40px;border-bottom:3px solid var(--green)}
+  .kick{font-size:13px;text-transform:uppercase;letter-spacing:.2em;color:var(--green);font-weight:700;margin-bottom:16px}
+  h1{font-weight:800;font-size:clamp(40px,8vw,78px);line-height:.97;letter-spacing:-.03em;text-wrap:balance}
+  h1 em{font-style:normal;color:var(--green)}
+  .lede{font-size:clamp(17px,2.3vw,21px);color:var(--mut);margin-top:22px;max-width:64ch;line-height:1.5}
+  .meta{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px}
+  .chip{border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:13px;color:var(--paper)}
+  .chip b{color:var(--green)}
+
+  section{padding:54px 0 8px;border-bottom:1px solid var(--line)}
+  h2{font-weight:800;font-size:clamp(25px,4.4vw,40px);line-height:1.05;letter-spacing:-.025em;margin-bottom:6px}
+  h2 em{font-style:normal;color:var(--purple);background:linear-gradient(transparent 62%, rgba(112,9,98,.35) 0)}
+  .sub{color:var(--mut);max-width:62ch;margin-bottom:28px;font-size:16px}
+
+  .arc{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:8px}
+  @media(max-width:760px){.arc{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.arc{grid-template-columns:1fr}}
+  .arc .a{border:1px solid var(--line);border-radius:14px;padding:18px 16px;background:var(--ink-2)}
+  .arc .a .s{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);font-weight:700}
+  .arc .a h4{font-size:16px;font-weight:700;margin:6px 0 4px}
+  .arc .a p{font-size:13px;color:var(--mut);margin:0}
+  .arc .a .stage{display:inline-block;margin-top:10px;font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--ink);background:var(--green);border-radius:6px;padding:2px 8px}
+
+  .sprint{border:1px solid var(--line);border-radius:18px;padding:28px 26px;margin-bottom:18px;background:var(--ink-2)}
+  .sprint .top{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
+  .sprint .num{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+  .sprint .dates{font-size:13px;color:var(--mut)}
+  .sprint h3{font-size:22px;font-weight:800;letter-spacing:-.02em;margin:2px 0 4px}
+  .sprint .pillar{font-size:13px;color:var(--purple);font-weight:700;margin-bottom:18px}
+  .posts{display:grid;gap:10px}
+  .post{display:grid;grid-template-columns:74px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+  .post:first-child{border-top:none}
+  .post .day{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--green);padding-top:3px}
+  .post .day span{display:block;color:var(--mut);font-weight:400;letter-spacing:0;margin-top:2px}
+  .post .ttl{font-size:16px;font-weight:600;line-height:1.35}
+  .post .tags{margin-top:7px;display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:11px;font-weight:700;letter-spacing:.03em;border-radius:6px;padding:2px 8px;border:1px solid var(--line);color:var(--mut)}
+  .tag.tofu{color:var(--green);border-color:rgba(134,202,40,.4)}
+  .tag.mofu{color:#e3b94e;border-color:rgba(227,185,78,.4)}
+  .tag.bofu{color:#ff7a59;border-color:rgba(255,122,89,.4)}
+  .tag.lm{color:var(--ink);background:var(--green);border-color:var(--green)}
+  .tag.cta{color:var(--purple);border-color:rgba(112,9,98,.5)}
+  .kw{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--green)}
+
+  .lmgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:8px}
+  .lmc{border:1px solid var(--line);border-radius:14px;padding:22px 20px;background:var(--ink-2)}
+  .lmc .lk{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--green);font-size:13px;letter-spacing:.04em}
+  .lmc h4{font-size:18px;font-weight:700;margin:8px 0 6px;letter-spacing:-.01em}
+  .lmc p{font-size:14px;color:var(--mut);margin:0}
+  .lmc .when{margin-top:12px;font-size:12px;color:var(--purple);font-weight:700}
+
+  .check{list-style:none;margin-top:8px;display:grid;gap:10px}
+  .check li{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer;background:var(--ink-2);transition:.15s}
+  .check li:hover{border-color:rgba(134,202,40,.45)}
+  .check input{appearance:none;width:22px;height:22px;border:2px solid var(--green);border-radius:6px;flex:0 0 auto;margin-top:1px;cursor:pointer;position:relative}
+  .check input:checked{background:var(--green)}
+  .check input:checked::after{content:"✓";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--ink);font-weight:900;font-size:14px}
+  .check input:checked + span{color:var(--mut);text-decoration:line-through}
+  .check span{font-size:15px}
+
+  .data{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:8px}
+  .stat{border:1px solid var(--line);border-radius:14px;padding:22px 20px;background:var(--ink-2)}
+  .stat .big{font-size:clamp(34px,5vw,46px);font-weight:800;letter-spacing:-.03em;color:var(--green);line-height:1}
+  .stat .big.p{color:var(--purple)}
+  .stat p{font-size:13px;color:var(--mut);margin-top:8px}
+  .stat cite{display:block;margin-top:8px;font-size:11px;color:rgba(250,250,247,.4);font-style:normal}
+
+  .foot{text-align:center;padding-top:42px;color:rgba(250,250,247,.4);font-size:13px}
+  .foot b{color:var(--paper)}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <header>
-    <div class="kicker">Estrategia Instagram · Globalizame</div>
-    <h1>Cierre de junio<br>El verano que <span class="acc">destapa la verdad</span></h1>
-    <p class="sub">Mini-sprint de 2 carruseles para cerrar el semestre. La puerta del verano como espejo: si no puedes irte, no tienes un negocio — tienes un puesto del que no puedes salir.</p>
-    <div class="greenline"></div>
+  <header class="mast">
+    <p class="kick">Globalizame · Estrategia de contenido · Instagram</p>
+    <h1>Tu negocio no se va de <em>vacaciones</em> contigo.</h1>
+    <p class="lede">Julio 2026. El mes en que la IA dejó de chatear y empezó a trabajar: atiende el teléfono, responde leads y sostiene el negocio mientras el dueño está al 200% — o, por fin, descansando.</p>
     <div class="meta">
-      <span>Periodo: <b>26–29 jun 2026</b></span>
-      <span>Posts: <b>2</b></span>
-      <span>Sprints: <b>1 (cierre)</b></span>
-      <span>Lead magnets: <b>1</b></span>
-      <span>Cadencia: <b>Vie / Lun</b></span>
+      <span class="chip">Periodo: <b>29 jun → 31 jul</b></span>
+      <span class="chip">Cadencia: <b>Lun · Mié · Vie</b></span>
+      <span class="chip"><b>5</b> sprints</span>
+      <span class="chip"><b>15</b> posts</span>
+      <span class="chip"><b>3</b> lead magnets</span>
     </div>
   </header>
 
   <section>
-    <h2><span class="n">01</span>Arco del cierre</h2>
-    <p class="sub" style="margin-bottom:18px">Solo quedan dos días de cadencia Lun/Mié/Vie en junio: viernes 26 y lunes 29 (martes 30 no publica). Viaje corto: del espejo (problema visible) a la decisión (recurso para soltar el negocio en verano).</p>
-
-    <div class="cards">
-
-      <div class="card">
-        <div class="top">
-          <span class="date">VIE · 26 JUN</span>
-          <div>
-            <span class="tag">TOFU · El espejo</span>
-            <span class="tag v">Acento verde</span>
-          </div>
-        </div>
-        <div class="ttl">1 de cada 3 dueños <span class="acc">no se va de vacaciones</span> este verano. ¿Tú cuál eres?</div>
-        <div class="row">
-          <span><b>Formato:</b> Carrusel</span>
-          <span><b>Hook:</b> Estadística</span>
-          <span><b>CTA:</b> Conversación</span>
-          <span><b>Palabra clave:</b> —</span>
-        </div>
-        <div class="dato">Ancla: 1 de cada 3 autónomos no se irá de vacaciones (ATA, 2025). El 36% no puede desconectar ni una semana por impagos (Emprendedores.es). Cierre con: "Si tú paras y el negocio para, eso no es un negocio." CTA: "¿Te vas este verano de verdad? Cuéntame abajo."</div>
-      </div>
-
-      <div class="card morado">
-        <div class="top">
-          <span class="date">LUN · 29 JUN</span>
-          <div>
-            <span class="tag">MOFU→BOFU · La decisión</span>
-            <span class="tag m">Acento morado</span>
-          </div>
-        </div>
-        <div class="ttl">7 cosas que tu negocio puede <span class="acc">hacer sin ti</span> este verano</div>
-        <div class="row">
-          <span><b>Formato:</b> Carrusel + Lead magnet</span>
-          <span><b>Hook:</b> Lista / promesa concreta</span>
-          <span><b>CTA:</b> Recurso</span>
-          <span><b>Palabra clave:</b> VERANO</span>
-        </div>
-        <div class="dato">Ancla: el dueño pierde 4 h/semana en burocracia = 200 h y 3.000 € al año (ATA, dic 2025); las pymes dedican hasta 10 días/mes a administración (Qonto). Traducir a: estas son las tareas que pueden seguir solas mientras estás en la playa. CTA: "Comenta VERANO y te mando la checklist."</div>
-
-        <div class="lm">
-          <h3>Lead magnet del sprint · "7 tareas que tu negocio puede hacer sin ti este verano"</h3>
-          <p style="font-size:13px;color:var(--muted)">Keyword: <b style="color:#c879b8">VERANO</b> · Checklist descargable. Entregables del kit:</p>
-          <ul>
-            <li>Las 7 tareas que pueden funcionar solas (respuesta a clientes, citas, presupuestos, cobros, recordatorios…)</li>
-            <li>Mini-diagnóstico: "¿Cuánto dependes de ti?" (5 preguntas)</li>
-            <li>Plantilla de "respuestas listas" para clientes en agosto</li>
-            <li>Calculadora simple: horas que recuperas × tu coste/hora</li>
-            <li>Checklist de "antes de irte 15 días"</li>
-            <li>CTA final a sesión de 30 min sin compromiso</li>
-          </ul>
-        </div>
-      </div>
-
+    <h2>El arco del <em>mes</em></h2>
+    <p class="sub">Un viaje del problema a la sesión. Empieza en el espejo del verano, pasa por la IA que ya actúa, lo prueba con casos reales, pone número al coste de seguir igual y termina en una conversación de 30 minutos.</p>
+    <div class="arc">
+      <div class="a"><div class="s">Sprint 1</div><h4>El espejo</h4><p>Si tú paras, el negocio para. Y agosto está a la vuelta.</p><span class="stage">TOFU</span></div>
+      <div class="a"><div class="s">Sprint 2</div><h4>La otra forma</h4><p>La IA ya no chatea: descuelga el teléfono y responde sola.</p><span class="stage">TOFU→MOFU</span></div>
+      <div class="a"><div class="s">Sprint 3</div><h4>Prueba real</h4><p>Casos con cifras: 2.400€, 25 h, -40% de ausencias.</p><span class="stage">MOFU</span></div>
+      <div class="a"><div class="s">Sprint 4</div><h4>El coste</h4><p>Lo que pierdes cada mes con el teléfono en el buzón.</p><span class="stage">MOFU→BOFU</span></div>
+      <div class="a"><div class="s">Sprint 5</div><h4>La decisión</h4><p>Deja el negocio montado antes de agosto. 30 min.</p><span class="stage">BOFU</span></div>
     </div>
   </section>
 
   <section>
-    <h2><span class="n">02</span>Checklist de producción</h2>
-    <ul class="check" id="chk">
-      <li>Carrusel VIE 26 — copy + slides (acento verde)</li>
-      <li>Carrusel LUN 29 — copy + slides (acento morado)</li>
-      <li>Lead magnet "VERANO" — kit de 6 entregables</li>
-      <li>Programar publicaciones Vie 26 y Lun 29</li>
-      <li>Registrar rotaciones en registro.md</li>
+    <h2>El dato <em>estrella</em> del mes</h2>
+    <p class="sub">Todo el mes cuelga de aquí: el teléfono que nadie descuelga es el agujero más caro y más invisible de una pyme.</p>
+    <div class="data">
+      <div class="stat"><div class="big">65%</div><p>de las llamadas a pymes mueren en el buzón de voz</p><cite>Ringover · 2026</cite></div>
+      <div class="stat"><div class="big">150€</div><p>cuesta de media cada llamada perdida</p><cite>Gestión de Llamadas · 2026</cite></div>
+      <div class="stat"><div class="big p">8×</div><p>más conversión si respondes el lead en menos de 1 min</p><cite>Aurora Inbox · 2026</cite></div>
+      <div class="stat"><div class="big">29€</div><p>al mes cuesta un agente de voz que descuelga 24/7</p><cite>OptimusCall · 2026</cite></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Los <em>sprints</em>, semana a semana</h2>
+    <p class="sub">Lunes abre · Miércoles profundiza · Viernes cierra o lanza. Un lead magnet por sprint como máximo. Los tres cierres (Recurso / Conversación / Autoridad) se mezclan cada semana, nunca el mismo tres días seguidos.</p>
+
+    <!-- SPRINT 1 -->
+    <div class="sprint">
+      <div class="top"><span class="num">Sprint 1 · El espejo</span><span class="dates">Lun 29 jun · Mié 1 jul · Vie 3 jul</span></div>
+      <h3>Si tú te vas, ¿quién atiende?</h3>
+      <p class="pillar">Pilar 1 — EL ESPEJO · TOFU</p>
+      <div class="posts">
+        <div class="post"><div class="day">Lun<span>29 jun</span></div><div><div class="ttl">El negocio que se va de vacaciones contigo no es un negocio, es una correa</div><div class="tags"><span class="tag tofu">TOFU</span><span class="tag">Carrusel</span><span class="tag cta">Autoridad</span></div></div></div>
+        <div class="post"><div class="day">Mié<span>1 jul</span></div><div><div class="ttl">2 de cada 3 llamadas a tu negocio se quedan sin que nadie las coja</div><div class="tags"><span class="tag tofu">TOFU</span><span class="tag">Carrusel</span><span class="tag cta">Conversación</span></div></div></div>
+        <div class="post"><div class="day">Vie<span>3 jul</span></div><div><div class="ttl">Guía: deja tu negocio funcionando antes de agosto · <span class="kw">AGOSTO</span></div><div class="tags"><span class="tag tofu">TOFU</span><span class="tag lm">Lead Magnet</span><span class="tag cta">Recurso · AGOSTO</span></div></div></div>
+      </div>
+    </div>
+
+    <!-- SPRINT 2 -->
+    <div class="sprint">
+      <div class="top"><span class="num">Sprint 2 · La otra forma</span><span class="dates">Lun 6 · Mié 8 · Vie 10 jul</span></div>
+      <h3>La IA ya no chatea. Trabaja.</h3>
+      <p class="pillar">Pilar 2 — LA OTRA FORMA · TOFU→MOFU</p>
+      <div class="posts">
+        <div class="post"><div class="day">Lun<span>6 jul</span></div><div><div class="ttl">Lo que cambió este verano: la IA pasó de responderte a hacer el trabajo por ti</div><div class="tags"><span class="tag tofu">TOFU→MOFU</span><span class="tag">Carrusel</span><span class="tag cta">Autoridad</span></div></div></div>
+        <div class="post"><div class="day">Mié<span>8 jul</span></div><div><div class="ttl">Un sistema que descuelga el teléfono por 29€ al mes, sin cambiar tu número</div><div class="tags"><span class="tag mofu">MOFU</span><span class="tag">Carrusel</span><span class="tag cta">Conversación</span></div></div></div>
+        <div class="post"><div class="day">Vie<span>10 jul</span></div><div><div class="ttl">Calculadora: cuánto te cuesta el teléfono que nadie coge · <span class="kw">TELÉFONO</span></div><div class="tags"><span class="tag mofu">MOFU</span><span class="tag lm">Lead Magnet</span><span class="tag cta">Recurso · TELÉFONO</span></div></div></div>
+      </div>
+    </div>
+
+    <!-- SPRINT 3 -->
+    <div class="sprint">
+      <div class="top"><span class="num">Sprint 3 · Prueba real</span><span class="dates">Lun 13 · Mié 15 · Vie 17 jul</span></div>
+      <h3>Negocios como el tuyo, con cifras.</h3>
+      <p class="pillar">Pilar 3 — PRUEBA REAL · MOFU</p>
+      <div class="posts">
+        <div class="post"><div class="day">Lun<span>13 jul</span></div><div><div class="ttl">Un restaurante recuperó 2.400€ al mes solo con confirmar reservas solo</div><div class="tags"><span class="tag mofu">MOFU</span><span class="tag">Carrusel</span><span class="tag cta">Autoridad</span></div></div></div>
+        <div class="post"><div class="day">Mié<span>15 jul</span></div><div><div class="ttl">Un despacho de 10 personas se ahorró 25 horas a la semana. Eso son 5.000€</div><div class="tags"><span class="tag mofu">MOFU</span><span class="tag">Carrusel</span><span class="tag cta">Conversación</span></div></div></div>
+        <div class="post"><div class="day">Vie<span>17 jul</span></div><div><div class="ttl">Responder en 90 segundos en vez de 18 minutos: por qué eso vende 8 veces más</div><div class="tags"><span class="tag mofu">MOFU</span><span class="tag">Carrusel</span><span class="tag cta">Autoridad</span></div></div></div>
+      </div>
+    </div>
+
+    <!-- SPRINT 4 -->
+    <div class="sprint">
+      <div class="top"><span class="num">Sprint 4 · El coste</span><span class="dates">Lun 20 · Mié 22 · Vie 24 jul</span></div>
+      <h3>Lo que cuesta no hacer nada.</h3>
+      <p class="pillar">Pilar 4 — EL COSTE DE NO HACER NADA · MOFU→BOFU</p>
+      <div class="posts">
+        <div class="post"><div class="day">Lun<span>20 jul</span></div><div><div class="ttl">Cada mes sin sistema pierdes entre 2.500€ y 15.000€ en llamadas que nadie coge</div><div class="tags"><span class="tag bofu">MOFU→BOFU</span><span class="tag">Carrusel</span><span class="tag cta">Autoridad</span></div></div></div>
+        <div class="post"><div class="day">Mié<span>22 jul</span></div><div><div class="ttl">El 55% de las pymes ya compite con alguien que usa IA. ¿De qué lado estás?</div><div class="tags"><span class="tag bofu">MOFU→BOFU</span><span class="tag">Carrusel</span><span class="tag cta">Conversación</span></div></div></div>
+        <div class="post"><div class="day">Vie<span>24 jul</span></div><div><div class="ttl">7 tareas que la IA ya hace sola este verano · <span class="kw">VERANO</span></div><div class="tags"><span class="tag bofu">MOFU→BOFU</span><span class="tag lm">Lead Magnet</span><span class="tag cta">Recurso · VERANO</span></div></div></div>
+      </div>
+    </div>
+
+    <!-- SPRINT 5 -->
+    <div class="sprint">
+      <div class="top"><span class="num">Sprint 5 · La decisión</span><span class="dates">Lun 27 · Mié 29 · Vie 31 jul</span></div>
+      <h3>Antes de que llegue agosto.</h3>
+      <p class="pillar">Pilar 5 — MARIO Y SU PROCESO · BOFU</p>
+      <div class="posts">
+        <div class="post"><div class="day">Lun<span>27 jul</span></div><div><div class="ttl">Para quién es montar esto antes de agosto, y para quién no</div><div class="tags"><span class="tag bofu">BOFU</span><span class="tag">Carrusel</span><span class="tag cta">Autoridad</span></div></div></div>
+        <div class="post"><div class="day">Mié<span>29 jul</span></div><div><div class="ttl">Qué pasa en los primeros 30 días trabajando conmigo</div><div class="tags"><span class="tag bofu">BOFU</span><span class="tag">Carrusel</span><span class="tag cta">Conversación</span></div></div></div>
+        <div class="post"><div class="day">Vie<span>31 jul</span></div><div><div class="ttl">30 minutos para ver qué se puede dejar montado antes de que pares. Sin compromiso</div><div class="tags"><span class="tag bofu">BOFU</span><span class="tag">Carrusel</span><span class="tag cta">Conversación</span></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Los <em>lead magnets</em> del mes</h2>
+    <p class="sub">Uno por sprint, solo cuando hay un recurso real que entregar. Cada uno se diseña como un kit con título, palabra clave y 5-6 entregables.</p>
+    <div class="lmgrid">
+      <div class="lmc"><div class="lk">AGOSTO</div><h4>Deja el negocio en piloto automático</h4><p>Checklist de qué dejar montado para que el negocio no se pare cuando tú pares: teléfono, leads, citas, facturas, avisos.</p><div class="when">Lanza · Vie 3 jul</div></div>
+      <div class="lmc"><div class="lk">TELÉFONO</div><h4>La calculadora del agujero del teléfono</h4><p>Cuánto pierdes al mes en euros por llamadas y leads sin atender, con el cálculo hecho sobre tus propios números.</p><div class="when">Lanza · Vie 10 jul</div></div>
+      <div class="lmc"><div class="lk">VERANO</div><h4>7 tareas que la IA ya hace sola</h4><p>Las tareas concretas que un agente cubre mientras descansas, con qué herramienta las hace y a qué coste real al mes.</p><div class="when">Lanza · Vie 24 jul</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Checklist de <em>producción</em></h2>
+    <p class="sub">Marca cada pieza a medida que sale del horno. Cada carrusel pasa por /productor; cada lead magnet por /lead-magnet.</p>
+    <ul class="check">
+      <li><input type="checkbox"><span>Sprint 1 — 3 carruseles + lead magnet AGOSTO</span></li>
+      <li><input type="checkbox"><span>Sprint 2 — 3 carruseles + lead magnet TELÉFONO</span></li>
+      <li><input type="checkbox"><span>Sprint 3 — 3 carruseles (casos reales con cifras)</span></li>
+      <li><input type="checkbox"><span>Sprint 4 — 3 carruseles + lead magnet VERANO</span></li>
+      <li><input type="checkbox"><span>Sprint 5 — 3 carruseles (cierre + sesión 30 min)</span></li>
+      <li><input type="checkbox"><span>Todo el copy visible pasado por humanizer</span></li>
+      <li><input type="checkbox"><span>Ningún titular de imagen menciona jerga vacía; cada dato con fuente</span></li>
     </ul>
   </section>
 
-  <footer>
-    Globalizame · Mario Ruiz · Founder &nbsp;|&nbsp; Tu negocio liberado. Tu tiempo recuperado. &nbsp;|&nbsp; Regla de oro: el contenido nunca nombra la tecnología — solo el problema y el resultado, en euros y horas.
-  </footer>
+  <p class="foot"><b>Globalizame</b> · Estrategia de Instagram · Julio 2026 · Tema central: <i>Tu negocio no se va de vacaciones contigo</i> · Generada por <b>/investigador</b></p>
 
 </div>
-<script>
-  document.querySelectorAll('#chk li').forEach(function(li){
-    li.addEventListener('click',function(){li.classList.toggle('done')});
-  });
-</script>
 </body>
 </html>

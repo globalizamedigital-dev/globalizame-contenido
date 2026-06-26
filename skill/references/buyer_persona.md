@@ -76,11 +76,17 @@ Si él para, el negocio para.
 - Crecer, escalar (aunque no usa "escalar" — dice "crecer")
 - Sistema, proceso, orden (le gustan cuando los entiende)
 
-**Palabras que le apagan:**
-- IA, automatización, workflow, pipeline, bot
-- Onboarding, funnel, stack, API
-- "Solución disruptiva", "transformación digital"
-- Cualquier anglicismo innecesario
+**Le interesa (con curiosidad y algo de recelo):**
+- "IA", "ChatGPT", "Claude" — los oye por todas partes y quiere saber qué le aportan a ÉL
+- Lo que hace la competencia · casos de negocios como el suyo
+
+**Palabras que le apagan (jerga vacía):**
+- Workflow, pipeline, stack, API, onboarding, funnel, deployment
+- "Solución disruptiva", "transformación digital", "revolución de la IA"
+- Cualquier anglicismo innecesario o hype sin sustancia
+
+> Matiz clave: no le apaga la palabra "IA" — le apaga la jerga y el humo. Si le explicas la IA en
+> euros, horas y en su sector, se inclina hacia delante.
 
 ---
 

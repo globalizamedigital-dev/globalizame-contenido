@@ -374,7 +374,7 @@ Nunca hacer lo siguiente:
 * Texto pegado a los bordes.
 * Inventar datos.
 * Usar lenguaje corporativo vacío o de gurú.
-* Mencionar IA, automatización, bot o tecnicismos en el copy visible.
+* Usar jerga vacía (workflow, pipeline, stack, "transformación digital") o nombrar una novedad de IA sin traducirla a euros/horas. (Nombrar IA, ChatGPT, Claude, OpenAI o Anthropic SÍ se permite y se anima — con su traducción a negocio.)
 * Mezclar dos tipos de carrusel.
 * Crear carruseles de solo 4 o 5 slides.
 * Dibujar emojis.
