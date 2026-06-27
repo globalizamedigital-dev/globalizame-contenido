@@ -57,7 +57,9 @@ sistema, proceso, orden, funcionar solo, liberar, recuperar, delegar, predecible
 horas semanales, euros al mes, leads respondidos, facturas cobradas, clientes atendidos
 
 **Para conectar con el lector:**
-dueño, fundador, negocio, equipo, clientes, facturación — nunca "CEO", "stakeholder", "lead"
+negocio, equipo, clientes, facturación — nunca "CEO", "stakeholder", "lead"
+
+> **Le hablas de TÚ, no le etiquetas.** Nadie se dice a sí mismo "soy un dueño de PYME". "Dueño"/"fundador" valen para hablar *de* ellos en un titular general ("9 de cada 10 dueños…"), pero a la persona se le habla directo: "tú", "tu negocio", "si te vas dos semanas". Jamás le llames "dueño" a la cara como si leyera un informe sobre sí mismo.
 
 ---
 

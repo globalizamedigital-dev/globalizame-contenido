@@ -53,8 +53,40 @@ Reglas:
 - Tipografía: sans-serif moderna geometric / humanist (Inter, Geist, Satoshi, Söhne).
 - Composición: mucho aire, jerarquía clara (headline gigante > subtítulo medio > dato pequeño).
 - Estilo: editorial premium tipo Monocle / Bloomberg / Stripe.
-- Evitar slides compuestas únicamente por texto sobre fondo plano.
-- Elementos: data viz (números gigantes, barras), iconos line minimal, formas geométricas planas.
+
+### 6.1 · REGLA DURA — CADA SLIDE LLEVA UN ELEMENTO VISUAL NO TIPOGRÁFICO (incluida la PORTADA)
+
+Esta es la regla que más se incumple. Léela entera.
+
+**El texto NO es el elemento visual. Un número gigante TAMPOCO.** Poner "9/10", "47 h" o cualquier
+cifra en grande es jerarquía tipográfica, no diseño. Una slide cuyo único contenido es texto/números
+sobre fondo carbón liso está MAL, aunque el número sea enorme y esté en color de acento. Eso es lo que
+hay que erradicar.
+
+**Cada slide —SIN EXCEPCIÓN, la portada incluida— debe contener al menos UN elemento gráfico construido,
+distinto del texto:**
+
+- **Data-viz real**: barra(s) con su eje, arco/anillo de progreso, línea de tendencia, dos magnitudes
+  enfrentadas a escala, una rejilla/calendario, una tabla. El número vive DENTRO del gráfico, no solo.
+- **Forma geométrica con función**: bloque, división del lienzo en zonas de color, una diagonal que
+  parte la composición, un marco interior que encuadra el dato.
+- **Icono line-minimal** (trazo fino, 1-2 líneas) que aporta significado, no decora.
+- **Objeto-héroe**: UN render 3D realista y editorial flotando sobre el carbón (bodegón de producto).
+  Permitido como único 3D de la slide; el resto plano.
+- **Tratamiento tipográfico que es en sí una composición** (no "texto grande"): texto recortado por una
+  forma, número que se convierte en gráfico (la barra del "1" es una barra de datos), palabra partida
+  por una línea de sentido. Si quitas el efecto y queda texto centrado normal, NO cuenta.
+
+**Test del slide (aplícalo a cada uno, incluida la portada):** *"Si borro todo el texto, ¿queda algo
+visual con sentido en la slide?"* Si la respuesta es no → la slide está mal, rehazla. Una cifra sola no
+deja nada al borrar el texto: una cifra no es un gráfico.
+
+**La portada NO está exenta.** El hook va siempre acompañado de su elemento visual (el gráfico que
+anticipa el dato, una forma que encuadra, un objeto-héroe). Portada = texto enorme + elemento visual,
+nunca solo el texto enorme.
+
+- Prohibido: slide de solo texto/números sobre fondo plano. Prohibido el "número gigante centrado" como
+  recurso único. Prohibido tratar la jerarquía tipográfica como si fuera el diseño de la slide.
 
 ### MARCO DE MARCA (firma fija, en todos los slides)
 Todas las slides deben incluir exactamente el mismo sistema de identidad visual.
@@ -133,7 +165,10 @@ Nunca deben eliminarse, recolocarse ni modificarse durante todo el carrusel.
 
 ## 8 · PROMPTS DE IMAGEN · ESQUELETO OBLIGATORIO
 [ESCENA] composición global de la slide.
-[ELEMENTOS] elementos visuales concretos (número, icono, forma, foto).
+[ELEMENTOS] el elemento visual NO tipográfico de la slide (ver §6.1). OBLIGATORIO y concreto: describe
+  el gráfico/forma/icono/objeto construido, no el texto. Un "número grande" aquí NO es válido por sí
+  solo — el número debe ir dentro de una barra, arco, comparación a escala, rejilla u objeto. Si este
+  bloque solo describe texto/cifras, el prompt está mal: reescríbelo con un gráfico real.
 [TEXTO EN IMAGEN]
 
 Headline (top, large, bold): "TEXTO EXACTO"
@@ -184,6 +219,7 @@ Prompt slide N
 
 ## 11 · ANTI-PATRONES
 
+- **Slide de solo texto/números sobre fondo plano (el peor y más común). Un número gigante centrado NO es un elemento visual: es texto. Aplica el test del §6.1 a cada slide, portada incluida.**
 - Sin CTA en última slide.
 - Slide 1 que resuelve.
 - Más de 20 palabras por slide.

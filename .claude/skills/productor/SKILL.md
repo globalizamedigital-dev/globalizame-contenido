@@ -24,7 +24,7 @@ QUÉ TOCA → INVESTIGACIÓN LIGERA → DECISIONES → SLIDES + PROMPTS → COPY
 - [ ] Carpeta `posts/post_[YYYY-MM-DD]_[slug]/` con los 7 archivos (ver Outputs).
 - [ ] **El carrusel usa munición real de la base:** al menos una novedad/herramienta de IA nombrada (GPT-5.6, Claude, Gemini…) + un dato o caso real con su cifra y fuente. NO vale solo dolor operativo genérico.
 - [ ] Marco de marca idéntico en todos los slides.
-- [ ] **Ningún slide es solo texto sobre fondo plano:** cada uno con su elemento visual editorial o tratamiento tipográfico real. El visual no ilustra literalmente la palabra del titular.
+- [ ] **Ningún slide es solo texto/números sobre fondo plano — PORTADA INCLUIDA.** Cada slide lleva un elemento visual NO tipográfico (data-viz con eje, arco, comparación a escala, rejilla, forma con función, icono line-minimal u objeto-héroe 3D). Un número gigante NO cuenta: es texto. Test obligatorio por slide: *borra el texto; si no queda nada visual, está mal* (system prompt §6.1). El visual no ilustra literalmente la palabra del titular.
 - [ ] Ratio del prompt = 3:4 (formato ChatGPT) en todos.
 - [ ] Todo el copy visible pasado por `humanizer`.
 - [ ] `registro.md` con el hook/acento rotados.
@@ -97,11 +97,13 @@ Estructura (system prompt §4):
 
 Máx 15 palabras por slide. Para cada slide define: función narrativa · texto exacto (en español) · visual breve.
 
-> **Visual de cada slide (§6 del system prompt):** ningún slide es solo texto sobre fondo plano. Cada slide lleva su elemento visual editorial (data-viz, número gigante, barra, icono line minimal, forma geométrica) o tratamiento tipográfico de verdad. El visual cuenta la idea, no ilustra literalmente la palabra del titular.
+> **Visual de cada slide (§6.1 del system prompt — REGLA DURA):** ningún slide es solo texto/números sobre fondo plano, la PORTADA tampoco. Cada slide lleva un elemento visual NO tipográfico: data-viz real (barra con eje, arco/anillo, dos magnitudes a escala, rejilla/calendario, tabla), forma geométrica con función, icono line-minimal u objeto-héroe 3D. **Un número gigante NO es el elemento visual: es texto.** La cifra vive DENTRO del gráfico. Test por slide: borra el texto; si no queda nada visual con sentido, rehazla. El visual cuenta la idea, no ilustra literalmente la palabra del titular.
 
 ## PASO 5 · PROMPTS DE IMAGEN PARA CHATGPT
 
 > Un prompt por slide siguiendo **EXACTAMENTE** el esqueleto §8 del system prompt: `[ESCENA]` → `[ELEMENTOS]` → `[TEXTO EN IMAGEN]` → `[ESTILO]` → `[CONSTRAINTS]`. No reinventes el formato: cópialo del system prompt. El system prompt es la fuente de verdad; si algo aquí y allí difieren, gana el system prompt.
+
+> ⛔ **El bloque `[ELEMENTOS]` describe el elemento visual NO tipográfico de la slide (§6.1), también en la portada.** Si en `[ELEMENTOS]` solo escribes texto o "número gigante", el prompt está mal: mete un gráfico real (la barra que mide la cifra, el arco que la representa, la comparación a escala, la rejilla, el objeto-héroe). Antes de cerrar cada prompt, aplica el test: *si la slide se quedara sin texto, ¿hay un visual con sentido?* Si no, reescribe el `[ELEMENTOS]`.
 
 Recordatorios clave (todo está en el system prompt):
 - Marco de marca idéntico en cada slide: 1px #444444 a ~40px · "Mario Ruiz" + "Founder · Globalizame" arriba-izq (gris #666666) · contador "0X" arriba-der · línea verde #86CA28 debajo. Nunca se omite ni se recoloca.

@@ -10,14 +10,13 @@
 ---
 
 ### Prompt Slide 1
-[ESCENA] Portada editorial oscura, número gigante centrado dominando la composición, mucho aire arriba y abajo, una fina línea de horizonte en la parte inferior.
-[ELEMENTOS] Número enorme "9/10" como protagonista absoluto: el "9/" en blanco, el "10" en morado #700962. Bajo el número, una línea horizontal fina gris como horizonte de mar.
+[ESCENA] Portada editorial oscura. El protagonista visual es un pictograma de datos: una fila/cuadrícula de 10 figuras minimal-line idénticas (siluetas de persona en tumbona de playa, trazo fino), de las cuales 9 tienen un pequeño portátil encendido brillando (siguen trabajando) y 1 está sin portátil (desconectada de verdad). El texto va debajo, con mucho aire. La cuadrícula 9+1 ES la slide; si se borrara el texto, el gráfico de 9 trabajando vs 1 libre sigue contando la idea solo.
+[ELEMENTOS] Data-viz de 10 iconos line-minimal (persona en tumbona): 9 con portátil encendido en morado #700962 (el acento marca "los que no desconectan"), 1 sin portátil en blanco tenue (la excepción). Disposición en rejilla limpia (p. ej. 5+5 o 2 filas de 5), alineada, mucho aire alrededor. Sin número gigante: la cantidad se lee contando las figuras.
 [TEXTO EN IMAGEN]
-Headline (center, very large, bold): "9 DE CADA 10"
-Subtítulo (under number, medium, regular): "dueños no desconectan en verano."
+Headline (below the pictogram, large, bold): "9 de cada 10 dueños no desconectan en verano."
 Pie (bottom, small): "¿Tú tampoco?"
-[ESTILO] Editorial premium. Charcoal #232323 + acento morado #700962 + blanco. Geometric sans-serif. Headline gigante, máximo aire.
-[CONSTRAINTS] 3:4 portrait, padding 80px · texto en español, ortografía correcta · BRAND FRAME (counter "01") · NEGATIVE: no extra text, no neon, no clipart, no stock photo, no emojis, no AI typography artifacts.
+[ESTILO] Editorial premium tipo Monocle / Bloomberg. Charcoal #232323 + acento morado #700962 + blanco. Geometric sans-serif. Pictograma de datos protagonista, headline secundario, máximo aire.
+[CONSTRAINTS] 3:4 portrait, padding 80px · texto en español, ortografía correcta · BRAND FRAME (counter "01") · the 9+1 pictogram is the visual; no giant centered number · NEGATIVE: no extra text, no neon, no clipart, no stock photo, no emojis, no AI typography artifacts.
 
 ---
 
@@ -91,8 +90,8 @@ Subtítulo (center, medium, regular): "Esto ya cabe en tu presupuesto."
 ---
 
 ### Prompt Slide 8
-[ESCENA] Cierre sereno: una tumbona vacía a la izquierda junto a una fina línea de costa minimal; el resto del slide es aire con el texto a la derecha.
-[ELEMENTOS] Tumbona como forma geométrica plana en línea blanca. Línea de horizonte/costa fina. Dato "30 min" en morado #700962 como ancla visual. Sin texto de CTA dentro de la imagen.
+[ESCENA] Cierre sereno que rima con la portada: la misma figura line-minimal de persona en tumbona de playa, pero ahora SIN portátil y con el portátil cerrado a un lado (por fin desconectada). Cierra el arco visual del 9+1 de la slide 01. Línea de costa fina; texto a la derecha, mucho aire.
+[ELEMENTOS] Icono line-minimal de persona en tumbona (mismo trazo que la portada) ya desconectada, portátil cerrado junto a ella. Pequeño reloj/etiqueta "30 min" en morado #700962 como ancla. Si se borrara el texto, la figura desconectada frente a la portada (9 trabajando) ya cuenta el cierre. Sin CTA dentro de la imagen.
 [TEXTO EN IMAGEN]
 Headline (top, large, bold): "Deja el negocio atado antes de agosto."
 Subtítulo (center, medium, regular): "Hablamos 30 minutos."

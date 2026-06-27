@@ -26,7 +26,7 @@ es un reencuadre: "vacaciones" no es descanso, es la prueba de fuego de si tiene
 ### Slide 1 — PORTADA (hook)
 - **Función:** parar el scroll con el espejo del verano. No resuelve.
 - **Texto:** "9 de cada 10 dueños no desconectan en verano. ¿Tú tampoco?"
-- **Visual:** número gigante "9/10" en blanco, el "10" en morado. Mucho aire. Abajo, línea fina de horizonte.
+- **Visual:** pictograma de datos — 10 figuras en tumbona, 9 con portátil encendido (morado, "no desconectan") y 1 libre. La cantidad se lee contando, no con un número gigante (regla §6.1). Cierra su arco en el slide 8.
 
 ### Slide 2 — REFRAME
 - **Función:** quitar la culpa, mover el foco a "sistema".
@@ -61,4 +61,4 @@ es un reencuadre: "vacaciones" no es descanso, es la prueba de fuego de si tiene
 ### Slide 8 — CTA (cierre)
 - **Función:** invitar a la sesión. Sin venta dura.
 - **Texto:** "Deja el negocio atado antes de agosto. Hablamos 30 minutos."
-- **Visual:** tumbona vacía junto a una línea de costa minimal; "30 min" como dato. El CTA real va en el copy.
+- **Visual:** misma figura en tumbona de la portada, ahora desconectada (portátil cerrado). Cierra el arco visual del 9+1; "30 min" como ancla. El CTA real va en el copy.

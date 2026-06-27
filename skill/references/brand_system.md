@@ -50,8 +50,10 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 ## Estilo visual
 
 **Mood:** Editorial premium tipo Monocle / Bloomberg / Stripe. Mucho aire. Profesional sin ser corporativo.  
-**Protagonista:** el dato y la jerarquía tipográfica — headline enorme > subtítulo medio > dato pequeño  
-**Recursos gráficos:** data visualization, grandes números, barras, iconos lineales, formas geométricas planas
+**Protagonista:** el dato CONTADO con un gráfico + la jerarquía tipográfica (headline enorme > subtítulo medio > dato pequeño). La tipografía ordena la lectura; NO sustituye al elemento visual.  
+**Recursos gráficos (el elemento visual de cada slide, obligatorio):** data visualization (barras con eje, arcos/anillos de progreso, líneas de tendencia, dos magnitudes a escala), rejillas/calendarios, tablas, iconos lineales, formas geométricas planas, objeto-héroe 3D editorial.
+
+> **Un número grande NO es un recurso gráfico.** Es texto. La cifra debe vivir dentro de un gráfico (la barra que mide ese número, el arco que lo representa, la comparación a escala). Ver system prompt §6.1 — regla dura: cada slide, portada incluida, lleva un elemento visual no tipográfico. Test: borra el texto; si no queda nada visual, la slide está mal.
 
 ---
 
@@ -100,8 +102,11 @@ Incluir siempre este bloque en cada prompt:
 ```
 Visual system: dark editorial premium (Monocle / Bloomberg / Stripe) — solid charcoal background
 #232323, white text, green #86CA28 as a SINGLE accent only (never dominant), purple #700962 for detail.
-No slide is plain text on a flat background. Lots of negative space, clear hierarchy: huge headline >
-medium subtitle > small data. Recursos: data-viz, big numbers, bars, line icons, flat geometric shapes.
+EVERY slide (cover included) has a built non-text visual element: a real data-viz (bars with an axis,
+progress arc/ring, trend line, two magnitudes compared to scale, a grid/calendar, a table), a functional
+geometric shape, a line-minimal icon, or a single hero 3D object. A big number alone is NOT a visual — it
+is text; the figure must live inside a graphic. Test: remove all text; if nothing visual remains, the
+slide is wrong. Lots of negative space, clear hierarchy: huge headline > medium subtitle > small data.
 Geometric/humanist sans-serif (Inter, Geist, Satoshi).
 BRAND FRAME (identical every slide): thin 1px #444444 border ~40px from edge · "Mario Ruiz" + "Founder ·
 Globalizame" top-left · counter "01/08" top-right with a green accent line under it.
