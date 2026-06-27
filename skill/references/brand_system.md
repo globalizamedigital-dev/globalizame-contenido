@@ -57,7 +57,7 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 
 ## Formato de slides
 
-**Ratio:** 3:4 (Retrato) — es el vertical que ofrece ChatGPT (Auto / 1:1 / **3:4** / 9:16 / 4:3 / 16:9). No existe 4:5 en ChatGPT.
+**Ratio:** 4:5 (Retrato) — 1080×1350 px. Es el estándar del sistema (el que mejor ocupa el feed de IG). ChatGPT no tiene 4:5 nativo (da Auto / 1:1 / 3:4 / 9:16 / 4:3 / 16:9): genera en **3:4** y reencuadra/exporta a 4:5, o usa una herramienta con 4:5 directo. El entregable final es siempre 4:5 (1080×1350).
 **Safe zone:** 80px de padding en los 4 bordes. Texto y datos clave nunca pegados al borde.
 **Coherencia:** misma paleta, tipografía y malla en todas las slides de una serie.
 
@@ -106,8 +106,10 @@ clear hierarchy: huge headline > medium subtitle > small data. Recursos: data-vi
 line icons, flat geometric shapes, hero typography. Geometric/humanist sans-serif (Inter, Geist, Satoshi).
 BRAND FRAME (identical every slide): thin 1px #444444 border ~40px from edge · "Mario Ruiz" + "Founder ·
 Globalizame" top-left · counter "01/08" top-right with a green accent line under it.
-Ratio 3:4 (portrait), 80px safe padding on all 4 sides.
+Ratio 4:5 (portrait) — 1080×1350 px, 80px safe padding on all 4 sides.
 All text inside the image in Spanish, literal and quoted, exact spelling.
-NEGATIVE: no gradients, no neon, no clipart, no stock photos, no photorealistic photography or realistic
-3D renders, no generic mockups, no AI typography artifacts.
+NEGATIVE: no gradients, no neon, no clipart, no stock photos, no photorealistic scenes or real people,
+no generic mockups, no AI typography artifacts.
+(A single hero object MAY be a realistic 3D render floating on the carbon background — an editorial
+still life; everything else stays flat/editorial.)
 ```

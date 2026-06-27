@@ -112,14 +112,20 @@ Inspiración:
 Evitar:
 
 * Infografías cliché.
-* Stock photos.
-* Fotografía realista o renders fotorrealistas (que parezcan una foto real de un objeto o escena).
+* Stock photos (la estética "banco de imágenes": personas posando, oficinas genéricas, apretones de manos).
+* Escenas o personas fotorrealistas (que parezcan una foto real de gente o de un lugar).
 * Gradientes neón.
 * Clipart.
 
+**Excepción — el objeto-héroe SÍ puede ir como render 3D fotorrealista.** Cuando el concepto del slide es un objeto icónico (un calendario, un teléfono, una llave), está permitido —y queda premium— renderizarlo como un objeto 3D realista (con su material, su sombra, su perspectiva) flotando sobre el fondo carbón, mucho espacio negativo, integrado en la paleta de marca. Es un bodegón editorial de un solo objeto, no una foto de stock ni una escena con gente. El resto de recursos (data-viz, tipografía, composición) siguen siendo planos/editoriales.
+
 ## Recursos gráficos
 
-Cada slide lleva **al menos un elemento visual** además del texto (nunca una slide de solo tipografía). Ese elemento es siempre **editorial / gráfico / ilustrado**, no fotográfico. El repertorio y cómo elegir el concepto están en §5.6.
+**Ningún slide es solo texto plano colocado sobre el fondo.** Cada slide tiene un **concepto visual resuelto** (§5.6) — siempre hay tratamiento visual, nunca un titular centrado y ya. El concepto puede ser:
+- Un **elemento gráfico editorial**: data-viz, número gigante, objeto, escena, personaje, forma. (Lo más habitual.)
+- O **tipografía como diseño** — y aquí ojo: NO es "poner el texto grande". Es la palabra/frase tratada como objeto visual: composición agresiva y rota (no centrada), escala bestial que invade el frame, una palabra que ocupa media slide, contraste de pesos, una cifra como elemento gráfico, tensión espacial. Si tu "tipografía héroe" se parece a un titular de PowerPoint con aire, está MAL: o le das un tratamiento tipográfico de verdad o metes un elemento gráfico.
+
+Lo elige el director (§5.6). El objeto-héroe puede ir como render 3D realista (ver excepción arriba); el resto, plano/editorial; nunca foto de stock ni escenas con personas reales. Lo que no se admite nunca: texto plano sin diseño.
 
 ---
 
@@ -139,9 +145,9 @@ Si el titular dice "es una correa", **NO se dibuja una correa**. Una correa no e
 
 Atrevido pero premium. Mezcla a lo largo del carrusel — la gracia está en la variedad:
 
-* **Tipografía como héroe** — la palabra/frase ES el diseño: escala brutal, una palabra en acento, kerning, una cifra que llena el frame. Muchos de los mejores slides editoriales son solo tipo bien resuelta.
+* **Tipografía como diseño** — la palabra/frase tratada como OBJETO visual, no como titular. Escala bestial que invade el frame, composición rota y asimétrica (jamás centrada con aire), una palabra que ocupa media slide, contraste de pesos/tamaños, una cifra como elemento gráfico, tensión espacial. ⚠️ Si tu slide tipográfico se parece a un titular de PowerPoint, NO has hecho tipografía-héroe: o le metes tratamiento de verdad o usas otro concepto del repertorio.
 * **Gran número / data-viz** — una cifra gigante, una barra, una comparación, un antes/después numérico. Estilo Bloomberg.
-* **Objeto icónico bien usado** — un objeto que evoca la idea (un calendario para el verano, un teléfono para las llamadas), en clave editorial plana. Pero solo si NO es la palabra literal del titular.
+* **Objeto icónico bien usado** — un objeto que evoca la idea (un calendario para el verano, un teléfono para las llamadas). Va en clave editorial: o ilustración plana, o **render 3D realista del objeto** flotando sobre el fondo carbón como bodegón de marca (un solo objeto, mucho espacio negativo, su sombra, integrado en la paleta). Pero solo si NO es la palabra literal del titular.
 * **Escena / situación** — un momento que cuenta la historia (la mesa vacía del dueño, el negocio a oscuras). Editorial, no foto real.
 * **Personaje / retrato** — el perfil típico del lector, una figura, una silueta.
 * **Famoso / cultura pop / meme reconocible** — usado como gancho con criterio (un personaje, una referencia que el avatar pilla al instante). Da personalidad y para el scroll. Sin pasarse de cuñado.
@@ -234,7 +240,7 @@ Nunca deben eliminarse, recolocarse ni modificarse durante todo el carrusel.
 
 # 6 · ASPECTO TÉCNICO
 
-* Ratio **3:4 portrait** — es el vertical que ofrece ChatGPT (Auto / 1:1 / **3:4** / 9:16 / 4:3 / 16:9). **No existe 4:5 en ChatGPT.** Mismo ratio para IG y LinkedIn.
+* Ratio **4:5 portrait — 1080×1350 px**. Es el vertical que mejor ocupa el feed de Instagram y el estándar del sistema. Si generas en ChatGPT (que ofrece Auto / 1:1 / 3:4 / 9:16 / 4:3 / 16:9 y **no tiene 4:5 nativo**), genera en **3:4** y reencuadra/exporta a 4:5; o usa una herramienta que sí dé 4:5 directo. El entregable final es siempre 4:5 (1080×1350). Mismo ratio para IG y LinkedIn.
 * Nunca 1:1.
 * Nunca 16:9 ni 9:16.
 * Safe zone: **80 px** de padding.
@@ -250,7 +256,7 @@ Nunca deben eliminarse, recolocarse ni modificarse durante todo el carrusel.
 
 La marca (§5.5) es idéntica en todas. Lo que cambia es el ROL visual de cada tipo. Una portada y un intermedio NO se componen igual.
 
-* **PORTADA (slide 1):** el gancho visual puro. El concepto, en GRANDE, con el máximo impacto y el mínimo texto. Tiene que parar el scroll en seco. El headline domina; deja respirar. "Desliza →" abajo-derecha. NO resuelve nada todavía.
+* **PORTADA (slide 1):** el gancho visual puro, con su concepto resuelto (§5.6) — tipografía tratada como objeto (escala bestial, composición rota) o un elemento gráfico fuerte. **No vale un titular centrado con aire**: tiene que parar el scroll en seco con su tratamiento visual. "Desliza →" abajo-derecha. NO resuelve nada todavía.
 * **INTERMEDIOS:** cada uno desarrolla UNA idea con SU PROPIO concepto visual (§5.6) — variados entre sí, nunca clones. Aquí viven los datos, la novedad de IA y el caso real de la base. Una idea = un slide.
 * **PENÚLTIMO (síntesis):** el remate del argumento. Antes-después, comparación, la cifra que lo resume, el contraste que cierra la lógica.
 * **CIERRE (último):** autoridad serena. Un remate visual fuerte y limpio, muchísimo aire. La marca puede respirar más aquí. **Sin CTA en la imagen** (el CTA va solo en el copy del post).
@@ -311,19 +317,20 @@ Muchísimo aire.
 
 [CONSTRAINTS]
 
-- Ratio 3:4 portrait
+- Ratio 4:5 portrait — 1080×1350 px
 - Padding 80 px
 - Texto en español
 - Ortografía perfecta
 - El marco identitario debe aparecer exactamente igual en todas las slides.
-- Each slide has at least one editorial/illustrated visual element besides text (never a text-only slide).
+- Every slide has a resolved visual concept (§5.6) with real visual treatment — NEVER plain text centered on the background. Either an editorial graphic element (data-viz, big number, object, scene, character) OR typography treated as a designed object (brutal scale invading the frame, broken/asymmetric composition, a word taking half the slide, weight contrast). A centered headline with whitespace is NOT acceptable.
 - NEGATIVE:
   no extra text,
   no random letters,
   no watermarks,
   no neon gradients,
   no stock photo aesthetic,
-  no photorealistic photography or realistic 3D renders (objects must be flat/editorial illustrations, not real photos),
+  no photorealistic scenes or real people (no stock-photo people, offices, handshakes),
+  (a single hero object MAY be a realistic 3D render floating on the carbon background — calendar, phone, key — as an editorial still life; everything else stays flat/editorial),
   no clipart,
   no emojis rendered as images,
   no AI typography artifacts.
@@ -426,7 +433,7 @@ Nunca hacer lo siguiente:
 * **Repetir el mismo recurso visual en slides seguidos** o que todo el carrusel sea del mismo tipo (todo data-viz, todo objeto). Varía (§5.6).
 * Dejar la portada, los intermedios y el cierre con la misma estructura visual (§6.5).
 * Más de 20 palabras por slide.
-* Ratio distinto de 3:4.
+* Ratio distinto de 4:5 (1080×1350) en el entregable final.
 * Texto pegado a los bordes.
 * Inventar datos.
 * Usar lenguaje corporativo vacío o de gurú.
