@@ -7,10 +7,10 @@ Fondo: negro carbón #232323 (FIJO, no rota)
 Último acento usado: — (alterna entre verde #86CA28 y morado #700962)
 
 Último tipo de hook: —
-Próximo: Estadística (Sprint 1 abre con 76%/8%)
+Próximo: Estadística (1 de la rotación)
 
-Último mes con estrategia: julio 2026
-Último sprint producido: — (estrategia generada, sin producir aún)
+Último mes con estrategia: 2026-06 — "Tu negocio no se va de vacaciones contigo"
+Último sprint producido: — (estrategia lista; aún sin producir carruseles)
 Último tipo de carrusel: —
 Último post publicado: —
 ```
@@ -46,13 +46,16 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 ## Meses procesados
 
-### Julio 2026
-- **Tema central:** Tu negocio no se va de vacaciones contigo (el dueño como cuello de botella, visto en verano, con la IA avanzando a saltos mientras él sigue a mano).
-- **Datos clave usados:**
-  1. 76% de pymes españolas usa IA semanal, solo 8% con criterio — la "IA en la sombra" (Wolters Kluwer + BBVA Research 2026).
-  2. Tres saltos de IA en tres semanas: Anthropic a bolsa (1 jun), Claude Fable 5 (9 jun), GPT-5.6 Sol/Terra/Luna (26 jun).
-  3. Casos por sector: gestoría (IVA 303: 2-4 h → 15-30 min/cliente; 20-40 h/mes), hostelería (67% llamadas perdidas en hora punta; +18-30% reservas), inmobiliaria (78% cierra con quien responde primero; media 47 h), clínica dental Valencia (no-shows 12%→5,5%). Timing: IVA julio, cuota autónomo en agosto, Kit Digital IA (hasta 6.000€), EU AI Act 2 ago.
-- **Estado:** Estrategia generada. Pendiente de producir los 14 carruseles + 3 lead magnets (VACACIONES, NOCHE, MAPA).
+### Junio 2026 — "Tu negocio no se va de vacaciones contigo"
+- **Tema central:** que el negocio funcione sin el dueño, usando el verano como espejo (1 de cada 5 empresas cierra en agosto).
+- **Estructura:** 4 sprints (El espejo / La otra forma / Prueba real / El coste) + cierre BOFU. Cadencia Lun-Mié-Vie. 13 piezas.
+- **Lead magnet:** Kit Vacaciones (keyword **VACACIONES**) — lanzado en Sprint 2, Vie 12.
+- **Datos clave usados (máx. 3):**
+  1. +47 h respuesta a lead sin sistema vs 90 s con IA (aurorainbox / KW España 2026) — DATO ESTRELLA.
+  2. 10 días/mes en gestiones administrativas (Qonto + IO Investigación 2026).
+  3. 41% de pymes españolas ya usa IA a diario (estudio europeo mayo 2026).
+- **Novedades IA nombradas:** GPT-5.6 (Sol/Terra/Luna, mitad de precio), Claude para Pequeñas Empresas + Claude Fable 5, Gemini Enterprise (Agent Designer).
+- **Estado:** Estrategia generada. Pendiente producir carruseles con `/productor`.
 
 ---
 

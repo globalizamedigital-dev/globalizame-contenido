@@ -74,17 +74,16 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 
 Editorial premium tipo Monocle / Bloomberg / Stripe. Jerarquía tipográfica muy clara y data-viz limpia. Mucho aire.
 
-> **El concepto visual de cada slide lo decides como director de arte** — repertorio y criterio en system prompt §5.6 (no se repite aquí). Representa la idea, nunca la palabra literal del titular.
+> **Ningún slide es solo texto sobre fondo plano** (system prompt §6). Cada slide lleva su elemento visual editorial o su tratamiento tipográfico real. El visual cuenta la idea; no ilustra literalmente la palabra del titular.
 
 **Lo que SÍ:**
 - Fondo carbón #232323 con el verde solo como acento puntual
-- Concepto visual elegido con criterio: tipografía-héroe, gran número/data-viz, objeto icónico, escena, personaje, famoso/meme, metáfora inesperada (§5.6)
-- La tipografía construye la jerarquía (headline enorme > subtítulo medio > dato pequeño)
-- Variedad entre slides · mucho espacio negativo
+- Elementos editoriales: data-viz (números gigantes, barras), iconos line minimal, formas geométricas planas
+- La tipografía construye la jerarquía (headline gigante > subtítulo medio > dato pequeño)
+- Mucho aire
 
 **Lo que NO:**
-- **Ilustrar la palabra literal del titular** (la "correa" dibujada porque el copy dice correa)
-- Repetir el mismo recurso en slides seguidos
+- Slides compuestas únicamente por texto sobre fondo plano
 - Infografías cliché, stock photos, degradados neón, clipart
 - El verde dominando o en grandes superficies
 - Iconos decorativos sin función · emojis dibujados
@@ -96,20 +95,19 @@ Editorial premium tipo Monocle / Bloomberg / Stripe. Jerarquía tipográfica muy
 
 Incluir siempre este bloque en cada prompt:
 
-> El esqueleto canónico del prompt (con `[DIRECCIÓN DE ARTE]` al frente) está en system prompt §7. Bloque de estilo resumido:
+> El esqueleto canónico del prompt (`[ESCENA]`/`[ELEMENTOS]`/`[TEXTO EN IMAGEN]`/`[ESTILO]`/`[CONSTRAINTS]`) está en system prompt §8. Bloque de estilo resumido:
 
 ```
 Visual system: dark editorial premium (Monocle / Bloomberg / Stripe) — solid charcoal background
 #232323, white text, green #86CA28 as a SINGLE accent only (never dominant), purple #700962 for detail.
-The visual concept conveys the IDEA, never the literal word of the headline. Lots of negative space,
-clear hierarchy: huge headline > medium subtitle > small data. Recursos: data-viz, big numbers, bars,
-line icons, flat geometric shapes, hero typography. Geometric/humanist sans-serif (Inter, Geist, Satoshi).
+No slide is plain text on a flat background. Lots of negative space, clear hierarchy: huge headline >
+medium subtitle > small data. Recursos: data-viz, big numbers, bars, line icons, flat geometric shapes.
+Geometric/humanist sans-serif (Inter, Geist, Satoshi).
 BRAND FRAME (identical every slide): thin 1px #444444 border ~40px from edge · "Mario Ruiz" + "Founder ·
 Globalizame" top-left · counter "01/08" top-right with a green accent line under it.
-Ratio 4:5 (portrait) — 1080×1350 px, 80px safe padding on all 4 sides.
+Ratio 3:4 (portrait) — ChatGPT format, 80px safe padding on all 4 sides.
 All text inside the image in Spanish, literal and quoted, exact spelling.
-NEGATIVE: no gradients, no neon, no clipart, no stock photos, no photorealistic scenes or real people,
-no generic mockups, no AI typography artifacts.
+NEGATIVE: no gradients, no neon, no clipart, no stock photos, no AI typography artifacts.
 (A single hero object MAY be a realistic 3D render floating on the carbon background — an editorial
 still life; everything else stays flat/editorial.)
 ```
