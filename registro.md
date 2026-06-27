@@ -6,13 +6,13 @@
 Fondo: negro carbón #232323 (FIJO, no rota)
 Último acento usado: — (alterna entre verde #86CA28 y morado #700962)
 
-Último tipo de hook: —
-Próximo: Estadística (1 de la rotación)
+Último acento usado: morado #700962 → próximo: verde #86CA28
+Último tipo de hook: Pregunta incómoda (con dato) → próximo: Caso real (2 de la rotación)
 
 Último mes con estrategia: 2026-06 — "Tu negocio no se va de vacaciones contigo"
-Último sprint producido: — (estrategia lista; aún sin producir carruseles)
-Último tipo de carrusel: —
-Último post publicado: —
+Último sprint producido: Cierre (Lun 29 jun) — BOFU
+Último tipo de carrusel: Error costoso / dato impactante
+Último post publicado: 2026-06-29 — "Antes de que llegue agosto" (pendiente publicar)
 ```
 
 ---
@@ -40,7 +40,7 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 | Fecha | Sprint | Día | Etapa | Formato | Acento | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | — | — |
+| 2026-06-29 | Cierre | Lun | BOFU | Error costoso / dato | Morado | Pregunta incómoda | Pendiente |
 
 ---
 
