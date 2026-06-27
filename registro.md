@@ -4,15 +4,15 @@
 
 ```
 Fondo: negro carbón #232323 (FIJO, no rota)
-Último acento usado: — (alterna entre verde #86CA28 y morado #700962)
+Último acento usado: morado #700962 (siguiente pieza → verde #86CA28)
 
-Último tipo de hook: —
-Próximo: —
+Último tipo de hook: Pregunta directa/incómoda
+Próximo: Estadística
 
 Último mes con estrategia: julio 2026
-Último sprint producido: —
-Último tipo de carrusel: —
-Último post publicado: —
+Último sprint producido: Sprint 1 (1 jul · pieza de apertura)
+Último tipo de carrusel: Narrativo / espejo (TOFU)
+Último post publicado: 1 jul — Si tú te vas dos semanas, ¿el negocio también?
 ```
 
 ---
@@ -40,7 +40,7 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 | Fecha | Sprint | Día | Etapa | Formato | Acento | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | — | — |
+| 2026-07-01 | 1 | Mié | TOFU | Carrusel narrativo/espejo (8 slides) | Morado | Pregunta incómoda | Pendiente |
 
 ---
 
