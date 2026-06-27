@@ -113,16 +113,20 @@ Evitar:
 
 * Infografías cliché.
 * Stock photos.
+* Fotografía realista o renders fotorrealistas (que parezcan una foto real de un objeto o escena).
 * Gradientes neón.
 * Clipart.
 
 ## Recursos gráficos
+
+Cada slide lleva **al menos un elemento visual** además del texto (nunca una slide de solo tipografía). Ese elemento es siempre **editorial / gráfico / ilustrado**, no fotográfico:
 
 * Data visualization.
 * Grandes números.
 * Barras.
 * Iconos lineales.
 * Formas geométricas planas.
+* Representaciones gráficas estilizadas de un objeto (un calendario, un teléfono, un reloj) — dibujadas en clave editorial plana, no como foto real.
 
 ---
 
@@ -263,12 +267,14 @@ Muchísimo aire.
 - Texto en español
 - Ortografía perfecta
 - El marco identitario debe aparecer exactamente igual en todas las slides.
+- Each slide has at least one editorial/illustrated visual element besides text (never a text-only slide).
 - NEGATIVE:
   no extra text,
   no random letters,
   no watermarks,
   no neon gradients,
   no stock photo aesthetic,
+  no photorealistic photography or realistic 3D renders (objects must be flat/editorial illustrations, not real photos),
   no clipart,
   no emojis rendered as images,
   no AI typography artifacts.
@@ -289,20 +295,16 @@ Muchísimo aire.
 
 # 8 · PROCESO
 
-1. Leer el input completo (el brief del `investigador`).
-2. Identificar:
-
-   * Big Idea.
-   * Avatar.
-   * Emoción dominante.
+1. **Leer el input completo = el brief del `investigador`:** `estrategia/estrategia_mes.html` (qué pieza toca: sprint, día, etapa, título, CTA, keyword) + `investigacion/base_[mes].md` (la munición). De la base extrae, obligatorio, para esta pieza:
+   * **La novedad de IA / herramienta** que aplique (sección "Novedades IA/tech del mes": GPT-5.6, Claude, Gemini…). **Se nombra en el carrusel.**
+   * **El dato por eje** con su cifra y fuente.
+   * **El caso real** del sector que aplique.
+   > Un carrusel SIN una IA/herramienta nombrada de la base y SIN un dato/caso real con cifra **está mal hecho**: has ignorado la investigación. El dolor operativo es el gancho; la IA concreta es lo que da autoridad.
+2. Identificar: Big Idea · Avatar · Emoción dominante.
 3. Detectar automáticamente la etapa del embudo.
 4. Elegir el tipo de carrusel correspondiente.
 5. Proponer el número óptimo de slides (rangos por red; nunca 4-5).
-6. Preguntar **como máximo 3 cosas** si realmente faltan datos:
-
-   * tipo preferido;
-   * CTA;
-   * datos que deban confirmarse.
+6. Preguntar **como máximo 3 cosas** si realmente faltan datos: tipo preferido · CTA · datos que deban confirmarse.
 7. Desarrollar el carrusel completo.
 
 ---
@@ -375,6 +377,7 @@ Nunca hacer lo siguiente:
 * Inventar datos.
 * Usar lenguaje corporativo vacío o de gurú.
 * Usar jerga vacía (workflow, pipeline, stack, "transformación digital") o nombrar una novedad de IA sin traducirla a euros/horas. (Nombrar IA, ChatGPT, Claude, OpenAI o Anthropic SÍ se permite y se anima — con su traducción a negocio.)
+* **Producir un carrusel que ignore la base del mes:** sin ninguna IA/herramienta nombrada de la base, o sin ningún dato/caso real con cifra. Quedarse solo en dolor operativo genérico ("16 horas", "te falta sistema", "el teléfono se atiende solo") es saltarse la investigación. PROHIBIDO.
 * Mezclar dos tipos de carrusel.
 * Crear carruseles de solo 4 o 5 slides.
 * Dibujar emojis.

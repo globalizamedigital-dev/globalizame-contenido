@@ -22,6 +22,7 @@ QUÉ TOCA → INVESTIGACIÓN LIGERA → DECISIONES → SLIDES + PROMPTS → COPY
 
 ### ✅ Criterio de HECHO
 - [ ] Carpeta `posts/post_[YYYY-MM-DD]_[slug]/` con los 7 archivos (ver Outputs).
+- [ ] **El carrusel usa munición real de la base:** al menos una novedad/herramienta de IA nombrada (GPT-5.6, Claude, Gemini…) + un dato o caso real con su cifra y fuente. NO vale solo dolor operativo genérico.
 - [ ] Marco de marca idéntico en todos los slides; composición distinta en portada / intermedios / cierre.
 - [ ] Ratio 3:4 en todos los prompts.
 - [ ] Todo el copy visible pasado por `humanizer`.
@@ -40,7 +41,7 @@ Eres **Director de Arte + Estratega de Contenido Visual de Globalizame** (Mario 
 ## 📚 CONTEXTO A LEER (del repo, en este orden)
 
 1. `registro.md`
-2. `skill/references/system-prompt-carrusel.md` (tipos, hooks, esqueleto del prompt, estilo)
+2. **`skill/references/system-prompt-carrusel.md` — ⭐ LA LEY.** Define todo lo del carrusel: voz, etapa/tipo/estructura, hooks, estilo visual, marco identitario, técnico, esqueleto del prompt, formato de salida y anti-patrones. Se sigue a rajatabla. Ante cualquier conflicto con otro archivo o con esta skill, **gana el system prompt**.
 3. `skill/references/benchmarks-carrusel.md` (rangos de slides por red, ganchos, CTA por objetivo, métricas)
 4. `skill/references/direccion_creativa.html` (capa de marca vs creativa, psicología del color, marco de marca)
 5. `skill/references/brand_system.md` (paleta, tipografía, formato 3:4, bloque de prompt)
@@ -55,13 +56,20 @@ Eres **Director de Arte + Estratega de Contenido Visual de Globalizame** (Mario 
 
 Si **falta** `estrategia/estrategia_mes.html` o `investigacion/base_[mes].md`: avisa de que hay que correr antes `/investigador`. **No inventes la estrategia.** Para aquí.
 
-## PASO 1 · QUÉ TOCA
+## PASO 1 · QUÉ TOCA + MUNICIÓN DE LA BASE (obligatorio)
 
-Lee `estrategia/estrategia_mes.html` y, según la fecha de hoy, identifica: Sprint · Día · Etapa (TOFU/MOFU/BOFU) · Título · Tipo de CTA · Palabra clave (si la pieza lanza lead magnet).
+**1a.** Lee `estrategia/estrategia_mes.html` y, según la fecha de hoy, identifica: Sprint · Día · Etapa (TOFU/MOFU/BOFU) · Título · Tipo de CTA · Palabra clave (si la pieza lanza lead magnet).
+
+**1b. Saca la munición concreta de `investigacion/base_[mes].md`** — esto NO es opcional. La base es la materia prima del carrusel, no un adorno. Antes de escribir nada, extrae para ESTA pieza:
+- **Las novedades de IA/tech** relevantes (sección "Novedades IA/tech del mes"): GPT-5.6, Claude, Gemini, la herramienta o feature que toque. Estas SE NOMBRAN en el carrusel.
+- **Los datos por eje** con su cifra y fuente (sección "Datos aprobados").
+- **El caso real** del sector que aplique (sección "Casos reales aprobados").
+
+> ⛔ **Prohibido producir un carrusel que no use al menos: (a) una novedad o herramienta de IA nombrada de la base, y (b) un dato/caso real de la base con su cifra.** Si te descubres escribiendo solo "16 horas / te falta sistema / el teléfono se atiende solo" sin nombrar ninguna IA ni novedad, te has saltado la base: vuelve a 1b y mete la munición real. El dolor operativo es el gancho, pero la IA concreta es lo que da autoridad y diferencia.
 
 ## PASO 2 · INVESTIGACIÓN LIGERA
 
-Haz **3-4 búsquedas web** (WebSearch — suscripción) por si hay un dato más fresco para el titular.
+Haz **3-4 búsquedas web** (WebSearch — suscripción) por si hay un dato MÁS fresco que el de la base para el titular. Es un complemento de la base (1b), nunca su sustituto.
 - Si lo hay → úsalo. Si no → usa el de `base_[mes].md` o el del título.
 
 > **Filtro de dato válido:** cifra concreta + entendible sin contexto técnico + fuente verificable. En euros y horas. Nunca inventes cifras.
@@ -77,32 +85,26 @@ Haz **3-4 búsquedas web** (WebSearch — suscripción) por si hay un dato más 
 
 ## PASO 4 · ESTRUCTURA + COPY SLIDE A SLIDE
 
-Estructura (ver `system-prompt-carrusel.md` §4):
-- **SLIDE 1 — PORTADA:** puro gancho. Titular manda, deja respirar (no más de la mitad superior). NO resuelve. "Desliza →" abajo-der.
-- **SLIDE 2 — empatía/contexto:** "¿Te pasa esto?". Por qué importa.
-- **INTERMEDIOS:** una idea por slide, ≤15 palabras, composición libre y variada al servicio de esa idea.
-- **PENÚLTIMO:** síntesis / tabla / antes-después.
-- **ÚLTIMO — CIERRE/CTA:** mensaje de autoridad + CTA. El CTA va en el copy del post, **nunca dentro de la imagen**.
+> **`system-prompt-carrusel.md` es la LEY de cómo se hace el carrusel.** Sigue su §3 (etapa/tipo/estructura), §4 (hooks) y §6 (técnico) **a rajatabla**. Lo de abajo solo recuerda los puntos clave; ante cualquier duda, manda el system prompt.
 
-Para cada slide define: función narrativa · texto exacto (≤15 palabras, en español) · visual breve.
+- **SLIDE 1 — PORTADA:** puro gancho (hook §4). NO resuelve. "Desliza →" abajo-der.
+- **SLIDE 2 — empatía/contexto:** "¿Te pasa esto?". Por qué importa.
+- **INTERMEDIOS:** una idea por slide, ≤15-20 palabras. Aquí entra la munición de la base: la novedad de IA nombrada, el dato con cifra, el caso real.
+- **PENÚLTIMO:** síntesis / antes-después.
+- **ÚLTIMO — CIERRE/CTA:** autoridad + CTA. El CTA va en el copy del post, **nunca dentro de la imagen**.
+
+Para cada slide define: función narrativa · texto exacto (en español) · visual breve.
 
 ## PASO 5 · PROMPTS DE IMAGEN PARA CHATGPT
 
-Un prompt por slide, autónomo y completo, siguiendo el **esqueleto obligatorio** de `system-prompt-carrusel.md` §7: `[ESCENA] / [ELEMENTOS] / [TEXTO EN IMAGEN] / [ESTILO] / [CONSTRAINTS]`.
+> Un prompt por slide siguiendo **EXACTAMENTE** el esqueleto §7 del system prompt (`[ESCENA]` → `[ELEMENTOS]` → `[TEXTO EN IMAGEN]` → `[ESTILO]` → `[CONSTRAINTS]`), el estilo §5, el marco §5.5 y lo técnico §6. No reinventes el formato: cópialo del system prompt. El system prompt es la fuente de verdad; si algo aquí y allí difieren, gana el system prompt.
 
-- **Estilo editorial premium** (Monocle/Bloomberg/Stripe): fondo carbón #232323, verde #86CA28 solo como acento puntual (nunca dominante), morado #700962 para detalles. Mucho aire, jerarquía clara: headline enorme > subtítulo medio > dato pequeño. Recursos: data-viz, grandes números, barras, iconos lineales, formas geométricas planas.
-- **Ratio 3:4** en todos. Safe zone 80px. Texto nunca pegado a los bordes.
-- **Marco identitario** idéntico en cada slide: marco 1px #444444 a ~40px, "Mario Ruiz" + "Founder · Globalizame" arriba-izq, contador "0X" arriba-der, línea verde #86CA28 bajo el contador. Nunca se omite ni se recoloca.
-- Texto dentro de la imagen **en español, literal, entre comillas exactas**.
-- La portada, los intermedios y el cierre NO se componen igual.
+Recordatorios clave (todo está en el system prompt):
+- Marco identitario idéntico en cada slide: 1px #444444 a ~40px · "Mario Ruiz" + "Founder · Globalizame" arriba-izq (gris #666666) · contador "0X" arriba-der · línea verde #86CA28 debajo. Nunca se omite ni se recoloca.
+- Ratio 3:4, padding 80px. Paleta #232323 / #86CA28 / #700962 / blanco / grises. Tipografía Inter/Geist/Satoshi/Söhne.
+- Texto en imagen en español, literal, entre comillas exactas. La portada, los intermedios y el cierre NO se componen igual.
 
-Formato de entrega de cada prompt:
-```
-─────────────────────────────
-SLIDE 0X/NN — [TÍTULO EN ESPAÑOL]
-─────────────────────────────
-[prompt completo con el esqueleto EMOCIÓN→…→CONSTRAINTS]
-```
+Formato de entrega de cada prompt: el del system prompt §9 (`### Prompt Slide N` con los 5 bloques).
 
 ## PASO 6 · COPY DEL POST (Instagram y LinkedIn)
 

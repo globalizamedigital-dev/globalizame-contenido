@@ -37,16 +37,13 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 
 ## Tipografía
 
-**Familia principal:** Sans serif condensada y limpia  
-**Uso:**
-- Titulares: bold, grande, impacto máximo
-- Etiquetas de diagrama: medium, compacta
-- Body / copy: regular, legible
+**Familia:** sans-serif moderna geometric/humanist. **Solo estas (las del system prompt):**
+- **Inter · Geist · Satoshi · Söhne**
 
-**Fuentes recomendadas para prompts ChatGPT:**
-- Bebas Neue (titulares de impacto)
-- Inter (cuerpo y etiquetas)
-- Josefin Sans (titulares alternativos)
+**Uso (la escala construye la jerarquía):**
+- Headline enorme: bold/black, impacto máximo
+- Subtítulo: medium
+- Dato / pie: regular, pequeño
 
 ---
 

@@ -155,7 +155,7 @@ resto rota entre cierre de Conversación y de Autoridad (ver `flujo_produccion.h
 lead magnet del mes pensando ya como un kit (ver `lead_magnet_kit.html`): título, keyword y qué 5-6
 entregables tendría.
 
-Para cada post: título anclado a un dato real · Etapa (TOFU/MOFU/BOFU) · Formato (Carrusel/Lead Magnet) · Tipo de CTA (Recurso/Conversación/Sin petición) · Palabra clave del CTA si aplica.
+Para cada post: título anclado a un dato real · Etapa (TOFU/MOFU/BOFU) · Formato (Carrusel/Lead Magnet) · Tipo de CTA (Recurso/Conversación/Sin petición) · Palabra clave del CTA si aplica · **Munición asignada** (qué novedad de IA/herramienta de la base nombra esa pieza + qué dato/caso usa). Así el `productor` no tiene que adivinar: cada pieza llega con su IA y su cifra ya elegidas.
 
 Filtro por cada título:
 1. ¿Usa jerga vacía (workflow, pipeline, stack, "transformación digital")? → REESCRIBIR
