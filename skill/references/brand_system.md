@@ -74,13 +74,17 @@ Paleta corta a propósito. Cada tono tiene un trabajo.
 
 Editorial premium tipo Monocle / Bloomberg / Stripe. Jerarquía tipográfica muy clara y data-viz limpia. Mucho aire.
 
+> **El concepto visual de cada slide lo decides como director de arte** — repertorio y criterio en system prompt §5.6 (no se repite aquí). Representa la idea, nunca la palabra literal del titular.
+
 **Lo que SÍ:**
 - Fondo carbón #232323 con el verde solo como acento puntual
-- Grandes números, barras, iconos lineales, formas geométricas planas
+- Concepto visual elegido con criterio: tipografía-héroe, gran número/data-viz, objeto icónico, escena, personaje, famoso/meme, metáfora inesperada (§5.6)
 - La tipografía construye la jerarquía (headline enorme > subtítulo medio > dato pequeño)
-- Mucho espacio negativo
+- Variedad entre slides · mucho espacio negativo
 
 **Lo que NO:**
+- **Ilustrar la palabra literal del titular** (la "correa" dibujada porque el copy dice correa)
+- Repetir el mismo recurso en slides seguidos
 - Infografías cliché, stock photos, degradados neón, clipart
 - El verde dominando o en grandes superficies
 - Iconos decorativos sin función · emojis dibujados
@@ -92,17 +96,18 @@ Editorial premium tipo Monocle / Bloomberg / Stripe. Jerarquía tipográfica muy
 
 Incluir siempre este bloque en cada prompt:
 
+> El esqueleto canónico del prompt (con `[DIRECCIÓN DE ARTE]` al frente) está en system prompt §7. Bloque de estilo resumido:
+
 ```
-Visual system: dark editorial — solid charcoal background #232323, white text, green #86CA28 as a
-SINGLE accent only (never dominant), purple #700962 only when it adds visual tension. Premium magazine
-cover / strategic report feel. Designed as a CONCEPT/SCENE, not an infographic: a single main subject
-integrated into an editorial scene (render or photographic), asymmetric composition, lots of negative
-space. Typography builds the hierarchy: hero word 110–150px black/heavy > headline 26–38px light >
-subtitle 18–26px regular. Geometric/humanist sans-serif (Inter, Geist, Satoshi). Lighting with intent.
+Visual system: dark editorial premium (Monocle / Bloomberg / Stripe) — solid charcoal background
+#232323, white text, green #86CA28 as a SINGLE accent only (never dominant), purple #700962 for detail.
+The visual concept conveys the IDEA, never the literal word of the headline. Lots of negative space,
+clear hierarchy: huge headline > medium subtitle > small data. Recursos: data-viz, big numbers, bars,
+line icons, flat geometric shapes, hero typography. Geometric/humanist sans-serif (Inter, Geist, Satoshi).
 BRAND FRAME (identical every slide): thin 1px #444444 border ~40px from edge · "Mario Ruiz" + "Founder ·
 Globalizame" top-left · counter "01/08" top-right with a green accent line under it.
 Ratio 3:4 (portrait), 80px safe padding on all 4 sides.
 All text inside the image in Spanish, literal and quoted, exact spelling.
-NEGATIVE: no gradients, no neon, no clipart, no generic mockups, no full-bleed photos, no centered
-layouts, no decorative geometry, no AI typography artifacts.
+NEGATIVE: no gradients, no neon, no clipart, no stock photos, no photorealistic photography or realistic
+3D renders, no generic mockups, no AI typography artifacts.
 ```

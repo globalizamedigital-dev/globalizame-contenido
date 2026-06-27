@@ -24,6 +24,7 @@ QUÉ TOCA → INVESTIGACIÓN LIGERA → DECISIONES → SLIDES + PROMPTS → COPY
 - [ ] Carpeta `posts/post_[YYYY-MM-DD]_[slug]/` con los 7 archivos (ver Outputs).
 - [ ] **El carrusel usa munición real de la base:** al menos una novedad/herramienta de IA nombrada (GPT-5.6, Claude, Gemini…) + un dato o caso real con su cifra y fuente. NO vale solo dolor operativo genérico.
 - [ ] Marco de marca idéntico en todos los slides; composición distinta en portada / intermedios / cierre.
+- [ ] **Dirección de arte real:** cada slide declara `[DIRECCIÓN DE ARTE]` con un concepto que cuenta la idea (no la palabra literal del titular); recursos variados entre slides (no todos iguales). Ningún slide es una metáfora del copy dibujada literal.
 - [ ] Ratio 3:4 en todos los prompts.
 - [ ] Todo el copy visible pasado por `humanizer`.
 - [ ] `registro.md` con el hook/acento rotados.
@@ -93,18 +94,23 @@ Haz **3-4 búsquedas web** (WebSearch — suscripción) por si hay un dato MÁS 
 - **PENÚLTIMO:** síntesis / antes-después.
 - **ÚLTIMO — CIERRE/CTA:** autoridad + CTA. El CTA va en el copy del post, **nunca dentro de la imagen**.
 
-Para cada slide define: función narrativa · texto exacto (en español) · visual breve.
+La estructura VISUAL de cada tipo (portada/intermedio/penúltimo/cierre) está en `system-prompt-carrusel.md` §6.5 — cada tipo se compone distinto.
+
+Para cada slide define: función narrativa · texto exacto (en español) · **concepto visual** (ver director de arte abajo).
+
+> **🎨 ERES EL DIRECTOR DE ARTE.** Por cada slide, antes de escribir el prompt, decide su **concepto visual** según `system-prompt-carrusel.md` §5.6. El concepto representa la IDEA/emoción del slide, **NUNCA la palabra literal del titular** (si el copy dice "correa", NO dibujas una correa — una metáfora del copy no es un slide). Elige del repertorio con criterio y atrevimiento (tipografía-héroe, gran número/data-viz, objeto icónico, escena, personaje, famoso/meme, metáfora inesperada, composición pura) y **varía entre slides** (dos seguidos no usan el mismo recurso). Si tu concepto es lo obvio del titular, deséchalo.
 
 ## PASO 5 · PROMPTS DE IMAGEN PARA CHATGPT
 
-> Un prompt por slide siguiendo **EXACTAMENTE** el esqueleto §7 del system prompt (`[ESCENA]` → `[ELEMENTOS]` → `[TEXTO EN IMAGEN]` → `[ESTILO]` → `[CONSTRAINTS]`), el estilo §5, el marco §5.5 y lo técnico §6. No reinventes el formato: cópialo del system prompt. El system prompt es la fuente de verdad; si algo aquí y allí difieren, gana el system prompt.
+> Un prompt por slide siguiendo **EXACTAMENTE** el esqueleto §7 del system prompt: `[DIRECCIÓN DE ARTE]` → `[ESCENA]` → `[ELEMENTOS]` → `[TEXTO EN IMAGEN]` → `[ESTILO]` → `[CONSTRAINTS]`. No reinventes el formato: cópialo del system prompt. El system prompt es la fuente de verdad; si algo aquí y allí difieren, gana el system prompt.
 
 Recordatorios clave (todo está en el system prompt):
+- **`[DIRECCIÓN DE ARTE]`** abre cada prompt: declara el concepto visual elegido (§5.6), no literal del titular, distinto del slide anterior.
 - Marco identitario idéntico en cada slide: 1px #444444 a ~40px · "Mario Ruiz" + "Founder · Globalizame" arriba-izq (gris #666666) · contador "0X" arriba-der · línea verde #86CA28 debajo. Nunca se omite ni se recoloca.
 - Ratio 3:4, padding 80px. Paleta #232323 / #86CA28 / #700962 / blanco / grises. Tipografía Inter/Geist/Satoshi/Söhne.
-- Texto en imagen en español, literal, entre comillas exactas. La portada, los intermedios y el cierre NO se componen igual.
+- Texto en imagen en español, literal, entre comillas exactas. Portada / intermedios / cierre se componen distinto (§6.5).
 
-Formato de entrega de cada prompt: el del system prompt §9 (`### Prompt Slide N` con los 5 bloques).
+Formato de entrega de cada prompt: el del system prompt §9 (`### Prompt Slide N` con los 6 bloques).
 
 ## PASO 6 · COPY DEL POST (Instagram y LinkedIn)
 

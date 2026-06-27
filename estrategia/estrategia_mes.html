@@ -3,216 +3,325 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Estrategia de Contenido · Julio 2026 · Globalizame</title>
+<title>Estrategia de contenido · Julio 2026 · Globalizame</title>
 <style>
   :root{
-    --ink:#232323;--ink-2:#2c2c2c;--paper:#FAFAF7;--mut:rgba(250,250,247,.62);
-    --green:#86CA28;--purple:#700962;--line:rgba(250,250,247,.14);
+    --ink:#232323;--ink-soft:#9a9a9a;--paper:#FAFAF7;--panel:#2b2b2b;--panel-line:#3a3a3a;
+    --green:#86CA28;--green-ink:#a3e34d;--purple:#700962;--purple-ink:#c060ad;--orange:#FFA500;
+    --line:rgba(250,250,247,.12);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{background:var(--ink);color:var(--paper);font-family:'Inter',-apple-system,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;padding:0 20px 120px}
+  body{
+    background:var(--ink);color:var(--paper);
+    font-family:'Inter',-apple-system,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;
+    padding:0 20px 120px;
+  }
   .wrap{max-width:920px;margin:0 auto}
-  .mast{padding:78px 0 40px;border-bottom:3px solid var(--green)}
-  .kick{font-size:13px;text-transform:uppercase;letter-spacing:.2em;color:var(--green);font-weight:700;margin-bottom:16px}
+  .masthead{padding:80px 0 40px;border-bottom:3px solid var(--paper);position:relative}
+  .kicker{font-size:13px;text-transform:uppercase;letter-spacing:.2em;color:var(--green-ink);font-weight:700;margin-bottom:16px}
   h1{font-weight:800;font-size:clamp(40px,8vw,78px);line-height:.97;letter-spacing:-.03em;text-wrap:balance}
-  h1 em{font-style:normal;color:var(--green)}
-  .lede{font-size:clamp(17px,2.3vw,21px);color:var(--mut);margin-top:22px;max-width:64ch;line-height:1.5}
-  .meta{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px}
-  .chip{border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:13px;color:var(--paper)}
-  .chip b{color:var(--green)}
+  h1 em{font-style:normal;color:var(--green-ink)}
+  .lede{font-size:clamp(17px,2.3vw,21px);color:var(--ink-soft);margin-top:22px;max-width:62ch;line-height:1.5}
+  .meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+  .chip{border:1px solid var(--line);border-radius:30px;padding:7px 16px;font-size:13px;color:var(--paper)}
+  .chip b{color:var(--green-ink)}
 
-  section{padding:54px 0 8px;border-bottom:1px solid var(--line)}
-  h2{font-weight:800;font-size:clamp(25px,4.4vw,40px);line-height:1.05;letter-spacing:-.025em;margin-bottom:6px}
-  h2 em{font-style:normal;color:var(--purple);background:linear-gradient(transparent 62%, rgba(112,9,98,.35) 0)}
-  .sub{color:var(--mut);max-width:62ch;margin-bottom:28px;font-size:16px}
+  section{padding:56px 0 12px;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:none}
+  h2{font-weight:800;font-size:clamp(26px,4.6vw,42px);line-height:1.05;letter-spacing:-.025em;margin-bottom:10px;text-wrap:balance}
+  h2 em{font-style:normal;color:var(--purple-ink)}
+  .sec-intro{font-size:16px;color:var(--ink-soft);max-width:64ch;margin-bottom:30px}
 
-  .arc{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:8px}
+  /* arco visual */
+  .arc{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:8px 0 4px}
   @media(max-width:760px){.arc{grid-template-columns:1fr 1fr}}
-  @media(max-width:480px){.arc{grid-template-columns:1fr}}
-  .arc .a{border:1px solid var(--line);border-radius:14px;padding:18px 16px;background:var(--ink-2)}
-  .arc .a .s{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);font-weight:700}
-  .arc .a h4{font-size:16px;font-weight:700;margin:6px 0 4px}
-  .arc .a p{font-size:13px;color:var(--mut);margin:0}
-  .arc .a .stage{display:inline-block;margin-top:10px;font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--ink);background:var(--green);border-radius:6px;padding:2px 8px}
+  .arc .a{border:1px solid var(--line);border-radius:12px;padding:16px 14px;background:var(--panel)}
+  .arc .a .st{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--green-ink);font-weight:700}
+  .arc .a h4{font-size:15px;margin:6px 0 4px;font-weight:700}
+  .arc .a p{font-size:12.5px;color:var(--ink-soft);margin:0}
 
-  .sprint{border:1px solid var(--line);border-radius:18px;padding:28px 26px;margin-bottom:18px;background:var(--ink-2)}
-  .sprint .top{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
-  .sprint .num{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
-  .sprint .dates{font-size:13px;color:var(--mut)}
-  .sprint h3{font-size:22px;font-weight:800;letter-spacing:-.02em;margin:2px 0 4px}
-  .sprint .pillar{font-size:13px;color:var(--purple);font-weight:700;margin-bottom:18px}
-  .posts{display:grid;gap:10px}
-  .post{display:grid;grid-template-columns:74px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+  /* sprint cards */
+  .sprint{background:var(--panel);border:1px solid var(--panel-line);border-radius:18px;padding:30px 30px 26px;margin-top:20px}
+  .sprint-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;margin-bottom:6px}
+  .sprint-head .num{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--green-ink)}
+  .sprint-head h3{font-size:23px;font-weight:800;letter-spacing:-.02em}
+  .sprint-head .stage{margin-left:auto;font-size:12px;border:1px solid var(--line);border-radius:30px;padding:4px 12px;color:var(--ink-soft)}
+  .sprint-sub{font-size:14.5px;color:var(--ink-soft);margin-bottom:20px;max-width:70ch}
+  .posts{display:grid;gap:12px}
+  .post{display:grid;grid-template-columns:90px 1fr;gap:18px;padding:16px 0;border-top:1px solid var(--line);align-items:start}
   .post:first-child{border-top:none}
-  .post .day{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--green);padding-top:3px}
-  .post .day span{display:block;color:var(--mut);font-weight:400;letter-spacing:0;margin-top:2px}
-  .post .ttl{font-size:16px;font-weight:600;line-height:1.35}
-  .post .tags{margin-top:7px;display:flex;flex-wrap:wrap;gap:6px}
-  .tag{font-size:11px;font-weight:700;letter-spacing:.03em;border-radius:6px;padding:2px 8px;border:1px solid var(--line);color:var(--mut)}
-  .tag.tofu{color:var(--green);border-color:rgba(134,202,40,.4)}
-  .tag.mofu{color:#e3b94e;border-color:rgba(227,185,78,.4)}
-  .tag.bofu{color:#ff7a59;border-color:rgba(255,122,89,.4)}
-  .tag.lm{color:var(--ink);background:var(--green);border-color:var(--green)}
-  .tag.cta{color:var(--purple);border-color:rgba(112,9,98,.5)}
-  .kw{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--green)}
+  @media(max-width:620px){.post{grid-template-columns:1fr;gap:6px}}
+  .post .when{font-size:13px}
+  .post .when .day{font-weight:800;color:var(--paper);display:block}
+  .post .when .date{color:var(--ink-soft);font-size:12px}
+  .post .body h4{font-size:17px;font-weight:700;line-height:1.25;margin-bottom:8px}
+  .post .body h4 .hl{color:var(--green-ink)}
+  .post .body h4 .hlp{color:var(--purple-ink)}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+  .tag{font-size:11px;border-radius:6px;padding:3px 9px;font-weight:600}
+  .t-tofu{background:rgba(134,202,40,.14);color:var(--green-ink)}
+  .t-mofu{background:rgba(192,96,173,.16);color:var(--purple-ink)}
+  .t-bofu{background:rgba(255,165,0,.14);color:var(--orange)}
+  .t-fmt{background:rgba(250,250,247,.08);color:var(--ink-soft)}
+  .t-rec{background:rgba(134,202,40,.14);color:var(--green-ink)}
+  .t-con{background:rgba(192,96,173,.16);color:var(--purple-ink)}
+  .t-aut{background:rgba(250,250,247,.08);color:var(--paper)}
+  .ammo{font-size:13px;color:var(--ink-soft);line-height:1.5}
+  .ammo b{color:var(--paper);font-weight:600}
+  .lm{margin-top:18px;border:1px dashed var(--green);border-radius:12px;padding:14px 18px;font-size:13.5px;background:rgba(134,202,40,.06)}
+  .lm b{color:var(--green-ink)}
 
-  .lmgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:8px}
-  .lmc{border:1px solid var(--line);border-radius:14px;padding:22px 20px;background:var(--ink-2)}
-  .lmc .lk{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--green);font-size:13px;letter-spacing:.04em}
-  .lmc h4{font-size:18px;font-weight:700;margin:8px 0 6px;letter-spacing:-.01em}
-  .lmc p{font-size:14px;color:var(--mut);margin:0}
-  .lmc .when{margin-top:12px;font-size:12px;color:var(--purple);font-weight:700}
+  /* lead magnets */
+  .lms{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:8px}
+  .lmcard{background:var(--panel);border:1px solid var(--panel-line);border-radius:14px;padding:22px}
+  .lmcard .kw{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:var(--green-ink);background:rgba(134,202,40,.1);padding:3px 10px;border-radius:20px;display:inline-block;margin-bottom:12px}
+  .lmcard h4{font-size:17px;font-weight:700;margin-bottom:6px;line-height:1.3}
+  .lmcard p{font-size:13.5px;color:var(--ink-soft);margin:0}
 
-  .check{list-style:none;margin-top:8px;display:grid;gap:10px}
-  .check li{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer;background:var(--ink-2);transition:.15s}
-  .check li:hover{border-color:rgba(134,202,40,.45)}
-  .check input{appearance:none;width:22px;height:22px;border:2px solid var(--green);border-radius:6px;flex:0 0 auto;margin-top:1px;cursor:pointer;position:relative}
-  .check input:checked{background:var(--green)}
-  .check input:checked::after{content:"✓";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--ink);font-weight:900;font-size:14px}
-  .check input:checked + span{color:var(--mut);text-decoration:line-through}
-  .check span{font-size:15px}
+  /* checklist */
+  .check{display:grid;gap:8px;margin-top:8px;counter-reset:none}
+  .check label{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--panel-line);border-radius:10px;padding:14px 18px;cursor:pointer;font-size:14.5px;transition:.15s}
+  .check label:hover{border-color:var(--green)}
+  .check input{appearance:none;width:20px;height:20px;border:1.5px solid var(--ink-soft);border-radius:5px;flex:0 0 auto;margin-top:1px;cursor:pointer;transition:.15s}
+  .check input:checked{background:var(--green);border-color:var(--green)}
+  .check input:checked+span{color:var(--ink-soft);text-decoration:line-through}
 
-  .data{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:8px}
-  .stat{border:1px solid var(--line);border-radius:14px;padding:22px 20px;background:var(--ink-2)}
-  .stat .big{font-size:clamp(34px,5vw,46px);font-weight:800;letter-spacing:-.03em;color:var(--green);line-height:1}
-  .stat .big.p{color:var(--purple)}
-  .stat p{font-size:13px;color:var(--mut);margin-top:8px}
-  .stat cite{display:block;margin-top:8px;font-size:11px;color:rgba(250,250,247,.4);font-style:normal}
-
-  .foot{text-align:center;padding-top:42px;color:rgba(250,250,247,.4);font-size:13px}
-  .foot b{color:var(--paper)}
+  .footer{text-align:center;padding-top:44px;color:var(--ink-soft);font-size:13px}
+  .footer b{color:var(--paper)}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <header class="mast">
-    <p class="kick">Globalizame · Estrategia de contenido · Instagram</p>
-    <h1>Tu negocio no se va de <em>vacaciones</em> contigo.</h1>
-    <p class="lede">Julio 2026. El mes en que la IA dejó de chatear y empezó a trabajar: atiende el teléfono, responde leads y sostiene el negocio mientras el dueño está al 200% — o, por fin, descansando.</p>
-    <div class="meta">
-      <span class="chip">Periodo: <b>29 jun → 31 jul</b></span>
+  <header class="masthead">
+    <p class="kicker">Globalizame · estrategia de Instagram</p>
+    <h1>Julio 2026.<br>Tu negocio no se va de <em>vacaciones</em> contigo.</h1>
+    <p class="lede">El mes en que la IA salió en todos los titulares (Claude Fable 5 y GPT-5.6 en tres semanas) y el dueño de PYME se preguntó si su negocio aguanta dos semanas sin él. El arco del mes: del espejo del verano a la sesión de 30 minutos.</p>
+    <div class="meta-row">
+      <span class="chip">Tema central: <b>el dueño como cuello de botella, visto en verano</b></span>
       <span class="chip">Cadencia: <b>Lun · Mié · Vie</b></span>
-      <span class="chip"><b>5</b> sprints</span>
-      <span class="chip"><b>15</b> posts</span>
-      <span class="chip"><b>3</b> lead magnets</span>
+      <span class="chip">5 sprints · <b>14 posts</b></span>
+      <span class="chip">3 lead magnets</span>
     </div>
   </header>
 
   <section>
-    <h2>El arco del <em>mes</em></h2>
-    <p class="sub">Un viaje del problema a la sesión. Empieza en el espejo del verano, pasa por la IA que ya actúa, lo prueba con casos reales, pone número al coste de seguir igual y termina en una conversación de 30 minutos.</p>
+    <h2>El <em>arco</em> del mes</h2>
+    <p class="sec-intro">Un viaje del problema visible a la decisión. Empieza en conciencia (TOFU) y termina en sesión (BOFU). La actualidad de IA es el gancho de autoridad; el verano, el marco emocional.</p>
     <div class="arc">
-      <div class="a"><div class="s">Sprint 1</div><h4>El espejo</h4><p>Si tú paras, el negocio para. Y agosto está a la vuelta.</p><span class="stage">TOFU</span></div>
-      <div class="a"><div class="s">Sprint 2</div><h4>La otra forma</h4><p>La IA ya no chatea: descuelga el teléfono y responde sola.</p><span class="stage">TOFU→MOFU</span></div>
-      <div class="a"><div class="s">Sprint 3</div><h4>Prueba real</h4><p>Casos con cifras: 2.400€, 25 h, -40% de ausencias.</p><span class="stage">MOFU</span></div>
-      <div class="a"><div class="s">Sprint 4</div><h4>El coste</h4><p>Lo que pierdes cada mes con el teléfono en el buzón.</p><span class="stage">MOFU→BOFU</span></div>
-      <div class="a"><div class="s">Sprint 5</div><h4>La decisión</h4><p>Deja el negocio montado antes de agosto. 30 min.</p><span class="stage">BOFU</span></div>
+      <div class="a"><div class="st">Sem 1 · TOFU</div><h4>El espejo</h4><p>Tu negocio para cuando tú paras. Y el verano llega.</p></div>
+      <div class="a"><div class="st">Sem 2 · TOFU→MOFU</div><h4>La otra forma</h4><p>Mientras dudas, la IA avanza. Existe otra manera de llevarlo.</p></div>
+      <div class="a"><div class="st">Sem 3 · MOFU</div><h4>Prueba real</h4><p>Casos por sector, con cifras en euros y horas.</p></div>
+      <div class="a"><div class="st">Sem 4 · MOFU→BOFU</div><h4>La decisión</h4><p>Lo que cuesta seguir siendo el cuello de botella.</p></div>
+      <div class="a"><div class="st">Sem 5 · BOFU</div><h4>La sesión</h4><p>30 minutos. Sin compromiso. Antes de cerrar por agosto.</p></div>
     </div>
   </section>
 
   <section>
-    <h2>El dato <em>estrella</em> del mes</h2>
-    <p class="sub">Todo el mes cuelga de aquí: el teléfono que nadie descuelga es el agujero más caro y más invisible de una pyme.</p>
-    <div class="data">
-      <div class="stat"><div class="big">65%</div><p>de las llamadas a pymes mueren en el buzón de voz</p><cite>Ringover · 2026</cite></div>
-      <div class="stat"><div class="big">150€</div><p>cuesta de media cada llamada perdida</p><cite>Gestión de Llamadas · 2026</cite></div>
-      <div class="stat"><div class="big p">8×</div><p>más conversión si respondes el lead en menos de 1 min</p><cite>Aurora Inbox · 2026</cite></div>
-      <div class="stat"><div class="big">29€</div><p>al mes cuesta un agente de voz que descuelga 24/7</p><cite>OptimusCall · 2026</cite></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Los <em>sprints</em>, semana a semana</h2>
-    <p class="sub">Lunes abre · Miércoles profundiza · Viernes cierra o lanza. Un lead magnet por sprint como máximo. Los tres cierres (Recurso / Conversación / Autoridad) se mezclan cada semana, nunca el mismo tres días seguidos.</p>
+    <h2>Los <em>sprints</em>, día a día</h2>
+    <p class="sec-intro">Cada pieza llega con su munición ya elegida: qué novedad de IA nombra y qué dato/caso usa. El productor no adivina.</p>
 
     <!-- SPRINT 1 -->
     <div class="sprint">
-      <div class="top"><span class="num">Sprint 1 · El espejo</span><span class="dates">Lun 29 jun · Mié 1 jul · Vie 3 jul</span></div>
-      <h3>Si tú te vas, ¿quién atiende?</h3>
-      <p class="pillar">Pilar 1 — EL ESPEJO · TOFU</p>
+      <div class="sprint-head"><span class="num">Sprint 1 · 1–3 jul</span><h3>El espejo del verano</h3><span class="stage">TOFU</span></div>
+      <p class="sprint-sub">Semana parcial de arranque. Pone el dedo en la llaga estacional: el negocio que se apaga cuando el dueño cierra la persiana. Sin recurso esta semana — cierres de autoridad y conversación.</p>
       <div class="posts">
-        <div class="post"><div class="day">Lun<span>29 jun</span></div><div><div class="ttl">El negocio que se va de vacaciones contigo no es un negocio, es una correa</div><div class="tags"><span class="tag tofu">TOFU</span><span class="tag">Carrusel</span><span class="tag cta">Autoridad</span></div></div></div>
-        <div class="post"><div class="day">Mié<span>1 jul</span></div><div><div class="ttl">2 de cada 3 llamadas a tu negocio se quedan sin que nadie las coja</div><div class="tags"><span class="tag tofu">TOFU</span><span class="tag">Carrusel</span><span class="tag cta">Conversación</span></div></div></div>
-        <div class="post"><div class="day">Vie<span>3 jul</span></div><div><div class="ttl">Guía: deja tu negocio funcionando antes de agosto · <span class="kw">AGOSTO</span></div><div class="tags"><span class="tag tofu">TOFU</span><span class="tag lm">Lead Magnet</span><span class="tag cta">Recurso · AGOSTO</span></div></div></div>
+        <div class="post">
+          <div class="when"><span class="day">Miércoles</span><span class="date">1 jul</span></div>
+          <div class="body">
+            <h4>Si tú te vas dos semanas, ¿el negocio <span class="hlp">también</span>?</h4>
+            <div class="tags"><span class="tag t-tofu">TOFU</span><span class="tag t-fmt">Carrusel</span><span class="tag t-aut">CTA Autoridad</span></div>
+            <p class="ammo"><b>Munición:</b> el dueño como cuello de botella, en clave verano. Sin dato numérico protagonista — espejo puro. Remate de autoridad, sin keyword. Abre el mes.</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="when"><span class="day">Viernes</span><span class="date">3 jul</span></div>
+          <div class="body">
+            <h4>El 78% compra al <span class="hl">primero</span> que responde. Y tú estás en la playa.</h4>
+            <div class="tags"><span class="tag t-tofu">TOFU</span><span class="tag t-fmt">Carrusel</span><span class="tag t-con">CTA Conversación</span></div>
+            <p class="ammo"><b>Munición:</b> 47h de respuesta media sin sistema; 78% compra al primero que contesta (Levvo). En verano la brecha se dispara. CTA conversación: "Comenta VERANO y te cuento qué se te escapa mientras no miras el móvil".</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- SPRINT 2 -->
     <div class="sprint">
-      <div class="top"><span class="num">Sprint 2 · La otra forma</span><span class="dates">Lun 6 · Mié 8 · Vie 10 jul</span></div>
-      <h3>La IA ya no chatea. Trabaja.</h3>
-      <p class="pillar">Pilar 2 — LA OTRA FORMA · TOFU→MOFU</p>
+      <div class="sprint-head"><span class="num">Sprint 2 · 6–10 jul</span><h3>La otra forma</h3><span class="stage">TOFU → MOFU</span></div>
+      <p class="sprint-sub">Existe otra manera de llevar el negocio. La actualidad de IA entra aquí como autoridad: en tres semanas salieron dos modelos. La pieza del viernes lanza el primer lead magnet.</p>
       <div class="posts">
-        <div class="post"><div class="day">Lun<span>6 jul</span></div><div><div class="ttl">Lo que cambió este verano: la IA pasó de responderte a hacer el trabajo por ti</div><div class="tags"><span class="tag tofu">TOFU→MOFU</span><span class="tag">Carrusel</span><span class="tag cta">Autoridad</span></div></div></div>
-        <div class="post"><div class="day">Mié<span>8 jul</span></div><div><div class="ttl">Un sistema que descuelga el teléfono por 29€ al mes, sin cambiar tu número</div><div class="tags"><span class="tag mofu">MOFU</span><span class="tag">Carrusel</span><span class="tag cta">Conversación</span></div></div></div>
-        <div class="post"><div class="day">Vie<span>10 jul</span></div><div><div class="ttl">Calculadora: cuánto te cuesta el teléfono que nadie coge · <span class="kw">TELÉFONO</span></div><div class="tags"><span class="tag mofu">MOFU</span><span class="tag lm">Lead Magnet</span><span class="tag cta">Recurso · TELÉFONO</span></div></div></div>
+        <div class="post">
+          <div class="when"><span class="day">Lunes</span><span class="date">6 jul</span></div>
+          <div class="body">
+            <h4>En tres semanas la IA dio dos saltos. Tú sigues contestando a <span class="hlp">mano</span>.</h4>
+            <div class="tags"><span class="tag t-tofu">TOFU</span><span class="tag t-fmt">Carrusel</span><span class="tag t-aut">CTA Autoridad</span></div>
+            <p class="ammo"><b>Munición:</b> Claude Fable 5 (9 jun) y GPT-5.6 (26 jun). Gancho de actualidad → "la herramienta ya está; lo que falta es montarla en tu negocio". Aterriza: lo que avanza no es la moda, es lo que tu competencia puede hacer.</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="when"><span class="day">Miércoles</span><span class="date">8 jul</span></div>
+          <div class="body">
+            <h4>Dueño que apaga fuegos vs. dueño que monta el <span class="hl">sistema</span>.</h4>
+            <div class="tags"><span class="tag t-tofu">TOFU→MOFU</span><span class="tag t-fmt">Carrusel</span><span class="tag t-con">CTA Conversación</span></div>
+            <p class="ammo"><b>Munición:</b> el reencuadre operador→arquitecto. Apoyo: 5 procesos por &lt;100€/mes (ROI 340%). No es trabajar más, es trabajar distinto. CTA conversación.</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="when"><span class="day">Viernes</span><span class="date">10 jul</span></div>
+          <div class="body">
+            <h4>¿Tu negocio sobrevive a tus <span class="hl">vacaciones</span>? Hazle la prueba.</h4>
+            <div class="tags"><span class="tag t-mofu">MOFU</span><span class="tag t-fmt">Lead Magnet</span><span class="tag t-rec">CTA Recurso · VACACIONES</span></div>
+            <p class="ammo"><b>Munición:</b> test de dependencia del dueño. Lanza el lead magnet del sprint. CTA recurso: "Comenta VACACIONES y te mando el test".</p>
+            <div class="lm"><b>Lead magnet → VACACIONES.</b> Test "¿Tu negocio sobrevive a tus vacaciones?": 8-10 preguntas que miden cuánto depende todo de ti, con semáforo de riesgo y los 3 primeros arreglos.</div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- SPRINT 3 -->
     <div class="sprint">
-      <div class="top"><span class="num">Sprint 3 · Prueba real</span><span class="dates">Lun 13 · Mié 15 · Vie 17 jul</span></div>
-      <h3>Negocios como el tuyo, con cifras.</h3>
-      <p class="pillar">Pilar 3 — PRUEBA REAL · MOFU</p>
+      <div class="sprint-head"><span class="num">Sprint 3 · 13–17 jul</span><h3>Prueba real</h3><span class="stage">MOFU</span></div>
+      <p class="sprint-sub">Así funciona, con casos por sector y cifras verificables. La semana de la credibilidad. El viernes lanza el segundo lead magnet (el del dinero nocturno).</p>
       <div class="posts">
-        <div class="post"><div class="day">Lun<span>13 jul</span></div><div><div class="ttl">Un restaurante recuperó 2.400€ al mes solo con confirmar reservas solo</div><div class="tags"><span class="tag mofu">MOFU</span><span class="tag">Carrusel</span><span class="tag cta">Autoridad</span></div></div></div>
-        <div class="post"><div class="day">Mié<span>15 jul</span></div><div><div class="ttl">Un despacho de 10 personas se ahorró 25 horas a la semana. Eso son 5.000€</div><div class="tags"><span class="tag mofu">MOFU</span><span class="tag">Carrusel</span><span class="tag cta">Conversación</span></div></div></div>
-        <div class="post"><div class="day">Vie<span>17 jul</span></div><div><div class="ttl">Responder en 90 segundos en vez de 18 minutos: por qué eso vende 8 veces más</div><div class="tags"><span class="tag mofu">MOFU</span><span class="tag">Carrusel</span><span class="tag cta">Autoridad</span></div></div></div>
+        <div class="post">
+          <div class="when"><span class="day">Lunes</span><span class="date">13 jul</span></div>
+          <div class="body">
+            <h4>Una asesoría pasó de <span class="hl">80 horas</span> a 15 en facturas. Mismo equipo.</h4>
+            <div class="tags"><span class="tag t-mofu">MOFU</span><span class="tag t-fmt">Carrusel</span><span class="tag t-aut">CTA Autoridad</span></div>
+            <p class="ammo"><b>Munición:</b> caso Madrid (600 facturas: 80h→15h; trimestrales 300h→60h). IA nombrada y aterrizada. Sector destacado: gestoría. Cierre autoridad: "guárdalo".</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="when"><span class="day">Miércoles</span><span class="date">15 jul</span></div>
+          <div class="body">
+            <h4>El 45% pide mesa cuando ya nadie coge el <span class="hlp">teléfono</span>.</h4>
+            <div class="tags"><span class="tag t-mofu">MOFU</span><span class="tag t-fmt">Carrusel</span><span class="tag t-con">CTA Conversación</span></div>
+            <p class="ammo"><b>Munición:</b> 35-45% de reservas fuera de horario; no-shows -50/-70% con IA (Bookline/Upliora). Sector: hostelería, plena temporada de verano. CTA conversación.</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="when"><span class="day">Viernes</span><span class="date">17 jul</span></div>
+          <div class="body">
+            <h4>Lo que pierdes cada <span class="hl">noche</span> que nadie contesta.</h4>
+            <div class="tags"><span class="tag t-mofu">MOFU</span><span class="tag t-fmt">Lead Magnet</span><span class="tag t-rec">CTA Recurso · NOCHE</span></div>
+            <p class="ammo"><b>Munición:</b> calculadora del dinero fuera de horario, anclada al 35-45% y a las 47h de respuesta. CTA recurso: "Comenta NOCHE y te mando la radiografía".</p>
+            <div class="lm"><b>Lead magnet → NOCHE.</b> Radiografía "Lo que se te escapa fuera de horario": calculadora simple para ver en euros lo que entra cuando no hay nadie, por sector, con el arreglo de cada caso.</div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- SPRINT 4 -->
     <div class="sprint">
-      <div class="top"><span class="num">Sprint 4 · El coste</span><span class="dates">Lun 20 · Mié 22 · Vie 24 jul</span></div>
-      <h3>Lo que cuesta no hacer nada.</h3>
-      <p class="pillar">Pilar 4 — EL COSTE DE NO HACER NADA · MOFU→BOFU</p>
+      <div class="sprint-head"><span class="num">Sprint 4 · 20–24 jul</span><h3>La decisión</h3><span class="stage">MOFU → BOFU</span></div>
+      <p class="sprint-sub">El coste de no hacer nada, hecho visible. La competencia ya se mueve; quedarse quieto también cuesta. El viernes lanza el tercer lead magnet (el mapa de procesos).</p>
       <div class="posts">
-        <div class="post"><div class="day">Lun<span>20 jul</span></div><div><div class="ttl">Cada mes sin sistema pierdes entre 2.500€ y 15.000€ en llamadas que nadie coge</div><div class="tags"><span class="tag bofu">MOFU→BOFU</span><span class="tag">Carrusel</span><span class="tag cta">Autoridad</span></div></div></div>
-        <div class="post"><div class="day">Mié<span>22 jul</span></div><div><div class="ttl">El 55% de las pymes ya compite con alguien que usa IA. ¿De qué lado estás?</div><div class="tags"><span class="tag bofu">MOFU→BOFU</span><span class="tag">Carrusel</span><span class="tag cta">Conversación</span></div></div></div>
-        <div class="post"><div class="day">Vie<span>24 jul</span></div><div><div class="ttl">7 tareas que la IA ya hace sola este verano · <span class="kw">VERANO</span></div><div class="tags"><span class="tag bofu">MOFU→BOFU</span><span class="tag lm">Lead Magnet</span><span class="tag cta">Recurso · VERANO</span></div></div></div>
+        <div class="post">
+          <div class="when"><span class="day">Lunes</span><span class="date">20 jul</span></div>
+          <div class="body">
+            <h4>Más de la mitad ya compite con alguien que usa <span class="hlp">IA</span>.</h4>
+            <div class="tags"><span class="tag t-mofu">MOFU→BOFU</span><span class="tag t-fmt">Carrusel</span><span class="tag t-aut">CTA Autoridad</span></div>
+            <p class="ammo"><b>Munición:</b> 55% de pymes ya compite con un rival que usa IA; 35% invertirá en 2026 (Alianza Empresarial / IONOS). El FOMO real, sin asustar. Cierre autoridad.</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="when"><span class="day">Miércoles</span><span class="date">22 jul</span></div>
+          <div class="body">
+            <h4>El error: contratar a alguien para tapar un problema de <span class="hl">sistema</span>.</h4>
+            <div class="tags"><span class="tag t-mofu">MOFU→BOFU</span><span class="tag t-fmt">Carrusel</span><span class="tag t-con">CTA Conversación</span></div>
+            <p class="ammo"><b>Munición:</b> hook "error común". Apoyo: caso reparto (1,5h→10 min de rutas) y taller (+12h/semana). No necesitas más gente, necesitas mejores procesos. CTA conversación.</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="when"><span class="day">Viernes</span><span class="date">24 jul</span></div>
+          <div class="body">
+            <h4>3 procesos que la IA ya hace por menos de <span class="hl">100€</span> al mes.</h4>
+            <div class="tags"><span class="tag t-bofu">BOFU</span><span class="tag t-fmt">Lead Magnet</span><span class="tag t-rec">CTA Recurso · MAPA</span></div>
+            <p class="ammo"><b>Munición:</b> ROI 340% primer año; 5 procesos por &lt;100€/mes; Kit Digital 6.000-12.000€. CTA recurso: "Comenta MAPA y te mando los 3 procesos por sector".</p>
+            <div class="lm"><b>Lead magnet → MAPA.</b> Mapa "3 procesos que la IA ya hace por &lt;100€/mes": por sector, con el caso real, el ahorro en horas/euros y la mención al Kit Digital como financiación.</div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- SPRINT 5 -->
     <div class="sprint">
-      <div class="top"><span class="num">Sprint 5 · La decisión</span><span class="dates">Lun 27 · Mié 29 · Vie 31 jul</span></div>
-      <h3>Antes de que llegue agosto.</h3>
-      <p class="pillar">Pilar 5 — MARIO Y SU PROCESO · BOFU</p>
+      <div class="sprint-head"><span class="num">Sprint 5 · 27–31 jul</span><h3>La sesión</h3><span class="stage">BOFU</span></div>
+      <p class="sprint-sub">Cierre del mes, justo antes de agosto. Confianza personal en Mario y la invitación directa: 30 minutos sin compromiso. Sin lead magnet — el recurso ahora es la conversación con Mario.</p>
       <div class="posts">
-        <div class="post"><div class="day">Lun<span>27 jul</span></div><div><div class="ttl">Para quién es montar esto antes de agosto, y para quién no</div><div class="tags"><span class="tag bofu">BOFU</span><span class="tag">Carrusel</span><span class="tag cta">Autoridad</span></div></div></div>
-        <div class="post"><div class="day">Mié<span>29 jul</span></div><div><div class="ttl">Qué pasa en los primeros 30 días trabajando conmigo</div><div class="tags"><span class="tag bofu">BOFU</span><span class="tag">Carrusel</span><span class="tag cta">Conversación</span></div></div></div>
-        <div class="post"><div class="day">Vie<span>31 jul</span></div><div><div class="ttl">30 minutos para ver qué se puede dejar montado antes de que pares. Sin compromiso</div><div class="tags"><span class="tag bofu">BOFU</span><span class="tag">Carrusel</span><span class="tag cta">Conversación</span></div></div></div>
+        <div class="post">
+          <div class="when"><span class="day">Lunes</span><span class="date">27 jul</span></div>
+          <div class="body">
+            <h4>Para quién es esto. Y para quién <span class="hlp">no</span>.</h4>
+            <div class="tags"><span class="tag t-bofu">BOFU</span><span class="tag t-fmt">Carrusel</span><span class="tag t-aut">CTA Autoridad</span></div>
+            <p class="ammo"><b>Munición:</b> filtro honesto (pilar Mario y su proceso). Sin dato — confianza personal. "No vendo humo. Si no encaja, te lo digo". Cierre autoridad.</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="when"><span class="day">Miércoles</span><span class="date">29 jul</span></div>
+          <div class="body">
+            <h4>Qué pasa en los primeros <span class="hl">30 días</span> conmigo.</h4>
+            <div class="tags"><span class="tag t-bofu">BOFU</span><span class="tag t-fmt">Carrusel</span><span class="tag t-con">CTA Conversación</span></div>
+            <p class="ammo"><b>Munición:</b> el proceso de Mario, paso a paso. Apoyo: 60-80% de consultas resueltas sin humano (agentes IA). CTA conversación: "¿Qué automatizarías tú primero? Cuéntame".</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="when"><span class="day">Viernes</span><span class="date">31 jul</span></div>
+          <div class="body">
+            <h4>Antes de cerrar por agosto, hablemos <span class="hl">30 minutos</span>.</h4>
+            <div class="tags"><span class="tag t-bofu">BOFU</span><span class="tag t-fmt">Carrusel</span><span class="tag t-con">CTA Conversación · sesión</span></div>
+            <p class="ammo"><b>Munición:</b> la invitación directa a la sesión de 30 min. Timing: ajuste de cuota de autónomo / antesala del verano. CTA: "Comenta SESIÓN y te paso el Calendly. 30 min, sin compromiso".</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section>
     <h2>Los <em>lead magnets</em> del mes</h2>
-    <p class="sub">Uno por sprint, solo cuando hay un recurso real que entregar. Cada uno se diseña como un kit con título, palabra clave y 5-6 entregables.</p>
-    <div class="lmgrid">
-      <div class="lmc"><div class="lk">AGOSTO</div><h4>Deja el negocio en piloto automático</h4><p>Checklist de qué dejar montado para que el negocio no se pare cuando tú pares: teléfono, leads, citas, facturas, avisos.</p><div class="when">Lanza · Vie 3 jul</div></div>
-      <div class="lmc"><div class="lk">TELÉFONO</div><h4>La calculadora del agujero del teléfono</h4><p>Cuánto pierdes al mes en euros por llamadas y leads sin atender, con el cálculo hecho sobre tus propios números.</p><div class="when">Lanza · Vie 10 jul</div></div>
-      <div class="lmc"><div class="lk">VERANO</div><h4>7 tareas que la IA ya hace sola</h4><p>Las tareas concretas que un agente cubre mientras descansas, con qué herramienta las hace y a qué coste real al mes.</p><div class="when">Lanza · Vie 24 jul</div></div>
+    <p class="sec-intro">Máximo uno por sprint, solo en piezas con recurso real. Cada uno pensado ya como kit (título · keyword · 5-6 entregables). Los sprints 1 y 5 cierran sin recurso (autoridad / conversación con Mario).</p>
+    <div class="lms">
+      <div class="lmcard">
+        <span class="kw">VACACIONES</span>
+        <h4>Test: ¿Tu negocio sobrevive a tus vacaciones?</h4>
+        <p>Diagnóstico de dependencia del dueño. 8-10 preguntas, semáforo de riesgo, los 3 primeros arreglos. Lanza el viernes 10 jul.</p>
+      </div>
+      <div class="lmcard">
+        <span class="kw">NOCHE</span>
+        <h4>Radiografía: lo que se te escapa fuera de horario</h4>
+        <p>Calculadora del dinero que entra cuando no contesta nadie, por sector. Anclada al 35-45% de reservas/leads nocturnos. Lanza el viernes 17 jul.</p>
+      </div>
+      <div class="lmcard">
+        <span class="kw">MAPA</span>
+        <h4>3 procesos que la IA ya hace por &lt;100€/mes</h4>
+        <p>Por sector, con el caso real, el ahorro en horas/euros, el ROI 340% y el Kit Digital como financiación. Lanza el viernes 24 jul.</p>
+      </div>
     </div>
   </section>
 
   <section>
     <h2>Checklist de <em>producción</em></h2>
-    <p class="sub">Marca cada pieza a medida que sale del horno. Cada carrusel pasa por /productor; cada lead magnet por /lead-magnet.</p>
-    <ul class="check">
-      <li><input type="checkbox"><span>Sprint 1 — 3 carruseles + lead magnet AGOSTO</span></li>
-      <li><input type="checkbox"><span>Sprint 2 — 3 carruseles + lead magnet TELÉFONO</span></li>
-      <li><input type="checkbox"><span>Sprint 3 — 3 carruseles (casos reales con cifras)</span></li>
-      <li><input type="checkbox"><span>Sprint 4 — 3 carruseles + lead magnet VERANO</span></li>
-      <li><input type="checkbox"><span>Sprint 5 — 3 carruseles (cierre + sesión 30 min)</span></li>
-      <li><input type="checkbox"><span>Todo el copy visible pasado por humanizer</span></li>
-      <li><input type="checkbox"><span>Ningún titular de imagen menciona jerga vacía; cada dato con fuente</span></li>
-    </ul>
+    <p class="sec-intro">Marca cada pieza al cerrarla. 14 carruseles, 3 lead magnets.</p>
+    <div class="check">
+      <label><input type="checkbox"><span>1 jul · Si tú te vas dos semanas, ¿el negocio también? (TOFU · autoridad)</span></label>
+      <label><input type="checkbox"><span>3 jul · El 78% compra al primero que responde (TOFU · conversación · VERANO)</span></label>
+      <label><input type="checkbox"><span>6 jul · En tres semanas la IA dio dos saltos (TOFU · autoridad)</span></label>
+      <label><input type="checkbox"><span>8 jul · Dueño que apaga fuegos vs. arquitecto (TOFU→MOFU · conversación)</span></label>
+      <label><input type="checkbox"><span>10 jul · Test ¿sobrevive a tus vacaciones? (MOFU · LEAD MAGNET · VACACIONES)</span></label>
+      <label><input type="checkbox"><span>13 jul · Asesoría: de 80h a 15h en facturas (MOFU · autoridad)</span></label>
+      <label><input type="checkbox"><span>15 jul · El 45% pide mesa fuera de horario (MOFU · conversación)</span></label>
+      <label><input type="checkbox"><span>17 jul · Lo que pierdes cada noche (MOFU · LEAD MAGNET · NOCHE)</span></label>
+      <label><input type="checkbox"><span>20 jul · Más de la mitad ya compite con IA (MOFU→BOFU · autoridad)</span></label>
+      <label><input type="checkbox"><span>22 jul · El error de contratar para tapar un problema de sistema (MOFU→BOFU · conversación)</span></label>
+      <label><input type="checkbox"><span>24 jul · 3 procesos por menos de 100€/mes (BOFU · LEAD MAGNET · MAPA)</span></label>
+      <label><input type="checkbox"><span>27 jul · Para quién es esto y para quién no (BOFU · autoridad)</span></label>
+      <label><input type="checkbox"><span>29 jul · Qué pasa en los primeros 30 días (BOFU · conversación)</span></label>
+      <label><input type="checkbox"><span>31 jul · Hablemos 30 minutos antes de agosto (BOFU · sesión)</span></label>
+    </div>
   </section>
 
-  <p class="foot"><b>Globalizame</b> · Estrategia de Instagram · Julio 2026 · Tema central: <i>Tu negocio no se va de vacaciones contigo</i> · Generada por <b>/investigador</b></p>
+  <p class="footer"><b>Globalizame</b> · Estrategia de contenido · Julio 2026 · generada por <b>/investigador</b> · base en <code>investigacion/base_2026-07.md</code></p>
 
 </div>
 </body>

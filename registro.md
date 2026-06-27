@@ -4,14 +4,14 @@
 
 ```
 Fondo: negro carbón #232323 (FIJO, no rota)
-Último acento usado: verde #86CA28 (1 jul) — alterna; el próximo carrusel va en morado #700962
+Último acento usado: — (alterna entre verde #86CA28 y morado #700962)
 
-Último tipo de hook: Estadística (1 jul) → próximo: Caso real (2)
-Próximo: Caso real
+Último tipo de hook: —
+Próximo: —
 
-Último mes con estrategia: julio 2026 — "Tu negocio no se va de vacaciones contigo"
-Último sprint producido: Sprint 1 (El espejo) — 2 carruseles (29 jun, 1 jul); falta lead magnet AGOSTO (Vie 3 jul, vía /lead-magnet)
-Último tipo de carrusel: Editorial de dato (1 jul)
+Último mes con estrategia: julio 2026
+Último sprint producido: —
+Último tipo de carrusel: —
 Último post publicado: —
 ```
 
@@ -40,23 +40,20 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 | Fecha | Sprint | Día | Etapa | Formato | Acento | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| 29 jun | S1 El espejo | Lun (1) | TOFU · Autoridad | Provocación/manifiesto | Morado #700962 | Contradicción ("es una correa") | — |
-| 1 jul | S1 El espejo | Mié (2) | TOFU · Conversación | Editorial de dato | Verde #86CA28 | Estadística ("2 de cada 3") | — |
+| — | — | — | — | — | — | — | — |
 
 ---
 
 ## Meses procesados
 
-### Julio 2026 — "Tu negocio no se va de vacaciones contigo"
-- **Tema central:** el verano como espejo de la dependencia del dueño + la IA que ya *actúa* (no solo chatea).
-- **Estructura:** 5 sprints · 15 posts (29 jun → 31 jul) · 3 lead magnets (AGOSTO, TELÉFONO, VERANO).
-- **Datos clave usados:**
-  1. 65% de llamadas a pymes mueren en el buzón de voz (Ringover, 2026).
-  2. Llamada perdida = 150€; pyme pierde 2.500–15.000€/mes (Gestión de Llamadas, 2026).
-  3. Respuesta a lead en <1 min convierte 8× más; con IA de 18 min a 90 seg (Aurora Inbox, 2026).
-- **Casos:** restaurante +2.400€/mes · despacho 25 h/sem ≈ 5.000€ · clínica dental -40% ausencias.
-- **Novedades IA citadas:** GPT-5.6 (agentes), Bidi 1 (voz), Claude for Small Business, Gemini Enterprise sin código.
-- **Estado:** Sprint 1 producido — carruseles 29 jun (correa, morado, contradicción) y 1 jul (2 de cada 3 llamadas, verde, estadística). Pendiente: lead magnet AGOSTO (Vie 3 jul, vía `/lead-magnet`), luego Sprint 2.
+### Julio 2026
+- **Tema central:** Tu negocio no se va de vacaciones contigo (el dueño como cuello de botella, visto en verano).
+- **Arco:** El espejo → La otra forma → Prueba real → La decisión → La sesión. 5 sprints, 14 posts, 3 lead magnets (VACACIONES, NOCHE, MAPA).
+- **Datos clave usados (máx. 3):**
+  1. Claude Fable 5 (9 jun 2026) — migración 50M líneas en 1 día vs. +2 meses [Blogthinkbig/Xataka].
+  2. 47h de respuesta media a leads sin IA; 78% compra al primero que responde [Levvo].
+  3. Asesoría Madrid: 600 facturas de 80h → 15h con IA [xpertix].
+- **Estado:** Estrategia generada.
 
 ---
 

@@ -119,14 +119,45 @@ Evitar:
 
 ## Recursos gráficos
 
-Cada slide lleva **al menos un elemento visual** además del texto (nunca una slide de solo tipografía). Ese elemento es siempre **editorial / gráfico / ilustrado**, no fotográfico:
+Cada slide lleva **al menos un elemento visual** además del texto (nunca una slide de solo tipografía). Ese elemento es siempre **editorial / gráfico / ilustrado**, no fotográfico. El repertorio y cómo elegir el concepto están en §5.6.
 
-* Data visualization.
-* Grandes números.
-* Barras.
-* Iconos lineales.
-* Formas geométricas planas.
-* Representaciones gráficas estilizadas de un objeto (un calendario, un teléfono, un reloj) — dibujadas en clave editorial plana, no como foto real.
+---
+
+# 5.6 · DIRECCIÓN DE ARTE — eres el director creativo (no un ilustrador literal)
+
+Antes de describir CADA slide, decides su **concepto visual** como un director de arte premium. Esta es la diferencia entre un carrusel que petamos y uno de aficionado.
+
+## El principio (lo más importante)
+
+**El visual representa la IDEA o la EMOCIÓN del slide, nunca la palabra del titular.**
+
+Si el titular dice "es una correa", **NO se dibuja una correa**. Una correa no es un slide. Buscas la imagen que haga *sentir* la atadura / la dependencia de un vistazo — o lo cuentas con tipografía, con un dato gigante, con una escena, con un personaje. Ilustrar la palabra literal del titular es de aficionado y mata la pieza.
+
+> Test rápido: si tu concepto es lo PRIMERO que se te ocurre al leer el titular, o es la propia palabra dibujada, deséchalo y busca otro. El bueno casi nunca es el obvio.
+
+## Repertorio de conceptos (elige UNO por slide, el que mejor cuente la idea)
+
+Atrevido pero premium. Mezcla a lo largo del carrusel — la gracia está en la variedad:
+
+* **Tipografía como héroe** — la palabra/frase ES el diseño: escala brutal, una palabra en acento, kerning, una cifra que llena el frame. Muchos de los mejores slides editoriales son solo tipo bien resuelta.
+* **Gran número / data-viz** — una cifra gigante, una barra, una comparación, un antes/después numérico. Estilo Bloomberg.
+* **Objeto icónico bien usado** — un objeto que evoca la idea (un calendario para el verano, un teléfono para las llamadas), en clave editorial plana. Pero solo si NO es la palabra literal del titular.
+* **Escena / situación** — un momento que cuenta la historia (la mesa vacía del dueño, el negocio a oscuras). Editorial, no foto real.
+* **Personaje / retrato** — el perfil típico del lector, una figura, una silueta.
+* **Famoso / cultura pop / meme reconocible** — usado como gancho con criterio (un personaje, una referencia que el avatar pilla al instante). Da personalidad y para el scroll. Sin pasarse de cuñado.
+* **Metáfora inesperada** — la imagen lateral que nadie espera y que ilumina la idea mejor que la obvia.
+* **Composición pura** — contraste, vacío, escala, repetición. A veces el concepto es la propia disposición.
+
+## Cómo decides (mini-proceso, por cada slide)
+
+1. ¿Cuál es la UNA idea o emoción de este slide?
+2. ¿Qué concepto la cuenta en menos de 1 segundo, sin leer el texto?
+3. ¿Es distinto del slide anterior? (variedad)
+4. ¿Es lo obvio/literal del titular? → entonces NO; busca otro.
+
+## Variedad
+
+Dos slides seguidos no usan el mismo recurso. Un buen carrusel mezcla: p.ej. portada tipográfica → intermedio data-viz → intermedio escena → intermedio objeto → cierre composición. Ni todos iguales (aburre), ni un cajón de sastre sin hilo (marea). El hilo lo da la marca (§5.5) y el tema; la variedad la das tú.
 
 ---
 
@@ -215,12 +246,30 @@ Nunca deben eliminarse, recolocarse ni modificarse durante todo el carrusel.
 
 ---
 
+# 6.5 · ESTRUCTURA VISUAL POR TIPO DE SLIDE
+
+La marca (§5.5) es idéntica en todas. Lo que cambia es el ROL visual de cada tipo. Una portada y un intermedio NO se componen igual.
+
+* **PORTADA (slide 1):** el gancho visual puro. El concepto, en GRANDE, con el máximo impacto y el mínimo texto. Tiene que parar el scroll en seco. El headline domina; deja respirar. "Desliza →" abajo-derecha. NO resuelve nada todavía.
+* **INTERMEDIOS:** cada uno desarrolla UNA idea con SU PROPIO concepto visual (§5.6) — variados entre sí, nunca clones. Aquí viven los datos, la novedad de IA y el caso real de la base. Una idea = un slide.
+* **PENÚLTIMO (síntesis):** el remate del argumento. Antes-después, comparación, la cifra que lo resume, el contraste que cierra la lógica.
+* **CIERRE (último):** autoridad serena. Un remate visual fuerte y limpio, muchísimo aire. La marca puede respirar más aquí. **Sin CTA en la imagen** (el CTA va solo en el copy del post).
+
+---
+
 # 7 · PROMPTS DE IMAGEN · ESQUELETO OBLIGATORIO
 
 ```text
+[DIRECCIÓN DE ARTE]
+
+Concepto visual de esta slide (§5.6): qué representa y por qué cuenta la idea de un vistazo
+— tipografía-héroe / gran número-data-viz / objeto icónico / escena / personaje / famoso-meme /
+metáfora inesperada / composición pura. NO es la palabra literal del titular, y es distinto del
+slide anterior.
+
 [ESCENA]
 
-Composición general de la slide.
+Composición general de la slide, derivada del concepto de arriba.
 
 [ELEMENTOS]
 
@@ -350,6 +399,8 @@ Muchísimo aire.
 
 ### Prompt Slide 1
 
+[DIRECCIÓN DE ARTE]
+
 [ESCENA]
 
 [ELEMENTOS]
@@ -371,6 +422,9 @@ Nunca hacer lo siguiente:
 
 * CTA antes de la última slide.
 * Resolver el problema en la portada.
+* **Ilustrar literalmente la palabra o metáfora del titular** (dibujar una "correa" porque el título dice correa; un objeto = la palabra). El visual representa la IDEA, no la palabra. Una metáfora del copy no es un slide. Ver §5.6.
+* **Repetir el mismo recurso visual en slides seguidos** o que todo el carrusel sea del mismo tipo (todo data-viz, todo objeto). Varía (§5.6).
+* Dejar la portada, los intermedios y el cierre con la misma estructura visual (§6.5).
 * Más de 20 palabras por slide.
 * Ratio distinto de 3:4.
 * Texto pegado a los bordes.
