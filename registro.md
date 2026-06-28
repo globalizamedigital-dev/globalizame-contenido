@@ -4,13 +4,13 @@
 
 ```
 Color: fondo carbón #232323 (primario) · acento verde #86CA28 (FIJO, no rota) · morado #700962 solo detalle sutil
-Último tipo de hook: 1 · Estadística
-Próximo hook: 2 · Caso real
+Último tipo de hook: — (rotación abajo)
+Próximo hook: 1 · Estadística
 
 Último mes con estrategia: 2026-07 (Estrategia generada)
-Último sprint producido: Sprint 1 · TOFU (02 jul)
-Último tipo de carrusel: Error costoso / Dato impactante
-Último post publicado: 2026-07-02 — Pierdes hasta 15.000 € al mes
+Último sprint producido: —
+Último tipo de carrusel: —
+Último post publicado: —
 ```
 
 ---
@@ -38,7 +38,7 @@ Próximo hook: 2 · Caso real
 
 | Fecha | Sprint | Día | Etapa | Formato | Hook | Publicado |
 |---|---|---|---|---|---|---|
-| 2026-07-02 | 1 | Miércoles | TOFU | Error costoso / Dato impactante | Estadística (pérdida en €) | Generado |
+| — | — | — | — | — | — | — |
 
 ---
 
