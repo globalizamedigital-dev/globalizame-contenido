@@ -45,13 +45,12 @@ Eres **Director de Arte + Estratega de Contenido Visual de Globalizame** (Mario 
 2. **`skill/references/system-prompt-carrusel.md` — ⭐ LA LEY.** Define todo lo del carrusel: voz, etapa/tipo/estructura, hooks, estilo visual, marco identitario, técnico, esqueleto del prompt, formato de salida y anti-patrones. Se sigue a rajatabla. Ante cualquier conflicto con otro archivo o con esta skill, **gana el system prompt**.
 3. `skill/references/embudo-carruseles.md` (estructura del carrusel por etapa TOFU/MOFU/BOFU: tipos y roles de slide según la etapa)
 4. `skill/references/benchmarks-carrusel.md` (rangos de slides por red, ganchos, CTA por objetivo, métricas)
-5. `skill/references/direccion_creativa.html` (capa de marca vs creativa, psicología del color, marco de marca)
-6. `skill/references/brand_system.md` (paleta, tipografía, formato 3:4, bloque de prompt)
-7. `skill/references/voz_mario.md`
-8. `skill/references/buyer_persona.md`
-9. `skill/references/pilares_contenido.md`
-10. `estrategia/estrategia_mes.html`
-11. `investigacion/base_[YYYY-MM].md` (mes actual)
+5. `skill/references/brand_system.md` (paleta, tipografía, formato 3:4, marco de marca, bloque de prompt)
+6. `skill/references/voz_mario.md`
+7. `skill/references/buyer_persona.md`
+8. `skill/references/pilares_contenido.md`
+9. `estrategia/estrategia_mes.html`
+10. `investigacion/base_[YYYY-MM].md` (mes actual)
 
 ## PASO 0 · GATE — ¿hay brief del mes?
 
