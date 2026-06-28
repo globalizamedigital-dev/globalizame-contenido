@@ -19,7 +19,7 @@ Regla de oro: **1 idea = 1 slide**. Cada slide justifica su existencia.
 | Instagram | **7-10** (rango 5-12) | <5 el algoritmo deja de potenciarlo; >12-15 cae la tasa de finalización. Tips breves pueden ir a 5; contenido educativo profundo 8-12. |
 | LinkedIn | **6-10** | <5 páginas pierde el bono algorítmico; >12 penaliza la finalización. B2B rinde mejor en 8-10. |
 
-Tipos de carrusel y sus rangos en `system-prompt-carrusel.md` §3. Nunca 4-5 slides.
+Estructura por etapa y tipos de carrusel en `embudo-carruseles.md`. Nunca 4-5 slides.
 
 ## 7 fórmulas de gancho de portada
 

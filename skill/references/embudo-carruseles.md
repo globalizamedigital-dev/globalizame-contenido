@@ -1,6 +1,6 @@
 # Etapas del embudo · Tipos y estructuras · Globalizame
 
-> El `productor` lee este archivo para elegir el tipo de carrusel y la estructura según la etapa (TOFU/MOFU/BOFU) que marca la estrategia del mes. Los 5 tipos canónicos y la estructura genérica viven en `system-prompt-carrusel.md` §3-4; aquí se especializan por etapa.
+> El `productor` lee este archivo para elegir el tipo de carrusel y la estructura según la etapa (TOFU/MOFU/BOFU) que marca la estrategia del mes. La narrativa siempre manda sobre la plantilla (ver system prompt, sección NARRATIVA); aquí tienes las estructuras que mejor funcionan por etapa como punto de partida.
 
 ---
 

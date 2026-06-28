@@ -31,7 +31,7 @@ QUÉ TOCA → INVESTIGACIÓN LIGERA → DECISIONES → SLIDES + PROMPTS → COPY
 ### ✅ Criterio de HECHO
 - [ ] Carpeta `posts/post_[YYYY-MM-DD]_[slug]/` con los 7 archivos (ver Outputs).
 - [ ] **Munición real de la base:** ≥1 novedad/herramienta de IA nombrada + 1 dato/caso real con su cifra y fuente.
-- [ ] El carrusel cumple el system prompt (marco de marca, elemento visual por slide §6.1, color, ratio, voz). No lo verificas tú a mano: aplicaste el system prompt al generarlo.
+- [ ] El carrusel cumple el system prompt (marco de marca, un elemento visual real por slide que construye la idea, color, ratio, voz). Si tapas el texto de un slide, el visual sigue contando la idea.
 - [ ] Todo el copy visible pasado por `humanizer`.
 - [ ] `registro.md` actualizado.
 - [ ] Commit + push a `main` (uno solo).
@@ -69,21 +69,21 @@ Si **falta** `estrategia/estrategia_mes.html` o `investigacion/base_[mes].md`: a
 
 ## PASO 3 · DECISIONES (lee `registro.md`, no repitas)
 
-Decide según el system prompt y los benchmarks — esta skill solo lista qué hay que decidir:
-- **Tipo de carrusel** según la etapa del brief (estructura por etapa en `embudo-carruseles.md`; los 5 tipos en system prompt §3). No mezcles dos.
+Decide con criterio de Director Creativo (NARRATIVA del system prompt) — esta skill solo lista qué hay que decidir:
+- **Estructura / tipo de carrusel** según la etapa del brief: `embudo-carruseles.md` (estructura por etapa) + benchmarks. La narrativa manda sobre la plantilla. No mezcles dos estructuras.
 - **Nº de slides** según los rangos de `benchmarks-carrusel.md` (IG 7-10, LinkedIn 6-10; nunca 4-5). El mismo set vale para ambas redes.
-- **Hook** que mejor abra ESTE tema (fórmulas en system prompt §5 + benchmarks). No repitas el de la semana pasada.
-- El **color no se decide**: es fijo (system prompt §6). No hay nada que elegir ni rotar.
+- **Hook** que mejor abra ESTE tema (ver `benchmarks-carrusel.md`). No repitas el de la semana pasada.
+- El **color no se decide**: paleta fija del system prompt (carbón #232323 + verde #86CA28 acento + morado #700962 detalle). No hay nada que elegir ni rotar.
 
 > Si falta algo crítico del brief, pregunta **MÁX 3 cosas** (tipo / CTA / dato). Si el brief es autosuficiente, no preguntes y sigue.
 
 ## PASO 4 · ESTRUCTURA + COPY SLIDE A SLIDE
 
-Aplica el system prompt §3 (tipos), §4 (estructura), §5 (hooks) y §6/§6.1 (visual de cada slide) **a rajatabla**. Para cada slide define: función narrativa · texto exacto (español, máx ~15 palabras) · visual breve. El CTA va en el copy del post, nunca en la imagen.
+Aplica el system prompt **a rajatabla** (secciones NARRATIVA, COPY y DISEÑO EDITORIAL). La estructura por etapa está en `embudo-carruseles.md`; los rangos de slides en `benchmarks-carrusel.md`. Para cada slide define: función narrativa · texto exacto (español, máx ~15 palabras) · visual breve. El CTA va en el copy del post, nunca en la imagen.
 
 ## PASO 5 · PROMPTS DE IMAGEN PARA CHATGPT
 
-Un prompt por slide con el esqueleto §8 del system prompt (`[ESCENA]`/`[ELEMENTOS]`/`[TEXTO EN IMAGEN]`/`[ESTILO]`/`[CONSTRAINTS]`) y el formato de salida §10. Cópialo del system prompt, no lo reinventes. Todo el detalle visual (marco de marca, color, ratio 3:4, elemento visual §6.1) está en el system prompt y se aplica desde ahí.
+Un prompt por slide siguiendo la sección **PROMPTS DE IMAGEN** del system prompt (composición global · el elemento visual que CONSTRUYE la idea · texto en imagen con posición/jerarquía/peso · sistema visual · restricciones) y el **FORMATO DE SALIDA**. No reinventes: aplícalo desde el system prompt. Clave: cada slide lleva un elemento visual que monta una escena con intención (data-viz, bodegón/escena editorial, diagrama) — nunca solo texto, nunca el número del titular repetido en grande. Si tapas el texto, el visual debe seguir contando la idea.
 
 ## PASO 6 · COPY DEL POST (Instagram y LinkedIn)
 
@@ -140,6 +140,6 @@ git push origin main
 - Solo el post de esta semana. Autónomo, sin confirmación (salvo PASO 0).
 - Mismo set visual para IG y LinkedIn; cambia solo el copy.
 - Todo el copy visible pasa por `humanizer`.
-- Los prompts piden ratio **3:4** (lo que da ChatGPT); el entregable de marca es 4:5 al exportar (system prompt §7).
+- Los prompts piden ratio **3:4** (lo que da ChatGPT); el entregable de marca es 4:5 (1080×1350) al exportar. El system prompt cita 4:5 por la marca; en ChatGPT se genera 3:4.
 - Suscripción siempre: **WebSearch + Write**. NUNCA la API de pago.
 - UN solo commit al final, a `main`. Nunca ramas `claude/`.
