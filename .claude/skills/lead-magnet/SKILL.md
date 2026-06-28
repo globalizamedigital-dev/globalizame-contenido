@@ -33,11 +33,10 @@ directo, mecánica no motivación, que duela un poco. El dueño es el héroe.
 
 1. `skill/references/lead_magnet_kit.html` — **la biblia: qué es un buen kit, los tipos de entregable, la regla de oro.**
 2. `skill/references/ejemplos-lead-magnets/` — los 3 kits HTML de referencia. **Nivel a igualar (densidad y concreción, NO diseño).**
-3. `skill/references/brand_system.md` — chrome de marca, paleta, tipografía.
-4. `skill/references/voz_mario.md` — tono.
-5. `skill/references/buyer_persona.md` — a quién le habla.
-6. `estrategia/estrategia_mes.html` — de aquí sale el lead magnet asignado: keyword, tema, sprint.
-7. `investigacion/base_[YYYY-MM].md` — datos reales para meter en las calculadoras y diagnósticos.
+3. `skill/references/voz_mario.md` — tono.
+4. `skill/references/buyer_persona.md` — a quién le habla.
+5. `estrategia/estrategia_mes.html` — de aquí sale el lead magnet asignado: keyword, tema, sprint.
+6. `investigacion/base_[YYYY-MM].md` — datos reales para meter en las calculadoras y diagnósticos.
 
 > **Si la estrategia del mes no tiene lead magnet asignado:** avisa de que hay que correr antes `/investigador`, o pregunta a Mario qué kit quiere. No te lo inventes en el vacío.
 
@@ -71,7 +70,7 @@ Genera el kit como **documento HTML A4 vertical, imprimible a PDF con Ctrl+P**. 
 **Chrome de marca (lo único constante):** wordmark "Globalizame" arriba-izquierda con "Globaliza" en
 negro y "me" en verde #86CA28 (siempre ese split; sin icono/globo), nº de página en mono
 arriba-derecha (`01 / 07`), footer con firma de Mario (foto + "Mario Ruiz · Fundador de
-Globalizame" + globalizame.com), paleta de `brand_system.md`.
+Globalizame" + globalizame.com), paleta Globalizame: fondo carbón #232323, verde #86CA28 (acento de acción), morado #700962 (acento de giro), texto blanco #FAFAF7; verde solo como acento, nunca dominante.
 
 > **Prohibido reutilizar el CSS de un kit anterior como esqueleto.** Cada kit empieza su diseño
 > desde cero — retícula, composición, tipografía dominante, nº de hojas. Si dos kits seguidos

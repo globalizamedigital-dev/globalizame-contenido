@@ -44,11 +44,10 @@ Audiencia: dueño de PYME española, 40-58 años, cualquier sector, no técnico,
 - `skill/references/pilares_contenido.md`
 - `skill/references/buyer_persona.md`
 - `skill/references/voz_mario.md`
-- `skill/references/brand_system.md`
 - `skill/references/lead_magnet_kit.html` (qué es un buen lead magnet, para diseñar los del mes)
 - `registro.md` (para no repetir temas del mes anterior)
 - `investigacion/base_*.md` de los 2-3 meses anteriores (para el test de frescura: no repetir datos ya usados)
-- `estrategia/estrategia_mes.html` (mes anterior, como plantilla exacta de formato). **Si no existe**, genera el formato a partir de `skill/references/brand_system.md` y las pautas de marca.
+- `estrategia/estrategia_mes.html` (mes anterior, como plantilla exacta de formato). **Si no existe**, genera el formato con la paleta Globalizame: fondo carbón #232323, verde #86CA28 (acento de acción), morado #700962 (acento de giro), texto blanco #FAFAF7, tipografía Inter; checklist interactivo y sprint cards.
 
 ## TAREA 1 · INVESTIGACIÓN PROFUNDA
 
