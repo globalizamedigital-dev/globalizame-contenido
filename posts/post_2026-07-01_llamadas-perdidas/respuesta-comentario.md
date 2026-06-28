@@ -1,15 +1,15 @@
-# Respuesta a comentarios · 1 jul 2026
+# Respuesta a comentarios · 1 jul 2026 (CTA autoridad / conversación)
 
-> CTA del post: conversación/autoridad. Responder a mano, abrir diálogo. Sin keyword, sin DM-funnel automático.
+> No hay lead magnet en esta pieza. Se contesta y se abre diálogo. Mario responde a mano.
 
-## Respuesta tipo (cuando cuentan su caso)
+**Si comparte una cifra ("se me escapan unas X al día"):**
+Más de lo que parece, ¿verdad? Lo que más sorprende es que casi la mitad entran cuando ni siquiera puedes cogerlas. ¿En qué franja se te juntan más, mediodía o noche?
 
-Gracias por contarlo. Lo que dices es justo el patrón: no es una llamada, son las que se acumulan sin que las veas. ¿En tu negocio cuándo entran más, por la noche o los findes? Por ahí suele estar el agujero.
+**Si dice que él sí las coge todas / no le pasa:**
+Entonces vas por delante de la mayoría. La pregunta de verdad es qué pasa el día que te vas dos semanas en agosto. ¿Quién coge el teléfono ahí?
 
-## Respuesta tipo (cuando preguntan "¿y cómo se hace?")
+**Si pregunta cómo se soluciona:**
+Te lo cuento sin rodeos: empieza por medir cuántas pierdes de verdad, antes de poner nada. Si quieres, dime tu sector y te digo por dónde empezaría yo.
 
-Buena pregunta. La idea es sencilla: un agente coge la llamada cuando tú no llegas, toma el dato o la reserva y te lo deja anotado. Si quieres te cuento por aquí cómo lo montaría para un negocio como el tuyo, sin tecnicismos.
-
-## Respuesta tipo (escéptico / "eso es para grandes")
-
-Te entiendo, antes era así. Pero el precio de esto cayó un 70% en dos años: hoy lo usa un bar, no solo una cadena. ¿Qué es lo que más te frena, el coste o que parezca complicado?
+**Si solo deja apoyo (👏, "muy bueno"):**
+Gracias. Esta semana sigo por aquí con un caso real de un bar que le dio la vuelta a esto. Te lo guardo.

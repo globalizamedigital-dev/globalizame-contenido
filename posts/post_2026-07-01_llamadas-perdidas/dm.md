@@ -1,11 +1,9 @@
-# DM · 1 jul 2026
+# DM · 1 jul 2026 (CTA autoridad / conversación)
 
-> CTA conversación. Pasar a privado con una pregunta concreta. Nada de venta dura, nada de Calendly aún (esto es TOFU).
+> Sin venta dura. Esta pieza no entrega recurso: el privado solo profundiza la conversación.
 
-## DM de apertura (si alguien muestra interés en comentarios)
+**Mensaje base (a quien entra al tema en comentarios):**
+Hola, [nombre]. Vi tu comentario sobre las llamadas. Por curiosidad: ¿tienes idea de cuántas se te quedan sin coger un día normal de temporada? Casi nadie lo tiene medido, y suele ser el dato que más asusta. Si me dices tu sector y más o menos el volumen, te digo por dónde empezaría a taparlo.
 
-Hey, vi tu comentario sobre las llamadas. Sin rollo comercial: ¿cuántas llamadas dirías que recibes al día y cuántas se te quedan sin coger en hora punta? Con eso te digo a ojo cuánto se te puede estar escapando al mes. Te lo cuento claro, en euros.
-
-## DM de seguimiento (si responde con sus números)
-
-Gracias. Con esos números, lo que se te escapa no es poco. Lo bueno es que es de lo más fácil de tapar: coger lo que entra fuera de horario. Si te apetece, otro día te enseño cómo quedaría montado para tu caso. Sin compromiso y sin tecnicismos.
+**Si responde con datos:**
+Con esos números, lo que se te escapa al mes da para pensar. No te vendo nada por aquí: si te apetece, un día te enseño cómo lo está resolviendo gente de tu sector. Tú decides.

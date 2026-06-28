@@ -4,13 +4,13 @@
 
 ```
 Color: fondo carbón #232323 (primario) · acento verde #86CA28 (FIJO, no rota) · morado #700962 solo detalle sutil
-Último tipo de hook: 1 · Estadística (1 jul, llamadas perdidas)
+Último tipo de hook: 1 · Número impactante (Estadística)
 Próximo hook: 2 · Caso real
 
 Último mes con estrategia: 2026-07 (Lo que se te escapa cuando no estás)
-Último sprint producido: Sprint 1 (TOFU) · 1 jul
-Último tipo de carrusel: Error costoso / Dato impactante (8 slides)
-Último post publicado: 1 jul — Pierdes hasta 15.000 € al mes y ni te enteras
+Último sprint producido: Semana 1 · TOFU (1 jul)
+Último tipo de carrusel: Error costoso / dato impactante (8 slides)
+Último post publicado: — (generado 1 jul, sin publicar aún)
 ```
 
 ---
@@ -38,7 +38,7 @@ Próximo hook: 2 · Caso real
 
 | Fecha | Sprint | Día | Etapa | Formato | Hook | Publicado |
 |---|---|---|---|---|---|---|
-| 2026-07-01 | 1 | Mié | TOFU | Error costoso / Dato impactante (8 slides) | Estadística (Pérdida inminente): "Pierdes hasta 15.000 € al mes y ni te enteras" | Pendiente |
+| 2026-07-01 | 1 | Mié | TOFU | Error costoso / dato impactante (8 slides) | Número impactante — "Pierdes hasta 15.000 € al mes y ni te enteras" | No |
 
 ---
 

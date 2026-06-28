@@ -1,28 +1,23 @@
 # Copy Instagram · 1 jul 2026
 
-Suena el teléfono.
+Hay un dinero que pierdes y que nunca aparece en ninguna cuenta.
 
-Estás con una mesa, una comanda, un proveedor al otro lado. No lo coges.
+El de las llamadas que no coges.
 
-"Ya llamará luego", piensas.
+Estás en plena temporada. Entran más llamadas que nunca. Y tú tienes las dos manos ocupadas.
 
-No llama.
+Cada una que se queda sin contestar son unos 150 € de media que se van.
 
-El 85% de la gente que no recibe respuesta no vuelve a intentarlo. Se va al de al lado.
+En hostelería, 43 de cada 100 llamadas se quedan colgando. Y de la gente que no consigue hablar contigo, 85 de cada 100 no vuelven a llamar. Se van con el de al lado.
 
-Y en julio, con todo a tope, eso pasa varias veces al día sin que lo veas. 4 de cada 10 llamadas entran cuando ya cerraste. Cada una vale de media unos 150 €.
+Al mes, eso son entre 2.500 y 15.000 € que ni ves salir.
 
-Échale la cuenta a final de mes. Hay negocios perdiendo entre 2.500 y 15.000 € por teléfonos que sonaron solos.
+No es que atiendas mal. Es que nadie puede coger un teléfono mientras sirve mesas.
 
-Lo curioso es que ya no hace falta contratar a nadie para arreglarlo. Hoy un agente de voz con IA coge la llamada a las 23:00 de un domingo igual que tú a las dos de la tarde. Un bar de Barcelona sumó así unos 2.000 € a la semana.
+Y ojo, que el 40% de esas llamadas entran fuera de horario. Hoy un agente de voz las coge todas, a cualquier hora, sin sumar una sola persona al equipo.
 
-No es poner un robot y desaparecer. Es que la IA coja lo que tú no puedes coger, y tú sigas para lo importante.
+Tu cliente, atendido. Tú, con las manos libres para lo que importa.
 
-Porque no pierdes clientes por malo.
+¿Cuántas llamadas crees que dejaste sin coger ayer? Dímelo abajo. Te sorprenderías.
 
-Los pierdes por no cogerlo a tiempo.
-
-¿Cuántas llamadas crees que se te escaparon esta semana? Te leo abajo.
-
-—
-Fuentes: gestiondellamadas.com · nolam.ai · synaptix.es (2026)
+Guárdalo para cuando estés en hora punta y suene el teléfono.

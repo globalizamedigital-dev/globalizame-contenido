@@ -41,7 +41,7 @@ QUÉ TOCA → INVESTIGACIÓN LIGERA → DECISIONES → SLIDES + PROMPTS → COPY
 
 1. `registro.md` — qué se hizo antes (no repetir hook/titular).
 2. **`skill/references/system-prompt-carrusel.md` — ⭐ LA LEY.** Todo el oficio del carrusel. Se sigue a rajatabla. Ante cualquier conflicto con esta skill o con otro archivo, **gana el system prompt**.
-3. `skill/references/embudo-carruseles.md` — estructura del carrusel por etapa TOFU/MOFU/BOFU.
+3. `skill/references/embudo_carruseles.md` — estructura del carrusel por etapa TOFU/MOFU/BOFU.
 4. `skill/references/benchmarks-carrusel.md` — rangos de slides por red, ganchos, CTA por objetivo, métricas.
 5. `skill/references/voz_mario.md` — la voz.
 6. `skill/references/buyer_persona.md` — a quién le hablo.
@@ -70,7 +70,7 @@ Si **falta** `estrategia/estrategia_mes.html` o `investigacion/base_[mes].md`: a
 ## PASO 3 · DECISIONES (lee `registro.md`, no repitas)
 
 Decide con criterio de Director Creativo (NARRATIVA del system prompt) — esta skill solo lista qué hay que decidir:
-- **Estructura / tipo de carrusel** según la etapa del brief: `embudo-carruseles.md` (estructura por etapa) + benchmarks. La narrativa manda sobre la plantilla. No mezcles dos estructuras.
+- **Estructura / tipo de carrusel** según la etapa del brief: `embudo_carruseles.md` (estructura por etapa) + benchmarks. La narrativa manda sobre la plantilla. No mezcles dos estructuras.
 - **Nº de slides** según los rangos de `benchmarks-carrusel.md` (IG 7-10, LinkedIn 6-10; nunca 4-5). El mismo set vale para ambas redes.
 - **Hook** que mejor abra ESTE tema (ver `benchmarks-carrusel.md`). No repitas el de la semana pasada.
 - El **color no se decide**: paleta fija del system prompt (carbón #232323 + verde #86CA28 acento + morado #700962 detalle). No hay nada que elegir ni rotar.
@@ -79,7 +79,7 @@ Decide con criterio de Director Creativo (NARRATIVA del system prompt) — esta 
 
 ## PASO 4 · ESTRUCTURA + COPY SLIDE A SLIDE
 
-Aplica el system prompt **a rajatabla** (secciones NARRATIVA, COPY y DISEÑO EDITORIAL). La estructura por etapa está en `embudo-carruseles.md`; los rangos de slides en `benchmarks-carrusel.md`. Para cada slide define: función narrativa · texto exacto (español, máx ~15 palabras) · visual breve. El CTA va en el copy del post, nunca en la imagen.
+Aplica el system prompt **a rajatabla** (secciones NARRATIVA, COPY y DISEÑO EDITORIAL). La estructura por etapa está en `embudo_carruseles.md`; los rangos de slides en `benchmarks-carrusel.md`. Para cada slide define: función narrativa · texto exacto (español, máx ~15 palabras) · visual breve. El CTA va en el copy del post, nunca en la imagen.
 
 ## PASO 5 · PROMPTS DE IMAGEN PARA CHATGPT
 
