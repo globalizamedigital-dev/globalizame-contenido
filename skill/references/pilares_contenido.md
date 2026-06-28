@@ -2,9 +2,7 @@
 
 ## Principio rector
 
-El contenido nunca habla de IA ni de tecnología.  
-Habla del problema que la tecnología resuelve, en el idioma del dueño de negocio.  
-La IA es el motor invisible. El protagonista es siempre el resultado o el problema.
+El contenido SÍ nombra la IA y la tecnología (Claude, GPT-5.6, lo que sacó OpenAI…) — eso da autoridad y actualidad. Lo que evita es la **jerga vacía** (workflow, pipeline, stack, "transformación digital"). Cada mención técnica se aterriza en el idioma del dueño: euros y horas. La IA es el gancho de actualidad; el resultado en el negocio es lo que cierra. Ver `voz_mario.md` §"Lo que hace único".
 
 ---
 
@@ -23,10 +21,7 @@ La IA es el motor invisible. El protagonista es siempre el resultado o el proble
 - Contratar gente para resolver problemas de sistema
 - El agobio de crecer = más caos
 
-**Fuentes de datos útiles:**
-- Pymes españolas pierden 16h/semana en tareas administrativas (MuyPymes, 2026)
-- 10 días al mes en burocracia (Qonto / IO Investigación, 2026)
-- 55% de dueños de pyme sienten que el papeleo les roba tiempo estratégico
+> Los datos concretos NO viven aquí: salen de `investigacion/base_[mes].md` (frescos, con IA y casos reales del mes). No reuses cifras genéricas quemadas; tira de la base.
 
 ---
 
@@ -56,10 +51,7 @@ La IA es el motor invisible. El protagonista es siempre el resultado o el proble
 - Procesos específicos automatizados: respuesta a leads, presupuestos, facturas, citas
 - Sectores concretos: hostelería, inmobiliaria, clínicas
 
-**Fuentes de datos útiles:**
-- Tiempo medio de respuesta a leads en España: 17 horas (InsideSales / KW Spain)
-- Responder en 5 min multiplica por 10 la probabilidad de cerrar
-- Pymes que adoptan automatización básica recuperan 10-20h/semana en 30 días
+> Los datos concretos salen de `investigacion/base_[mes].md` (frescos, con IA y casos del mes). No reuses cifras genéricas quemadas.
 
 ---
 
@@ -70,7 +62,7 @@ La IA es el motor invisible. El protagonista es siempre el resultado o el proble
 **Formatos:** Calculadora visual, big numbers, comparativa
 
 **Temas recurrentes:**
-- Coste real de 16h semanales perdidas × semanas × personas
+- Coste real de las horas semanales perdidas × semanas × personas
 - Lo que vale una hora del dueño vs lo que hace con ella
 - El coste de responder tarde a un lead
 - Lo que pierde el negocio cada mes sin un sistema
@@ -106,7 +98,7 @@ La IA es el motor invisible. El protagonista es siempre el resultado o el proble
 
 **Rotación de tipos de hook:**
 - Pregunta directa: "¿Cuánto vale una hora tuya?"
-- Estadística: "Las pymes españolas pierden 16h/semana en…"
+- Estadística: "[dato fresco de la base]" — ej. un % de adopción de IA, horas perdidas, etc.
 - Provocación: "Contratar más gente no soluciona un problema de sistema"
 - Caso real: "Esta semana un cliente de hostelería me dijo que…"
 - Error común: "El error que cometen el 90% de los dueños cuando quieren crecer"
@@ -157,9 +149,8 @@ Hay 3 tipos de cierre. Se rotan a lo largo de la semana y del mes para no quemar
 
 ## Fuentes que Claude debe buscar mensualmente
 
-Al generar la estrategia del mes siguiente, buscar:
-- Nuevos datos sobre productividad y tareas administrativas en PYMEs españolas
-- Casos reales de automatización en hostelería, inmobiliaria o construcción
-- Novedades de herramientas que ya usan los clientes (QuickBooks, HubSpot, Gmail, WhatsApp)
-- Estadísticas de tiempo de respuesta a leads o conversión en España
-- Cualquier dato del INE, CEPYME, Qonto, Sage u organismos similares sobre PYMEs
+> La lista canónica está en el `investigador` (IA-first). Esto es solo apoyo. Buscar:
+- **Novedades de IA/tech** (OpenAI, Anthropic, Google, Meta): un modelo, una feature, una herramienta nueva — el eje principal
+- **IA aplicada por sector** con resultado en euros/horas (hostelería, inmobiliaria, clínicas, despachos)
+- Adopción de IA en pymes españolas y qué hace la competencia
+- Datos de productividad / respuesta a leads de fuentes verificables (INE, CEPYME u organismos similares)

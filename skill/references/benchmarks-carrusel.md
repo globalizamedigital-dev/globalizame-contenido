@@ -52,7 +52,7 @@ Si la audiencia deja de deslizar pronto, el problema está en el slide 1.
 | **Shares** | relatable / encuesta / "etiqueta a quien…" / afirmación polarizante | cercano, divertido | "Comparte con quien lo necesite" / "Etiqueta a un colega" |
 | **Autoridad** | datos / casos / cifras / testimonios | serio, creíble, escena editorial con la cifra protagonista | "Sígueme para más" / "Comenta tu opinión" |
 
-Mapea el objetivo al tipo de cierre del sprint (`flujo_produccion.html`): recurso → saves, conversación → shares, autoridad → autoridad.
+Mapea el objetivo al tipo de cierre del sprint: recurso → saves, conversación → shares, autoridad → autoridad.
 
 ## Métricas objetivo
 

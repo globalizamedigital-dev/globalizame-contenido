@@ -45,7 +45,6 @@ Audiencia: dueño de PYME española, 40-58 años, cualquier sector, no técnico,
 - `skill/references/buyer_persona.md`
 - `skill/references/voz_mario.md`
 - `skill/references/brand_system.md`
-- `skill/references/flujo_produccion.html` (cadencia, sprints, los 3 cierres, regla del lead magnet)
 - `skill/references/lead_magnet_kit.html` (qué es un buen lead magnet, para diseñar los del mes)
 - `registro.md` (para no repetir temas del mes anterior)
 - `investigacion/base_*.md` de los 2-3 meses anteriores (para el test de frescura: no repetir datos ya usados)
@@ -151,7 +150,7 @@ otra progresión:
 
 **Lead magnets — decisión inteligente, no cuota.** Máximo **uno por sprint** (nunca uno por
 carrusel). Solo las piezas con un recurso real que entregar llevan lead magnet con CTA Recurso. El
-resto rota entre cierre de Conversación y de Autoridad (ver `flujo_produccion.html` §03). Diseña cada
+resto rota entre cierre de Conversación y de Autoridad. Diseña cada
 lead magnet del mes pensando ya como un kit (ver `lead_magnet_kit.html`): título, keyword y qué 5-6
 entregables tendría.
 

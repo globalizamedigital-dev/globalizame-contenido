@@ -6,13 +6,13 @@
 Fondo: negro carbón #232323 (FIJO, no rota)
 Último acento usado: — (alterna entre verde #86CA28 y morado #700962)
 
-Último acento usado: morado #700962 → próximo: verde #86CA28
-Último tipo de hook: Pregunta incómoda (con dato) → próximo: Caso real (2 de la rotación)
+Último tipo de hook: —
+Próximo: —
 
-Último mes con estrategia: 2026-06 — "Tu negocio no se va de vacaciones contigo"
-Último sprint producido: Cierre (Lun 29 jun) — BOFU
-Último tipo de carrusel: Error costoso / dato impactante
-Último post publicado: 2026-06-29 — "Antes de que llegue agosto" (pendiente publicar)
+Último mes con estrategia: julio 2026 — "La IA dejó de hablar, ahora hace"
+Último sprint producido: —
+Último tipo de carrusel: —
+Último post publicado: —
 ```
 
 ---
@@ -40,22 +40,15 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 | Fecha | Sprint | Día | Etapa | Formato | Acento | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| 2026-06-29 | Cierre | Lun | BOFU | Error costoso / dato | Morado | Pregunta incómoda | Pendiente |
+| — | — | — | — | — | — | — | — |
 
 ---
 
 ## Meses procesados
 
-### Junio 2026 — "Tu negocio no se va de vacaciones contigo"
-- **Tema central:** que el negocio funcione sin el dueño, usando el verano como espejo (1 de cada 5 empresas cierra en agosto).
-- **Estructura:** 4 sprints (El espejo / La otra forma / Prueba real / El coste) + cierre BOFU. Cadencia Lun-Mié-Vie. 13 piezas.
-- **Lead magnet:** Kit Vacaciones (keyword **VACACIONES**) — lanzado en Sprint 2, Vie 12.
-- **Datos clave usados (máx. 3):**
-  1. +47 h respuesta a lead sin sistema vs 90 s con IA (aurorainbox / KW España 2026) — DATO ESTRELLA.
-  2. 10 días/mes en gestiones administrativas (Qonto + IO Investigación 2026).
-  3. 41% de pymes españolas ya usa IA a diario (estudio europeo mayo 2026).
-- **Novedades IA nombradas:** GPT-5.6 (Sol/Terra/Luna, mitad de precio), Claude para Pequeñas Empresas + Claude Fable 5, Gemini Enterprise (Agent Designer).
-- **Estado:** Estrategia generada. Pendiente producir carruseles con `/productor`.
+| Mes | Tema central | Datos clave usados (máx. 3, con fuente) | Estado |
+|---|---|---|---|
+| **Julio 2026** | La IA dejó de hablar y empezó a hacer — el agente que atiende, agenda y cierra por ti en tu temporada más fuerte | 1) ChatGPT Agent/Operator ejecuta tareas (reserva/agenda/compra) con permiso — adslzone/reasonwhy 2026 · 2) 67% de llamadas en hostelería no atendidas durante el servicio, no-show 200-400€ — nolam 2026 · 3) +83 h/mes admin y +25.000€/año de ahorro — WTG AI 2026 | Estrategia generada |
 
 ---
 
