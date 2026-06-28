@@ -4,15 +4,15 @@
 
 ```
 Fondo: negro carbón #232323 (FIJO, no rota)
-Último acento usado: — (alterna entre verde #86CA28 y morado #700962)
+Último acento usado: verde #86CA28 (próximo: morado #700962)
 
-Último tipo de hook: —
-Próximo: —
+Último tipo de hook: 1 · Estadística (número impactante "2 de cada 3")
+Próximo: 2 · Caso real
 
 Último mes con estrategia: julio 2026 — "La IA dejó de hablar, ahora hace"
-Último sprint producido: —
-Último tipo de carrusel: —
-Último post publicado: —
+Último sprint producido: Sprint 1 · Mié 1 jul (TOFU · El espejo)
+Último tipo de carrusel: Error costoso / Dato impactante (7 slides)
+Último post publicado: 1 jul — "2 de cada 3 que llaman para reservar, cuelgan"
 ```
 
 ---
@@ -40,7 +40,7 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 | Fecha | Sprint | Día | Etapa | Formato | Acento | Hook | Publicado |
 |---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | — | — |
+| 1 jul 2026 | 1 | Mié | TOFU | Error costoso / Dato impactante | Verde | Estadística | ☐ |
 
 ---
 
