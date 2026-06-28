@@ -7,7 +7,7 @@ Color: fondo carbón #232323 (primario) · acento verde #86CA28 (FIJO, no rota) 
 Último tipo de hook: — (rotación abajo)
 Próximo hook: 1 · Estadística
 
-Último mes con estrategia: —
+Último mes con estrategia: 2026-07 (Estrategia generada)
 Último sprint producido: —
 Último tipo de carrusel: —
 Último post publicado: —
@@ -46,7 +46,7 @@ Próximo hook: 1 · Estadística
 
 | Mes | Tema central | Datos clave usados (máx. 3, con fuente) | Estado |
 |---|---|---|---|
-| — | — | — | — |
+| 2026-07 | Lo que pierdes cuando el negocio depende solo de ti — y los sistemas que ya lo arreglan | Llamada perdida cuesta 50–500 € + 80% cuelga sin dejar mensaje (Resonate/Retell 2026) · 41% PYMEs ES usa IA a diario, ES por delante de Alemania (IA4PYMES 2026) · EU AI Act transparencia obligatoria desde 2 ago 2026 (Comisión Europea) | Estrategia generada |
 
 ---
 

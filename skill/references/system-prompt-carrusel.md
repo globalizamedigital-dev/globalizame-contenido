@@ -49,15 +49,12 @@ Reglas:
 
 ## 6 · ESTILO VISUAL (mi marca)
 
-- **Sistema de color (FIJO, no rota nunca):**
-  - **Negro carbón #232323** — color primario. Fondo de todas las slides, siempre.
-  - **Verde #86CA28** — EL acento de la marca. Palabra clave del titular, datos resaltados, líneas, barras de data-viz, cualquier destacado. Es el único acento; se usa en TODAS las piezas, no se alterna ni se sustituye.
-  - **Morado #700962** — solo detalle muy sutil y puntual, cuando de verdad aporta (una división fina, un matiz secundario en un gráfico). Nunca como acento principal, nunca dominante, nunca en lugar del verde. Si dudas, no lo uses.
-  - **Blanco #FAFAF7** — texto sobre el carbón. Grises de soporte para subtítulos/pies.
-  - **Prohibido:** rotar el color de acento entre piezas, usar el morado como protagonista, o tratar verde y morado como dos opciones equivalentes. El verde manda siempre.
+- Paleta: negro carbón #232323 + verde #86CA28 + morado #700962.
 - Tipografía: sans-serif moderna geometric / humanist (Inter, Geist, Satoshi, Söhne).
 - Composición: mucho aire, jerarquía clara (headline gigante > subtítulo medio > dato pequeño).
 - Estilo: editorial premium tipo Monocle / Bloomberg / Stripe.
+- Evitar slides compuestas únicamente por texto sobre fondo plano.
+- Elementos: data viz (números gigantes, barras), iconos line minimal, formas geométricas planas.
 
 ### MARCO DE MARCA (firma fija, en todos los slides)
 Todas las slides deben incluir exactamente el mismo sistema de identidad visual.
@@ -135,15 +132,19 @@ Nunca deben eliminarse, recolocarse ni modificarse durante todo el carrusel.
 - Texto en imagen: literal entre comillas en el prompt.
 
 ## 8 · PROMPTS DE IMAGEN · ESQUELETO OBLIGATORIO
+
 [ESCENA] composición global de la slide.
+
 [ELEMENTOS] elementos visuales concretos (número, icono, forma, foto).
+
 [TEXTO EN IMAGEN]
 
 Headline (top, large, bold): "TEXTO EXACTO"
 Subtítulo (center, medium, regular): "TEXTO EXACTO"
 Pie/dato (bottom, small): "TEXTO EXACTO"
 
-[ESTILO] Editorial premium. Fondo carbón #232323, texto blanco, acento verde #86CA28 (único acento, en la palabra clave y los datos). Morado #700962 solo como detalle sutil si aporta. Geometric sans-serif. Mucho aire.
+[ESTILO] Editorial premium. Paleta negro #232323 + verde #86CA28 + morado #700962 + blanco. Geometric sans-serif. Mucho aire.
+
 [CONSTRAINTS]
 
 1080x1350 (4:5 portrait), padding 80px

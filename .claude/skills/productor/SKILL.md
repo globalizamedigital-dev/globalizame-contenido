@@ -45,9 +45,8 @@ QUÉ TOCA → INVESTIGACIÓN LIGERA → DECISIONES → SLIDES + PROMPTS → COPY
 4. `skill/references/benchmarks-carrusel.md` — rangos de slides por red, ganchos, CTA por objetivo, métricas.
 5. `skill/references/voz_mario.md` — la voz.
 6. `skill/references/buyer_persona.md` — a quién le hablo.
-7. `skill/references/pilares_contenido.md` — los 5 pilares y los tipos de CTA.
-8. `estrategia/estrategia_mes.html` — el brief del mes.
-9. `investigacion/base_[YYYY-MM].md` — la munición (mes actual).
+7. `estrategia/estrategia_mes.html` — el brief del mes.
+8. `investigacion/base_[YYYY-MM].md` — la munición (mes actual).
 
 ## PASO 0 · GATE — ¿hay brief del mes?
 
@@ -92,7 +91,12 @@ Voz Mario / Isra Bravo (ver `voz_mario.md`). En euros y horas; nombra la IA cuan
 - **`copy-instagram.md`** — directo y cercano.
 - **`copy-linkedin.md`** — misma voz, registro algo más formal (B2B). Mismo mensaje.
 
-CTA según el tipo del sprint (definidos en `pilares_contenido.md`): Recurso (solo si la pieza lanza el lead magnet) / Conversación / Autoridad. Regla de oro: NO "Comenta X" sin recurso real. Mezcla los tres cierres en la semana.
+CTA según el tipo del sprint:
+- **Recurso** → "Comenta [PALABRA] y te mando [recurso]." **Solo si la pieza lanza el lead magnet del sprint.**
+- **Conversación** → pregunta abierta / "Comenta [PALABRA] y te cuento". Mario responde a mano.
+- **Autoridad** → remate potente, pregunta abierta o "guárdalo". Sin keyword, sin DM-funnel. El de más alcance orgánico.
+
+> Regla de oro: NO "Comenta X" sin recurso real. Mezcla los tres cierres en la semana, no repitas el mismo tres días. El CTA va en el copy, nunca en la imagen; el slide de cierre del carrusel no lleva CTA.
 
 ## PASO 7 · MENSAJES DE COMUNIDAD
 
