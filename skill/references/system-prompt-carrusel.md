@@ -49,44 +49,15 @@ Reglas:
 
 ## 6 · ESTILO VISUAL (mi marca)
 
-- Paleta: negro carbón #232323 + verde #86CA28 + morado #700962 + blanco + grises de soporte.
+- **Sistema de color (FIJO, no rota nunca):**
+  - **Negro carbón #232323** — color primario. Fondo de todas las slides, siempre.
+  - **Verde #86CA28** — EL acento de la marca. Palabra clave del titular, datos resaltados, líneas, barras de data-viz, cualquier destacado. Es el único acento; se usa en TODAS las piezas, no se alterna ni se sustituye.
+  - **Morado #700962** — solo detalle muy sutil y puntual, cuando de verdad aporta (una división fina, un matiz secundario en un gráfico). Nunca como acento principal, nunca dominante, nunca en lugar del verde. Si dudas, no lo uses.
+  - **Blanco #FAFAF7** — texto sobre el carbón. Grises de soporte para subtítulos/pies.
+  - **Prohibido:** rotar el color de acento entre piezas, usar el morado como protagonista, o tratar verde y morado como dos opciones equivalentes. El verde manda siempre.
 - Tipografía: sans-serif moderna geometric / humanist (Inter, Geist, Satoshi, Söhne).
 - Composición: mucho aire, jerarquía clara (headline gigante > subtítulo medio > dato pequeño).
 - Estilo: editorial premium tipo Monocle / Bloomberg / Stripe.
-
-### 6.1 · REGLA DURA — CADA SLIDE LLEVA UN ELEMENTO VISUAL NO TIPOGRÁFICO (incluida la PORTADA)
-
-Esta es la regla que más se incumple. Léela entera.
-
-**El texto NO es el elemento visual. Un número gigante TAMPOCO.** Poner "9/10", "47 h" o cualquier
-cifra en grande es jerarquía tipográfica, no diseño. Una slide cuyo único contenido es texto/números
-sobre fondo carbón liso está MAL, aunque el número sea enorme y esté en color de acento. Eso es lo que
-hay que erradicar.
-
-**Cada slide —SIN EXCEPCIÓN, la portada incluida— debe contener al menos UN elemento gráfico construido,
-distinto del texto:**
-
-- **Data-viz real**: barra(s) con su eje, arco/anillo de progreso, línea de tendencia, dos magnitudes
-  enfrentadas a escala, una rejilla/calendario, una tabla. El número vive DENTRO del gráfico, no solo.
-- **Forma geométrica con función**: bloque, división del lienzo en zonas de color, una diagonal que
-  parte la composición, un marco interior que encuadra el dato.
-- **Icono line-minimal** (trazo fino, 1-2 líneas) que aporta significado, no decora.
-- **Objeto-héroe**: UN render 3D realista y editorial flotando sobre el carbón (bodegón de producto).
-  Permitido como único 3D de la slide; el resto plano.
-- **Tratamiento tipográfico que es en sí una composición** (no "texto grande"): texto recortado por una
-  forma, número que se convierte en gráfico (la barra del "1" es una barra de datos), palabra partida
-  por una línea de sentido. Si quitas el efecto y queda texto centrado normal, NO cuenta.
-
-**Test del slide (aplícalo a cada uno, incluida la portada):** *"Si borro todo el texto, ¿queda algo
-visual con sentido en la slide?"* Si la respuesta es no → la slide está mal, rehazla. Una cifra sola no
-deja nada al borrar el texto: una cifra no es un gráfico.
-
-**La portada NO está exenta.** El hook va siempre acompañado de su elemento visual (el gráfico que
-anticipa el dato, una forma que encuadra, un objeto-héroe). Portada = texto enorme + elemento visual,
-nunca solo el texto enorme.
-
-- Prohibido: slide de solo texto/números sobre fondo plano. Prohibido el "número gigante centrado" como
-  recurso único. Prohibido tratar la jerarquía tipográfica como si fuera el diseño de la slide.
 
 ### MARCO DE MARCA (firma fija, en todos los slides)
 Todas las slides deben incluir exactamente el mismo sistema de identidad visual.
@@ -165,17 +136,14 @@ Nunca deben eliminarse, recolocarse ni modificarse durante todo el carrusel.
 
 ## 8 · PROMPTS DE IMAGEN · ESQUELETO OBLIGATORIO
 [ESCENA] composición global de la slide.
-[ELEMENTOS] el elemento visual NO tipográfico de la slide (ver §6.1). OBLIGATORIO y concreto: describe
-  el gráfico/forma/icono/objeto construido, no el texto. Un "número grande" aquí NO es válido por sí
-  solo — el número debe ir dentro de una barra, arco, comparación a escala, rejilla u objeto. Si este
-  bloque solo describe texto/cifras, el prompt está mal: reescríbelo con un gráfico real.
+[ELEMENTOS] elementos visuales concretos (número, icono, forma, foto).
 [TEXTO EN IMAGEN]
 
 Headline (top, large, bold): "TEXTO EXACTO"
 Subtítulo (center, medium, regular): "TEXTO EXACTO"
 Pie/dato (bottom, small): "TEXTO EXACTO"
 
-[ESTILO] Editorial premium. Paleta negro #232323 + verde #86CA28 + morado #700962 + blanco. Geometric sans-serif. Mucho aire.
+[ESTILO] Editorial premium. Fondo carbón #232323, texto blanco, acento verde #86CA28 (único acento, en la palabra clave y los datos). Morado #700962 solo como detalle sutil si aporta. Geometric sans-serif. Mucho aire.
 [CONSTRAINTS]
 
 1080x1350 (4:5 portrait), padding 80px

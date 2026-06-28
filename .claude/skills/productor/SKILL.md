@@ -27,7 +27,7 @@ QUÉ TOCA → INVESTIGACIÓN LIGERA → DECISIONES → SLIDES + PROMPTS → COPY
 - [ ] **Ningún slide es solo texto/números sobre fondo plano — PORTADA INCLUIDA.** Cada slide lleva un elemento visual NO tipográfico (data-viz con eje, arco, comparación a escala, rejilla, forma con función, icono line-minimal u objeto-héroe 3D). Un número gigante NO cuenta: es texto. Test obligatorio por slide: *borra el texto; si no queda nada visual, está mal* (system prompt §6.1). El visual no ilustra literalmente la palabra del titular.
 - [ ] Ratio del prompt = 3:4 (formato ChatGPT) en todos.
 - [ ] Todo el copy visible pasado por `humanizer`.
-- [ ] `registro.md` con el hook/acento rotados.
+- [ ] `registro.md` actualizado (fecha, etapa, tipo, hook usado). El acento es verde fijo, no se rota.
 - [ ] Commit + push a `main` (uno solo).
 - [ ] Prompts mostrados en el chat para pegar en ChatGPT.
 
@@ -80,7 +80,7 @@ Haz **3-4 búsquedas web** (WebSearch — suscripción) por si hay un dato MÁS 
 - **TIPO DE CARRUSEL** según la **etapa** (TOFU/MOFU/BOFU) que marca el brief: elige el tipo y la estructura por etapa de `embudo-carruseles.md` (los 5 tipos base están en `system-prompt-carrusel.md` §3). No mezcles dos.
 - **Nº DE SLIDES** según el tipo y los rangos por red de `benchmarks-carrusel.md` (IG 7-10, LinkedIn 6-10). El mismo set sirve para ambas redes. Nunca 4-5.
 - **HOOK** — elige la fórmula (5 del system prompt + 7 de benchmarks) que mejor abre ESTE tema. No repitas el de la semana pasada.
-- **ACENTO / EMOCIÓN** — fondo siempre carbón #232323. Eliges el color de la palabra clave: **verde #86CA28** = acción/lo que resuelve; **morado #700962** = giro/reencuadre. UN acento por carrusel, mantenido en toda la serie. Alterna el acento entre piezas, no dentro del carrusel. Anótalo en `registro.md`.
+- **COLOR (fijo, no se decide nada)** — fondo carbón #232323 siempre; acento **verde #86CA28** siempre (palabra clave del titular, datos resaltados, líneas, barras). El verde es EL acento en todas las piezas: no rota, no se sustituye. El **morado #700962** solo como detalle muy sutil y puntual si aporta, nunca como acento principal. No hay color que elegir ni rotar entre piezas. Ver system prompt §6.
 
 > Si tras leer el brief falta algo crítico, pregunta **MÁX 3 cosas** (tipo / CTA / dato a confirmar). Si el brief es autosuficiente, no preguntes y sigue.
 
@@ -107,7 +107,7 @@ Máx 15 palabras por slide. Para cada slide define: función narrativa · texto 
 
 Recordatorios clave (todo está en el system prompt):
 - Marco de marca idéntico en cada slide: 1px #444444 a ~40px · "Mario Ruiz" + "Founder · Globalizame" arriba-izq (gris #666666) · contador "0X" arriba-der · línea verde #86CA28 debajo. Nunca se omite ni se recoloca.
-- Paleta #232323 / #86CA28 / #700962 / blanco / grises. Tipografía Inter/Geist/Satoshi/Söhne. Padding 80px.
+- Color: fondo #232323, acento verde #86CA28 (único acento, palabra clave + datos), morado #700962 solo detalle sutil, texto blanco, grises de soporte. Tipografía Inter/Geist/Satoshi/Söhne. Padding 80px.
 - **Ratio del prompt = formato ChatGPT (3:4 Retrato).** El system prompt habla de 4:5 por la marca, pero ChatGPT no lo ofrece: los prompts que generes piden **3:4**.
 - Texto en imagen en español, literal, entre comillas exactas.
 
@@ -144,7 +144,7 @@ CTA según etapa:
 
 **Guarda** en `posts/post_[YYYY-MM-DD]_[slug]/` los 7 archivos (ver Outputs).
 
-**Actualiza** `registro.md`: fecha, sprint, día, etapa, tipo de carrusel, hook usado, acento usado, título · avanza las rotaciones.
+**Actualiza** `registro.md`: fecha, sprint, día, etapa, tipo de carrusel, hook usado, título. El acento es verde fijo (no se registra rotación de color). Avanza solo la rotación de hook si la usas.
 
 **Muestra en el chat** todos los prompts de imagen, listos para que Mario los pegue en ChatGPT (ratio 3:4).
 
@@ -178,7 +178,7 @@ git push origin main
 - Marco de marca **idéntico** en todos los prompts.
 - Ningún slide es solo texto sobre fondo plano (system prompt §6).
 - Ratio del prompt **3:4** (formato ChatGPT). El system prompt cita 4:5 por la marca, pero ChatGPT no lo ofrece.
-- UN acento por carrusel (verde o morado). Fondo carbón fijo.
+- Acento verde #86CA28 siempre (no rota); morado #700962 solo detalle sutil. Fondo carbón fijo.
 - El CTA va SOLO en el copy, **nunca en las imágenes**.
 - No mezclar dos tipos de carrusel. Nunca 4-5 slides.
 - Mismo set visual para IG y LinkedIn; cambia solo el copy.

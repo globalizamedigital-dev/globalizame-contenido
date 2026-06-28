@@ -1,29 +1,27 @@
 # Registro de Contenido · Globalizame
 
-## Estado de rotaciones
+## Estado
 
 ```
-Fondo: negro carbón #232323 (FIJO, no rota)
-Último acento usado: verde #86CA28 (próximo: morado #700962)
+Color: fondo carbón #232323 (primario) · acento verde #86CA28 (FIJO, no rota) · morado #700962 solo detalle sutil
+Último tipo de hook: — (rotación abajo)
+Próximo hook: 1 · Estadística
 
-Último tipo de hook: 1 · Estadística (número impactante "2 de cada 3")
-Próximo: 2 · Caso real
-
-Último mes con estrategia: julio 2026 — "La IA dejó de hablar, ahora hace"
-Último sprint producido: Sprint 1 · Mié 1 jul (TOFU · El espejo)
-Último tipo de carrusel: Error costoso / Dato impactante (7 slides)
-Último post publicado: 1 jul — "2 de cada 3 que llaman para reservar, cuelgan"
+Último mes con estrategia: —
+Último sprint producido: —
+Último tipo de carrusel: —
+Último post publicado: —
 ```
 
 ---
 
-## Acento (UN color por carrusel, se alterna entre piezas)
+## Color (fijo, no se rota)
 
-Fondo carbón #232323 fijo en toda serie. La palabra clave va en:
-- **Verde #86CA28** — acción / lo que resuelve / "aquí importa"
-- **Morado #700962** — giro / lo no-obvio / reencuadre
+- **Negro carbón #232323** — primario, fondo de todas las slides.
+- **Verde #86CA28** — único acento: palabra clave del titular, datos resaltados, líneas, barras. En todas las piezas.
+- **Morado #700962** — solo detalle muy sutil y puntual si aporta. Nunca protagonista, nunca sustituye al verde.
 
-Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mismo carrusel.
+> No hay rotación de color. El verde es el acento siempre. (Ver system prompt §6.)
 
 ## Orden de rotación de hooks
 
@@ -38,9 +36,9 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 ## Historial de publicaciones
 
-| Fecha | Sprint | Día | Etapa | Formato | Acento | Hook | Publicado |
-|---|---|---|---|---|---|---|---|
-| 1 jul 2026 | 1 | Mié | TOFU | Error costoso / Dato impactante | Verde | Estadística | ☐ |
+| Fecha | Sprint | Día | Etapa | Formato | Hook | Publicado |
+|---|---|---|---|---|---|---|
+| — | — | — | — | — | — | — |
 
 ---
 
@@ -48,7 +46,7 @@ Se alterna el acento entre piezas para dar variedad al feed; nunca dentro del mi
 
 | Mes | Tema central | Datos clave usados (máx. 3, con fuente) | Estado |
 |---|---|---|---|
-| **Julio 2026** | La IA dejó de hablar y empezó a hacer — el agente que atiende, agenda y cierra por ti en tu temporada más fuerte | 1) ChatGPT Agent/Operator ejecuta tareas (reserva/agenda/compra) con permiso — adslzone/reasonwhy 2026 · 2) 67% de llamadas en hostelería no atendidas durante el servicio, no-show 200-400€ — nolam 2026 · 3) +83 h/mes admin y +25.000€/año de ahorro — WTG AI 2026 | Estrategia generada |
+| — | — | — | — |
 
 ---
 

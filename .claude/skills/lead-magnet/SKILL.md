@@ -70,7 +70,7 @@ Genera el kit como **documento HTML A4 vertical, imprimible a PDF con Ctrl+P**. 
 **Chrome de marca (lo único constante):** wordmark "Globalizame" arriba-izquierda con "Globaliza" en
 negro y "me" en verde #86CA28 (siempre ese split; sin icono/globo), nº de página en mono
 arriba-derecha (`01 / 07`), footer con firma de Mario (foto + "Mario Ruiz · Fundador de
-Globalizame" + globalizame.com), paleta Globalizame: fondo carbón #232323, verde #86CA28 (acento de acción), morado #700962 (acento de giro), texto blanco #FAFAF7; verde solo como acento, nunca dominante.
+Globalizame" + globalizame.com), paleta Globalizame: fondo carbón #232323 (primario), verde #86CA28 (único acento: títulos, datos, líneas, destacados), morado #700962 solo como detalle muy sutil si aporta, texto blanco #FAFAF7. El verde es el acento, nunca dominante; el morado nunca protagonista.
 
 > **Prohibido reutilizar el CSS de un kit anterior como esqueleto.** Cada kit empieza su diseño
 > desde cero — retícula, composición, tipografía dominante, nº de hojas. Si dos kits seguidos

@@ -59,7 +59,7 @@ El contenido SÍ nombra la IA y la tecnología (Claude, GPT-5.6, lo que sacó Op
 **Qué hace:** Hacer visible lo que cuesta el status quo en euros y horas.  
 **Etapa:** MOFU → BOFU / CONFIAR  
 **Tono:** Directo. Sin asustar pero sin suavizar.  
-**Formatos:** Calculadora visual, big numbers, comparativa
+**Formatos:** Calculadora visual, comparativa antes/después, data-viz (la cifra dentro de un gráfico, nunca un número suelto — ver system prompt §6.1)
 
 **Temas recurrentes:**
 - Coste real de las horas semanales perdidas × semanas × personas
@@ -96,12 +96,7 @@ El contenido SÍ nombra la IA y la tecnología (Claude, GPT-5.6, lo que sacó Op
 - Traducir siempre a euros u horas — nunca en porcentajes abstractos
 - Si no hay dato real, usar caso concreto o experiencia propia
 
-**Rotación de tipos de hook:**
-- Pregunta directa: "¿Cuánto vale una hora tuya?"
-- Estadística: "[dato fresco de la base]" — ej. un % de adopción de IA, horas perdidas, etc.
-- Provocación: "Contratar más gente no soluciona un problema de sistema"
-- Caso real: "Esta semana un cliente de hostelería me dijo que…"
-- Error común: "El error que cometen el 90% de los dueños cuando quieren crecer"
+> Los tipos de hook y su rotación viven en `registro.md` y en el system prompt §5. No los dupliques aquí.
 
 ---
 
@@ -134,16 +129,6 @@ Hay 3 tipos de cierre. Se rotan a lo largo de la semana y del mes para no quemar
 - Solo las piezas con lead magnet llevan CTA Recurso
 - El slide de CIERRE del carrusel NUNCA lleva CTA — es solo branding y autoridad
 - El tipo de CTA de cada post lo fija la estrategia mensual (estrategia_mes.html)
-
----
-
-## Calendario de rotación mensual
-
-**Semana 1** → Pilar 1 (EL ESPEJO) — TOFU puro  
-**Semana 2** → Pilar 2 (LA OTRA FORMA) — transición TOFU→MOFU  
-**Semana 3** → Pilar 3 (PRUEBA REAL) — MOFU con datos  
-**Semana 4** → Pilar 4 + 5 (COSTE + MARIO) — MOFU→BOFU  
-**Cierre** → CTA directo a sesión de 30 min
 
 ---
 
