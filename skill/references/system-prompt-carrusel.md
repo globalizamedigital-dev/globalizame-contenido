@@ -54,7 +54,23 @@ Reglas:
 - Composición: mucho aire, jerarquía clara (headline gigante > subtítulo medio > dato pequeño).
 - Estilo: editorial premium tipo Monocle / Bloomberg / Stripe.
 - Evitar slides compuestas únicamente por texto sobre fondo plano.
-- Elementos: data viz (números gigantes, barras), iconos line minimal, formas geométricas planas.
+- Elementos visuales válidos: data viz que *construye* el dato (barras, líneas, embudos, retículas, proporciones), iconos line minimal con función, formas geométricas que organizan la composición, fotografía editorial. Un número o palabra en grande, por muy grande que sea, NO cuenta como elemento visual: sigue siendo texto.
+
+### 6.1 · TEST DEL ELEMENTO VISUAL (obligatorio, slide a slide, portada incluida)
+
+Cada slide debe pasar este test ANTES de escribir su prompt. Si no lo pasa, la slide está mal diseñada y hay que rehacerla.
+
+**Test:** *si borro todo el texto de la slide, ¿queda algo visual que comunique o ayude a entender la idea?*
+- Si la respuesta es "no, queda el fondo vacío (o vacío con una línea de adorno)" → FALLA. Es una slide de solo texto.
+- Si la respuesta es "sí, queda un gráfico, un diagrama, una proporción, un icono con función" → PASA.
+
+**Reglas que se derivan del test:**
+- El número del titular NUNCA se repite como "elemento" gigante en la misma slide. Un dato se dice una vez (en el texto) y se *representa* con data viz (otra cosa), no se duplica en tamaño.
+- Una línea, flecha o forma decorativa suelta NO salva una slide de solo texto: es adorno, no estructura.
+- En la portada, el elemento visual puede ser una pieza de data viz sobria o una composición geométrica con tensión; nunca el titular puesto dos veces.
+- Si la idea es un dato, el elemento es su *representación* (barra, curva, proporción 7/10, embudo). Si la idea es un concepto, el elemento es un icono o diagrama con función.
+
+> Regla de oro: el texto dice la idea; el elemento visual la demuestra. Si los dos dicen lo mismo con letras, es una slide de solo texto disfrazada.
 
 ### MARCO DE MARCA (firma fija, en todos los slides)
 Todas las slides deben incluir exactamente el mismo sistema de identidad visual.
