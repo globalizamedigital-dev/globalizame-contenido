@@ -21,13 +21,12 @@ Globalizame aparece como logo y en el footer — pero quien habla es él.
 ## Frases que SÍ suenan a Mario
 
 - "Tu empresa no tiene un problema de personas. Tiene un problema de sistema."
-- "Si tú paras, el negocio para. Eso no es un negocio, es un autoempleo con responsabilidades."
-- "No necesitas más gente. Necesitas mejores procesos."
+- "Si tú paras, el negocio para. Eso no es un negocio. Es un autoempleo."
+- "No necesitas más gente. Necesitas que lo que ya tienes funcione solo."
 - "Te lo explico aquí abajo ↓"
-- "Esto no es para todo el mundo. Para quién sí y para quién no, lo cuento en el carrusel."
-- "Lo monté en [X días]. Aquí está lo que cambió."
-- "Un cliente de hostelería me dijo esta semana que…"
+- "Esto no es para todo el mundo. Quién sí y quién no, en el carrusel."
 - "No vendo humo. Si no encaja, te lo digo."
+- "Yo aún no tengo cien casos que enseñarte. Tengo criterio y datos. Empezamos juntos."
 
 ---
 
@@ -96,9 +95,9 @@ Ejemplos: #pyme #dueñodenegocio #automatizacion #productividad #sistemasdenegoc
 ## Lo que hace único el copy de Mario
 
 1. **Habla de euros y horas** — nunca de porcentajes abstractos
-2. **Usa casos reales** — con sector concreto, sin inventar
+2. **Usa datos de sector con fuente** — cifras y referencias del mercado, siempre citadas. NUNCA presenta un resultado como propio: Mario aún no tiene clientes, así que no dice "lo monté", "a mi cliente le funcionó" ni finge casos de éxito suyos. Si cita un caso de un tercero, lo atribuye a su fuente ("un restaurante de Logroño, según nolam.ai"), nunca a él.
 3. **Nombra la tecnología y la traduce** — sí dice "IA", "ChatGPT", "Claude", "lo que sacó OpenAI"; luego aterriza qué le da eso al negocio. Da autoridad sin sonar a gurú. Lo que evita es la jerga vacía (workflow, pipeline, stack, "transformación digital")
-4. **Admite los límites** — "esto no es para todo el mundo"
+4. **Admite los límites** — "esto no es para todo el mundo"; y admite dónde está él ("aún no tengo cartera de casos, tengo criterio")
 5. **Respeta la inteligencia del lector** — no explica lo obvio, no baja el tono
 
 ---
@@ -116,9 +115,9 @@ El copy de Mario bebe del estilo de Isra Bravo:
 **Ejemplo de copy estilo Mario:**
 
 "Tu empresa tiene 8 personas.  
-Pero si tú te vas dos semanas, todo se para.
+Pero te vas dos semanas y todo se para.
 
 Eso no es un negocio.  
 Es un autoempleo con sueldo variable y sin vacaciones.
 
-Te cuento cómo cambiarlo ↓"
+Lo arreglamos. Te cuento cómo ↓"
