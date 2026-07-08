@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <style>
+  .display{font-family:"Aptos Display",Arial,sans-serif;font-weight:800;letter-spacing:-3px;fill:#F5F5F2}
+  .headline{font-family:"Aptos Display",Arial,sans-serif;font-weight:750;letter-spacing:-2px;fill:#F5F5F2}
+  .body{font-family:Aptos,Arial,sans-serif;font-weight:500;fill:#F5F5F2}
+  .meta{font-family:Aptos,Arial,sans-serif;font-size:22px;font-weight:500;fill:#F5F5F2}
+  .strong{font-weight:700}.muted{fill:#A7A7A2}.green{fill:#86CA28}
+  .count{font-family:"Aptos Display",Arial,sans-serif;font-size:34px;font-weight:800;fill:#F5F5F2}
+  .source{font-family:Aptos,Arial,sans-serif;font-size:19px;fill:#A7A7A2}
+  .line{stroke:#86CA28;stroke-width:5;fill:none}.dim{stroke:#444444;stroke-width:4;fill:none}
+  </style><rect width="1080" height="1350" fill="#232323"/>
+  <rect x="40" y="40" width="1000" height="1270" fill="none" stroke="#444444"/>
+  <text x="88" y="91" class="meta strong">Mario Ruiz</text>
+  <text x="88" y="120" class="meta muted">Founder · Globalizame</text>
+  <text x="992" y="96" text-anchor="end" class="count">03</text>
+  <rect x="924" y="116" width="68" height="4" fill="#86CA28"/>
+  <text x="96" y="256" text-anchor="start" class="headline" font-size="78">Cada llamada perdida</text>
+<text x="96" y="330.88" text-anchor="start" class="headline" font-size="78">lleva una etiqueta</text>
+  <text x="96" y="440.76" class="body muted" font-size="38"><tspan x="96" dy="0">150 € de media que se van</tspan></text><g transform="translate(120 485) scale(1.15)">
+    <path d="M35 8 C15 8 6 24 12 44 L42 139 C48 159 65 169 84 160 L113 146 C128 139 133 122 124 109 L105 82 C98 72 86 68 75 74 L61 81 C55 68 50 55 47 42 L62 35 C74 29 78 17 70 7 Z" fill="#F5F5F2"/>
+    <path d="M113 146 C158 205 220 235 286 222" class="line"/>
+  </g>
+        <path d="M500 620 Q610 680 660 750" class="dim"/>
+        <g transform="translate(620 720) rotate(-7)">
+          <path d="M0 0 H310 V188 H0 L-58 94Z" fill="#86CA28"/>
+          <circle cx="18" cy="94" r="13" fill="#232323"/>
+          <text x="155" y="124" text-anchor="middle" class="display" font-size="82" fill="#232323">150 €</text>
+        </g><text x="96" y="1237" class="source">Fuente: gestiondellamadas.com</text>
+  </svg>

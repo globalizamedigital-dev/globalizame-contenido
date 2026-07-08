@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <style>
+  .display{font-family:"Aptos Display",Arial,sans-serif;font-weight:800;letter-spacing:-3px;fill:#F5F5F2}
+  .headline{font-family:"Aptos Display",Arial,sans-serif;font-weight:750;letter-spacing:-2px;fill:#F5F5F2}
+  .body{font-family:Aptos,Arial,sans-serif;font-weight:500;fill:#F5F5F2}
+  .meta{font-family:Aptos,Arial,sans-serif;font-size:22px;font-weight:500;fill:#F5F5F2}
+  .strong{font-weight:700}.muted{fill:#A7A7A2}.green{fill:#86CA28}
+  .count{font-family:"Aptos Display",Arial,sans-serif;font-size:34px;font-weight:800;fill:#F5F5F2}
+  .source{font-family:Aptos,Arial,sans-serif;font-size:19px;fill:#A7A7A2}
+  .line{stroke:#86CA28;stroke-width:5;fill:none}.dim{stroke:#444444;stroke-width:4;fill:none}
+  </style><rect width="1080" height="1350" fill="#232323"/>
+  <rect x="40" y="40" width="1000" height="1270" fill="none" stroke="#444444"/>
+  <text x="88" y="91" class="meta strong">Mario Ruiz</text>
+  <text x="88" y="120" class="meta muted">Founder · Globalizame</text>
+  <text x="992" y="96" text-anchor="end" class="count">06</text>
+  <rect x="924" y="116" width="68" height="4" fill="#86CA28"/>
+  <text x="96" y="256" text-anchor="start" class="headline" font-size="78">Entre <tspan class="green">2.500 €</tspan></text>
+<text x="96" y="330.88" text-anchor="start" class="headline" font-size="78">y <tspan class="green">15.000 €</tspan></text>
+  <text x="96" y="440.76" class="body muted" font-size="38"><tspan x="96" dy="0">que ni ves salir al mes</tspan></text><g transform="translate(570 380)">
+        <path d="M0 55 H240 V0 H345 V150 H225 V110 H0Z" fill="#F5F5F2"/>
+        <path d="M55 112 C55 222 55 265 55 335" stroke="#86CA28" stroke-width="34" stroke-linecap="round"/>
+        <circle cx="55" cy="360" r="28" fill="#86CA28"/><circle cx="87" cy="438" r="31" fill="#86CA28"/><circle cx="55" cy="516" r="34" fill="#86CA28"/><circle cx="87" cy="594" r="37" fill="#86CA28"/><circle cx="55" cy="672" r="40" fill="#86CA28"/>
+        <ellipse cx="75" cy="790" rx="180" ry="54" fill="#191919"/>
+        <ellipse cx="75" cy="790" rx="110" ry="28" fill="#0F0F0F"/>
+      </g><text x="96" y="1237" class="source">Fuente: gestiondellamadas.com</text>
+  </svg>

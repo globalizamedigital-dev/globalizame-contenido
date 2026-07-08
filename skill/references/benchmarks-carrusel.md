@@ -4,10 +4,10 @@
 
 ## Ratio y dimensiones
 
-Estándar único del sistema: **3:4 (Retrato)** — es el vertical que ofrece ChatGPT, donde Mario genera las imágenes. No existe 4:5 en ChatGPT.
+Estándar único del sistema: **4:5 (1080×1350, retrato)**. Es el formato maestro de Instagram y la base del renderer determinista. La interfaz puntual de un generador no decide el formato de la marca.
 
-- **Instagram:** se sube como carrusel de imágenes. 3:4 ocupa buena parte del feed móvil. Margen seguro 80px; evita texto/caras en bordes (el perfil recorta).
-- **LinkedIn:** se sube como **PDF multipágina** (post de documento). Mismo 3:4. PDF < 10 MB.
+- **Instagram:** se sube como carrusel de imágenes. 4:5 ocupa el máximo vertical habitual del feed móvil. Margen seguro definido en `brand-dna.md`.
+- **LinkedIn:** se exporta el mismo 4:5 como **PDF multipágina** (post de documento). PDF < 10 MB.
 - Mismo visual para ambas redes; cambia solo el copy del post.
 
 ## Número de slides

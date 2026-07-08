@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#232323"/>
+  <rect x="40" y="40" width="1000" height="1270" fill="none" stroke="#444444"/>
+  <!-- El pipeline inserta cabecera y contenido aquí. -->
+</svg>

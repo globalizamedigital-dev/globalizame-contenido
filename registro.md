@@ -11,6 +11,10 @@ Próximo hook: 2 · Caso real
 Último sprint producido: Semana 1 · TOFU (1 jul)
 Último tipo de carrusel: Error costoso / dato impactante (8 slides)
 Último post publicado: — (generado 1 jul, sin publicar aún)
+Última metáfora visual: fuga silenciosa (teléfono → línea verde → dinero)
+Última familia de portada: cover-split
+Últimas infografías: metric-stage · matrix-100 · causal-flow · range-leak · clock-ring
+Último cierre visual: closing-loop (cable del teléfono)
 ```
 
 ---

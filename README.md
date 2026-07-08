@@ -2,6 +2,10 @@
 
 Sistema autónomo de producción de contenido de Instagram para Globalizame (Mario Ruiz).
 
+## Sistema visual
+
+El carrusel se construye desde una especificación estructurada, se renderiza en SVG y PNG, se compara en una hoja de contacto y se valida antes de aprobarse. Consulta `SISTEMA_VISUAL.md`.
+
 ## Cómo funciona
 
 Dos routines de Claude Code mantienen vivo este sistema:

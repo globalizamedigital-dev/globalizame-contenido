@@ -1,0 +1,145 @@
+{
+  "title": "La fuga silenciosa · 8 slides",
+  "format": {"width": 1080, "height": 1350, "ratio": "4:5"},
+  "visual_bible": {
+    "mother_idea": "Cada llamada no atendida abre una fuga física por la que sale dinero",
+    "recurring_motif": "una línea verde continua que cambia de función sin cambiar de estilo",
+    "perspective": "frontal con rotaciones máximas de 8 grados",
+    "material": "papel térmico, metal mate y señalética sólida",
+    "lighting": "plana con sombra dura corta"
+  },
+  "qa_scores": {
+    "cover_impact": 4.7,
+    "mobile_clarity": 4.8,
+    "hierarchy": 4.7,
+    "continuity": 4.8,
+    "brand_fidelity": 4.9,
+    "conceptual_strength": 4.6,
+    "infographic_quality": 4.6,
+    "rhythm_variety": 4.7,
+    "text_accuracy": 5.0,
+    "closing_power": 4.6
+  },
+  "slides": [
+    {
+      "number": 1,
+      "role": "cover",
+      "narrative_job": "Convertir una pérdida invisible en una cifra imposible de ignorar sin revelar la solución",
+      "reader_takeaway": "Puede estar perdiendo mucho dinero sin verlo",
+      "exact_copy": {
+        "headline": [{"text": "Pierdes hasta"}, {"text": "", "accent": "15.000 €"}, {"text": "al mes"}],
+        "support": "y ni te enteras",
+        "source": ""
+      },
+      "layout": {"template_id": "cover-split", "grid_areas": "texto 7 columnas, objeto 5", "focal_point": "15.000 € y agujero del ticket", "reading_order": "cifra, frase, ticket", "whitespace_ratio": 38},
+      "visual": {"type": "ticket-hole", "concept": "Ticket de papel perforado por un teléfono; la banda verde de dinero atraviesa el hueco", "metaphor": "factura con fuga", "subject": "ticket", "composition": "diagonal derecha", "scale": "monumental", "perspective": "frontal", "material": "papel térmico", "lighting": "plana", "recurring_motif": "línea verde"},
+      "data_visualization": null,
+      "continuity": "Introduce el teléfono y la línea verde que viajarán por toda la serie"
+    },
+    {
+      "number": 2,
+      "role": "context",
+      "narrative_job": "Hacer reconocible la escena cotidiana que provoca la pérdida",
+      "reader_takeaway": "Las llamadas llegan cuando no hay manos libres",
+      "exact_copy": {
+        "headline": [{"text": "Es temporada alta"}],
+        "support": "Entran más llamadas. Tú tienes las dos manos ocupadas.",
+        "source": ""
+      },
+      "layout": {"template_id": "scene-left", "grid_areas": "texto arriba, teléfono izquierda, manos derecha", "focal_point": "teléfono sonando", "reading_order": "situación, teléfono, manos", "whitespace_ratio": 34},
+      "visual": {"type": "busy-scene", "concept": "Teléfono nítido que suena mientras dos brazos sostienen platos al fondo", "metaphor": "el timbre fuera de alcance", "subject": "teléfono y manos", "composition": "profundidad lateral", "scale": "grande", "perspective": "frontal", "material": "señalética sólida", "lighting": "plana", "recurring_motif": "onda verde"},
+      "data_visualization": null,
+      "continuity": "La línea de la portada se convierte en onda de llamada"
+    },
+    {
+      "number": 3,
+      "role": "proof",
+      "narrative_job": "Asignar un precio concreto a una llamada perdida",
+      "reader_takeaway": "Una llamada perdida tiene coste",
+      "exact_copy": {
+        "headline": [{"text": "Cada llamada perdida"}, {"text": "lleva una etiqueta"}],
+        "support": "150 € de media que se van",
+        "source": "Fuente: gestiondellamadas.com"
+      },
+      "layout": {"template_id": "metric-stage", "grid_areas": "titular arriba, objeto central, fuente abajo", "focal_point": "etiqueta 150 €", "reading_order": "causa, precio, fuente", "whitespace_ratio": 31},
+      "visual": {"type": "price-tag", "concept": "Del auricular cuelga una etiqueta verde de precio con 150 €", "metaphor": "la llamada como producto que se pierde", "subject": "teléfono y etiqueta", "composition": "diagonal ascendente", "scale": "grande", "perspective": "frontal", "material": "metal mate y cartón", "lighting": "plana", "recurring_motif": "hilo verde"},
+      "data_visualization": {"type": "single metric", "values": [150], "labels": ["€ por llamada"], "source": "gestiondellamadas.com"},
+      "continuity": "La línea verde se convierte en el hilo de la etiqueta"
+    },
+    {
+      "number": 4,
+      "role": "scale",
+      "narrative_job": "Mostrar la escala de llamadas no contestadas de un vistazo",
+      "reader_takeaway": "Casi la mitad se pierde",
+      "exact_copy": {
+        "headline": [{"text": "43 de cada 100"}, {"text": "sin contestar"}],
+        "support": "En un restaurante",
+        "source": "Fuente sectorial · 2026"
+      },
+      "layout": {"template_id": "matrix-100", "grid_areas": "titular arriba, matriz central, fuente abajo", "focal_point": "bloque de 43 unidades", "reading_order": "cifra, matriz, contexto", "whitespace_ratio": 24},
+      "visual": {"type": "matrix", "concept": "Matriz exacta de 100 unidades: 57 verdes y 43 grises, con corchete directo", "metaphor": "centralita incompleta", "subject": "matriz 10x10", "composition": "ortogonal", "scale": "dominante", "perspective": "frontal", "material": "señalética sólida", "lighting": "plana", "recurring_motif": "corchete verde"},
+      "data_visualization": {"type": "unit matrix", "values": [57,43], "labels": ["contestadas","sin contestar"], "source": "Fuente sectorial 2026"},
+      "continuity": "La línea verde se convierte en corchete de medición"
+    },
+    {
+      "number": 5,
+      "role": "consequence",
+      "narrative_job": "Enseñar adónde va la oportunidad que no se atiende",
+      "reader_takeaway": "La llamada perdida se convierte en cliente de otro",
+      "exact_copy": {
+        "headline": [{"text": "85 de cada 100"}, {"text": "no vuelven"}],
+        "support": "Se van a la competencia",
+        "source": "Fuente: gestiondellamadas.com"
+      },
+      "layout": {"template_id": "causal-flow", "grid_areas": "titular arriba, dos destinos abajo", "focal_point": "trayectoria verde", "reading_order": "cifra, salida, destino", "whitespace_ratio": 29},
+      "visual": {"type": "flow", "concept": "Dos fachadas: una apagada y otra verde; las personas cruzan hacia la segunda", "metaphor": "la puerta de al lado", "subject": "flujo de clientes", "composition": "horizontal", "scale": "escena completa", "perspective": "frontal", "material": "señalética sólida", "lighting": "plana", "recurring_motif": "trayectoria verde"},
+      "data_visualization": {"type": "flow proportion", "values": [85], "labels": ["no vuelven"], "source": "gestiondellamadas.com"},
+      "continuity": "La línea verde se convierte en trayectoria hacia la competencia"
+    },
+    {
+      "number": 6,
+      "role": "synthesis",
+      "narrative_job": "Cristalizar el coste mensual como una fuga continua",
+      "reader_takeaway": "El goteo pequeño se convierte en miles de euros",
+      "exact_copy": {
+        "headline": [{"text": "Entre ", "accent": "2.500 €"}, {"text": "y ", "accent": "15.000 €"}],
+        "support": "que ni ves salir al mes",
+        "source": "Fuente: gestiondellamadas.com"
+      },
+      "layout": {"template_id": "range-leak", "grid_areas": "rango izquierda, fuga derecha", "focal_point": "rango y chorro de monedas", "reading_order": "rango, fuga, fuente", "whitespace_ratio": 32},
+      "visual": {"type": "leak", "concept": "Grifo abierto del que cae una línea de monedas verdes hacia un desagüe", "metaphor": "fuga mensual", "subject": "grifo y monedas", "composition": "vertical derecha", "scale": "monumental", "perspective": "frontal", "material": "metal mate", "lighting": "plana", "recurring_motif": "chorro verde"},
+      "data_visualization": {"type": "range", "values": [2500,15000], "labels": ["mínimo","máximo"], "source": "gestiondellamadas.com"},
+      "continuity": "La trayectoria verde cae ahora como una fuga física"
+    },
+    {
+      "number": 7,
+      "role": "turn",
+      "narrative_job": "Mostrar que la franja imposible de cubrir ya puede atenderse",
+      "reader_takeaway": "El fuera de horario se puede cubrir",
+      "exact_copy": {
+        "headline": [{"text": "El ", "accent": "40%"}, {"text": "entra fuera de horario"}],
+        "support": "Un agente de voz puede cogerlo 24/7",
+        "source": "Dato sectorial · 2026"
+      },
+      "layout": {"template_id": "clock-ring", "grid_areas": "titular arriba, reloj central", "focal_point": "arco verde del reloj", "reading_order": "porcentaje, reloj, mecanismo", "whitespace_ratio": 30},
+      "visual": {"type": "clock", "concept": "Reloj de 24 horas con el tramo fuera de horario cubierto por un arco verde", "metaphor": "la franja que deja de estar a oscuras", "subject": "reloj 24h", "composition": "circular centrada", "scale": "grande", "perspective": "frontal", "material": "señalética sólida", "lighting": "plana", "recurring_motif": "arco verde"},
+      "data_visualization": {"type": "radial proportion", "values": [40], "labels": ["fuera de horario"], "source": "Dato sectorial 2026"},
+      "continuity": "El chorro verde se curva y cubre el tramo desatendido"
+    },
+    {
+      "number": 8,
+      "role": "closing",
+      "narrative_job": "Cerrar el argumento volviendo al teléfono y trasladando el problema al sistema",
+      "reader_takeaway": "El problema no es llamar; es no tener quién responda",
+      "exact_copy": {
+        "headline": [{"text": "No llamas mal"}, {"text": "No hay nadie al otro lado"}],
+        "support": "El problema es el sistema",
+        "source": ""
+      },
+      "layout": {"template_id": "closing-loop", "grid_areas": "titular dominante, teléfono bajo", "focal_point": "nadie y cable verde", "reading_order": "remate, teléfono, conclusión", "whitespace_ratio": 43},
+      "visual": {"type": "closing-phone", "concept": "Teléfono descolgado cuyo cable verde subraya la conclusión", "metaphor": "el otro lado vacío", "subject": "teléfono final", "composition": "diagonal baja", "scale": "grande", "perspective": "frontal", "material": "metal mate", "lighting": "plana", "recurring_motif": "cable verde"},
+      "data_visualization": null,
+      "continuity": "La línea de toda la serie termina como cable y devuelve al objeto de portada"
+    }
+  ]
+}

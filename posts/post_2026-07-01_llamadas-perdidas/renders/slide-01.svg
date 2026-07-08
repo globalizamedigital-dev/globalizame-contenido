@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <style>
+  .display{font-family:"Aptos Display",Arial,sans-serif;font-weight:800;letter-spacing:-3px;fill:#F5F5F2}
+  .headline{font-family:"Aptos Display",Arial,sans-serif;font-weight:750;letter-spacing:-2px;fill:#F5F5F2}
+  .body{font-family:Aptos,Arial,sans-serif;font-weight:500;fill:#F5F5F2}
+  .meta{font-family:Aptos,Arial,sans-serif;font-size:22px;font-weight:500;fill:#F5F5F2}
+  .strong{font-weight:700}.muted{fill:#A7A7A2}.green{fill:#86CA28}
+  .count{font-family:"Aptos Display",Arial,sans-serif;font-size:34px;font-weight:800;fill:#F5F5F2}
+  .source{font-family:Aptos,Arial,sans-serif;font-size:19px;fill:#A7A7A2}
+  .line{stroke:#86CA28;stroke-width:5;fill:none}.dim{stroke:#444444;stroke-width:4;fill:none}
+  </style><rect width="1080" height="1350" fill="#232323"/>
+  <rect x="40" y="40" width="1000" height="1270" fill="none" stroke="#444444"/>
+  <text x="88" y="91" class="meta strong">Mario Ruiz</text>
+  <text x="88" y="120" class="meta muted">Founder · Globalizame</text>
+  <text x="992" y="96" text-anchor="end" class="count">01</text>
+  <rect x="924" y="116" width="68" height="4" fill="#86CA28"/>
+  <text x="94" y="276" text-anchor="start" class="headline" font-size="105">Pierdes hasta</text>
+<text x="94" y="376.8" text-anchor="start" class="headline" font-size="105"><tspan class="green">15.000 €</tspan></text>
+<text x="94" y="477.6" text-anchor="start" class="headline" font-size="105">al mes</text>
+  <text x="94" y="613.4" class="body muted" font-size="38"><tspan x="94" dy="0">y ni te enteras</tspan></text><g transform="translate(676 282) rotate(7)">
+        <path d="M0 0 H260 V650 L230 630 200 650 170 630 140 650 110 630 80 650 50 630 20 650 0 630Z" fill="#F5F5F2"/>
+        <circle cx="130" cy="255" r="82" fill="#232323"/>
+        <path d="M78 218 C98 190 120 188 137 207 L151 223 C158 231 157 242 148 249 L134 260 C149 279 165 293 186 305 L198 291 C205 282 217 282 225 290 L241 307 C258 326 251 349 224 366 C176 334 124 284 78 218Z" fill="#232323"/>
+        <rect x="52" y="80" width="154" height="12" fill="#86CA28"/>
+        <rect x="52" y="112" width="112" height="7" fill="#444444"/>
+        <rect x="52" y="520" width="154" height="54" fill="#86CA28"/>
+      </g>
+  </svg>
