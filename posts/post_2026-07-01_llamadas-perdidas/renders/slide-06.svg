@@ -54,5 +54,4 @@
       <circle cx="52" cy="575" r="34" fill="#8DFF24"/><circle cx="106" cy="647" r="36" fill="#8DFF24"/><circle cx="52" cy="719" r="38" fill="#8DFF24"/><circle cx="106" cy="791" r="40" fill="#8DFF24"/><circle cx="52" cy="863" r="42" fill="#8DFF24"/><circle cx="106" cy="935" r="44" fill="#8DFF24"/>
       <ellipse cx="88" cy="1040" rx="210" ry="62" fill="#050505" opacity=".72"/>
     </g>
-    <text x="64" y="1238" class="small" font-size="22">Fuente: gestiondellamadas.com</text>
   </svg>

@@ -1,4 +1,4 @@
-import fs from "node:fs";
+﻿import fs from "node:fs";
 import path from "node:path";
 
 export const W = 1080;
@@ -178,8 +178,7 @@ function price(slide) {
       <path d="M0 0h350v220H0l-78-110Z" fill="${COLORS.electric}"/>
       <circle cx="24" cy="110" r="18" fill="${COLORS.coal}"/>
       <text x="180" y="142" text-anchor="middle" class="display dark" font-size="96">150€</text>
-    </g>
-    <text x="64" y="1238" class="small" font-size="22" fill="#333">${esc(slide.exact_copy.source || "")}</text>`;
+    </g>`;
 }
 
 function matrix(slide) {
@@ -196,8 +195,7 @@ function matrix(slide) {
         return `<rect x="${x}" y="${y}" width="48" height="28" rx="7" fill="${on ? COLORS.electric : "#3D3D3D"}"/>`;
       }).join("")}
       <text x="700" y="496" class="display accent" font-size="104">43%</text>
-    </g>
-    <text x="64" y="1238" class="small" font-size="22">${esc(slide.exact_copy.source || "")}</text>`;
+    </g>`;
 }
 
 function flow(slide) {
@@ -215,8 +213,7 @@ function flow(slide) {
       <path d="M285 155C420 10 548 7 676 148" stroke="${COLORS.coal}" stroke-width="12" fill="none"/>
       <path d="M638 116l38 32-50 14" stroke="${COLORS.coal}" stroke-width="12" fill="none"/>
       ${Array.from({ length: 7 }, (_, i) => `<circle cx="${345 + i * 45}" cy="${120 - Math.sin(i / 6 * Math.PI) * 70}" r="${16 + i}" fill="${COLORS.coal}"/>`).join("")}
-    </g>
-    <text x="64" y="1238" class="small" font-size="22" fill="#333">${esc(slide.exact_copy.source || "")}</text>`;
+    </g>`;
 }
 
 function leak(slide) {
@@ -231,8 +228,7 @@ function leak(slide) {
       <path d="M70 154C70 310 70 410 70 520" class="stroke" stroke-width="34"/>
       ${Array.from({ length: 6 }, (_, i) => `<circle cx="${70 + (i % 2 ? 36 : -18)}" cy="${575 + i * 72}" r="${34 + i * 2}" fill="${COLORS.electric}"/>`).join("")}
       <ellipse cx="88" cy="1040" rx="210" ry="62" fill="#050505" opacity=".72"/>
-    </g>
-    <text x="64" y="1238" class="small" font-size="22">${esc(slide.exact_copy.source || "")}</text>`;
+    </g>`;
 }
 
 function clock(slide) {
@@ -246,8 +242,7 @@ function clock(slide) {
       <circle r="278" fill="none" stroke="${COLORS.electric}" stroke-width="58" stroke-dasharray="699 1048" transform="rotate(-90)"/>
       ${Array.from({ length: 24 }, (_, i) => `<line x1="0" y1="-350" x2="0" y2="-316" stroke="${i < 10 ? COLORS.electric : COLORS.muted}" stroke-width="6" transform="rotate(${i * 15})"/>`).join("")}
       <text y="36" text-anchor="middle" class="display accent" font-size="138">24/7</text>
-    </g>
-    <text x="64" y="1238" class="small" font-size="22">${esc(slide.exact_copy.source || "")}</text>`;
+    </g>`;
 }
 
 function closing(slide) {
@@ -287,8 +282,13 @@ export function promptFor(slide, bible) {
   const headline = slide.exact_copy.headline.map(x => typeof x === "string" ? x : `${x.text}${x.accent || ""}`).join(" / ");
   return `### Prompt slide ${slide.number}
 
+[ASSET VISUAL, SIN TEXTO]
+Genera un asset visual premium para carrusel de Instagram 4:5, 1080x1350.
+
+NO incluyas texto, letras, números, logos, firmas, fuentes, captions ni marcas de agua dentro de la imagen.
+
 [DIRECCIÓN DE ARTE]
-Construye una escena publicitaria premium, no un icono. Referencia de energía: carruseles con titulares gigantes, collage 3D/foto, textura editorial, luz dramática, profundidad y un objeto protagonista. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel sucio según la escena.
+Pieza de campaña, no icono. Energía de carrusel premium: collage 3D/fotografía intervenida, objeto protagonista enorme, textura editorial, luz dramática, profundidad real, sombras fuertes, composición agresiva y limpia. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel blanco roto según la escena.
 
 [IDEA MADRE]
 ${bible.mother_idea}. El motivo recurrente es ${bible.recurring_motif}, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
@@ -297,14 +297,15 @@ ${bible.mother_idea}. El motivo recurrente es ${bible.recurring_motif}, pero pue
 ${slide.narrative_job}
 
 [ESCENA]
-${slide.visual.concept}. Composición: ${slide.layout.focal_point}. Orden de lectura: ${slide.layout.reading_order}. Que el visual ocupe al menos el 45% del slide y tenga presencia de campaña, con sombras, escala y textura.
+${slide.visual.concept}. Composición: ${slide.layout.focal_point}. Orden de lectura previsto para la capa editorial: ${slide.layout.reading_order}. Deja una zona limpia para titular y subcopy. Que el visual ocupe al menos el 55% del slide y tenga presencia de campaña, con sombras, escala, textura y profundidad.
 
-[TEXTO EXACTO A COMPONER]
+[CAPA EDITORIAL, NO GENERAR EN LA IMAGEN]
 ${headline}${slide.exact_copy.support ? ` / ${slide.exact_copy.support}` : ""}
 
 [CRITERIO INTELIGENTE]
-Si el texto compite con la escena, prioriza legibilidad móvil y mueve la escena. Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual.
+Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual. Si el objeto no se entiende en miniatura, simplificar la escena y aumentar el foco.
 
-[BARANDILLA MÍNIMA]
-No inventar texto. No usar iconos de banco de recursos como pieza principal. No cambiar la promesa ni la cifra. No generar un slide plano: debe tener profundidad, textura y un foco visual obvio.`;
+[NEGATIVO FIJO]
+no text, no letters, no numbers, no captions, no watermark, no logo, no flat vector icon, no clipart, no powerpoint infographic, no generic corporate illustration, no cartoon, no childish shapes, no cheap Canva template, no tiny UI labels, no source text, no stock-photo smiley people`;
 }
+

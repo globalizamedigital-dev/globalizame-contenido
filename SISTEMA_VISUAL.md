@@ -1,6 +1,21 @@
 # Sistema visual automatizado
 
-## Ejecución
+## Regla actual
+
+El sistema no debe vender una maqueta SVG como diseño final premium.
+
+El flujo correcto es:
+
+1. `slides.yaml` define narrativa, texto exacto, datos y función de cada slide.
+2. `prompts-system.md` genera prompts para assets visuales premium sin texto.
+3. La capa editorial compone titulares, subtítulos y CTA encima del asset.
+4. Las fuentes de datos se guardan como metadata interna o caption, no dentro del arte.
+
+Referencia obligatoria:
+
+- `skill/references/prompt-engine-premium.md`
+
+## Ejecución técnica
 
 Desde la raíz:
 
@@ -8,15 +23,29 @@ Desde la raíz:
 node skill/scripts/run-carousel.mjs posts/post_2026-07-01_llamadas-perdidas
 ```
 
-El comando lee `slides.yaml` como fuente de verdad y genera:
+El comando genera:
 
-- SVG finales en `renders/`;
-- PNG 1080×1350 listos para publicar en `exports/`;
+- SVG de maqueta técnica en `renders/`;
+- PNG de revisión en `exports/`;
 - prompts coordinados en `prompts-system.md`;
-- `contact-sheet.svg`;
+- `contact-sheet.svg` y `contact-sheet.png`;
 - `qa-report.md`.
 
-Los SVG son editables, escalables y publicables después de exportarlos a PNG. El texto, la marca, los datos y la retícula son deterministas. Los prompts permiten generar elementos visuales adicionales sin delegar al modelo la ortografía.
+## Qué es publicable y qué no
+
+Publicable:
+
+- un slide compuesto con asset visual rico y texto controlado;
+- un asset generado sin texto, números, marcas, fuentes ni microcopy;
+- una capa editorial revisada a tamaño móvil.
+
+No publicable:
+
+- iconos planos como pieza principal;
+- infografías tipo PowerPoint;
+- fuentes de datos impresas en el slide;
+- texto deformado dentro de una imagen generativa;
+- maquetas SVG sin asset visual premium.
 
 ## Crear una pieza nueva
 
@@ -25,19 +54,13 @@ Los SVG son editables, escalables y publicables después de exportarlos a PNG. E
 3. Crear `visual-bible.md`.
 4. Crear `slides.yaml` con un objeto por slide.
 5. Ejecutar el comando único.
-6. Abrir la hoja de contacto y completar la puntuación visual.
-7. Si el validador detecta un fallo medible, corregir la especificación y ejecutar:
+6. Revisar `prompts-system.md`.
+7. Generar assets visuales sin texto.
+8. Componer capa editorial.
+9. Revisar hoja de contacto en móvil.
 
-```powershell
-node skill/scripts/validate-carousel.mjs posts/post_fecha_slug --repair
-```
+## Límite del QA automático
 
-Solo se reescriben los renders fallidos.
+El validador automático solo revisa estructura técnica: dimensiones, texto declarado, fuentes de datos como metadata, continuidad y existencia de renders.
 
-## Límites reales
-
-El validador automático puede comprobar dimensiones, texto, fuentes de datos, continuidad declarada, layouts y existencia de renders. La calidad conceptual requiere una revisión visual de la hoja de contacto. Las puntuaciones humanas quedan registradas en `slides.yaml` para que el criterio sea auditable.
-
-## Formato maestro
-
-El sistema usa 1080×1350, 4:5. Es el formato vertical estándar de Instagram y puede convertirse en PDF multipágina para LinkedIn. Se elimina la regla 3:4 porque hacía depender toda la identidad de una limitación circunstancial del generador.
+No certifica potencia visual. Si el resultado parece plantilla barata, el sistema debe tratarlo como fallo aunque el QA técnico pase.

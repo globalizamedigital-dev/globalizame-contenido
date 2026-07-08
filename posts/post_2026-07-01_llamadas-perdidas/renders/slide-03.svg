@@ -58,5 +58,4 @@
       <circle cx="24" cy="110" r="18" fill="#070707"/>
       <text x="180" y="142" text-anchor="middle" class="display dark" font-size="96">150€</text>
     </g>
-    <text x="64" y="1238" class="small" font-size="22" fill="#333">Fuente: gestiondellamadas.com</text>
   </svg>
