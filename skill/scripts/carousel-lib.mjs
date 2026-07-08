@@ -280,32 +280,47 @@ export function renderSlide(slide) {
 
 export function promptFor(slide, bible) {
   const headline = slide.exact_copy.headline.map(x => typeof x === "string" ? x : `${x.text}${x.accent || ""}`).join(" / ");
+  const familyByRole = {
+    cover: "Hero 3D",
+    context: "Fotografía intervenida",
+    proof: "Collage premium",
+    scale: "Fotografía intervenida",
+    consequence: "Collage premium",
+    synthesis: "Hero 3D",
+    turn: "Dark cinematic",
+    closing: "Dark cinematic"
+  };
+  const family = slide.art_family || familyByRole[slide.role] || "Collage premium";
   return `### Prompt slide ${slide.number}
 
-[ASSET VISUAL, SIN TEXTO]
-Genera un asset visual premium para carrusel de Instagram 4:5, 1080x1350.
+[PIEZA VISUAL PREMIUM]
+Genera una pieza visual premium para carrusel de Instagram 4:5, 1080x1350.
 
-NO incluyas texto, letras, números, logos, firmas, fuentes, captions ni marcas de agua dentro de la imagen.
+[ESTILO]
+${family}. Referencia: carruseles de agencia con 3D/foto/collage, objetos protagonistas enormes, fondos azules/negros/blancos con textura, sombras reales, glow, profundidad y composición de anuncio.
 
-[DIRECCIÓN DE ARTE]
-Pieza de campaña, no icono. Energía de carrusel premium: collage 3D/fotografía intervenida, objeto protagonista enorme, textura editorial, luz dramática, profundidad real, sombras fuertes, composición agresiva y limpia. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel blanco roto según la escena.
+[MARCA]
+Globalizame: negro carbón, verde lima eléctrico, azul eléctrico, blanco roto, metal/gris fotográfico. Potente, digital, directo. No corporativo genérico.
 
 [IDEA MADRE]
 ${bible.mother_idea}. El motivo recurrente es ${bible.recurring_motif}, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[FUNCIÓN DEL SLIDE]
+[FUNCIÓN]
 ${slide.narrative_job}
 
 [ESCENA]
-${slide.visual.concept}. Composición: ${slide.layout.focal_point}. Orden de lectura previsto para la capa editorial: ${slide.layout.reading_order}. Deja una zona limpia para titular y subcopy. Que el visual ocupe al menos el 55% del slide y tenga presencia de campaña, con sombras, escala, textura y profundidad.
+${slide.visual.concept}
 
-[CAPA EDITORIAL, NO GENERAR EN LA IMAGEN]
-${headline}${slide.exact_copy.support ? ` / ${slide.exact_copy.support}` : ""}
+[COMPOSICIÓN]
+Objeto protagonista: ${slide.visual.subject}. Escala: ${slide.visual.scale}. Composición: ${slide.visual.composition}. Punto focal: ${slide.layout.focal_point}. Deja una zona limpia para titular grande y subcopy. La escena debe ocupar visualmente el slide, no parecer un icono suelto.
 
-[CRITERIO INTELIGENTE]
-Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual. Si el objeto no se entiende en miniatura, simplificar la escena y aumentar el foco.
+[CAPA EDITORIAL POSTERIOR]
+Titular a componer después: ${headline}${slide.exact_copy.support ? ` / ${slide.exact_copy.support}` : ""}
 
-[NEGATIVO FIJO]
-no text, no letters, no numbers, no captions, no watermark, no logo, no flat vector icon, no clipart, no powerpoint infographic, no generic corporate illustration, no cartoon, no childish shapes, no cheap Canva template, no tiny UI labels, no source text, no stock-photo smiley people`;
+[CRITERIO DE DECISIÓN]
+Si parece infografía, dashboard, icono plano o plantilla barata, rehacer como pieza de campaña. Si parece demasiado vacío, acercar el objeto, añadir textura, sombra y profundidad. Si compite con el titular, mover el objeto y conservar una zona limpia.
+
+[NEGATIVO MÍNIMO]
+sin marcas de agua, sin logos ajenos, sin texto deformado, sin estética de infografía plana`;
 }
 

@@ -5,7 +5,11 @@ import { readSpec } from "./carousel-lib.mjs";
 const folder = path.resolve(process.argv[2] || "");
 const repair = process.argv.includes("--repair");
 const spec = readSpec(folder);
-const allowed = new Set(["cover-split","scene-left","metric-stage","matrix-100","causal-flow","range-leak","clock-ring","closing-loop"]);
+const allowed = new Set([
+  "cover-split","scene-left","metric-stage","matrix-100","causal-flow","range-leak","clock-ring","closing-loop",
+  "campaign-hero-3d","photo-campaign","campaign-collage","campaign-photo-stat",
+  "campaign-collage-consequence","campaign-hero-leak","campaign-dark-ai-agent","campaign-dark-cta"
+]);
 const failures = [];
 const rows = [];
 

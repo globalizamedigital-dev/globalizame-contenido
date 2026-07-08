@@ -1,241 +1,273 @@
 # Prompts coordinados · La fuga silenciosa · 8 slides
 
-> Fuente de verdad: slides.yaml. No editar el texto visible en el generador.
+> Fuente de verdad: slides.yaml. Estilo obligatorio: campaña 3D/foto/collage con colores Globalizame. No infografías.
 
 ### Prompt slide 1
 
-[ASSET VISUAL, SIN TEXTO]
-Genera un asset visual premium para carrusel de Instagram 4:5, 1080x1350.
+[PIEZA VISUAL PREMIUM]
+Genera una pieza visual premium para carrusel de Instagram 4:5, 1080x1350.
 
-NO incluyas texto, letras, números, logos, firmas, fuentes, captions ni marcas de agua dentro de la imagen.
+[ESTILO]
+Hero 3D. Referencia: carruseles de agencia con 3D/foto/collage, objetos protagonistas enormes, fondos azules/negros/blancos con textura, sombras reales, glow, profundidad y composición de anuncio.
 
-[DIRECCIÓN DE ARTE]
-Pieza de campaña, no icono. Energía de carrusel premium: collage 3D/fotografía intervenida, objeto protagonista enorme, textura editorial, luz dramática, profundidad real, sombras fuertes, composición agresiva y limpia. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel blanco roto según la escena.
+[MARCA]
+Globalizame: negro carbón, verde lima eléctrico, azul eléctrico, blanco roto, metal/gris fotográfico. Potente, digital, directo. No corporativo genérico.
 
 [IDEA MADRE]
-Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde eléctrica que cambia de función sin perder identidad, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[FUNCIÓN DEL SLIDE]
+[FUNCIÓN]
 Convertir una pérdida invisible en una cifra imposible de ignorar sin revelar la solución
 
 [ESCENA]
-Ticket de papel perforado por un teléfono; la banda verde de dinero atraviesa el hueco. Composición: 15.000 € y agujero del ticket. Orden de lectura previsto para la capa editorial: cifra, frase, ticket. Deja una zona limpia para titular y subcopy. Que el visual ocupe al menos el 55% del slide y tenga presencia de campaña, con sombras, escala, textura y profundidad.
+Un ticket térmico gigante flota sobre fondo negro carbón con glow verde. Un teléfono negro atraviesa el papel como si lo hubiera perforado. De la rotura sale una estela verde eléctrica convertida en dinero líquido. Estética 3D/foto realista, poster de campaña, sombras fuertes, objeto cortado por borde.
 
-[CAPA EDITORIAL, NO GENERAR EN LA IMAGEN]
-Pierdes hasta / 15.000 € / al mes / y ni te enteras
+[COMPOSICIÓN]
+Objeto protagonista: ticket térmico gigante, teléfono negro, fuga verde. Escala: monumental. Composición: diagonal agresiva desde abajo derecha, titular reservado arriba izquierda. Punto focal: ticket gigante roto con teléfono negro y fuga verde. Deja una zona limpia para titular grande y subcopy. La escena debe ocupar visualmente el slide, no parecer un icono suelto.
 
-[CRITERIO INTELIGENTE]
-Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual. Si el objeto no se entiende en miniatura, simplificar la escena y aumentar el foco.
+[CAPA EDITORIAL POSTERIOR]
+Titular a componer después: Pierdes hasta / 15.000 € / al mes / y ni te enteras
 
-[NEGATIVO FIJO]
-no text, no letters, no numbers, no captions, no watermark, no logo, no flat vector icon, no clipart, no powerpoint infographic, no generic corporate illustration, no cartoon, no childish shapes, no cheap Canva template, no tiny UI labels, no source text, no stock-photo smiley people
+[CRITERIO DE DECISIÓN]
+Si parece infografía, dashboard, icono plano o plantilla barata, rehacer como pieza de campaña. Si parece demasiado vacío, acercar el objeto, añadir textura, sombra y profundidad. Si compite con el titular, mover el objeto y conservar una zona limpia.
+
+[NEGATIVO MÍNIMO]
+sin marcas de agua, sin logos ajenos, sin texto deformado, sin estética de infografía plana
 
 ---
 
 ### Prompt slide 2
 
-[ASSET VISUAL, SIN TEXTO]
-Genera un asset visual premium para carrusel de Instagram 4:5, 1080x1350.
+[PIEZA VISUAL PREMIUM]
+Genera una pieza visual premium para carrusel de Instagram 4:5, 1080x1350.
 
-NO incluyas texto, letras, números, logos, firmas, fuentes, captions ni marcas de agua dentro de la imagen.
+[ESTILO]
+Fotografía intervenida. Referencia: carruseles de agencia con 3D/foto/collage, objetos protagonistas enormes, fondos azules/negros/blancos con textura, sombras reales, glow, profundidad y composición de anuncio.
 
-[DIRECCIÓN DE ARTE]
-Pieza de campaña, no icono. Energía de carrusel premium: collage 3D/fotografía intervenida, objeto protagonista enorme, textura editorial, luz dramática, profundidad real, sombras fuertes, composición agresiva y limpia. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel blanco roto según la escena.
+[MARCA]
+Globalizame: negro carbón, verde lima eléctrico, azul eléctrico, blanco roto, metal/gris fotográfico. Potente, digital, directo. No corporativo genérico.
 
 [IDEA MADRE]
-Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde eléctrica que cambia de función sin perder identidad, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[FUNCIÓN DEL SLIDE]
+[FUNCIÓN]
 Hacer reconocible la escena cotidiana que provoca la pérdida
 
 [ESCENA]
-Teléfono nítido que suena mientras dos brazos sostienen platos al fondo. Composición: teléfono sonando. Orden de lectura previsto para la capa editorial: situación, teléfono, manos. Deja una zona limpia para titular y subcopy. Que el visual ocupe al menos el 55% del slide y tenga presencia de campaña, con sombras, escala, textura y profundidad.
+Fotografía intervenida de restaurante en hora punta: manos con bandeja desenfocadas, teléfono grande vibrando en primer plano, ondas verde lima saliendo como señal física. Fondo azul eléctrico con textura sutil, recortes fotográficos y sombra real.
 
-[CAPA EDITORIAL, NO GENERAR EN LA IMAGEN]
-Es temporada alta / Entran más llamadas. Tú tienes las dos manos ocupadas.
+[COMPOSICIÓN]
+Objeto protagonista: teléfono vibrando, manos ocupadas, bandeja de restaurante. Escala: grande. Composición: teléfono en primer plano inferior, manos cruzando la escena, titular reservado arriba. Punto focal: mano con bandeja y teléfono vibrando. Deja una zona limpia para titular grande y subcopy. La escena debe ocupar visualmente el slide, no parecer un icono suelto.
 
-[CRITERIO INTELIGENTE]
-Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual. Si el objeto no se entiende en miniatura, simplificar la escena y aumentar el foco.
+[CAPA EDITORIAL POSTERIOR]
+Titular a componer después: Es temporada alta / Entran más llamadas. Tú tienes las dos manos ocupadas.
 
-[NEGATIVO FIJO]
-no text, no letters, no numbers, no captions, no watermark, no logo, no flat vector icon, no clipart, no powerpoint infographic, no generic corporate illustration, no cartoon, no childish shapes, no cheap Canva template, no tiny UI labels, no source text, no stock-photo smiley people
+[CRITERIO DE DECISIÓN]
+Si parece infografía, dashboard, icono plano o plantilla barata, rehacer como pieza de campaña. Si parece demasiado vacío, acercar el objeto, añadir textura, sombra y profundidad. Si compite con el titular, mover el objeto y conservar una zona limpia.
+
+[NEGATIVO MÍNIMO]
+sin marcas de agua, sin logos ajenos, sin texto deformado, sin estética de infografía plana
 
 ---
 
 ### Prompt slide 3
 
-[ASSET VISUAL, SIN TEXTO]
-Genera un asset visual premium para carrusel de Instagram 4:5, 1080x1350.
+[PIEZA VISUAL PREMIUM]
+Genera una pieza visual premium para carrusel de Instagram 4:5, 1080x1350.
 
-NO incluyas texto, letras, números, logos, firmas, fuentes, captions ni marcas de agua dentro de la imagen.
+[ESTILO]
+Collage premium. Referencia: carruseles de agencia con 3D/foto/collage, objetos protagonistas enormes, fondos azules/negros/blancos con textura, sombras reales, glow, profundidad y composición de anuncio.
 
-[DIRECCIÓN DE ARTE]
-Pieza de campaña, no icono. Energía de carrusel premium: collage 3D/fotografía intervenida, objeto protagonista enorme, textura editorial, luz dramática, profundidad real, sombras fuertes, composición agresiva y limpia. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel blanco roto según la escena.
+[MARCA]
+Globalizame: negro carbón, verde lima eléctrico, azul eléctrico, blanco roto, metal/gris fotográfico. Potente, digital, directo. No corporativo genérico.
 
 [IDEA MADRE]
-Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde eléctrica que cambia de función sin perder identidad, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[FUNCIÓN DEL SLIDE]
+[FUNCIÓN]
 Asignar un precio concreto a una llamada perdida
 
 [ESCENA]
-Del auricular cuelga una etiqueta verde de precio con 150 €. Composición: etiqueta 150 €. Orden de lectura previsto para la capa editorial: causa, precio, fuente. Deja una zona limpia para titular y subcopy. Que el visual ocupe al menos el 55% del slide y tenga presencia de campaña, con sombras, escala, textura y profundidad.
+Collage premium sobre blanco roto: teléfono negro de aspecto fotográfico flotando, etiqueta verde lima de precio colgando con cuerda realista, billetes desenfocados al fondo, sombra larga y textura de papel. No composición de gráfico, debe parecer anuncio de producto.
 
-[CAPA EDITORIAL, NO GENERAR EN LA IMAGEN]
-Cada llamada perdida / lleva una etiqueta / 150 € de media que se van
+[COMPOSICIÓN]
+Objeto protagonista: teléfono negro, etiqueta verde, billetes desenfocados. Escala: grande. Composición: objeto central grande en diagonal, zona limpia superior para titular. Punto focal: etiqueta verde atada a un teléfono negro. Deja una zona limpia para titular grande y subcopy. La escena debe ocupar visualmente el slide, no parecer un icono suelto.
 
-[CRITERIO INTELIGENTE]
-Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual. Si el objeto no se entiende en miniatura, simplificar la escena y aumentar el foco.
+[CAPA EDITORIAL POSTERIOR]
+Titular a componer después: Cada llamada perdida / lleva una etiqueta / 150 € de media que se van
 
-[NEGATIVO FIJO]
-no text, no letters, no numbers, no captions, no watermark, no logo, no flat vector icon, no clipart, no powerpoint infographic, no generic corporate illustration, no cartoon, no childish shapes, no cheap Canva template, no tiny UI labels, no source text, no stock-photo smiley people
+[CRITERIO DE DECISIÓN]
+Si parece infografía, dashboard, icono plano o plantilla barata, rehacer como pieza de campaña. Si parece demasiado vacío, acercar el objeto, añadir textura, sombra y profundidad. Si compite con el titular, mover el objeto y conservar una zona limpia.
+
+[NEGATIVO MÍNIMO]
+sin marcas de agua, sin logos ajenos, sin texto deformado, sin estética de infografía plana
 
 ---
 
 ### Prompt slide 4
 
-[ASSET VISUAL, SIN TEXTO]
-Genera un asset visual premium para carrusel de Instagram 4:5, 1080x1350.
+[PIEZA VISUAL PREMIUM]
+Genera una pieza visual premium para carrusel de Instagram 4:5, 1080x1350.
 
-NO incluyas texto, letras, números, logos, firmas, fuentes, captions ni marcas de agua dentro de la imagen.
+[ESTILO]
+Fotografía intervenida. Referencia: carruseles de agencia con 3D/foto/collage, objetos protagonistas enormes, fondos azules/negros/blancos con textura, sombras reales, glow, profundidad y composición de anuncio.
 
-[DIRECCIÓN DE ARTE]
-Pieza de campaña, no icono. Energía de carrusel premium: collage 3D/fotografía intervenida, objeto protagonista enorme, textura editorial, luz dramática, profundidad real, sombras fuertes, composición agresiva y limpia. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel blanco roto según la escena.
+[MARCA]
+Globalizame: negro carbón, verde lima eléctrico, azul eléctrico, blanco roto, metal/gris fotográfico. Potente, digital, directo. No corporativo genérico.
 
 [IDEA MADRE]
-Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde eléctrica que cambia de función sin perder identidad, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[FUNCIÓN DEL SLIDE]
-Mostrar la escala de llamadas no contestadas de un vistazo
+[FUNCIÓN]
+Mostrar la escala de llamadas no contestadas sin convertirlo en una infografía escolar
 
 [ESCENA]
-Matriz exacta de 100 unidades: 57 verdes y 43 grises, con corchete directo. Composición: bloque de 43 unidades. Orden de lectura previsto para la capa editorial: cifra, matriz, contexto. Deja una zona limpia para titular y subcopy. Que el visual ocupe al menos el 55% del slide y tenga presencia de campaña, con sombras, escala, textura y profundidad.
+Escena fotográfica de restaurante oscuro antes de abrir: mesa, sillas y teléfono fijo o móvil en primer plano. Decenas de llamadas perdidas aparecen como burbujas/auriculares translúcidos verdes flotando alrededor, como lluvia de oportunidades perdidas. Fondo negro con glow verde, estética cinematográfica, no matriz de datos.
 
-[CAPA EDITORIAL, NO GENERAR EN LA IMAGEN]
-43 de cada 100 / sin contestar / En un restaurante
+[COMPOSICIÓN]
+Objeto protagonista: restaurante, teléfono, llamadas fantasma verdes. Escala: escena completa. Composición: teléfono abajo derecha, burbujas subiendo, titular reservado arriba izquierda. Punto focal: restaurante vacío con llamadas fantasma. Deja una zona limpia para titular grande y subcopy. La escena debe ocupar visualmente el slide, no parecer un icono suelto.
 
-[CRITERIO INTELIGENTE]
-Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual. Si el objeto no se entiende en miniatura, simplificar la escena y aumentar el foco.
+[CAPA EDITORIAL POSTERIOR]
+Titular a componer después: 43 de cada 100 / sin contestar / En un restaurante
 
-[NEGATIVO FIJO]
-no text, no letters, no numbers, no captions, no watermark, no logo, no flat vector icon, no clipart, no powerpoint infographic, no generic corporate illustration, no cartoon, no childish shapes, no cheap Canva template, no tiny UI labels, no source text, no stock-photo smiley people
+[CRITERIO DE DECISIÓN]
+Si parece infografía, dashboard, icono plano o plantilla barata, rehacer como pieza de campaña. Si parece demasiado vacío, acercar el objeto, añadir textura, sombra y profundidad. Si compite con el titular, mover el objeto y conservar una zona limpia.
+
+[NEGATIVO MÍNIMO]
+sin marcas de agua, sin logos ajenos, sin texto deformado, sin estética de infografía plana
 
 ---
 
 ### Prompt slide 5
 
-[ASSET VISUAL, SIN TEXTO]
-Genera un asset visual premium para carrusel de Instagram 4:5, 1080x1350.
+[PIEZA VISUAL PREMIUM]
+Genera una pieza visual premium para carrusel de Instagram 4:5, 1080x1350.
 
-NO incluyas texto, letras, números, logos, firmas, fuentes, captions ni marcas de agua dentro de la imagen.
+[ESTILO]
+Collage premium. Referencia: carruseles de agencia con 3D/foto/collage, objetos protagonistas enormes, fondos azules/negros/blancos con textura, sombras reales, glow, profundidad y composición de anuncio.
 
-[DIRECCIÓN DE ARTE]
-Pieza de campaña, no icono. Energía de carrusel premium: collage 3D/fotografía intervenida, objeto protagonista enorme, textura editorial, luz dramática, profundidad real, sombras fuertes, composición agresiva y limpia. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel blanco roto según la escena.
+[MARCA]
+Globalizame: negro carbón, verde lima eléctrico, azul eléctrico, blanco roto, metal/gris fotográfico. Potente, digital, directo. No corporativo genérico.
 
 [IDEA MADRE]
-Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde eléctrica que cambia de función sin perder identidad, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[FUNCIÓN DEL SLIDE]
-Enseñar adónde va la oportunidad que no se atiende
+[FUNCIÓN]
+Enseñar adónde va la oportunidad que no se atiende sin usar diagramas
 
 [ESCENA]
-Dos fachadas: una apagada y otra verde; las personas cruzan hacia la segunda. Composición: trayectoria verde. Orden de lectura previsto para la capa editorial: cifra, salida, destino. Deja una zona limpia para titular y subcopy. Que el visual ocupe al menos el 55% del slide y tenga presencia de campaña, con sombras, escala, textura y profundidad.
+Collage fotográfico: un cliente de espaldas camina desde un local apagado hacia un escaparate con luz verde lima al fondo. El cable verde de una llamada perdida se estira por el suelo como una cuerda que lo arrastra hacia la competencia. Fondo blanco roto o negro con textura, sombras reales, profundidad de calle.
 
-[CAPA EDITORIAL, NO GENERAR EN LA IMAGEN]
-85 de cada 100 / no vuelven / Se van a la competencia
+[COMPOSICIÓN]
+Objeto protagonista: cliente, local apagado, escaparate verde, cable de teléfono. Escala: cinematográfica. Composición: diagonal de izquierda a derecha, cable verde como línea narrativa, titular arriba. Punto focal: cliente atraído por escaparate verde de la competencia. Deja una zona limpia para titular grande y subcopy. La escena debe ocupar visualmente el slide, no parecer un icono suelto.
 
-[CRITERIO INTELIGENTE]
-Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual. Si el objeto no se entiende en miniatura, simplificar la escena y aumentar el foco.
+[CAPA EDITORIAL POSTERIOR]
+Titular a componer después: 85 de cada 100 / no vuelven / Se van a la competencia
 
-[NEGATIVO FIJO]
-no text, no letters, no numbers, no captions, no watermark, no logo, no flat vector icon, no clipart, no powerpoint infographic, no generic corporate illustration, no cartoon, no childish shapes, no cheap Canva template, no tiny UI labels, no source text, no stock-photo smiley people
+[CRITERIO DE DECISIÓN]
+Si parece infografía, dashboard, icono plano o plantilla barata, rehacer como pieza de campaña. Si parece demasiado vacío, acercar el objeto, añadir textura, sombra y profundidad. Si compite con el titular, mover el objeto y conservar una zona limpia.
+
+[NEGATIVO MÍNIMO]
+sin marcas de agua, sin logos ajenos, sin texto deformado, sin estética de infografía plana
 
 ---
 
 ### Prompt slide 6
 
-[ASSET VISUAL, SIN TEXTO]
-Genera un asset visual premium para carrusel de Instagram 4:5, 1080x1350.
+[PIEZA VISUAL PREMIUM]
+Genera una pieza visual premium para carrusel de Instagram 4:5, 1080x1350.
 
-NO incluyas texto, letras, números, logos, firmas, fuentes, captions ni marcas de agua dentro de la imagen.
+[ESTILO]
+Hero 3D. Referencia: carruseles de agencia con 3D/foto/collage, objetos protagonistas enormes, fondos azules/negros/blancos con textura, sombras reales, glow, profundidad y composición de anuncio.
 
-[DIRECCIÓN DE ARTE]
-Pieza de campaña, no icono. Energía de carrusel premium: collage 3D/fotografía intervenida, objeto protagonista enorme, textura editorial, luz dramática, profundidad real, sombras fuertes, composición agresiva y limpia. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel blanco roto según la escena.
+[MARCA]
+Globalizame: negro carbón, verde lima eléctrico, azul eléctrico, blanco roto, metal/gris fotográfico. Potente, digital, directo. No corporativo genérico.
 
 [IDEA MADRE]
-Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde eléctrica que cambia de función sin perder identidad, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[FUNCIÓN DEL SLIDE]
+[FUNCIÓN]
 Cristalizar el coste mensual como una fuga continua
 
 [ESCENA]
-Grifo abierto del que cae una línea de monedas verdes hacia un desagüe. Composición: rango y chorro de monedas. Orden de lectura previsto para la capa editorial: rango, fuga, fuente. Deja una zona limpia para titular y subcopy. Que el visual ocupe al menos el 55% del slide y tenga presencia de campaña, con sombras, escala, textura y profundidad.
+Render 3D/foto hiperrealista: grifo metálico enorme suspendido sobre fondo azul eléctrico, de él caen monedas verdes luminosas hacia un desagüe negro. Agua convertida en dinero, sombras fuertes, composición de anuncio, objeto cortado por el borde derecho.
 
-[CAPA EDITORIAL, NO GENERAR EN LA IMAGEN]
-Entre 2.500 € / y 15.000 € / que ni ves salir al mes
+[COMPOSICIÓN]
+Objeto protagonista: grifo metálico, monedas verdes, desagüe negro. Escala: monumental. Composición: grifo grande derecha, caída vertical, titular a la izquierda. Punto focal: grifo metálico soltando monedas verdes. Deja una zona limpia para titular grande y subcopy. La escena debe ocupar visualmente el slide, no parecer un icono suelto.
 
-[CRITERIO INTELIGENTE]
-Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual. Si el objeto no se entiende en miniatura, simplificar la escena y aumentar el foco.
+[CAPA EDITORIAL POSTERIOR]
+Titular a componer después: Entre 2.500 € / y 15.000 € / que ni ves salir al mes
 
-[NEGATIVO FIJO]
-no text, no letters, no numbers, no captions, no watermark, no logo, no flat vector icon, no clipart, no powerpoint infographic, no generic corporate illustration, no cartoon, no childish shapes, no cheap Canva template, no tiny UI labels, no source text, no stock-photo smiley people
+[CRITERIO DE DECISIÓN]
+Si parece infografía, dashboard, icono plano o plantilla barata, rehacer como pieza de campaña. Si parece demasiado vacío, acercar el objeto, añadir textura, sombra y profundidad. Si compite con el titular, mover el objeto y conservar una zona limpia.
+
+[NEGATIVO MÍNIMO]
+sin marcas de agua, sin logos ajenos, sin texto deformado, sin estética de infografía plana
 
 ---
 
 ### Prompt slide 7
 
-[ASSET VISUAL, SIN TEXTO]
-Genera un asset visual premium para carrusel de Instagram 4:5, 1080x1350.
+[PIEZA VISUAL PREMIUM]
+Genera una pieza visual premium para carrusel de Instagram 4:5, 1080x1350.
 
-NO incluyas texto, letras, números, logos, firmas, fuentes, captions ni marcas de agua dentro de la imagen.
+[ESTILO]
+Dark cinematic. Referencia: carruseles de agencia con 3D/foto/collage, objetos protagonistas enormes, fondos azules/negros/blancos con textura, sombras reales, glow, profundidad y composición de anuncio.
 
-[DIRECCIÓN DE ARTE]
-Pieza de campaña, no icono. Energía de carrusel premium: collage 3D/fotografía intervenida, objeto protagonista enorme, textura editorial, luz dramática, profundidad real, sombras fuertes, composición agresiva y limpia. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel blanco roto según la escena.
+[MARCA]
+Globalizame: negro carbón, verde lima eléctrico, azul eléctrico, blanco roto, metal/gris fotográfico. Potente, digital, directo. No corporativo genérico.
 
 [IDEA MADRE]
-Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde eléctrica que cambia de función sin perder identidad, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[FUNCIÓN DEL SLIDE]
+[FUNCIÓN]
 Mostrar que la franja imposible de cubrir ya puede atenderse
 
 [ESCENA]
-Reloj de 24 horas con el tramo fuera de horario cubierto por un arco verde. Composición: arco verde del reloj. Orden de lectura previsto para la capa editorial: porcentaje, reloj, mecanismo. Deja una zona limpia para titular y subcopy. Que el visual ocupe al menos el 55% del slide y tenga presencia de campaña, con sombras, escala, textura y profundidad.
+Escena dark cinematic: robot/agente de voz elegante con auricular o micrófono, sentado en una recepción nocturna con glow verde. Al fondo se intuye un reloj grande fuera de foco y una ventana azul de noche. No usar gráfico circular. Debe parecer portada de campaña tecnológica premium.
 
-[CAPA EDITORIAL, NO GENERAR EN LA IMAGEN]
-El 40% / entra fuera de horario / Un agente de voz puede cogerlo 24/7
+[COMPOSICIÓN]
+Objeto protagonista: agente de voz/robot, auricular, reloj nocturno, recepción. Escala: protagonista. Composición: personaje/robot en tercio derecho, glow verde central, titular arriba izquierda. Punto focal: agente de voz nocturno con reloj luminoso. Deja una zona limpia para titular grande y subcopy. La escena debe ocupar visualmente el slide, no parecer un icono suelto.
 
-[CRITERIO INTELIGENTE]
-Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual. Si el objeto no se entiende en miniatura, simplificar la escena y aumentar el foco.
+[CAPA EDITORIAL POSTERIOR]
+Titular a componer después: El 40% / entra fuera de horario / Un agente de voz puede cogerlo 24/7
 
-[NEGATIVO FIJO]
-no text, no letters, no numbers, no captions, no watermark, no logo, no flat vector icon, no clipart, no powerpoint infographic, no generic corporate illustration, no cartoon, no childish shapes, no cheap Canva template, no tiny UI labels, no source text, no stock-photo smiley people
+[CRITERIO DE DECISIÓN]
+Si parece infografía, dashboard, icono plano o plantilla barata, rehacer como pieza de campaña. Si parece demasiado vacío, acercar el objeto, añadir textura, sombra y profundidad. Si compite con el titular, mover el objeto y conservar una zona limpia.
+
+[NEGATIVO MÍNIMO]
+sin marcas de agua, sin logos ajenos, sin texto deformado, sin estética de infografía plana
 
 ---
 
 ### Prompt slide 8
 
-[ASSET VISUAL, SIN TEXTO]
-Genera un asset visual premium para carrusel de Instagram 4:5, 1080x1350.
+[PIEZA VISUAL PREMIUM]
+Genera una pieza visual premium para carrusel de Instagram 4:5, 1080x1350.
 
-NO incluyas texto, letras, números, logos, firmas, fuentes, captions ni marcas de agua dentro de la imagen.
+[ESTILO]
+Dark cinematic. Referencia: carruseles de agencia con 3D/foto/collage, objetos protagonistas enormes, fondos azules/negros/blancos con textura, sombras reales, glow, profundidad y composición de anuncio.
 
-[DIRECCIÓN DE ARTE]
-Pieza de campaña, no icono. Energía de carrusel premium: collage 3D/fotografía intervenida, objeto protagonista enorme, textura editorial, luz dramática, profundidad real, sombras fuertes, composición agresiva y limpia. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel blanco roto según la escena.
+[MARCA]
+Globalizame: negro carbón, verde lima eléctrico, azul eléctrico, blanco roto, metal/gris fotográfico. Potente, digital, directo. No corporativo genérico.
 
 [IDEA MADRE]
-Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde eléctrica que cambia de función sin perder identidad, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[FUNCIÓN DEL SLIDE]
+[FUNCIÓN]
 Cerrar el argumento volviendo al teléfono y trasladando el problema al sistema
 
 [ESCENA]
-Teléfono descolgado cuyo cable verde subraya la conclusión. Composición: nadie y cable verde. Orden de lectura previsto para la capa editorial: remate, teléfono, conclusión. Deja una zona limpia para titular y subcopy. Que el visual ocupe al menos el 55% del slide y tenga presencia de campaña, con sombras, escala, textura y profundidad.
+Fondo negro carbón con textura, teléfono blanco/metal descolgado flotando, cable verde lima formando una curva dramática como subrayado. Luz de estudio, glow suave, sombras profundas, sensación de vacío al otro lado. Espacio inferior para CTA.
 
-[CAPA EDITORIAL, NO GENERAR EN LA IMAGEN]
-No llamas mal / No hay nadie al otro lado / El problema es el sistema
+[COMPOSICIÓN]
+Objeto protagonista: teléfono descolgado, cable verde, vacío oscuro. Escala: grande. Composición: teléfono grande abajo derecha, cable cruza la base, titular arriba. Punto focal: teléfono descolgado con cable verde como subrayado. Deja una zona limpia para titular grande y subcopy. La escena debe ocupar visualmente el slide, no parecer un icono suelto.
 
-[CRITERIO INTELIGENTE]
-Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual. Si el objeto no se entiende en miniatura, simplificar la escena y aumentar el foco.
+[CAPA EDITORIAL POSTERIOR]
+Titular a componer después: No llamas mal / No hay nadie al otro lado / El problema es el sistema
 
-[NEGATIVO FIJO]
-no text, no letters, no numbers, no captions, no watermark, no logo, no flat vector icon, no clipart, no powerpoint infographic, no generic corporate illustration, no cartoon, no childish shapes, no cheap Canva template, no tiny UI labels, no source text, no stock-photo smiley people
+[CRITERIO DE DECISIÓN]
+Si parece infografía, dashboard, icono plano o plantilla barata, rehacer como pieza de campaña. Si parece demasiado vacío, acercar el objeto, añadir textura, sombra y profundidad. Si compite con el titular, mover el objeto y conservar una zona limpia.
+
+[NEGATIVO MÍNIMO]
+sin marcas de agua, sin logos ajenos, sin texto deformado, sin estética de infografía plana

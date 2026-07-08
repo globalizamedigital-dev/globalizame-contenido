@@ -4,6 +4,15 @@
 
 El sistema no debe vender una maqueta SVG como diseño final premium.
 
+El estilo obligatorio es campaña visual:
+
+- 3D, fotografía intervenida o collage premium;
+- objetos protagonistas grandes;
+- fondos azul eléctrico, negro carbón o blanco roto con textura;
+- verde lima como acento de energía, señal, fuga o cable;
+- texto enorme compuesto en capa editorial;
+- cero estética de infografía escolar, dashboard, matriz de datos o icono plano.
+
 El flujo correcto es:
 
 1. `slides.yaml` define narrativa, texto exacto, datos y función de cada slide.

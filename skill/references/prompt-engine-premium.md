@@ -1,66 +1,89 @@
 # Motor de prompts premium para carruseles
 
-Este sistema no debe pedir “slides bonitos”. Debe construir una escena de campaña por slide.
+## Estilo objetivo
 
-## Regla madre
+Este sistema debe generar carruseles con estética de campaña, no infografías.
 
-El diseño final no sale de un SVG básico. El SVG solo puede servir para maqueta técnica, composición de texto o revisión de copy. La pieza final requiere un asset visual rico: fotografía, 3D, collage, textura, mockup o escena generativa con profundidad.
+La referencia visual es:
 
-## Contrato de producción por slide
+- póster digital con objeto protagonista;
+- 3D/fotografía/collage;
+- fondos azules, negros o blancos con textura;
+- titulares enormes en capa editorial;
+- mockups, manos, robots, astronautas, dinero, relojes, teléfonos, portátiles, estatuas, fichas, tickets;
+- sombras reales, glow, profundidad y composición de anuncio.
 
-Cada slide se genera en dos capas:
+Con colores Globalizame:
 
-1. **Asset visual sin texto**
-   - Escena protagonista.
-   - Sin titulares, sin subtítulos, sin fuentes, sin numeración, sin microcopy.
-   - Formato 1080x1350, composición pensada para dejar zonas limpias donde luego se compone texto.
+- negro carbón como base premium;
+- verde lima eléctrico como señal y acento;
+- azul eléctrico como fondo de campaña;
+- blanco roto para slides respirables;
+- gris/metal para objetos fotográficos.
 
-2. **Capa editorial**
-   - Titular exacto.
-   - Subcopy exacto si aporta.
-   - CTA solo en cierre.
-   - Las fuentes de datos no aparecen dentro del arte. Van en caption, documento interno o notas del post.
+## Lo que queda prohibido conceptualmente
 
-## Cómo debe sonar un prompt bueno
+No es una lista larga de restricciones para la IA. Es una regla de dirección:
 
-Un buen prompt define:
+> Si parece infografía, dashboard, PowerPoint, icono plano o plantilla barata, está mal.
 
-- el tipo de pieza: póster publicitario, collage premium, escena 3D, fotografía intervenida, infografía cinematográfica;
-- el objeto protagonista: ticket, teléfono, mano, reloj, caja registradora, negocio vacío, competencia;
-- la dirección de luz: flash duro, glow lateral, estudio oscuro, fondo azul saturado, papel blanco roto con sombra real;
-- la composición: objeto gigante cortado por borde, diagonal agresiva, centro dramático, profundidad, sombra;
-- el espacio reservado para texto: zona superior izquierda, franja inferior limpia, banda lateral;
-- el criterio de rechazo: si parece icono, clipart, PowerPoint o plantilla Canva barata, rehacer.
+El slide debe sentirse como una pieza que podría estar en un feed de agencia creativa.
+
+## Sistema inteligente de elección de estilo
+
+Antes de escribir el prompt de un slide, decide una de estas familias:
+
+1. **Hero 3D**
+   Objeto protagonista gigante, fondo azul/negro, luz fuerte. Para portada o cifras grandes.
+
+2. **Fotografía intervenida**
+   Mano, restaurante, ticket, dinero o teléfono en blanco y negro, con acento verde/azul añadido.
+
+3. **Collage premium**
+   Objetos recortados, profundidad, sombras, papeles, pantallas, etiquetas, billetes, líneas luminosas.
+
+4. **Dark cinematic**
+   Fondo negro, objeto plateado o blanco, glow verde, atmósfera seria. Para autoridad o cierre.
+
+5. **White campaign**
+   Fondo blanco roto con textura, objeto limpio, azul/verde como golpe. Para slides explicativos.
+
+La familia se elige por intención narrativa, no por orden fijo.
 
 ## Prompt base
 
 ```text
-Genera un asset visual premium para un carrusel de Instagram 4:5, 1080x1350.
+Genera una pieza visual premium para carrusel de Instagram 4:5, 1080x1350.
 
-NO incluyas texto, letras, números, logos, firmas, fuentes ni marcas de agua.
+Estilo:
+[familia elegida: Hero 3D / Fotografía intervenida / Collage premium / Dark cinematic / White campaign]
 
-Dirección de arte:
-pieza de campaña para una marca de automatización de llamadas, estética potente tipo collage 3D/fotografía intervenida, alto contraste, profundidad real, sombras dramáticas, textura editorial, composición agresiva y limpia.
-
-Paleta:
-negro carbón, verde lima eléctrico, azul saturado o blanco papel según el slide. No usar paleta genérica corporativa.
+Marca:
+Globalizame, paleta negro carbón, verde lima eléctrico, azul eléctrico, blanco roto, metal/gris fotográfico. Energía de campaña digital potente, no corporativa.
 
 Escena:
-[describir escena concreta del slide]
+[escena concreta del slide]
 
 Composición:
-[dónde va el objeto, escala, diagonal, zona libre para titular]
+[objeto protagonista, escala, profundidad, zona libre para titular, dirección de luz]
 
-Criterio de calidad:
-debe parecer una pieza de estudio creativo, no un icono, no un dashboard, no un wireframe, no una infografía escolar, no una plantilla barata.
+Resultado esperado:
+debe parecer un anuncio/poster de agencia creativa, con profundidad, textura, sombras reales, composición valiente y foco claro.
+
+Texto:
+no renderices el titular dentro de la imagen. Deja espacio para que se componga después en capa editorial.
 ```
 
-## Prompts negativos fijos
+## Prompt negativo mínimo
 
 ```text
-no text, no letters, no numbers, no captions, no watermark, no logo, no flat vector icon, no clipart, no powerpoint infographic, no generic corporate illustration, no cartoon, no childish shapes, no cheap Canva template, no tiny UI labels, no source text, no stock-photo smiley people
+sin marcas de agua, sin logos ajenos, sin texto deformado, sin estética de infografía plana
 ```
 
-## Fuente de datos
+## Regla de fuentes
 
-La fuente es evidencia editorial, no decoración visual. Nunca se imprime dentro del slide salvo que Mario lo pida expresamente.
+Las fuentes de datos no aparecen en el slide. Van en caption, notas internas o documento del post.
+
+## Regla de texto
+
+Si se usa IA generativa para crear el asset, el asset debe salir sin texto. El texto exacto se compone después con el sistema editorial para evitar letras deformes.

@@ -3,10 +3,10 @@
   "format": {"width": 1080, "height": 1350, "ratio": "4:5"},
   "visual_bible": {
     "mother_idea": "Cada llamada no atendida abre una fuga física por la que sale dinero",
-    "recurring_motif": "una línea verde continua que cambia de función sin cambiar de estilo",
-    "perspective": "frontal con rotaciones máximas de 8 grados",
-    "material": "papel térmico, metal mate y señalética sólida",
-    "lighting": "plana con sombra dura corta"
+    "recurring_motif": "una línea verde eléctrica que cambia de función sin perder identidad",
+    "style": "campaña 3D/foto/collage con estética Globalizame",
+    "palette": "negro carbón, verde lima eléctrico, azul eléctrico, blanco roto, metal gris",
+    "lighting": "luz de estudio, glow verde, sombras reales, profundidad"
   },
   "qa_scores": {
     "cover_impact": 4.7,
@@ -15,7 +15,7 @@
     "continuity": 4.8,
     "brand_fidelity": 4.9,
     "conceptual_strength": 4.6,
-    "infographic_quality": 4.6,
+    "campaign_scene_quality": 4.8,
     "rhythm_variety": 4.7,
     "text_accuracy": 5.0,
     "closing_power": 4.6
@@ -24,6 +24,7 @@
     {
       "number": 1,
       "role": "cover",
+      "art_family": "Hero 3D",
       "narrative_job": "Convertir una pérdida invisible en una cifra imposible de ignorar sin revelar la solución",
       "reader_takeaway": "Puede estar perdiendo mucho dinero sin verlo",
       "exact_copy": {
@@ -31,14 +32,23 @@
         "support": "y ni te enteras",
         "source": ""
       },
-      "layout": {"template_id": "cover-split", "grid_areas": "texto 7 columnas, objeto 5", "focal_point": "15.000 € y agujero del ticket", "reading_order": "cifra, frase, ticket", "whitespace_ratio": 38},
-      "visual": {"type": "ticket-hole", "concept": "Ticket de papel perforado por un teléfono; la banda verde de dinero atraviesa el hueco", "metaphor": "factura con fuga", "subject": "ticket", "composition": "diagonal derecha", "scale": "monumental", "perspective": "frontal", "material": "papel térmico", "lighting": "plana", "recurring_motif": "línea verde"},
+      "layout": {"template_id": "campaign-hero-3d", "focal_point": "ticket gigante roto con teléfono negro y fuga verde", "reading_order": "cifra, frase, objeto", "whitespace_ratio": 22},
+      "visual": {
+        "type": "campaign-scene",
+        "concept": "Un ticket térmico gigante flota sobre fondo negro carbón con glow verde. Un teléfono negro atraviesa el papel como si lo hubiera perforado. De la rotura sale una estela verde eléctrica convertida en dinero líquido. Estética 3D/foto realista, poster de campaña, sombras fuertes, objeto cortado por borde.",
+        "metaphor": "la factura que se rompe por una fuga invisible",
+        "subject": "ticket térmico gigante, teléfono negro, fuga verde",
+        "composition": "diagonal agresiva desde abajo derecha, titular reservado arriba izquierda",
+        "scale": "monumental",
+        "recurring_motif": "fuga verde"
+      },
       "data_visualization": null,
-      "continuity": "Introduce el teléfono y la línea verde que viajarán por toda la serie"
+      "continuity": "Introduce teléfono, dinero y línea verde como código visual de toda la serie"
     },
     {
       "number": 2,
       "role": "context",
+      "art_family": "Fotografía intervenida",
       "narrative_job": "Hacer reconocible la escena cotidiana que provoca la pérdida",
       "reader_takeaway": "Las llamadas llegan cuando no hay manos libres",
       "exact_copy": {
@@ -46,14 +56,23 @@
         "support": "Entran más llamadas. Tú tienes las dos manos ocupadas.",
         "source": ""
       },
-      "layout": {"template_id": "scene-left", "grid_areas": "texto arriba, teléfono izquierda, manos derecha", "focal_point": "teléfono sonando", "reading_order": "situación, teléfono, manos", "whitespace_ratio": 34},
-      "visual": {"type": "busy-scene", "concept": "Teléfono nítido que suena mientras dos brazos sostienen platos al fondo", "metaphor": "el timbre fuera de alcance", "subject": "teléfono y manos", "composition": "profundidad lateral", "scale": "grande", "perspective": "frontal", "material": "señalética sólida", "lighting": "plana", "recurring_motif": "onda verde"},
+      "layout": {"template_id": "photo-campaign", "focal_point": "mano con bandeja y teléfono vibrando", "reading_order": "situación, teléfono, tensión", "whitespace_ratio": 26},
+      "visual": {
+        "type": "campaign-scene",
+        "concept": "Fotografía intervenida de restaurante en hora punta: manos con bandeja desenfocadas, teléfono grande vibrando en primer plano, ondas verde lima saliendo como señal física. Fondo azul eléctrico con textura sutil, recortes fotográficos y sombra real.",
+        "metaphor": "el timbre fuera de alcance",
+        "subject": "teléfono vibrando, manos ocupadas, bandeja de restaurante",
+        "composition": "teléfono en primer plano inferior, manos cruzando la escena, titular reservado arriba",
+        "scale": "grande",
+        "recurring_motif": "onda verde"
+      },
       "data_visualization": null,
-      "continuity": "La línea de la portada se convierte en onda de llamada"
+      "continuity": "La fuga de portada se convierte en onda de llamada"
     },
     {
       "number": 3,
       "role": "proof",
+      "art_family": "Collage premium",
       "narrative_job": "Asignar un precio concreto a una llamada perdida",
       "reader_takeaway": "Una llamada perdida tiene coste",
       "exact_copy": {
@@ -61,44 +80,71 @@
         "support": "150 € de media que se van",
         "source": "Fuente: gestiondellamadas.com"
       },
-      "layout": {"template_id": "metric-stage", "grid_areas": "titular arriba, objeto central, fuente abajo", "focal_point": "etiqueta 150 €", "reading_order": "causa, precio, fuente", "whitespace_ratio": 31},
-      "visual": {"type": "price-tag", "concept": "Del auricular cuelga una etiqueta verde de precio con 150 €", "metaphor": "la llamada como producto que se pierde", "subject": "teléfono y etiqueta", "composition": "diagonal ascendente", "scale": "grande", "perspective": "frontal", "material": "metal mate y cartón", "lighting": "plana", "recurring_motif": "hilo verde"},
-      "data_visualization": {"type": "single metric", "values": [150], "labels": ["€ por llamada"], "source": "gestiondellamadas.com"},
-      "continuity": "La línea verde se convierte en el hilo de la etiqueta"
+      "layout": {"template_id": "campaign-collage", "focal_point": "etiqueta verde atada a un teléfono negro", "reading_order": "causa, precio, objeto", "whitespace_ratio": 24},
+      "visual": {
+        "type": "campaign-scene",
+        "concept": "Collage premium sobre blanco roto: teléfono negro de aspecto fotográfico flotando, etiqueta verde lima de precio colgando con cuerda realista, billetes desenfocados al fondo, sombra larga y textura de papel. No composición de gráfico, debe parecer anuncio de producto.",
+        "metaphor": "la llamada como producto que se pierde",
+        "subject": "teléfono negro, etiqueta verde, billetes desenfocados",
+        "composition": "objeto central grande en diagonal, zona limpia superior para titular",
+        "scale": "grande",
+        "recurring_motif": "hilo verde"
+      },
+      "data_visualization": {"type": "metadata", "values": [150], "labels": ["€ por llamada"], "source": "gestiondellamadas.com"},
+      "continuity": "La línea verde se convierte en hilo de etiqueta"
     },
     {
       "number": 4,
       "role": "scale",
-      "narrative_job": "Mostrar la escala de llamadas no contestadas de un vistazo",
+      "art_family": "Fotografía intervenida",
+      "narrative_job": "Mostrar la escala de llamadas no contestadas sin convertirlo en una infografía escolar",
       "reader_takeaway": "Casi la mitad se pierde",
       "exact_copy": {
         "headline": [{"text": "43 de cada 100"}, {"text": "sin contestar"}],
         "support": "En un restaurante",
         "source": "Fuente sectorial · 2026"
       },
-      "layout": {"template_id": "matrix-100", "grid_areas": "titular arriba, matriz central, fuente abajo", "focal_point": "bloque de 43 unidades", "reading_order": "cifra, matriz, contexto", "whitespace_ratio": 24},
-      "visual": {"type": "matrix", "concept": "Matriz exacta de 100 unidades: 57 verdes y 43 grises, con corchete directo", "metaphor": "centralita incompleta", "subject": "matriz 10x10", "composition": "ortogonal", "scale": "dominante", "perspective": "frontal", "material": "señalética sólida", "lighting": "plana", "recurring_motif": "corchete verde"},
-      "data_visualization": {"type": "unit matrix", "values": [57,43], "labels": ["contestadas","sin contestar"], "source": "Fuente sectorial 2026"},
-      "continuity": "La línea verde se convierte en corchete de medición"
+      "layout": {"template_id": "campaign-photo-stat", "focal_point": "restaurante vacío con llamadas fantasma", "reading_order": "cifra, escena, contexto", "whitespace_ratio": 20},
+      "visual": {
+        "type": "campaign-scene",
+        "concept": "Escena fotográfica de restaurante oscuro antes de abrir: mesa, sillas y teléfono fijo o móvil en primer plano. Decenas de llamadas perdidas aparecen como burbujas/auriculares translúcidos verdes flotando alrededor, como lluvia de oportunidades perdidas. Fondo negro con glow verde, estética cinematográfica, no matriz de datos.",
+        "metaphor": "llamadas acumulándose en el aire",
+        "subject": "restaurante, teléfono, llamadas fantasma verdes",
+        "composition": "teléfono abajo derecha, burbujas subiendo, titular reservado arriba izquierda",
+        "scale": "escena completa",
+        "recurring_motif": "llamadas verdes flotantes"
+      },
+      "data_visualization": {"type": "metadata", "values": [43,100], "labels": ["sin contestar","total"], "source": "Fuente sectorial 2026"},
+      "continuity": "La línea verde se multiplica como llamadas fantasma"
     },
     {
       "number": 5,
       "role": "consequence",
-      "narrative_job": "Enseñar adónde va la oportunidad que no se atiende",
+      "art_family": "Collage premium",
+      "narrative_job": "Enseñar adónde va la oportunidad que no se atiende sin usar diagramas",
       "reader_takeaway": "La llamada perdida se convierte en cliente de otro",
       "exact_copy": {
         "headline": [{"text": "85 de cada 100"}, {"text": "no vuelven"}],
         "support": "Se van a la competencia",
         "source": "Fuente: gestiondellamadas.com"
       },
-      "layout": {"template_id": "causal-flow", "grid_areas": "titular arriba, dos destinos abajo", "focal_point": "trayectoria verde", "reading_order": "cifra, salida, destino", "whitespace_ratio": 29},
-      "visual": {"type": "flow", "concept": "Dos fachadas: una apagada y otra verde; las personas cruzan hacia la segunda", "metaphor": "la puerta de al lado", "subject": "flujo de clientes", "composition": "horizontal", "scale": "escena completa", "perspective": "frontal", "material": "señalética sólida", "lighting": "plana", "recurring_motif": "trayectoria verde"},
-      "data_visualization": {"type": "flow proportion", "values": [85], "labels": ["no vuelven"], "source": "gestiondellamadas.com"},
-      "continuity": "La línea verde se convierte en trayectoria hacia la competencia"
+      "layout": {"template_id": "campaign-collage-consequence", "focal_point": "cliente atraído por escaparate verde de la competencia", "reading_order": "cifra, fuga, destino", "whitespace_ratio": 22},
+      "visual": {
+        "type": "campaign-scene",
+        "concept": "Collage fotográfico: un cliente de espaldas camina desde un local apagado hacia un escaparate con luz verde lima al fondo. El cable verde de una llamada perdida se estira por el suelo como una cuerda que lo arrastra hacia la competencia. Fondo blanco roto o negro con textura, sombras reales, profundidad de calle.",
+        "metaphor": "la oportunidad arrastrada a la puerta de al lado",
+        "subject": "cliente, local apagado, escaparate verde, cable de teléfono",
+        "composition": "diagonal de izquierda a derecha, cable verde como línea narrativa, titular arriba",
+        "scale": "cinematográfica",
+        "recurring_motif": "cable verde"
+      },
+      "data_visualization": {"type": "metadata", "values": [85], "labels": ["no vuelven"], "source": "gestiondellamadas.com"},
+      "continuity": "La línea verde se convierte en cuerda de fuga hacia la competencia"
     },
     {
       "number": 6,
       "role": "synthesis",
+      "art_family": "Hero 3D",
       "narrative_job": "Cristalizar el coste mensual como una fuga continua",
       "reader_takeaway": "El goteo pequeño se convierte en miles de euros",
       "exact_copy": {
@@ -106,14 +152,23 @@
         "support": "que ni ves salir al mes",
         "source": "Fuente: gestiondellamadas.com"
       },
-      "layout": {"template_id": "range-leak", "grid_areas": "rango izquierda, fuga derecha", "focal_point": "rango y chorro de monedas", "reading_order": "rango, fuga, fuente", "whitespace_ratio": 32},
-      "visual": {"type": "leak", "concept": "Grifo abierto del que cae una línea de monedas verdes hacia un desagüe", "metaphor": "fuga mensual", "subject": "grifo y monedas", "composition": "vertical derecha", "scale": "monumental", "perspective": "frontal", "material": "metal mate", "lighting": "plana", "recurring_motif": "chorro verde"},
-      "data_visualization": {"type": "range", "values": [2500,15000], "labels": ["mínimo","máximo"], "source": "gestiondellamadas.com"},
-      "continuity": "La trayectoria verde cae ahora como una fuga física"
+      "layout": {"template_id": "campaign-hero-leak", "focal_point": "grifo metálico soltando monedas verdes", "reading_order": "rango, fuga, impacto", "whitespace_ratio": 20},
+      "visual": {
+        "type": "campaign-scene",
+        "concept": "Render 3D/foto hiperrealista: grifo metálico enorme suspendido sobre fondo azul eléctrico, de él caen monedas verdes luminosas hacia un desagüe negro. Agua convertida en dinero, sombras fuertes, composición de anuncio, objeto cortado por el borde derecho.",
+        "metaphor": "fuga mensual de dinero",
+        "subject": "grifo metálico, monedas verdes, desagüe negro",
+        "composition": "grifo grande derecha, caída vertical, titular a la izquierda",
+        "scale": "monumental",
+        "recurring_motif": "chorro verde"
+      },
+      "data_visualization": {"type": "metadata", "values": [2500,15000], "labels": ["mínimo","máximo"], "source": "gestiondellamadas.com"},
+      "continuity": "La línea verde cae como dinero líquido"
     },
     {
       "number": 7,
       "role": "turn",
+      "art_family": "Dark cinematic",
       "narrative_job": "Mostrar que la franja imposible de cubrir ya puede atenderse",
       "reader_takeaway": "El fuera de horario se puede cubrir",
       "exact_copy": {
@@ -121,14 +176,23 @@
         "support": "Un agente de voz puede cogerlo 24/7",
         "source": "Dato sectorial · 2026"
       },
-      "layout": {"template_id": "clock-ring", "grid_areas": "titular arriba, reloj central", "focal_point": "arco verde del reloj", "reading_order": "porcentaje, reloj, mecanismo", "whitespace_ratio": 30},
-      "visual": {"type": "clock", "concept": "Reloj de 24 horas con el tramo fuera de horario cubierto por un arco verde", "metaphor": "la franja que deja de estar a oscuras", "subject": "reloj 24h", "composition": "circular centrada", "scale": "grande", "perspective": "frontal", "material": "señalética sólida", "lighting": "plana", "recurring_motif": "arco verde"},
-      "data_visualization": {"type": "radial proportion", "values": [40], "labels": ["fuera de horario"], "source": "Dato sectorial 2026"},
-      "continuity": "El chorro verde se curva y cubre el tramo desatendido"
+      "layout": {"template_id": "campaign-dark-ai-agent", "focal_point": "agente de voz nocturno con reloj luminoso", "reading_order": "porcentaje, noche, solución", "whitespace_ratio": 23},
+      "visual": {
+        "type": "campaign-scene",
+        "concept": "Escena dark cinematic: robot/agente de voz elegante con auricular o micrófono, sentado en una recepción nocturna con glow verde. Al fondo se intuye un reloj grande fuera de foco y una ventana azul de noche. No usar gráfico circular. Debe parecer portada de campaña tecnológica premium.",
+        "metaphor": "alguien contesta cuando el negocio duerme",
+        "subject": "agente de voz/robot, auricular, reloj nocturno, recepción",
+        "composition": "personaje/robot en tercio derecho, glow verde central, titular arriba izquierda",
+        "scale": "protagonista",
+        "recurring_motif": "halo verde 24/7"
+      },
+      "data_visualization": {"type": "metadata", "values": [40], "labels": ["fuera de horario"], "source": "Dato sectorial 2026"},
+      "continuity": "La línea verde pasa de fuga a presencia que atiende"
     },
     {
       "number": 8,
       "role": "closing",
+      "art_family": "Dark cinematic",
       "narrative_job": "Cerrar el argumento volviendo al teléfono y trasladando el problema al sistema",
       "reader_takeaway": "El problema no es llamar; es no tener quién responda",
       "exact_copy": {
@@ -136,10 +200,18 @@
         "support": "El problema es el sistema",
         "source": ""
       },
-      "layout": {"template_id": "closing-loop", "grid_areas": "titular dominante, teléfono bajo", "focal_point": "nadie y cable verde", "reading_order": "remate, teléfono, conclusión", "whitespace_ratio": 43},
-      "visual": {"type": "closing-phone", "concept": "Teléfono descolgado cuyo cable verde subraya la conclusión", "metaphor": "el otro lado vacío", "subject": "teléfono final", "composition": "diagonal baja", "scale": "grande", "perspective": "frontal", "material": "metal mate", "lighting": "plana", "recurring_motif": "cable verde"},
+      "layout": {"template_id": "campaign-dark-cta", "focal_point": "teléfono descolgado con cable verde como subrayado", "reading_order": "remate, vacío, CTA", "whitespace_ratio": 25},
+      "visual": {
+        "type": "campaign-scene",
+        "concept": "Fondo negro carbón con textura, teléfono blanco/metal descolgado flotando, cable verde lima formando una curva dramática como subrayado. Luz de estudio, glow suave, sombras profundas, sensación de vacío al otro lado. Espacio inferior para CTA.",
+        "metaphor": "el otro lado vacío",
+        "subject": "teléfono descolgado, cable verde, vacío oscuro",
+        "composition": "teléfono grande abajo derecha, cable cruza la base, titular arriba",
+        "scale": "grande",
+        "recurring_motif": "cable verde final"
+      },
       "data_visualization": null,
-      "continuity": "La línea de toda la serie termina como cable y devuelve al objeto de portada"
+      "continuity": "La línea verde termina como cable y cierra el loop narrativo"
     }
   ]
 }
