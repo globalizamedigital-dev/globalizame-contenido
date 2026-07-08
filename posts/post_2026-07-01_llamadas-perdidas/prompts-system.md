@@ -4,158 +4,198 @@
 
 ### Prompt slide 1
 
-[CONTRATO VISUAL] Cada llamada no atendida abre una fuga física por la que sale dinero. Motivo recurrente: una línea verde continua que cambia de función sin cambiar de estilo. Perspectiva frontal con rotaciones máximas de 8 grados; material papel térmico, metal mate y señalética sólida; iluminación plana con sombra dura corta. Heredar sin reinterpretar el BRAND_DNA de Globalizame.
+[DIRECCIÓN DE ARTE]
+Construye una escena publicitaria premium, no un icono. Referencia de energía: carruseles con titulares gigantes, collage 3D/foto, textura editorial, luz dramática, profundidad y un objeto protagonista. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel sucio según la escena.
 
-[FUNCIÓN] Convertir una pérdida invisible en una cifra imposible de ignorar sin revelar la solución
+[IDEA MADRE]
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[COMPOSICIÓN] Layout cover-split. Punto focal: 15.000 € y agujero del ticket. Orden de lectura: cifra, frase, ticket. Vacío aproximado: 38%.
+[FUNCIÓN DEL SLIDE]
+Convertir una pérdida invisible en una cifra imposible de ignorar sin revelar la solución
 
-[VISUAL] Ticket de papel perforado por un teléfono; la banda verde de dinero atraviesa el hueco
+[ESCENA]
+Ticket de papel perforado por un teléfono; la banda verde de dinero atraviesa el hueco. Composición: 15.000 € y agujero del ticket. Orden de lectura: cifra, frase, ticket. Que el visual ocupe al menos el 45% del slide y tenga presencia de campaña, con sombras, escala y textura.
 
-[TEXTO EXACTO] "Pierdes hasta" / "15.000 €" / "al mes" / "y ni te enteras"
+[TEXTO EXACTO A COMPONER]
+Pierdes hasta / 15.000 € / al mes / y ni te enteras
 
-[CONTINUIDAD] Introduce el teléfono y la línea verde que viajarán por toda la serie
+[CRITERIO INTELIGENTE]
+Si el texto compite con la escena, prioriza legibilidad móvil y mueve la escena. Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual.
 
-[NEGATIVE] no texto inventado, no stock corporativo, no robot, no cerebro digital, no bombilla, no cohete, no engranajes, no iconos 3D, no neón, no degradados, no glassmorphism, no clipart, no emojis, no cambio de paleta, tipografía, marco, perspectiva o material.
-
-[NOTA DE PRODUCCIÓN] Generar solo el elemento visual si el modelo no garantiza texto exacto. La tipografía, el marco, la firma, el contador y los datos se componen con el renderer SVG.
+[BARANDILLA MÍNIMA]
+No inventar texto. No usar iconos de banco de recursos como pieza principal. No cambiar la promesa ni la cifra. No generar un slide plano: debe tener profundidad, textura y un foco visual obvio.
 
 ---
 
 ### Prompt slide 2
 
-[CONTRATO VISUAL] Cada llamada no atendida abre una fuga física por la que sale dinero. Motivo recurrente: una línea verde continua que cambia de función sin cambiar de estilo. Perspectiva frontal con rotaciones máximas de 8 grados; material papel térmico, metal mate y señalética sólida; iluminación plana con sombra dura corta. Heredar sin reinterpretar el BRAND_DNA de Globalizame.
+[DIRECCIÓN DE ARTE]
+Construye una escena publicitaria premium, no un icono. Referencia de energía: carruseles con titulares gigantes, collage 3D/foto, textura editorial, luz dramática, profundidad y un objeto protagonista. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel sucio según la escena.
 
-[FUNCIÓN] Hacer reconocible la escena cotidiana que provoca la pérdida
+[IDEA MADRE]
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[COMPOSICIÓN] Layout scene-left. Punto focal: teléfono sonando. Orden de lectura: situación, teléfono, manos. Vacío aproximado: 34%.
+[FUNCIÓN DEL SLIDE]
+Hacer reconocible la escena cotidiana que provoca la pérdida
 
-[VISUAL] Teléfono nítido que suena mientras dos brazos sostienen platos al fondo
+[ESCENA]
+Teléfono nítido que suena mientras dos brazos sostienen platos al fondo. Composición: teléfono sonando. Orden de lectura: situación, teléfono, manos. Que el visual ocupe al menos el 45% del slide y tenga presencia de campaña, con sombras, escala y textura.
 
-[TEXTO EXACTO] "Es temporada alta" / "Entran más llamadas. Tú tienes las dos manos ocupadas."
+[TEXTO EXACTO A COMPONER]
+Es temporada alta / Entran más llamadas. Tú tienes las dos manos ocupadas.
 
-[CONTINUIDAD] La línea de la portada se convierte en onda de llamada
+[CRITERIO INTELIGENTE]
+Si el texto compite con la escena, prioriza legibilidad móvil y mueve la escena. Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual.
 
-[NEGATIVE] no texto inventado, no stock corporativo, no robot, no cerebro digital, no bombilla, no cohete, no engranajes, no iconos 3D, no neón, no degradados, no glassmorphism, no clipart, no emojis, no cambio de paleta, tipografía, marco, perspectiva o material.
-
-[NOTA DE PRODUCCIÓN] Generar solo el elemento visual si el modelo no garantiza texto exacto. La tipografía, el marco, la firma, el contador y los datos se componen con el renderer SVG.
+[BARANDILLA MÍNIMA]
+No inventar texto. No usar iconos de banco de recursos como pieza principal. No cambiar la promesa ni la cifra. No generar un slide plano: debe tener profundidad, textura y un foco visual obvio.
 
 ---
 
 ### Prompt slide 3
 
-[CONTRATO VISUAL] Cada llamada no atendida abre una fuga física por la que sale dinero. Motivo recurrente: una línea verde continua que cambia de función sin cambiar de estilo. Perspectiva frontal con rotaciones máximas de 8 grados; material papel térmico, metal mate y señalética sólida; iluminación plana con sombra dura corta. Heredar sin reinterpretar el BRAND_DNA de Globalizame.
+[DIRECCIÓN DE ARTE]
+Construye una escena publicitaria premium, no un icono. Referencia de energía: carruseles con titulares gigantes, collage 3D/foto, textura editorial, luz dramática, profundidad y un objeto protagonista. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel sucio según la escena.
 
-[FUNCIÓN] Asignar un precio concreto a una llamada perdida
+[IDEA MADRE]
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[COMPOSICIÓN] Layout metric-stage. Punto focal: etiqueta 150 €. Orden de lectura: causa, precio, fuente. Vacío aproximado: 31%.
+[FUNCIÓN DEL SLIDE]
+Asignar un precio concreto a una llamada perdida
 
-[VISUAL] Del auricular cuelga una etiqueta verde de precio con 150 €
+[ESCENA]
+Del auricular cuelga una etiqueta verde de precio con 150 €. Composición: etiqueta 150 €. Orden de lectura: causa, precio, fuente. Que el visual ocupe al menos el 45% del slide y tenga presencia de campaña, con sombras, escala y textura.
 
-[TEXTO EXACTO] "Cada llamada perdida" / "lleva una etiqueta" / "150 € de media que se van"
+[TEXTO EXACTO A COMPONER]
+Cada llamada perdida / lleva una etiqueta / 150 € de media que se van
 
-[CONTINUIDAD] La línea verde se convierte en el hilo de la etiqueta
+[CRITERIO INTELIGENTE]
+Si el texto compite con la escena, prioriza legibilidad móvil y mueve la escena. Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual.
 
-[NEGATIVE] no texto inventado, no stock corporativo, no robot, no cerebro digital, no bombilla, no cohete, no engranajes, no iconos 3D, no neón, no degradados, no glassmorphism, no clipart, no emojis, no cambio de paleta, tipografía, marco, perspectiva o material.
-
-[NOTA DE PRODUCCIÓN] Generar solo el elemento visual si el modelo no garantiza texto exacto. La tipografía, el marco, la firma, el contador y los datos se componen con el renderer SVG.
+[BARANDILLA MÍNIMA]
+No inventar texto. No usar iconos de banco de recursos como pieza principal. No cambiar la promesa ni la cifra. No generar un slide plano: debe tener profundidad, textura y un foco visual obvio.
 
 ---
 
 ### Prompt slide 4
 
-[CONTRATO VISUAL] Cada llamada no atendida abre una fuga física por la que sale dinero. Motivo recurrente: una línea verde continua que cambia de función sin cambiar de estilo. Perspectiva frontal con rotaciones máximas de 8 grados; material papel térmico, metal mate y señalética sólida; iluminación plana con sombra dura corta. Heredar sin reinterpretar el BRAND_DNA de Globalizame.
+[DIRECCIÓN DE ARTE]
+Construye una escena publicitaria premium, no un icono. Referencia de energía: carruseles con titulares gigantes, collage 3D/foto, textura editorial, luz dramática, profundidad y un objeto protagonista. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel sucio según la escena.
 
-[FUNCIÓN] Mostrar la escala de llamadas no contestadas de un vistazo
+[IDEA MADRE]
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[COMPOSICIÓN] Layout matrix-100. Punto focal: bloque de 43 unidades. Orden de lectura: cifra, matriz, contexto. Vacío aproximado: 24%.
+[FUNCIÓN DEL SLIDE]
+Mostrar la escala de llamadas no contestadas de un vistazo
 
-[VISUAL] Matriz exacta de 100 unidades: 57 verdes y 43 grises, con corchete directo
+[ESCENA]
+Matriz exacta de 100 unidades: 57 verdes y 43 grises, con corchete directo. Composición: bloque de 43 unidades. Orden de lectura: cifra, matriz, contexto. Que el visual ocupe al menos el 45% del slide y tenga presencia de campaña, con sombras, escala y textura.
 
-[TEXTO EXACTO] "43 de cada 100" / "sin contestar" / "En un restaurante"
+[TEXTO EXACTO A COMPONER]
+43 de cada 100 / sin contestar / En un restaurante
 
-[CONTINUIDAD] La línea verde se convierte en corchete de medición
+[CRITERIO INTELIGENTE]
+Si el texto compite con la escena, prioriza legibilidad móvil y mueve la escena. Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual.
 
-[NEGATIVE] no texto inventado, no stock corporativo, no robot, no cerebro digital, no bombilla, no cohete, no engranajes, no iconos 3D, no neón, no degradados, no glassmorphism, no clipart, no emojis, no cambio de paleta, tipografía, marco, perspectiva o material.
-
-[NOTA DE PRODUCCIÓN] Generar solo el elemento visual si el modelo no garantiza texto exacto. La tipografía, el marco, la firma, el contador y los datos se componen con el renderer SVG.
+[BARANDILLA MÍNIMA]
+No inventar texto. No usar iconos de banco de recursos como pieza principal. No cambiar la promesa ni la cifra. No generar un slide plano: debe tener profundidad, textura y un foco visual obvio.
 
 ---
 
 ### Prompt slide 5
 
-[CONTRATO VISUAL] Cada llamada no atendida abre una fuga física por la que sale dinero. Motivo recurrente: una línea verde continua que cambia de función sin cambiar de estilo. Perspectiva frontal con rotaciones máximas de 8 grados; material papel térmico, metal mate y señalética sólida; iluminación plana con sombra dura corta. Heredar sin reinterpretar el BRAND_DNA de Globalizame.
+[DIRECCIÓN DE ARTE]
+Construye una escena publicitaria premium, no un icono. Referencia de energía: carruseles con titulares gigantes, collage 3D/foto, textura editorial, luz dramática, profundidad y un objeto protagonista. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel sucio según la escena.
 
-[FUNCIÓN] Enseñar adónde va la oportunidad que no se atiende
+[IDEA MADRE]
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[COMPOSICIÓN] Layout causal-flow. Punto focal: trayectoria verde. Orden de lectura: cifra, salida, destino. Vacío aproximado: 29%.
+[FUNCIÓN DEL SLIDE]
+Enseñar adónde va la oportunidad que no se atiende
 
-[VISUAL] Dos fachadas: una apagada y otra verde; las personas cruzan hacia la segunda
+[ESCENA]
+Dos fachadas: una apagada y otra verde; las personas cruzan hacia la segunda. Composición: trayectoria verde. Orden de lectura: cifra, salida, destino. Que el visual ocupe al menos el 45% del slide y tenga presencia de campaña, con sombras, escala y textura.
 
-[TEXTO EXACTO] "85 de cada 100" / "no vuelven" / "Se van a la competencia"
+[TEXTO EXACTO A COMPONER]
+85 de cada 100 / no vuelven / Se van a la competencia
 
-[CONTINUIDAD] La línea verde se convierte en trayectoria hacia la competencia
+[CRITERIO INTELIGENTE]
+Si el texto compite con la escena, prioriza legibilidad móvil y mueve la escena. Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual.
 
-[NEGATIVE] no texto inventado, no stock corporativo, no robot, no cerebro digital, no bombilla, no cohete, no engranajes, no iconos 3D, no neón, no degradados, no glassmorphism, no clipart, no emojis, no cambio de paleta, tipografía, marco, perspectiva o material.
-
-[NOTA DE PRODUCCIÓN] Generar solo el elemento visual si el modelo no garantiza texto exacto. La tipografía, el marco, la firma, el contador y los datos se componen con el renderer SVG.
+[BARANDILLA MÍNIMA]
+No inventar texto. No usar iconos de banco de recursos como pieza principal. No cambiar la promesa ni la cifra. No generar un slide plano: debe tener profundidad, textura y un foco visual obvio.
 
 ---
 
 ### Prompt slide 6
 
-[CONTRATO VISUAL] Cada llamada no atendida abre una fuga física por la que sale dinero. Motivo recurrente: una línea verde continua que cambia de función sin cambiar de estilo. Perspectiva frontal con rotaciones máximas de 8 grados; material papel térmico, metal mate y señalética sólida; iluminación plana con sombra dura corta. Heredar sin reinterpretar el BRAND_DNA de Globalizame.
+[DIRECCIÓN DE ARTE]
+Construye una escena publicitaria premium, no un icono. Referencia de energía: carruseles con titulares gigantes, collage 3D/foto, textura editorial, luz dramática, profundidad y un objeto protagonista. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel sucio según la escena.
 
-[FUNCIÓN] Cristalizar el coste mensual como una fuga continua
+[IDEA MADRE]
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[COMPOSICIÓN] Layout range-leak. Punto focal: rango y chorro de monedas. Orden de lectura: rango, fuga, fuente. Vacío aproximado: 32%.
+[FUNCIÓN DEL SLIDE]
+Cristalizar el coste mensual como una fuga continua
 
-[VISUAL] Grifo abierto del que cae una línea de monedas verdes hacia un desagüe
+[ESCENA]
+Grifo abierto del que cae una línea de monedas verdes hacia un desagüe. Composición: rango y chorro de monedas. Orden de lectura: rango, fuga, fuente. Que el visual ocupe al menos el 45% del slide y tenga presencia de campaña, con sombras, escala y textura.
 
-[TEXTO EXACTO] "Entre 2.500 €" / "y 15.000 €" / "que ni ves salir al mes"
+[TEXTO EXACTO A COMPONER]
+Entre 2.500 € / y 15.000 € / que ni ves salir al mes
 
-[CONTINUIDAD] La trayectoria verde cae ahora como una fuga física
+[CRITERIO INTELIGENTE]
+Si el texto compite con la escena, prioriza legibilidad móvil y mueve la escena. Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual.
 
-[NEGATIVE] no texto inventado, no stock corporativo, no robot, no cerebro digital, no bombilla, no cohete, no engranajes, no iconos 3D, no neón, no degradados, no glassmorphism, no clipart, no emojis, no cambio de paleta, tipografía, marco, perspectiva o material.
-
-[NOTA DE PRODUCCIÓN] Generar solo el elemento visual si el modelo no garantiza texto exacto. La tipografía, el marco, la firma, el contador y los datos se componen con el renderer SVG.
+[BARANDILLA MÍNIMA]
+No inventar texto. No usar iconos de banco de recursos como pieza principal. No cambiar la promesa ni la cifra. No generar un slide plano: debe tener profundidad, textura y un foco visual obvio.
 
 ---
 
 ### Prompt slide 7
 
-[CONTRATO VISUAL] Cada llamada no atendida abre una fuga física por la que sale dinero. Motivo recurrente: una línea verde continua que cambia de función sin cambiar de estilo. Perspectiva frontal con rotaciones máximas de 8 grados; material papel térmico, metal mate y señalética sólida; iluminación plana con sombra dura corta. Heredar sin reinterpretar el BRAND_DNA de Globalizame.
+[DIRECCIÓN DE ARTE]
+Construye una escena publicitaria premium, no un icono. Referencia de energía: carruseles con titulares gigantes, collage 3D/foto, textura editorial, luz dramática, profundidad y un objeto protagonista. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel sucio según la escena.
 
-[FUNCIÓN] Mostrar que la franja imposible de cubrir ya puede atenderse
+[IDEA MADRE]
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[COMPOSICIÓN] Layout clock-ring. Punto focal: arco verde del reloj. Orden de lectura: porcentaje, reloj, mecanismo. Vacío aproximado: 30%.
+[FUNCIÓN DEL SLIDE]
+Mostrar que la franja imposible de cubrir ya puede atenderse
 
-[VISUAL] Reloj de 24 horas con el tramo fuera de horario cubierto por un arco verde
+[ESCENA]
+Reloj de 24 horas con el tramo fuera de horario cubierto por un arco verde. Composición: arco verde del reloj. Orden de lectura: porcentaje, reloj, mecanismo. Que el visual ocupe al menos el 45% del slide y tenga presencia de campaña, con sombras, escala y textura.
 
-[TEXTO EXACTO] "El 40%" / "entra fuera de horario" / "Un agente de voz puede cogerlo 24/7"
+[TEXTO EXACTO A COMPONER]
+El 40% / entra fuera de horario / Un agente de voz puede cogerlo 24/7
 
-[CONTINUIDAD] El chorro verde se curva y cubre el tramo desatendido
+[CRITERIO INTELIGENTE]
+Si el texto compite con la escena, prioriza legibilidad móvil y mueve la escena. Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual.
 
-[NEGATIVE] no texto inventado, no stock corporativo, no robot, no cerebro digital, no bombilla, no cohete, no engranajes, no iconos 3D, no neón, no degradados, no glassmorphism, no clipart, no emojis, no cambio de paleta, tipografía, marco, perspectiva o material.
-
-[NOTA DE PRODUCCIÓN] Generar solo el elemento visual si el modelo no garantiza texto exacto. La tipografía, el marco, la firma, el contador y los datos se componen con el renderer SVG.
+[BARANDILLA MÍNIMA]
+No inventar texto. No usar iconos de banco de recursos como pieza principal. No cambiar la promesa ni la cifra. No generar un slide plano: debe tener profundidad, textura y un foco visual obvio.
 
 ---
 
 ### Prompt slide 8
 
-[CONTRATO VISUAL] Cada llamada no atendida abre una fuga física por la que sale dinero. Motivo recurrente: una línea verde continua que cambia de función sin cambiar de estilo. Perspectiva frontal con rotaciones máximas de 8 grados; material papel térmico, metal mate y señalética sólida; iluminación plana con sombra dura corta. Heredar sin reinterpretar el BRAND_DNA de Globalizame.
+[DIRECCIÓN DE ARTE]
+Construye una escena publicitaria premium, no un icono. Referencia de energía: carruseles con titulares gigantes, collage 3D/foto, textura editorial, luz dramática, profundidad y un objeto protagonista. La marca Globalizame debe sentirse negra, eléctrica y directa: carbón, verde lima, azul saturado o papel sucio según la escena.
 
-[FUNCIÓN] Cerrar el argumento volviendo al teléfono y trasladando el problema al sistema
+[IDEA MADRE]
+Cada llamada no atendida abre una fuga física por la que sale dinero. El motivo recurrente es una línea verde continua que cambia de función sin cambiar de estilo, pero puede mutar: cable, fuga, arco, trayectoria, subrayado, halo o señal.
 
-[COMPOSICIÓN] Layout closing-loop. Punto focal: nadie y cable verde. Orden de lectura: remate, teléfono, conclusión. Vacío aproximado: 43%.
+[FUNCIÓN DEL SLIDE]
+Cerrar el argumento volviendo al teléfono y trasladando el problema al sistema
 
-[VISUAL] Teléfono descolgado cuyo cable verde subraya la conclusión
+[ESCENA]
+Teléfono descolgado cuyo cable verde subraya la conclusión. Composición: nadie y cable verde. Orden de lectura: remate, teléfono, conclusión. Que el visual ocupe al menos el 45% del slide y tenga presencia de campaña, con sombras, escala y textura.
 
-[TEXTO EXACTO] "No llamas mal" / "No hay nadie al otro lado" / "El problema es el sistema"
+[TEXTO EXACTO A COMPONER]
+No llamas mal / No hay nadie al otro lado / El problema es el sistema
 
-[CONTINUIDAD] La línea de toda la serie termina como cable y devuelve al objeto de portada
+[CRITERIO INTELIGENTE]
+Si el texto compite con la escena, prioriza legibilidad móvil y mueve la escena. Si la escena parece clipart, rehacerla como póster/collage. Si parece plantilla corporativa, aumentar escala, contraste y riesgo visual.
 
-[NEGATIVE] no texto inventado, no stock corporativo, no robot, no cerebro digital, no bombilla, no cohete, no engranajes, no iconos 3D, no neón, no degradados, no glassmorphism, no clipart, no emojis, no cambio de paleta, tipografía, marco, perspectiva o material.
-
-[NOTA DE PRODUCCIÓN] Generar solo el elemento visual si el modelo no garantiza texto exacto. La tipografía, el marco, la firma, el contador y los datos se componen con el renderer SVG.
+[BARANDILLA MÍNIMA]
+No inventar texto. No usar iconos de banco de recursos como pieza principal. No cambiar la promesa ni la cifra. No generar un slide plano: debe tener profundidad, textura y un foco visual obvio.

@@ -33,14 +33,15 @@ const binaryPass = failures.length === 0;
 const scores = spec.qa_scores;
 const scoreValues = Object.values(scores);
 const average = scoreValues.reduce((a,b)=>a+b,0) / scoreValues.length;
-const scorePass = average >= 4.3 && scores.cover_impact >= 4.5 && scores.closing_power >= 4.5;
-const status = binaryPass && scorePass ? "APROBADO" : "REVISIÓN";
+const status = binaryPass ? "APROBADO_TECNICO" : "REVISIÓN";
 
 const report = `# QA · ${spec.title}
 
 ## Resultado
 
-**${status}** · media visual ${average.toFixed(2)}/5
+**${status}** · control estructural automático superado.
+
+> Nota honesta: este validador no certifica que el diseño sea potente. Solo revisa consistencia técnica, texto, fuentes de datos y existencia de renders. La dirección de arte se decide por revisión visual contra referencias.
 
 ## Validación por slide
 
@@ -48,9 +49,9 @@ const report = `# QA · ${spec.title}
 |---:|---:|---|---|
 ${rows.join("\n")}
 
-## Evaluación del conjunto
+## Brief de ambición visual declarado
 
-${Object.entries(scores).map(([k,v]) => `- ${k}: ${v}/5`).join("\n")}
+${Object.entries(scores).map(([k,v]) => `- ${k}: objetivo ${v}/5`).join("\n")}
 
 ## Fallos medibles
 
@@ -71,5 +72,5 @@ if (repair && failures.length) {
   console.log(`Regeneradas solo las slides: ${failures.map(f=>f.slide).join(", ")}`);
 }
 
-console.log(`${status}: ${failures.length} fallos medibles; media ${average.toFixed(2)}/5`);
-process.exit(binaryPass && scorePass ? 0 : 2);
+console.log(`${status}: ${failures.length} fallos medibles; ambición visual declarada ${average.toFixed(2)}/5`);
+process.exit(binaryPass ? 0 : 2);

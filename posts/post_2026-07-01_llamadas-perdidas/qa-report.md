@@ -2,7 +2,9 @@
 
 ## Resultado
 
-**APROBADO** · media visual 4.74/5
+**APROBADO_TECNICO** · control estructural automático superado.
+
+> Nota honesta: este validador no certifica que el diseño sea potente. Solo revisa consistencia técnica, texto, fuentes de datos y existencia de renders. La dirección de arte se decide por revisión visual contra referencias.
 
 ## Validación por slide
 
@@ -17,18 +19,18 @@
 | 7 | 13 | clock-ring | PASS |
 | 8 | 14 | closing-loop | PASS |
 
-## Evaluación del conjunto
+## Brief de ambición visual declarado
 
-- cover_impact: 4.7/5
-- mobile_clarity: 4.8/5
-- hierarchy: 4.7/5
-- continuity: 4.8/5
-- brand_fidelity: 4.9/5
-- conceptual_strength: 4.6/5
-- infographic_quality: 4.6/5
-- rhythm_variety: 4.7/5
-- text_accuracy: 5/5
-- closing_power: 4.6/5
+- cover_impact: objetivo 4.7/5
+- mobile_clarity: objetivo 4.8/5
+- hierarchy: objetivo 4.7/5
+- continuity: objetivo 4.8/5
+- brand_fidelity: objetivo 4.9/5
+- conceptual_strength: objetivo 4.6/5
+- infographic_quality: objetivo 4.6/5
+- rhythm_variety: objetivo 4.7/5
+- text_accuracy: objetivo 5/5
+- closing_power: objetivo 4.6/5
 
 ## Fallos medibles
 
