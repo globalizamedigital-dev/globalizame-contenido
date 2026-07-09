@@ -1,23 +1,76 @@
-# Copy Instagram · 1 jul 2026
+# Copy Instagram · Post 1 · listo para subir
 
-Hay un dinero que pierdes y que nunca aparece en ninguna cuenta.
+## Caption final
 
-El de las llamadas que no coges.
+Hay dinero que no aparece en la caja.
 
-Estás en plena temporada. Entran más llamadas que nunca. Y tú tienes las dos manos ocupadas.
+Porque nunca llegó a entrar.
 
-Cada una que se queda sin contestar son unos 150 € de media que se van.
+Una llamada que no coges parece poca cosa.
+Un timbre.
+Un "luego llamo".
+Un cliente más que no pudiste atender.
 
-En hostelería, 43 de cada 100 llamadas se quedan colgando. Y de la gente que no consigue hablar contigo, 85 de cada 100 no vuelven a llamar. Se van con el de al lado.
+Pero si esa persona quería reservar, comprar o pedir precio, ya no hablamos de una llamada.
 
-Al mes, eso son entre 2.500 y 15.000 € que ni ves salir.
+Hablamos de facturación.
 
-No es que atiendas mal. Es que nadie puede coger un teléfono mientras sirve mesas.
+Y aquí está el problema:
 
-Y ojo, que el 40% de esas llamadas entran fuera de horario. Hoy un agente de voz las coge todas, a cualquier hora, sin sumar una sola persona al equipo.
+cuando tú no respondes, el cliente no espera.
 
-Tu cliente, atendido. Tú, con las manos libres para lo que importa.
+Busca.
+Llama.
+Reserva en otro sitio.
 
-¿Cuántas llamadas crees que dejaste sin coger ayer? Dímelo abajo. Te sorprenderías.
+No porque seas peor.
+No porque tu servicio falle.
 
-Guárdalo para cuando estés en hora punta y suene el teléfono.
+Porque el otro sí cogió el teléfono.
+
+En temporada alta esto se nota más.
+Más llamadas.
+Más ruido.
+Más mesas.
+Más tareas.
+
+Y tú con las dos manos ocupadas.
+
+Por eso el agujero es invisible hasta que lo calculas:
+
+- llamadas al día
+- llamadas no atendidas
+- ticket medio
+
+Ahí aparece la fuga.
+
+No para asustarte.
+Para medirla.
+
+Porque si no la mides, solo la intuyes.
+
+Y lo que solo intuyes, no lo arreglas.
+
+Guarda este carrusel y haz el cálculo con tu negocio.
+
+Si quieres, déjame en comentarios:
+
+"¿cuántas llamadas se te escapan al día?"
+
+Y te digo cómo lo miraría yo.
+
+#automatizacion #inteligenciaartificial #hosteleria #negocios #sistemasdenegocio
+
+## Primera línea alternativa
+
+Pierdes más dinero por llamadas sin contestar del que crees.
+
+## Comentario fijado sugerido
+
+La cuenta rápida:
+
+llamadas no atendidas × ticket medio = fuga diaria.
+
+Luego lo multiplicas por 30.
+
+Ahí deja de ser "alguna llamada perdida".
