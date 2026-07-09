@@ -1,76 +1,51 @@
-# Copy Instagram · Post 1 · listo para subir
+# Copy Instagram · Post 1
 
 ## Caption final
 
-Hay dinero que no aparece en la caja.
+El teléfono suena.
 
-Porque nunca llegó a entrar.
+Tú estás con una mesa, un cliente, una comanda o lo que toque.
 
-Una llamada que no coges parece poca cosa.
-Un timbre.
-Un "luego llamo".
-Un cliente más que no pudiste atender.
+No lo coges.
 
-Pero si esa persona quería reservar, comprar o pedir precio, ya no hablamos de una llamada.
+Y ya está.
 
-Hablamos de facturación.
+Parece una tontería.
 
-Y aquí está el problema:
+Hasta que haces la cuenta.
 
-cuando tú no respondes, el cliente no espera.
+Una llamada perdida no siempre es "una llamada".
 
-Busca.
-Llama.
-Reserva en otro sitio.
+A veces es una reserva.
+A veces es un presupuesto.
+A veces es un cliente que se va al de al lado porque allí sí le han contestado.
 
-No porque seas peor.
-No porque tu servicio falle.
+Ese es el agujero.
 
-Porque el otro sí cogió el teléfono.
+No se ve en la caja.
+No aparece como gasto.
+No te avisa.
 
-En temporada alta esto se nota más.
-Más llamadas.
-Más ruido.
-Más mesas.
-Más tareas.
+Pero está.
 
-Y tú con las dos manos ocupadas.
+Y en temporada alta duele más, porque justo cuando más llamadas entran, menos manos tienes libres.
 
-Por eso el agujero es invisible hasta que lo calculas:
+Primero mide la fuga.
 
-- llamadas al día
-- llamadas no atendidas
-- ticket medio
+Luego ya hablamos de cómo taparla.
 
-Ahí aparece la fuga.
+Guárdalo y haz la cuenta con tu negocio.
 
-No para asustarte.
-Para medirla.
+Si quieres, dime cuántas llamadas se te escapan en un día normal y te digo cómo lo miraría yo.
 
-Porque si no la mides, solo la intuyes.
+#automatizacion #inteligenciaartificial #hosteleria #negocios
 
-Y lo que solo intuyes, no lo arreglas.
-
-Guarda este carrusel y haz el cálculo con tu negocio.
-
-Si quieres, déjame en comentarios:
-
-"¿cuántas llamadas se te escapan al día?"
-
-Y te digo cómo lo miraría yo.
-
-#automatizacion #inteligenciaartificial #hosteleria #negocios #sistemasdenegocio
-
-## Primera línea alternativa
-
-Pierdes más dinero por llamadas sin contestar del que crees.
-
-## Comentario fijado sugerido
+## Comentario fijado
 
 La cuenta rápida:
 
-llamadas no atendidas × ticket medio = fuga diaria.
+llamadas no atendidas x ticket medio x 30
 
-Luego lo multiplicas por 30.
+No es exacta.
 
-Ahí deja de ser "alguna llamada perdida".
+Pero te da una pista bastante incómoda.
