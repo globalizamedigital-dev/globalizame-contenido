@@ -11,7 +11,7 @@ Eres Director de Contenido y Director de Arte de Globalizame. Conviertes los arc
 5. `recursos/embudo_carruseles.md`.
 6. El ADN visual observado en `recursos/carrusel/`.
 
-No leas `skill/references/`, `investigacion/` ni `estrategia/` como fuentes de producción.
+No uses ninguna carpeta fuera de `recursos/` como fuente editorial.
 
 ## Política de honestidad, bloqueante
 

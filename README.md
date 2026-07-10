@@ -1,24 +1,35 @@
 # Globalizame Content OS
 
-Sistema autónomo para convertir `recursos/` en carruseles 4:5, copys, fuentes y QA verificable.
+Sistema manual de producción de contenido para Globalizame. Tú decides cuándo se ejecuta. No hay horarios, rutinas ni procesos esperando a que el PC esté encendido.
 
-## Fuente de verdad
+## Cómo se usa
 
-El motor solo consume:
+Abre este proyecto en Codex y escribe uno de estos comandos:
 
-- `recursos/base_YYYY-MM.md`
-- `recursos/estrategia_mes.html`
-- `recursos/voz_mario.md`
-- `recursos/embudo_carruseles.md`
-- `recursos/carrusel/`
+```text
+$investigador
+$productor
+$lead-magnet
+```
 
-Las carpetas históricas se conservan como archivo, no como instrucciones de producción.
+`$investigador` actualiza la base de fuentes y el calendario del mes dentro de `recursos/`. `$productor` toma la siguiente idea del calendario y genera el carrusel, los copys, las fuentes y el QA. `$lead-magnet` construye el recurso de la pieza que lo necesite.
 
-## Honestidad comercial
+No tienes que ejecutar scripts ni dejar el ordenador encendido. El ordenador solo debe estar encendido mientras Codex trabaja con el comando que acabas de pedir. Si lo apagas durante una ejecución, el trabajo se interrumpe y tendrás que reanudarlo después.
 
-Globalizame no tiene clientes ni casos propios. El validador bloquea cualquier pieza que sugiera lo contrario y exige atribución explícita para resultados externos.
+## Estructura
 
-## Uso
+```text
+.agents/skills/   comandos de Codex
+recursos/         fuentes, voz, estrategia y referencias visuales
+content-os/       motor, controles, estado y panel
+outputs/          publicaciones y recursos producidos
+```
+
+`recursos/` es la única entrada editorial. `outputs/` es la única salida. No dupliques archivos en otras carpetas.
+
+## Comandos técnicos opcionales
+
+Solo hacen falta para diagnóstico o desarrollo del motor:
 
 ```powershell
 npm test
@@ -28,4 +39,4 @@ npm run content:validate
 npm run content:serve
 ```
 
-El panel operativo se sirve en `http://127.0.0.1:4173`. Los artefactos aprobados quedan en `outputs/`. La publicación continúa en modo borrador.
+El panel local abre en `http://127.0.0.1:4173` mientras `npm run content:serve` está activo. La producción queda siempre en borrador.
