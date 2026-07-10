@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "brand": {
+    "name": "Globalizame",
+    "canvas": "#F7F7F5",
+    "surface": "#FFFFFF",
+    "ink": "#090909",
+    "muted": "#666663",
+    "accent": "#FF4B0B",
+    "line": "#D7D7D2",
+    "format": { "width": 1080, "height": 1350, "ratio": "4:5" }
+  },
+  "policy": {
+    "company_has_clients": false,
+    "external_cases_require_attribution": true,
+    "max_repair_attempts": 3,
+    "publish_mode": "draft"
+  },
+  "paths": {
+    "resources": "recursos",
+    "outputs": "outputs",
+    "state": "content-os/state/state.json"
+  }
+}

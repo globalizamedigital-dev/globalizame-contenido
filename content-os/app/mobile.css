@@ -1,0 +1,17 @@
+@media (max-width: 600px) {
+  body { padding-bottom: 68px; }
+  .rail { inset: auto 0 0 0; width: auto; height: 60px; flex-direction: row; padding: 8px 14px; }
+  .brand { width: 38px; height: 38px; }
+  .rail nav { display: flex; margin: 0 auto; gap: 16px; }
+  .signal { margin: 0; }
+  main { margin-left: 0; }
+  .topbar { min-height: 104px; padding: 20px; }
+  .context { font-size: 11px; }
+  .topbar h1 { font-size: 20px; }
+  .view { padding: 30px 20px; }
+  .summary h2 { font-size: 36px; }
+  .run-row { width: 100%; padding: 18px; gap: 20px; }
+  .run-meta h3 { font-size: 19px; line-height: 1.22; overflow-wrap: normal; }
+  .preview img { width: 118px; height: 148px; flex: none; }
+  .actions { grid-template-columns: 1fr 1fr; }
+}

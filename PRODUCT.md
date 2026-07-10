@@ -2,7 +2,7 @@
 
 ## Register
 
-brand
+product
 
 ## Users
 
@@ -10,7 +10,7 @@ Mario usa el sistema para convertir una estrategia semanal en carruseles de Inst
 
 ## Product Purpose
 
-Producir carruseles completos, reconocibles y verificables en una sola ejecución. El éxito significa que el mensaje se entiende en segundos, la serie mantiene una identidad inequívoca y ningún dato, texto o elemento de marca depende de la improvisación del generador.
+Producir carruseles completos, reconocibles y verificables en una sola ejecución. El éxito significa que el mensaje se entiende en segundos, la serie mantiene una identidad inequívoca, ningún dato depende de improvisación y ninguna pieza sugiere clientes o resultados propios inexistentes.
 
 ## Brand Personality
 
@@ -18,7 +18,7 @@ Directa, lúcida y mecánica. Habla como un consultor cercano que traduce proble
 
 ## Anti-references
 
-SaaS azul genérico, stock corporativo, personas mirando portátiles, robots, cerebros digitales, cohetes, bombillas, iconos 3D mezclados, neón, glassmorphism, plantillas de tarjetas y decoración tecnológica sin significado.
+SaaS azul genérico, stock corporativo, cerebros digitales, cohetes, bombillas, iconos 3D mezclados, neón, glassmorphism, plantillas de tarjetas y decoración tecnológica sin significado. El robot blanco de la referencia puede aparecer cuando explica la idea, nunca como relleno obligatorio.
 
 ## Design Principles
 

@@ -1,28 +1,31 @@
-# Sistema de Contenido · Globalizame
+# Globalizame Content OS
 
-Sistema autónomo de producción de contenido de Instagram para Globalizame (Mario Ruiz).
+Sistema autónomo para convertir `recursos/` en carruseles 4:5, copys, fuentes y QA verificable.
 
-## Sistema visual
+## Fuente de verdad
 
-El carrusel se construye desde una especificación estructurada, se renderiza en SVG y PNG, se compara en una hoja de contacto y se valida antes de aprobarse. Consulta `SISTEMA_VISUAL.md`.
+El motor solo consume:
 
-## Cómo funciona
+- `recursos/base_YYYY-MM.md`
+- `recursos/estrategia_mes.html`
+- `recursos/voz_mario.md`
+- `recursos/embudo_carruseles.md`
+- `recursos/carrusel/`
 
-Dos routines de Claude Code mantienen vivo este sistema:
+Las carpetas históricas se conservan como archivo, no como instrucciones de producción.
 
-- **Routine 1 · ESTRATEGA** (mensual, día 1) — investiga el panorama del mes y construye la estrategia con datos reales. Punto de control humano antes de producir.
-- **Routine 2 · PRODUCTOR** (semanal, lunes) — refresca datos del post de la semana y genera prompts para ChatGPT + copy listo.
+## Honestidad comercial
 
-## Estructura
+Globalizame no tiene clientes ni casos propios. El validador bloquea cualquier pieza que sugiera lo contrario y exige atribución explícita para resultados externos.
 
+## Uso
+
+```powershell
+npm test
+npm run content:plan -- 2026-07-10
+npm run content:run -- 2026-07-10
+npm run content:validate
+npm run content:serve
 ```
-/skill/references/   Reglas del sistema: marca, voz, pilares, buyer persona
-/estrategia/         Estrategia del mes en curso (estrategia_mes.html)
-/investigacion/      Informes de investigación (se llena solo)
-/posts/              Posts listos para publicar (se llena solo)
-/registro.md         Estado de rotaciones de color y hook (memoria viva)
-```
 
-## Regla de oro
-
-El contenido nunca habla de IA ni tecnología. Habla del problema que resuelve, en el idioma del dueño de negocio. Datos reales siempre, traducidos a euros y horas.
+El panel operativo se sirve en `http://127.0.0.1:4173`. Los artefactos aprobados quedan en `outputs/`. La publicación continúa en modo borrador.

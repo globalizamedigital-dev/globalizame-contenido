@@ -1,0 +1,4 @@
+interface:
+  display_name: "Globalizame Content Loop"
+  short_description: "Produce y valida contenido sin inventar clientes"
+  default_prompt: "Usa $content-loop para ejecutar el siguiente ciclo autónomo de contenido de Globalizame."

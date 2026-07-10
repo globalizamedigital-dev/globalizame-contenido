@@ -1,0 +1,17 @@
+{
+  "status": "APPROVED",
+  "checked_at": "2026-07-10T11:37:51.574Z",
+  "honesty": {
+    "passed": true,
+    "checks": 3
+  },
+  "checks": {
+    "slides": 7,
+    "wireframe_pngs": 7,
+    "final_gpt_image_2_pngs": 7,
+    "format": "1080x1350",
+    "references": 7,
+    "humanizer": true
+  },
+  "failures": []
+}

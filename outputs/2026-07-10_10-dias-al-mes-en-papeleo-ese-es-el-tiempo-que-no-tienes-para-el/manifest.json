@@ -1,0 +1,24 @@
+{
+  "id": "2026-07-10_10-dias-al-mes-en-papeleo-ese-es-el-tiempo-que-no-tienes-para-el",
+  "title": "10 días al mes en papeleo. Ese es el tiempo que no tienes para el negocio",
+  "date": "2026-07-10",
+  "status": "APPROVED",
+  "started_at": "2026-07-10T11:28:07.507Z",
+  "completed_at": "2026-07-10T11:28:10.349Z",
+  "stage": "MOFU",
+  "cta": "recurso",
+  "render": {
+    "png": true
+  },
+  "lead_magnet": {
+    "required": true,
+    "ready": true,
+    "file": "lead-magnet.html"
+  },
+  "artifacts": {
+    "contact_sheet": "contact-sheet.svg",
+    "instagram": "copy-instagram.md",
+    "linkedin": "copy-linkedin.md",
+    "qa": "qa.md"
+  }
+}

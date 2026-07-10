@@ -1,0 +1,19 @@
+{
+  "provider": "OpenAI",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "mode": "built-in",
+  "reference_policy": "keyframe plus up to four carousel references per slide",
+  "source_size": "1024x1536",
+  "delivery_size": "1080x1350",
+  "delivery_transform": "proportional resize to 900x1350 with 90px neutral side margins",
+  "slides": [
+    "final/slide-01.png",
+    "final/slide-02.png",
+    "final/slide-03.png",
+    "final/slide-04.png",
+    "final/slide-05.png",
+    "final/slide-06.png",
+    "final/slide-07.png"
+  ]
+}

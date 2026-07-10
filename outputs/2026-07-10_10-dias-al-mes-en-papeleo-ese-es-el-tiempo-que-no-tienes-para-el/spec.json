@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "id": "2026-07-10_10-dias-al-mes-en-papeleo-ese-es-el-tiempo-que-no-tienes-para-el",
+  "date": "2026-07-10",
+  "title": "10 días al mes en papeleo. Ese es el tiempo que no tienes para el negocio",
+  "stage": "MOFU",
+  "cta": "recurso",
+  "visual_reference": [
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (1).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (2).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (3).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (4).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (5).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (6).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (7).png"
+  ],
+  "evidence": [
+    {
+      "id": "E5",
+      "claim": "Las PYMES españolas dedican hasta 10 días al mes a tareas administrativas",
+      "source": "Qonto / esdiario.com / Infobae",
+      "business": "Un tercio del mes del dueño se va en papeleo, no en hacer crecer el negocio"
+    },
+    {
+      "id": "E6",
+      "claim": "El papeleo cuesta ~5.500 €/año por empleado en gestiones \"sin valor\"",
+      "source": "autonomosyemprendedor.es / Factorial",
+      "business": "El coste oculto de hacerlo a mano, puesto en euros"
+    },
+    {
+      "id": "E4",
+      "claim": "Empresas que no responden en 5 minutos pierden el 80% de la conversión",
+      "source": "gestiondellamadas.com",
+      "business": "En verano, el cliente que no atiendes a las 14:00 ya reservó en otro sitio a las 14:05"
+    },
+    {
+      "id": "E7",
+      "claim": "El 55% de las empresas dice que lo administrativo le resta tiempo al trabajo estratégico",
+      "source": "Qonto / pressdigital.es",
+      "business": "El dueño lo siente: no para de apagar fuegos y nunca llega a pensar el negocio"
+    },
+    {
+      "id": "E1",
+      "claim": "Una PYME pierde 2.500–15.000 €/mes por llamadas no atendidas",
+      "source": "gestiondellamadas.com",
+      "business": "Cada timbre sin contestar en plena temporada es un cliente que se va con cifra concreta"
+    },
+    {
+      "id": "E2",
+      "claim": "El 85% de quien no recibe respuesta no vuelve a llamar; el 66% se va a la competencia",
+      "source": "gestiondellamadas.com",
+      "business": "No es \"ya llamará luego\". Es \"ya no llama\". El lead muerto no avisa"
+    },
+    {
+      "id": "E3",
+      "claim": "El 70% de las empresas no tiene sistema para recuperar llamadas perdidas",
+      "source": "gestiondellamadas.com",
+      "business": "El problema no es la llamada: es que nadie la recupera después"
+    },
+    {
+      "id": "E8",
+      "claim": "El 41% de las PYMES españolas ya usa IA a diario (mayo 2026)",
+      "source": "ia4pymes.tech / ONTSI",
+      "business": "Cuatro de cada diez ya la usan. El recelo \"eso es para grandes\" ya no se sostiene"
+    },
+    {
+      "id": "E9",
+      "claim": "El precio de los modelos de IA cayó >70% desde 2023",
+      "source": "waytogrow.es / revistanegocios.es",
+      "business": "Lo que antes solo pagaba una gran empresa, hoy lo paga un bar"
+    },
+    {
+      "id": "E10",
+      "claim": "Qué salió",
+      "source": "Qué permite ahora",
+      "business": "Impacto empresarial"
+    },
+    {
+      "id": "E11",
+      "claim": "**Meta Business Agent** (anunciado en Conversations 2026, junio)",
+      "source": "Agentes que responden, recomiendan producto, cualifican al cliente, agendan citas e incluso cierran venta dentro del chat, sin guion rígido y entendiendo lenguaje natural",
+      "business": "Un negocio atiende por WhatsApp 24/7 sin sumar personal. +1 millón de empresas ya lo usan. Para el dueño: dejar de perder el WhatsApp que entra a las 23:00"
+    },
+    {
+      "id": "E12",
+      "claim": "**Agentes de voz de IA** que cogen el teléfono",
+      "source": "Contestan la llamada, toman la reserva o la cita y mandan recordatorio, a cualquier hora",
+      "business": "El 40% de las llamadas a un restaurante entran fuera de horario. Un agente las coge todas. La FSR estima +23–26% de ingresos por teléfono para los primeros que lo adoptan"
+    },
+    {
+      "id": "E13",
+      "claim": "**Caída del precio de la IA** (contexto, no producto único)",
+      "source": "Capacidad de empresa grande por <20 €/mes",
+      "business": "El argumento \"es muy caro para mi negocio\" dejó de ser cierto este año"
+    },
+    {
+      "id": "E14",
+      "claim": "Sector",
+      "source": "Resultado",
+      "business": "Fuente (obligatorio citarla)"
+    },
+    {
+      "id": "E15",
+      "claim": "Restaurante de tapas, Logroño (España)",
+      "source": "+28% reservas online, −40% no-shows, 6 h/semana liberadas (30 días)",
+      "business": "nolam.ai"
+    },
+    {
+      "id": "E16",
+      "claim": "Restaurante, Barcelona",
+      "source": "11 reservas extra/semana; inversión recuperada en días",
+      "business": "nolam.ai / sapiensdataai"
+    }
+  ],
+  "slides": [
+    {
+      "number": 1,
+      "role": "hook",
+      "layout": "cover",
+      "headline": "10 DÍAS AL MES EN PAPELEO",
+      "support": "Ponle una cifra antes de normalizarlo."
+    },
+    {
+      "number": 2,
+      "role": "mechanism",
+      "layout": "flow",
+      "headline": "EL COSTE NO AVISA. SE ACUMULA.",
+      "support": "Cada tarea manual compite con el trabajo que sí mueve el negocio."
+    },
+    {
+      "number": 3,
+      "role": "evidence",
+      "layout": "gauge",
+      "headline": "LAS PYMES ESPAÑOLAS DEDICAN HASTA 10 DÍAS AL MES A TAREAS",
+      "support": "Referencia externa: Qonto / esdiario.com / Infobae",
+      "metric": "10 días"
+    },
+    {
+      "number": 4,
+      "role": "contrast",
+      "layout": "split",
+      "headline": "NO ES TRABAJAR MÁS. ES QUITAR FRICCIÓN.",
+      "support": "Separa lo repetible de lo que necesita tu criterio."
+    },
+    {
+      "number": 5,
+      "role": "method",
+      "layout": "checklist",
+      "headline": "EMPIEZA POR LO QUE PUEDES MEDIR.",
+      "support": "Tres comprobaciones antes de automatizar.",
+      "items": [
+        "Horas repetidas cada semana",
+        "Coste o ingreso que se escapa",
+        "Regla clara para decidir"
+      ]
+    },
+    {
+      "number": 6,
+      "role": "synthesis",
+      "layout": "gauge",
+      "headline": "LA IA NO ES EL RESULTADO.",
+      "support": "El resultado es recuperar tiempo sin perder control.",
+      "metric": "TIEMPO"
+    },
+    {
+      "number": 7,
+      "role": "close",
+      "layout": "closing",
+      "headline": "PRIMERO MIDE. DESPUÉS DECIDE.",
+      "support": "Sin cifras, solo estás cambiando una intuición por otra."
+    }
+  ],
+  "content_hash": "f28f9bacd9978bf75db4349246eb76cf8084717ec72a2f953506a77166cc9874"
+}
