@@ -32,7 +32,9 @@ function run(target){
   fs.mkdirSync(runDir,{recursive:true});
   fs.writeFileSync(path.join(runDir,"spec.json"),JSON.stringify(spec,null,2));
   const leadMagnet=buildLeadMagnet(runDir,spec);
-  const humanized=humanizeCopies(buildCopies(spec,{resourceReady:leadMagnet.ready}));
+  const copySourceFile=path.join(runDir,"copy-source.json");
+  const sourceCopies=fs.existsSync(copySourceFile)?JSON.parse(fs.readFileSync(copySourceFile,"utf8")):buildCopies(spec,{resourceReady:leadMagnet.ready});
+  const humanized=humanizeCopies(sourceCopies);
   if(!humanized.report.passed)throw Object.assign(new Error("El copy no superó Humanizer"),{code:"HUMANIZER_BLOCK",violations:humanized.report.remaining});
   const copies=humanized.copies;
   fs.writeFileSync(path.join(runDir,"copy-instagram.md"),copies.instagram+"\n");
@@ -40,7 +42,7 @@ function run(target){
   fs.writeFileSync(path.join(runDir,"humanizer.json"),JSON.stringify(humanized.report,null,2));
   fs.writeFileSync(path.join(runDir,"sources.json"),JSON.stringify(spec.evidence,null,2));
   const render=renderAll(runDir,spec), qa=validateRun(runDir,spec,copies);
-  const manifest={id:spec.id,title:spec.title,date:spec.date,status:qa.status,started_at:started,completed_at:new Date().toISOString(),stage:spec.stage,cta:spec.cta,render,lead_magnet:leadMagnet,artifacts:{contact_sheet:"contact-sheet.svg",instagram:"copy-instagram.md",linkedin:"copy-linkedin.md",qa:"qa.md"}};
+  const manifest={id:spec.id,title:spec.title,date:spec.date,status:qa.status,started_at:started,completed_at:new Date().toISOString(),stage:spec.stage,cta:spec.cta,render,lead_magnet:leadMagnet,copy_source:fs.existsSync(copySourceFile)?"agent-authored":"fallback-blocked",artifacts:{contact_sheet:"contact-sheet.svg",instagram:"copy-instagram.md",linkedin:"copy-linkedin.md",qa:"qa.md"}};
   fs.writeFileSync(path.join(runDir,"manifest.json"),JSON.stringify(manifest,null,2));
   saveState(manifest);
   if(qa.status!=="APPROVED")throw Object.assign(new Error("La ejecución no superó QA"),{code:"QA_BLOCK",violations:qa.failures});

@@ -51,4 +51,7 @@ Devuelve datos estructurados que cumplan el contrato del motor. El loop termina 
 - Genera todo asset raster final con GPT Image 2.0 en la máxima calidad disponible. Usa hasta cinco referencias visuales por llamada y conserva una keyframe aprobada entre slides.
 - El SVG solo puede ser wireframe o capa determinista. Nunca es el arte final.
 - Pasa todo texto visible por la skill `humanizer` antes del control de honestidad: slides, Instagram, LinkedIn, mensajes y lead magnet.
+- El Humanizer no puede ser un filtro de palabras. Debe revisar el borrador, reescribirlo, preguntar qué lo hace sonar a IA y ejecutar una segunda reescritura.
+- Redacta Instagram y LinkedIn por separado. Instagram necesita al menos 180 palabras y LinkedIn 250, salvo que el formato concreto justifique documentalmente una excepción.
+- Exige hook, escena reconocible, dato con contexto, postura de Mario, desarrollo útil y CTA coherente. Un resumen corto del carrusel no es un copy publicable.
 - Si falta `imagegen.json`, `humanizer.json` o alguno de los PNG finales, bloquea la ejecución.

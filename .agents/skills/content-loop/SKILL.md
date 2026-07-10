@@ -13,11 +13,12 @@ Operar el motor determinista del repositorio. No duplicar reglas de `content-os/
 2. Ejecutar `npm test` antes de la primera producción de una sesión.
 3. Ejecutar `npm run content:plan -- [YYYY-MM-DD]` cuando se necesite inspeccionar la pieza elegida.
 4. Ejecutar `npm run content:run -- [YYYY-MM-DD]` para producir el ciclo completo.
-5. Leer y aplicar la skill `humanizer` a todo texto visible. Guardar `humanizer.json`.
-6. Generar un PNG final por slide con GPT Image 2.0, máxima calidad, usando las referencias de `recursos/carrusel/` y la keyframe aprobada. Guardar `imagegen.json`.
-7. Abrir la hoja de contacto final y revisarla visualmente contra las referencias.
-8. Ejecutar `npm run content:validate` después de cualquier corrección.
-9. Aceptar únicamente cuando `qa.json` indique `APPROVED`, `honesty.passed` sea `true` y existan todos los assets GPT Image 2.0.
+5. Redactar `copy-source.json` desde cero leyendo `recursos/voz_mario.md`, el brief, la evidencia y el CTA. No usar el fallback del código como publicación final. Instagram debe superar 180 palabras y LinkedIn 250, con desarrollos propios para cada red.
+6. Leer y aplicar la skill `humanizer` completa a todo texto visible. Hacer la pregunta de auditoría anti-IA y una segunda reescritura. Guardar `humanizer.json`.
+7. Generar un PNG final por slide con GPT Image 2.0, máxima calidad, usando las referencias de `recursos/carrusel/` y la keyframe aprobada. Guardar `imagegen.json`.
+8. Abrir la hoja de contacto final y revisarla visualmente contra las referencias.
+9. Ejecutar `npm run content:validate` después de cualquier corrección.
+10. Aceptar únicamente cuando `qa.json` indique `APPROVED`, `honesty.passed` sea `true`, los copys superen los mínimos editoriales y existan todos los assets GPT Image 2.0.
 
 ## Reglas
 
