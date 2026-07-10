@@ -36,3 +36,18 @@ export function assertHonesty(documents) {
   }
   return { passed: true, checks: documents.length };
 }
+
+export function auditPublicCopy(text, { sourceNames = [] } = {}) {
+  const value = String(text || "");
+  const violations = [];
+  const brandMatch = value.match(/.{0,50}(?:globalizame|fase inicial|casos? propios?|no (?:tengo|tenemos) clientes?).{0,90}/iu);
+  if (brandMatch) violations.push({ code: "PUBLIC_BRAND_SELF_REFERENCE", excerpt: brandMatch[0] });
+  for (const name of sourceNames.filter(name => String(name).trim().length >= 4)) {
+    const escaped = String(name).trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const match = value.match(new RegExp(`\\b${escaped}\\b`, "iu"));
+    if (match) violations.push({ code: "PUBLIC_SOURCE_NAME", excerpt: match[0] });
+  }
+  const metaMatch = value.match(/.{0,40}(?:referencia externa|fuente:\s|(?:publicó|publicado) (?:este año )?un informe).{0,90}/iu);
+  if (metaMatch) violations.push({ code: "PUBLIC_SOURCE_META_LANGUAGE", excerpt: metaMatch[0] });
+  return violations;
+}

@@ -1,6 +1,6 @@
 {
   "status": "APPROVED",
-  "checked_at": "2026-07-10T17:59:27.159Z",
+  "checked_at": "2026-07-10T19:21:15.337Z",
   "honesty": {
     "passed": true,
     "checks": 3
@@ -9,12 +9,15 @@
     "slides": 7,
     "wireframe_pngs": 7,
     "final_gpt_image_2_pngs": 7,
+    "final_dimensions_checked": 7,
     "format": "1080x1350",
     "references": 7,
     "humanizer": true,
-    "instagram_words": 218,
-    "linkedin_words": 274,
-    "agent_copy_source": true
+    "instagram_words": 213,
+    "linkedin_words": 289,
+    "agent_copy_source": true,
+    "cta_type": "resource",
+    "final_slide_cta": "resource"
   },
   "failures": []
 }

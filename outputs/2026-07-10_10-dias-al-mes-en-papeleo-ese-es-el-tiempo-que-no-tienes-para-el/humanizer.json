@@ -2,7 +2,12 @@
   "skill": "humanizer",
   "version": "2.5.1",
   "passed": true,
+  "audit_question": "¿Qué hace que este texto parezca escrito por IA?",
+  "audit_answer": [
+    "Sin patrones mecánicos bloqueantes; revisar ritmo, escenas y voz antes de publicar."
+  ],
+  "second_rewrite": true,
   "changes": [],
   "remaining": [],
-  "checked_at": "2026-07-10T17:59:23.672Z"
+  "checked_at": "2026-07-10T19:20:31.770Z"
 }

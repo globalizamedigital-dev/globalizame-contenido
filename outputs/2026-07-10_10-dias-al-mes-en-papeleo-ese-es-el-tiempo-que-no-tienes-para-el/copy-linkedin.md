@@ -1,24 +1,49 @@
-Hay tareas que parecen pequeñas porque nunca llegan juntas.
+El papeleo rara vez parece el problema más urgente del negocio.
 
-Buscar una factura tarda cinco minutos. Copiar un dato, otros tres. Comprobar si alguien respondió aquel correo, dos más. El problema aparece cuando sumas esos minutos durante un mes.
+Nunca llega diciendo: "Hoy voy a quitarte media jornada".
 
-Qonto publicó este año un informe sobre la carga administrativa de las pymes españolas. Uno de sus datos dice que algunas dedican hasta diez días al mes a tareas administrativas. No diez horas. Diez días.
+Llega en trozos.
 
-Eso no significa que todo ese trabajo pueda desaparecer ni que una herramienta vaya a resolverlo por arte de magia. Parte del papeleo existe porque el negocio lo necesita. Parte requiere a una persona que entienda el contexto. Y otra parte sigue ahí porque nadie se ha sentado a medirla.
+Cinco minutos buscando una factura. Tres copiando un dato de una hoja a otra. Diez intentando recordar quién tenía que responder un correo. Otros quince corrigiendo algo que se hizo deprisa el viernes.
 
-Esa última es la que miraría primero.
+Nada de eso parece grave por separado.
 
-Antes de comprar software o hablar de inteligencia artificial, apuntaría cuatro cosas:
+El problema aparece cuando lo repites cada semana y descubres que llevas meses pagando esas pequeñas pérdidas con tu tiempo y el de tu equipo.
 
-La tarea que se repite.
-Las horas que consume cada semana.
-El coste real de una hora de trabajo.
-Los errores, retrasos o ventas que provoca.
+Entonces suele llegar la reacción rápida: buscar una herramienta.
 
-Cuando tienes esa cifra, la decisión cambia. Ya no preguntas qué herramienta está de moda. Preguntas si arreglar ese problema cuesta menos que seguir soportándolo.
+Yo frenaría ahí.
 
-A veces la respuesta será que no compensa. Eso también es un buen resultado, porque evita pagar una solución innecesaria.
+Comprar software antes de entender el atasco es una forma bastante eficaz de añadir otra cuota sin quitar trabajo.
 
-Globalizame todavía está en fase inicial. No te cuento esto desde una colección de casos propios que no existe. Lo cuento desde datos publicados, análisis y una forma concreta de mirar el problema sin vender la herramienta antes de entenderlo.
+Durante una semana apuntaría cada tarea administrativa que se repite. Sin montar un sistema complicado. Basta con anotar cuatro cosas:
 
-He preparado una hoja para hacer el cálculo con tus propios números. Si la quieres, comenta CÁLCULO y te la envío.
+Qué tarea es.
+
+Cuánto tarda de verdad.
+
+Cuántas veces ocurre.
+
+Qué errores, retrasos o ventas perdidas provoca.
+
+Con eso delante puedes separar tres situaciones que normalmente mezclamos.
+
+Hay tareas necesarias que requieren criterio y deben seguir en manos de una persona.
+
+Hay tareas mal organizadas que no necesitan tecnología, sino un proceso más claro.
+
+Y hay tareas repetitivas, predecibles y medibles que quizá sí tenga sentido automatizar.
+
+La diferencia importa.
+
+Si automatizas un proceso desordenado, solo consigues que el desorden vaya más rápido. Si lo mides primero, puedes decidir con calma qué merece cambiar y qué no.
+
+También puede ocurrir que los números digan que no compensa tocar nada.
+
+Perfecto.
+
+Acabas de evitar una compra innecesaria y ya entiendes mejor dónde se está yendo el tiempo.
+
+He preparado una hoja sencilla para hacer este cálculo con datos de tu propio negocio.
+
+Si la quieres, comenta CÁLCULO y te la envío.

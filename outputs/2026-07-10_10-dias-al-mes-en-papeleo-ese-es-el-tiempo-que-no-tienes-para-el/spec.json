@@ -1,10 +1,23 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "2026-07-10_10-dias-al-mes-en-papeleo-ese-es-el-tiempo-que-no-tienes-para-el",
   "date": "2026-07-10",
   "title": "10 días al mes en papeleo. Ese es el tiempo que no tienes para el negocio",
   "stage": "MOFU",
-  "cta": "recurso",
+  "cta": {
+    "type": "resource",
+    "keyword": "CÁLCULO",
+    "action": "Comenta CÁLCULO",
+    "headline": "COMENTA CÁLCULO",
+    "support": "Y te envío la hoja para calcularlo con tus números.",
+    "requested": "recurso",
+    "stage": "MOFU"
+  },
+  "visual_system": {
+    "style": "globalizame-clean-tech",
+    "variant": 1,
+    "flexible_composition": true
+  },
   "visual_reference": [
     "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (1).png",
     "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (2).png",
@@ -114,61 +127,71 @@
   ],
   "slides": [
     {
-      "number": 1,
       "role": "hook",
       "layout": "cover",
       "headline": "10 DÍAS AL MES EN PAPELEO",
-      "support": "Ponle una cifra antes de normalizarlo."
+      "support": "Antes de automatizar, descubre qué está consumiendo tu tiempo.",
+      "number": 1,
+      "visualVariant": 1
     },
     {
-      "number": 2,
       "role": "mechanism",
-      "layout": "flow",
-      "headline": "EL COSTE NO AVISA. SE ACUMULA.",
-      "support": "Cada tarea manual compite con el trabajo que sí mueve el negocio."
+      "layout": "split",
+      "headline": "NO EMPIECES POR LA HERRAMIENTA",
+      "support": "Primero localiza la tarea que vuelve cada semana.",
+      "number": 2,
+      "visualVariant": 1
     },
     {
-      "number": 3,
       "role": "evidence",
       "layout": "gauge",
       "headline": "LAS PYMES ESPAÑOLAS DEDICAN HASTA 10 DÍAS AL MES A TAREAS",
-      "support": "Referencia externa: Qonto / esdiario.com / Infobae",
-      "metric": "10 días"
+      "support": "Una señal para medir el problema con tus propios datos.",
+      "metric": "10 días",
+      "number": 3,
+      "visualVariant": 1
     },
     {
-      "number": 4,
-      "role": "contrast",
-      "layout": "split",
-      "headline": "NO ES TRABAJAR MÁS. ES QUITAR FRICCIÓN.",
-      "support": "Separa lo repetible de lo que necesita tu criterio."
-    },
-    {
-      "number": 5,
       "role": "method",
       "layout": "checklist",
-      "headline": "EMPIEZA POR LO QUE PUEDES MEDIR.",
-      "support": "Tres comprobaciones antes de automatizar.",
+      "headline": "MÍDELO DURANTE SIETE DÍAS",
+      "support": "No necesitas montar un sistema complicado.",
       "items": [
-        "Horas repetidas cada semana",
-        "Coste o ingreso que se escapa",
-        "Regla clara para decidir"
-      ]
+        "Qué tarea se repite",
+        "Cuánto tarda de verdad",
+        "Qué error o retraso provoca"
+      ],
+      "number": 4,
+      "visualVariant": 1
     },
     {
-      "number": 6,
+      "role": "decision",
+      "layout": "split",
+      "headline": "NO TODO SE DEBE AUTOMATIZAR",
+      "support": "Ordena primero. Automatiza solo lo repetible y medible.",
+      "number": 5,
+      "visualVariant": 1
+    },
+    {
       "role": "synthesis",
       "layout": "gauge",
-      "headline": "LA IA NO ES EL RESULTADO.",
-      "support": "El resultado es recuperar tiempo sin perder control.",
-      "metric": "TIEMPO"
+      "headline": "LA HERRAMIENTA VIENE DESPUÉS",
+      "support": "La decisión empieza con tus propios números.",
+      "metric": "ORDEN",
+      "number": 6,
+      "visualVariant": 1
     },
     {
-      "number": 7,
-      "role": "close",
+      "role": "cta",
       "layout": "closing",
-      "headline": "PRIMERO MIDE. DESPUÉS DECIDE.",
-      "support": "Sin cifras, solo estás cambiando una intuición por otra."
+      "headline": "COMENTA CÁLCULO",
+      "support": "Y te envío la hoja para calcularlo con tus números.",
+      "ctaType": "resource",
+      "keyword": "CÁLCULO",
+      "action": "Comenta CÁLCULO",
+      "number": 7,
+      "visualVariant": 1
     }
   ],
-  "content_hash": "f28f9bacd9978bf75db4349246eb76cf8084717ec72a2f953506a77166cc9874"
+  "content_hash": "215aba4f883a954dcd847baee12f5f69648fb8de5be4231fff73b3c0e35aabce"
 }

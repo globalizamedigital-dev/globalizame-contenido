@@ -7,6 +7,15 @@
   "source_size": "1024x1536",
   "delivery_size": "1080x1350",
   "delivery_transform": "proportional resize to 900x1350 with 90px neutral side margins",
+  "cta_edit": {
+    "slide": 7,
+    "model": "gpt-image-2",
+    "quality": "maximum",
+    "mode": "built-in edit",
+    "source": "final/slide-07.png",
+    "instruction": "Hacer visible el CTA COMENTA CÁLCULO y la entrega de la hoja",
+    "delivery_size": "1080x1350"
+  },
   "slides": [
     "final/slide-01.png",
     "final/slide-02.png",

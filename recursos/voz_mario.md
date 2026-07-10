@@ -173,7 +173,6 @@ Ejemplos:
 
 - "Guárdalo para revisarlo con calma."
 - "¿Te pasa esto? Te leo."
-- "Comenta CÁLCULO y te cuento cómo medirlo."
 - "Si esto te ha dolido un poco, probablemente había algo que mirar."
 
 ### MOFU
@@ -259,7 +258,7 @@ No intenta sonar más listo que el lector.
 Cuando hay cifras, vienen de la investigación aprobada.
 
 7. **No finge experiencia.**  
-Si una referencia es de terceros, se dice como referencia de terceros.
+Si una referencia es de terceros, se conserva en la trazabilidad interna y nunca se presenta como experiencia propia.
 
 ---
 
@@ -282,13 +281,12 @@ Mario no puede usar:
 - cifras sin fuente;
 - promesas de resultado garantizado.
 
-### Formulaciones correctas
+### Formulaciones correctas para trabajar internamente
 
-- "Según datos de sector..."
-- "Una referencia publicada por un proveedor del sector muestra..."
-- "El dato importante no es el caso. Es la dirección: esto ya está pasando."
-- "No es un caso mío. Lo uso como señal de hacia dónde va el mercado."
-- "Si esto se aplica a tu negocio, lo primero sería medirlo."
+- Guardar la fuente completa en `sources.json`.
+- Usar el dato para explicar el problema sin convertir el nombre del informe o proveedor en protagonista.
+- Si un caso externo no puede contarse sin parecer propio, descartarlo.
+- No explicar en el copy que Globalizame no tiene clientes; simplemente no fingirlos.
 
 ### Formulaciones prohibidas
 

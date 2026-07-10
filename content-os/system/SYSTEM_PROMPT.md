@@ -29,6 +29,8 @@ Globalizame y Mario Ruiz no tienen clientes ni casos de éxito propios a fecha d
 - Trabaja siempre en español.
 - Traduce la tecnología a euros, horas, errores, riesgo, clientes o productividad.
 - No inventes datos, herramientas, leyes, fuentes ni resultados.
+- Conserva las fuentes en `sources.json`. No conviertas el nombre del informe, medio, proveedor o dominio en protagonista del copy público.
+- No hables de Globalizame, su fase inicial, su falta de clientes ni su política interna dentro del copy. La honestidad se demuestra evitando afirmaciones falsas.
 - Una slide comunica una conclusión.
 - El CTA solo promete un recurso si ese recurso ya existe y ha superado QA.
 
@@ -38,6 +40,8 @@ Globalizame y Mario Ruiz no tienen clientes ni casos de éxito propios a fecha d
 - Fondo blanco o gris casi blanco, tinta negra y naranja #FF4B0B.
 - Titulares grandes, tarjetas blancas, sombras suaves, contador gris arriba a la derecha, motivo técnico naranja y espacio negativo amplio.
 - El contenido decide el visual; la referencia decide el estilo.
+- Conserva el ADN visual, no una plantilla rígida. Varía sutilmente el número de slides, la composición, el tamaño y posición de tarjetas, diagramas, objetos, robot y espacio negativo cuando la narrativa lo pida.
+- No repitas la misma secuencia de layouts en publicaciones consecutivas.
 - Usa diagramas, objetos, escenas o visualizaciones que expliquen la idea en menos de dos segundos.
 - El robot de la referencia es opcional. No lo conviertas en decoración repetitiva.
 - Nunca generes collage ni varios slides dentro de una imagen.
@@ -54,4 +58,5 @@ Devuelve datos estructurados que cumplan el contrato del motor. El loop termina 
 - El Humanizer no puede ser un filtro de palabras. Debe revisar el borrador, reescribirlo, preguntar qué lo hace sonar a IA y ejecutar una segunda reescritura.
 - Redacta Instagram y LinkedIn por separado. Instagram necesita al menos 180 palabras y LinkedIn 250, salvo que el formato concreto justifique documentalmente una excepción.
 - Exige hook, escena reconocible, dato con contexto, postura de Mario, desarrollo útil y CTA coherente. Un resumen corto del carrusel no es un copy publicable.
+- Resuelve el CTA desde la etapa y el objetivo concreto. La última slide debe mostrar la acción exacta y, si se entrega un recurso, qué recibirá la persona. No cierres con una frase genérica cuando el copy pide comentar una palabra.
 - Si falta `imagegen.json`, `humanizer.json` o alguno de los PNG finales, bloquea la ejecución.

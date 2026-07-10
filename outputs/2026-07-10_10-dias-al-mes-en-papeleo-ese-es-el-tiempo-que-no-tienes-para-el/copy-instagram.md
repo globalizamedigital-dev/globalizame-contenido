@@ -1,21 +1,37 @@
-Hay una forma bastante tonta de perder diez días al mes.
+Hay una forma muy tonta de perder diez días al mes.
 
-No es irte de vacaciones.
+No ocurre de golpe. Por eso cuesta verla.
 
-Es pasarte el día buscando una factura, copiando un dato de una hoja a otra, persiguiendo un documento o haciendo por quinta vez una tarea que jurabas haber terminado el viernes.
+Son diez minutos buscando una factura. Otros cinco copiando un dato que ya estaba en otro sitio. Un correo que nadie sabe si se respondió. Un documento que vuelve porque faltaba una cosa.
 
-Qonto publicó este año un informe sobre carga administrativa. La cifra que me hizo parar fue esta: algunas pymes españolas dedican hasta diez días al mes a tareas administrativas. Diez días. Casi medio mes de trabajo metido en cosas que mantienen el negocio abierto, pero no lo hacen avanzar.
+Por separado parece poca cosa.
 
-Y aquí es donde solemos hacerlo al revés.
+Junto, te come la semana.
 
-Vemos una herramienta nueva, pagamos la suscripción y luego buscamos qué problema resolver con ella. Así acabas con otra cuota mensual y el mismo papeleo.
+Y cuando por fin te sientas a hacer el trabajo que de verdad necesita tu cabeza, ya vas tarde, estás cansado o aparece otro pequeño incendio.
 
-Yo empezaría con una hoja en blanco.
+Yo no empezaría comprando una herramienta.
 
-Apunta qué tarea repites, cuántas horas te roba cada semana y cuánto cuesta realmente una hora de la persona que la hace. Después añade los errores, retrasos o ventas que se pierden por el camino.
+Haría algo bastante menos emocionante: abrir una hoja y apuntar durante siete días cada tarea que se repite.
 
-Con esos números delante puede ocurrir algo incómodo: quizá automatizarlo no compense. Perfecto. Te acabas de ahorrar una mala compra.
+Qué haces.
 
-Y si sí compensa, ya sabes exactamente por dónde empezar.
+Cuánto tardas.
 
-He preparado una hoja sencilla para hacer ese cálculo sin adornos. Comenta CÁLCULO y te la paso.
+Cuántas veces vuelve a aparecer.
+
+Y qué pasa cuando se hace tarde, mal o directamente no se hace.
+
+Ahí empiezas a ver el problema de verdad.
+
+Puede que automatizarlo no compense. Bien. Te has ahorrado otra suscripción que acabaría olvidada.
+
+Pero si una tarea se repite cada semana, consume horas y además provoca errores, ya tienes algo concreto que revisar.
+
+Primero mide.
+
+Luego decide si necesitas ordenar el proceso, repartirlo mejor o automatizar una parte.
+
+He preparado una hoja sencilla para hacer ese cálculo con tus propios números.
+
+Si la quieres, comenta CÁLCULO y te la paso.
