@@ -8,6 +8,7 @@
     "content:plan": "node content-os/cli.mjs plan",
     "content:validate": "node content-os/cli.mjs validate",
     "content:serve": "node content-os/server.mjs",
+    "panel:build": "node content-os/build-public-panel.mjs",
     "test": "node --test content-os/tests/*.test.mjs"
   },
   "engines": { "node": ">=20" }
