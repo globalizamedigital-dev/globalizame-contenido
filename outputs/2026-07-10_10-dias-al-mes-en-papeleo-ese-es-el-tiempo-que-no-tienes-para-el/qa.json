@@ -1,6 +1,6 @@
 {
   "status": "APPROVED",
-  "checked_at": "2026-07-10T19:21:15.337Z",
+  "checked_at": "2026-07-10T19:38:24.808Z",
   "honesty": {
     "passed": true,
     "checks": 3
@@ -17,7 +17,10 @@
     "linkedin_words": 289,
     "agent_copy_source": true,
     "cta_type": "resource",
-    "final_slide_cta": "resource"
+    "final_slide_cta": "resource",
+    "cta_layout": "cta-minimal",
+    "cta_text_blocks": 2,
+    "cta_visual_review": true
   },
   "failures": []
 }

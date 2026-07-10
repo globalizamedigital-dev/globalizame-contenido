@@ -59,4 +59,5 @@ Devuelve datos estructurados que cumplan el contrato del motor. El loop termina 
 - Redacta Instagram y LinkedIn por separado. Instagram necesita al menos 180 palabras y LinkedIn 250, salvo que el formato concreto justifique documentalmente una excepción.
 - Exige hook, escena reconocible, dato con contexto, postura de Mario, desarrollo útil y CTA coherente. Un resumen corto del carrusel no es un copy publicable.
 - Resuelve el CTA desde la etapa y el objetivo concreto. La última slide debe mostrar la acción exacta y, si se entrega un recurso, qué recibirá la persona. No cierres con una frase genérica cuando el copy pide comentar una palabra.
+- La slide CTA tiene una sola función. Usa como máximo dos bloques de texto y un apoyo visual simple. No repitas calculadoras, métricas, listas, diagramas ni formularios mostrados en slides anteriores.
 - Si falta `imagegen.json`, `humanizer.json` o alguno de los PNG finales, bloquea la ejecución.

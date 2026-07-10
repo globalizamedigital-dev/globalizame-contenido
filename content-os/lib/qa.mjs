@@ -24,6 +24,12 @@ export function validateRun(runDir, spec, copies) {
   if(closing?.role!=="cta")failures.push({code:"FINAL_SLIDE_NOT_CTA"});
   if(closing?.ctaType!==expectedCta)failures.push({code:"FINAL_SLIDE_CTA_MISMATCH",detail:`${closing?.ctaType||"missing"}/${expectedCta}`});
   if(expectedCta==="resource"&&(!closing?.keyword||!String(closing.headline).includes(closing.keyword)))failures.push({code:"FINAL_SLIDE_RESOURCE_KEYWORD_MISSING"});
+  if(closing?.layout!=="cta-minimal")failures.push({code:"FINAL_SLIDE_NOT_MINIMAL"});
+  if(closing?.items||closing?.metric||closing?.chart||closing?.fields)failures.push({code:"FINAL_SLIDE_DUPLICATES_CONTENT"});
+  const closingWords=`${closing?.headline||""} ${closing?.support||""}`.trim().split(/\s+/).filter(Boolean).length;
+  if(closingWords>10)failures.push({code:"FINAL_SLIDE_OVERLOADED",detail:closingWords});
+  const previousConcepts=new Set(spec.slides.slice(0,-1).map(slide=>slide.visualConcept).filter(Boolean));
+  if(previousConcepts.has(closing?.visualConcept))failures.push({code:"FINAL_SLIDE_VISUAL_REPETITION",detail:closing.visualConcept});
   for(const slide of spec.slides){
     const words=`${slide.headline} ${slide.support||""}`.trim().split(/\s+/).length;
     if(words>26)failures.push({code:"TEXT_DENSITY",slide:slide.number,detail:words});
@@ -52,10 +58,18 @@ export function validateRun(runDir, spec, copies) {
   const imagegenManifest=path.join(runDir,"imagegen.json");
   if(finalCount!==spec.slides.length)failures.push({code:"GPT_IMAGE_2_ASSETS",detail:`${finalCount}/${spec.slides.length}`});
   if(!fs.existsSync(imagegenManifest))failures.push({code:"GPT_IMAGE_2_MANIFEST"});
+  else{
+    const imagegen=JSON.parse(fs.readFileSync(imagegenManifest,"utf8"));
+    const ctaReview=imagegen.cta_visual_review;
+    if(!ctaReview?.passed)failures.push({code:"CTA_VISUAL_REVIEW_MISSING"});
+    if(ctaReview?.text_blocks>2)failures.push({code:"CTA_VISUAL_TEXT_BLOCKS",detail:ctaReview.text_blocks});
+    if((ctaReview?.reused_concepts||[]).length)failures.push({code:"CTA_VISUAL_REPEATS_PREVIOUS_SLIDE",detail:ctaReview.reused_concepts.join(", ")});
+    if(ctaReview?.concept!==closing?.visualConcept)failures.push({code:"CTA_VISUAL_CONCEPT_MISMATCH",detail:`${ctaReview?.concept||"missing"}/${closing?.visualConcept||"missing"}`});
+  }
   const humanizerFile=path.join(runDir,"humanizer.json");
   if(!fs.existsSync(humanizerFile))failures.push({code:"HUMANIZER_MISSING"});
   else if(!JSON.parse(fs.readFileSync(humanizerFile,"utf8")).passed)failures.push({code:"HUMANIZER_BLOCK"});
-  const report={status:failures.length?"BLOCKED":"APPROVED",checked_at:new Date().toISOString(),honesty,checks:{slides:spec.slides.length,wireframe_pngs:pngCount,final_gpt_image_2_pngs:finalCount,final_dimensions_checked:finalCount,format:"1080x1350",references:spec.visual_reference.length,humanizer:fs.existsSync(humanizerFile),instagram_words:instagramWords,linkedin_words:linkedinWords,agent_copy_source:fs.existsSync(copySourceFile),cta_type:expectedCta,final_slide_cta:closing?.ctaType},failures};
+  const report={status:failures.length?"BLOCKED":"APPROVED",checked_at:new Date().toISOString(),honesty,checks:{slides:spec.slides.length,wireframe_pngs:pngCount,final_gpt_image_2_pngs:finalCount,final_dimensions_checked:finalCount,format:"1080x1350",references:spec.visual_reference.length,humanizer:fs.existsSync(humanizerFile),instagram_words:instagramWords,linkedin_words:linkedinWords,agent_copy_source:fs.existsSync(copySourceFile),cta_type:expectedCta,final_slide_cta:closing?.ctaType,cta_layout:closing?.layout,cta_text_blocks:2,cta_visual_review:true},failures};
   fs.writeFileSync(path.join(runDir,"qa.json"),JSON.stringify(report,null,2));
   fs.writeFileSync(path.join(runDir,"qa.md"),`# QA · ${spec.title}\n\n**${report.status}**\n\n- Honestidad comercial: ${honesty.passed?"PASS":"FAIL"}\n- Slides SVG: ${spec.slides.length}\n- PNG: ${pngCount}\n- Formato: 1080×1350\n- Referencias visuales: ${spec.visual_reference.length}\n\n${failures.length?failures.map(f=>`- ${f.code}${f.slide?` · slide ${f.slide}`:""}: ${f.detail||f.excerpt||"revisar"}`).join("\n"):"Sin fallos bloqueantes."}\n`);
   return report;

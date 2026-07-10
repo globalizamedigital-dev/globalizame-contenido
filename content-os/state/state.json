@@ -6,15 +6,15 @@
       "title": "10 días al mes en papeleo. Ese es el tiempo que no tienes para el negocio",
       "date": "2026-07-10",
       "status": "APPROVED",
-      "started_at": "2026-07-10T19:20:31.763Z",
-      "completed_at": "2026-07-10T19:20:34.843Z",
+      "started_at": "2026-07-10T19:31:48.722Z",
+      "completed_at": "2026-07-10T19:31:52.229Z",
       "stage": "MOFU",
       "cta": {
         "type": "resource",
         "keyword": "CÁLCULO",
         "action": "Comenta CÁLCULO",
         "headline": "COMENTA CÁLCULO",
-        "support": "Y te envío la hoja para calcularlo con tus números.",
+        "support": "Te envío la hoja.",
         "requested": "recurso",
         "stage": "MOFU"
       },

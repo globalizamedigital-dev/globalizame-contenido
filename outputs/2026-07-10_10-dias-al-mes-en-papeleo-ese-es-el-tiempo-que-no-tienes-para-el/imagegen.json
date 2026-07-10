@@ -16,6 +16,22 @@
     "instruction": "Hacer visible el CTA COMENTA CÁLCULO y la entrega de la hoja",
     "delivery_size": "1080x1350"
   },
+  "cta_visual_review": {
+    "passed": true,
+    "concept": "comment-bubble",
+    "text_blocks": 2,
+    "primary_text": "COMENTA CÁLCULO",
+    "support_text": "Te envío la hoja.",
+    "reused_concepts": [],
+    "removed_elements": [
+      "calculator",
+      "hours field",
+      "cost field",
+      "errors field",
+      "monthly cost card",
+      "repeated bottom CTA bar"
+    ]
+  },
   "slides": [
     "final/slide-01.png",
     "final/slide-02.png",

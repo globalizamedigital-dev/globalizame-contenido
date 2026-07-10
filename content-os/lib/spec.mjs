@@ -18,7 +18,7 @@ export function resolveCta(post) {
 
   const keyword = type === "resource" ? inferKeyword(post) : null;
   const variants = {
-    resource: { type, keyword, action: `Comenta ${keyword}`, headline: `COMENTA ${keyword}`, support: "Y te envío la hoja para calcularlo con tus números." },
+    resource: { type, keyword, action: `Comenta ${keyword}`, headline: `COMENTA ${keyword}`, support: "Te envío la hoja." },
     booking: { type, action: "Reserva una conversación", headline: "¿LO MIRAMOS CON TUS NÚMEROS?", support: "30 minutos para detectar qué se te está escapando." },
     conversation: { type, action: "Responde en comentarios", headline: "¿DÓNDE SE TE VA EL TIEMPO?", support: "Cuéntamelo en comentarios. Quiero leer casos concretos." },
     save: { type, action: "Guardar", headline: "GUÁRDALO PARA MEDIRLO", support: "Vuelve cuando tengas una semana de datos reales." },
@@ -76,7 +76,8 @@ function buildNarrative({ post, evidence, cta, variant }) {
 
   const slides = [slide("hook", "cover", title, hookSupport(post, metric)), ...middle];
   if (stage === "BOFU" || (stage === "MOFU" && variant !== 2)) slides.push(slide("synthesis", "gauge", "LA HERRAMIENTA VIENE DESPUÉS", "La decisión empieza con tus propios números.", { metric: "ORDEN" }));
-  slides.push(slide("cta", "closing", cta.headline, cta.support, { ctaType: cta.type, keyword: cta.keyword, action: cta.action }));
+  const usedConcepts = slides.map(item => item.visualConcept);
+  slides.push(slide("cta", "cta-minimal", cta.headline, cta.support, { ctaType: cta.type, keyword: cta.keyword, action: cta.action, visualConcept:"comment-bubble", avoidConcepts:usedConcepts, maxTextBlocks:2 }));
   return slides.map((item, index) => ({ ...item, number: index + 1, visualVariant: variant }));
 }
 
@@ -92,7 +93,8 @@ export function buildCopies(spec, { resourceReady = false } = {}) {
   };
 }
 
-function slide(role, layout, headline, support, extra = {}) { return { role, layout, headline, support, ...extra }; }
+function slide(role, layout, headline, support, extra = {}) { return { role, layout, headline, support, visualConcept:extra.visualConcept||conceptFor(role,layout), ...extra }; }
+function conceptFor(role,layout){if(role==="method")return "measurement-fields";if(role==="evidence")return "metric-gauge";if(role==="synthesis")return "summary-metric";return `${role}-${layout}`}
 function pick(values, index) { return values[Math.abs(index) % values.length]; }
 function inferKeyword(post) { return /llamad|coste|calcul|papeleo|tiempo|fuga/i.test(`${post.title} ${post.brief}`) ? "CÁLCULO" : "RECURSO"; }
 function hookSupport(post, metric) { return String(post.stage).toUpperCase() === "TOFU" ? `La cifra que conviene mirar: ${metric}.` : "Antes de automatizar, descubre qué está consumiendo tu tiempo."; }

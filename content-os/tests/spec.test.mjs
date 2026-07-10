@@ -21,6 +21,11 @@ test("MOFU con recurso lleva la palabra clave a la última slide", () => {
   assert.equal(spec.cta.keyword, "CÁLCULO");
   assert.match(spec.slides.at(-1).headline, /COMENTA CÁLCULO/);
   assert.match(spec.slides.at(-1).support, /te envío/i);
+  assert.equal(spec.slides.at(-1).layout, "cta-minimal");
+  assert.equal(spec.slides.at(-1).visualConcept, "comment-bubble");
+  assert.equal(spec.slides.at(-1).metric, undefined);
+  assert.equal(spec.slides.at(-1).items, undefined);
+  assert.ok(`${spec.slides.at(-1).headline} ${spec.slides.at(-1).support}`.split(/\s+/).length<=10);
 });
 
 test("BOFU convierte una petición incompatible en reserva", () => {
@@ -34,4 +39,11 @@ test("la composición varía de forma determinista entre piezas", () => {
   const b = buildSpec({ date:"2026-07-13", title:"Segunda pieza", brief:"", stage:"MOFU", cta:"autoridad" }, evidence, resources);
   assert.ok(a.visual_system.flexible_composition);
   assert.notDeepEqual(a.slides.map(s=>s.layout), b.slides.map(s=>s.layout));
+});
+
+test("el CTA no reutiliza el concepto visual de una slide anterior", () => {
+  const spec = buildSpec({ date:"2026-07-10", title:"Calcula cuánto tiempo pierdes", brief:"Hoja de cálculo", stage:"MOFU", cta:"recurso" }, evidence, resources);
+  const closing = spec.slides.at(-1);
+  assert.ok(!spec.slides.slice(0,-1).some(slide=>slide.visualConcept===closing.visualConcept));
+  assert.ok(closing.avoidConcepts.includes("measurement-fields"));
 });
