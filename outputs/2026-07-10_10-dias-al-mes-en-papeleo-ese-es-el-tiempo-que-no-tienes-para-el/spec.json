@@ -16,7 +16,9 @@
   "visual_system": {
     "style": "globalizame-clean-tech",
     "variant": 1,
-    "flexible_composition": true
+    "flexible_composition": false,
+    "reference_fidelity": "strict",
+    "reference_composition": "carousel-cover-grammar"
   },
   "visual_reference": [
     "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (1).png",
@@ -132,25 +134,36 @@
       "headline": "10 DÍAS AL MES EN PAPELEO",
       "support": "Antes de automatizar, descubre qué está consumiendo tu tiempo.",
       "eyebrow": "ERROR COMÚN",
-      "visualConcept": "robot-trapped-by-paperwork",
+      "visualConcept": "robot-watching-paperwork-fall-into-time-drain",
       "eyebrowStrategy": "adaptive",
       "visualMode": "single-scene",
       "protagonist": "brand-robot",
-      "visualDirection": "Una única escena: el robot de marca intenta avanzar mientras una montaña de documentos lo atrapa dentro de un reloj de arena.",
+      "visualDirection": "Replica la composición de la portada de referencia: robot de marca angustiado a la derecha; bandeja 3D blanca de papeleo acumulado abajo a la izquierda; hojas y fichas de tiempo caen desde la bandeja hacia un sumidero naranja. Todo forma una sola escena narrativa, no un objeto gigante aislado.",
       "primaryVisualCount": 1,
+      "referenceFidelity": "strict",
+      "compositionGrammar": "reference-cover",
+      "sceneStructure": {
+        "headline": "upper-left",
+        "robot": "expressive-right",
+        "explanatoryProp": "lower-left",
+        "consequence": "integrated-bottom",
+        "unified": true
+      },
       "forbiddenElements": [
         "isolated object",
-        "multiple cards",
-        "infographic",
+        "giant centered concept",
+        "cinematic poster",
+        "multiple unrelated cards",
+        "infographic cover",
         "decorative robot",
-        "coin shower",
-        "explanatory diagram"
+        "different robot identity",
+        "different visual language"
       ],
       "hookAssessment": {
         "disruptive": true,
         "relevant": true,
         "twoSecondClarity": true,
-        "rationale": "El robot vive el conflicto y convierte el papeleo en tiempo que lo inmoviliza."
+        "rationale": "El robot protagoniza el conflicto y la pérdida de tiempo se entiende al instante, conservando la composición de marca."
       },
       "number": 1,
       "visualVariant": 1
@@ -224,7 +237,7 @@
       "action": "Comenta CÁLCULO",
       "primaryVisualCount": 1,
       "avoidConcepts": [
-        "robot-trapped-by-paperwork",
+        "robot-watching-paperwork-fall-into-time-drain",
         "mechanism-split",
         "metric-gauge",
         "measurement-fields",

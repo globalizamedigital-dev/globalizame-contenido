@@ -23,7 +23,7 @@ Operar el motor determinista del repositorio. No duplicar reglas de `content-os/
    - La última slide debe ejecutar el CTA real. Si el CTA es `Comenta X`, debe mostrar `COMENTA X` y explicar qué recibe la persona.
    - El CTA es un cierre, no otra slide educativa: máximo dos bloques de texto y un único apoyo visual simple.
    - Prohibido repetir en el CTA calculadoras, gráficos, listas, formularios, métricas u objetos explicativos ya usados antes.
-   - La portada debe ser disruptiva, relevante y comprensible en dos segundos. Usa una sola escena focal con un protagonista en acción, normalmente el robot de marca. Un objeto aislado no es un hook suficiente.
+   - La portada debe ser disruptiva, relevante y comprensible en dos segundos. La creatividad cambia la situación, nunca el lenguaje visual. Replica la gramática de `recursos/carrusel/`: titular dominante arriba a la izquierda, robot idéntico y expresivo a la derecha, objeto explicativo 3D abajo a la izquierda y consecuencia visual integrada. Todo debe leerse como una sola escena. Quedan prohibidos el objeto gigante centrado, el póster cinematográfico, un robot distinto y cualquier composición que solo conserve los colores.
    - El robot debe vivir el conflicto del post: perseguir una llamada, quedar atrapado por el papeleo o luchar contra el atasco. Nunca aparece como decoración al lado de otro visual.
    - En portada no acumules tarjetas, cifras, robot, monedas y explicaciones. El hook detiene el scroll; el resto del carrusel explica.
    - La etiqueta superior no es una serie fija tipo `DATO 01`. Adáptala al contenido: pregunta incómoda, error común, dato clave, cómo funciona, decisión u otra que describa la función real.

@@ -34,10 +34,12 @@ test("BOFU convierte una petición incompatible en reserva", () => {
   assert.match(cta.headline, /MIRAMOS/);
 });
 
-test("la composición varía de forma determinista entre piezas", () => {
+test("la narrativa varía pero la composición de portada permanece vinculada a la referencia", () => {
   const a = buildSpec({ date:"2026-07-08", title:"Primera pieza", brief:"", stage:"MOFU", cta:"autoridad" }, evidence, resources);
   const b = buildSpec({ date:"2026-07-13", title:"Segunda pieza", brief:"", stage:"MOFU", cta:"autoridad" }, evidence, resources);
-  assert.ok(a.visual_system.flexible_composition);
+  assert.equal(a.visual_system.flexible_composition, false);
+  assert.equal(a.visual_system.reference_fidelity, "strict");
+  assert.equal(a.slides[0].compositionGrammar, "reference-cover");
   assert.notDeepEqual(a.slides.map(s=>s.layout), b.slides.map(s=>s.layout));
 });
 
@@ -55,10 +57,12 @@ test("el hook adapta su etiqueta y usa un solo visual disruptivo",()=>{
   assert.equal(error.eyebrow,"ERROR COMÚN");
   assert.notEqual(phone.eyebrow,error.eyebrow);
   assert.equal(phone.primaryVisualCount,1);
-  assert.equal(phone.visualConcept,"robot-catching-escaping-call");
+  assert.equal(phone.visualConcept,"robot-watching-missed-calls-fall-into-revenue-drain");
   assert.equal(phone.visualMode,"single-scene");
   assert.equal(phone.protagonist,"brand-robot");
-  assert.match(phone.visualDirection,/nunca un teléfono solo/i);
+  assert.match(phone.visualDirection,/composición de referencia/i);
+  assert.equal(phone.referenceFidelity,"strict");
+  assert.equal(phone.compositionGrammar,"reference-cover");
   assert.deepEqual([phone.hookAssessment.disruptive,phone.hookAssessment.relevant,phone.hookAssessment.twoSecondClarity],[true,true,true]);
 });
 
@@ -66,6 +70,7 @@ test("el hook es una escena protagonizada, no un objeto aislado",()=>{
   const hook=buildSpec({date:"2026-07-10",format:"Error común",title:"Diez días en papeleo",brief:"Facturas",stage:"MOFU",cta:"recurso"},evidence,resources).slides[0];
   assert.equal(hook.visualMode,"single-scene");
   assert.equal(hook.protagonist,"brand-robot");
+  assert.deepEqual(hook.sceneStructure,{headline:"upper-left",robot:"expressive-right",explanatoryProp:"lower-left",consequence:"integrated-bottom",unified:true});
   assert.match(hook.visualDirection,/robot/i);
   assert.ok(hook.forbiddenElements.includes("isolated object"));
 });
