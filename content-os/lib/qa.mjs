@@ -23,6 +23,8 @@ export function validateRun(runDir, spec, copies) {
   const hook=spec.slides[0];
   if(hook?.role!=="hook")failures.push({code:"FIRST_SLIDE_NOT_HOOK"});
   if(hook?.primaryVisualCount!==1)failures.push({code:"HOOK_PRIMARY_VISUAL_COUNT",detail:hook?.primaryVisualCount});
+  if(hook?.visualMode!=="single-scene")failures.push({code:"HOOK_NOT_SINGLE_SCENE",detail:hook?.visualMode});
+  if(!hook?.protagonist)failures.push({code:"HOOK_PROTAGONIST_MISSING"});
   if(hook?.eyebrowStrategy!=="adaptive"||!hook?.eyebrow)failures.push({code:"HOOK_EYEBROW_NOT_ADAPTIVE"});
   if(/^DATO\s*\d+$/iu.test(hook?.eyebrow||""))failures.push({code:"HOOK_FIXED_DATA_LABEL",detail:hook.eyebrow});
   for(const quality of ["disruptive","relevant","twoSecondClarity"])if(hook?.hookAssessment?.[quality]!==true)failures.push({code:"HOOK_QUALITY_MISSING",detail:quality});
@@ -72,6 +74,8 @@ export function validateRun(runDir, spec, copies) {
     const hookReview=imagegen.hook_visual_review;
     if(!hookReview?.passed)failures.push({code:"HOOK_VISUAL_REVIEW_MISSING"});
     if(hookReview?.primary_visuals!==1)failures.push({code:"HOOK_VISUAL_COUNT",detail:hookReview?.primary_visuals});
+    if(hookReview?.visual_mode!=="single-scene")failures.push({code:"HOOK_VISUAL_NOT_SCENE",detail:hookReview?.visual_mode});
+    if(hookReview?.protagonist!==hook?.protagonist)failures.push({code:"HOOK_VISUAL_PROTAGONIST_MISMATCH",detail:`${hookReview?.protagonist||"missing"}/${hook?.protagonist||"missing"}`});
     if(hookReview?.concept!==hook?.visualConcept)failures.push({code:"HOOK_VISUAL_CONCEPT_MISMATCH",detail:`${hookReview?.concept||"missing"}/${hook?.visualConcept||"missing"}`});
     if(hookReview?.eyebrow!==hook?.eyebrow)failures.push({code:"HOOK_VISUAL_EYEBROW_MISMATCH",detail:`${hookReview?.eyebrow||"missing"}/${hook?.eyebrow||"missing"}`});
     for(const quality of ["disruptive","relevant","two_second_clarity"])if(hookReview?.[quality]!==true)failures.push({code:"HOOK_VISUAL_QUALITY",detail:quality});

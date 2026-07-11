@@ -55,9 +55,19 @@ test("el hook adapta su etiqueta y usa un solo visual disruptivo",()=>{
   assert.equal(error.eyebrow,"ERROR COMÚN");
   assert.notEqual(phone.eyebrow,error.eyebrow);
   assert.equal(phone.primaryVisualCount,1);
-  assert.equal(phone.visualConcept,"phone-leaking-opportunity");
+  assert.equal(phone.visualConcept,"robot-catching-escaping-call");
+  assert.equal(phone.visualMode,"single-scene");
+  assert.equal(phone.protagonist,"brand-robot");
   assert.match(phone.visualDirection,/nunca un teléfono solo/i);
   assert.deepEqual([phone.hookAssessment.disruptive,phone.hookAssessment.relevant,phone.hookAssessment.twoSecondClarity],[true,true,true]);
+});
+
+test("el hook es una escena protagonizada, no un objeto aislado",()=>{
+  const hook=buildSpec({date:"2026-07-10",format:"Error común",title:"Diez días en papeleo",brief:"Facturas",stage:"MOFU",cta:"recurso"},evidence,resources).slides[0];
+  assert.equal(hook.visualMode,"single-scene");
+  assert.equal(hook.protagonist,"brand-robot");
+  assert.match(hook.visualDirection,/robot/i);
+  assert.ok(hook.forbiddenElements.includes("isolated object"));
 });
 
 test("las etiquetas interiores describen su función y nunca numeran datos",()=>{

@@ -132,14 +132,17 @@
       "headline": "10 DÍAS AL MES EN PAPELEO",
       "support": "Antes de automatizar, descubre qué está consumiendo tu tiempo.",
       "eyebrow": "ERROR COMÚN",
-      "visualConcept": "documents-trapped-in-hourglass",
+      "visualConcept": "robot-trapped-by-paperwork",
       "eyebrowStrategy": "adaptive",
-      "visualDirection": "Un único objeto imposible: una pila de documentos atrapada dentro de un reloj de arena.",
+      "visualMode": "single-scene",
+      "protagonist": "brand-robot",
+      "visualDirection": "Una única escena: el robot de marca intenta avanzar mientras una montaña de documentos lo atrapa dentro de un reloj de arena.",
       "primaryVisualCount": 1,
       "forbiddenElements": [
+        "isolated object",
         "multiple cards",
         "infographic",
-        "supporting robot",
+        "decorative robot",
         "coin shower",
         "explanatory diagram"
       ],
@@ -147,7 +150,7 @@
         "disruptive": true,
         "relevant": true,
         "twoSecondClarity": true,
-        "rationale": "Convierte el papeleo invisible en tiempo físicamente atrapado."
+        "rationale": "El robot vive el conflicto y convierte el papeleo en tiempo que lo inmoviliza."
       },
       "number": 1,
       "visualVariant": 1
@@ -221,7 +224,7 @@
       "action": "Comenta CÁLCULO",
       "primaryVisualCount": 1,
       "avoidConcepts": [
-        "documents-trapped-in-hourglass",
+        "robot-trapped-by-paperwork",
         "mechanism-split",
         "metric-gauge",
         "measurement-fields",

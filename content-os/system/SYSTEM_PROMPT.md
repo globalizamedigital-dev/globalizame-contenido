@@ -45,7 +45,8 @@ Globalizame y Mario Ruiz no tienen clientes ni casos de éxito propios a fecha d
 - Usa diagramas, objetos, escenas o visualizaciones que expliquen la idea en menos de dos segundos.
 - El robot de la referencia es opcional. No lo conviertas en decoración repetitiva.
 - Nunca generes collage ni varios slides dentro de una imagen.
-- La portada debe cumplir tres condiciones a la vez: disruptiva, relevante y entendible en dos segundos. Un objeto literal aislado no basta; usa una anomalía visual o metáfora conectada al dolor.
+- La portada debe cumplir tres condiciones a la vez: disruptiva, relevante y entendible en dos segundos. Construye una sola escena focal con protagonista, normalmente el robot de marca viviendo el conflicto. Un objeto aislado no basta.
+- El robot no es decoración: debe actuar, sufrir, perseguir, sostener o transformar el problema central del post.
 - La portada contiene un solo visual principal. No mezcles tarjetas, cifras, robot, monedas y explicaciones. Su trabajo es detener el scroll, no resumir el carrusel.
 - La etiqueta superior se decide por la función de la pieza. No fijes `DATO 01`, `DATO 02` ni una secuencia decorativa si el post pide `ERROR COMÚN`, `PREGUNTA INCÓMODA`, `CÓMO FUNCIONA` u otra etiqueta más precisa.
 

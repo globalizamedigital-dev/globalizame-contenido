@@ -17,7 +17,7 @@ El lector no sabe que tiene el problema o no lo ha verbalizado. Objetivo: que se
 
 | Rol        | Función                                                                  |
 |------------|--------------------------------------------------------------------------|
-| PORTADA    | Hook disruptivo, relevante y entendible en 2 segundos. Nombra el dolor sin resolverlo y usa un único visual principal; nunca una infografía ni varios elementos compitiendo. |
+| PORTADA    | Hook disruptivo, relevante y entendible en 2 segundos. Una sola escena focal con protagonista, normalmente el robot viviendo el conflicto; nunca un objeto aislado ni varios elementos compitiendo. |
 | CONTEXTO   | Activa el dolor. El lector piensa "esto me pasa a mí".                   |
 | DESARROLLO | Desmenuza el problema. 1 ángulo por slide. No resuelvas, amplifica.      |
 | SÍNTESIS   | Cristaliza el coste real en euros, horas o clientes perdidos.            |
