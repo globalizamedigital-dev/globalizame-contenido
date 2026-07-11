@@ -1,0 +1,32 @@
+{
+  "id": "2026-07-13_5-senales-de-que-tu-negocio-depende-de-ti",
+  "title": "5 señales de que tu negocio depende de ti",
+  "date": "2026-07-13",
+  "status": "BLOCKED",
+  "started_at": "2026-07-11T19:28:53.279Z",
+  "completed_at": "2026-07-11T19:28:55.856Z",
+  "stage": "TOFU",
+  "cta": {
+    "type": "save",
+    "action": "Guardar",
+    "headline": "GUÁRDALO PARA MEDIRLO",
+    "support": "Vuelve con una semana de datos reales.",
+    "requested": "guardar",
+    "stage": "TOFU"
+  },
+  "render": {
+    "png": true
+  },
+  "lead_magnet": {
+    "required": false,
+    "ready": false
+  },
+  "copy_source": "agent-authored",
+  "artifacts": {
+    "contact_sheet": "contact-sheet.svg",
+    "instagram": "copy-instagram.md",
+    "linkedin": "copy-linkedin.md",
+    "qa": "qa.md",
+    "imagegen_prompts": "imagegen-prompts.json"
+  }
+}

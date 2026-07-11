@@ -1,0 +1,185 @@
+{
+  "schema_version": 2,
+  "id": "2026-07-13_5-senales-de-que-tu-negocio-depende-de-ti",
+  "date": "2026-07-13",
+  "title": "5 señales de que tu negocio depende de ti",
+  "stage": "TOFU",
+  "cta": {
+    "type": "save",
+    "action": "Guardar",
+    "headline": "GUÁRDALO PARA MEDIRLO",
+    "support": "Vuelve con una semana de datos reales.",
+    "requested": "guardar",
+    "stage": "TOFU"
+  },
+  "visual_system": {
+    "style": "globalizame-clean-tech",
+    "variant": 2,
+    "flexible_composition": false,
+    "reference_fidelity": "strict",
+    "reference_composition": "carousel-cover-grammar"
+  },
+  "visual_reference": [
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (1).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (2).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (3).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (4).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (5).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (6).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (7).png"
+  ],
+  "evidence": [
+    {
+      "id": "E2",
+      "claim": "Entre las microempresas (menos de 10 empleados) el uso de IA sube al 13,4% (+5,9 puntos), pero sigue siendo el segmento que menos la usa.",
+      "source": "INE, Encuesta TIC-CE empresas 2024",
+      "business": "Micro y pequeña empresa"
+    },
+    {
+      "id": "E1",
+      "claim": "El 21,1% de las empresas españolas de 10 o más empleados usaba IA a principios de 2025, 8,7 puntos más que el año anterior.",
+      "source": "INE, Encuesta TIC-CE empresas 2024 (datos def. 1T 2025, publ. oct 2025)",
+      "business": "Empresas 10+ empleados"
+    },
+    {
+      "id": "E3",
+      "claim": "Casi 8 de cada 10 empresas que no usan IA dicen que el motivo principal es la falta de conocimiento dentro de la propia empresa: no saben cómo, no es que no puedan pagarla.",
+      "source": "Banco de España, Boletín Económico 2025/T2 (art. 06, análisis EBAE)",
+      "business": "Empresas que no adoptan IA"
+    },
+    {
+      "id": "E4",
+      "claim": "El sector servicios es el que más usa IA en España, con un 25,7%.",
+      "source": "INE, Encuesta TIC-CE empresas 2024",
+      "business": "Servicios"
+    },
+    {
+      "id": "E5",
+      "claim": "Un autónomo dedica de media 200 horas al año a trámites administrativos y burocracia, unas 4 horas cada semana.",
+      "source": "ATA (Federación de Autónomos), barómetro dic 2025",
+      "business": "Autónomos"
+    },
+    {
+      "id": "E6",
+      "claim": "Esas 200 horas equivalen a unos 3.000€ al año por autónomo en tiempo dedicado solo a papeleo.",
+      "source": "ATA, dic 2025",
+      "business": "Autónomos"
+    },
+    {
+      "id": "E7",
+      "claim": "El 90% de los autónomos percibe que las trabas burocráticas han aumentado en el último año.",
+      "source": "ATA, barómetro dic 2025",
+      "business": "Autónomos"
+    }
+  ],
+  "slides": [
+    {
+      "role": "hook",
+      "layout": "cover",
+      "headline": "5 SEÑALES DE QUE TU NEGOCIO DEPENDE DE TI",
+      "support": "La cifra que conviene mirar: 13,4%.",
+      "eyebrow": "MIRA ESTO",
+      "visualConcept": "robot-confronting-business-problem-2",
+      "eyebrowStrategy": "adaptive",
+      "visualMode": "single-scene",
+      "protagonist": "brand-robot",
+      "visualDirection": "Conserva exactamente la gramática de la portada de referencia: titular arriba a la izquierda, robot expresivo a la derecha y una escena 3D explicativa integrada en la parte inferior.",
+      "primaryVisualCount": 1,
+      "referenceFidelity": "strict",
+      "compositionGrammar": "reference-cover",
+      "sceneStructure": {
+        "headline": "upper-left",
+        "robot": "expressive-right",
+        "explanatoryProp": "lower-left",
+        "consequence": "integrated-bottom",
+        "unified": true
+      },
+      "forbiddenElements": [
+        "isolated object",
+        "giant centered concept",
+        "cinematic poster",
+        "multiple unrelated cards",
+        "infographic cover",
+        "decorative robot",
+        "different robot identity",
+        "different visual language"
+      ],
+      "hookAssessment": {
+        "disruptive": true,
+        "relevant": true,
+        "twoSecondClarity": true,
+        "rationale": "La sorpresa está en la situación del robot, no en cambiar el estilo del carrusel."
+      },
+      "number": 1,
+      "visualVariant": 2
+    },
+    {
+      "role": "mechanism",
+      "layout": "flow",
+      "headline": "PARECE PEQUEÑO HASTA QUE LO SUMAS",
+      "support": "Los minutos sueltos terminan ocupando días.",
+      "eyebrow": "QUÉ PASA",
+      "visualConcept": "mechanism-flow",
+      "number": 2,
+      "visualVariant": 2
+    },
+    {
+      "role": "evidence",
+      "layout": "gauge",
+      "headline": "ENTRE LAS MICROEMPRESAS (MENOS DE 10 EMPLEADOS) EL USO DE IA",
+      "support": "Una señal para medir el problema con tus propios datos.",
+      "eyebrow": "DATO CLAVE",
+      "visualConcept": "metric-gauge",
+      "metric": "13,4%",
+      "number": 3,
+      "visualVariant": 2
+    },
+    {
+      "role": "consequence",
+      "layout": "flow",
+      "headline": "EL COSTE NO LLEGA EN UNA FACTURA",
+      "support": "Aparece como retrasos, errores y trabajo importante que nunca empieza.",
+      "eyebrow": "EL COSTE",
+      "visualConcept": "consequence-flow",
+      "number": 4,
+      "visualVariant": 2
+    },
+    {
+      "role": "recognition",
+      "layout": "checklist",
+      "headline": "MIRA DÓNDE SE REPITE",
+      "support": "Una semana basta para dejar de decidir por intuición.",
+      "eyebrow": "DETECTA",
+      "visualConcept": "recognition-checklist",
+      "items": [
+        "Tareas que vuelven",
+        "Interrupciones constantes",
+        "Oportunidades sin respuesta"
+      ],
+      "number": 5,
+      "visualVariant": 2
+    },
+    {
+      "role": "cta",
+      "layout": "cta-minimal",
+      "headline": "GUÁRDALO PARA MEDIRLO",
+      "support": "Vuelve con una semana de datos reales.",
+      "eyebrow": "TU TURNO",
+      "visualConcept": "comment-bubble",
+      "ctaType": "save",
+      "action": "Guardar",
+      "primaryVisualCount": 1,
+      "avoidConcepts": [
+        "robot-confronting-business-problem-2",
+        "mechanism-flow",
+        "metric-gauge",
+        "consequence-flow",
+        "recognition-checklist"
+      ],
+      "maxTextBlocks": 2,
+      "number": 6,
+      "visualVariant": 2
+    }
+  ],
+  "content_hash": "7961e90b523e6ad2314eb838b2ffd0a1f6077750f8b4960656361df1497c1e67"
+}

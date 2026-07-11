@@ -21,7 +21,7 @@ export function resolveCta(post) {
     resource: { type, keyword, action: `Comenta ${keyword}`, headline: `COMENTA ${keyword}`, support: "Te envío la hoja." },
     booking: { type, action: "Reserva una conversación", headline: "¿LO MIRAMOS CON TUS NÚMEROS?", support: "30 minutos para detectar qué se te está escapando." },
     conversation: { type, action: "Responde en comentarios", headline: "¿DÓNDE SE TE VA EL TIEMPO?", support: "Cuéntamelo en comentarios. Quiero leer casos concretos." },
-    save: { type, action: "Guardar", headline: "GUÁRDALO PARA MEDIRLO", support: "Vuelve cuando tengas una semana de datos reales." },
+    save: { type, action: "Guardar", headline: "GUÁRDALO PARA MEDIRLO", support: "Vuelve con una semana de datos reales." },
     authority: { type, action: "Guardar", headline: "PRIMERO MIDE. LUEGO DECIDE.", support: "Guárdalo para revisar el proceso con calma." },
   };
   return { ...variants[type], requested: raw, stage };
