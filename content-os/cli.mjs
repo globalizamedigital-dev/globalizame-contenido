@@ -8,6 +8,7 @@ import { buildImagegenPrompts } from "./lib/imagegen-prompts.mjs";
 import { validateRun } from "./lib/qa.mjs";
 import { buildLeadMagnet } from "./lib/lead-magnet.mjs";
 import { applyMechanicalFilter } from "./lib/humanize.mjs";
+import { planRemainingStages, existingPostsBefore } from "./lib/calendar-plan.mjs";
 
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
 const command=process.argv[2]||"run";
@@ -16,11 +17,36 @@ const date=dateArg?new Date(`${dateArg}T12:00:00`):new Date();
 
 try{
   if(command==="plan")console.log(JSON.stringify(plan(date),null,2));
+  else if(command==="plan-calendar")console.log(JSON.stringify(planCalendar(date),null,2));
   else if(command==="run")console.log(JSON.stringify(run(date),null,2));
   else if(command==="validate")console.log(JSON.stringify(validateLatest(),null,2));
   else if(command==="status")console.log(fs.readFileSync(path.join(ROOT,"content-os/state/state.json"),"utf8"));
   else throw new Error(`Comando desconocido: ${command}`);
 }catch(error){console.error(JSON.stringify({status:"BLOCKED",error:error.message,code:error.code,violations:error.violations},null,2));process.exit(1)}
+
+// Calcula, desde `date` (por defecto hoy), qué etapa TOFU/MOFU/BOFU corresponde a
+// cada lunes/miércoles/viernes restante del mes. Si recursos/estrategia_mes.html
+// ya existe, lee los posts anteriores a `date` para no repetir la progresión desde
+// cero al planificar a mitad de mes. Si no existe (mes sin calendario todavía),
+// planifica el mes completo desde `date` como si todo estuviera por escribir.
+// Esto es lo que la skill `investigador` debe ejecutar y respetar al escribir
+// recursos/estrategia_mes.html -- no debe inventar la distribución de etapas a mano.
+function planCalendar(target){
+  const strategyFile=path.join(ROOT,"recursos/estrategia_mes.html");
+  let existingPosts=[];
+  if(fs.existsSync(strategyFile)){
+    const strategy=fs.readFileSync(strategyFile,"utf8");
+    const allPosts=extractPosts(strategy,target.getFullYear());
+    existingPosts=existingPostsBefore(allPosts,target);
+  }
+  const plan=planRemainingStages(target,existingPosts);
+  return {
+    from_date:`${target.getFullYear()}-${String(target.getMonth()+1).padStart(2,"0")}-${String(target.getDate()).padStart(2,"0")}`,
+    existing_posts_this_month:existingPosts.length,
+    remaining_slots:plan.length,
+    plan,
+  };
+}
 
 function plan(target){
   const resources=readResources(ROOT,target), posts=extractPosts(resources.strategy,target.getFullYear()), post=selectPost(posts,target);
