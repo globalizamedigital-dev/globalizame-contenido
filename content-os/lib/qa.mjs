@@ -20,6 +20,12 @@ export function validateRun(runDir, spec, copies) {
   if(spec.slides.length<6||spec.slides.length>10)failures.push({code:"SLIDE_COUNT",detail:spec.slides.length});
   const nums=spec.slides.map(s=>s.number);
   if(nums.some((n,i)=>n!==i+1))failures.push({code:"SLIDE_SEQUENCE"});
+  const hook=spec.slides[0];
+  if(hook?.role!=="hook")failures.push({code:"FIRST_SLIDE_NOT_HOOK"});
+  if(hook?.primaryVisualCount!==1)failures.push({code:"HOOK_PRIMARY_VISUAL_COUNT",detail:hook?.primaryVisualCount});
+  if(hook?.eyebrowStrategy!=="adaptive"||!hook?.eyebrow)failures.push({code:"HOOK_EYEBROW_NOT_ADAPTIVE"});
+  if(/^DATO\s*\d+$/iu.test(hook?.eyebrow||""))failures.push({code:"HOOK_FIXED_DATA_LABEL",detail:hook.eyebrow});
+  for(const quality of ["disruptive","relevant","twoSecondClarity"])if(hook?.hookAssessment?.[quality]!==true)failures.push({code:"HOOK_QUALITY_MISSING",detail:quality});
   const closing=spec.slides.at(-1);
   if(closing?.role!=="cta")failures.push({code:"FINAL_SLIDE_NOT_CTA"});
   if(closing?.ctaType!==expectedCta)failures.push({code:"FINAL_SLIDE_CTA_MISMATCH",detail:`${closing?.ctaType||"missing"}/${expectedCta}`});
@@ -30,7 +36,10 @@ export function validateRun(runDir, spec, copies) {
   if(closingWords>10)failures.push({code:"FINAL_SLIDE_OVERLOADED",detail:closingWords});
   const previousConcepts=new Set(spec.slides.slice(0,-1).map(slide=>slide.visualConcept).filter(Boolean));
   if(previousConcepts.has(closing?.visualConcept))failures.push({code:"FINAL_SLIDE_VISUAL_REPETITION",detail:closing.visualConcept});
+  if(closing?.primaryVisualCount!==1)failures.push({code:"CTA_PRIMARY_VISUAL_COUNT",detail:closing?.primaryVisualCount});
   for(const slide of spec.slides){
+    if(slide.role!=="cta"&&!slide.eyebrow)failures.push({code:"SLIDE_EYEBROW_MISSING",slide:slide.number});
+    if(/^DATO\s*\d+$/iu.test(slide.eyebrow||""))failures.push({code:"SLIDE_FIXED_DATA_LABEL",slide:slide.number,detail:slide.eyebrow});
     const words=`${slide.headline} ${slide.support||""}`.trim().split(/\s+/).length;
     if(words>26)failures.push({code:"TEXT_DENSITY",slide:slide.number,detail:words});
     if(String(slide.headline).length>72)failures.push({code:"HEADLINE_LENGTH",slide:slide.number,detail:String(slide.headline).length});
@@ -60,6 +69,15 @@ export function validateRun(runDir, spec, copies) {
   if(!fs.existsSync(imagegenManifest))failures.push({code:"GPT_IMAGE_2_MANIFEST"});
   else{
     const imagegen=JSON.parse(fs.readFileSync(imagegenManifest,"utf8"));
+    const hookReview=imagegen.hook_visual_review;
+    if(!hookReview?.passed)failures.push({code:"HOOK_VISUAL_REVIEW_MISSING"});
+    if(hookReview?.primary_visuals!==1)failures.push({code:"HOOK_VISUAL_COUNT",detail:hookReview?.primary_visuals});
+    if(hookReview?.concept!==hook?.visualConcept)failures.push({code:"HOOK_VISUAL_CONCEPT_MISMATCH",detail:`${hookReview?.concept||"missing"}/${hook?.visualConcept||"missing"}`});
+    if(hookReview?.eyebrow!==hook?.eyebrow)failures.push({code:"HOOK_VISUAL_EYEBROW_MISMATCH",detail:`${hookReview?.eyebrow||"missing"}/${hook?.eyebrow||"missing"}`});
+    for(const quality of ["disruptive","relevant","two_second_clarity"])if(hookReview?.[quality]!==true)failures.push({code:"HOOK_VISUAL_QUALITY",detail:quality});
+    const labelsReview=imagegen.labels_visual_review;
+    if(!labelsReview?.passed||labelsReview?.adaptive!==true)failures.push({code:"LABELS_VISUAL_REVIEW_MISSING"});
+    if((labelsReview?.fixed_number_labels||[]).length)failures.push({code:"FIXED_NUMBER_LABELS_IN_FINAL_ART",detail:labelsReview.fixed_number_labels.join(", ")});
     const ctaReview=imagegen.cta_visual_review;
     if(!ctaReview?.passed)failures.push({code:"CTA_VISUAL_REVIEW_MISSING"});
     if(ctaReview?.text_blocks>2)failures.push({code:"CTA_VISUAL_TEXT_BLOCKS",detail:ctaReview.text_blocks});
@@ -69,7 +87,7 @@ export function validateRun(runDir, spec, copies) {
   const humanizerFile=path.join(runDir,"humanizer.json");
   if(!fs.existsSync(humanizerFile))failures.push({code:"HUMANIZER_MISSING"});
   else if(!JSON.parse(fs.readFileSync(humanizerFile,"utf8")).passed)failures.push({code:"HUMANIZER_BLOCK"});
-  const report={status:failures.length?"BLOCKED":"APPROVED",checked_at:new Date().toISOString(),honesty,checks:{slides:spec.slides.length,wireframe_pngs:pngCount,final_gpt_image_2_pngs:finalCount,final_dimensions_checked:finalCount,format:"1080x1350",references:spec.visual_reference.length,humanizer:fs.existsSync(humanizerFile),instagram_words:instagramWords,linkedin_words:linkedinWords,agent_copy_source:fs.existsSync(copySourceFile),cta_type:expectedCta,final_slide_cta:closing?.ctaType,cta_layout:closing?.layout,cta_text_blocks:2,cta_visual_review:true},failures};
+  const report={status:failures.length?"BLOCKED":"APPROVED",checked_at:new Date().toISOString(),honesty,checks:{slides:spec.slides.length,wireframe_pngs:pngCount,final_gpt_image_2_pngs:finalCount,final_dimensions_checked:finalCount,format:"1080x1350",references:spec.visual_reference.length,humanizer:fs.existsSync(humanizerFile),instagram_words:instagramWords,linkedin_words:linkedinWords,agent_copy_source:fs.existsSync(copySourceFile),hook_eyebrow:hook?.eyebrow,hook_primary_visuals:hook?.primaryVisualCount,hook_disruptive:hook?.hookAssessment?.disruptive,hook_relevant:hook?.hookAssessment?.relevant,hook_two_second_clarity:hook?.hookAssessment?.twoSecondClarity,labels_adaptive:true,cta_type:expectedCta,final_slide_cta:closing?.ctaType,cta_layout:closing?.layout,cta_text_blocks:2,cta_primary_visuals:closing?.primaryVisualCount,cta_visual_review:true},failures};
   fs.writeFileSync(path.join(runDir,"qa.json"),JSON.stringify(report,null,2));
   fs.writeFileSync(path.join(runDir,"qa.md"),`# QA · ${spec.title}\n\n**${report.status}**\n\n- Honestidad comercial: ${honesty.passed?"PASS":"FAIL"}\n- Slides SVG: ${spec.slides.length}\n- PNG: ${pngCount}\n- Formato: 1080×1350\n- Referencias visuales: ${spec.visual_reference.length}\n\n${failures.length?failures.map(f=>`- ${f.code}${f.slide?` · slide ${f.slide}`:""}: ${f.detail||f.excerpt||"revisar"}`).join("\n"):"Sin fallos bloqueantes."}\n`);
   return report;

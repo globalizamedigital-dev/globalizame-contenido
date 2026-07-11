@@ -74,10 +74,11 @@ function buildNarrative({ post, evidence, cta, variant }) {
           slide("decision", "checklist", "TRES COSAS QUE MIRARÍA PRIMERO", "Sin una auditoría interminable.", { items: ["Volumen real", "Coste mensual", "Casos que requieren persona"] }),
         ];
 
-  const slides = [slide("hook", "cover", title, hookSupport(post, metric)), ...middle];
+  const hook = buildHook(post, title, metric, variant);
+  const slides = [hook, ...middle];
   if (stage === "BOFU" || (stage === "MOFU" && variant !== 2)) slides.push(slide("synthesis", "gauge", "LA HERRAMIENTA VIENE DESPUÉS", "La decisión empieza con tus propios números.", { metric: "ORDEN" }));
   const usedConcepts = slides.map(item => item.visualConcept);
-  slides.push(slide("cta", "cta-minimal", cta.headline, cta.support, { ctaType: cta.type, keyword: cta.keyword, action: cta.action, visualConcept:"comment-bubble", avoidConcepts:usedConcepts, maxTextBlocks:2 }));
+  slides.push(slide("cta", "cta-minimal", cta.headline, cta.support, { ctaType: cta.type, keyword: cta.keyword, action: cta.action, visualConcept:"comment-bubble", primaryVisualCount:1, avoidConcepts:usedConcepts, maxTextBlocks:2 }));
   return slides.map((item, index) => ({ ...item, number: index + 1, visualVariant: variant }));
 }
 
@@ -93,7 +94,14 @@ export function buildCopies(spec, { resourceReady = false } = {}) {
   };
 }
 
-function slide(role, layout, headline, support, extra = {}) { return { role, layout, headline, support, visualConcept:extra.visualConcept||conceptFor(role,layout), ...extra }; }
+function slide(role, layout, headline, support, extra = {}) { return { role, layout, headline, support, eyebrow:extra.eyebrow||eyebrowForRole(role), visualConcept:extra.visualConcept||conceptFor(role,layout), ...extra }; }
+function eyebrowForRole(role){return ({mechanism:"QUÉ PASA",evidence:"DATO CLAVE",consequence:"EL COSTE",recognition:"DETECTA",method:"MÉTODO",decision:"DECISIÓN",objection:"OBJECIÓN",synthesis:"RESUMEN",cta:"TU TURNO"})[role]||"IDEA CLAVE"}
+function buildHook(post,title,metric,variant){
+  const eyebrow=adaptiveEyebrow(post),visual=disruptiveVisual(post,variant);
+  return slide("hook","cover",title,hookSupport(post,metric),{eyebrow,eyebrowStrategy:"adaptive",visualConcept:visual.concept,visualDirection:visual.direction,primaryVisualCount:1,forbiddenElements:["multiple cards","infographic","supporting robot","coin shower","explanatory diagram"],hookAssessment:{disruptive:true,relevant:true,twoSecondClarity:true,rationale:visual.rationale}});
+}
+function adaptiveEyebrow(post){const format=String(post.format||"").toLowerCase(),title=String(post.title||"");if(/estadística|dato/.test(format))return "DATO CLAVE";if(/error/.test(format))return "ERROR COMÚN";if(/pregunta|provocación/.test(format)||/[¿?]/.test(title))return "PREGUNTA INCÓMODA";if(/cómo|funciona|método/.test(format))return "CÓMO FUNCIONA";if(/honestidad/.test(format))return "SIN HUMO";if(/invitación/.test(format))return "SIGUIENTE PASO";return String(post.stage).toUpperCase()==="BOFU"?"DECISIÓN":"MIRA ESTO"}
+function disruptiveVisual(post,variant){const value=`${post.title} ${post.brief}`.toLowerCase();if(/papeleo|factura|administrativ/.test(value))return {concept:"documents-trapped-in-hourglass",direction:"Un único objeto imposible: una pila de documentos atrapada dentro de un reloj de arena.",rationale:"Convierte el papeleo invisible en tiempo físicamente atrapado."};if(/llamad|teléfono/.test(value))return {concept:"phone-leaking-opportunity",direction:"Un único teléfono agrietado del que se escapa una reserva en forma de ticket naranja; nunca un teléfono solo.",rationale:"Muestra la oportunidad que se pierde, no el aparato."};if(/vacaciones|agosto|te vas/.test(value))return {concept:"sunbed-chained-to-ringing-phone",direction:"Una única tumbona de vacaciones encadenada a un teléfono que suena.",rationale:"El choque entre descanso y dependencia se entiende sin explicación."};if(/precio|caro|€|euros?/.test(value))return {concept:"price-tag-crushed-by-chip",direction:"Una única etiqueta de precio enorme comprimida por un pequeño chip naranja.",rationale:"Hace visible la caída del precio mediante una contradicción de escala."};if(/\bia\b|agente|robot/.test(value))return {concept:"empty-chair-answering-call",direction:"Una silla vacía atendiendo una llamada mediante un auricular suspendido; sin robot decorativo.",rationale:"Muestra atención sin persona con una escena extraña pero inmediata."};return {concept:`impossible-business-object-${variant}`,direction:"Un único objeto cotidiano alterado de forma imposible para representar el coste central.",rationale:"La anomalía detiene el scroll y sigue conectada con el problema."}}
 function conceptFor(role,layout){if(role==="method")return "measurement-fields";if(role==="evidence")return "metric-gauge";if(role==="synthesis")return "summary-metric";return `${role}-${layout}`}
 function pick(values, index) { return values[Math.abs(index) % values.length]; }
 function inferKeyword(post) { return /llamad|coste|calcul|papeleo|tiempo|fuga/i.test(`${post.title} ${post.brief}`) ? "CÁLCULO" : "RECURSO"; }

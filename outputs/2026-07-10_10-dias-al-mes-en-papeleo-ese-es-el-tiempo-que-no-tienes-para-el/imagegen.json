@@ -32,6 +32,35 @@
       "repeated bottom CTA bar"
     ]
   },
+  "hook_visual_review": {
+    "passed": true,
+    "eyebrow": "ERROR COMÚN",
+    "concept": "documents-trapped-in-hourglass",
+    "primary_visuals": 1,
+    "disruptive": true,
+    "relevant": true,
+    "two_second_clarity": true,
+    "visual": "Una pila de documentos atrapada dentro de un reloj de arena naranja",
+    "removed_elements": [
+      "supporting robot",
+      "separate clock",
+      "multiple cards",
+      "coins",
+      "explanatory infographic"
+    ]
+  },
+  "labels_visual_review": {
+    "passed": true,
+    "adaptive": true,
+    "fixed_number_labels": [],
+    "labels": {
+      "slide-01": "ERROR COMÚN",
+      "slide-03": "DATO CLAVE",
+      "slide-04": "CLAVE",
+      "slide-05": "MÉTODO",
+      "slide-06": "RESUMEN"
+    }
+  },
   "slides": [
     "final/slide-01.png",
     "final/slide-02.png",

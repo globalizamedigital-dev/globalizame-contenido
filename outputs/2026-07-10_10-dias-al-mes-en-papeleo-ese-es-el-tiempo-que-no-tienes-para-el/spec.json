@@ -131,7 +131,24 @@
       "layout": "cover",
       "headline": "10 DÍAS AL MES EN PAPELEO",
       "support": "Antes de automatizar, descubre qué está consumiendo tu tiempo.",
-      "visualConcept": "hook-cover",
+      "eyebrow": "ERROR COMÚN",
+      "visualConcept": "documents-trapped-in-hourglass",
+      "eyebrowStrategy": "adaptive",
+      "visualDirection": "Un único objeto imposible: una pila de documentos atrapada dentro de un reloj de arena.",
+      "primaryVisualCount": 1,
+      "forbiddenElements": [
+        "multiple cards",
+        "infographic",
+        "supporting robot",
+        "coin shower",
+        "explanatory diagram"
+      ],
+      "hookAssessment": {
+        "disruptive": true,
+        "relevant": true,
+        "twoSecondClarity": true,
+        "rationale": "Convierte el papeleo invisible en tiempo físicamente atrapado."
+      },
       "number": 1,
       "visualVariant": 1
     },
@@ -140,6 +157,7 @@
       "layout": "split",
       "headline": "NO EMPIECES POR LA HERRAMIENTA",
       "support": "Primero localiza la tarea que vuelve cada semana.",
+      "eyebrow": "QUÉ PASA",
       "visualConcept": "mechanism-split",
       "number": 2,
       "visualVariant": 1
@@ -149,6 +167,7 @@
       "layout": "gauge",
       "headline": "LAS PYMES ESPAÑOLAS DEDICAN HASTA 10 DÍAS AL MES A TAREAS",
       "support": "Una señal para medir el problema con tus propios datos.",
+      "eyebrow": "DATO CLAVE",
       "visualConcept": "metric-gauge",
       "metric": "10 días",
       "number": 3,
@@ -159,6 +178,7 @@
       "layout": "checklist",
       "headline": "MÍDELO DURANTE SIETE DÍAS",
       "support": "No necesitas montar un sistema complicado.",
+      "eyebrow": "MÉTODO",
       "visualConcept": "measurement-fields",
       "items": [
         "Qué tarea se repite",
@@ -173,6 +193,7 @@
       "layout": "split",
       "headline": "NO TODO SE DEBE AUTOMATIZAR",
       "support": "Ordena primero. Automatiza solo lo repetible y medible.",
+      "eyebrow": "DECISIÓN",
       "visualConcept": "decision-split",
       "number": 5,
       "visualVariant": 1
@@ -182,6 +203,7 @@
       "layout": "gauge",
       "headline": "LA HERRAMIENTA VIENE DESPUÉS",
       "support": "La decisión empieza con tus propios números.",
+      "eyebrow": "RESUMEN",
       "visualConcept": "summary-metric",
       "metric": "ORDEN",
       "number": 6,
@@ -192,12 +214,14 @@
       "layout": "cta-minimal",
       "headline": "COMENTA CÁLCULO",
       "support": "Te envío la hoja.",
+      "eyebrow": "TU TURNO",
       "visualConcept": "comment-bubble",
       "ctaType": "resource",
       "keyword": "CÁLCULO",
       "action": "Comenta CÁLCULO",
+      "primaryVisualCount": 1,
       "avoidConcepts": [
-        "hook-cover",
+        "documents-trapped-in-hourglass",
         "mechanism-split",
         "metric-gauge",
         "measurement-fields",

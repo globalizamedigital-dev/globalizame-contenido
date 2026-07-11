@@ -17,7 +17,7 @@ El lector no sabe que tiene el problema o no lo ha verbalizado. Objetivo: que se
 
 | Rol        | Función                                                                  |
 |------------|--------------------------------------------------------------------------|
-| PORTADA    | Hook que para el scroll. Nombra el dolor sin dar la solución. Sin infografía: es gancho puro, solo texto. |
+| PORTADA    | Hook disruptivo, relevante y entendible en 2 segundos. Nombra el dolor sin resolverlo y usa un único visual principal; nunca una infografía ni varios elementos compitiendo. |
 | CONTEXTO   | Activa el dolor. El lector piensa "esto me pasa a mí".                   |
 | DESARROLLO | Desmenuza el problema. 1 ángulo por slide. No resuelvas, amplifica.      |
 | SÍNTESIS   | Cristaliza el coste real en euros, horas o clientes perdidos.            |
@@ -38,7 +38,7 @@ El lector sabe que tiene el problema y evalúa opciones. Objetivo: demostrar cri
 
 | Rol        | Función                                                                  |
 |------------|--------------------------------------------------------------------------|
-| PORTADA    | Promesa concreta de lo que el lector va a aprender. Sin infografía: es gancho puro, solo texto. |
+| PORTADA    | Promesa concreta con un único visual principal que haga extraña y memorable la idea; sin infografía ni acumulación de elementos. |
 | CONTEXTO   | Por qué este método o enfoque existe y qué problema resuelve.            |
 | DESARROLLO | Entrega valor real. 1 paso o concepto por slide. Sí puedes resolver.     |
 | SÍNTESIS   | Consolida el aprendizaje. Tabla, checklist o comparativa si aporta.      |
@@ -59,7 +59,7 @@ El lector está listo para actuar y necesita el último empujón. Objetivo: elim
 
 | Rol        | Función                                                                  |
 |------------|--------------------------------------------------------------------------|
-| PORTADA    | Nombra la objeción o el resultado directamente. Sin infografía: es gancho puro, solo texto. |
+| PORTADA    | Nombra la objeción o decisión con un único visual principal disruptivo y claro; sin infografía ni explicaciones múltiples. |
 | CONTEXTO   | Valida que el lector está en el momento de decidir.                      |
 | DESARROLLO | Elimina objeciones una a una o presenta la prueba social con detalle.    |
 | SÍNTESIS   | El contraste final: con vs sin. Coste de no actuar.                      |

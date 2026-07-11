@@ -23,6 +23,9 @@ Operar el motor determinista del repositorio. No duplicar reglas de `content-os/
    - La última slide debe ejecutar el CTA real. Si el CTA es `Comenta X`, debe mostrar `COMENTA X` y explicar qué recibe la persona.
    - El CTA es un cierre, no otra slide educativa: máximo dos bloques de texto y un único apoyo visual simple.
    - Prohibido repetir en el CTA calculadoras, gráficos, listas, formularios, métricas u objetos explicativos ya usados antes.
+   - La portada debe ser disruptiva, relevante y comprensible en dos segundos. Usa un solo visual principal con una anomalía o metáfora clara; nunca un objeto literal débil como un teléfono solo.
+   - En portada no acumules tarjetas, cifras, robot, monedas y explicaciones. El hook detiene el scroll; el resto del carrusel explica.
+   - La etiqueta superior no es una serie fija tipo `DATO 01`. Adáptala al contenido: pregunta incómoda, error común, dato clave, cómo funciona, decisión u otra que describa la función real.
 8. Abrir la hoja de contacto final y revisarla visualmente contra las referencias.
 9. Ejecutar `npm run content:validate` después de cualquier corrección.
 10. Aceptar únicamente cuando `qa.json` indique `APPROVED`, `honesty.passed` sea `true`, los copys superen los mínimos y existan todos los assets GPT Image 2.0.
