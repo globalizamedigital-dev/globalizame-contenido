@@ -1,6 +1,6 @@
 {
-  "status": "BLOCKED",
-  "checked_at": "2026-07-11T19:28:55.855Z",
+  "status": "APPROVED",
+  "checked_at": "2026-07-11T19:45:37.961Z",
   "honesty": {
     "passed": true,
     "checks": 3
@@ -8,8 +8,8 @@
   "checks": {
     "slides": 6,
     "wireframe_pngs": 6,
-    "final_gpt_image_2_pngs": 0,
-    "final_dimensions_checked": 0,
+    "final_gpt_image_2_pngs": 6,
+    "final_dimensions_checked": 6,
     "format": "1080x1350",
     "references": 7,
     "humanizer": true,
@@ -29,13 +29,5 @@
     "cta_primary_visuals": 1,
     "cta_visual_review": true
   },
-  "failures": [
-    {
-      "code": "GPT_IMAGE_2_ASSETS",
-      "detail": "0/6"
-    },
-    {
-      "code": "GPT_IMAGE_2_MANIFEST"
-    }
-  ]
+  "failures": []
 }

@@ -1,6 +1,6 @@
 # QA · 5 señales de que tu negocio depende de ti
 
-**BLOCKED**
+**APPROVED**
 
 - Honestidad comercial: PASS
 - Slides SVG: 6
@@ -8,5 +8,4 @@
 - Formato: 1080×1350
 - Referencias visuales: 7
 
-- GPT_IMAGE_2_ASSETS: 0/6
-- GPT_IMAGE_2_MANIFEST: revisar
+Sin fallos bloqueantes.

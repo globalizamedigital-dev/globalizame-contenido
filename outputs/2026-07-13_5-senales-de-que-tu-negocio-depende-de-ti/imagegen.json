@@ -1,0 +1,47 @@
+{
+  "generator": "GPT Image 2.0 via Codex subscription",
+  "quality": "maximum",
+  "format": "1080x1350",
+  "postprocess": "Generated raster sources normalized to final 4:5 canvas (1080x1350) for Instagram and LinkedIn carousel compatibility.",
+  "reference_images": [
+    "recursos/carrusel/ChatGPT Image 9 jul 2026, 21_05_49 (1).png",
+    "recursos/carrusel/ChatGPT Image 9 jul 2026, 21_05_49 (2).png",
+    "recursos/carrusel/ChatGPT Image 9 jul 2026, 21_05_49 (3).png",
+    "recursos/carrusel/ChatGPT Image 9 jul 2026, 21_05_49 (4).png",
+    "recursos/carrusel/ChatGPT Image 9 jul 2026, 21_05_49 (5).png"
+  ],
+  "assets": [
+    "final/slide-01.png",
+    "final/slide-02.png",
+    "final/slide-03.png",
+    "final/slide-04.png",
+    "final/slide-05.png",
+    "final/slide-06.png"
+  ],
+  "hook_visual_review": {
+    "passed": true,
+    "primary_visuals": 1,
+    "visual_mode": "single-scene",
+    "protagonist": "brand-robot",
+    "reference_fidelity": "strict",
+    "composition_grammar": "reference-cover",
+    "robot_identity_match": true,
+    "style_drift": false,
+    "concept": "robot-confronting-business-problem-2",
+    "eyebrow": "MIRA ESTO",
+    "disruptive": true,
+    "relevant": true,
+    "two_second_clarity": true
+  },
+  "labels_visual_review": {
+    "passed": true,
+    "adaptive": true,
+    "fixed_number_labels": []
+  },
+  "cta_visual_review": {
+    "passed": true,
+    "text_blocks": 2,
+    "reused_concepts": [],
+    "concept": "comment-bubble"
+  }
+}
