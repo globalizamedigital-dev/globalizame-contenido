@@ -10,8 +10,8 @@ export function resolveCta(post) {
   const stage = String(post.stage || "TOFU").toUpperCase();
   const raw = String(post.cta || "").toLowerCase();
   let type = raw.includes("recurso") ? "resource"
-    : /bofu|calendly|reserva|consulta/.test(raw) ? "booking"
-    : /conversaci|comentario|dm/.test(raw) ? "conversation"
+    : /bofu|calendly|reserva|consulta|diagn[oó]stico/.test(raw) ? "booking"
+    : /conversa|comentario|dm/.test(raw) ? "conversation"
     : /guardar|guardado/.test(raw) ? "save"
     : "authority";
   if (!CTA_MATRIX[stage]?.has(type)) type = stage === "BOFU" ? "booking" : stage === "MOFU" ? "authority" : "conversation";
@@ -19,10 +19,10 @@ export function resolveCta(post) {
   const keyword = type === "resource" ? inferKeyword(post) : null;
   const variants = {
     resource: { type, keyword, action: `Comenta ${keyword}`, headline: `COMENTA ${keyword}`, support: "Te envío la hoja." },
-    booking: { type, action: "Reserva una conversación", headline: "¿LO MIRAMOS CON TUS NÚMEROS?", support: "30 minutos para detectar qué se te está escapando." },
-    conversation: { type, action: "Responde en comentarios", headline: "¿DÓNDE SE TE VA EL TIEMPO?", support: "Cuéntamelo en comentarios. Quiero leer casos concretos." },
+    booking: { type, action: "Reserva una conversación", headline: "¿LO MIRAMOS CON TUS NÚMEROS?", support: "30 minutos. Sin compromiso." },
+    conversation: { type, action: "Responde en comentarios", headline: "¿DÓNDE SE TE VA EL TIEMPO?", support: "Cuéntamelo en comentarios." },
     save: { type, action: "Guardar", headline: "GUÁRDALO PARA MEDIRLO", support: "Vuelve con una semana de datos reales." },
-    authority: { type, action: "Guardar", headline: "PRIMERO MIDE. LUEGO DECIDE.", support: "Guárdalo para revisar el proceso con calma." },
+    authority: { type, action: "Guardar", headline: "PRIMERO MIDE. LUEGO DECIDE.", support: "Guárdalo y revísalo con calma." },
   };
   return { ...variants[type], requested: raw, stage };
 }
@@ -106,7 +106,13 @@ function conceptFor(role,layout){if(role==="method")return "measurement-fields";
 function pick(values, index) { return values[Math.abs(index) % values.length]; }
 function inferKeyword(post) { return /llamad|coste|calcul|papeleo|tiempo|fuga/i.test(`${post.title} ${post.brief}`) ? "CÁLCULO" : "RECURSO"; }
 function hookSupport(post, metric) { return String(post.stage).toUpperCase() === "TOFU" ? `La cifra que conviene mirar: ${metric}.` : "Antes de automatizar, descubre qué está consumiendo tu tiempo."; }
-function metricFrom(value) { const match = String(value).match(/(?:\d+[\d.,]*\s*(?:%|€|euros?|h(?:oras?)?|días?))/iu); return match?.[0] || "MÍDELO"; }
+function metricFrom(value) {
+  const str = String(value);
+  const ratio = str.match(/\d+\s+de\s+cada\s+\d+/iu);
+  if (ratio) return ratio[0].replace(/\s+de\s+cada\s+/iu, "/");
+  const unit = str.match(/(?:\d+[\d.,]*\s*(?:%|€|euros?|h(?:oras?)?|días?))/iu);
+  return unit?.[0] || "MÍDELO";
+}
 function slugify(value) { return value.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
 function shortHeadline(value) { const first = String(value).split(/[.!?]/)[0].trim(); return (first.length <= 62 ? first : first.split(/\s+/).slice(0, 9).join(" ")).toUpperCase(); }
 function shortEvidence(value) { const words = String(value).split(/\s+/); return (words.length > 11 ? words.slice(0, 11).join(" ") : value).toUpperCase(); }

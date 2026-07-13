@@ -8,7 +8,7 @@ import path from "node:path";
 
 const PALETTE = "fondo blanco o gris casi blanco (#F7F7F5 / #FFFFFF), tinta negra (#090909), acento naranja #FF4B0B. Sin otros colores dominantes.";
 const FORMAT = "1080x1350 px, relación 4:5, formato retrato para carrusel de Instagram.";
-const REFERENCE_NOTE = "Referencia de estilo obligatoria: las imágenes en recursos/carrusel/ (adjuntar hasta 5 al generar). El contenido decide el visual; la referencia decide el estilo -- no copiar literalmente la escena de la referencia, sí su gramática visual (tipografía gruesa tipo display, tarjetas blancas con sombra suave, contador gris arriba a la derecha, motivo técnico naranja, espacio negativo amplio).";
+const REFERENCE_NOTE = "Referencia de estilo obligatoria: las imágenes en recursos/carrusel/ (adjuntar hasta 5 al generar). El contenido decide el visual; la referencia decide el estilo -- no copiar literalmente la escena de la referencia, sí su gramática visual (tipografía gruesa tipo display, tarjetas blancas con sombra suave, motivo técnico naranja, espacio negativo amplio).";
 
 function slideKindLabel(slide) {
   if (slide.role === "hook") return "PORTADA (hook)";
@@ -26,7 +26,7 @@ function composePrompt(slide, spec, index, total) {
   lines.push(`TITULAR (texto exacto a renderizar en la imagen): "${slide.headline}"`);
   if (slide.support) lines.push(`APOYO (texto exacto, más pequeño): "${slide.support}"`);
   if (slide.eyebrow) lines.push(`ETIQUETA SUPERIOR (chip pequeño, adaptativa -- nunca "DATO 01" fijo): "${slide.eyebrow}"`);
-  lines.push(`CONTADOR: mostrar "${index + 1}/${total}" en círculo gris arriba a la derecha, como en la referencia.`);
+  lines.push("NO incluir ningún contador de slide (nada de \"1/6\", \"2/6\", números de página ni círculo con número) en ninguna esquina de la imagen.");
   lines.push("");
 
   if (slide.role === "hook") {
