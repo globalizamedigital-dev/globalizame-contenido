@@ -2,19 +2,19 @@
   "version": 1,
   "runs": [
     {
-      "id": "2026-07-13_5-senales-de-que-tu-negocio-depende-de-ti",
-      "title": "5 señales de que tu negocio depende de ti",
-      "date": "2026-07-13",
-      "status": "APPROVED",
-      "started_at": "2026-07-13T18:07:29.533Z",
-      "completed_at": "2026-07-13T18:07:32.001Z",
+      "id": "2026-07-11_no-es-el-precio-es-que-no-sabes-por-donde-empezar",
+      "title": "No es el precio. Es que no sabes por dónde empezar",
+      "date": "2026-07-11",
+      "status": "BLOCKED",
+      "started_at": "2026-07-13T21:25:42.074Z",
+      "completed_at": "2026-07-13T21:25:44.441Z",
       "stage": "TOFU",
       "cta": {
-        "type": "save",
-        "action": "Guardar",
-        "headline": "GUÁRDALO PARA MEDIRLO",
-        "support": "Vuelve con una semana de datos reales.",
-        "requested": "guardar",
+        "type": "conversation",
+        "action": "Responde en comentarios",
+        "headline": "¿DÓNDE SE TE VA EL TIEMPO?",
+        "support": "Cuéntamelo en comentarios.",
+        "requested": "conversar",
         "stage": "TOFU"
       },
       "render": {
@@ -34,19 +34,19 @@
       }
     },
     {
-      "id": "2026-07-11_no-es-el-precio-es-que-no-sabes-por-donde-empezar",
-      "title": "No es el precio. Es que no sabes por dónde empezar",
-      "date": "2026-07-11",
-      "status": "BLOCKED",
-      "started_at": "2026-07-13T18:14:31.112Z",
-      "completed_at": "2026-07-13T18:14:33.484Z",
+      "id": "2026-07-13_5-senales-de-que-tu-negocio-depende-de-ti",
+      "title": "5 señales de que tu negocio depende de ti",
+      "date": "2026-07-13",
+      "status": "APPROVED",
+      "started_at": "2026-07-13T21:25:54.395Z",
+      "completed_at": "2026-07-13T21:25:56.796Z",
       "stage": "TOFU",
       "cta": {
-        "type": "conversation",
-        "action": "Responde en comentarios",
-        "headline": "¿DÓNDE SE TE VA EL TIEMPO?",
-        "support": "Cuéntamelo en comentarios.",
-        "requested": "conversar",
+        "type": "save",
+        "action": "Guardar",
+        "headline": "GUÁRDALO PARA MEDIRLO",
+        "support": "Vuelve con una semana de datos reales.",
+        "requested": "guardar",
         "stage": "TOFU"
       },
       "render": {

@@ -16,6 +16,22 @@ function slideKindLabel(slide) {
   return "SLIDE INTERIOR";
 }
 
+// Decide de forma determinista qué fragmento del texto se pinta en naranja de marca.
+// Sin esta instrucción explícita, el generador de imagen improvisa el resaltado
+// (a veces la cifra, a veces una palabra suelta, a veces nada), y el resultado es
+// inconsistente entre slides de la misma pieza.
+function highlightFragment(slide) {
+  const text = `${slide.headline || ""} ${slide.support || ""}`;
+  const ratio = text.match(/\d+\s+de\s+cada\s+\d+/iu);
+  if (ratio) return ratio[0];
+  const numeric = text.match(/\d+([.,]\d+)?\s*(%|€)?/);
+  if (numeric && numeric[0].trim() && /\d/.test(numeric[0])) return numeric[0].trim();
+  if (slide.metric && slide.metric !== "ORDEN") return slide.metric;
+  if (slide.role === "cta" && slide.action) return slide.action;
+  if (slide.keyword) return slide.keyword;
+  return null;
+}
+
 function composePrompt(slide, spec, index, total) {
   const lines = [];
   lines.push(`${slideKindLabel(slide)} -- slide ${index + 1}/${total} de "${spec.title}"`);
@@ -27,6 +43,12 @@ function composePrompt(slide, spec, index, total) {
   if (slide.support) lines.push(`APOYO (texto exacto, más pequeño): "${slide.support}"`);
   if (slide.eyebrow) lines.push(`ETIQUETA SUPERIOR (chip pequeño, adaptativa -- nunca "DATO 01" fijo): "${slide.eyebrow}"`);
   lines.push("NO incluir ningún contador de slide (nada de \"1/6\", \"2/6\", números de página ni círculo con número) en ninguna esquina de la imagen.");
+  const highlight = highlightFragment(slide);
+  if (highlight) {
+    lines.push(`RESALTADO DE MARCA (obligatorio, sin excepción): pinta en naranja #FF4B0B únicamente el fragmento "${highlight}" dentro del titular o del apoyo, tal y como aparece en el texto. El resto del texto va en tinta negra #090909. No resaltes ninguna otra palabra ni cifra, y no dejes el titular completo en un solo color.`);
+  } else {
+    lines.push("RESALTADO DE MARCA (obligatorio, sin excepción): esta slide no tiene una cifra o palabra clave que resaltar -- todo el titular y el apoyo van en tinta negra #090909, sin ningún fragmento en naranja.");
+  }
   lines.push("");
 
   if (slide.role === "hook") {
