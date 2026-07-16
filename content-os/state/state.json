@@ -70,8 +70,8 @@
       "title": "Te vas dos semanas y todo se para",
       "date": "2026-07-15",
       "status": "BLOCKED",
-      "started_at": "2026-07-16T19:44:14.640Z",
-      "completed_at": "2026-07-16T19:44:17.036Z",
+      "started_at": "2026-07-16T20:46:57.010Z",
+      "completed_at": "2026-07-16T20:46:59.529Z",
       "stage": "TOFU",
       "cta": {
         "type": "save",
@@ -102,8 +102,8 @@
       "title": "Solo 1 de cada 8 negocios pequeños usa IA",
       "date": "2026-07-17",
       "status": "BLOCKED",
-      "started_at": "2026-07-16T19:44:17.095Z",
-      "completed_at": "2026-07-16T19:44:19.525Z",
+      "started_at": "2026-07-16T20:46:59.682Z",
+      "completed_at": "2026-07-16T20:47:02.218Z",
       "stage": "TOFU",
       "cta": {
         "type": "conversation",
@@ -130,108 +130,12 @@
       }
     },
     {
-      "id": "2026-07-24_primero-sistema-luego-herramienta",
-      "title": "Primero sistema. Luego herramienta",
-      "date": "2026-07-24",
-      "status": "BLOCKED",
-      "started_at": "2026-07-16T20:13:35.559Z",
-      "completed_at": "2026-07-16T20:13:38.326Z",
-      "stage": "MOFU",
-      "cta": {
-        "type": "conversation",
-        "action": "Responde en comentarios",
-        "headline": "¿DÓNDE SE TE VA EL TIEMPO?",
-        "support": "Cuéntamelo en comentarios.",
-        "requested": "conversar",
-        "stage": "MOFU"
-      },
-      "render": {
-        "png": true
-      },
-      "lead_magnet": {
-        "required": false,
-        "ready": false
-      },
-      "copy_source": "agent-authored",
-      "artifacts": {
-        "contact_sheet": "contact-sheet.svg",
-        "instagram": "copy-instagram.md",
-        "linkedin": "copy-linkedin.md",
-        "qa": "qa.md",
-        "imagegen_prompts": "imagegen-prompts.json"
-      }
-    },
-    {
-      "id": "2026-07-29_la-ia-es-cara-no-es-tu-problema-real",
-      "title": "La IA es cara no es tu problema real",
-      "date": "2026-07-29",
-      "status": "BLOCKED",
-      "started_at": "2026-07-16T20:13:40.882Z",
-      "completed_at": "2026-07-16T20:13:43.294Z",
-      "stage": "BOFU",
-      "cta": {
-        "type": "booking",
-        "action": "Reserva una conversación",
-        "headline": "¿LO MIRAMOS CON TUS NÚMEROS?",
-        "support": "30 minutos. Sin compromiso.",
-        "requested": "diagnóstico",
-        "stage": "BOFU"
-      },
-      "render": {
-        "png": true
-      },
-      "lead_magnet": {
-        "required": false,
-        "ready": false
-      },
-      "copy_source": "agent-authored",
-      "artifacts": {
-        "contact_sheet": "contact-sheet.svg",
-        "instagram": "copy-instagram.md",
-        "linkedin": "copy-linkedin.md",
-        "qa": "qa.md",
-        "imagegen_prompts": "imagegen-prompts.json"
-      }
-    },
-    {
-      "id": "2026-07-31_lo-que-miraria-primero-en-tu-negocio",
-      "title": "Lo que miraría primero en tu negocio",
-      "date": "2026-07-31",
-      "status": "BLOCKED",
-      "started_at": "2026-07-16T20:13:43.353Z",
-      "completed_at": "2026-07-16T20:13:45.717Z",
-      "stage": "BOFU",
-      "cta": {
-        "type": "booking",
-        "action": "Reserva una conversación",
-        "headline": "¿LO MIRAMOS CON TUS NÚMEROS?",
-        "support": "30 minutos. Sin compromiso.",
-        "requested": "diagnóstico",
-        "stage": "BOFU"
-      },
-      "render": {
-        "png": true
-      },
-      "lead_magnet": {
-        "required": false,
-        "ready": false
-      },
-      "copy_source": "agent-authored",
-      "artifacts": {
-        "contact_sheet": "contact-sheet.svg",
-        "instagram": "copy-instagram.md",
-        "linkedin": "copy-linkedin.md",
-        "qa": "qa.md",
-        "imagegen_prompts": "imagegen-prompts.json"
-      }
-    },
-    {
       "id": "2026-07-20_antes-de-automatizar-mide-la-fuga",
       "title": "Antes de automatizar, mide la fuga",
       "date": "2026-07-20",
       "status": "BLOCKED",
-      "started_at": "2026-07-16T20:14:17.454Z",
-      "completed_at": "2026-07-16T20:14:20.182Z",
+      "started_at": "2026-07-16T20:47:02.366Z",
+      "completed_at": "2026-07-16T20:47:05.141Z",
       "stage": "MOFU",
       "cta": {
         "type": "resource",
@@ -264,8 +168,8 @@
       "title": "Las 200 horas que un autónomo pierde al año",
       "date": "2026-07-22",
       "status": "BLOCKED",
-      "started_at": "2026-07-16T20:14:20.241Z",
-      "completed_at": "2026-07-16T20:14:22.601Z",
+      "started_at": "2026-07-16T20:47:05.284Z",
+      "completed_at": "2026-07-16T20:47:07.769Z",
       "stage": "MOFU",
       "cta": {
         "type": "resource",
@@ -294,12 +198,44 @@
       }
     },
     {
+      "id": "2026-07-24_primero-sistema-luego-herramienta",
+      "title": "Primero sistema. Luego herramienta",
+      "date": "2026-07-24",
+      "status": "BLOCKED",
+      "started_at": "2026-07-16T20:47:07.910Z",
+      "completed_at": "2026-07-16T20:47:10.679Z",
+      "stage": "MOFU",
+      "cta": {
+        "type": "conversation",
+        "action": "Responde en comentarios",
+        "headline": "¿DÓNDE SE TE VA EL TIEMPO?",
+        "support": "Cuéntamelo en comentarios.",
+        "requested": "conversar",
+        "stage": "MOFU"
+      },
+      "render": {
+        "png": true
+      },
+      "lead_magnet": {
+        "required": false,
+        "ready": false
+      },
+      "copy_source": "agent-authored",
+      "artifacts": {
+        "contact_sheet": "contact-sheet.svg",
+        "instagram": "copy-instagram.md",
+        "linkedin": "copy-linkedin.md",
+        "qa": "qa.md",
+        "imagegen_prompts": "imagegen-prompts.json"
+      }
+    },
+    {
       "id": "2026-07-27_que-delegar-a-una-ia-y-que-no",
       "title": "Qué delegar a una IA y qué no",
       "date": "2026-07-27",
       "status": "BLOCKED",
-      "started_at": "2026-07-16T20:14:22.660Z",
-      "completed_at": "2026-07-16T20:14:25.055Z",
+      "started_at": "2026-07-16T20:47:10.824Z",
+      "completed_at": "2026-07-16T20:47:13.351Z",
       "stage": "MOFU",
       "cta": {
         "type": "resource",
@@ -317,6 +253,70 @@
         "required": true,
         "ready": true,
         "file": "lead-magnet.html"
+      },
+      "copy_source": "agent-authored",
+      "artifacts": {
+        "contact_sheet": "contact-sheet.svg",
+        "instagram": "copy-instagram.md",
+        "linkedin": "copy-linkedin.md",
+        "qa": "qa.md",
+        "imagegen_prompts": "imagegen-prompts.json"
+      }
+    },
+    {
+      "id": "2026-07-29_la-ia-es-cara-no-es-tu-problema-real",
+      "title": "La IA es cara no es tu problema real",
+      "date": "2026-07-29",
+      "status": "BLOCKED",
+      "started_at": "2026-07-16T20:47:13.507Z",
+      "completed_at": "2026-07-16T20:47:15.951Z",
+      "stage": "BOFU",
+      "cta": {
+        "type": "booking",
+        "action": "Reserva una conversación",
+        "headline": "¿LO MIRAMOS CON TUS NÚMEROS?",
+        "support": "30 minutos. Sin compromiso.",
+        "requested": "diagnóstico",
+        "stage": "BOFU"
+      },
+      "render": {
+        "png": true
+      },
+      "lead_magnet": {
+        "required": false,
+        "ready": false
+      },
+      "copy_source": "agent-authored",
+      "artifacts": {
+        "contact_sheet": "contact-sheet.svg",
+        "instagram": "copy-instagram.md",
+        "linkedin": "copy-linkedin.md",
+        "qa": "qa.md",
+        "imagegen_prompts": "imagegen-prompts.json"
+      }
+    },
+    {
+      "id": "2026-07-31_lo-que-miraria-primero-en-tu-negocio",
+      "title": "Lo que miraría primero en tu negocio",
+      "date": "2026-07-31",
+      "status": "BLOCKED",
+      "started_at": "2026-07-16T20:47:16.101Z",
+      "completed_at": "2026-07-16T20:47:18.618Z",
+      "stage": "BOFU",
+      "cta": {
+        "type": "booking",
+        "action": "Reserva una conversación",
+        "headline": "¿LO MIRAMOS CON TUS NÚMEROS?",
+        "support": "30 minutos. Sin compromiso.",
+        "requested": "diagnóstico",
+        "stage": "BOFU"
+      },
+      "render": {
+        "png": true
+      },
+      "lead_magnet": {
+        "required": false,
+        "ready": false
       },
       "copy_source": "agent-authored",
       "artifacts": {

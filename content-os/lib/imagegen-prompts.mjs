@@ -39,12 +39,13 @@ const TYPOGRAPHY = [
   "- El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.",
 ].join("\n");
 
-// Cada prompt debe funcionar pegado a mano en GPT Images 2.0, solo, sin que nadie
-// adjunte nada: por eso el sistema visual completo va dentro del texto. Adjuntar
-// referencias de recursos/carrusel/ (o la slide anterior aprobada) mejora la
-// consistencia, pero el prompt no puede depender de ello.
+// El flujo real de Mario siempre adjunta el carrusel de recursos/carrusel/ al pegar
+// el prompt en GPT Images 2.0, y GPT Images 2.0 puede devolver varias slides en una
+// sola imagen si no se le prohíbe explícitamente -- así que ambas cosas van fijas
+// en el prompt, no como nota opcional.
 const REFERENCE_NOTE = [
-  "CONSISTENCIA ENTRE SLIDES: si puedes, adjunta 2-3 imágenes de recursos/carrusel/ y la slide anterior ya aprobada de esta misma pieza como referencia; genera todas las slides en la misma conversación. Si generas sin referencias, la descripción de estilo de arriba es la fuente de verdad y debe seguirse al pie de la letra.",
+  "REFERENCIA ADJUNTA: se adjuntan imágenes del carrusel de ejemplo de recursos/carrusel/ junto a este prompt. Sigue su estilo exacto (tipografía, materiales 3D, iluminación, mobiliario de marca) para esta slide.",
+  "GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA slide, no un collage ni una cuadrícula con varias slides juntas, aunque el carrusel de referencia muestre varias a la vez.",
 ].join("\n");
 
 function slideKindLabel(slide) {
@@ -188,8 +189,7 @@ function toMarkdown(payload) {
   const parts = [
     `# Prompts de imagen · ${payload.title}`,
     "",
-    "Uno por slide. Copia el bloque completo (entre las líneas) y pégalo en GPT Images 2.0.",
-    "Genera todas las slides en la misma conversación; si puedes, adjunta 2-3 referencias de `recursos/carrusel/` y la slide anterior aprobada.",
+    "Uno por slide. Copia el bloque completo (entre las líneas ```) y pégalo en GPT Images 2.0 junto con el carrusel de ejemplo de `recursos/carrusel/` como adjunto.",
     `Los PNG van a \`outputs/${payload.piece_id}/final/\` con el nombre indicado.`,
     "",
   ];

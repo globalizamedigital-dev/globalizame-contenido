@@ -1,7 +1,6 @@
 # Prompts de imagen · Qué delegar a una IA y qué no
 
-Uno por slide. Copia el bloque completo (entre las líneas) y pégalo en GPT Images 2.0.
-Genera todas las slides en la misma conversación; si puedes, adjunta 2-3 referencias de `recursos/carrusel/` y la slide anterior aprobada.
+Uno por slide. Copia el bloque completo (entre las líneas ```) y pégalo en GPT Images 2.0 junto con el carrusel de ejemplo de `recursos/carrusel/` como adjunto.
 Los PNG van a `outputs/2026-07-27_que-delegar-a-una-ia-y-que-no/final/` con el nombre indicado.
 
 ## Slide 1 · hook → `final/slide-01.png`
@@ -44,7 +43,8 @@ COMPOSICIÓN (portada -- máxima fidelidad a la referencia):
 - Debe cumplirse: disruptiva, relevante, comprensible en menos de 2 segundos.
 - PROHIBIDO: isolated object, giant centered concept, cinematic poster, multiple unrelated cards, infographic cover, decorative robot, different robot identity, different visual language.
 
-CONSISTENCIA ENTRE SLIDES: si puedes, adjunta 2-3 imágenes de recursos/carrusel/ y la slide anterior ya aprobada de esta misma pieza como referencia; genera todas las slides en la misma conversación. Si generas sin referencias, la descripción de estilo de arriba es la fuente de verdad y debe seguirse al pie de la letra.
+REFERENCIA ADJUNTA: se adjuntan imágenes del carrusel de ejemplo de recursos/carrusel/ junto a este prompt. Sigue su estilo exacto (tipografía, materiales 3D, iluminación, mobiliario de marca) para esta slide.
+GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA slide, no un collage ni una cuadrícula con varias slides juntas, aunque el carrusel de referencia muestre varias a la vez.
 
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
@@ -87,7 +87,8 @@ COMPOSICIÓN (layout de referencia interna: flow):
 - La secuencia debe leerse como causa -> acumulación -> consecuencia sin leer el titular.
 - Un solo concepto visual que explique la idea en menos de 2 segundos. Espacio negativo generoso alrededor de la escena.
 
-CONSISTENCIA ENTRE SLIDES: si puedes, adjunta 2-3 imágenes de recursos/carrusel/ y la slide anterior ya aprobada de esta misma pieza como referencia; genera todas las slides en la misma conversación. Si generas sin referencias, la descripción de estilo de arriba es la fuente de verdad y debe seguirse al pie de la letra.
+REFERENCIA ADJUNTA: se adjuntan imágenes del carrusel de ejemplo de recursos/carrusel/ junto a este prompt. Sigue su estilo exacto (tipografía, materiales 3D, iluminación, mobiliario de marca) para esta slide.
+GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA slide, no un collage ni una cuadrícula con varias slides juntas, aunque el carrusel de referencia muestre varias a la vez.
 
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
@@ -131,7 +132,8 @@ COMPOSICIÓN (layout de referencia interna: gauge):
 - Cifra exacta a mostrar en grande dentro de la tarjeta del medidor: "21,1%".
 - Un solo concepto visual que explique la idea en menos de 2 segundos. Espacio negativo generoso alrededor de la escena.
 
-CONSISTENCIA ENTRE SLIDES: si puedes, adjunta 2-3 imágenes de recursos/carrusel/ y la slide anterior ya aprobada de esta misma pieza como referencia; genera todas las slides en la misma conversación. Si generas sin referencias, la descripción de estilo de arriba es la fuente de verdad y debe seguirse al pie de la letra.
+REFERENCIA ADJUNTA: se adjuntan imágenes del carrusel de ejemplo de recursos/carrusel/ junto a este prompt. Sigue su estilo exacto (tipografía, materiales 3D, iluminación, mobiliario de marca) para esta slide.
+GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA slide, no un collage ni una cuadrícula con varias slides juntas, aunque el carrusel de referencia muestre varias a la vez.
 
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
@@ -174,7 +176,8 @@ COMPOSICIÓN (layout de referencia interna: checklist):
 - Textos exactos de los ítems, uno por tarjeta y en este orden: "¿Se repite igual cada vez?", "¿Necesita juicio humano?", "¿Qué pasa si se retrasa?".
 - Un solo concepto visual que explique la idea en menos de 2 segundos. Espacio negativo generoso alrededor de la escena.
 
-CONSISTENCIA ENTRE SLIDES: si puedes, adjunta 2-3 imágenes de recursos/carrusel/ y la slide anterior ya aprobada de esta misma pieza como referencia; genera todas las slides en la misma conversación. Si generas sin referencias, la descripción de estilo de arriba es la fuente de verdad y debe seguirse al pie de la letra.
+REFERENCIA ADJUNTA: se adjuntan imágenes del carrusel de ejemplo de recursos/carrusel/ junto a este prompt. Sigue su estilo exacto (tipografía, materiales 3D, iluminación, mobiliario de marca) para esta slide.
+GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA slide, no un collage ni una cuadrícula con varias slides juntas, aunque el carrusel de referencia muestre varias a la vez.
 
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
@@ -217,7 +220,8 @@ COMPOSICIÓN (layout de referencia interna: flow):
 - La secuencia debe leerse como causa -> acumulación -> consecuencia sin leer el titular.
 - Un solo concepto visual que explique la idea en menos de 2 segundos. Espacio negativo generoso alrededor de la escena.
 
-CONSISTENCIA ENTRE SLIDES: si puedes, adjunta 2-3 imágenes de recursos/carrusel/ y la slide anterior ya aprobada de esta misma pieza como referencia; genera todas las slides en la misma conversación. Si generas sin referencias, la descripción de estilo de arriba es la fuente de verdad y debe seguirse al pie de la letra.
+REFERENCIA ADJUNTA: se adjuntan imágenes del carrusel de ejemplo de recursos/carrusel/ junto a este prompt. Sigue su estilo exacto (tipografía, materiales 3D, iluminación, mobiliario de marca) para esta slide.
+GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA slide, no un collage ni una cuadrícula con varias slides juntas, aunque el carrusel de referencia muestre varias a la vez.
 
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
@@ -263,7 +267,8 @@ COMPOSICIÓN (cierre -- el robot protagoniza la acción, no un icono suelto):
 - Si el CTA es de palabra clave, mostrar literalmente "RECURSO" en mayúsculas y qué recibe la persona.
 - Recuerda: en esta slide final NO aparece el botón de flecha de abajo a la derecha (no hay más slides).
 
-CONSISTENCIA ENTRE SLIDES: si puedes, adjunta 2-3 imágenes de recursos/carrusel/ y la slide anterior ya aprobada de esta misma pieza como referencia; genera todas las slides en la misma conversación. Si generas sin referencias, la descripción de estilo de arriba es la fuente de verdad y debe seguirse al pie de la letra.
+REFERENCIA ADJUNTA: se adjuntan imágenes del carrusel de ejemplo de recursos/carrusel/ junto a este prompt. Sigue su estilo exacto (tipografía, materiales 3D, iluminación, mobiliario de marca) para esta slide.
+GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA slide, no un collage ni una cuadrícula con varias slides juntas, aunque el carrusel de referencia muestre varias a la vez.
 
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
