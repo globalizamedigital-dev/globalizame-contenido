@@ -1,10 +1,3 @@
-# Prompts de imagen · Lo que miraría primero en tu negocio
-
-Uno por slide. Copia el bloque completo (entre las líneas ```) y pégalo en GPT Images 2.0 junto con el carrusel de ejemplo de `recursos/carrusel/` como adjunto.
-Los PNG van a `outputs/2026-07-31_lo-que-miraria-primero-en-tu-negocio/final/` con el nombre indicado.
-
-## Slide 1 · hook → `final/slide-01.png`
-
 ```
 PORTADA del carrusel "Lo que miraría primero en tu negocio".
 
@@ -49,8 +42,6 @@ GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
 
-## Slide 2 · objection → `final/slide-02.png`
-
 ```
 SLIDE INTERIOR del carrusel "Lo que miraría primero en tu negocio".
 
@@ -92,8 +83,6 @@ GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA
 
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
-
-## Slide 3 · evidence → `final/slide-03.png`
 
 ```
 SLIDE INTERIOR del carrusel "Lo que miraría primero en tu negocio".
@@ -138,8 +127,6 @@ GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
 
-## Slide 4 · decision → `final/slide-04.png`
-
 ```
 SLIDE INTERIOR del carrusel "Lo que miraría primero en tu negocio".
 
@@ -181,8 +168,6 @@ GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA
 
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
-
-## Slide 5 · synthesis → `final/slide-05.png`
 
 ```
 SLIDE INTERIOR del carrusel "Lo que miraría primero en tu negocio".
@@ -226,8 +211,6 @@ GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA
 
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
-
-## Slide 6 · cta → `final/slide-06.png`
 
 ```
 CIERRE del carrusel "Lo que miraría primero en tu negocio".

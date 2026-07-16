@@ -183,18 +183,13 @@ export function buildImagegenPrompts(runDir, spec) {
   return payload;
 }
 
-// Versión copy-paste para el flujo manual: Mario pega cada bloque tal cual en
-// GPT Images 2.0. El JSON queda como contrato máquina; este .md es el de uso.
+// Versión copy-paste para el flujo manual: cada bloque ``` es exactamente lo que
+// se pega en GPT Images 2.0. Nada fuera de los bloques -- ni cabecera, ni
+// instrucciones de uso, ni nombres de archivo: eso no es parte del prompt.
 function toMarkdown(payload) {
-  const parts = [
-    `# Prompts de imagen · ${payload.title}`,
-    "",
-    "Uno por slide. Copia el bloque completo (entre las líneas ```) y pégalo en GPT Images 2.0 junto con el carrusel de ejemplo de `recursos/carrusel/` como adjunto.",
-    `Los PNG van a \`outputs/${payload.piece_id}/final/\` con el nombre indicado.`,
-    "",
-  ];
+  const parts = [];
   for (const item of payload.prompts) {
-    parts.push(`## Slide ${item.slide} · ${item.role} → \`final/${item.filename}\``, "", "```", item.prompt, "```", "");
+    parts.push("```", item.prompt, "```", "");
   }
   return parts.join("\n");
 }

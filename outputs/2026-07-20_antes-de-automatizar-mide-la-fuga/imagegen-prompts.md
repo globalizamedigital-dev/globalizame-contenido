@@ -1,10 +1,3 @@
-# Prompts de imagen · Antes de automatizar, mide la fuga
-
-Uno por slide. Copia el bloque completo (entre las líneas ```) y pégalo en GPT Images 2.0 junto con el carrusel de ejemplo de `recursos/carrusel/` como adjunto.
-Los PNG van a `outputs/2026-07-20_antes-de-automatizar-mide-la-fuga/final/` con el nombre indicado.
-
-## Slide 1 · hook → `final/slide-01.png`
-
 ```
 PORTADA del carrusel "Antes de automatizar, mide la fuga".
 
@@ -49,8 +42,6 @@ GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
 
-## Slide 2 · mechanism → `final/slide-02.png`
-
 ```
 SLIDE INTERIOR del carrusel "Antes de automatizar, mide la fuga".
 
@@ -91,8 +82,6 @@ GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA
 
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
-
-## Slide 3 · evidence → `final/slide-03.png`
 
 ```
 SLIDE INTERIOR del carrusel "Antes de automatizar, mide la fuga".
@@ -137,8 +126,6 @@ GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
 
-## Slide 4 · method → `final/slide-04.png`
-
 ```
 SLIDE INTERIOR del carrusel "Antes de automatizar, mide la fuga".
 
@@ -181,8 +168,6 @@ GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
 
-## Slide 5 · decision → `final/slide-05.png`
-
 ```
 SLIDE INTERIOR del carrusel "Antes de automatizar, mide la fuga".
 
@@ -223,8 +208,6 @@ GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA
 
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
-
-## Slide 6 · synthesis → `final/slide-06.png`
 
 ```
 SLIDE INTERIOR del carrusel "Antes de automatizar, mide la fuga".
@@ -268,8 +251,6 @@ GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA
 
 Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.
 ```
-
-## Slide 7 · cta → `final/slide-07.png`
 
 ```
 CIERRE del carrusel "Antes de automatizar, mide la fuga".
