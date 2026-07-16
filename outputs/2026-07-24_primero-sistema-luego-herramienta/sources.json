@@ -1,0 +1,44 @@
+[
+  {
+    "id": "E1",
+    "claim": "El 21,1% de las empresas españolas de 10 o más empleados usaba IA a principios de 2025, 8,7 puntos más que el año anterior.",
+    "source": "INE, Encuesta TIC-CE empresas 2024 (datos def. 1T 2025, publ. oct 2025)",
+    "business": "Empresas 10+ empleados"
+  },
+  {
+    "id": "E2",
+    "claim": "Entre las microempresas (menos de 10 empleados) el uso de IA sube al 13,4% (+5,9 puntos), pero sigue siendo el segmento que menos la usa.",
+    "source": "INE, Encuesta TIC-CE empresas 2024",
+    "business": "Micro y pequeña empresa"
+  },
+  {
+    "id": "E3",
+    "claim": "Casi 8 de cada 10 empresas que no usan IA dicen que el motivo principal es la falta de conocimiento dentro de la propia empresa: no saben cómo, no es que no puedan pagarla.",
+    "source": "Banco de España, Boletín Económico 2025/T2 (art. 06, análisis EBAE)",
+    "business": "Empresas que no adoptan IA"
+  },
+  {
+    "id": "E4",
+    "claim": "El sector servicios es el que más usa IA en España, con un 25,7%.",
+    "source": "INE, Encuesta TIC-CE empresas 2024",
+    "business": "Servicios"
+  },
+  {
+    "id": "E5",
+    "claim": "Un autónomo dedica de media 200 horas al año a trámites administrativos y burocracia, unas 4 horas cada semana.",
+    "source": "ATA (Federación de Autónomos), barómetro dic 2025",
+    "business": "Autónomos"
+  },
+  {
+    "id": "E6",
+    "claim": "Esas 200 horas equivalen a unos 3.000€ al año por autónomo en tiempo dedicado solo a papeleo.",
+    "source": "ATA, dic 2025",
+    "business": "Autónomos"
+  },
+  {
+    "id": "E7",
+    "claim": "El 90% de los autónomos percibe que las trabas burocráticas han aumentado en el último año.",
+    "source": "ATA, barómetro dic 2025",
+    "business": "Autónomos"
+  }
+]

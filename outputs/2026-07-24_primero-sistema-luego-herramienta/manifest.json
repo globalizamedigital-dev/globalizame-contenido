@@ -1,0 +1,32 @@
+{
+  "id": "2026-07-24_primero-sistema-luego-herramienta",
+  "title": "Primero sistema. Luego herramienta",
+  "date": "2026-07-24",
+  "status": "BLOCKED",
+  "started_at": "2026-07-16T20:13:35.559Z",
+  "completed_at": "2026-07-16T20:13:38.326Z",
+  "stage": "MOFU",
+  "cta": {
+    "type": "conversation",
+    "action": "Responde en comentarios",
+    "headline": "¿DÓNDE SE TE VA EL TIEMPO?",
+    "support": "Cuéntamelo en comentarios.",
+    "requested": "conversar",
+    "stage": "MOFU"
+  },
+  "render": {
+    "png": true
+  },
+  "lead_magnet": {
+    "required": false,
+    "ready": false
+  },
+  "copy_source": "agent-authored",
+  "artifacts": {
+    "contact_sheet": "contact-sheet.svg",
+    "instagram": "copy-instagram.md",
+    "linkedin": "copy-linkedin.md",
+    "qa": "qa.md",
+    "imagegen_prompts": "imagegen-prompts.json"
+  }
+}

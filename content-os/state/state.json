@@ -128,6 +128,204 @@
         "qa": "qa.md",
         "imagegen_prompts": "imagegen-prompts.json"
       }
+    },
+    {
+      "id": "2026-07-24_primero-sistema-luego-herramienta",
+      "title": "Primero sistema. Luego herramienta",
+      "date": "2026-07-24",
+      "status": "BLOCKED",
+      "started_at": "2026-07-16T20:13:35.559Z",
+      "completed_at": "2026-07-16T20:13:38.326Z",
+      "stage": "MOFU",
+      "cta": {
+        "type": "conversation",
+        "action": "Responde en comentarios",
+        "headline": "¿DÓNDE SE TE VA EL TIEMPO?",
+        "support": "Cuéntamelo en comentarios.",
+        "requested": "conversar",
+        "stage": "MOFU"
+      },
+      "render": {
+        "png": true
+      },
+      "lead_magnet": {
+        "required": false,
+        "ready": false
+      },
+      "copy_source": "agent-authored",
+      "artifacts": {
+        "contact_sheet": "contact-sheet.svg",
+        "instagram": "copy-instagram.md",
+        "linkedin": "copy-linkedin.md",
+        "qa": "qa.md",
+        "imagegen_prompts": "imagegen-prompts.json"
+      }
+    },
+    {
+      "id": "2026-07-29_la-ia-es-cara-no-es-tu-problema-real",
+      "title": "La IA es cara no es tu problema real",
+      "date": "2026-07-29",
+      "status": "BLOCKED",
+      "started_at": "2026-07-16T20:13:40.882Z",
+      "completed_at": "2026-07-16T20:13:43.294Z",
+      "stage": "BOFU",
+      "cta": {
+        "type": "booking",
+        "action": "Reserva una conversación",
+        "headline": "¿LO MIRAMOS CON TUS NÚMEROS?",
+        "support": "30 minutos. Sin compromiso.",
+        "requested": "diagnóstico",
+        "stage": "BOFU"
+      },
+      "render": {
+        "png": true
+      },
+      "lead_magnet": {
+        "required": false,
+        "ready": false
+      },
+      "copy_source": "agent-authored",
+      "artifacts": {
+        "contact_sheet": "contact-sheet.svg",
+        "instagram": "copy-instagram.md",
+        "linkedin": "copy-linkedin.md",
+        "qa": "qa.md",
+        "imagegen_prompts": "imagegen-prompts.json"
+      }
+    },
+    {
+      "id": "2026-07-31_lo-que-miraria-primero-en-tu-negocio",
+      "title": "Lo que miraría primero en tu negocio",
+      "date": "2026-07-31",
+      "status": "BLOCKED",
+      "started_at": "2026-07-16T20:13:43.353Z",
+      "completed_at": "2026-07-16T20:13:45.717Z",
+      "stage": "BOFU",
+      "cta": {
+        "type": "booking",
+        "action": "Reserva una conversación",
+        "headline": "¿LO MIRAMOS CON TUS NÚMEROS?",
+        "support": "30 minutos. Sin compromiso.",
+        "requested": "diagnóstico",
+        "stage": "BOFU"
+      },
+      "render": {
+        "png": true
+      },
+      "lead_magnet": {
+        "required": false,
+        "ready": false
+      },
+      "copy_source": "agent-authored",
+      "artifacts": {
+        "contact_sheet": "contact-sheet.svg",
+        "instagram": "copy-instagram.md",
+        "linkedin": "copy-linkedin.md",
+        "qa": "qa.md",
+        "imagegen_prompts": "imagegen-prompts.json"
+      }
+    },
+    {
+      "id": "2026-07-20_antes-de-automatizar-mide-la-fuga",
+      "title": "Antes de automatizar, mide la fuga",
+      "date": "2026-07-20",
+      "status": "BLOCKED",
+      "started_at": "2026-07-16T20:14:17.454Z",
+      "completed_at": "2026-07-16T20:14:20.182Z",
+      "stage": "MOFU",
+      "cta": {
+        "type": "resource",
+        "keyword": "CÁLCULO",
+        "action": "Comenta CÁLCULO",
+        "headline": "COMENTA CÁLCULO",
+        "support": "Te envío la hoja.",
+        "requested": "recurso",
+        "stage": "MOFU"
+      },
+      "render": {
+        "png": true
+      },
+      "lead_magnet": {
+        "required": true,
+        "ready": true,
+        "file": "lead-magnet.html"
+      },
+      "copy_source": "agent-authored",
+      "artifacts": {
+        "contact_sheet": "contact-sheet.svg",
+        "instagram": "copy-instagram.md",
+        "linkedin": "copy-linkedin.md",
+        "qa": "qa.md",
+        "imagegen_prompts": "imagegen-prompts.json"
+      }
+    },
+    {
+      "id": "2026-07-22_las-200-horas-que-un-autonomo-pierde-al-ano",
+      "title": "Las 200 horas que un autónomo pierde al año",
+      "date": "2026-07-22",
+      "status": "BLOCKED",
+      "started_at": "2026-07-16T20:14:20.241Z",
+      "completed_at": "2026-07-16T20:14:22.601Z",
+      "stage": "MOFU",
+      "cta": {
+        "type": "resource",
+        "keyword": "CÁLCULO",
+        "action": "Comenta CÁLCULO",
+        "headline": "COMENTA CÁLCULO",
+        "support": "Te envío la hoja.",
+        "requested": "recurso",
+        "stage": "MOFU"
+      },
+      "render": {
+        "png": true
+      },
+      "lead_magnet": {
+        "required": true,
+        "ready": true,
+        "file": "lead-magnet.html"
+      },
+      "copy_source": "agent-authored",
+      "artifacts": {
+        "contact_sheet": "contact-sheet.svg",
+        "instagram": "copy-instagram.md",
+        "linkedin": "copy-linkedin.md",
+        "qa": "qa.md",
+        "imagegen_prompts": "imagegen-prompts.json"
+      }
+    },
+    {
+      "id": "2026-07-27_que-delegar-a-una-ia-y-que-no",
+      "title": "Qué delegar a una IA y qué no",
+      "date": "2026-07-27",
+      "status": "BLOCKED",
+      "started_at": "2026-07-16T20:14:22.660Z",
+      "completed_at": "2026-07-16T20:14:25.055Z",
+      "stage": "MOFU",
+      "cta": {
+        "type": "resource",
+        "keyword": "RECURSO",
+        "action": "Comenta RECURSO",
+        "headline": "COMENTA RECURSO",
+        "support": "Te envío la hoja.",
+        "requested": "recurso",
+        "stage": "MOFU"
+      },
+      "render": {
+        "png": true
+      },
+      "lead_magnet": {
+        "required": true,
+        "ready": true,
+        "file": "lead-magnet.html"
+      },
+      "copy_source": "agent-authored",
+      "artifacts": {
+        "contact_sheet": "contact-sheet.svg",
+        "instagram": "copy-instagram.md",
+        "linkedin": "copy-linkedin.md",
+        "qa": "qa.md",
+        "imagegen_prompts": "imagegen-prompts.json"
+      }
     }
   ]
 }

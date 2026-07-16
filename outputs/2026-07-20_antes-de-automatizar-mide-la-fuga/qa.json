@@ -1,0 +1,41 @@
+{
+  "status": "BLOCKED",
+  "checked_at": "2026-07-16T20:14:20.181Z",
+  "honesty": {
+    "passed": true,
+    "checks": 3
+  },
+  "checks": {
+    "slides": 7,
+    "wireframe_pngs": 7,
+    "final_gpt_image_2_pngs": 0,
+    "final_dimensions_checked": 0,
+    "format": "1080x1350",
+    "references": 7,
+    "humanizer": true,
+    "instagram_words": 202,
+    "linkedin_words": 289,
+    "agent_copy_source": true,
+    "hook_eyebrow": "MIRA ESTO",
+    "hook_primary_visuals": 1,
+    "hook_disruptive": true,
+    "hook_relevant": true,
+    "hook_two_second_clarity": true,
+    "labels_adaptive": true,
+    "cta_type": "resource",
+    "final_slide_cta": "resource",
+    "cta_layout": "cta-minimal",
+    "cta_text_blocks": 2,
+    "cta_primary_visuals": 1,
+    "cta_visual_review": true
+  },
+  "failures": [
+    {
+      "code": "GPT_IMAGE_2_ASSETS",
+      "detail": "0/7"
+    },
+    {
+      "code": "GPT_IMAGE_2_MANIFEST"
+    }
+  ]
+}

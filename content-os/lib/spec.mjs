@@ -257,7 +257,14 @@ function evidenceHeadline(value) {
   const str = String(value).replace(/\s*\([^)]*\)/g, "").replace(/\s+/g, " ").replace(/[.!?]+$/, "").trim();
   const metricMatch = str.match(/\d+\s+de\s+cada\s+\d+|\d+[\d.,]*\s*(?:%|€|euros?|h(?:oras?)?|días?)/iu);
   if (metricMatch) {
-    const end = metricMatch.index + metricMatch[0].length;
+    let end = metricMatch.index + metricMatch[0].length;
+    // Arrastra el cualificador temporal pegado a la métrica: "200 horas" sin su
+    // "al año" cambia el significado del dato en la slide.
+    for (;;) {
+      const tail = str.slice(end).match(/^\s+(?:al\s+(?:año|mes|día)|a\s+la\s+semana|cada\s+(?:semana|año|día|mes)|por\s+(?:autónomo|empresa|persona|pyme))/iu);
+      if (!tail) break;
+      end += tail[0].length;
+    }
     const prefix = str.slice(0, end).trim();
     const count = prefix.split(/\s+/).length;
     if (count >= 7 && count <= 14 && prefix.length <= 72) return prefix.toUpperCase();
@@ -278,4 +285,12 @@ function dayOfYear(dateStr) {
   return Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 86400000);
 }
 function slugify(value) { return value.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
-function shortHeadline(value) { const first = String(value).split(/[.!?]/)[0].trim(); return (first.length <= 62 ? first : first.split(/\s+/).slice(0, 9).join(" ")).toUpperCase(); }
+// El título completo cabe casi siempre; solo si excede el límite se recorta a la
+// primera frase. Cortar siempre en el primer punto amputaba títulos de dos golpes
+// ("Primero sistema. Luego herramienta" -> "PRIMERO SISTEMA").
+function shortHeadline(value) {
+  const full = String(value).trim();
+  if (full.length <= 62) return full.toUpperCase();
+  const first = full.split(/[.!?]/)[0].trim();
+  return (first.length <= 62 ? first : first.split(/\s+/).slice(0, 9).join(" ")).toUpperCase();
+}

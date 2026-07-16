@@ -1,0 +1,9 @@
+{
+  "filter": "mechanical-post-check",
+  "note": "Red de seguridad determinista, no la skill humanizer. El copy debe haber pasado ya por la skill humanizer real antes de llegar aqui (content-loop/SKILL.md paso 6).",
+  "version": "1.0.0",
+  "passed": true,
+  "changes": [],
+  "remaining": [],
+  "checked_at": "2026-07-16T20:14:20.248Z"
+}

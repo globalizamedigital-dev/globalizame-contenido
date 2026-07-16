@@ -14,7 +14,8 @@ export function validateRun(runDir, spec, copies) {
   failures.push(...auditPublicCopy(copies.instagram,{sourceNames}).map(item=>({...item,source:"copy-instagram.md"})));
   failures.push(...auditPublicCopy(copies.linkedin,{sourceNames}).map(item=>({...item,source:"copy-linkedin.md"})));
   const expectedCta=spec.cta?.type;
-  const ctaPatterns={resource:/comenta\s+[A-ZÁÉÍÓÚÑ]+/u,booking:/reserva|30 minutos|hablamos/iu,conversation:/comenta|cuéntame|te leo|comentarios/iu,save:/guárdalo|guarda/iu,authority:/guárdalo|guarda|revisa/iu};
+  // [Cc]omenta: la keyword va en mayúsculas pero el verbo puede abrir frase ("Comenta CÁLCULO").
+  const ctaPatterns={resource:/[Cc]omenta\s+[A-ZÁÉÍÓÚÑ]{2,}/u,booking:/reserva|30 minutos|hablamos/iu,conversation:/comenta|cuéntame|te leo|comentarios/iu,save:/guárdalo|guarda/iu,authority:/guárdalo|guarda|revisa/iu};
   if(!ctaPatterns[expectedCta]?.test(copies.instagram))failures.push({code:"INSTAGRAM_CTA_MISMATCH",detail:expectedCta});
   if(!ctaPatterns[expectedCta]?.test(copies.linkedin))failures.push({code:"LINKEDIN_CTA_MISMATCH",detail:expectedCta});
   if(spec.slides.length<6||spec.slides.length>10)failures.push({code:"SLIDE_COUNT",detail:spec.slides.length});

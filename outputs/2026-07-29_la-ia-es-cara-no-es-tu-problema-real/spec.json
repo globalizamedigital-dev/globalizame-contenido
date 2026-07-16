@@ -1,0 +1,187 @@
+{
+  "schema_version": 2,
+  "id": "2026-07-29_la-ia-es-cara-no-es-tu-problema-real",
+  "date": "2026-07-29",
+  "title": "La IA es cara no es tu problema real",
+  "stage": "BOFU",
+  "cta": {
+    "type": "booking",
+    "action": "Reserva una conversación",
+    "headline": "¿LO MIRAMOS CON TUS NÚMEROS?",
+    "support": "30 minutos. Sin compromiso.",
+    "requested": "diagnóstico",
+    "stage": "BOFU"
+  },
+  "visual_system": {
+    "style": "globalizame-clean-tech",
+    "variant": 0,
+    "flexible_composition": false,
+    "reference_fidelity": "strict",
+    "reference_composition": "carousel-cover-grammar"
+  },
+  "visual_reference": [
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (1).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (2).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (3).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (4).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (5).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (6).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (7).png"
+  ],
+  "evidence": [
+    {
+      "id": "E3",
+      "claim": "Casi 8 de cada 10 empresas que no usan IA dicen que el motivo principal es la falta de conocimiento dentro de la propia empresa: no saben cómo, no es que no puedan pagarla.",
+      "source": "Banco de España, Boletín Económico 2025/T2 (art. 06, análisis EBAE)",
+      "business": "Empresas que no adoptan IA"
+    },
+    {
+      "id": "E5",
+      "claim": "Un autónomo dedica de media 200 horas al año a trámites administrativos y burocracia, unas 4 horas cada semana.",
+      "source": "ATA (Federación de Autónomos), barómetro dic 2025",
+      "business": "Autónomos"
+    },
+    {
+      "id": "E1",
+      "claim": "El 21,1% de las empresas españolas de 10 o más empleados usaba IA a principios de 2025, 8,7 puntos más que el año anterior.",
+      "source": "INE, Encuesta TIC-CE empresas 2024 (datos def. 1T 2025, publ. oct 2025)",
+      "business": "Empresas 10+ empleados"
+    },
+    {
+      "id": "E2",
+      "claim": "Entre las microempresas (menos de 10 empleados) el uso de IA sube al 13,4% (+5,9 puntos), pero sigue siendo el segmento que menos la usa.",
+      "source": "INE, Encuesta TIC-CE empresas 2024",
+      "business": "Micro y pequeña empresa"
+    },
+    {
+      "id": "E4",
+      "claim": "El sector servicios es el que más usa IA en España, con un 25,7%.",
+      "source": "INE, Encuesta TIC-CE empresas 2024",
+      "business": "Servicios"
+    },
+    {
+      "id": "E6",
+      "claim": "Esas 200 horas equivalen a unos 3.000€ al año por autónomo en tiempo dedicado solo a papeleo.",
+      "source": "ATA, dic 2025",
+      "business": "Autónomos"
+    },
+    {
+      "id": "E7",
+      "claim": "El 90% de los autónomos percibe que las trabas burocráticas han aumentado en el último año.",
+      "source": "ATA, barómetro dic 2025",
+      "business": "Autónomos"
+    }
+  ],
+  "slides": [
+    {
+      "role": "hook",
+      "layout": "cover",
+      "headline": "\"LA IA ES CARA\" NO ES TU PROBLEMA REAL",
+      "support": "El freno real no aparece en ninguna factura.",
+      "eyebrow": "DECISIÓN",
+      "visualConcept": "robot-reducing-price-pressure",
+      "eyebrowStrategy": "adaptive",
+      "visualMode": "single-scene",
+      "protagonist": "brand-robot",
+      "visualDirection": "Mantén la composición de referencia: robot expresivo a la derecha y una única escena 3D inferior que convierte un precio sobredimensionado en una cifra manejable.",
+      "primaryVisualCount": 1,
+      "referenceFidelity": "strict",
+      "compositionGrammar": "reference-cover",
+      "sceneStructure": {
+        "headline": "upper-left",
+        "robot": "expressive-right",
+        "explanatoryProp": "lower-left",
+        "consequence": "integrated-bottom",
+        "unified": true
+      },
+      "forbiddenElements": [
+        "isolated object",
+        "giant centered concept",
+        "cinematic poster",
+        "multiple unrelated cards",
+        "infographic cover",
+        "decorative robot",
+        "different robot identity",
+        "different visual language"
+      ],
+      "hookAssessment": {
+        "disruptive": true,
+        "relevant": true,
+        "twoSecondClarity": true,
+        "rationale": "La acción hace visible el cambio sin convertir la portada en una infografía."
+      },
+      "number": 1,
+      "visualVariant": 0
+    },
+    {
+      "role": "objection",
+      "layout": "split",
+      "headline": "SEGUIR IGUAL TAMBIÉN TIENE UN PRECIO",
+      "support": "Pon una cifra al problema antes de descartarlo.",
+      "eyebrow": "OBJECIÓN",
+      "visualConcept": "objection-split",
+      "number": 2,
+      "visualVariant": 0
+    },
+    {
+      "role": "evidence",
+      "layout": "gauge",
+      "headline": "CASI 8 DE CADA 10 EMPRESAS QUE NO USAN IA",
+      "support": "Una señal para medir el problema con tus propios datos.",
+      "eyebrow": "DATO CLAVE",
+      "visualConcept": "metric-gauge",
+      "metric": "8/10",
+      "number": 3,
+      "visualVariant": 0
+    },
+    {
+      "role": "decision",
+      "layout": "checklist",
+      "headline": "TRES COSAS QUE MIRARÍA PRIMERO",
+      "support": "Sin una auditoría interminable.",
+      "eyebrow": "DECISIÓN",
+      "visualConcept": "decision-checklist",
+      "items": [
+        "Volumen real",
+        "Coste mensual",
+        "Casos que requieren persona"
+      ],
+      "number": 4,
+      "visualVariant": 0
+    },
+    {
+      "role": "synthesis",
+      "layout": "gauge",
+      "headline": "LA HERRAMIENTA VIENE DESPUÉS",
+      "support": "La decisión empieza con tus propios números.",
+      "eyebrow": "RESUMEN",
+      "visualConcept": "summary-metric",
+      "metric": "ORDEN",
+      "number": 5,
+      "visualVariant": 0
+    },
+    {
+      "role": "cta",
+      "layout": "cta-minimal",
+      "headline": "¿LO MIRAMOS CON TUS NÚMEROS?",
+      "support": "30 minutos. Sin compromiso.",
+      "eyebrow": "TU TURNO",
+      "visualConcept": "robot-holding-calendar-slot",
+      "ctaType": "booking",
+      "action": "Reserva una conversación",
+      "visualDirection": "El robot de marca señala un hueco resaltado en naranja dentro de un calendario 3D blanco; junto al hueco, un reloj pequeño marcando 30 minutos. Debajo, un botón pill naranja con la acción exacta.",
+      "primaryVisualCount": 1,
+      "avoidConcepts": [
+        "robot-reducing-price-pressure",
+        "objection-split",
+        "metric-gauge",
+        "decision-checklist",
+        "summary-metric"
+      ],
+      "maxTextBlocks": 2,
+      "number": 6,
+      "visualVariant": 0
+    }
+  ],
+  "content_hash": "d34c27f57490407f8b3bc7293d586c4d842ab4d3745a164e6e1b22f304a44615"
+}

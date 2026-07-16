@@ -1,0 +1,34 @@
+{
+  "id": "2026-07-22_las-200-horas-que-un-autonomo-pierde-al-ano",
+  "title": "Las 200 horas que un autónomo pierde al año",
+  "date": "2026-07-22",
+  "status": "BLOCKED",
+  "started_at": "2026-07-16T20:14:20.241Z",
+  "completed_at": "2026-07-16T20:14:22.601Z",
+  "stage": "MOFU",
+  "cta": {
+    "type": "resource",
+    "keyword": "CÁLCULO",
+    "action": "Comenta CÁLCULO",
+    "headline": "COMENTA CÁLCULO",
+    "support": "Te envío la hoja.",
+    "requested": "recurso",
+    "stage": "MOFU"
+  },
+  "render": {
+    "png": true
+  },
+  "lead_magnet": {
+    "required": true,
+    "ready": true,
+    "file": "lead-magnet.html"
+  },
+  "copy_source": "agent-authored",
+  "artifacts": {
+    "contact_sheet": "contact-sheet.svg",
+    "instagram": "copy-instagram.md",
+    "linkedin": "copy-linkedin.md",
+    "qa": "qa.md",
+    "imagegen_prompts": "imagegen-prompts.json"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "2026-07-29_la-ia-es-cara-no-es-tu-problema-real",
+  "title": "La IA es cara no es tu problema real",
+  "date": "2026-07-29",
+  "status": "BLOCKED",
+  "started_at": "2026-07-16T20:13:40.882Z",
+  "completed_at": "2026-07-16T20:13:43.294Z",
+  "stage": "BOFU",
+  "cta": {
+    "type": "booking",
+    "action": "Reserva una conversación",
+    "headline": "¿LO MIRAMOS CON TUS NÚMEROS?",
+    "support": "30 minutos. Sin compromiso.",
+    "requested": "diagnóstico",
+    "stage": "BOFU"
+  },
+  "render": {
+    "png": true
+  },
+  "lead_magnet": {
+    "required": false,
+    "ready": false
+  },
+  "copy_source": "agent-authored",
+  "artifacts": {
+    "contact_sheet": "contact-sheet.svg",
+    "instagram": "copy-instagram.md",
+    "linkedin": "copy-linkedin.md",
+    "qa": "qa.md",
+    "imagegen_prompts": "imagegen-prompts.json"
+  }
+}
