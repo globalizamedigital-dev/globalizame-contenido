@@ -1,0 +1,185 @@
+{
+  "schema_version": 2,
+  "id": "2026-07-15_te-vas-dos-semanas-y-todo-se-para",
+  "date": "2026-07-15",
+  "title": "Te vas dos semanas y todo se para",
+  "stage": "TOFU",
+  "cta": {
+    "type": "save",
+    "action": "Guardar",
+    "headline": "GUÁRDALO PARA MEDIRLO",
+    "support": "Vuelve con una semana de datos reales.",
+    "requested": "guardar",
+    "stage": "TOFU"
+  },
+  "visual_system": {
+    "style": "globalizame-clean-tech",
+    "variant": 2,
+    "flexible_composition": false,
+    "reference_fidelity": "strict",
+    "reference_composition": "carousel-cover-grammar"
+  },
+  "visual_reference": [
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (1).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (2).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (3).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (4).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (5).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (6).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (7).png"
+  ],
+  "evidence": [
+    {
+      "id": "E6",
+      "claim": "Esas 200 horas equivalen a unos 3.000€ al año por autónomo en tiempo dedicado solo a papeleo.",
+      "source": "ATA, dic 2025",
+      "business": "Autónomos"
+    },
+    {
+      "id": "E1",
+      "claim": "El 21,1% de las empresas españolas de 10 o más empleados usaba IA a principios de 2025, 8,7 puntos más que el año anterior.",
+      "source": "INE, Encuesta TIC-CE empresas 2024 (datos def. 1T 2025, publ. oct 2025)",
+      "business": "Empresas 10+ empleados"
+    },
+    {
+      "id": "E2",
+      "claim": "Entre las microempresas (menos de 10 empleados) el uso de IA sube al 13,4% (+5,9 puntos), pero sigue siendo el segmento que menos la usa.",
+      "source": "INE, Encuesta TIC-CE empresas 2024",
+      "business": "Micro y pequeña empresa"
+    },
+    {
+      "id": "E3",
+      "claim": "Casi 8 de cada 10 empresas que no usan IA dicen que el motivo principal es la falta de conocimiento dentro de la propia empresa: no saben cómo, no es que no puedan pagarla.",
+      "source": "Banco de España, Boletín Económico 2025/T2 (art. 06, análisis EBAE)",
+      "business": "Empresas que no adoptan IA"
+    },
+    {
+      "id": "E4",
+      "claim": "El sector servicios es el que más usa IA en España, con un 25,7%.",
+      "source": "INE, Encuesta TIC-CE empresas 2024",
+      "business": "Servicios"
+    },
+    {
+      "id": "E5",
+      "claim": "Un autónomo dedica de media 200 horas al año a trámites administrativos y burocracia, unas 4 horas cada semana.",
+      "source": "ATA (Federación de Autónomos), barómetro dic 2025",
+      "business": "Autónomos"
+    },
+    {
+      "id": "E7",
+      "claim": "El 90% de los autónomos percibe que las trabas burocráticas han aumentado en el último año.",
+      "source": "ATA, barómetro dic 2025",
+      "business": "Autónomos"
+    }
+  ],
+  "slides": [
+    {
+      "role": "hook",
+      "layout": "cover",
+      "headline": "TE VAS DOS SEMANAS Y TODO SE PARA",
+      "support": "Esas 200 horas equivalen a unos 3.000€ al año por autónomo en tiempo dedicado solo a…",
+      "eyebrow": "ERROR COMÚN",
+      "visualConcept": "robot-watching-paperwork-fall-into-time-drain",
+      "eyebrowStrategy": "adaptive",
+      "visualMode": "single-scene",
+      "protagonist": "brand-robot",
+      "visualDirection": "Replica la composición de la portada de referencia: robot de marca angustiado a la derecha; bandeja 3D blanca de papeleo acumulado abajo a la izquierda; hojas y fichas de tiempo caen desde la bandeja hacia un sumidero naranja. Todo forma una sola escena narrativa, no un objeto gigante aislado.",
+      "primaryVisualCount": 1,
+      "referenceFidelity": "strict",
+      "compositionGrammar": "reference-cover",
+      "sceneStructure": {
+        "headline": "upper-left",
+        "robot": "expressive-right",
+        "explanatoryProp": "lower-left",
+        "consequence": "integrated-bottom",
+        "unified": true
+      },
+      "forbiddenElements": [
+        "isolated object",
+        "giant centered concept",
+        "cinematic poster",
+        "multiple unrelated cards",
+        "infographic cover",
+        "decorative robot",
+        "different robot identity",
+        "different visual language"
+      ],
+      "hookAssessment": {
+        "disruptive": true,
+        "relevant": true,
+        "twoSecondClarity": true,
+        "rationale": "El robot protagoniza el conflicto y la pérdida de tiempo se entiende al instante, conservando la composición de marca."
+      },
+      "number": 1,
+      "visualVariant": 2
+    },
+    {
+      "role": "mechanism",
+      "layout": "flow",
+      "headline": "PARECE PEQUEÑO HASTA QUE LO SUMAS",
+      "support": "Los minutos sueltos terminan ocupando días.",
+      "eyebrow": "QUÉ PASA",
+      "visualConcept": "mechanism-flow",
+      "number": 2,
+      "visualVariant": 2
+    },
+    {
+      "role": "evidence",
+      "layout": "gauge",
+      "headline": "ESAS 200 HORAS EQUIVALEN A UNOS 3.000€ AL AÑO POR AUTÓNOMO",
+      "support": "Una señal para medir el problema con tus propios datos.",
+      "eyebrow": "DATO CLAVE",
+      "visualConcept": "metric-gauge",
+      "metric": "200 horas",
+      "number": 3,
+      "visualVariant": 2
+    },
+    {
+      "role": "consequence",
+      "layout": "flow",
+      "headline": "EL COSTE NO LLEGA EN UNA FACTURA",
+      "support": "Aparece como retrasos, errores y trabajo importante que nunca empieza.",
+      "eyebrow": "EL COSTE",
+      "visualConcept": "consequence-flow",
+      "number": 4,
+      "visualVariant": 2
+    },
+    {
+      "role": "recognition",
+      "layout": "checklist",
+      "headline": "MIRA DÓNDE SE REPITE",
+      "support": "Una semana basta para dejar de decidir por intuición.",
+      "eyebrow": "DETECTA",
+      "visualConcept": "recognition-checklist",
+      "items": [
+        "Tareas que vuelven",
+        "Interrupciones constantes",
+        "Oportunidades sin respuesta"
+      ],
+      "number": 5,
+      "visualVariant": 2
+    },
+    {
+      "role": "cta",
+      "layout": "cta-minimal",
+      "headline": "GUÁRDALO PARA MEDIRLO",
+      "support": "Vuelve con una semana de datos reales.",
+      "eyebrow": "TU TURNO",
+      "visualConcept": "comment-bubble",
+      "ctaType": "save",
+      "action": "Guardar",
+      "primaryVisualCount": 1,
+      "avoidConcepts": [
+        "robot-watching-paperwork-fall-into-time-drain",
+        "mechanism-flow",
+        "metric-gauge",
+        "consequence-flow",
+        "recognition-checklist"
+      ],
+      "maxTextBlocks": 2,
+      "number": 6,
+      "visualVariant": 2
+    }
+  ],
+  "content_hash": "9c5c332aaae16fb4d27670cece8adc32f9bc7a51918f48002842d9e1598b7715"
+}

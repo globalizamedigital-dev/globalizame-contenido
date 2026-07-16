@@ -1,0 +1,32 @@
+{
+  "id": "2026-07-17_solo-1-de-cada-8-negocios-pequenos-usa-ia",
+  "title": "Solo 1 de cada 8 negocios pequeños usa IA",
+  "date": "2026-07-17",
+  "status": "BLOCKED",
+  "started_at": "2026-07-16T18:37:37.505Z",
+  "completed_at": "2026-07-16T18:37:39.894Z",
+  "stage": "TOFU",
+  "cta": {
+    "type": "conversation",
+    "action": "Responde en comentarios",
+    "headline": "¿DÓNDE SE TE VA EL TIEMPO?",
+    "support": "Cuéntamelo en comentarios.",
+    "requested": "conversar",
+    "stage": "TOFU"
+  },
+  "render": {
+    "png": true
+  },
+  "lead_magnet": {
+    "required": false,
+    "ready": false
+  },
+  "copy_source": "agent-authored",
+  "artifacts": {
+    "contact_sheet": "contact-sheet.svg",
+    "instagram": "copy-instagram.md",
+    "linkedin": "copy-linkedin.md",
+    "qa": "qa.md",
+    "imagegen_prompts": "imagegen-prompts.json"
+  }
+}

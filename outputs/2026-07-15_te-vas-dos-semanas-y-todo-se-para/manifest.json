@@ -1,0 +1,32 @@
+{
+  "id": "2026-07-15_te-vas-dos-semanas-y-todo-se-para",
+  "title": "Te vas dos semanas y todo se para",
+  "date": "2026-07-15",
+  "status": "BLOCKED",
+  "started_at": "2026-07-16T18:36:20.234Z",
+  "completed_at": "2026-07-16T18:36:22.604Z",
+  "stage": "TOFU",
+  "cta": {
+    "type": "save",
+    "action": "Guardar",
+    "headline": "GUÁRDALO PARA MEDIRLO",
+    "support": "Vuelve con una semana de datos reales.",
+    "requested": "guardar",
+    "stage": "TOFU"
+  },
+  "render": {
+    "png": true
+  },
+  "lead_magnet": {
+    "required": false,
+    "ready": false
+  },
+  "copy_source": "agent-authored",
+  "artifacts": {
+    "contact_sheet": "contact-sheet.svg",
+    "instagram": "copy-instagram.md",
+    "linkedin": "copy-linkedin.md",
+    "qa": "qa.md",
+    "imagegen_prompts": "imagegen-prompts.json"
+  }
+}

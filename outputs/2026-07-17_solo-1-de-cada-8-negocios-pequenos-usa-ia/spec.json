@@ -1,0 +1,185 @@
+{
+  "schema_version": 2,
+  "id": "2026-07-17_solo-1-de-cada-8-negocios-pequenos-usa-ia",
+  "date": "2026-07-17",
+  "title": "Solo 1 de cada 8 negocios pequeños usa IA",
+  "stage": "TOFU",
+  "cta": {
+    "type": "conversation",
+    "action": "Responde en comentarios",
+    "headline": "¿DÓNDE SE TE VA EL TIEMPO?",
+    "support": "Cuéntamelo en comentarios.",
+    "requested": "conversar",
+    "stage": "TOFU"
+  },
+  "visual_system": {
+    "style": "globalizame-clean-tech",
+    "variant": 2,
+    "flexible_composition": false,
+    "reference_fidelity": "strict",
+    "reference_composition": "carousel-cover-grammar"
+  },
+  "visual_reference": [
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (1).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (2).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (3).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (4).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (5).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (6).png",
+    "recursos\\carrusel\\ChatGPT Image 9 jul 2026, 21_05_49 (7).png"
+  ],
+  "evidence": [
+    {
+      "id": "E2",
+      "claim": "Entre las microempresas (menos de 10 empleados) el uso de IA sube al 13,4% (+5,9 puntos), pero sigue siendo el segmento que menos la usa.",
+      "source": "INE, Encuesta TIC-CE empresas 2024",
+      "business": "Micro y pequeña empresa"
+    },
+    {
+      "id": "E3",
+      "claim": "Casi 8 de cada 10 empresas que no usan IA dicen que el motivo principal es la falta de conocimiento dentro de la propia empresa: no saben cómo, no es que no puedan pagarla.",
+      "source": "Banco de España, Boletín Económico 2025/T2 (art. 06, análisis EBAE)",
+      "business": "Empresas que no adoptan IA"
+    },
+    {
+      "id": "E5",
+      "claim": "Un autónomo dedica de media 200 horas al año a trámites administrativos y burocracia, unas 4 horas cada semana.",
+      "source": "ATA (Federación de Autónomos), barómetro dic 2025",
+      "business": "Autónomos"
+    },
+    {
+      "id": "E6",
+      "claim": "Esas 200 horas equivalen a unos 3.000€ al año por autónomo en tiempo dedicado solo a papeleo.",
+      "source": "ATA, dic 2025",
+      "business": "Autónomos"
+    },
+    {
+      "id": "E1",
+      "claim": "El 21,1% de las empresas españolas de 10 o más empleados usaba IA a principios de 2025, 8,7 puntos más que el año anterior.",
+      "source": "INE, Encuesta TIC-CE empresas 2024 (datos def. 1T 2025, publ. oct 2025)",
+      "business": "Empresas 10+ empleados"
+    },
+    {
+      "id": "E4",
+      "claim": "El sector servicios es el que más usa IA en España, con un 25,7%.",
+      "source": "INE, Encuesta TIC-CE empresas 2024",
+      "business": "Servicios"
+    },
+    {
+      "id": "E7",
+      "claim": "El 90% de los autónomos percibe que las trabas burocráticas han aumentado en el último año.",
+      "source": "ATA, barómetro dic 2025",
+      "business": "Autónomos"
+    }
+  ],
+  "slides": [
+    {
+      "role": "hook",
+      "layout": "cover",
+      "headline": "SOLO 1 DE CADA 8 NEGOCIOS PEQUEÑOS USA IA",
+      "support": "Entre las microempresas (menos de 10 empleados) el uso de IA sube al 13,4% (+5,9 puntos),…",
+      "eyebrow": "DATO CLAVE",
+      "visualConcept": "robot-answering-while-owner-is-away",
+      "eyebrowStrategy": "adaptive",
+      "visualMode": "single-scene",
+      "protagonist": "brand-robot",
+      "visualDirection": "Mantén la composición de referencia: robot protagonista a la derecha y una única escena 3D inferior que muestra una llamada atendida mientras el dueño no está.",
+      "primaryVisualCount": 1,
+      "referenceFidelity": "strict",
+      "compositionGrammar": "reference-cover",
+      "sceneStructure": {
+        "headline": "upper-left",
+        "robot": "expressive-right",
+        "explanatoryProp": "lower-left",
+        "consequence": "integrated-bottom",
+        "unified": true
+      },
+      "forbiddenElements": [
+        "isolated object",
+        "giant centered concept",
+        "cinematic poster",
+        "multiple unrelated cards",
+        "infographic cover",
+        "decorative robot",
+        "different robot identity",
+        "different visual language"
+      ],
+      "hookAssessment": {
+        "disruptive": true,
+        "relevant": true,
+        "twoSecondClarity": true,
+        "rationale": "Muestra continuidad de atención con una escena clara y coherente con la marca."
+      },
+      "number": 1,
+      "visualVariant": 2
+    },
+    {
+      "role": "mechanism",
+      "layout": "flow",
+      "headline": "PARECE PEQUEÑO HASTA QUE LO SUMAS",
+      "support": "Los minutos sueltos terminan ocupando días.",
+      "eyebrow": "QUÉ PASA",
+      "visualConcept": "mechanism-flow",
+      "number": 2,
+      "visualVariant": 2
+    },
+    {
+      "role": "evidence",
+      "layout": "gauge",
+      "headline": "ENTRE LAS MICROEMPRESAS (MENOS DE 10 EMPLEADOS) EL USO DE IA",
+      "support": "Una señal para medir el problema con tus propios datos.",
+      "eyebrow": "DATO CLAVE",
+      "visualConcept": "metric-gauge",
+      "metric": "13,4%",
+      "number": 3,
+      "visualVariant": 2
+    },
+    {
+      "role": "consequence",
+      "layout": "flow",
+      "headline": "EL COSTE NO LLEGA EN UNA FACTURA",
+      "support": "Aparece como retrasos, errores y trabajo importante que nunca empieza.",
+      "eyebrow": "EL COSTE",
+      "visualConcept": "consequence-flow",
+      "number": 4,
+      "visualVariant": 2
+    },
+    {
+      "role": "recognition",
+      "layout": "checklist",
+      "headline": "MIRA DÓNDE SE REPITE",
+      "support": "Una semana basta para dejar de decidir por intuición.",
+      "eyebrow": "DETECTA",
+      "visualConcept": "recognition-checklist",
+      "items": [
+        "Tareas que vuelven",
+        "Interrupciones constantes",
+        "Oportunidades sin respuesta"
+      ],
+      "number": 5,
+      "visualVariant": 2
+    },
+    {
+      "role": "cta",
+      "layout": "cta-minimal",
+      "headline": "¿DÓNDE SE TE VA EL TIEMPO?",
+      "support": "Cuéntamelo en comentarios.",
+      "eyebrow": "TU TURNO",
+      "visualConcept": "comment-bubble",
+      "ctaType": "conversation",
+      "action": "Responde en comentarios",
+      "primaryVisualCount": 1,
+      "avoidConcepts": [
+        "robot-answering-while-owner-is-away",
+        "mechanism-flow",
+        "metric-gauge",
+        "consequence-flow",
+        "recognition-checklist"
+      ],
+      "maxTextBlocks": 2,
+      "number": 6,
+      "visualVariant": 2
+    }
+  ],
+  "content_hash": "caed31e8a821a4fce8c692ec5f5f11320357bc1a148235185528e4c0935783b5"
+}
