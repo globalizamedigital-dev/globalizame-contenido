@@ -14,7 +14,7 @@
   },
   "visual_system": {
     "style": "globalizame-clean-tech",
-    "variant": 2,
+    "variant": 0,
     "flexible_composition": false,
     "reference_fidelity": "strict",
     "reference_composition": "carousel-cover-grammar"
@@ -77,7 +77,7 @@
       "role": "hook",
       "layout": "cover",
       "headline": "SOLO 1 DE CADA 8 NEGOCIOS PEQUEÑOS USA IA",
-      "support": "Entre las microempresas (menos de 10 empleados) el uso de IA sube al 13,4% (+5,9 puntos),…",
+      "support": "El negocio pequeño es justo el que menos la aprovecha.",
       "eyebrow": "DATO CLAVE",
       "visualConcept": "robot-answering-while-owner-is-away",
       "eyebrowStrategy": "adaptive",
@@ -111,7 +111,7 @@
         "rationale": "Muestra continuidad de atención con una escena clara y coherente con la marca."
       },
       "number": 1,
-      "visualVariant": 2
+      "visualVariant": 0
     },
     {
       "role": "mechanism",
@@ -121,18 +121,18 @@
       "eyebrow": "QUÉ PASA",
       "visualConcept": "mechanism-flow",
       "number": 2,
-      "visualVariant": 2
+      "visualVariant": 0
     },
     {
       "role": "evidence",
       "layout": "gauge",
-      "headline": "ENTRE LAS MICROEMPRESAS (MENOS DE 10 EMPLEADOS) EL USO DE IA",
+      "headline": "ENTRE LAS MICROEMPRESAS EL USO DE IA SUBE AL 13,4%",
       "support": "Una señal para medir el problema con tus propios datos.",
       "eyebrow": "DATO CLAVE",
       "visualConcept": "metric-gauge",
       "metric": "13,4%",
       "number": 3,
-      "visualVariant": 2
+      "visualVariant": 0
     },
     {
       "role": "consequence",
@@ -142,7 +142,7 @@
       "eyebrow": "EL COSTE",
       "visualConcept": "consequence-flow",
       "number": 4,
-      "visualVariant": 2
+      "visualVariant": 0
     },
     {
       "role": "recognition",
@@ -157,7 +157,7 @@
         "Oportunidades sin respuesta"
       ],
       "number": 5,
-      "visualVariant": 2
+      "visualVariant": 0
     },
     {
       "role": "cta",
@@ -165,9 +165,10 @@
       "headline": "¿DÓNDE SE TE VA EL TIEMPO?",
       "support": "Cuéntamelo en comentarios.",
       "eyebrow": "TU TURNO",
-      "visualConcept": "comment-bubble",
+      "visualConcept": "robot-opening-conversation",
       "ctaType": "conversation",
       "action": "Responde en comentarios",
+      "visualDirection": "El robot de marca se dirige al lector con postura abierta y ofrece un bocadillo de diálogo 3D blanco con tres puntos naranjas de 'escribiendo…'. Invita a responder, no decora. Debajo, un botón pill naranja con la acción exacta.",
       "primaryVisualCount": 1,
       "avoidConcepts": [
         "robot-answering-while-owner-is-away",
@@ -178,8 +179,8 @@
       ],
       "maxTextBlocks": 2,
       "number": 6,
-      "visualVariant": 2
+      "visualVariant": 0
     }
   ],
-  "content_hash": "caed31e8a821a4fce8c692ec5f5f11320357bc1a148235185528e4c0935783b5"
+  "content_hash": "ab024f07f1ef1b2377483d668a55267d003010d6e78d60f8c7cbf1af82a6a7c7"
 }

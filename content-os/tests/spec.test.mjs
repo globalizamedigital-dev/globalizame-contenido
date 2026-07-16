@@ -22,7 +22,7 @@ test("MOFU con recurso lleva la palabra clave a la última slide", () => {
   assert.match(spec.slides.at(-1).headline, /COMENTA CÁLCULO/);
   assert.match(spec.slides.at(-1).support, /te envío/i);
   assert.equal(spec.slides.at(-1).layout, "cta-minimal");
-  assert.equal(spec.slides.at(-1).visualConcept, "comment-bubble");
+  assert.equal(spec.slides.at(-1).visualConcept, "robot-handing-resource-sheet");
   assert.equal(spec.slides.at(-1).metric, undefined);
   assert.equal(spec.slides.at(-1).items, undefined);
   assert.ok(`${spec.slides.at(-1).headline} ${spec.slides.at(-1).support}`.split(/\s+/).length<=10);
@@ -35,8 +35,8 @@ test("BOFU convierte una petición incompatible en reserva", () => {
 });
 
 test("la narrativa varía pero la composición de portada permanece vinculada a la referencia", () => {
-  const a = buildSpec({ date:"2026-07-08", title:"Primera pieza", brief:"", stage:"MOFU", cta:"autoridad" }, evidence, resources);
-  const b = buildSpec({ date:"2026-07-13", title:"Segunda pieza", brief:"", stage:"MOFU", cta:"autoridad" }, evidence, resources);
+  const a = buildSpec({ date:"2026-07-13", title:"Primera pieza", brief:"", stage:"MOFU", cta:"autoridad" }, evidence, resources);
+  const b = buildSpec({ date:"2026-07-15", title:"Segunda pieza", brief:"", stage:"MOFU", cta:"autoridad" }, evidence, resources);
   assert.equal(a.visual_system.flexible_composition, false);
   assert.equal(a.visual_system.reference_fidelity, "strict");
   assert.equal(a.slides[0].compositionGrammar, "reference-cover");

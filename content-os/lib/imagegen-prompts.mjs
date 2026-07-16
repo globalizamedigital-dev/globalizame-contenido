@@ -8,7 +8,44 @@ import path from "node:path";
 
 const PALETTE = "fondo blanco o gris casi blanco (#F7F7F5 / #FFFFFF), tinta negra (#090909), acento naranja #FF4B0B. Sin otros colores dominantes.";
 const FORMAT = "1080x1350 px, relación 4:5, formato retrato para carrusel de Instagram.";
-const REFERENCE_NOTE = "Referencia de estilo obligatoria: las imágenes en recursos/carrusel/ (adjuntar hasta 5 al generar). El contenido decide el visual; la referencia decide el estilo -- no copiar literalmente la escena de la referencia, sí su gramática visual (tipografía gruesa tipo display, tarjetas blancas con sombra suave, motivo técnico naranja, espacio negativo amplio).";
+
+// Sistema de render: la calidad profesional sale de fijar material, luz y cámara,
+// no de dejar que el generador improvise en cada slide.
+const RENDER_STYLE = [
+  "ESTILO DE RENDER (idéntico en toda la pieza):",
+  "- Objetos y personajes en 3D tipo producto premium: plástico blanco brillante con reflejos suaves, detalles en naranja #FF4B0B, juntas oscuras visibles en el robot.",
+  "- Iluminación de estudio suave y envolvente (softbox), sombras de contacto difusas bajo cada objeto, sin sombras duras ni luz dramática.",
+  "- Cámara a la altura del objeto con ligera perspectiva; profundidad de campo sutil que mantiene el texto perfectamente nítido.",
+  "- Los objetos 3D proyectan sombra sobre el fondo claro para asentarse en la escena; nada flota sin sombra.",
+].join("\n");
+
+// Mobiliario de marca: los elementos fijos que hacen reconocible cada slide.
+// Se especifican explícitamente porque, si no, el generador los pone a veces sí
+// y a veces no, y el carrusel pierde consistencia.
+const BRAND_FURNITURE = [
+  "MOBILIARIO DE MARCA (obligatorio en cada slide, siempre igual):",
+  "- Arriba a la izquierda: tres guiones naranjas cortos en diagonal y, debajo, el chip de etiqueta (borde fino naranja, esquinas redondeadas, texto naranja en mayúsculas con tracking amplio).",
+  "- Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).",
+  "- Arriba a la derecha: el asterisco/spark de marca en naranja.",
+  "- Retícula de puntos grises muy sutil en una o dos esquinas.",
+  "- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha (indica que hay más slides). En la ÚLTIMA slide (CTA) este botón NO aparece.",
+  "- NO incluir ningún contador de slide (nada de \"1/6\", \"2/6\", números de página ni círculo con número) en ninguna esquina.",
+].join("\n");
+
+const TYPOGRAPHY = [
+  "TIPOGRAFÍA:",
+  "- Titular: sans display muy pesada, condensada, en MAYÚSCULAS, negro #090909, interlineado apretado, alineada a la izquierda, ocupando 2-4 líneas arriba.",
+  "- Apoyo: sans humanista regular, negro, tamaño claramente menor, máximo 2 líneas, debajo del titular.",
+  "- El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.",
+].join("\n");
+
+// Cada prompt debe funcionar pegado a mano en GPT Images 2.0, solo, sin que nadie
+// adjunte nada: por eso el sistema visual completo va dentro del texto. Adjuntar
+// referencias de recursos/carrusel/ (o la slide anterior aprobada) mejora la
+// consistencia, pero el prompt no puede depender de ello.
+const REFERENCE_NOTE = [
+  "CONSISTENCIA ENTRE SLIDES: si puedes, adjunta 2-3 imágenes de recursos/carrusel/ y la slide anterior ya aprobada de esta misma pieza como referencia; genera todas las slides en la misma conversación. Si generas sin referencias, la descripción de estilo de arriba es la fuente de verdad y debe seguirse al pie de la letra.",
+].join("\n");
 
 function slideKindLabel(slide) {
   if (slide.role === "hook") return "PORTADA (hook)";
@@ -24,6 +61,13 @@ function highlightFragment(slide) {
   const text = `${slide.headline || ""} ${slide.support || ""}`;
   const ratio = text.match(/\d+\s+de\s+cada\s+\d+/iu);
   if (ratio) return ratio[0];
+  // La métrica de la slide manda sobre el primer número suelto ("200 horas" > "200"),
+  // extraída con la grafía exacta con la que aparece en el texto.
+  if (slide.metric && slide.metric !== "ORDEN") {
+    const escaped = String(slide.metric).replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s+");
+    const inText = text.match(new RegExp(escaped, "iu"));
+    if (inText) return inText[0];
+  }
   const numeric = text.match(/\d+([.,]\d+)?\s*(%|€)?/);
   if (numeric && numeric[0].trim() && /\d/.test(numeric[0])) return numeric[0].trim();
   if (slide.metric && slide.metric !== "ORDEN") return slide.metric;
@@ -32,6 +76,30 @@ function highlightFragment(slide) {
   return null;
 }
 
+// Escenas detalladas por layout interior. Cada tarjeta lleva un objeto 3D real
+// (no un icono plano) y una palabra de etiqueta, para que la slide explique la
+// idea sola en menos de dos segundos.
+const LAYOUT_SCENES = {
+  flow: [
+    "- Tres tarjetas blancas redondeadas en fila horizontal, cada una con un objeto 3D físico dentro (no iconos planos: un reloj de mesa, una pila de papeles, un calendario de sobremesa, un teléfono... el que mejor cuente cada paso) y una palabra corta de etiqueta debajo del objeto, en negro.",
+    "- Flechas naranjas 3D con volumen conectando las tarjetas de izquierda a derecha.",
+    "- La secuencia debe leerse como causa -> acumulación -> consecuencia sin leer el titular.",
+  ],
+  gauge: [
+    "- Un medidor semicircular 3D grande y protagonista: carcasa blanca con volumen, tramo final del arco en naranja, aguja naranja gruesa apuntando a la zona alta.",
+    "- Encajada en la base del medidor, una tarjeta blanca con la cifra clave en tipografía enorme y negra, y una unidad o comparación pequeña debajo.",
+    "- El medidor descansa sobre el suelo con sombra suave; puede asomar el robot de marca por un lateral mirando la cifra con expresión preocupada, pequeño, sin robar protagonismo.",
+  ],
+  split: [
+    "- Dos columnas 3D claramente separadas: la izquierda con marca × naranja y una mini-escena del problema (objetos desordenados, papeles cayendo); la derecha con marca ✓ naranja y la misma escena en orden.",
+    "- Ambas columnas sobre tarjetas blancas con sombra; misma escala, mismo ángulo de cámara, para que el contraste sea inmediato.",
+  ],
+  checklist: [
+    "- Tres tarjetas-fila blancas apiladas en vertical con sombra suave, cada una con un check circular naranja 3D con volumen a la izquierda y el texto del ítem en negro.",
+    "- Las tarjetas tienen profundidad real (grosor visible) y una ligera separación entre sí; ninguna decoración extra dentro.",
+  ],
+};
+
 function composePrompt(slide, spec, index, total) {
   const lines = [];
   lines.push(`${slideKindLabel(slide)} -- slide ${index + 1}/${total} de "${spec.title}"`);
@@ -39,15 +107,21 @@ function composePrompt(slide, spec, index, total) {
   lines.push(`FORMATO: ${FORMAT}`);
   lines.push(`PALETA: ${PALETTE}`);
   lines.push("");
+  lines.push(RENDER_STYLE);
+  lines.push("");
+  lines.push(BRAND_FURNITURE);
+  lines.push("");
+  lines.push(TYPOGRAPHY);
+  lines.push("");
   lines.push(`TITULAR (texto exacto a renderizar en la imagen): "${slide.headline}"`);
   if (slide.support) lines.push(`APOYO (texto exacto, más pequeño): "${slide.support}"`);
-  if (slide.eyebrow) lines.push(`ETIQUETA SUPERIOR (chip pequeño, adaptativa -- nunca "DATO 01" fijo): "${slide.eyebrow}"`);
-  lines.push("NO incluir ningún contador de slide (nada de \"1/6\", \"2/6\", números de página ni círculo con número) en ninguna esquina de la imagen.");
+  if (slide.eyebrow) lines.push(`ETIQUETA SUPERIOR del chip (adaptativa -- nunca "DATO 01" fijo): "${slide.eyebrow}"`);
   const highlight = highlightFragment(slide);
-  if (highlight) {
+  const highlightInText = highlight && `${slide.headline || ""} ${slide.support || ""}`.toLowerCase().includes(String(highlight).toLowerCase());
+  if (highlightInText) {
     lines.push(`RESALTADO DE MARCA (obligatorio, sin excepción): pinta en naranja #FF4B0B únicamente el fragmento "${highlight}" dentro del titular o del apoyo, tal y como aparece en el texto. El resto del texto va en tinta negra #090909. No resaltes ninguna otra palabra ni cifra, y no dejes el titular completo en un solo color.`);
   } else {
-    lines.push("RESALTADO DE MARCA (obligatorio, sin excepción): esta slide no tiene una cifra o palabra clave que resaltar -- todo el titular y el apoyo van en tinta negra #090909, sin ningún fragmento en naranja.");
+    lines.push("RESALTADO DE MARCA (obligatorio, sin excepción): el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.");
   }
   lines.push("");
 
@@ -61,26 +135,26 @@ function composePrompt(slide, spec, index, total) {
     const forbidden = slide.forbiddenElements || [];
     if (forbidden.length) lines.push(`- PROHIBIDO: ${forbidden.join(", ")}.`);
   } else if (slide.role === "cta") {
-    lines.push("COMPOSICIÓN (cierre -- máximo 2 bloques de texto + 1 apoyo visual simple):");
-    lines.push("- Es un cierre, no otra slide educativa. No repetir calculadoras, gráficos, listas ni objetos explicativos ya usados en slides anteriores de esta misma pieza.");
-    if (slide.action) lines.push(`- Acción exacta a mostrar: "${slide.action}".`);
+    lines.push("COMPOSICIÓN (cierre -- el robot protagoniza la acción, no un icono suelto):");
+    if (slide.visualDirection) lines.push(`- Escena concreta: ${slide.visualDirection}`);
+    lines.push("- El robot de marca aparece ENTERO, expresivo, ejecutando o invitando a la acción del CTA. Un icono gigante sin robot está prohibido: queda plano y muerto.");
+    lines.push("- Máximo 2 bloques de texto (titular + apoyo). La acción va dentro de la escena como botón pill naranja 3D, no como tercer bloque de texto suelto.");
+    lines.push("- No repetir calculadoras, medidores, listas ni objetos explicativos ya usados en slides anteriores de esta misma pieza.");
+    if (slide.action) lines.push(`- Acción exacta a mostrar en el botón pill: "${slide.action}".`);
     if (slide.keyword) lines.push(`- Si el CTA es de palabra clave, mostrar literalmente "${slide.keyword}" en mayúsculas y qué recibe la persona.`);
+    lines.push("- Recuerda: en esta slide final NO aparece el botón de flecha de abajo a la derecha (no hay más slides).");
   } else {
     lines.push(`COMPOSICIÓN (layout de referencia interna: ${slide.layout}):`);
-    const layoutHints = {
-      flow: "Diagrama de 3 pasos en línea horizontal con flechas naranjas conectando círculos/iconos simples.",
-      gauge: "Velocímetro/medidor semicircular con aguja, valor destacado debajo en tipografía grande.",
-      split: "Comparación de dos columnas (antes/después, sin sistema/con criterio) con marcas × y ✓.",
-      checklist: "Lista de 3 tarjetas horizontales con círculo de check a la izquierda de cada una.",
-    };
-    if (layoutHints[slide.layout]) lines.push(`- ${layoutHints[slide.layout]}`);
-    lines.push("- Un solo concepto visual claro que explique la idea en menos de 2 segundos. Tarjetas blancas con sombra suave sobre fondo claro.");
+    for (const line of LAYOUT_SCENES[slide.layout] || []) lines.push(line);
+    if (slide.items?.length) lines.push(`- Textos exactos de los ítems, uno por tarjeta y en este orden: ${slide.items.map(i => `"${i}"`).join(", ")}.`);
+    if (slide.metric && slide.layout === "gauge") lines.push(`- Cifra exacta a mostrar en grande dentro de la tarjeta del medidor: "${slide.metric}".`);
+    lines.push("- Un solo concepto visual que explique la idea en menos de 2 segundos. Espacio negativo generoso alrededor de la escena.");
   }
 
   lines.push("");
   lines.push(REFERENCE_NOTE);
   lines.push("");
-  lines.push("Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros.");
+  lines.push("Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, sin logotipos de terceros, sin puntos suspensivos añadidos al texto.");
   return lines.join("\n");
 }
 
@@ -104,5 +178,23 @@ export function buildImagegenPrompts(runDir, spec) {
     prompts,
   };
   fs.writeFileSync(path.join(runDir, "imagegen-prompts.json"), JSON.stringify(payload, null, 2));
+  fs.writeFileSync(path.join(runDir, "imagegen-prompts.md"), toMarkdown(payload));
   return payload;
+}
+
+// Versión copy-paste para el flujo manual: Mario pega cada bloque tal cual en
+// GPT Images 2.0. El JSON queda como contrato máquina; este .md es el de uso.
+function toMarkdown(payload) {
+  const parts = [
+    `# Prompts de imagen · ${payload.title}`,
+    "",
+    "Uno por slide. Copia el bloque completo (entre las líneas) y pégalo en GPT Images 2.0.",
+    "Genera todas las slides en la misma conversación; si puedes, adjunta 2-3 referencias de `recursos/carrusel/` y la slide anterior aprobada.",
+    `Los PNG van a \`outputs/${payload.piece_id}/final/\` con el nombre indicado.`,
+    "",
+  ];
+  for (const item of payload.prompts) {
+    parts.push(`## Slide ${item.slide} · ${item.role} → \`final/${item.filename}\``, "", "```", item.prompt, "```", "");
+  }
+  return parts.join("\n");
 }

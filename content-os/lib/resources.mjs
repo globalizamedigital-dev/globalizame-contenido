@@ -27,14 +27,16 @@ export function readResources(root, date = new Date()) {
 
 export function extractPosts(strategy, year) {
   const rows = [];
-  const re = /<div class="date">\s*(Lun|Mar|Mié|Jue|Vie|Sáb|Dom)\s+(\d{1,2})\s+([a-záéíóú]{3})<span>(.*?)<\/span><\/div>[\s\S]*?<div class="t">([\s\S]*?)<\/div>[\s\S]*?<div class="d">([\s\S]*?)<\/div>[\s\S]*?<span class="tag (tofu|mofu|bofu)">.*?<\/span><span class="tag cta">CTA:\s*([^<]+)<\/span>/giu;
+  // El bloque `<div class="s">` es opcional: subtítulo de portada escrito a mano.
+  // Si existe, la portada lo usa tal cual en vez de derivar uno de la evidencia.
+  const re = /<div class="date">\s*(Lun|Mar|Mié|Jue|Vie|Sáb|Dom)\s+(\d{1,2})\s+([a-záéíóú]{3})<span>(.*?)<\/span><\/div>[\s\S]*?<div class="t">([\s\S]*?)<\/div>\s*(?:<div class="s">([\s\S]*?)<\/div>\s*)?<div class="d">([\s\S]*?)<\/div>[\s\S]*?<span class="tag (tofu|mofu|bofu)">.*?<\/span><span class="tag cta">CTA:\s*([^<]+)<\/span>/giu;
   let m;
   while ((m = re.exec(strategy))) {
     const month = MONTHS[m[3].toLowerCase().slice(0,3)];
     if (!month) continue;
     rows.push({
       date: `${year}-${String(month).padStart(2,"0")}-${String(Number(m[2])).padStart(2,"0")}`,
-      format: strip(m[4]), title: strip(m[5]), brief: strip(m[6]), stage: m[7].toUpperCase(), cta: strip(m[8]).toLowerCase()
+      format: strip(m[4]), title: strip(m[5]), sub: m[6] ? strip(m[6]) : null, brief: strip(m[7]), stage: m[8].toUpperCase(), cta: strip(m[9]).toLowerCase()
     });
   }
   return rows;

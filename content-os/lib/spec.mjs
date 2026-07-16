@@ -6,6 +6,32 @@ const CTA_MATRIX = {
   BOFU: new Set(["conversation", "booking", "authority"]),
 };
 
+// Escena visual del cierre por tipo de CTA. Sin esto, el generador de imagen
+// rellena el cierre con un icono gigante y la slide queda muerta: el robot de
+// marca debe protagonizar también el cierre, ejecutando la acción que se pide.
+const CTA_SCENES = {
+  save: {
+    concept: "robot-bookmarking-the-post",
+    direction: "El robot de marca guarda esta pieza: sostiene una tarjeta 3D blanca (miniatura abstracta de este carrusel, sin texto legible) y la desliza dentro de un archivador blanco con pestaña-marcador naranja. Gesto satisfecho, guiño al lector. Debajo, un botón pill naranja con la acción exacta.",
+  },
+  authority: {
+    concept: "robot-bookmarking-the-post",
+    direction: "El robot de marca guarda esta pieza: sostiene una tarjeta 3D blanca (miniatura abstracta de este carrusel, sin texto legible) y la desliza dentro de un archivador blanco con pestaña-marcador naranja. Gesto satisfecho, guiño al lector. Debajo, un botón pill naranja con la acción exacta.",
+  },
+  conversation: {
+    concept: "robot-opening-conversation",
+    direction: "El robot de marca se dirige al lector con postura abierta y ofrece un bocadillo de diálogo 3D blanco con tres puntos naranjas de 'escribiendo…'. Invita a responder, no decora. Debajo, un botón pill naranja con la acción exacta.",
+  },
+  booking: {
+    concept: "robot-holding-calendar-slot",
+    direction: "El robot de marca señala un hueco resaltado en naranja dentro de un calendario 3D blanco; junto al hueco, un reloj pequeño marcando 30 minutos. Debajo, un botón pill naranja con la acción exacta.",
+  },
+  resource: {
+    concept: "robot-handing-resource-sheet",
+    direction: "El robot de marca entrega al lector una hoja/plantilla 3D blanca con cabecera naranja, inclinada hacia la cámara. Debajo, un botón pill naranja con la palabra clave exacta en mayúsculas.",
+  },
+};
+
 export function resolveCta(post) {
   const stage = String(post.stage || "TOFU").toUpperCase();
   const raw = String(post.cta || "").toLowerCase();
@@ -30,8 +56,11 @@ export function resolveCta(post) {
 export function buildSpec(post, evidence, resources) {
   const title = post.title.replace(/[“”"]/g, "");
   const cta = resolveCta(post);
-  const seed = parseInt(crypto.createHash("sha256").update(`${post.date}:${title}`).digest("hex").slice(0, 8), 16);
-  const variant = seed % 3;
+  // Rotación determinista por día del año: floor(día/2) % 3 garantiza que dos
+  // fechas de publicación consecutivas (separadas 2-3 días, L/X/V) nunca caen en
+  // la misma variante narrativa. Un hash por título podía colisionar justo en
+  // piezas seguidas, que es donde la repetición canta.
+  const variant = Math.floor(dayOfYear(post.date) / 2) % 3;
   const slides = buildNarrative({ post, evidence, cta, variant });
   return {
     schema_version: 2,
@@ -48,37 +77,120 @@ export function buildSpec(post, evidence, resources) {
   };
 }
 
+// Pools de narrativa por etapa y variante. La variante (seed determinista por
+// fecha+título) elige un juego distinto de titulares/apoyos para que dos piezas
+// consecutivas de la misma etapa no salgan clónicas.
+const TOFU_POOL = [
+  {
+    mechanism: ["PARECE PEQUEÑO HASTA QUE LO SUMAS", "Los minutos sueltos terminan ocupando días."],
+    evidenceSupport: "Una señal para medir el problema con tus propios datos.",
+    consequence: ["EL COSTE NO LLEGA EN UNA FACTURA", "Aparece como retrasos, errores y trabajo importante que nunca empieza."],
+    recognition: ["MIRA DÓNDE SE REPITE", "Una semana basta para dejar de decidir por intuición.", ["Tareas que vuelven", "Interrupciones constantes", "Oportunidades sin respuesta"]],
+  },
+  {
+    mechanism: ["NO ES UN DÍA MALO. ES CADA DÍA", "Lo que se repite ya no es casualidad: es un patrón."],
+    evidenceSupport: "El dato existe. Falta compararlo con tu semana.",
+    consequence: ["LO QUE NO SE VE TAMBIÉN SE PAGA", "Horas, clientes y foco que se van sin dejar recibo."],
+    recognition: ["BUSCA EL PATRÓN EN TU SEMANA", "Sin apps. Una nota en el móvil vale.", ["Lo que solo haces tú", "Lo que espera tu visto bueno", "Lo que nadie apunta"]],
+  },
+  {
+    mechanism: ["EL PROBLEMA NO GRITA. GOTEA", "Cada goteo pequeño acaba vaciando la semana."],
+    evidenceSupport: "Pon esta cifra al lado de tu agenda real.",
+    consequence: ["NADIE TE COBRA POR PERDER TIEMPO", "Por eso no lo apuntas. Y por eso sigue pasando."],
+    recognition: ["SEÑALES DE QUE YA TE PASA", "Si marcas dos de tres, hay algo que ordenar.", ["Respondes lo mismo cada día", "Todo pasa por tu móvil", "El papeleo espera al finde"]],
+  },
+];
+
+const MOFU_POOL = [
+  {
+    mechanism: ["NO EMPIECES POR LA HERRAMIENTA", "Primero localiza la tarea que vuelve cada semana."],
+    evidenceSupport: "Una señal para medir el problema con tus propios datos.",
+    method: ["MÍDELO DURANTE SIETE DÍAS", "No necesitas montar un sistema complicado.", ["Qué tarea se repite", "Cuánto tarda de verdad", "Qué error o retraso provoca"]],
+    decision: ["NO TODO SE DEBE AUTOMATIZAR", "Ordena primero. Automatiza solo lo repetible y medible."],
+  },
+  {
+    mechanism: ["EL ORDEN VA ANTES QUE EL ROBOT", "Automatizar el caos solo lo hace más rápido."],
+    evidenceSupport: "El dato existe. Falta compararlo con tu semana.",
+    method: ["EL MÉTODO CABE EN UNA NOTA", "Siete días apuntando. Nada más.", ["Apunta cada tarea repetida", "Suma el tiempo real", "Marca lo que puede funcionar solo"]],
+    decision: ["AUTOMATIZA LO REPETIBLE", "Lo que necesita criterio se queda contigo."],
+  },
+  {
+    mechanism: ["PRIMERO ENTIENDE. LUEGO AUTOMATIZA", "Sin proceso claro, la herramienta estorba."],
+    evidenceSupport: "Pon esta cifra al lado de tu agenda real.",
+    method: ["TRES PREGUNTAS ANTES DE AUTOMATIZAR", "Respóndelas con datos, no de memoria.", ["¿Se repite igual cada vez?", "¿Necesita juicio humano?", "¿Qué pasa si se retrasa?"]],
+    decision: ["LA HERRAMIENTA ES LO ÚLTIMO", "Si el proceso no está claro, ningún robot lo arregla."],
+  },
+];
+
+const BOFU_POOL = [
+  {
+    objection: ["SEGUIR IGUAL TAMBIÉN TIENE UN PRECIO", "Pon una cifra al problema antes de descartarlo."],
+    evidenceSupport: "Una señal para medir el problema con tus propios datos.",
+    decision: ["TRES COSAS QUE MIRARÍA PRIMERO", "Sin una auditoría interminable.", ["Volumen real", "Coste mensual", "Casos que requieren persona"]],
+  },
+  {
+    objection: ["NO DECIDIR YA ES UNA DECISIÓN", "Y también se paga, aunque no llegue factura."],
+    evidenceSupport: "El dato existe. Falta compararlo con tu semana.",
+    decision: ["QUÉ MIRARÍA EN TU CASO", "Media hora da para esto.", ["Dónde pierdes tiempo", "Qué se puede ordenar ya", "Qué no toca automatizar"]],
+  },
+  {
+    objection: ["EL RIESGO NO ES PROBAR. ES SEGUIR ASÍ", "Compara los dos costes antes de elegir."],
+    evidenceSupport: "Pon esta cifra al lado de tu agenda real.",
+    decision: ["ASÍ EMPIEZA UN DIAGNÓSTICO SERIO", "Datos concretos, sin humo.", ["Tu volumen real", "Tu coste al mes", "Lo que sigue en manos humanas"]],
+  },
+];
+
+const SYNTHESIS_POOL = [
+  ["LA HERRAMIENTA VIENE DESPUÉS", "La decisión empieza con tus propios números."],
+  ["PRIMERO NÚMEROS. LUEGO DECISIÓN", "Con los datos delante, elegir es fácil."],
+  ["EL ORDEN ES LA MITAD DEL TRABAJO", "La otra mitad ya se puede delegar."],
+];
+
 function buildNarrative({ post, evidence, cta, variant }) {
   const title = shortHeadline(post.title);
   const primary = evidence[0]?.claim || post.brief.split(".")[0];
-  const source = evidence[0]?.source || "fuente verificada en sources.json";
   const metric = metricFrom(primary);
   const stage = String(post.stage).toUpperCase();
-  const middle = stage === "TOFU"
-    ? [
-        slide("mechanism", pick(["flow", "split"], variant), "PARECE PEQUEÑO HASTA QUE LO SUMAS", "Los minutos sueltos terminan ocupando días."),
-        slide("evidence", "gauge", shortEvidence(primary), "Una señal para medir el problema con tus propios datos.", { metric }),
-        slide("consequence", pick(["split", "flow"], variant + 1), "EL COSTE NO LLEGA EN UNA FACTURA", "Aparece como retrasos, errores y trabajo importante que nunca empieza."),
-        slide("recognition", "checklist", "MIRA DÓNDE SE REPITE", "Una semana basta para dejar de decidir por intuición.", { items: ["Tareas que vuelven", "Interrupciones constantes", "Oportunidades sin respuesta"] }),
-      ]
-    : stage === "MOFU"
-      ? [
-          slide("mechanism", pick(["flow", "split"], variant), "NO EMPIECES POR LA HERRAMIENTA", "Primero localiza la tarea que vuelve cada semana."),
-          slide("evidence", "gauge", shortEvidence(primary), "Una señal para medir el problema con tus propios datos.", { metric }),
-          slide("method", "checklist", "MÍDELO DURANTE SIETE DÍAS", "No necesitas montar un sistema complicado.", { items: ["Qué tarea se repite", "Cuánto tarda de verdad", "Qué error o retraso provoca"] }),
-          slide("decision", pick(["split", "flow"], variant + 1), "NO TODO SE DEBE AUTOMATIZAR", "Ordena primero. Automatiza solo lo repetible y medible."),
-        ]
-      : [
-          slide("objection", pick(["split", "flow"], variant), "SEGUIR IGUAL TAMBIÉN TIENE UN PRECIO", "Pon una cifra al problema antes de descartarlo."),
-          slide("evidence", "gauge", shortEvidence(primary), "Una señal para medir el problema con tus propios datos.", { metric }),
-          slide("decision", "checklist", "TRES COSAS QUE MIRARÍA PRIMERO", "Sin una auditoría interminable.", { items: ["Volumen real", "Coste mensual", "Casos que requieren persona"] }),
-        ];
+
+  let middle;
+  if (stage === "TOFU") {
+    const pool = TOFU_POOL[variant];
+    middle = [
+      slide("mechanism", pick(["flow", "split"], variant), pool.mechanism[0], pool.mechanism[1]),
+      slide("evidence", "gauge", evidenceHeadline(primary), pool.evidenceSupport, { metric }),
+      slide("consequence", pick(["split", "flow"], variant + 1), pool.consequence[0], pool.consequence[1]),
+      slide("recognition", "checklist", pool.recognition[0], pool.recognition[1], { items: pool.recognition[2] }),
+    ];
+  } else if (stage === "MOFU") {
+    const pool = MOFU_POOL[variant];
+    middle = [
+      slide("mechanism", pick(["flow", "split"], variant), pool.mechanism[0], pool.mechanism[1]),
+      slide("evidence", "gauge", evidenceHeadline(primary), pool.evidenceSupport, { metric }),
+      slide("method", "checklist", pool.method[0], pool.method[1], { items: pool.method[2] }),
+      slide("decision", pick(["split", "flow"], variant + 1), pool.decision[0], pool.decision[1]),
+    ];
+  } else {
+    const pool = BOFU_POOL[variant];
+    middle = [
+      slide("objection", pick(["split", "flow"], variant), pool.objection[0], pool.objection[1]),
+      slide("evidence", "gauge", evidenceHeadline(primary), pool.evidenceSupport, { metric }),
+      slide("decision", "checklist", pool.decision[0], pool.decision[1], { items: pool.decision[2] }),
+    ];
+  }
 
   const hook = buildHook(post, title, primary, variant);
   const slides = [hook, ...middle];
-  if (stage === "BOFU" || (stage === "MOFU" && variant !== 2)) slides.push(slide("synthesis", "gauge", "LA HERRAMIENTA VIENE DESPUÉS", "La decisión empieza con tus propios números.", { metric: "ORDEN" }));
+  if (stage === "BOFU" || (stage === "MOFU" && variant !== 2)) {
+    const synth = SYNTHESIS_POOL[variant];
+    slides.push(slide("synthesis", "gauge", synth[0], synth[1], { metric: "ORDEN" }));
+  }
   const usedConcepts = slides.map(item => item.visualConcept);
-  slides.push(slide("cta", "cta-minimal", cta.headline, cta.support, { ctaType: cta.type, keyword: cta.keyword, action: cta.action, visualConcept:"comment-bubble", primaryVisualCount:1, avoidConcepts:usedConcepts, maxTextBlocks:2 }));
+  const scene = CTA_SCENES[cta.type] || CTA_SCENES.conversation;
+  slides.push(slide("cta", "cta-minimal", cta.headline, cta.support, {
+    ctaType: cta.type, keyword: cta.keyword, action: cta.action,
+    visualConcept: scene.concept, visualDirection: scene.direction,
+    primaryVisualCount: 1, avoidConcepts: usedConcepts, maxTextBlocks: 2,
+  }));
   return slides.map((item, index) => ({ ...item, number: index + 1, visualVariant: variant }));
 }
 
@@ -105,12 +217,54 @@ function disruptiveVisual(post,variant){const value=`${post.title} ${post.brief}
 function conceptFor(role,layout){if(role==="method")return "measurement-fields";if(role==="evidence")return "metric-gauge";if(role==="synthesis")return "summary-metric";return `${role}-${layout}`}
 function pick(values, index) { return values[Math.abs(index) % values.length]; }
 function inferKeyword(post) { return /llamad|coste|calcul|papeleo|tiempo|fuga/i.test(`${post.title} ${post.brief}`) ? "CÁLCULO" : "RECURSO"; }
-function hookSupport(post, primary) { return String(post.stage).toUpperCase() === "TOFU" ? evidenceSentence(primary) : "Antes de automatizar, descubre qué está consumiendo tu tiempo."; }
-function evidenceSentence(value) {
-  const first = String(value).split(/(?<=[.!?:])\s+/)[0].trim().replace(/[:;,]$/, ".");
-  const words = first.split(/\s+/);
-  const trimmed = words.length > 16 ? words.slice(0, 16).join(" ") + "…" : first;
-  return /[.!?…]$/.test(trimmed) ? trimmed : `${trimmed}.`;
+
+// El subtítulo de portada: si la estrategia trae uno escrito a mano (campo .s),
+// se usa tal cual. Solo si falta se deriva de la evidencia, recortando en un
+// conector natural -- nunca con puntos suspensivos, que acaban impresos en el PNG.
+function hookSupport(post, primary) {
+  if (post.sub) return post.sub;
+  if (String(post.stage).toUpperCase() === "TOFU") return cleanSentence(primary);
+  return "Antes de automatizar, descubre qué está consumiendo tu tiempo.";
+}
+
+const CONNECTORS = new Set(["en", "pero", "aunque", "porque", "para", "y", "e", "o", "u", "mientras", "cuando", "si"]);
+const TRAILING_STOPWORDS = new Set(["de", "del", "la", "las", "el", "los", "un", "una", "unos", "unas", "que", "y", "o", "u", "a", "al", "en", "con", "por", "para", "su", "sus", "se", "es", "son", "dice", "dicen", "como"]);
+
+function trimAtConnector(words, max) {
+  if (words.length <= max) return words;
+  for (let i = Math.min(words.length, max + 1) - 1; i >= 5; i--) {
+    if (CONNECTORS.has(words[i].toLowerCase())) return words.slice(0, i);
+  }
+  return words.slice(0, max);
+}
+function stripTrailingStopwords(words) {
+  const out = [...words];
+  while (out.length > 4 && TRAILING_STOPWORDS.has(out.at(-1).toLowerCase().replace(/[.,;:]+$/, ""))) out.pop();
+  return out;
+}
+function cleanSentence(value) {
+  const first = String(value).split(/(?<=[.!?:])\s+/)[0].trim().replace(/[:;,]+$/, "");
+  let words = trimAtConnector(first.split(/\s+/), 14);
+  words = stripTrailingStopwords(words);
+  const text = words.join(" ").replace(/[:;,]+$/, "");
+  return /[.!?]$/.test(text) ? text : `${text}.`;
+}
+// Titular de la slide de evidencia: intenta cortar justo después de la métrica
+// (queda una frase completa con el dato al final); si el prefijo no da una frase
+// razonable, recorta en conector. Nunca deja puntos suspensivos ni palabra colgante.
+function evidenceHeadline(value) {
+  // Los paréntesis aclaratorios alargan el titular sin aportar en una slide de dato.
+  const str = String(value).replace(/\s*\([^)]*\)/g, "").replace(/\s+/g, " ").replace(/[.!?]+$/, "").trim();
+  const metricMatch = str.match(/\d+\s+de\s+cada\s+\d+|\d+[\d.,]*\s*(?:%|€|euros?|h(?:oras?)?|días?)/iu);
+  if (metricMatch) {
+    const end = metricMatch.index + metricMatch[0].length;
+    const prefix = str.slice(0, end).trim();
+    const count = prefix.split(/\s+/).length;
+    if (count >= 7 && count <= 14 && prefix.length <= 72) return prefix.toUpperCase();
+  }
+  let words = trimAtConnector(str.split(/\s+/), 11);
+  words = stripTrailingStopwords(words);
+  return words.join(" ").replace(/[:;,]+$/, "").toUpperCase().slice(0, 72).trim();
 }
 function metricFrom(value) {
   const str = String(value);
@@ -119,6 +273,9 @@ function metricFrom(value) {
   const unit = str.match(/(?:\d+[\d.,]*\s*(?:%|€|euros?|h(?:oras?)?|días?))/iu);
   return unit?.[0] || "MÍDELO";
 }
+function dayOfYear(dateStr) {
+  const d = new Date(`${dateStr}T12:00:00`);
+  return Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 86400000);
+}
 function slugify(value) { return value.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
 function shortHeadline(value) { const first = String(value).split(/[.!?]/)[0].trim(); return (first.length <= 62 ? first : first.split(/\s+/).slice(0, 9).join(" ")).toUpperCase(); }
-function shortEvidence(value) { const words = String(value).split(/\s+/); return (words.length > 11 ? words.slice(0, 11).join(" ") : value).toUpperCase(); }

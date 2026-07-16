@@ -70,8 +70,8 @@
       "title": "Te vas dos semanas y todo se para",
       "date": "2026-07-15",
       "status": "BLOCKED",
-      "started_at": "2026-07-16T18:36:20.234Z",
-      "completed_at": "2026-07-16T18:36:22.604Z",
+      "started_at": "2026-07-16T19:44:14.640Z",
+      "completed_at": "2026-07-16T19:44:17.036Z",
       "stage": "TOFU",
       "cta": {
         "type": "save",
@@ -102,8 +102,8 @@
       "title": "Solo 1 de cada 8 negocios pequeños usa IA",
       "date": "2026-07-17",
       "status": "BLOCKED",
-      "started_at": "2026-07-16T18:37:37.505Z",
-      "completed_at": "2026-07-16T18:37:39.894Z",
+      "started_at": "2026-07-16T19:44:17.095Z",
+      "completed_at": "2026-07-16T19:44:19.525Z",
       "stage": "TOFU",
       "cta": {
         "type": "conversation",
