@@ -6,18 +6,18 @@ Los PNG van a `outputs/2026-07-27_que-delegar-a-una-ia-y-que-no/final/` con el n
 ## Slide 1 · hook → `final/slide-01.png`
 
 ```
-PORTADA (hook) -- slide 1/6 de "Qué delegar a una IA y qué no"
+PORTADA del carrusel "Qué delegar a una IA y qué no".
 
 FORMATO: 1080x1350 px, relación 4:5, formato retrato para carrusel de Instagram.
 PALETA: fondo blanco o gris casi blanco (#F7F7F5 / #FFFFFF), tinta negra (#090909), acento naranja #FF4B0B. Sin otros colores dominantes.
 
-ESTILO DE RENDER (idéntico en toda la pieza):
+ESTILO DE RENDER:
 - Objetos y personajes en 3D tipo producto premium: plástico blanco brillante con reflejos suaves, detalles en naranja #FF4B0B, juntas oscuras visibles en el robot.
 - Iluminación de estudio suave y envolvente (softbox), sombras de contacto difusas bajo cada objeto, sin sombras duras ni luz dramática.
 - Cámara a la altura del objeto con ligera perspectiva; profundidad de campo sutil que mantiene el texto perfectamente nítido.
 - Los objetos 3D proyectan sombra sobre el fondo claro para asentarse en la escena; nada flota sin sombra.
 
-MOBILIARIO DE MARCA (obligatorio en cada slide, siempre igual):
+MOBILIARIO DE MARCA:
 - Arriba a la izquierda: tres guiones naranjas cortos en diagonal y, debajo, el chip de etiqueta (borde fino naranja, esquinas redondeadas, texto naranja en mayúsculas con tracking amplio).
 - Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).
 - Arriba a la derecha: el asterisco/spark de marca en naranja.
@@ -30,18 +30,18 @@ TIPOGRAFÍA:
 - Apoyo: sans humanista regular, negro, tamaño claramente menor, máximo 2 líneas, debajo del titular.
 - El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.
 
-TITULAR (texto exacto a renderizar en la imagen): "QUÉ DELEGAR A UNA IA Y QUÉ NO"
-APOYO (texto exacto, más pequeño): "Lo repetitivo puede funcionar solo. Lo que decide, contigo."
-ETIQUETA SUPERIOR del chip (adaptativa -- nunca "DATO 01" fijo): "MIRA ESTO"
-RESALTADO DE MARCA (obligatorio, sin excepción): el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.
+TITULAR: "QUÉ DELEGAR A UNA IA Y QUÉ NO"
+APOYO (texto más pequeño, debajo del titular): "Lo repetitivo puede funcionar solo. Lo que decide, contigo."
+ETIQUETA SUPERIOR del chip: "MIRA ESTO"
+RESALTADO DE MARCA: el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.
 
-COMPOSICIÓN (portada -- máxima fidelidad a la referencia):
+COMPOSICIÓN DE PORTADA:
 - Titular arriba a la izquierda, robot de marca expresivo a la derecha, objeto explicativo 3D abajo a la izquierda, consecuencia visual integrada. Una sola escena, no elementos sueltos.
-- Dirección de escena concreta: Mantén la composición de referencia: robot protagonista a la derecha y una única escena 3D inferior que muestra una llamada atendida mientras el dueño no está.
+- Mantén la composición de referencia: robot protagonista a la derecha y una única escena 3D inferior que muestra una llamada atendida mientras el dueño no está.
 - El robot vive el conflicto del post (persigue, sufre, sostiene, transforma) -- nunca decoración pasiva al lado de otro visual.
 - Un solo visual principal. No acumular tarjetas + cifras + robot + monedas + explicaciones a la vez.
-- Debe cumplirse: disruptiva, relevante, comprensible en menos de 2 segundos.
-- PROHIBIDO: isolated object, giant centered concept, cinematic poster, multiple unrelated cards, infographic cover, decorative robot, different robot identity, different visual language.
+- La portada debe ser disruptiva, relevante y comprensible en menos de 2 segundos.
+- No incluir: isolated object, giant centered concept, cinematic poster, multiple unrelated cards, infographic cover, decorative robot, different robot identity, different visual language.
 
 REFERENCIA ADJUNTA: se adjuntan imágenes del carrusel de ejemplo de recursos/carrusel/ junto a este prompt. Sigue su estilo exacto (tipografía, materiales 3D, iluminación, mobiliario de marca) para esta slide.
 GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA slide, no un collage ni una cuadrícula con varias slides juntas, aunque el carrusel de referencia muestre varias a la vez.
@@ -52,18 +52,18 @@ Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, si
 ## Slide 2 · mechanism → `final/slide-02.png`
 
 ```
-SLIDE INTERIOR -- slide 2/6 de "Qué delegar a una IA y qué no"
+SLIDE INTERIOR del carrusel "Qué delegar a una IA y qué no".
 
 FORMATO: 1080x1350 px, relación 4:5, formato retrato para carrusel de Instagram.
 PALETA: fondo blanco o gris casi blanco (#F7F7F5 / #FFFFFF), tinta negra (#090909), acento naranja #FF4B0B. Sin otros colores dominantes.
 
-ESTILO DE RENDER (idéntico en toda la pieza):
+ESTILO DE RENDER:
 - Objetos y personajes en 3D tipo producto premium: plástico blanco brillante con reflejos suaves, detalles en naranja #FF4B0B, juntas oscuras visibles en el robot.
 - Iluminación de estudio suave y envolvente (softbox), sombras de contacto difusas bajo cada objeto, sin sombras duras ni luz dramática.
 - Cámara a la altura del objeto con ligera perspectiva; profundidad de campo sutil que mantiene el texto perfectamente nítido.
 - Los objetos 3D proyectan sombra sobre el fondo claro para asentarse en la escena; nada flota sin sombra.
 
-MOBILIARIO DE MARCA (obligatorio en cada slide, siempre igual):
+MOBILIARIO DE MARCA:
 - Arriba a la izquierda: tres guiones naranjas cortos en diagonal y, debajo, el chip de etiqueta (borde fino naranja, esquinas redondeadas, texto naranja en mayúsculas con tracking amplio).
 - Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).
 - Arriba a la derecha: el asterisco/spark de marca en naranja.
@@ -76,12 +76,12 @@ TIPOGRAFÍA:
 - Apoyo: sans humanista regular, negro, tamaño claramente menor, máximo 2 líneas, debajo del titular.
 - El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.
 
-TITULAR (texto exacto a renderizar en la imagen): "PRIMERO ENTIENDE. LUEGO AUTOMATIZA"
-APOYO (texto exacto, más pequeño): "Sin proceso claro, la herramienta estorba."
-ETIQUETA SUPERIOR del chip (adaptativa -- nunca "DATO 01" fijo): "QUÉ PASA"
-RESALTADO DE MARCA (obligatorio, sin excepción): el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.
+TITULAR: "PRIMERO ENTIENDE. LUEGO AUTOMATIZA"
+APOYO (texto más pequeño, debajo del titular): "Sin proceso claro, la herramienta estorba."
+ETIQUETA SUPERIOR del chip: "QUÉ PASA"
+RESALTADO DE MARCA: el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.
 
-COMPOSICIÓN (layout de referencia interna: flow):
+COMPOSICIÓN:
 - Tres tarjetas blancas redondeadas en fila horizontal, cada una con un objeto 3D físico dentro (no iconos planos: un reloj de mesa, una pila de papeles, un calendario de sobremesa, un teléfono... el que mejor cuente cada paso) y una palabra corta de etiqueta debajo del objeto, en negro.
 - Flechas naranjas 3D con volumen conectando las tarjetas de izquierda a derecha.
 - La secuencia debe leerse como causa -> acumulación -> consecuencia sin leer el titular.
@@ -96,18 +96,18 @@ Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, si
 ## Slide 3 · evidence → `final/slide-03.png`
 
 ```
-SLIDE INTERIOR -- slide 3/6 de "Qué delegar a una IA y qué no"
+SLIDE INTERIOR del carrusel "Qué delegar a una IA y qué no".
 
 FORMATO: 1080x1350 px, relación 4:5, formato retrato para carrusel de Instagram.
 PALETA: fondo blanco o gris casi blanco (#F7F7F5 / #FFFFFF), tinta negra (#090909), acento naranja #FF4B0B. Sin otros colores dominantes.
 
-ESTILO DE RENDER (idéntico en toda la pieza):
+ESTILO DE RENDER:
 - Objetos y personajes en 3D tipo producto premium: plástico blanco brillante con reflejos suaves, detalles en naranja #FF4B0B, juntas oscuras visibles en el robot.
 - Iluminación de estudio suave y envolvente (softbox), sombras de contacto difusas bajo cada objeto, sin sombras duras ni luz dramática.
 - Cámara a la altura del objeto con ligera perspectiva; profundidad de campo sutil que mantiene el texto perfectamente nítido.
 - Los objetos 3D proyectan sombra sobre el fondo claro para asentarse en la escena; nada flota sin sombra.
 
-MOBILIARIO DE MARCA (obligatorio en cada slide, siempre igual):
+MOBILIARIO DE MARCA:
 - Arriba a la izquierda: tres guiones naranjas cortos en diagonal y, debajo, el chip de etiqueta (borde fino naranja, esquinas redondeadas, texto naranja en mayúsculas con tracking amplio).
 - Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).
 - Arriba a la derecha: el asterisco/spark de marca en naranja.
@@ -120,12 +120,12 @@ TIPOGRAFÍA:
 - Apoyo: sans humanista regular, negro, tamaño claramente menor, máximo 2 líneas, debajo del titular.
 - El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.
 
-TITULAR (texto exacto a renderizar en la imagen): "EL 21,1% DE LAS EMPRESAS ESPAÑOLAS DE 10"
-APOYO (texto exacto, más pequeño): "Pon esta cifra al lado de tu agenda real."
-ETIQUETA SUPERIOR del chip (adaptativa -- nunca "DATO 01" fijo): "DATO CLAVE"
-RESALTADO DE MARCA (obligatorio, sin excepción): pinta en naranja #FF4B0B únicamente el fragmento "21,1%" dentro del titular o del apoyo, tal y como aparece en el texto. El resto del texto va en tinta negra #090909. No resaltes ninguna otra palabra ni cifra, y no dejes el titular completo en un solo color.
+TITULAR: "EL 21,1% DE LAS EMPRESAS ESPAÑOLAS DE 10"
+APOYO (texto más pequeño, debajo del titular): "Pon esta cifra al lado de tu agenda real."
+ETIQUETA SUPERIOR del chip: "DATO CLAVE"
+RESALTADO DE MARCA: pinta en naranja #FF4B0B únicamente el fragmento "21,1%" dentro del titular o del apoyo, tal y como aparece en el texto. El resto del texto va en tinta negra #090909. No resaltes ninguna otra palabra ni cifra, y no dejes el titular completo en un solo color.
 
-COMPOSICIÓN (layout de referencia interna: gauge):
+COMPOSICIÓN:
 - Un medidor semicircular 3D grande y protagonista: carcasa blanca con volumen, tramo final del arco en naranja, aguja naranja gruesa apuntando a la zona alta.
 - Encajada en la base del medidor, una tarjeta blanca con la cifra clave en tipografía enorme y negra, y una unidad o comparación pequeña debajo.
 - El medidor descansa sobre el suelo con sombra suave; puede asomar el robot de marca por un lateral mirando la cifra con expresión preocupada, pequeño, sin robar protagonismo.
@@ -141,18 +141,18 @@ Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, si
 ## Slide 4 · method → `final/slide-04.png`
 
 ```
-SLIDE INTERIOR -- slide 4/6 de "Qué delegar a una IA y qué no"
+SLIDE INTERIOR del carrusel "Qué delegar a una IA y qué no".
 
 FORMATO: 1080x1350 px, relación 4:5, formato retrato para carrusel de Instagram.
 PALETA: fondo blanco o gris casi blanco (#F7F7F5 / #FFFFFF), tinta negra (#090909), acento naranja #FF4B0B. Sin otros colores dominantes.
 
-ESTILO DE RENDER (idéntico en toda la pieza):
+ESTILO DE RENDER:
 - Objetos y personajes en 3D tipo producto premium: plástico blanco brillante con reflejos suaves, detalles en naranja #FF4B0B, juntas oscuras visibles en el robot.
 - Iluminación de estudio suave y envolvente (softbox), sombras de contacto difusas bajo cada objeto, sin sombras duras ni luz dramática.
 - Cámara a la altura del objeto con ligera perspectiva; profundidad de campo sutil que mantiene el texto perfectamente nítido.
 - Los objetos 3D proyectan sombra sobre el fondo claro para asentarse en la escena; nada flota sin sombra.
 
-MOBILIARIO DE MARCA (obligatorio en cada slide, siempre igual):
+MOBILIARIO DE MARCA:
 - Arriba a la izquierda: tres guiones naranjas cortos en diagonal y, debajo, el chip de etiqueta (borde fino naranja, esquinas redondeadas, texto naranja en mayúsculas con tracking amplio).
 - Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).
 - Arriba a la derecha: el asterisco/spark de marca en naranja.
@@ -165,12 +165,12 @@ TIPOGRAFÍA:
 - Apoyo: sans humanista regular, negro, tamaño claramente menor, máximo 2 líneas, debajo del titular.
 - El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.
 
-TITULAR (texto exacto a renderizar en la imagen): "TRES PREGUNTAS ANTES DE AUTOMATIZAR"
-APOYO (texto exacto, más pequeño): "Respóndelas con datos, no de memoria."
-ETIQUETA SUPERIOR del chip (adaptativa -- nunca "DATO 01" fijo): "MÉTODO"
-RESALTADO DE MARCA (obligatorio, sin excepción): el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.
+TITULAR: "TRES PREGUNTAS ANTES DE AUTOMATIZAR"
+APOYO (texto más pequeño, debajo del titular): "Respóndelas con datos, no de memoria."
+ETIQUETA SUPERIOR del chip: "MÉTODO"
+RESALTADO DE MARCA: el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.
 
-COMPOSICIÓN (layout de referencia interna: checklist):
+COMPOSICIÓN:
 - Tres tarjetas-fila blancas apiladas en vertical con sombra suave, cada una con un check circular naranja 3D con volumen a la izquierda y el texto del ítem en negro.
 - Las tarjetas tienen profundidad real (grosor visible) y una ligera separación entre sí; ninguna decoración extra dentro.
 - Textos exactos de los ítems, uno por tarjeta y en este orden: "¿Se repite igual cada vez?", "¿Necesita juicio humano?", "¿Qué pasa si se retrasa?".
@@ -185,18 +185,18 @@ Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, si
 ## Slide 5 · decision → `final/slide-05.png`
 
 ```
-SLIDE INTERIOR -- slide 5/6 de "Qué delegar a una IA y qué no"
+SLIDE INTERIOR del carrusel "Qué delegar a una IA y qué no".
 
 FORMATO: 1080x1350 px, relación 4:5, formato retrato para carrusel de Instagram.
 PALETA: fondo blanco o gris casi blanco (#F7F7F5 / #FFFFFF), tinta negra (#090909), acento naranja #FF4B0B. Sin otros colores dominantes.
 
-ESTILO DE RENDER (idéntico en toda la pieza):
+ESTILO DE RENDER:
 - Objetos y personajes en 3D tipo producto premium: plástico blanco brillante con reflejos suaves, detalles en naranja #FF4B0B, juntas oscuras visibles en el robot.
 - Iluminación de estudio suave y envolvente (softbox), sombras de contacto difusas bajo cada objeto, sin sombras duras ni luz dramática.
 - Cámara a la altura del objeto con ligera perspectiva; profundidad de campo sutil que mantiene el texto perfectamente nítido.
 - Los objetos 3D proyectan sombra sobre el fondo claro para asentarse en la escena; nada flota sin sombra.
 
-MOBILIARIO DE MARCA (obligatorio en cada slide, siempre igual):
+MOBILIARIO DE MARCA:
 - Arriba a la izquierda: tres guiones naranjas cortos en diagonal y, debajo, el chip de etiqueta (borde fino naranja, esquinas redondeadas, texto naranja en mayúsculas con tracking amplio).
 - Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).
 - Arriba a la derecha: el asterisco/spark de marca en naranja.
@@ -209,12 +209,12 @@ TIPOGRAFÍA:
 - Apoyo: sans humanista regular, negro, tamaño claramente menor, máximo 2 líneas, debajo del titular.
 - El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.
 
-TITULAR (texto exacto a renderizar en la imagen): "LA HERRAMIENTA ES LO ÚLTIMO"
-APOYO (texto exacto, más pequeño): "Si el proceso no está claro, ningún robot lo arregla."
-ETIQUETA SUPERIOR del chip (adaptativa -- nunca "DATO 01" fijo): "DECISIÓN"
-RESALTADO DE MARCA (obligatorio, sin excepción): el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.
+TITULAR: "LA HERRAMIENTA ES LO ÚLTIMO"
+APOYO (texto más pequeño, debajo del titular): "Si el proceso no está claro, ningún robot lo arregla."
+ETIQUETA SUPERIOR del chip: "DECISIÓN"
+RESALTADO DE MARCA: el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.
 
-COMPOSICIÓN (layout de referencia interna: flow):
+COMPOSICIÓN:
 - Tres tarjetas blancas redondeadas en fila horizontal, cada una con un objeto 3D físico dentro (no iconos planos: un reloj de mesa, una pila de papeles, un calendario de sobremesa, un teléfono... el que mejor cuente cada paso) y una palabra corta de etiqueta debajo del objeto, en negro.
 - Flechas naranjas 3D con volumen conectando las tarjetas de izquierda a derecha.
 - La secuencia debe leerse como causa -> acumulación -> consecuencia sin leer el titular.
@@ -229,18 +229,18 @@ Arte final en PNG, sin marcas de agua, sin texto adicional no listado arriba, si
 ## Slide 6 · cta → `final/slide-06.png`
 
 ```
-CIERRE (CTA) -- slide 6/6 de "Qué delegar a una IA y qué no"
+CIERRE del carrusel "Qué delegar a una IA y qué no".
 
 FORMATO: 1080x1350 px, relación 4:5, formato retrato para carrusel de Instagram.
 PALETA: fondo blanco o gris casi blanco (#F7F7F5 / #FFFFFF), tinta negra (#090909), acento naranja #FF4B0B. Sin otros colores dominantes.
 
-ESTILO DE RENDER (idéntico en toda la pieza):
+ESTILO DE RENDER:
 - Objetos y personajes en 3D tipo producto premium: plástico blanco brillante con reflejos suaves, detalles en naranja #FF4B0B, juntas oscuras visibles en el robot.
 - Iluminación de estudio suave y envolvente (softbox), sombras de contacto difusas bajo cada objeto, sin sombras duras ni luz dramática.
 - Cámara a la altura del objeto con ligera perspectiva; profundidad de campo sutil que mantiene el texto perfectamente nítido.
 - Los objetos 3D proyectan sombra sobre el fondo claro para asentarse en la escena; nada flota sin sombra.
 
-MOBILIARIO DE MARCA (obligatorio en cada slide, siempre igual):
+MOBILIARIO DE MARCA:
 - Arriba a la izquierda: tres guiones naranjas cortos en diagonal y, debajo, el chip de etiqueta (borde fino naranja, esquinas redondeadas, texto naranja en mayúsculas con tracking amplio).
 - Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).
 - Arriba a la derecha: el asterisco/spark de marca en naranja.
@@ -253,19 +253,19 @@ TIPOGRAFÍA:
 - Apoyo: sans humanista regular, negro, tamaño claramente menor, máximo 2 líneas, debajo del titular.
 - El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.
 
-TITULAR (texto exacto a renderizar en la imagen): "COMENTA RECURSO"
-APOYO (texto exacto, más pequeño): "Te envío la hoja."
-ETIQUETA SUPERIOR del chip (adaptativa -- nunca "DATO 01" fijo): "TU TURNO"
-RESALTADO DE MARCA (obligatorio, sin excepción): pinta en naranja #FF4B0B únicamente el fragmento "Comenta RECURSO" dentro del titular o del apoyo, tal y como aparece en el texto. El resto del texto va en tinta negra #090909. No resaltes ninguna otra palabra ni cifra, y no dejes el titular completo en un solo color.
+TITULAR: "COMENTA RECURSO"
+APOYO (texto más pequeño, debajo del titular): "Te envío la hoja."
+ETIQUETA SUPERIOR del chip: "TU TURNO"
+RESALTADO DE MARCA: pinta en naranja #FF4B0B únicamente el fragmento "Comenta RECURSO" dentro del titular o del apoyo, tal y como aparece en el texto. El resto del texto va en tinta negra #090909. No resaltes ninguna otra palabra ni cifra, y no dejes el titular completo en un solo color.
 
-COMPOSICIÓN (cierre -- el robot protagoniza la acción, no un icono suelto):
-- Escena concreta: El robot de marca entrega al lector una hoja/plantilla 3D blanca con cabecera naranja, inclinada hacia la cámara. Debajo, un botón pill naranja con la palabra clave exacta en mayúsculas.
-- El robot de marca aparece ENTERO, expresivo, ejecutando o invitando a la acción del CTA. Un icono gigante sin robot está prohibido: queda plano y muerto.
+COMPOSICIÓN DE CIERRE:
+- El robot de marca entrega al lector una hoja/plantilla 3D blanca con cabecera naranja, inclinada hacia la cámara. Debajo, un botón pill naranja con la palabra clave exacta en mayúsculas.
+- El robot de marca aparece ENTERO, expresivo, ejecutando o invitando a la acción del CTA. No uses un icono gigante sin robot: queda plano y muerto.
 - Máximo 2 bloques de texto (titular + apoyo). La acción va dentro de la escena como botón pill naranja 3D, no como tercer bloque de texto suelto.
-- No repetir calculadoras, medidores, listas ni objetos explicativos ya usados en slides anteriores de esta misma pieza.
-- Acción exacta a mostrar en el botón pill: "Comenta RECURSO".
-- Si el CTA es de palabra clave, mostrar literalmente "RECURSO" en mayúsculas y qué recibe la persona.
-- Recuerda: en esta slide final NO aparece el botón de flecha de abajo a la derecha (no hay más slides).
+- No repitas calculadoras, medidores, listas ni objetos explicativos ya usados en slides anteriores de esta misma pieza.
+- Texto exacto del botón pill: "Comenta RECURSO".
+- Muestra literalmente "RECURSO" en mayúsculas y qué recibe la persona.
+- En esta slide NO aparece el botón de flecha de abajo a la derecha.
 
 REFERENCIA ADJUNTA: se adjuntan imágenes del carrusel de ejemplo de recursos/carrusel/ junto a este prompt. Sigue su estilo exacto (tipografía, materiales 3D, iluminación, mobiliario de marca) para esta slide.
 GENERACIÓN: esta es UNA slide independiente. Genera una única imagen para ESTA slide, no un collage ni una cuadrícula con varias slides juntas, aunque el carrusel de referencia muestre varias a la vez.

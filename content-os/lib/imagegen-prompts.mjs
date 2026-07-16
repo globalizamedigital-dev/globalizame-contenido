@@ -12,7 +12,7 @@ const FORMAT = "1080x1350 px, relación 4:5, formato retrato para carrusel de In
 // Sistema de render: la calidad profesional sale de fijar material, luz y cámara,
 // no de dejar que el generador improvise en cada slide.
 const RENDER_STYLE = [
-  "ESTILO DE RENDER (idéntico en toda la pieza):",
+  "ESTILO DE RENDER:",
   "- Objetos y personajes en 3D tipo producto premium: plástico blanco brillante con reflejos suaves, detalles en naranja #FF4B0B, juntas oscuras visibles en el robot.",
   "- Iluminación de estudio suave y envolvente (softbox), sombras de contacto difusas bajo cada objeto, sin sombras duras ni luz dramática.",
   "- Cámara a la altura del objeto con ligera perspectiva; profundidad de campo sutil que mantiene el texto perfectamente nítido.",
@@ -23,7 +23,7 @@ const RENDER_STYLE = [
 // Se especifican explícitamente porque, si no, el generador los pone a veces sí
 // y a veces no, y el carrusel pierde consistencia.
 const BRAND_FURNITURE = [
-  "MOBILIARIO DE MARCA (obligatorio en cada slide, siempre igual):",
+  "MOBILIARIO DE MARCA:",
   "- Arriba a la izquierda: tres guiones naranjas cortos en diagonal y, debajo, el chip de etiqueta (borde fino naranja, esquinas redondeadas, texto naranja en mayúsculas con tracking amplio).",
   "- Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).",
   "- Arriba a la derecha: el asterisco/spark de marca en naranja.",
@@ -49,8 +49,8 @@ const REFERENCE_NOTE = [
 ].join("\n");
 
 function slideKindLabel(slide) {
-  if (slide.role === "hook") return "PORTADA (hook)";
-  if (slide.role === "cta") return "CIERRE (CTA)";
+  if (slide.role === "hook") return "PORTADA";
+  if (slide.role === "cta") return "CIERRE";
   return "SLIDE INTERIOR";
 }
 
@@ -103,7 +103,7 @@ const LAYOUT_SCENES = {
 
 function composePrompt(slide, spec, index, total) {
   const lines = [];
-  lines.push(`${slideKindLabel(slide)} -- slide ${index + 1}/${total} de "${spec.title}"`);
+  lines.push(`${slideKindLabel(slide)} del carrusel "${spec.title}".`);
   lines.push("");
   lines.push(`FORMATO: ${FORMAT}`);
   lines.push(`PALETA: ${PALETTE}`);
@@ -114,38 +114,38 @@ function composePrompt(slide, spec, index, total) {
   lines.push("");
   lines.push(TYPOGRAPHY);
   lines.push("");
-  lines.push(`TITULAR (texto exacto a renderizar en la imagen): "${slide.headline}"`);
-  if (slide.support) lines.push(`APOYO (texto exacto, más pequeño): "${slide.support}"`);
-  if (slide.eyebrow) lines.push(`ETIQUETA SUPERIOR del chip (adaptativa -- nunca "DATO 01" fijo): "${slide.eyebrow}"`);
+  lines.push(`TITULAR: "${slide.headline}"`);
+  if (slide.support) lines.push(`APOYO (texto más pequeño, debajo del titular): "${slide.support}"`);
+  if (slide.eyebrow) lines.push(`ETIQUETA SUPERIOR del chip: "${slide.eyebrow}"`);
   const highlight = highlightFragment(slide);
   const highlightInText = highlight && `${slide.headline || ""} ${slide.support || ""}`.toLowerCase().includes(String(highlight).toLowerCase());
   if (highlightInText) {
-    lines.push(`RESALTADO DE MARCA (obligatorio, sin excepción): pinta en naranja #FF4B0B únicamente el fragmento "${highlight}" dentro del titular o del apoyo, tal y como aparece en el texto. El resto del texto va en tinta negra #090909. No resaltes ninguna otra palabra ni cifra, y no dejes el titular completo en un solo color.`);
+    lines.push(`RESALTADO DE MARCA: pinta en naranja #FF4B0B únicamente el fragmento "${highlight}" dentro del titular o del apoyo, tal y como aparece en el texto. El resto del texto va en tinta negra #090909. No resaltes ninguna otra palabra ni cifra, y no dejes el titular completo en un solo color.`);
   } else {
-    lines.push("RESALTADO DE MARCA (obligatorio, sin excepción): el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.");
+    lines.push("RESALTADO DE MARCA: el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.");
   }
   lines.push("");
 
   if (slide.role === "hook") {
-    lines.push("COMPOSICIÓN (portada -- máxima fidelidad a la referencia):");
+    lines.push("COMPOSICIÓN DE PORTADA:");
     lines.push("- Titular arriba a la izquierda, robot de marca expresivo a la derecha, objeto explicativo 3D abajo a la izquierda, consecuencia visual integrada. Una sola escena, no elementos sueltos.");
-    if (slide.visualDirection) lines.push(`- Dirección de escena concreta: ${slide.visualDirection}`);
+    if (slide.visualDirection) lines.push(`- ${slide.visualDirection}`);
     lines.push("- El robot vive el conflicto del post (persigue, sufre, sostiene, transforma) -- nunca decoración pasiva al lado de otro visual.");
     lines.push("- Un solo visual principal. No acumular tarjetas + cifras + robot + monedas + explicaciones a la vez.");
-    lines.push("- Debe cumplirse: disruptiva, relevante, comprensible en menos de 2 segundos.");
+    lines.push("- La portada debe ser disruptiva, relevante y comprensible en menos de 2 segundos.");
     const forbidden = slide.forbiddenElements || [];
-    if (forbidden.length) lines.push(`- PROHIBIDO: ${forbidden.join(", ")}.`);
+    if (forbidden.length) lines.push(`- No incluir: ${forbidden.join(", ")}.`);
   } else if (slide.role === "cta") {
-    lines.push("COMPOSICIÓN (cierre -- el robot protagoniza la acción, no un icono suelto):");
-    if (slide.visualDirection) lines.push(`- Escena concreta: ${slide.visualDirection}`);
-    lines.push("- El robot de marca aparece ENTERO, expresivo, ejecutando o invitando a la acción del CTA. Un icono gigante sin robot está prohibido: queda plano y muerto.");
+    lines.push("COMPOSICIÓN DE CIERRE:");
+    if (slide.visualDirection) lines.push(`- ${slide.visualDirection}`);
+    lines.push("- El robot de marca aparece ENTERO, expresivo, ejecutando o invitando a la acción del CTA. No uses un icono gigante sin robot: queda plano y muerto.");
     lines.push("- Máximo 2 bloques de texto (titular + apoyo). La acción va dentro de la escena como botón pill naranja 3D, no como tercer bloque de texto suelto.");
-    lines.push("- No repetir calculadoras, medidores, listas ni objetos explicativos ya usados en slides anteriores de esta misma pieza.");
-    if (slide.action) lines.push(`- Acción exacta a mostrar en el botón pill: "${slide.action}".`);
-    if (slide.keyword) lines.push(`- Si el CTA es de palabra clave, mostrar literalmente "${slide.keyword}" en mayúsculas y qué recibe la persona.`);
-    lines.push("- Recuerda: en esta slide final NO aparece el botón de flecha de abajo a la derecha (no hay más slides).");
+    lines.push("- No repitas calculadoras, medidores, listas ni objetos explicativos ya usados en slides anteriores de esta misma pieza.");
+    if (slide.action) lines.push(`- Texto exacto del botón pill: "${slide.action}".`);
+    if (slide.keyword) lines.push(`- Muestra literalmente "${slide.keyword}" en mayúsculas y qué recibe la persona.`);
+    lines.push("- En esta slide NO aparece el botón de flecha de abajo a la derecha.");
   } else {
-    lines.push(`COMPOSICIÓN (layout de referencia interna: ${slide.layout}):`);
+    lines.push("COMPOSICIÓN:");
     for (const line of LAYOUT_SCENES[slide.layout] || []) lines.push(line);
     if (slide.items?.length) lines.push(`- Textos exactos de los ítems, uno por tarjeta y en este orden: ${slide.items.map(i => `"${i}"`).join(", ")}.`);
     if (slide.metric && slide.layout === "gauge") lines.push(`- Cifra exacta a mostrar en grande dentro de la tarjeta del medidor: "${slide.metric}".`);
