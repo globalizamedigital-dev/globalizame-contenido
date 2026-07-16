@@ -22,7 +22,7 @@ MOBILIARIO DE MARCA:
 - Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).
 - Arriba a la derecha: el asterisco/spark de marca en naranja.
 - Retícula de puntos grises muy sutil en una o dos esquinas.
-- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha (indica que hay más slides). En la ÚLTIMA slide (CTA) este botón NO aparece.
+- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha. En la slide de cierre este botón NO aparece.
 - NO incluir ningún contador de slide (nada de "1/6", "2/6", números de página ni círculo con número) en ninguna esquina.
 
 TIPOGRAFÍA:
@@ -31,7 +31,7 @@ TIPOGRAFÍA:
 - El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.
 
 TITULAR: "SOLO 1 DE CADA 8 NEGOCIOS PEQUEÑOS USA IA"
-APOYO (texto más pequeño, debajo del titular): "El negocio pequeño es justo el que menos la aprovecha."
+APOYO, debajo del titular en texto más pequeño: "El negocio pequeño es justo el que menos la aprovecha."
 ETIQUETA SUPERIOR del chip: "DATO CLAVE"
 RESALTADO DE MARCA: pinta en naranja #FF4B0B únicamente el fragmento "1 DE CADA 8" dentro del titular o del apoyo, tal y como aparece en el texto. El resto del texto va en tinta negra #090909. No resaltes ninguna otra palabra ni cifra, y no dejes el titular completo en un solo color.
 
@@ -68,7 +68,7 @@ MOBILIARIO DE MARCA:
 - Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).
 - Arriba a la derecha: el asterisco/spark de marca en naranja.
 - Retícula de puntos grises muy sutil en una o dos esquinas.
-- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha (indica que hay más slides). En la ÚLTIMA slide (CTA) este botón NO aparece.
+- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha. En la slide de cierre este botón NO aparece.
 - NO incluir ningún contador de slide (nada de "1/6", "2/6", números de página ni círculo con número) en ninguna esquina.
 
 TIPOGRAFÍA:
@@ -77,7 +77,7 @@ TIPOGRAFÍA:
 - El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.
 
 TITULAR: "PARECE PEQUEÑO HASTA QUE LO SUMAS"
-APOYO (texto más pequeño, debajo del titular): "Los minutos sueltos terminan ocupando días."
+APOYO, debajo del titular en texto más pequeño: "Los minutos sueltos terminan ocupando días."
 ETIQUETA SUPERIOR del chip: "QUÉ PASA"
 RESALTADO DE MARCA: el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.
 
@@ -112,7 +112,7 @@ MOBILIARIO DE MARCA:
 - Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).
 - Arriba a la derecha: el asterisco/spark de marca en naranja.
 - Retícula de puntos grises muy sutil en una o dos esquinas.
-- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha (indica que hay más slides). En la ÚLTIMA slide (CTA) este botón NO aparece.
+- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha. En la slide de cierre este botón NO aparece.
 - NO incluir ningún contador de slide (nada de "1/6", "2/6", números de página ni círculo con número) en ninguna esquina.
 
 TIPOGRAFÍA:
@@ -121,7 +121,7 @@ TIPOGRAFÍA:
 - El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.
 
 TITULAR: "ENTRE LAS MICROEMPRESAS EL USO DE IA SUBE AL 13,4%"
-APOYO (texto más pequeño, debajo del titular): "Una señal para medir el problema con tus propios datos."
+APOYO, debajo del titular en texto más pequeño: "Una señal para medir el problema con tus propios datos."
 ETIQUETA SUPERIOR del chip: "DATO CLAVE"
 RESALTADO DE MARCA: pinta en naranja #FF4B0B únicamente el fragmento "13,4%" dentro del titular o del apoyo, tal y como aparece en el texto. El resto del texto va en tinta negra #090909. No resaltes ninguna otra palabra ni cifra, y no dejes el titular completo en un solo color.
 
@@ -157,7 +157,7 @@ MOBILIARIO DE MARCA:
 - Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).
 - Arriba a la derecha: el asterisco/spark de marca en naranja.
 - Retícula de puntos grises muy sutil en una o dos esquinas.
-- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha (indica que hay más slides). En la ÚLTIMA slide (CTA) este botón NO aparece.
+- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha. En la slide de cierre este botón NO aparece.
 - NO incluir ningún contador de slide (nada de "1/6", "2/6", números de página ni círculo con número) en ninguna esquina.
 
 TIPOGRAFÍA:
@@ -166,7 +166,7 @@ TIPOGRAFÍA:
 - El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.
 
 TITULAR: "EL COSTE NO LLEGA EN UNA FACTURA"
-APOYO (texto más pequeño, debajo del titular): "Aparece como retrasos, errores y trabajo importante que nunca empieza."
+APOYO, debajo del titular en texto más pequeño: "Aparece como retrasos, errores y trabajo importante que nunca empieza."
 ETIQUETA SUPERIOR del chip: "EL COSTE"
 RESALTADO DE MARCA: el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.
 
@@ -201,7 +201,7 @@ MOBILIARIO DE MARCA:
 - Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).
 - Arriba a la derecha: el asterisco/spark de marca en naranja.
 - Retícula de puntos grises muy sutil en una o dos esquinas.
-- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha (indica que hay más slides). En la ÚLTIMA slide (CTA) este botón NO aparece.
+- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha. En la slide de cierre este botón NO aparece.
 - NO incluir ningún contador de slide (nada de "1/6", "2/6", números de página ni círculo con número) en ninguna esquina.
 
 TIPOGRAFÍA:
@@ -210,7 +210,7 @@ TIPOGRAFÍA:
 - El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.
 
 TITULAR: "MIRA DÓNDE SE REPITE"
-APOYO (texto más pequeño, debajo del titular): "Una semana basta para dejar de decidir por intuición."
+APOYO, debajo del titular en texto más pequeño: "Una semana basta para dejar de decidir por intuición."
 ETIQUETA SUPERIOR del chip: "DETECTA"
 RESALTADO DE MARCA: el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.
 
@@ -245,7 +245,7 @@ MOBILIARIO DE MARCA:
 - Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).
 - Arriba a la derecha: el asterisco/spark de marca en naranja.
 - Retícula de puntos grises muy sutil en una o dos esquinas.
-- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha (indica que hay más slides). En la ÚLTIMA slide (CTA) este botón NO aparece.
+- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha. En la slide de cierre este botón NO aparece.
 - NO incluir ningún contador de slide (nada de "1/6", "2/6", números de página ni círculo con número) en ninguna esquina.
 
 TIPOGRAFÍA:
@@ -254,7 +254,7 @@ TIPOGRAFÍA:
 - El texto siempre por encima de la escena 3D, nunca superpuesto a objetos que lo tapen.
 
 TITULAR: "¿DÓNDE SE TE VA EL TIEMPO?"
-APOYO (texto más pequeño, debajo del titular): "Cuéntamelo en comentarios."
+APOYO, debajo del titular en texto más pequeño: "Cuéntamelo en comentarios."
 ETIQUETA SUPERIOR del chip: "TU TURNO"
 RESALTADO DE MARCA: el titular y el apoyo van completos en tinta negra #090909, sin ningún fragmento en naranja. El naranja de esta slide vive en la escena 3D y el mobiliario de marca, no en el texto.
 

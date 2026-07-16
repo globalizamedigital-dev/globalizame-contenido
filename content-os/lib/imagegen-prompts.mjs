@@ -28,7 +28,7 @@ const BRAND_FURNITURE = [
   "- Arriba, hacia el centro-derecha: una línea técnica naranja fina con un punto al final (motivo de circuito).",
   "- Arriba a la derecha: el asterisco/spark de marca en naranja.",
   "- Retícula de puntos grises muy sutil en una o dos esquinas.",
-  "- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha (indica que hay más slides). En la ÚLTIMA slide (CTA) este botón NO aparece.",
+  "- Abajo a la derecha: botón pill con borde naranja y flecha naranja a la derecha. En la slide de cierre este botón NO aparece.",
   "- NO incluir ningún contador de slide (nada de \"1/6\", \"2/6\", números de página ni círculo con número) en ninguna esquina.",
 ].join("\n");
 
@@ -115,7 +115,7 @@ function composePrompt(slide, spec, index, total) {
   lines.push(TYPOGRAPHY);
   lines.push("");
   lines.push(`TITULAR: "${slide.headline}"`);
-  if (slide.support) lines.push(`APOYO (texto más pequeño, debajo del titular): "${slide.support}"`);
+  if (slide.support) lines.push(`APOYO, debajo del titular en texto más pequeño: "${slide.support}"`);
   if (slide.eyebrow) lines.push(`ETIQUETA SUPERIOR del chip: "${slide.eyebrow}"`);
   const highlight = highlightFragment(slide);
   const highlightInText = highlight && `${slide.headline || ""} ${slide.support || ""}`.toLowerCase().includes(String(highlight).toLowerCase());
