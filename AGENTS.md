@@ -18,6 +18,12 @@ API para loops -- todo va por suscripción o queda bloqueado hasta que un humano
 a mano. Si un agente sin capacidad de imagen llega al paso de arte, escribe los prompts
 y se detiene ahí; no inventa que generó imágenes.
 
+El único paso manual de todo el ciclo es: Mario genera los PNG con GPT Images 2.0
+pegando los bloques de `imagegen-prompts.md` y los suelta en `inbox/`. A partir de ahí
+la skill `publicador` (Claude o Codex) hace ingest, reseña visual, QA, cola de
+publicación y programación en Metricool sin intervención humana adicional. Ver
+"Publicación" más abajo.
+
 ## Forma de trabajo
 
 Este proyecto funciona bajo demanda. No usa rutinas, cron ni tareas programadas.
@@ -26,9 +32,12 @@ El usuario inicia cada trabajo escribiendo uno de estos comandos en Codex:
 - `$investigador`: actualiza la investigación y el calendario mensual en `recursos/`.
 - `$productor`: produce la siguiente pieza completa y la deja en `outputs/`.
 - `$lead-magnet`: crea o mejora el recurso asociado a una pieza.
+- `$publicador`: ingiere los PNG de `inbox/`, hace la reseña visual, valida y
+  programa el borrador en Metricool.
 
 En Claude Code, los mismos comandos existen como skills en `.claude/skills/`
-(`investigador`, `productor`, `lead-magnet`, `content-loop`), con el mismo contrato.
+(`investigador`, `productor`, `lead-magnet`, `publicador`, `content-loop`), con el
+mismo contrato.
 
 Cada comando debe terminar su ciclo completo sin pedir confirmaciones intermedias,
 salvo el paso de generación de imagen si el agente en turno no tiene esa capacidad.
@@ -40,6 +49,8 @@ salvo el paso de generación de imagen si el agente en turno no tiene esa capaci
 - `.claude/skills/`: mismos comandos y contratos, formato Claude Code.
 - `content-os/`: motor, validadores, panel y estado (compartido por ambos agentes).
 - `outputs/`: piezas terminadas y trazabilidad.
+- `inbox/`: bandeja de entrada de PNG generados con GPT Images 2.0, gitignored. Único
+  paso manual del ciclo; `publicador` la vacía en cada ejecución.
 
 No se deben crear carpetas paralelas para investigación, estrategia o posts.
 
@@ -57,9 +68,21 @@ No se deben crear carpetas paralelas para investigación, estrategia o posts.
   nunca API de pago. El SVG de `content-os/lib/render.mjs` es maqueta interna, jamás
   arte final.
 - El estilo visual se toma de `recursos/carrusel/`.
-- El modo de publicación siempre es `draft`.
+- El modo de publicación siempre es `draft` -- también en Metricool: se programa como
+  borrador, nunca se publica directo. Mario aprueba dentro de Metricool.
 - El ciclo solo termina con QA aprobado y todos los archivos obligatorios, incluidos
   los PNG finales reales y `imagegen.json` con las reseñas visuales.
+
+## Publicación (Metricool)
+
+`content-os/lib/queue.mjs` mantiene `content-os/state/publish-queue.json`: el contrato
+determinista entre el motor (que no toca la red) y el paso de publicación (que sí).
+Cada pieza `APPROVED` en `outputs/` entra a la cola con sus dos copys y las rutas de
+`final/*.png`. La skill `publicador` es quien llama al MCP de Metricool
+(`https://ai.metricool.com/mcp`, instalado con `claude mcp add --scope user`, auth por
+`METRICOOL_USER_TOKEN`/`METRICOOL_USER_ID`) para programar el borrador. Si el MCP no
+está conectado, el pipeline se detiene ahí sin perder trabajo -- ingest, reseña y QA ya
+quedaron hechos.
 
 ## Git
 

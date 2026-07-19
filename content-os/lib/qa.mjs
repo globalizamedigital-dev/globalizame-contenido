@@ -104,4 +104,4 @@ export function validateRun(runDir, spec, copies) {
   return report;
 }
 
-function readPngSize(file){const data=fs.readFileSync(file);if(data.length<24||data.toString("ascii",1,4)!=="PNG")return null;return {width:data.readUInt32BE(16),height:data.readUInt32BE(20)}}
+export function readPngSize(file){const data=fs.readFileSync(file);if(data.length<24||data.toString("ascii",1,4)!=="PNG")return null;return {width:data.readUInt32BE(16),height:data.readUInt32BE(20)}}

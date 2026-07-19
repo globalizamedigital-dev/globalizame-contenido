@@ -9,6 +9,8 @@ import { validateRun } from "./lib/qa.mjs";
 import { buildLeadMagnet } from "./lib/lead-magnet.mjs";
 import { applyMechanicalFilter } from "./lib/humanize.mjs";
 import { planRemainingStages, existingPostsBefore } from "./lib/calendar-plan.mjs";
+import { ingestInbox } from "./lib/ingest.mjs";
+import { buildQueue } from "./lib/queue.mjs";
 
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
 const command=process.argv[2]||"run";
@@ -21,6 +23,8 @@ try{
   else if(command==="run")console.log(JSON.stringify(run(date),null,2));
   else if(command==="validate")console.log(JSON.stringify(validateLatest(),null,2));
   else if(command==="status")console.log(fs.readFileSync(path.join(ROOT,"content-os/state/state.json"),"utf8"));
+  else if(command==="ingest")console.log(JSON.stringify(ingestInbox(ROOT),null,2));
+  else if(command==="queue")console.log(JSON.stringify(buildQueue(ROOT),null,2));
   else throw new Error(`Comando desconocido: ${command}`);
 }catch(error){console.error(JSON.stringify({status:"BLOCKED",error:error.message,code:error.code,violations:error.violations},null,2));process.exit(1)}
 

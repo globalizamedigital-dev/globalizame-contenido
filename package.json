@@ -8,6 +8,8 @@
     "content:plan": "node content-os/cli.mjs plan",
     "content:plan-calendar": "node content-os/cli.mjs plan-calendar",
     "content:validate": "node content-os/cli.mjs validate",
+    "content:ingest": "node content-os/cli.mjs ingest",
+    "content:queue": "node content-os/cli.mjs queue",
     "content:serve": "node content-os/server.mjs",
     "panel:build": "node content-os/build-public-panel.mjs",
     "test": "node --test content-os/tests/*.test.mjs"
