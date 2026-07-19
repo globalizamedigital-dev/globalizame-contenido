@@ -10,6 +10,7 @@
     "content:validate": "node content-os/cli.mjs validate",
     "content:ingest": "node content-os/cli.mjs ingest",
     "content:queue": "node content-os/cli.mjs queue",
+    "content:manifest": "node content-os/cli.mjs manifest",
     "content:serve": "node content-os/server.mjs",
     "panel:build": "node content-os/build-public-panel.mjs",
     "test": "node --test content-os/tests/*.test.mjs"
