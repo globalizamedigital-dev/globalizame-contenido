@@ -73,16 +73,31 @@ No se deben crear carpetas paralelas para investigación, estrategia o posts.
 - El ciclo solo termina con QA aprobado y todos los archivos obligatorios, incluidos
   los PNG finales reales y `imagegen.json` con las reseñas visuales.
 
-## Publicación (Metricool)
+## Publicación
 
-`content-os/lib/queue.mjs` mantiene `content-os/state/publish-queue.json`: el contrato
-determinista entre el motor (que no toca la red) y el paso de publicación (que sí).
-Cada pieza `APPROVED` en `outputs/` entra a la cola con sus dos copys y las rutas de
-`final/*.png`. La skill `publicador` es quien llama al MCP de Metricool
-(`https://ai.metricool.com/mcp`, instalado con `claude mcp add --scope user`, auth por
-`METRICOOL_USER_TOKEN`/`METRICOOL_USER_ID`) para programar el borrador. Si el MCP no
-está conectado, el pipeline se detiene ahí sin perder trabajo -- ingest, reseña y QA ya
-quedaron hechos.
+Dos vías al mismo resultado (borrador en Metricool). `content-os/lib/queue.mjs`
+mantiene `content-os/state/publish-queue.json` y `content-os/lib/manifest.mjs`
+mantiene `content-os/state/publish-manifest.json` -- ambos contratos deterministas
+entre el motor (que no toca la red) y el paso de publicación (que sí).
+
+**Vía A -- Google Drive + n8n (principal, sin agente abierto).** Mario sube los PNG a
+`Contenido/inbox/` en Drive. El workflow n8n `contenido-publicador`
+(`https://n8n.globalizame.cloud/workflow/TXuPZ3Z7muYtBRAJ`) lee
+`publish-manifest.json` vía GitHub raw, valida el lote, hace QA visual con Gemini
+(gratis) y archiva en `Contenido/publicado/` o `Contenido/revision/`, notificando por
+Telegram. No programa en Metricool directamente: el plan gratis de Metricool solo
+expone MCP (conectado a Claude), no la API HTTP que n8n necesitaría. El paso final es
+pedirle a Claude Code "programa las piezas listas en Metricool".
+
+**Vía B -- local con `inbox/` del repo (respaldo).** Cada pieza `APPROVED` en
+`outputs/` entra a `publish-queue.json` con sus dos copys y las rutas de
+`final/*.png`. La skill `publicador` llama al MCP de Metricool
+(`https://ai.metricool.com/mcp`, instalado con `claude mcp add --scope user`) para
+programar el borrador.
+
+En ambas vías, el modo de publicación siempre es `draft: true` -- Mario aprueba
+dentro de Metricool. Brand: `mario.globalizame`, blogId `6581580`, timezone
+`Europe/Madrid`.
 
 ## Git
 
