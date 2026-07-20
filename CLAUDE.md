@@ -21,7 +21,43 @@ detiene ahí (`WAITING_ON_IMAGE_GENERATION`). Mario genera los PNG con GPT
 Images 2.0 pegando cada bloque -- nunca vía API de pago -- y los suelta en
 `inbox/`.
 
-## El único paso manual: `inbox/`
+## El único paso manual: subir PNG a una carpeta
+
+Hay dos vías, misma idea (soltar los PNG generados con GPT Images 2.0 en una
+carpeta), distinto sitio según si Mario está delante del PC o no.
+
+### Vía A -- Google Drive + n8n (automática de verdad)
+
+Mario sube los PNG a `Contenido/inbox/` en Google Drive (desde el PC o el
+móvil). El workflow `contenido-publicador` en n8n (id `TXuPZ3Z7muYtBRAJ`,
+https://n8n.globalizame.cloud/workflow/TXuPZ3Z7muYtBRAJ) hace el resto solo,
+sin que nadie abra Claude Code:
+
+1. Detecta el archivo nuevo, espera 90s a que termine de subirse el lote
+   completo, lista `inbox/`.
+2. Lee `content-os/state/publish-manifest.json` vía GitHub raw (pieza
+   pendiente más antigua, `slide_count`, captions, `slide_headlines`).
+3. Si el nº de PNG no coincide con `slide_count`, no toca nada y avisa por
+   Telegram que el lote está incompleto.
+4. Si coincide, descarga los PNG, valida dimensiones 1080x1350 (mismo
+   criterio que `readPngSize` de `qa.mjs`, portado a JS del nodo).
+5. QA visual con Gemini (`models/gemini-2.0-flash`, gratis): compara los
+   títulos reales de cada slide contra `slide_headlines` del manifest, revisa
+   que no haya contador de página y que el estilo (paleta blanco/negro/naranja,
+   tipografía) sea consistente.
+6. Aprobado → sube los PNG a `Contenido/publicado/`, notifica por Telegram
+   que la pieza está lista para programar. Rechazado → sube a
+   `Contenido/revision/` con el motivo, notifica para regenerar.
+7. Borra los originales de `inbox/`.
+
+El paso de Metricool queda fuera del workflow n8n a propósito: el plan
+gratis de Metricool solo da MCP (conectado a esta sesión de Claude), no la
+API HTTP que necesitaría n8n para llamar directo. Cuando llega la
+notificación de "lista para programar", basta con decirle a Claude Code
+*"programa las piezas listas en Metricool"* y lo hace vía MCP
+(`createScheduledPost`, `draft: true`, blogId `6581580`).
+
+### Vía B -- local con `inbox/` del repo (respaldo, requiere Claude Code abierto)
 
 Cuando Mario tiene los PNG generados, los suelta todos juntos en `inbox/`
 (cualquier nombre, se ordenan alfabéticamente = orden de generación) y dice
@@ -38,13 +74,8 @@ Cuando Mario tiene los PNG generados, los suelta todos juntos en `inbox/`
 4. `npm run content:queue` mete la pieza en
    `content-os/state/publish-queue.json` con los dos copys y las rutas de
    imagen.
-5. Si el MCP de Metricool está conectado (`claude mcp list` debe mostrarlo),
-   se programa como **borrador** con `post_schedule_post`. Mario solo entra a
+5. Se programa como **borrador** en Metricool vía MCP. Mario solo entra a
    Metricool a aprobar.
-
-Si el MCP de Metricool todavía no está conectado, el pipeline llega hasta el
-paso 4 y avisa que faltan credenciales -- nada se pierde, se retoma en cuanto
-estén.
 
 ## Diagnóstico técnico
 
@@ -55,5 +86,6 @@ npm run content:run -- YYYY-MM-DD
 npm run content:validate
 npm run content:ingest
 npm run content:queue
+npm run content:manifest
 npm run content:serve
 ```
