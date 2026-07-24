@@ -21,7 +21,11 @@ Cierra el ciclo que deja abierto `content:run` en `WAITING_ON_IMAGE_GENERATION`.
    (regenerar la slide o corregir la reseña) -- nunca forzar el pase.
 4. Ejecutar `npm run content:queue` para meter la pieza `APPROVED` en
    `content-os/state/publish-queue.json`.
-5. Si el MCP de Metricool está conectado, programar el borrador de cada
+5. Antes de programar, verificar los copys de la pieza contra
+   `recursos/posicionamiento.md`; si violan el posicionamiento (protagonismo
+   de la IA, tono tutorial, pregunta de usuario de software), bloquear la
+   pieza y avisar — no programarla.
+6. Si el MCP de Metricool está conectado, programar el borrador de cada
    pieza `pending` con `post_schedule_post` (nunca publicación directa) y
    marcarla `scheduled` en la cola. Si no está conectado, avisar y parar ahí
    sin perder el trabajo ya hecho.

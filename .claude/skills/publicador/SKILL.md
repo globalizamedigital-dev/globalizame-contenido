@@ -82,6 +82,7 @@ aprobar el borrador dentro de Metricool.
 - Nunca marcar `imagegen.json` como aprobado sin haber leído las imágenes.
 - Nunca editar `spec.json` ni el copy para que el QA pase artificialmente.
 - Nunca programar en Metricool en modo publicación directa: siempre borrador.
+- Antes de programar, verificar los copys de la pieza contra `recursos/posicionamiento.md`; si violan el posicionamiento (protagonismo de la IA, tono tutorial, pregunta de usuario de software), la pieza se bloquea y se avisa a Mario — no se programa.
 - Si `inbox/` tiene más o menos PNG de los que pide la pieza pendiente, no
   intentar adivinar el reparto -- pedir a Mario que corrija el lote.
 - Un solo commit al final, igual que el resto de comandos del content-loop.

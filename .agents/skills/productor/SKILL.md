@@ -7,4 +7,4 @@ description: Comando manual para producir el siguiente carrusel completo de Glob
 
 Comando manual. No crear ni depender de tareas programadas.
 
-Usar `$content-loop` para elegir la siguiente pieza pendiente y terminarla en una sola ejecución. Pasar todo texto por `$humanizer`. Generar los PNG finales con GPT Image 2.0 en máxima calidad y referencias de `recursos/carrusel/`. No aceptar SVG como arte final. No insinuar clientes propios. Dejar el resultado en `outputs/` y en modo borrador.
+Antes de producir, verificar la pieza elegida (spec, copy y arte) contra `recursos/posicionamiento.md`; si se desvía, señalarlo y proponer la alternativa alineada antes de escribir nada. Usar `$content-loop` para elegir la siguiente pieza pendiente y terminarla en una sola ejecución. Pasar todo texto por `$humanizer`. Generar los PNG finales con GPT Image 2.0 en máxima calidad y referencias de `recursos/carrusel/`. No aceptar SVG como arte final. No insinuar clientes propios. Dejar el resultado en `outputs/` y en modo borrador.

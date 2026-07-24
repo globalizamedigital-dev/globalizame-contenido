@@ -11,7 +11,7 @@ Operar el motor determinista del repositorio. No duplicar reglas de `content-os/
 
 ## Ejecución
 
-1. Leer `content-os/system/SYSTEM_PROMPT.md` y `content-os/config.json`.
+1. Leer `content-os/system/SYSTEM_PROMPT.md`, `content-os/config.json` y `recursos/posicionamiento.md`. El posicionamiento es un gate: antes de producir, verificar que la pieza elegida responde a una pregunta de empresario (no de usuario de software), trata la IA como medio y no es tutorial/listado de herramientas/noticia. Si se desvía, señalarlo y proponer la alternativa alineada ANTES de implementar nada.
 2. Ejecutar `npm test` antes de la primera producción de una sesión.
 3. Ejecutar `npm run content:plan -- [YYYY-MM-DD]` para inspeccionar la pieza elegida.
 4. Ejecutar `npm run content:run -- [YYYY-MM-DD]` para producir el ciclo completo.
@@ -34,6 +34,7 @@ Operar el motor determinista del repositorio. No duplicar reglas de `content-os/
 ## Reglas
 
 - Usar exclusivamente `recursos/` como fuente editorial.
+- Tratar una violación de `recursos/posicionamiento.md` como bloqueo: la pieza no avanza hasta reformularse alineada (audiencia decisora, IA como medio, decisión sobre herramienta, atemporal).
 - No editar recursos para forzar una validación.
 - Tratar `FALSE_CLIENT_IMPLICATION` y `UNATTRIBUTED_RESULT` como bloqueos absolutos.
 - No prometer un lead magnet inexistente.
