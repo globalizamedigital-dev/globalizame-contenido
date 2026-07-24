@@ -1,5 +1,9 @@
 # Voz de Mario · Globalizame
 
+> La voz ejecuta el posicionamiento de `posicionamiento.md`: se habla a quien decide
+> en una empresa (fundador, gerente, directivo), sin usar la etiqueta "CEO" ni
+> anglicismos. El perfil es de decisor; el registro, de tú a tú.
+
 ## Quién habla
 
 Mario Ruiz. Fundador de Globalizame.  

@@ -56,6 +56,10 @@ No se deben crear carpetas paralelas para investigación, estrategia o posts.
 
 ## Reglas de producción
 
+- **Posicionamiento primero**: toda idea, recurso, prompt o pieza se verifica contra
+  `recursos/posicionamiento.md` (audiencia: decisores de empresa; la IA es medio,
+  nunca protagonista; decisiones, no herramientas; atemporal). Las desviaciones se
+  señalan antes de implementarse, con alternativa alineada si existe.
 - Globalizame no tiene clientes ni casos de éxito propios.
 - Todo resultado externo debe estar atribuido sin ambigüedad, y nunca al estilo nota de
   prensa ("según un informe de X recogido por Y") en el copy público -- se afirma el
