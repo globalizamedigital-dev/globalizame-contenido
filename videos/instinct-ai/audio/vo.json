@@ -1,0 +1,42 @@
+[
+ {
+  "file": "audio/vo/01.wav",
+  "dur": 3.624,
+  "text": "Una startup de inteligencia artificial acaba de levantar mil millones de dólares."
+ },
+ {
+  "file": "audio/vo/02.wav",
+  "dur": 3.036,
+  "text": "Ya vale diez mil millones. Hace un mes valía dos mil quinientos."
+ },
+ {
+  "file": "audio/vo/03.wav",
+  "dur": 2.07,
+  "text": "Se llama Instinct. Y no es otro chatbot."
+ },
+ {
+  "file": "audio/vo/04.wav",
+  "dur": 4.502,
+  "text": "Le escribes un mensaje, y lo hace por ti: con su propio teléfono y su propio ordenador."
+ },
+ {
+  "file": "audio/vo/05.wav",
+  "dur": 5.302,
+  "text": "Reserva restaurantes, hace la compra, cancela suscripciones que olvidaste… y hasta llama por ti para pedir citas."
+ },
+ {
+  "file": "audio/vo/06.wav",
+  "dur": 3.196,
+  "text": "El problema: casi nadie puede entrar. Solo con invitación."
+ },
+ {
+  "file": "audio/vo/07.wav",
+  "dur": 4.741,
+  "text": "Eso sí: accede a mucha información personal. Empieza poco a poco y revisa bien los permisos."
+ },
+ {
+  "file": "audio/vo/08.wav",
+  "dur": 2.111,
+  "text": "Comenta INSTINCT y te mando una invitación."
+ }
+]

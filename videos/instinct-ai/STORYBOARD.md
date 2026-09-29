@@ -1,33 +1,28 @@
-# Video: Instinct AI para dueños de negocio (Instagram, 9:16, ~55 s)
+# Video: Instinct AI (Instagram, 9:16, ~38 s) · v2
 
-**Idea única:** Instinct es un asistente personal que se conecta a tus apps y te da seguimiento sin que abras otra herramienta: le escribes o le llamas.
-**CTA:** Comenta INSTINCT y te mando [RECURSO POR DEFINIR].
-**Estilo:** pizarrón, paleta blanco/negro/naranja, mascota por defecto, solo efectos de sonido.
+**Idea única:** Instinct no es otro chatbot: le escribes y hace las cosas por ti. Todo el mundo lo quiere y casi nadie puede entrar.
+**CTA:** Comenta INSTINCT y te mando una invitación.
+**Estilo:** pizarrón con ritmo alto: sellos, números gigantes, onomatopeyas, voz en off (Piper `es_ES-davefx-medium`) y base de 128 BPM sintetizada (`beat.py`). Paleta #FF4B0B / #090909 / #F7F7F5.
 
-## Fuente única (instinct.com, leída hoy)
-- "Instinct is a personal assistant that understands what you're working on and what's important to you."
-- Se conecta a email, mensajería, pantalla, audio, ubicación y más.
-- "No new interfaces": se le escribe o se le llama; usa teléfono y computadora como una persona.
-- Ejemplos de la página: retomar hilos que dejaste, llamarte o escribirte de forma proactiva, organizar un ride al aeropuerto, contratar a un handyman.
-- Sin precios, cifras ni clientes en la página → el video no los menciona.
+## Fuentes verificadas (29-sep-2026)
+- TechCrunch, 28-sep-2026: Serie C de 1.000 M$ con valoración de 10.000 M$ (Sequoia, Benchmark, Coatue), un mes después de la valoración de 2.500 M$. Servicio por invitación lanzado en agosto de 2026. Usa su propio número de teléfono y su propio ordenador. Reservas de viajes y restaurantes, compras, pagar facturas, cancelar suscripciones, hacer la compra del súper. "Concierge" que hace llamadas por ti para pedir citas. Se comunica por SMS/texto y no tiene app. Hubo dudas sobre privacidad; la política se actualizó. https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/
+- TechCrunch, 26-ago-2026: Serie B de 250 M$, 350 M$ en total, valoración de 2.500 M$, beta privada, preocupaciones por los permisos. https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/
+- SiliconANGLE, 28-sep-2026: sigue en acceso anticipado; concierge telefónico para reservas, citas médicas y cancelaciones. https://siliconangle.com/2026/09/28/everyday-personal-ai-assistant-startup-instinct-raises-1b-at-10b-valuation/
+- instinct.com: se conecta a email, mensajería, pantalla, audio y ubicación; se le escribe o se le llama.
 
-## Escenas
-| # | Seg | Fondo · herramienta | Texto en pantalla | Mascota | Salida |
-|---|---|---|---|---|---|
-| 1 Hook | 0-4 | Negro · gis | "¿Cuántos correos dejaste sin responder esta semana?" | Se asoma entre una pila de sobres | Sobres caen |
-| 2 Problema | 4-13 | Papel blanco · plumón | "Eres dueño de negocio y todo depende de ti" + 3 tareas sueltas: seguimiento, llamadas, pendientes | Malabarea las tareas | Borrado |
-| 3 Giro | 13-20 | Naranja · sin herramienta (texto estampado) | "Y si existiera un asistente que ya sabe qué es importante para ti" | Sorprendida, saca un teléfono | Destello |
-| 4 Qué es | 20-30 | Cuadrícula · lápiz | "Instinct: asistente personal" + iconos email, mensajes, pantalla, audio, ubicación conectándose | Conecta cables a los iconos | Círculo de tinta |
-| 5 Sin app nueva | 30-38 | Blanco · pincel | "Sin interfaz nueva: le escribes o le llamas" (burbuja de chat + teléfono) | Manda un mensaje | Tarjeta se voltea |
-| 6 Ejemplos | 38-47 | Negro · plumón naranja | "Retoma hilos que dejaste · te escribe o llama primero · agenda cosas por ti" | Palomea cada punto | Barra se expande |
-| 7 Aviso | 47-50 | Blanco · texto tecleado | "Aún es un producto nuevo: revisa qué necesitas antes de confiarle tu negocio" | Neutra | Corte |
-| 8 CTA | 50-58 | Naranja · estampado | "Comenta **INSTINCT** y te mando [RECURSO]" + flecha al comentario | Señala abajo, salta | Fin storyboard |
+**Datos del post original que no se usan:** "350 M$ / 2.500 M$" (ya desactualizado) y "desde WhatsApp" (las fuentes dicen SMS/texto).
 
-## Hooks alternativos
-1. "¿Cuántos correos dejaste sin responder esta semana?" (propuesto)
-2. "Tu mejor empleado no debería ser tu bandeja de entrada."
-3. "Un asistente que te llama a ti para recordarte lo pendiente."
+## Guion (voz en off = texto en pantalla)
+| # | Fondo | Voz | En pantalla | Salida |
+|---|---|---|---|---|
+| 1 | Negro | Una startup de IA acaba de levantar mil millones de dólares. | Sello **$1.000M** + lluvia de billetes + ¡BOOM! | Destello |
+| 2 | Sunburst naranja | Ya vale diez mil millones. Hace un mes valía dos mil quinientos. | **$10.000M**, barras 2.500 → 10.000, **x4** | La barra se expande |
+| 3 | Negro | Se llama Instinct. Y no es otro chatbot. | INSTINCT + burbuja "otro chatbot" tachada | Borrador |
+| 4 | Blanco · plumón | Le escribes un mensaje, y lo hace por ti: con su propio teléfono y su propio ordenador. | Chat "Resérvame mesa para 4 el viernes", teléfono + ordenador | Hoja sube |
+| 5 | Cuaderno · lápiz | Reserva restaurantes, hace la compra, cancela suscripciones… y hasta llama por ti. | Checklist con ticks al ritmo + ¡RING! | Círculo de tinta |
+| 6 | Negro | El problema: casi nadie puede entrar. Solo con invitación. | Candado + sello SOLO CON INVITACIÓN | Tarjeta se voltea |
+| 7 | Blanco | Eso sí: accede a mucha información personal. Empieza poco a poco y revisa bien los permisos. | Texto tecleado + mascota preocupada → decidida | Zoom al ojo |
+| 8 | Sunburst naranja | Comenta INSTINCT y te mando una invitación. | Sello INSTINCT + flecha a comentarios (2,6 s de respiro) | Fin |
 
-## Pendiente
-- Recurso del CTA (propuestas: checklist "10 tareas de tu negocio que puedes delegar a un asistente IA"; plantilla de prompts de seguimiento a clientes; guía "qué revisar antes de conectar un asistente IA a tu correo").
-- Aprobar storyboard.
+## Antes de publicar
+- El CTA promete invitaciones: solo publicar si hay invitaciones reales para entregar (cada usuario tiene 5). Si se acaban, fijar un comentario avisándolo.

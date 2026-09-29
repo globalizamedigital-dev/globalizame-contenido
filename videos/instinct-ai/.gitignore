@@ -1,10 +1,11 @@
-node_modules/
-audio/_*
-_*.mp4
-stills/
-contact.jpg
-ffmpeg2pass*
 *.mp4
 .venv/
+_*.mp4
+audio/_*
+audio/vo/
+contact.jpg
+ffmpeg2pass*
 hits.json
+node_modules/
 sfx.json
+stills/
