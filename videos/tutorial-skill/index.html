@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>tutorial</title>
+<style>
+@font-face{font-family:"Inter Tight";font-weight:800;src:url(node_modules/@fontsource/inter-tight/files/inter-tight-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter Tight";font-weight:900;src:url(node_modules/@fontsource/inter-tight/files/inter-tight-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:500;src:url(node_modules/@fontsource/inter/files/inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:700;src:url(node_modules/@fontsource/inter/files/inter-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:800;src:url(node_modules/@fontsource/inter/files/inter-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:900;src:url(node_modules/@fontsource/inter/files/inter-latin-900-normal.woff2) format("woff2")}
+html,body{margin:0;height:100%;background:#111;overflow:hidden}
+canvas{display:block;margin:auto;max-height:100vh;max-width:100vw}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<!-- precarga de fuentes para que el primer fotograma ya las use -->
+<div style="position:absolute;opacity:0;font:900 10px 'Inter Tight'">a<b style="font:800 10px 'Inter Tight'">a</b><i style="font:500 10px Inter">a</i><i style="font:700 10px Inter">a</i><i style="font:800 10px Inter">a</i><i style="font:900 10px Inter">a</i></div>
+<script type="module" src="player.js"></script>
+</body>
+</html>

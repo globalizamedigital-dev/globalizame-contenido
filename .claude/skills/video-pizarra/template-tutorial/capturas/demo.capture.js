@@ -2,7 +2,7 @@
 export default {
   url: 'https://platform.claude.com/docs/en/home',
   viewport: { width: 1280, height: 1440 },   // alto > ancho: menos recorte en 9:16
-  scale: 1.5,                                // más píxeles = zoom nítido
+  scale: 1.5,                                // PNG de los pasos shot más nítidos
   steps: [
     { do: 'wait', ms: 1200 },
     { do: 'hover', sel: 'a:has-text("Get API key") >> nth=0', label: 'get-key' },

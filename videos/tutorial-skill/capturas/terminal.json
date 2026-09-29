@@ -1,0 +1,120 @@
+{
+ "name": "terminal",
+ "url": "http://localhost:4173",
+ "viewport": {
+  "width": 1080,
+  "height": 1440
+ },
+ "scale": 1,
+ "size": {
+  "w": 1080,
+  "h": 1440
+ },
+ "duration": 135.608,
+ "actions": [
+  {
+   "t": 1.241,
+   "type": "start",
+   "rect": null,
+   "label": "terminal"
+  },
+  {
+   "t": 2.926,
+   "type": "type",
+   "rect": {
+    "x": 60,
+    "y": 106,
+    "w": 990,
+    "h": 44
+   },
+   "label": "ls",
+   "zoom": true,
+   "text": "ls ~/.claude/skills/video-pizarra"
+  },
+  {
+   "t": 4.814,
+   "type": "press",
+   "rect": null,
+   "label": "press"
+  },
+  {
+   "t": 5.355,
+   "type": "mark",
+   "rect": {
+    "x": 28,
+    "y": 402,
+    "w": 1024,
+    "h": 42
+   },
+   "label": "skill",
+   "zoom": true
+  },
+  {
+   "t": 7.753,
+   "type": "type",
+   "rect": {
+    "x": 60,
+    "y": 484,
+    "w": 990,
+    "h": 44
+   },
+   "label": "capture",
+   "zoom": true,
+   "text": "node capture.mjs capturas/demo.capture.js"
+  },
+  {
+   "t": 9.9,
+   "type": "press",
+   "rect": null,
+   "label": "press"
+  },
+  {
+   "t": 28.404,
+   "type": "mark",
+   "rect": {
+    "x": 28,
+    "y": 780,
+    "w": 1024,
+    "h": 42
+   },
+   "label": "grabado",
+   "zoom": true
+  },
+  {
+   "t": 30.774,
+   "type": "type",
+   "rect": {
+    "x": 60,
+    "y": 862,
+    "w": 990,
+    "h": 44
+   },
+   "label": "build",
+   "zoom": true,
+   "text": "node build.mjs mi-tutorial"
+  },
+  {
+   "t": 32.427,
+   "type": "press",
+   "rect": null,
+   "label": "press"
+  },
+  {
+   "t": 127.571,
+   "type": "mark",
+   "rect": {
+    "x": 28,
+    "y": 1272,
+    "w": 1024,
+    "h": 84
+   },
+   "label": "listo",
+   "zoom": true
+  },
+  {
+   "t": 130.572,
+   "type": "end",
+   "rect": null
+  }
+ ]
+}

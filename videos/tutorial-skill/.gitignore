@@ -1,0 +1,16 @@
+node_modules/
+capturas/.frames/
+capturas/.rec/
+capturas/*-ERROR-*.png
+capturas/*-inspect.jpg
+audio/_*
+audio/vo/
+audio/lines.json
+stills/
+contact.jpg
+sfx.json
+*.mp4
+!capturas/*.mp4
+__pycache__/
+capturas/resultado-*.mp4
+capturas/*-inspect.jpg

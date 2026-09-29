@@ -7,68 +7,68 @@
  },
  "scale": 1.5,
  "size": {
-  "w": 1920,
-  "h": 2160
+  "w": 1280,
+  "h": 1440
  },
- "duration": 19.526,
+ "duration": 16.187,
  "actions": [
   {
-   "t": 3.452,
+   "t": 2.526,
    "type": "start",
    "rect": null,
    "label": "demo"
   },
   {
-   "t": 6.916,
+   "t": 5.137,
    "type": "hover",
    "rect": {
-    "x": 310,
-    "y": 683,
-    "w": 181,
-    "h": 48
+    "x": 207,
+    "y": 455,
+    "w": 121,
+    "h": 32
    },
    "label": "get-key",
    "zoom": true
   },
   {
-   "t": 9.124,
+   "t": 6.747,
    "type": "click",
    "rect": {
-    "x": 1124,
-    "y": 188,
-    "w": 138,
-    "h": 42
+    "x": 749,
+    "y": 125,
+    "w": 92,
+    "h": 28
    },
    "label": "ts",
    "zoom": true
   },
   {
-   "t": 12.088,
+   "t": 9.485,
    "type": "click",
    "rect": {
-    "x": 121,
-    "y": 683,
-    "w": 172,
-    "h": 48
+    "x": 81,
+    "y": 455,
+    "w": 114,
+    "h": 32
    },
    "label": "quickstart",
    "zoom": true
   },
   {
-   "t": 15.687,
+   "t": 12.679,
    "type": "scroll",
    "rect": null,
    "label": "scroll"
   },
   {
-   "t": 17.432,
+   "t": 14.19,
    "type": "shot",
    "rect": null,
    "label": "shot",
    "file": "demo-quickstart.png"
   },
   {
-   "t": 18.433,
+   "t": 15.191,
    "type": "end",
    "rect": null
   }

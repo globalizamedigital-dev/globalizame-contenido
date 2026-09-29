@@ -38,9 +38,10 @@ cp tutorial.example.js tutorial.js
 | **A. Grabación automática** (recomendada) | Webs y apps web: docs, consolas, claude.ai, n8n… | `node capture.mjs capturas/x.capture.js`. Cursor visible, pulso en cada clic, desenfoque de datos sensibles y un `.json` con el instante y la caja de cada acción → **zoom automático**. |
 | **B. Con sesión iniciada** | La app pide login (claude.ai, Console, Notion…) | En el PC de la persona, una vez: `node capture.mjs --login https://claude.ai claude` → inicia sesión en la ventana, ciérrala. Luego `auth: 'claude'` en la captura. La sesión queda en `~/.config/video-pizarra/auth/` (fuera del repo; nunca se sube). |
 | **C. Su propia grabación** | Apps de escritorio, Claude Code en terminal, móvil | OBS / Xbox Game Bar (Win+Alt+R) / QuickTime / grabación del móvil → `capturas/mi.mp4`. `python3 inspeccionar.py capturas/mi.mp4 2` genera una hoja con segundos y rejilla de píxeles para escribir los `zoom` a mano. |
+| **E. Terminal real** | Tutoriales de Claude Code, CLI, scripts | `node terminal.mjs --cwd <carpeta>` levanta una terminal en localhost que ejecuta de verdad lo que se escribe; grábala con capture.mjs (`type` + `press Enter` + `waitFor body.done` con `state: 'attached'` + `mark div.ok >> nth=-1`). En el segmento usa `baseZoom: 1.8, focusMaxW: 720` para que el texto se lea. Ejemplo: `videos/tutorial-skill/` del repo. |
 | **D. Capturas** | Un resultado, una pantalla de ajustes | PNG en `capturas/` y segmento `shot` con `boxes` numeradas. Los pasos `shot` de la vía A las generan solas. |
 
-Consejos de grabación: viewport **1280×1440** (vertical) o **1600×900** (horizontal) y `scale: 1.5` para que el zoom sea nítido; modo claro; idioma de la app igual al del video; una idea por grabación (varias grabaciones cortas > una larga).
+Consejos de grabación: viewport **1280×1440** (vertical) o **1600×900** (horizontal); el video se graba a la resolución del viewport (`scale` solo hace más nítidos los PNG de los pasos `shot`); modo claro; idioma de la app igual al del video; una idea por grabación (varias grabaciones cortas > una larga).
 
 Claude en la app de escritorio (computer use / Claude in Chrome) también puede capturar la pantalla real de la persona: úsalo si está disponible, con su permiso.
 
@@ -67,7 +68,7 @@ Si un selector falla, se guarda `capturas/<nombre>-ERROR-pasoN.png`: ábrela, co
 ## 4 · Guion del video (`tutorial.js`)
 Segmentos (cada uno dura lo que su frase `say` + un respiro, o `dur`):
 - `title` — `kicker`, `title` (con `*énfasis*`), `sub`.
-- `screen` — `src` (webm/mp4), `from`/`to` (segundos del clip), `speed` (1.2–1.6 quita esperas), `step`, `title`, `callouts: { label: 'texto' }`, `zoom: 'auto' | false | [{ at, rect: [x,y,w,h], hold }]`, `baseZoom` (1.6 por defecto: nunca enseña la página entera diminuta), `zoomMax`.
+- `screen` — `src` (webm/mp4), `from`/`to` (segundos del clip), `speed` (1.2–1.6 quita esperas), `step`, `title`, `callouts: { label: 'texto' }`, `zoom: 'auto' | false | [{ at, rect: [x,y,w,h], hold }]`, `baseZoom` (1.6 por defecto: nunca enseña la página entera diminuta), `zoomMax`, `crop: [x,y,w,h]` (encuadre fijo, p. ej. para mostrar un video 9:16 ya renderizado), `focusMaxW` (ancho máximo del zoom en px, para líneas largas de terminal), `host` (texto de la barra de la ventana).
 - `shot` — `src` (png), `boxes: [{ at, rect, label, hold }]`, `numbered: true`.
 - `list` — `title`, `items`, `bad: true` para errores (✕ rojas).
 - `text` — frase grande (`text`, `sub`).

@@ -8,7 +8,7 @@ export default {
   segments: [
     { type: 'title', kicker: 'TUTORIAL · 60 s', title: 'Tu primera llamada a la *API de Claude*', sub: 'Paso a paso, con la documentación oficial',
       say: 'En un minuto vas a hacer tu primera llamada a la API de Claude. Paso a paso.' },
-    { type: 'screen', src: 'capturas/demo.webm', from: 2.5, to: 11.8, speed: 1.3, step: 1, title: 'Entra en la *documentación oficial*',
+    { type: 'screen', src: 'capturas/demo.webm', from: 3.4, to: 13.6, speed: 1.3, step: 1, title: 'Entra en la *documentación oficial*',
       callouts: { 'get-key': 'Aquí sacas tu API key', ts: 'Elige tu lenguaje', quickstart: 'Abre el Quickstart' },
       say: 'Entra en la documentación oficial de Claude. Aquí sacas tu API key, eliges tu lenguaje y abres el Quickstart.' },
     { type: 'shot', src: 'capturas/demo-quickstart.png', step: 2, title: 'Guarda la key e *instala el SDK*',
