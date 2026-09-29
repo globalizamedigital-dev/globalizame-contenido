@@ -2,64 +2,50 @@
  {
   "seg": 0,
   "file": "audio/vo/01.wav",
-  "dur": 4.074,
-  "text": "Este vídeo no lo edité yo. Lo hizo Claude Opus 5.5 con una skill.",
+  "dur": 3.718,
+  "text": "Este vídeo lo ha hecho Claude. Entero. Guion, voz, subtítulos y montaje.",
   "own": false
  },
  {
   "seg": 1,
   "file": "audio/vo/02.wav",
-  "dur": 5.325,
-  "text": "Claude no tiene un generador de vídeo: lo programa. Escribe el guion, anima con código y lo renderiza.",
+  "dur": 4.346,
+  "text": "Claude no tiene un generador de vídeo: lo programa. Por eso el texto sale perfecto.",
   "own": false
  },
  {
   "seg": 2,
   "file": "audio/vo/03.wav",
-  "dur": 3.06,
-  "text": "Paso uno: pon la skill en la carpeta de skills de Claude Code.",
+  "dur": 2.933,
+  "text": "Paso uno: añade la skill a Claude Code. Solo una vez.",
   "own": false
  },
  {
   "seg": 3,
   "file": "audio/vo/04.wav",
-  "dur": 4.941,
-  "text": "Paso dos: pídeselo con tus palabras. Claude investiga, verifica los datos y te enseña el guion.",
+  "dur": 2.367,
+  "text": "Paso dos: pídele el vídeo con tus palabras.",
   "own": false
  },
  {
   "seg": 4,
   "file": "audio/vo/05.wav",
-  "dur": 3.84,
-  "text": "Paso tres: graba la pantalla real, clic a clic, y apunta dónde hacer zoom.",
+  "dur": 4.676,
+  "text": "Paso tres: Claude investiga, escribe el guion, pone voz y subtítulos, y te entrega el vídeo.",
   "own": false
  },
  {
   "seg": 5,
   "file": "audio/vo/06.wav",
-  "dur": 4.124,
-  "text": "Paso cuatro: un comando y lo monta todo. Voz, subtítulos, música y render.",
+  "dur": 3.93,
+  "text": "Y sale esto: titulares, capturas con zoom y voz. Listo para Reels.",
   "own": false
  },
  {
   "seg": 6,
   "file": "audio/vo/07.wav",
-  "dur": 3.6,
-  "text": "Y sale esto: un tutorial con zoom automático, subtítulos y voz.",
-  "own": false
- },
- {
-  "seg": 7,
-  "file": "audio/vo/08.wav",
-  "dur": 4.326,
-  "text": "Tutoriales con pantalla real, vídeos animados, voz y subtítulos. Todo desde un chat.",
-  "own": false
- },
- {
-  "seg": 8,
-  "file": "audio/vo/09.wav",
-  "dur": 1.234,
-  "text": "Comenta SKILL y te la mando.",
+  "dur": 1.66,
+  "text": "Comenta SKILL y te la mando gratis.",
   "own": false
  }
 ]

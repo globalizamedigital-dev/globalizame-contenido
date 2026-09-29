@@ -210,13 +210,13 @@ R.title = async (s, lt) => {
   const shown = words.filter((_, k) => lt > 0.12 + k * 0.09).join(' ');
   X.textAlign = 'left'; const p = back((lt - 0.1) / 0.3); X.save(); X.translate(W / 2, V ? 800 : 420); X.scale(p, p);
   rich(shown, 0, 0, size, { w: 900, maxW: W - 140 }); X.restore();
-  const th = wrap(s.title.replace(/\*/g, ''), W - 140, font(900, size)).length * size * 1.12;
+  const th = wrap(s.title, W - 140, font(900, size)).length * size * 1.12;   // mismo texto que dibuja rich()
   if (s.sub) { const q = out3((lt - 0.12 - words.length * 0.09) / 0.35); X.globalAlpha = q; rich(s.sub, W / 2, (V ? 800 : 420) + th + 20, V ? 50 : 42, { w: 500, color: B.dim, fam: B.body }); X.globalAlpha = 1; }
 };
 R.text = async (s, lt) => {
   if (s.step != null) header({ step: s.step }, lt);
   const size = s.size || (V ? 104 : 90), y = s.y ?? H * 0.4, p = back(lt / 0.3);
-  const th = wrap(s.text.replace(/\*/g, ''), W - 140, font(900, size)).length * size * 1.12;
+  const th = wrap(s.text, W - 140, font(900, size)).length * size * 1.12;
   X.save(); X.translate(W / 2, y); X.scale(p, p); rich(s.text, 0, 0, size, { w: 900, maxW: W - 140 }); X.restore();
   if (s.sub) { X.globalAlpha = out3((lt - 0.4) / 0.4); rich(s.sub, W / 2, y + th + 30, V ? 50 : 42, { w: 500, color: B.dim, fam: B.body }); X.globalAlpha = 1; }
 };
