@@ -1,0 +1,10 @@
+node_modules/
+audio/_*
+_*.mp4
+stills/
+contact.jpg
+ffmpeg2pass*
+*.mp4
+.venv/
+hits.json
+sfx.json
