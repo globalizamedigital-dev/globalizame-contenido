@@ -1,0 +1,76 @@
+{
+ "name": "demo",
+ "url": "https://platform.claude.com/docs/en/home",
+ "viewport": {
+  "width": 1280,
+  "height": 1440
+ },
+ "scale": 1.5,
+ "size": {
+  "w": 1920,
+  "h": 2160
+ },
+ "duration": 19.526,
+ "actions": [
+  {
+   "t": 3.452,
+   "type": "start",
+   "rect": null,
+   "label": "demo"
+  },
+  {
+   "t": 6.916,
+   "type": "hover",
+   "rect": {
+    "x": 310,
+    "y": 683,
+    "w": 181,
+    "h": 48
+   },
+   "label": "get-key",
+   "zoom": true
+  },
+  {
+   "t": 9.124,
+   "type": "click",
+   "rect": {
+    "x": 1124,
+    "y": 188,
+    "w": 138,
+    "h": 42
+   },
+   "label": "ts",
+   "zoom": true
+  },
+  {
+   "t": 12.088,
+   "type": "click",
+   "rect": {
+    "x": 121,
+    "y": 683,
+    "w": 172,
+    "h": 48
+   },
+   "label": "quickstart",
+   "zoom": true
+  },
+  {
+   "t": 15.687,
+   "type": "scroll",
+   "rect": null,
+   "label": "scroll"
+  },
+  {
+   "t": 17.432,
+   "type": "shot",
+   "rect": null,
+   "label": "shot",
+   "file": "demo-quickstart.png"
+  },
+  {
+   "t": 18.433,
+   "type": "end",
+   "rect": null
+  }
+ ]
+}

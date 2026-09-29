@@ -7,3 +7,5 @@ inbox/
 .env.local
 .env.*.local
 node_modules/
+# renders de video (se regeneran)
+videos/*.mp4
